@@ -1,9 +1,9 @@
-name: Daily DSL/FCL Box Scores
+name: Daily Yankees Box Scores
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 9am ET (adjust for DST: 13 UTC = 9am EDT, 14 UTC = 9am EST)
-  workflow_dispatch:        # lets you trigger it manually too
+    - cron: '0 13 * * *'   # 9am ET (13 UTC); switch to 14 in winter (EST)
+  workflow_dispatch:
 
 jobs:
   fetch:
@@ -20,5 +20,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add output/
-          git commit -m "Daily DSL/FCL box scores $(date +%F)" || echo "Nothing to commit"
+          git commit -m "Daily Yankees box scores $(date +%F)" || echo "Nothing to commit"
           git push
