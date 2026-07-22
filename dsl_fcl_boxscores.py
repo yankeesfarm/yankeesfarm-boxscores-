@@ -39,27 +39,35 @@ LEVEL_LABELS = {11: "AAA", 12: "AA", 13: "High-A", 14: "A", 16: "Rookie"}
 
 
 def get_yankees_team_ids(season: str) -> dict:
-    """Return {team_id: team_name} for every current Yankees affiliate,
-    across all MiLB levels, by matching parentOrgId (robust to name/affiliate
-    changes -- doesn't rely on teams having 'Yankees' in the name)."""
-    sport_ids_str = ",".join(str(s) for s in MILB_SPORT_IDS)
-    url = (
-        f"{STATS_API}/teams"
-        f"?sportId={sport_ids_str}&season={season}"
-        f"&hydrate=parentOrgId,parentOrgName"
-    )
-    data = fetch_json(url)
+    """Return {team_id: {"name":..., "sportId":...}} for every current
+    Yankees affiliate, across all MiLB levels, by matching parentOrgId.
+    Queries each level separately -- the /teams endpoint doesn't reliably
+    accept a comma-joined sportId list the way /schedule does."""
     teams = {}
-    for t in data.get("teams", []):
-        if t.get("parentOrgId") == YANKEES_ORG_ID:
-            teams[t["id"]] = {"name": t["name"], "sportId": t["sport"]["id"]}
+    for sid in MILB_SPORT_IDS:
+        url = (
+            f"{STATS_API}/teams"
+            f"?sportId={sid}&season={season}&hydrate=parentOrgName"
+        )
+        try:
+            data = fetch_json(url)
+        except Exception as e:
+            print(f"Warning: teams lookup failed for sportId={sid}: {e}")
+            continue
+        for t in data.get("teams", []):
+            if t.get("parentOrgId") == YANKEES_ORG_ID:
+                teams[t["id"]] = {"name": t["name"], "sportId": sid}
     return teams
 
 
 def fetch_json(url: str) -> dict:
     req = urllib.request.Request(url, headers={"User-Agent": "YankeesFarm/1.0"})
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"ERROR fetching {url}: {e}")
+        raise
 
 
 def get_schedule(game_date: str) -> list:
