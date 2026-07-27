@@ -115,12 +115,14 @@ def get_boxscore(game_pk: int) -> dict:
     return fetch_json(url)
 
 
-def get_season_totals(person_id: int, season: str) -> dict:
+def get_season_totals(person_id: int, season: str, sport_id: int) -> dict:
     """Season-to-date cumulative hitting totals for a player (used for the
-    '(14)' style running totals in Carlos's recap format)."""
+    '(14)' style running totals in Carlos's recap format). sport_id must be
+    the player's actual MiLB level -- without it, the API defaults to MLB
+    stats and returns nothing for minor leaguers."""
     url = (
         f"{STATS_API}/people/{person_id}/stats"
-        f"?stats=season&group=hitting&season={season}"
+        f"?stats=season&group=hitting&season={season}&sportId={sport_id}"
     )
     try:
         data = fetch_json(url)
@@ -135,7 +137,8 @@ def get_season_totals(person_id: int, season: str) -> dict:
             "rbi": s.get("rbi", 0),
             "stolenBases": s.get("stolenBases", 0),
         }
-    except Exception:
+    except Exception as e:
+        print(f"Warning: season totals lookup failed for person {person_id}: {e}")
         return {}
 
 
@@ -283,6 +286,7 @@ def render_recap_text(game: dict, box: dict, season: str, yankees_ids: dict) -> 
     record = us.get("leagueRecord", {})
     wins, losses = record.get("wins", "?"), record.get("losses", "?")
     result = "W" if us_score > opp_score else "L"
+    us_sport_id = yankees_ids[us["team"]["id"]]["sportId"]
 
     opp_display = strip_league_prefix(opp_name) if league == "FCL" else opp_name
     header = f"{us_name}: vs {opp_display} {us_score}-{opp_score} {result}\u25aa\ufe0f(Record {wins}-{losses})\u25aa\ufe0f"
@@ -299,7 +303,7 @@ def render_recap_text(game: dict, box: dict, season: str, yankees_ids: dict) -> 
             continue
         pos = p.get("position", {}).get("abbreviation", "")
         name = p["person"]["fullName"]
-        season_totals = get_season_totals(p["person"]["id"], season)
+        season_totals = get_season_totals(p["person"]["id"], season, us_sport_id)
         lines.append(format_batting_line(pos, name, stat, season_totals))
 
     lines.append("\u25fc\ufe0f")
