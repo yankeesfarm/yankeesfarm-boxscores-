@@ -1,0 +1,67 @@
+[
+  {
+    "game_pk": 822010,
+    "league": "High-A",
+    "status": "Scheduled",
+    "away_team": "Jersey Shore BlueClaws",
+    "home_team": "Hudson Valley Renegades",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  },
+  {
+    "game_pk": 818247,
+    "league": "AA",
+    "status": "Scheduled",
+    "away_team": "Richmond Flying Squirrels",
+    "home_team": "Somerset Patriots",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  },
+  {
+    "game_pk": 818243,
+    "league": "AA",
+    "status": "Scheduled",
+    "away_team": "Richmond Flying Squirrels",
+    "home_team": "Somerset Patriots",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  },
+  {
+    "game_pk": 816476,
+    "league": "AAA",
+    "status": "Scheduled",
+    "away_team": "Scranton/Wilkes-Barre RailRiders",
+    "home_team": "Iowa Cubs",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  },
+  {
+    "game_pk": 820252,
+    "league": "A",
+    "status": "Scheduled",
+    "away_team": "Lakeland Flying Tigers",
+    "home_team": "Tampa Tarpons",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  }
+]
