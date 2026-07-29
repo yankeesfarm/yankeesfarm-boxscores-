@@ -9,7 +9,7 @@ key needed. Yankees affiliates are identified dynamically by organization ID
 (147), not by name, so this keeps working even if MiLB affiliations change.
 
 USAGE:
-    python3 dsl_fcl_boxscores.py                # yesterday's completed games
+    python3 dsl_fcl_boxscores.py                # today's games (America/New_York)
     python3 dsl_fcl_boxscores.py 2026-07-20      # specific date
 
 OUTPUT:
@@ -29,8 +29,11 @@ SCHEDULING (pick one, since this script itself doesn't run on a timer):
 import json
 import sys
 import urllib.request
-from datetime import datetime, date, timedelta
+from datetime import datetime, date
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+EASTERN = ZoneInfo("America/New_York")
 
 STATS_API = "https://statsapi.mlb.com/api/v1"
 YANKEES_ORG_ID = 147  # New York Yankees, MLB team ID
@@ -408,7 +411,11 @@ def render_html(game_date: str, records: list) -> str:
 
 
 def main():
-    default_date = (date.today() - timedelta(days=1)).isoformat()
+    # Use the current date IN EASTERN TIME, not the runner's system/UTC date.
+    # This run fires near midnight ET, so "today" (Eastern) is the day whose
+    # games we actually want -- and GitHub Actions runners are UTC, so a
+    # naive date.today() would already be tomorrow by that hour.
+    default_date = datetime.now(EASTERN).date().isoformat()
     game_date = sys.argv[1] if len(sys.argv) > 1 else default_date
     datetime.strptime(game_date, "%Y-%m-%d")
     season = game_date.split("-")[0]
