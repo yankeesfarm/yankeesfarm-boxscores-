@@ -428,7 +428,13 @@ def main():
     print(f"Found {len(target_games)} Yankees affiliate game(s) on {game_date}"
           f" (out of {len(all_games)} total MiLB games at these levels).")
 
-    records = [build_game_record(g, yankees_ids) for g in target_games]
+    records = []
+    for g in target_games:
+        home = g["teams"]["home"]["team"]["name"]
+        away = g["teams"]["away"]["team"]["name"]
+        st = g["status"]["detailedState"]
+        print(f"  {away} @ {home}: status='{st}'")
+        records.append(build_game_record(g, yankees_ids))
 
     out_dir = Path("output")
     out_dir.mkdir(exist_ok=True)
