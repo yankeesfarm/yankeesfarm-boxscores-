@@ -2,7 +2,7 @@
   {
     "game_pk": 848481,
     "league": "DSL",
-    "status": "Scheduled",
+    "status": "In Progress",
     "away_team": "DSL Mets Blue",
     "home_team": "DSL NYY Bombers",
     "away_score": null,
@@ -15,7 +15,7 @@
   {
     "game_pk": 849510,
     "league": "DSL",
-    "status": "Scheduled",
+    "status": "Pre-Game",
     "away_team": "DSL NYY Yankees",
     "home_team": "DSL Giants Orange",
     "away_score": null,
