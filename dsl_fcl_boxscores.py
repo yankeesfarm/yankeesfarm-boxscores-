@@ -9,8 +9,13 @@ key needed. Yankees affiliates are identified dynamically by organization ID
 (147), not by name, so this keeps working even if MiLB affiliations change.
 
 USAGE:
-    python3 dsl_fcl_boxscores.py                # today's games (America/New_York)
+    python3 dsl_fcl_boxscores.py                # yesterday's completed games
     python3 dsl_fcl_boxscores.py 2026-07-20      # specific date
+
+RUNNING THIS:
+    This is meant to be triggered manually (GitHub Actions "Run workflow"
+    button) whenever you're ready to pull the previous night's box scores --
+    e.g. each morning. Defaults to yesterday's date in Eastern time.
 
 OUTPUT:
     ./output/YYYY-MM-DD_yankees_boxscores.json   -- raw structured data
@@ -18,18 +23,12 @@ OUTPUT:
     ./output/YYYY-MM-DD_yankees_recap.txt        -- Carlos's recap format,
                                                      ready to hand-edit
 
-SCHEDULING (pick one, since this script itself doesn't run on a timer):
-  - Cron (Mac/Linux server): 
-        0 9 * * * cd /path/to/script && python3 dsl_fcl_boxscores.py >> log.txt 2>&1
-  - GitHub Actions (free, no server needed): a workflow with a `schedule:`
-    cron trigger that runs this script and commits the output.
-  - Windows Task Scheduler: same idea, daily trigger.
 """
 
 import json
 import sys
 import urllib.request
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -411,11 +410,10 @@ def render_html(game_date: str, records: list) -> str:
 
 
 def main():
-    # Use the current date IN EASTERN TIME, not the runner's system/UTC date.
-    # This run fires near midnight ET, so "today" (Eastern) is the day whose
-    # games we actually want -- and GitHub Actions runners are UTC, so a
-    # naive date.today() would already be tomorrow by that hour.
-    default_date = datetime.now(EASTERN).date().isoformat()
+    # Manual-run mode: you trigger this yourself (e.g. each morning), so we
+    # want YESTERDAY's completed games, not today's -- computed in Eastern
+    # time so it's correct regardless of when during the day you run it.
+    default_date = (datetime.now(EASTERN).date() - timedelta(days=1)).isoformat()
     game_date = sys.argv[1] if len(sys.argv) > 1 else default_date
     datetime.strptime(game_date, "%Y-%m-%d")
     season = game_date.split("-")[0]
