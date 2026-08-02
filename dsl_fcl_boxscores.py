@@ -4,25 +4,17 @@ YankeesFarm Daily Box Score Puller (all affiliate levels)
 ------------------------------------------------------------
 Pulls box scores for every Yankees minor league affiliate game on a given
 date -- AAA (RailRiders), AA (Patriots), High-A (Renegades), Single-A
-(Tarpons), and Rookie (DSL/FCL) -- using MLB's free public Stats API. No API
-key needed. Yankees affiliates are identified dynamically by organization ID
-(147), not by name, so this keeps working even if MiLB affiliations change.
+(Tarpons), FCL (FCL Yankees), and DSL (DSL Yankees) -- using MLB's free
+public Stats API. No API key needed.
 
 USAGE:
     python3 dsl_fcl_boxscores.py                # yesterday's completed games
-    python3 dsl_fcl_boxscores.py 2026-07-20      # specific date
-
-RUNNING THIS:
-    This is meant to be triggered manually (GitHub Actions "Run workflow"
-    button) whenever you're ready to pull the previous night's box scores --
-    e.g. each morning. Defaults to yesterday's date in Eastern time.
+    python3 dsl_fcl_boxscores.py 2026-07-31     # specific date
 
 OUTPUT:
-    ./output/YYYY-MM-DD_yankees_boxscores.json   -- raw structured data
-    ./output/YYYY-MM-DD_yankees_boxscores.html   -- ready-to-embed HTML
-    ./output/YYYY-MM-DD_yankees_recap.txt        -- Carlos's recap format,
-                                                     ready to hand-edit
-
+    ./output/YYYY-MM-DD_yankees_boxscores.json
+    ./output/YYYY-MM-DD_yankees_boxscores.html
+    ./output/YYYY-MM-DD_yankees_recap.txt
 """
 
 import json
@@ -30,21 +22,21 @@ import sys
 import urllib.request
 from datetime import datetime, date, timedelta
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
-EASTERN = ZoneInfo("America/New_York")
-
-STATS_API = "https://statsapi.mlb.com/api/v1"
-YANKEES_ORG_ID = 147  # New York Yankees, MLB team ID
-MILB_SPORT_IDS = (11, 12, 13, 14, 16)  # AAA, AA, High-A, Single-A, Rookie
-LEVEL_LABELS = {11: "AAA", 12: "AA", 13: "High-A", 14: "A", 16: "Rookie"}
+STATS_API      = "https://statsapi.mlb.com/api/v1"
+YANKEES_ORG_ID = 147
+MILB_SPORT_IDS = (11, 12, 13, 14, 16, 17)   # AAA, AA, High-A, A, FCL, DSL
+LEVEL_LABELS   = {
+    11: "AAA",
+    12: "AA",
+    13: "High-A",
+    14: "A",
+    16: "FCL",
+    17: "DSL",
+}
 
 
 def get_yankees_team_ids(season: str) -> dict:
-    """Return {team_id: {"name":..., "sportId":...}} for every current
-    Yankees affiliate, across all MiLB levels, by matching parentOrgId.
-    Queries each level separately -- the /teams endpoint doesn't reliably
-    accept a comma-joined sportId list the way /schedule does."""
     teams = {}
     for sid in MILB_SPORT_IDS:
         url = (
@@ -73,7 +65,6 @@ def fetch_json(url: str) -> dict:
 
 
 def get_schedule(game_date: str) -> list:
-    """Return list of game dicts across all MiLB levels for the given date."""
     sport_ids_str = ",".join(str(s) for s in MILB_SPORT_IDS)
     url = (
         f"{STATS_API}/schedule"
@@ -102,14 +93,7 @@ def level_label(game: dict, yankees_ids: dict) -> str:
         sport_id = yankees_ids[home["id"]]["sportId"]
     elif away["id"] in yankees_ids:
         sport_id = yankees_ids[away["id"]]["sportId"]
-    label = LEVEL_LABELS.get(sport_id, "")
-    if label == "Rookie":
-        if home["name"].startswith("DSL") or away["name"].startswith("DSL"):
-            return "DSL"
-        if home["name"].startswith("FCL") or away["name"].startswith("FCL"):
-            return "FCL"
-        return "ACL"  # Arizona Complex League also sits under sportId 16
-    return label
+    return LEVEL_LABELS.get(sport_id, "MiLB")
 
 
 def get_boxscore(game_pk: int) -> dict:
@@ -118,10 +102,6 @@ def get_boxscore(game_pk: int) -> dict:
 
 
 def get_season_totals(person_id: int, season: str, sport_id: int) -> dict:
-    """Season-to-date cumulative hitting totals for a player (used for the
-    '(14)' style running totals in Carlos's recap format). sport_id must be
-    the player's actual MiLB level -- without it, the API defaults to MLB
-    stats and returns nothing for minor leaguers."""
     url = (
         f"{STATS_API}/people/{person_id}/stats"
         f"?stats=season&group=hitting&season={season}&sportId={sport_id}"
@@ -133,11 +113,11 @@ def get_season_totals(person_id: int, season: str, sport_id: int) -> dict:
             return {}
         s = splits[0]["stat"]
         return {
-            "doubles": s.get("doubles", 0),
-            "triples": s.get("triples", 0),
-            "homeRuns": s.get("homeRuns", 0),
-            "rbi": s.get("rbi", 0),
-            "stolenBases": s.get("stolenBases", 0),
+            "doubles":      s.get("doubles", 0),
+            "triples":      s.get("triples", 0),
+            "homeRuns":     s.get("homeRuns", 0),
+            "rbi":          s.get("rbi", 0),
+            "stolenBases":  s.get("stolenBases", 0),
         }
     except Exception as e:
         print(f"Warning: season totals lookup failed for person {person_id}: {e}")
@@ -152,21 +132,20 @@ def strip_league_prefix(name: str) -> str:
 
 
 def format_batting_line(pos: str, name: str, game_stat: dict, season: dict) -> str:
-    events = []
-
-    ab = game_stat.get("atBats", 0)
-    h = game_stat.get("hits", 0)
-    bb = game_stat.get("baseOnBalls", 0)
-    hbp = game_stat.get("hitByPitch", 0)
-    sf = game_stat.get("sacFlies", 0)
+    ab      = game_stat.get("atBats", 0)
+    h       = game_stat.get("hits", 0)
+    bb      = game_stat.get("baseOnBalls", 0)
+    hbp     = game_stat.get("hitByPitch", 0)
+    sf      = game_stat.get("sacFlies", 0)
     doubles = game_stat.get("doubles", 0)
     triples = game_stat.get("triples", 0)
-    hr = game_stat.get("homeRuns", 0)
+    hr      = game_stat.get("homeRuns", 0)
     singles = h - doubles - triples - hr
-    rbi = game_stat.get("rbi", 0)
-    sb = game_stat.get("stolenBases", 0)
-    runs = game_stat.get("runs", 0)
+    rbi     = game_stat.get("rbi", 0)
+    sb      = game_stat.get("stolenBases", 0)
+    runs    = game_stat.get("runs", 0)
 
+    events = []
     if bb == 1:
         events.append("BB")
     elif bb > 1:
@@ -180,20 +159,30 @@ def format_batting_line(pos: str, name: str, game_stat: dict, season: dict) -> s
     elif singles > 1:
         events.append(f"{singles} Singles")
     if doubles:
-        events.append(f"Double ({season.get('doubles', '?')})" if doubles == 1
-                       else f"{doubles} Doubles ({season.get('doubles', '?')})")
+        events.append(
+            f"Double ({season.get('doubles', '?')})" if doubles == 1
+            else f"{doubles} Doubles ({season.get('doubles', '?')})"
+        )
     if triples:
-        events.append(f"Triple ({season.get('triples', '?')})" if triples == 1
-                       else f"{triples} Triples ({season.get('triples', '?')})")
+        events.append(
+            f"Triple ({season.get('triples', '?')})" if triples == 1
+            else f"{triples} Triples ({season.get('triples', '?')})"
+        )
     if hr:
-        events.append(f"HR ({season.get('homeRuns', '?')})" if hr == 1
-                       else f"{hr} HR ({season.get('homeRuns', '?')})")
+        events.append(
+            f"HR ({season.get('homeRuns', '?')})" if hr == 1
+            else f"{hr} HR ({season.get('homeRuns', '?')})"
+        )
     if rbi:
-        events.append(f"RBI ({season.get('rbi', '?')})" if rbi == 1
-                       else f"{rbi} RBI ({season.get('rbi', '?')})")
+        events.append(
+            f"RBI ({season.get('rbi', '?')})" if rbi == 1
+            else f"{rbi} RBI ({season.get('rbi', '?')})"
+        )
     if sb:
-        events.append(f"SB ({season.get('stolenBases', '?')})" if sb == 1
-                       else f"{sb} SB ({season.get('stolenBases', '?')})")
+        events.append(
+            f"SB ({season.get('stolenBases', '?')})" if sb == 1
+            else f"{sb} SB ({season.get('stolenBases', '?')})"
+        )
     if runs == 1:
         events.append("Run")
     elif runs > 1:
@@ -207,8 +196,8 @@ def format_batting_line(pos: str, name: str, game_stat: dict, season: dict) -> s
 
 def format_pitching_line(role: str, name: str, game_stat: dict) -> str:
     ip = game_stat.get("inningsPitched", "0.0")
-    h = game_stat.get("hits", 0)
-    r = game_stat.get("runs", 0)
+    h  = game_stat.get("hits", 0)
+    r  = game_stat.get("runs", 0)
     er = game_stat.get("earnedRuns", 0)
     bb = game_stat.get("baseOnBalls", 0)
     so = game_stat.get("strikeOuts", 0)
@@ -220,7 +209,7 @@ def format_pitching_line(role: str, name: str, game_stat: dict) -> str:
 def summarize_batting(team_box: dict) -> list:
     rows = []
     players = team_box.get("players", {})
-    order = team_box.get("battingOrder", [])
+    order   = team_box.get("battingOrder", [])
     for pid in order:
         p = players.get(f"ID{pid}")
         if not p:
@@ -229,14 +218,14 @@ def summarize_batting(team_box: dict) -> list:
         if not stats:
             continue
         rows.append({
-            "name": p["person"]["fullName"],
+            "name":     p["person"]["fullName"],
             "position": p.get("position", {}).get("abbreviation", ""),
-            "ab": stats.get("atBats", 0),
-            "r": stats.get("runs", 0),
-            "h": stats.get("hits", 0),
+            "ab":  stats.get("atBats", 0),
+            "r":   stats.get("runs", 0),
+            "h":   stats.get("hits", 0),
             "rbi": stats.get("rbi", 0),
-            "bb": stats.get("baseOnBalls", 0),
-            "so": stats.get("strikeOuts", 0),
+            "bb":  stats.get("baseOnBalls", 0),
+            "so":  stats.get("strikeOuts", 0),
             "avg": stats.get("avg", ""),
         })
     return rows
@@ -254,44 +243,46 @@ def summarize_pitching(team_box: dict) -> list:
             continue
         rows.append({
             "name": p["person"]["fullName"],
-            "ip": stats.get("inningsPitched", ""),
-            "h": stats.get("hits", 0),
-            "r": stats.get("runs", 0),
-            "er": stats.get("earnedRuns", 0),
-            "bb": stats.get("baseOnBalls", 0),
-            "so": stats.get("strikeOuts", 0),
-            "era": stats.get("era", ""),
+            "ip":   stats.get("inningsPitched", ""),
+            "h":    stats.get("hits", 0),
+            "r":    stats.get("runs", 0),
+            "er":   stats.get("earnedRuns", 0),
+            "bb":   stats.get("baseOnBalls", 0),
+            "so":   stats.get("strikeOuts", 0),
+            "era":  stats.get("era", ""),
         })
     return rows
 
 
 def render_recap_text(game: dict, box: dict, season: str, yankees_ids: dict) -> str:
-    """Render one game in Carlos's YankeesFarm recap style."""
-    home = game["teams"]["home"]
-    away = game["teams"]["away"]
+    home     = game["teams"]["home"]
+    away     = game["teams"]["away"]
     home_name = home["team"]["name"]
     away_name = away["team"]["name"]
-    league = level_label(game, yankees_ids)
+    league    = level_label(game, yankees_ids)
 
     if home["team"]["id"] in yankees_ids:
-        us, opp = home, away
-        us_name, opp_name = home_name, away_name
-        us_box, opp_box = box["teams"]["home"], box["teams"]["away"]
+        us, opp       = home, away
+        us_name       = home_name
+        us_box        = box["teams"]["home"]
+        opp_box       = box["teams"]["away"]
     else:
-        us, opp = away, home
-        us_name, opp_name = away_name, home_name
-        us_box, opp_box = box["teams"]["away"], box["teams"]["home"]
+        us, opp       = away, home
+        us_name       = away_name
+        us_box        = box["teams"]["away"]
+        opp_box       = box["teams"]["home"]
 
-    us_score = us_box.get("teamStats", {}).get("batting", {}).get("runs", 0)
+    us_score  = us_box.get("teamStats", {}).get("batting", {}).get("runs", 0)
     opp_score = opp_box.get("teamStats", {}).get("batting", {}).get("runs", 0)
 
     record = us.get("leagueRecord", {})
-    wins, losses = record.get("wins", "?"), record.get("losses", "?")
+    wins   = record.get("wins", "?")
+    losses = record.get("losses", "?")
     result = "W" if us_score > opp_score else "L"
     us_sport_id = yankees_ids[us["team"]["id"]]["sportId"]
 
-    opp_display = strip_league_prefix(opp_name) if league == "FCL" else opp_name
-    header = f"{us_name}: vs {opp_display} {us_score}-{opp_score} {result}\u25aa\ufe0f(Record {wins}-{losses})\u25aa\ufe0f"
+    opp_display = strip_league_prefix(opp["team"]["name"]) if league in ("FCL", "DSL") else opp["team"]["name"]
+    header = f"{us_name}: vs {opp_display} {us_score}-{opp_score} {result}▪️(Record {wins}-{losses})▪️"
 
     lines = [header, ""]
 
@@ -303,12 +294,12 @@ def render_recap_text(game: dict, box: dict, season: str, yankees_ids: dict) -> 
         stat = p.get("stats", {}).get("batting", {})
         if not stat:
             continue
-        pos = p.get("position", {}).get("abbreviation", "")
-        name = p["person"]["fullName"]
+        pos          = p.get("position", {}).get("abbreviation", "")
+        name         = p["person"]["fullName"]
         season_totals = get_season_totals(p["person"]["id"], season, us_sport_id)
         lines.append(format_batting_line(pos, name, stat, season_totals))
 
-    lines.append("\u25fc\ufe0f")
+    lines.append("◼️")
 
     for pid in us_box.get("pitchers", []):
         p = players.get(f"ID{pid}")
@@ -325,38 +316,38 @@ def render_recap_text(game: dict, box: dict, season: str, yankees_ids: dict) -> 
 
 
 def build_game_record(game: dict, yankees_ids: dict) -> dict:
-    game_pk = game["gamePk"]
+    game_pk   = game["gamePk"]
     home_name = game["teams"]["home"]["team"]["name"]
     away_name = game["teams"]["away"]["team"]["name"]
-    status = game["status"]["detailedState"]
-    league = level_label(game, yankees_ids)
+    status    = game["status"]["detailedState"]
+    league    = level_label(game, yankees_ids)
 
     record = {
-        "game_pk": game_pk,
-        "league": league,
-        "status": status,
-        "away_team": away_name,
-        "home_team": home_name,
-        "away_score": None,
-        "home_score": None,
-        "away_batting": [],
-        "home_batting": [],
+        "game_pk":       game_pk,
+        "league":        league,
+        "status":        status,
+        "away_team":     away_name,
+        "home_team":     home_name,
+        "away_score":    None,
+        "home_score":    None,
+        "away_batting":  [],
+        "home_batting":  [],
         "away_pitching": [],
         "home_pitching": [],
     }
 
     if status not in ("Final", "Game Over", "Completed Early"):
-        return record  # game hasn't finished yet -- no box score to pull
+        return record
 
-    box = get_boxscore(game_pk)
-    teams = box.get("teams", {})
+    box      = get_boxscore(game_pk)
+    teams    = box.get("teams", {})
     away_box = teams.get("away", {})
     home_box = teams.get("home", {})
 
-    record["away_score"] = away_box.get("teamStats", {}).get("batting", {}).get("runs")
-    record["home_score"] = home_box.get("teamStats", {}).get("batting", {}).get("runs")
-    record["away_batting"] = summarize_batting(away_box)
-    record["home_batting"] = summarize_batting(home_box)
+    record["away_score"]    = away_box.get("teamStats", {}).get("batting", {}).get("runs")
+    record["home_score"]    = home_box.get("teamStats", {}).get("batting", {}).get("runs")
+    record["away_batting"]  = summarize_batting(away_box)
+    record["home_batting"]  = summarize_batting(home_box)
     record["away_pitching"] = summarize_pitching(away_box)
     record["home_pitching"] = summarize_pitching(home_box)
 
@@ -375,70 +366,71 @@ def render_html(game_date: str, records: list) -> str:
         if g["status"] not in ("Final", "Game Over", "Completed Early"):
             parts.append(f'<p><em>{g["status"]}</em></p></div>')
             continue
-        parts.append(f'<p><strong>Final: {g["away_team"]} {g["away_score"]} — '
-                      f'{g["home_team"]} {g["home_score"]}</strong></p>')
-
+        parts.append(
+            f'<p><strong>Final: {g["away_team"]} {g["away_score"]} — '
+            f'{g["home_team"]} {g["home_score"]}</strong></p>'
+        )
         for side_label, batting, pitching in (
-            (g["away_team"], g["away_batting"], g["away_pitching"]),
-            (g["home_team"], g["home_batting"], g["home_pitching"]),
+            (g["away_team"], g["away_batting"],  g["away_pitching"]),
+            (g["home_team"], g["home_batting"],  g["home_pitching"]),
         ):
-            parts.append(f"<h4>{side_label} Batting</h4><table border='1' cellpadding='4'>")
-            parts.append("<tr><th>Player</th><th>Pos</th><th>AB</th><th>R</th><th>H</th>"
-                          "<th>RBI</th><th>BB</th><th>SO</th><th>AVG</th></tr>")
+            parts.append(f"<h4>{side_label} Batting</h4>")
+            parts.append("<table border='1' cellpadding='4'>")
+            parts.append(
+                "<tr><th>Player</th><th>Pos</th><th>AB</th><th>R</th>"
+                "<th>H</th><th>RBI</th><th>BB</th><th>SO</th><th>AVG</th></tr>"
+            )
             for b in batting:
                 parts.append(
-                    f"<tr><td>{b['name']}</td><td>{b['position']}</td><td>{b['ab']}</td>"
-                    f"<td>{b['r']}</td><td>{b['h']}</td><td>{b['rbi']}</td>"
-                    f"<td>{b['bb']}</td><td>{b['so']}</td><td>{b['avg']}</td></tr>"
+                    f"<tr><td>{b['name']}</td><td>{b['position']}</td>"
+                    f"<td>{b['ab']}</td><td>{b['r']}</td><td>{b['h']}</td>"
+                    f"<td>{b['rbi']}</td><td>{b['bb']}</td><td>{b['so']}</td>"
+                    f"<td>{b['avg']}</td></tr>"
                 )
             parts.append("</table>")
 
-            parts.append(f"<h4>{side_label} Pitching</h4><table border='1' cellpadding='4'>")
-            parts.append("<tr><th>Player</th><th>IP</th><th>H</th><th>R</th><th>ER</th>"
-                          "<th>BB</th><th>SO</th><th>ERA</th></tr>")
+            parts.append(f"<h4>{side_label} Pitching</h4>")
+            parts.append("<table border='1' cellpadding='4'>")
+            parts.append(
+                "<tr><th>Player</th><th>IP</th><th>H</th><th>R</th>"
+                "<th>ER</th><th>BB</th><th>SO</th><th>ERA</th></tr>"
+            )
             for p in pitching:
                 parts.append(
-                    f"<tr><td>{p['name']}</td><td>{p['ip']}</td><td>{p['h']}</td>"
-                    f"<td>{p['r']}</td><td>{p['er']}</td><td>{p['bb']}</td>"
-                    f"<td>{p['so']}</td><td>{p['era']}</td></tr>"
+                    f"<tr><td>{p['name']}</td><td>{p['ip']}</td>"
+                    f"<td>{p['h']}</td><td>{p['r']}</td><td>{p['er']}</td>"
+                    f"<td>{p['bb']}</td><td>{p['so']}</td><td>{p['era']}</td></tr>"
                 )
             parts.append("</table>")
-
         parts.append("</div><hr>")
 
     return "\n".join(parts)
 
 
 def main():
-    # Manual-run mode: you trigger this yourself (e.g. each morning), so we
-    # want YESTERDAY's completed games, not today's -- computed in Eastern
-    # time so it's correct regardless of when during the day you run it.
-    default_date = (datetime.now(EASTERN).date() - timedelta(days=1)).isoformat()
-    game_date = sys.argv[1] if len(sys.argv) > 1 else default_date
+    default_date = (date.today() - timedelta(days=1)).isoformat()
+    game_date    = sys.argv[1] if len(sys.argv) > 1 else default_date
     datetime.strptime(game_date, "%Y-%m-%d")
     season = game_date.split("-")[0]
 
     yankees_ids = get_yankees_team_ids(season)
+    print(f"Found {len(yankees_ids)} Yankees affiliates for {season}")
 
-    all_games = get_schedule(game_date)
+    all_games    = get_schedule(game_date)
     target_games = [g for g in all_games if is_yankees_game(g, yankees_ids)]
 
-    print(f"Found {len(target_games)} Yankees affiliate game(s) on {game_date}"
-          f" (out of {len(all_games)} total MiLB games at these levels).")
+    print(
+        f"Found {len(target_games)} Yankees affiliate game(s) on {game_date} "
+        f"(out of {len(all_games)} total MiLB games at these levels)."
+    )
 
-    records = []
-    for g in target_games:
-        home = g["teams"]["home"]["team"]["name"]
-        away = g["teams"]["away"]["team"]["name"]
-        st = g["status"]["detailedState"]
-        print(f"  {away} @ {home}: status='{st}'")
-        records.append(build_game_record(g, yankees_ids))
+    records = [build_game_record(g, yankees_ids) for g in target_games]
 
     out_dir = Path("output")
     out_dir.mkdir(exist_ok=True)
 
-    json_path = out_dir / f"{game_date}_yankees_boxscores.json"
-    html_path = out_dir / f"{game_date}_yankees_boxscores.html"
+    json_path  = out_dir / f"{game_date}_yankees_boxscores.json"
+    html_path  = out_dir / f"{game_date}_yankees_boxscores.html"
     recap_path = out_dir / f"{game_date}_yankees_recap.txt"
 
     json_path.write_text(json.dumps(records, indent=2))
