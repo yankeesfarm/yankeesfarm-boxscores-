@@ -50,11 +50,25 @@ HITTER_COLS = ["G", "AB", "R", "H", "2B", "3B", "HR", "RBI", "BB", "SO", "SB", "
 PITCHER_COLS = ["W", "L", "ERA", "G", "GS", "CG", "SHO", "SV", "SVO", "IP", "H", "R", "ER", "HR", "HB", "BB", "SO", "WHIP", "AVG"]
 
 
-def fetch_table_rows(page, url):
-    """Load a MiLB stats page and return the raw text grid of the data table."""
-    page.goto(url, wait_until="networkidle", timeout=60000)
-    # The stats table renders client-side — wait for at least one player link to appear.
-    page.wait_for_selector("a[href*='/player/']", timeout=30000)
+def fetch_table_rows(page, url, attempts=3):
+    """Load a MiLB stats page and return the raw text grid of the data table.
+
+    MiLB.com pages never reach a true network-idle state (persistent analytics/ad
+    traffic), so we use domcontentloaded + an explicit wait for the rendered table
+    instead, with retries since the client-side render is sometimes slow to start.
+    """
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            # The stats table renders client-side — wait for at least one player link.
+            page.wait_for_selector("a[href*='/player/']", timeout=45000)
+            break
+        except Exception as e:
+            last_error = e
+            print(f"  attempt {attempt}/{attempts} failed for {url}: {e}")
+    else:
+        raise last_error
 
     table = page.locator("table").last
     rows = table.locator("tbody tr")
