@@ -78,6 +78,84 @@ GitHub Issue with everything pasted in for you to review -- **it does not
 post to Instagram automatically.** That step stays manual and human,
 on purpose.
 
+## Publishing to the website (yankeesfarmreport.com)
+
+The weekly workflow also pushes both the weekly and month-to-date leaderboards
+to your Wix site automatically -- **no manual step, it publishes live as soon
+as the job runs** (this was a deliberate choice: unlike the Instagram Issue,
+which you review before posting, the website update is fully automatic).
+
+The one safety net that still applies: if `verify_data.py` finds that an
+entire team's data is missing (the clearest sign of a fetch failure, as
+opposed to a normal stat outcome), the push is **skipped automatically** and
+the site keeps showing last week's numbers instead of publishing something
+broken. You'll still get the review Issue either way, flagged accordingly.
+
+### One-time Wix setup
+
+1. **Create the Data Collection.** In the Wix Editor, go to CMS -> Create
+   Collection, name it exactly `LeaderboardEntries`, and add these fields:
+
+   | Field | Type |
+   |---|---|
+   | period | Text |
+   | category | Text |
+   | group | Text |
+   | label | Text |
+   | rank | Text (not Number -- ties are stored like `"T4"`) |
+   | sortOrder | Number |
+   | playerName | Text |
+   | team | Text |
+   | value | Text |
+   | isRate | Boolean |
+   | generatedAt | Date and Time |
+
+   Set collection permissions so visitors can **read** but not **write** --
+   the write only ever happens through the backend code below, which runs
+   with its own elevated permissions.
+
+2. **Add the backend function.** Copy `wix/backend/http-functions.js` from
+   this repo into your Wix site's own `src/backend/http-functions.js` (if you
+   already have an `http-functions.js` file for other endpoints, add the
+   `post_leaderboards` function into it rather than overwriting the file).
+
+3. **Add the shared secret.** In the Wix Editor: Settings -> Secrets Manager
+   -> add a secret named `YANKEESFARM_PUSH_SECRET`. Generate a long random
+   value for it (e.g. run `openssl rand -hex 32` in any terminal) and save
+   that same value for step 5 below. Treat it like a password.
+
+4. **Publish the site.** Wix http-functions only go live after a real
+   publish, not in preview mode.
+
+5. **Add GitHub secrets.** In your GitHub repo: Settings -> Secrets and
+   variables -> Actions -> New repository secret. Add two:
+   - `WIX_PUSH_ENDPOINT` = `https://www.yankeesfarmreport.com/_functions/leaderboards`
+     (swap in your actual domain; the path comes from the function being
+     named `post_leaderboards`)
+   - `WIX_PUSH_SECRET` = the same value you generated in step 3
+
+6. **Build the front-end display.** In the Wix Editor, add a Repeater (or
+   Table) element, connect it to the `LeaderboardEntries` collection, filter
+   by `period` ("weekly" or "monthly") and `category` (e.g. `"hitting_avg"`),
+   and sort by `sortOrder` ascending. Repeat for each stat category you want
+   a section for. This is a native Wix dataset binding -- no code needed on
+   this side once the collection is filled.
+
+### Testing it end-to-end
+
+Trigger the workflow manually (Actions tab -> Weekly Farm Stats -> Run
+workflow) and check three things afterward: the GitHub Issue it opens says
+"Website push ran," the `LeaderboardEntries` collection in your Wix CMS has
+fresh rows with today's `generatedAt`, and the actual page on
+yankeesfarmreport.com shows the update.
+
+### If you're on Wix's newer CLI/SDK setup instead of classic Velo
+
+Wix has a newer `@wix/data` SDK alongside the classic `wix-data` Velo module
+used above. If your site was built with the newer Wix CLI tooling rather
+than the in-browser Velo editor, the import syntax differs slightly --
+tell me and I'll adapt `http-functions.js` accordingly.
+
 ## Maintaining the prospect exclusion list
 
 `config/excluded_players.json` is keyed by MLB Stats API person ID (not

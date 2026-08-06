@@ -60,23 +60,76 @@ def top_n(rows, field, min_qual, qual_field, lower_is_better=False, n=10):
     return pool[:n]
 
 
+def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta):
+    """Structured leaderboard data -- the single source of truth consumed by
+    both the Markdown renderer (below) and push_to_wix.py. Keeping one
+    ranking implementation means the website and the Instagram drafts can
+    never quietly disagree with each other."""
+    for row in pitchers:
+        ip_val = row.get("inningsPitched")
+        if isinstance(ip_val, str) and "." in ip_val:
+            whole, frac = ip_val.split(".")
+            row["ip_outs"] = int(whole) * 3 + int(frac)
+        else:
+            row["ip_outs"] = 0
+
+    categories = {}
+
+    for field, label, is_rate in HITTING_CATEGORIES:
+        min_qual = min_ab if is_rate else 0
+        leaders = top_n(hitters, field, min_qual, "atBats" if is_rate else None)
+        categories[f"hitting_{field}"] = {
+            "label": label, "group": "hitting", "isRate": is_rate,
+            "entries": ranked_entries(leaders, field, is_rate),
+        }
+
+    for field, label, is_rate, lower in PITCHING_CATEGORIES:
+        min_qual = min_ip_outs if is_rate else 0
+        qual_field = "ip_outs" if is_rate else None
+        leaders = top_n(pitchers, field, min_qual, qual_field, lower_is_better=lower)
+        if field == "ip_outs":
+            entries = [
+                {"rank": str(i), "isTied": False, "name": r["name"],
+                 "team": TEAM_LABELS.get(r["team"], r["team"]), "value": fmt_ip(r["ip_outs"])}
+                for i, r in enumerate(leaders, 1)
+            ]
+        else:
+            entries = ranked_entries(leaders, field, is_rate)
+        categories[f"pitching_{field}"] = {"label": label, "group": "pitching", "isRate": is_rate, "entries": entries}
+
+    return {
+        "meta": meta,
+        "generatedAt": None,  # filled in by push_to_wix.py at send time (actual push time, not build time)
+        "categories": categories,
+    }
+
+
+def ranked_entries(leaders, field, is_rate):
+    values = [r[field] for r in leaders]
+    entries = []
+    for i, r in enumerate(leaders):
+        val = r[field]
+        rank = i + 1
+        while rank > 1 and values[rank - 2] == val:
+            rank -= 1
+        is_tied = values.count(val) > 1
+        entries.append({
+            "rank": (f"T{rank}" if is_tied else str(rank)),
+            "isTied": is_tied,
+            "name": r["name"],
+            "team": TEAM_LABELS.get(r["team"], r["team"]),
+            "value": fmt_rate(val, field) if is_rate else val,
+        })
+    return entries
+
+
 def render_table(leaders, field, is_rate):
     """Standard competition ranking (1, 2, 2, 4 -- ties share a rank, next
     rank skips ahead), with a 'T' prefix on tied rows so ties are obvious
     at a glance in the Instagram-ready output."""
     lines = ["| # | Player | Team | Value |", "|---|--------|------|-------|"]
-    values = [r[field] for r in leaders]
-    for i, r in enumerate(leaders):
-        val = r[field]
-        rank = i + 1  # position in the already-sorted list = competition rank
-        # walk back to find the true rank if this value ties an earlier one
-        while rank > 1 and values[rank - 2] == val:
-            rank -= 1
-        is_tied = values.count(val) > 1
-        prefix = f"T{rank}" if is_tied else str(rank)
-        display = fmt_rate(val, field) if is_rate else val
-        team = TEAM_LABELS.get(r["team"], r["team"])
-        lines.append(f"| {prefix} | {r['name']} | {team} | {display} |")
+    for e in ranked_entries(leaders, field, is_rate):
+        lines.append(f"| {e['rank']} | {e['name']} | {e['team']} | {e['value']} |")
     return "\n".join(lines)
 
 
@@ -123,6 +176,9 @@ def main():
     parser.add_argument("--file", required=True)
     parser.add_argument("--min-ab", type=int, default=15)
     parser.add_argument("--min-ip", type=float, default=15.0)
+    parser.add_argument("--json-out", action="store_true",
+                         help="Also write a _wix_payload.json alongside the markdown, "
+                              "for push_to_wix.py to consume.")
     args = parser.parse_args()
 
     with open(args.file) as f:
@@ -145,6 +201,20 @@ def main():
     with open(out_path, "w") as f:
         f.write("\n".join(report))
     print(f"Leaderboard written to {out_path}")
+
+    if args.json_out:
+        meta = {
+            "title": title,
+            "period": "monthly" if data.get("month") else "weekly",
+            "sourceFile": args.file,
+            "minAB": args.min_ab,
+            "minIP": args.min_ip,
+        }
+        payload = build_payload(data["hitters"], data["pitchers"], args.min_ab, min_ip_outs, meta)
+        json_path = args.file.replace(".json", "_wix_payload.json")
+        with open(json_path, "w") as f:
+            json.dump(payload, f, indent=2)
+        print(f"Wix payload written to {json_path}")
 
 
 if __name__ == "__main__":

@@ -69,15 +69,21 @@ def check_zero_rows(data):
 
 
 def check_team_coverage(data):
+    """Returns True if every affiliate has at least some data. A missing
+    team almost certainly means a fetch failure, not that nobody played --
+    this is treated as a HARD failure (non-zero exit) because publishing a
+    leaderboard with an entire team silently missing would be worse than
+    not publishing at all."""
     print("\n--- Team coverage check ---")
     seen_teams = {r["team"] for r in data["hitters"]} | {r["team"] for r in data["pitchers"]}
     missing = set(AFFILIATES.keys()) - seen_teams
     if missing:
-        print(f"  WARNING: no hitters or pitchers at all came back for: {sorted(missing)}. "
+        print(f"  HARD FAILURE: no hitters or pitchers at all came back for: {sorted(missing)}. "
               f"That almost certainly means a fetch failure for that team, "
               f"not that literally nobody played -- investigate before trusting this file.")
-    else:
-        print("  All four affiliates have at least some data in this snapshot.")
+        return False
+    print("  All four affiliates have at least some data in this snapshot.")
+    return True
 
 
 def main():
@@ -91,11 +97,16 @@ def main():
     check_game_counts(data)
     check_duplicates(data)
     check_zero_rows(data)
-    check_team_coverage(data)
+    coverage_ok = check_team_coverage(data)
 
     print("\nThese are automated sniff tests, not a guarantee of accuracy. "
           "Before posting monthly totals to Instagram, manually spot-check "
           "your top 2-3 names in each category against MiLB.com directly.")
+
+    if not coverage_ok:
+        print("\nExiting non-zero due to hard failure above -- calling workflow "
+              "should skip the website push step and still open the review issue.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
