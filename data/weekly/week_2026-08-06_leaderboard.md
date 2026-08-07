@@ -143,8 +143,8 @@
 | T1 | Brendan Beck | SWB | 0.00 |
 | T1 | Dom Hamel | SWB | 0.00 |
 | T1 | Bradley Hanner | SWB | 0.00 |
-| T9 | Edinzo Marquez | TAM | 2.08 |
-| T9 | Elmer Rodríguez | SWB | 2.08 |
+| 9 | Henry Lalane | HV | 1.93 |
+| 10 | Edinzo Marquez | TAM | 2.08 |
 
 ### WHIP
 | # | Player | Team | Value |

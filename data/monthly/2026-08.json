@@ -1561,6 +1561,27 @@
       "avg": 0.25
     },
     {
+      "id": "700649",
+      "name": "Henry Lalane",
+      "team": "hudson_valley",
+      "outs": 14,
+      "strikeOuts": 5,
+      "baseOnBalls": 1,
+      "hits": 5,
+      "atBats": 18,
+      "homeRuns": 0,
+      "earnedRuns": 1,
+      "runs": 3,
+      "wins": 0,
+      "losses": 0,
+      "saves": 0,
+      "inningsPitched": "4.2",
+      "era": 1.93,
+      "whip": 1.29,
+      "so9": 9.64,
+      "avg": 0.278
+    },
+    {
       "id": "815069",
       "name": "Andrew Landry",
       "team": "hudson_valley",

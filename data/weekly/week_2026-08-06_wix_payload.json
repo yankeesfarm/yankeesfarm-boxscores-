@@ -763,17 +763,17 @@
           "value": "0.00"
         },
         {
-          "rank": "T9",
-          "isTied": true,
-          "name": "Edinzo Marquez",
-          "team": "TAM",
-          "value": "2.08"
+          "rank": "9",
+          "isTied": false,
+          "name": "Henry Lalane",
+          "team": "HV",
+          "value": "1.93"
         },
         {
-          "rank": "T9",
-          "isTied": true,
-          "name": "Elmer Rodr\u00edguez",
-          "team": "SWB",
+          "rank": "10",
+          "isTied": false,
+          "name": "Edinzo Marquez",
+          "team": "TAM",
           "value": "2.08"
         }
       ]
