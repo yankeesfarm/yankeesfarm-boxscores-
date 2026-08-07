@@ -30,7 +30,8 @@
 | 7 | Jackson Lovich | HV | 0.467 |
 | 8 | Jace Avina | SOM | 0.464 |
 | 9 | Luis Durango | SOM | 0.450 |
-| 10 | Cole Gabrielson | SWB | 0.444 |
+| T10 | Cole Gabrielson | SWB | 0.444 |
+| T10 | Max Schuemann | SWB | 0.444 |
 
 ### Slugging Percentage
 | # | Player | Team | Value |
@@ -73,6 +74,11 @@
 | T5 | George Lombard Jr. | SWB | 6 |
 | T9 | Dax Kilby | TAM | 5 |
 | T9 | Yostin Pena | TAM | 5 |
+| T9 | Eric Genther | HV | 5 |
+| T9 | Willy Montero | HV | 5 |
+| T9 | Luis Durango | SOM | 5 |
+| T9 | Coby Morales | SOM | 5 |
+| T9 | Kevin Verde | SOM | 5 |
 
 ### Doubles
 | # | Player | Team | Value |
@@ -87,6 +93,25 @@
 | T7 | David McCann | TAM | 1 |
 | T7 | Hans Montero | TAM | 1 |
 | T7 | Luis Puello | TAM | 1 |
+| T7 | Christofer Reyes | TAM | 1 |
+| T7 | Ediel Rivera | TAM | 1 |
+| T7 | Robbie Burnett | HV | 1 |
+| T7 | Core Jackson | HV | 1 |
+| T7 | Willy Montero | HV | 1 |
+| T7 | Kyle West | HV | 1 |
+| T7 | Jackson Castillo | SOM | 1 |
+| T7 | Luis Durango | SOM | 1 |
+| T7 | DJ Gladney | SOM | 1 |
+| T7 | Coby Morales | SOM | 1 |
+| T7 | Josh Moylan | SOM | 1 |
+| T7 | Manuel Palencia | SOM | 1 |
+| T7 | Miguel Palma | SOM | 1 |
+| T7 | Kenedy Corona | SWB | 1 |
+| T7 | Cole Gabrielson | SWB | 1 |
+| T7 | Tyler Hardman | SWB | 1 |
+| T7 | George Lombard Jr. | SWB | 1 |
+| T7 | Max Schuemann | SWB | 1 |
+| T7 | Braden Shewmake | SWB | 1 |
 
 ### Home Runs
 | # | Player | Team | Value |
@@ -101,6 +126,10 @@
 | T2 | Camden Troyer | HV | 1 |
 | T2 | Kyle West | HV | 1 |
 | T2 | Connor McGinnis | SOM | 1 |
+| T2 | Manuel Palencia | SOM | 1 |
+| T2 | Kevin Verde | SOM | 1 |
+| T2 | George Lombard Jr. | SWB | 1 |
+| T2 | Max Schuemann | SWB | 1 |
 
 ### RBI
 | # | Player | Team | Value |
@@ -129,6 +158,18 @@
 | T7 | Bryce Martin-Grudzielanek | TAM | 1 |
 | T7 | Yostin Pena | TAM | 1 |
 | T7 | Anthony Potestio | TAM | 1 |
+| T7 | Robbie Burnett | HV | 1 |
+| T7 | Eric Genther | HV | 1 |
+| T7 | Josue Gonzalez | HV | 1 |
+| T7 | Core Jackson | HV | 1 |
+| T7 | Camden Troyer | HV | 1 |
+| T7 | Kyle West | HV | 1 |
+| T7 | Jace Avina | SOM | 1 |
+| T7 | Coby Morales | SOM | 1 |
+| T7 | Tyler Hardman | SWB | 1 |
+| T7 | George Lombard Jr. | SWB | 1 |
+| T7 | Ernesto Martinez Jr. | SWB | 1 |
+| T7 | Braden Shewmake | SWB | 1 |
 
 ## PITCHING LEADERS
 
@@ -144,7 +185,8 @@
 | T1 | Dom Hamel | SWB | 0.00 |
 | T1 | Bradley Hanner | SWB | 0.00 |
 | 9 | Henry Lalane | HV | 1.93 |
-| 10 | Edinzo Marquez | TAM | 2.08 |
+| T10 | Edinzo Marquez | TAM | 2.08 |
+| T10 | Elmer Rodríguez | SWB | 2.08 |
 
 ### WHIP
 | # | Player | Team | Value |
@@ -173,6 +215,8 @@
 | 8 | Justin West | TAM | 5.1 |
 | 9 | Wyatt Parliament | TAM | 5.0 |
 | 10 | Allen Facundo | HV | 4.2 |
+| 11 | Henry Lalane | HV | 4.2 |
+| 12 | Alexander Cornielle | SWB | 4.2 |
 
 ### Strikeouts
 | # | Player | Team | Value |
@@ -186,7 +230,9 @@
 | T7 | Rory Fox | SOM | 6 |
 | T7 | Geoffrey Gilbert | SOM | 6 |
 | T7 | Xavier Rivas | SOM | 6 |
-| 10 | Matthew Tippie | TAM | 5 |
+| T10 | Matthew Tippie | TAM | 5 |
+| T10 | Henry Lalane | HV | 5 |
+| T10 | Cade Smith | SOM | 5 |
 
 ### AVG Against
 | # | Player | Team | Value |
