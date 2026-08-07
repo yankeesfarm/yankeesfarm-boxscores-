@@ -53,7 +53,7 @@ def outs_to_ip(outs):
 
 
 def load_weeks_in_month(script_dir, year_month):
-    files = sorted(glob.glob(os.path.join(script_dir, WEEKLY_DIR, "week_*.json")))
+    files = sorted(glob.glob(os.path.join(script_dir, WEEKLY_DIR, "week_????-??-??.json")))
     weeks = []
     for path in files:
         with open(path) as f:
