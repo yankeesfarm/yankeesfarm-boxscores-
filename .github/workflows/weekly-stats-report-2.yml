@@ -1,0 +1,84 @@
+name: Weekly Stats Report
+
+on:
+  schedule:
+    # 11 PM ET on Sunday. Cron is UTC and does NOT auto-adjust for daylight saving:
+    #   - EST (winter, roughly early Nov-early Mar): 11 PM ET = 4:00 AM UTC Monday -> '0 4 * * 1'
+    #   - EDT (summer, roughly mid Mar-early Nov):    11 PM ET = 3:00 AM UTC Monday -> '0 3 * * 1'
+    # This is set for EST. Flip to '0 3 * * 1' when EDT is in effect.
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  weekly-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch weekly stats
+        run: python3 fetch_weekly_stats.py
+
+      - name: Verify data quality
+        id: verify
+        run: |
+          set +e
+          LATEST=$(ls -t data/weekly/*.json | head -1)
+          python3 verify_data.py --file "$LATEST" | tee verify_output.txt
+          EXIT_CODE=${PIPESTATUS[0]}
+          echo "exit_code=$EXIT_CODE" >> "$GITHUB_OUTPUT"
+          set -e
+          exit 0
+
+      - name: Generate weekly leaderboard
+        run: |
+          LATEST=$(ls -t data/weekly/*.json | head -1)
+          python3 generate_leaderboard.py --file "$LATEST" --min-ab 5 --min-ip 3 --json-out
+
+      - name: Accumulate month-to-date
+        run: |
+          MONTH=$(date -u +%Y-%m)
+          python3 accumulate_monthly.py --month "$MONTH"
+          if [ -f "data/monthly/${MONTH}.json" ]; then
+            python3 generate_leaderboard.py --file "data/monthly/${MONTH}.json" --min-ab 15 --min-ip 15 --json-out
+          fi
+
+      - name: Commit results
+        run: |
+          git config user.name "yankeesfarm-bot"
+          git config user.email "bot@yankeesfarmreport.com"
+          git add data/
+          git commit -m "Weekly stats update: $(date -u +%Y-%m-%d)" || echo "No changes to commit"
+          git push
+
+      - name: Push weekly leaderboard to website
+        if: steps.verify.outputs.exit_code == '0'
+        env:
+          WIX_PUSH_ENDPOINT: ${{ secrets.WIX_PUSH_ENDPOINT }}
+          WIX_PUSH_SECRET: ${{ secrets.WIX_PUSH_SECRET }}
+        run: |
+          LATEST=$(ls -t data/weekly/*_wix_payload.json | head -1)
+          python3 push_to_wix.py --file "$LATEST" --period weekly
+
+      - name: Push month-to-date leaderboard to website
+        if: steps.verify.outputs.exit_code == '0'
+        env:
+          WIX_PUSH_ENDPOINT: ${{ secrets.WIX_PUSH_ENDPOINT }}
+          WIX_PUSH_SECRET: ${{ secrets.WIX_PUSH_SECRET }}
+        run: |
+          MONTH=$(date -u +%Y-%m)
+          if [ -f "data/monthly/${MONTH}_wix_payload.json" ]; then
+            python3 push_to_wix.py --file "data/monthly/${MONTH}_wix_payload.json" --period monthly
+          fi
