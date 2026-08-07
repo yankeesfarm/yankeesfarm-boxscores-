@@ -53,11 +53,26 @@ def fmt_ip(outs):
 
 
 def top_n(rows, field, min_qual, qual_field, lower_is_better=False, n=10):
+    """Returns the top n ranked spots -- NOT necessarily exactly n players.
+    If multiple players are tied for the last qualifying spot, all of them
+    are included, matching the tie labels ("T7", "T4", etc.) that
+    ranked_entries() below applies. A hard cutoff at position n would
+    otherwise arbitrarily drop some players tied with others who made the
+    list, purely based on array order -- that's the bug this fixes."""
     pool = [r for r in rows if r.get(field) is not None]
     if qual_field:
         pool = [r for r in pool if r.get(qual_field, 0) >= min_qual]
     pool.sort(key=lambda r: r[field], reverse=not lower_is_better)
-    return pool[:n]
+    if len(pool) <= n:
+        return pool
+    cutoff_value = pool[n - 1][field]
+    extended = pool[:n]
+    for r in pool[n:]:
+        if r[field] == cutoff_value:
+            extended.append(r)
+        else:
+            break
+    return extended
 
 
 def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta):
