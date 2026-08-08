@@ -60,14 +60,21 @@ def get_player_stats_by_date_range(person_id, group, sport_id, season, start_dat
     return splits[0]["stat"]
 
 
-def get_team_schedule(team_id, start_date, end_date):
+def get_team_schedule(team_id, start_date, end_date, sport_id=None):
     """Used by verify_data.py to sanity-check completed-game counts against
-    what the stats pull actually captured."""
+    what the stats pull actually captured (narrow, ~1 week windows, so the
+    default multi-level sportId is fine there).
+
+    fetch_season_stats.py also uses this to find a team's actual Opening
+    Day, searching back several months -- and MLB's API rejects date
+    ranges over 45 days when multiple sportIds are requested at once. Pass
+    this team's own specific sport_id (already known from config/affiliates.py)
+    to search a single level instead, which isn't subject to that limit."""
     data = _get("/schedule", {
         "teamId": team_id,
         "startDate": start_date,
         "endDate": end_date,
-        "sportId": "11,12,13,14,16",
+        "sportId": sport_id if sport_id else "11,12,13,14,16",
     })
     games = []
     for d in data.get("dates", []):
