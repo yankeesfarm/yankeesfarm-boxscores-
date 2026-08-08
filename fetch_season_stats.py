@@ -117,12 +117,16 @@ def recompute_pitching_rates(row, ip_outs):
     return row
 
 
-def find_opening_day(team_id, end_date):
+def find_opening_day(team_id, sport_id, end_date):
     """The date of this team's first completed game of the season, found by
     asking the Stats API for its real schedule -- not assumed from a
     generic 'MiLB season starts around late March' rule of thumb, since
-    that varies by level and we have a source of truth available."""
-    games = get_team_schedule(team_id, SEARCH_FROM, end_date)
+    that varies by level and we have a source of truth available.
+
+    Queries this team's own single sport_id rather than all levels at once
+    -- MLB's API rejects date ranges over 45 days (this search spans
+    several months) when multiple sportIds are requested together."""
+    games = get_team_schedule(team_id, SEARCH_FROM, end_date, sport_id=sport_id)
     if not games:
         return None
     dates = [g["gameDate"][:10] for g in games if g.get("gameDate")]
@@ -130,7 +134,7 @@ def find_opening_day(team_id, end_date):
 
 
 def fetch_team_season(affiliate_key, cfg, end_date):
-    opening_day = find_opening_day(cfg["team_id"], end_date)
+    opening_day = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
     if not opening_day:
         print(f"  WARNING: could not find any completed games for "
               f"{cfg['display_name']} between {SEARCH_FROM} and {end_date}. "
