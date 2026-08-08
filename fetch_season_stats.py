@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""
+Pull TRUE season-to-date stats for all four affiliates, starting from each
+team's actual Opening Day -- not from summing weekly snapshot files.
+
+Why this exists: accumulate_monthly.py only ever sums the weekly JSON files
+this pipeline itself has produced. Since the pipeline didn't start running
+until August, that approach could only ever reflect "the season since we
+started tracking it," not the real season back to Opening Day in
+late March/early April. This script closes that gap by asking the MLB Stats
+API directly for each player's full-season numbers, the same way a single
+"season stats" page on MiLB.com would show them.
+
+Opening Day is NOT hardcoded here. Each affiliate plays in a different level
+(AAA/AA/High-A/Single-A) and those levels start on different dates in a given
+year -- so this script asks the Stats API for each team's own schedule and
+uses the date of that team's actual first completed game as the start of its
+season window. That's the one number here I was not willing to guess or pull
+from a news article -- it comes from the same authoritative source as
+everything else in this pipeline.
+
+Usage:
+    python fetch_season_stats.py
+    python fetch_season_stats.py --end 2026-08-10   # re-run for a past cutoff
+"""
+import argparse
+import json
+import os
+import sys
+from datetime import date, timedelta
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from config.affiliates import AFFILIATES
+from lib.mlb_api import get_active_roster, get_player_stats_by_date_range, get_team_schedule
+from lib.dedupe import dedupe_by_id
+
+SEASON = 2026
+OUTPUT_DIR = "data/monthly"
+
+# Earliest plausible date to search from when hunting for a team's actual
+# Opening Day. Deliberately well before any real MiLB season starts, so a
+# team's first completed game found in this window is genuinely game 1 --
+# not an artifact of picking a search window that happens to clip the start
+# of the season.
+SEARCH_FROM = f"{SEASON}-02-01"
+
+HITTING_COUNT_FIELDS = [
+    "atBats", "hits", "doubles", "triples", "homeRuns", "rbi",
+    "baseOnBalls", "hitByPitch", "sacFlies", "stolenBases", "caughtStealing", "strikeOuts",
+]
+HITTING_RATE_FIELDS = ["avg", "obp", "slg", "ops"]
+HITTING_FIELDS = HITTING_COUNT_FIELDS + HITTING_RATE_FIELDS
+
+PITCHING_COUNT_FIELDS = [
+    "strikeOuts", "baseOnBalls", "hits", "atBats", "homeRuns",
+    "earnedRuns", "runs", "wins", "losses", "saves",
+]
+PITCHING_RATE_FIELDS = ["era", "whip", "avg"]
+PITCHING_FIELDS = ["inningsPitched"] + PITCHING_COUNT_FIELDS + PITCHING_RATE_FIELDS
+
+
+def _clean_row(stat, fields, count_fields, rate_fields):
+    row = {}
+    for fld in fields:
+        raw = stat.get(fld)
+        if fld in rate_fields:
+            try:
+                row[fld] = float(raw) if raw not in (None, "-", "") else 0.0
+            except (TypeError, ValueError):
+                row[fld] = 0.0
+        elif fld in count_fields:
+            try:
+                row[fld] = int(raw) if raw not in (None, "-", "") else 0
+            except (TypeError, ValueError):
+                row[fld] = 0
+        else:
+            row[fld] = raw
+    return row
+
+
+def recompute_hitting_rates(row):
+    """Recompute avg/obp/slg/ops from the raw counting stats rather than
+    trusting whatever the Stats API's own byDateRange rate-stat fields say.
+    This matches accumulate_monthly.py's own rule (rate stats are always
+    derived, never trusted pre-aggregated) -- and it turns out that rule
+    matters here too: for an unusually wide, season-spanning date range,
+    the API's own precomputed rate fields came back wrong (values like
+    .054 for a full-season average), while the underlying counting stats
+    (hits, at-bats, etc.) are simple sums and much more trustworthy."""
+    ab = row["atBats"]
+    h = row["hits"]
+    bb = row["baseOnBalls"]
+    hbp = row["hitByPitch"]
+    sf = row["sacFlies"]
+    doubles, triples, hr = row["doubles"], row["triples"], row["homeRuns"]
+    singles = h - doubles - triples - hr
+    tb = singles + 2 * doubles + 3 * triples + 4 * hr
+
+    row["avg"] = round(h / ab, 3) if ab else 0.0
+    pa_ob = ab + bb + hbp + sf
+    row["obp"] = round((h + bb + hbp) / pa_ob, 3) if pa_ob else 0.0
+    row["slg"] = round(tb / ab, 3) if ab else 0.0
+    row["ops"] = round(row["obp"] + row["slg"], 3)
+    return row
+
+
+def recompute_pitching_rates(row, ip_outs):
+    """Same principle as recompute_hitting_rates() -- never trust the API's
+    own era/whip/so9/avg-against for a wide date range, always derive from
+    the raw counting stats and innings-as-outs."""
+    ip_decimal = ip_outs / 3
+    row["era"] = round((row["earnedRuns"] * 9) / ip_decimal, 2) if ip_decimal else 0.0
+    row["whip"] = round((row["hits"] + row["baseOnBalls"]) / ip_decimal, 2) if ip_decimal else 0.0
+    row["so9"] = round((row["strikeOuts"] * 9) / ip_decimal, 2) if ip_decimal else 0.0
+    row["avg"] = round(row["hits"] / row["atBats"], 3) if row["atBats"] else 0.0
+    return row
+
+
+def find_opening_day(team_id, end_date):
+    """The date of this team's first completed game of the season, found by
+    asking the Stats API for its real schedule -- not assumed from a
+    generic 'MiLB season starts around late March' rule of thumb, since
+    that varies by level and we have a source of truth available."""
+    games = get_team_schedule(team_id, SEARCH_FROM, end_date)
+    if not games:
+        return None
+    dates = [g["gameDate"][:10] for g in games if g.get("gameDate")]
+    return min(dates) if dates else None
+
+
+def fetch_team_season(affiliate_key, cfg, end_date):
+    opening_day = find_opening_day(cfg["team_id"], end_date)
+    if not opening_day:
+        print(f"  WARNING: could not find any completed games for "
+              f"{cfg['display_name']} between {SEARCH_FROM} and {end_date}. "
+              f"Skipping this team rather than guessing a start date.")
+        return [], [], None
+
+    roster = get_active_roster(cfg["team_id"], SEASON)
+    hitters, pitchers = [], []
+    for entry in roster:
+        person = entry["person"]
+        pid = str(person["id"])
+        name = person["fullName"]
+
+        h_stat = get_player_stats_by_date_range(
+            pid, "hitting", cfg["sport_id"], SEASON, opening_day, end_date
+        )
+        if h_stat and int(h_stat.get("atBats", 0) or 0) > 0:
+            row = {"id": pid, "name": name, "team": affiliate_key}
+            row.update(_clean_row(h_stat, HITTING_FIELDS, HITTING_COUNT_FIELDS, HITTING_RATE_FIELDS))
+            row = recompute_hitting_rates(row)
+            hitters.append(row)
+
+        p_stat = get_player_stats_by_date_range(
+            pid, "pitching", cfg["sport_id"], SEASON, opening_day, end_date
+        )
+        ip_raw = p_stat.get("inningsPitched") if p_stat else None
+        if p_stat and ip_raw and str(ip_raw) not in ("0", "0.0"):
+            row = {"id": pid, "name": name, "team": affiliate_key}
+            row.update(_clean_row(p_stat, PITCHING_FIELDS, PITCHING_COUNT_FIELDS, PITCHING_RATE_FIELDS))
+            whole, _, frac = str(ip_raw).partition(".")
+            ip_outs = (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+            row = recompute_pitching_rates(row, ip_outs)
+            pitchers.append(row)
+
+    return hitters, pitchers, opening_day
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--end", help="YYYY-MM-DD, defaults to yesterday")
+    args = parser.parse_args()
+
+    end_date = date.fromisoformat(args.end) if args.end else date.today() - timedelta(days=1)
+    end_date_str = end_date.isoformat()
+
+    all_hitters, all_pitchers = [], []
+    opening_days = {}
+    any_team_failed = False
+
+    for key, cfg in AFFILIATES.items():
+        print(f"Finding real Opening Day for {cfg['display_name']}...")
+        hitters, pitchers, opening_day = fetch_team_season(key, cfg, end_date_str)
+        if opening_day is None:
+            any_team_failed = True
+            continue
+        print(f"  Opening Day: {opening_day}. Pulling {opening_day} -> {end_date_str}...")
+        print(f"  {len(hitters)} hitters, {len(pitchers)} pitchers with season activity.")
+        opening_days[key] = opening_day
+        all_hitters.extend(hitters)
+        all_pitchers.extend(pitchers)
+
+    all_hitters = dedupe_by_id(all_hitters, "hitter")
+    all_pitchers = dedupe_by_id(all_pitchers, "pitcher")
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(script_dir, OUTPUT_DIR)
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Kept as YYYY-MM to match the file naming generate_leaderboard.py and
+    # push_to_wix.py already expect -- this is genuinely season-to-date data,
+    # not calendar-month data, despite the filename shape.
+    month_label = end_date.strftime("%Y-%m")
+    out_path = os.path.join(output_dir, f"{month_label}.json")
+    with open(out_path, "w") as f:
+        json.dump({
+            "month": month_label,
+            "season_to_date": True,
+            "opening_days_used": opening_days,
+            "through_date": end_date_str,
+            "hitters": all_hitters,
+            "pitchers": all_pitchers,
+        }, f, indent=2)
+
+    print(f"\nSaved {len(all_hitters)} hitters and {len(all_pitchers)} pitchers to {out_path}")
+    print(f"Opening Days used per team: {opening_days}")
+    if any_team_failed:
+        print("WARNING: at least one team's Opening Day could not be found -- "
+              "that team's players are missing from this file entirely. "
+              "Check the warnings above before trusting this as complete.")
+        sys.exit(1)
+    print("Next: run verify_data.py on this file BEFORE trusting the leaderboard.")
+
+
+if __name__ == "__main__":
+    main()
