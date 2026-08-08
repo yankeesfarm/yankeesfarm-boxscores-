@@ -47,10 +47,10 @@ jobs:
           LATEST=$(ls -t data/weekly/*.json | head -1)
           python3 generate_leaderboard.py --file "$LATEST" --min-ab 5 --min-ip 3 --json-out
 
-      - name: Accumulate month-to-date
+      - name: Pull true season-to-date stats (from real Opening Day)
         run: |
           MONTH=$(date -u +%Y-%m)
-          python3 accumulate_monthly.py --month "$MONTH"
+          python3 fetch_season_stats.py
           if [ -f "data/monthly/${MONTH}.json" ]; then
             python3 generate_leaderboard.py --file "data/monthly/${MONTH}.json" --min-ab 15 --min-ip 15 --json-out
           fi
