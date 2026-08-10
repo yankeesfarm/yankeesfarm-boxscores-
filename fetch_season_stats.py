@@ -33,7 +33,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config.affiliates import AFFILIATES, ROOKIE_AFFILIATES
 from lib.mlb_api import get_active_roster, get_player_stats_by_date_range, get_team_schedule
-from lib.dedupe import dedupe_by_id
 
 SEASON = 2026
 OUTPUT_DIR = "data/monthly"
@@ -117,6 +116,18 @@ def recompute_pitching_rates(row, ip_outs):
     return row
 
 
+def load_traded_away():
+    """Players who have left the organization entirely via trade -- see
+    config/traded_away_players.json for the full explanation. Excluded at
+    every roster iteration in main(), for both the four full-season
+    affiliates and the three rookie-level ones, so a traded player never
+    appears on any leaderboard regardless of level."""
+    config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config", "traded_away_players.json")
+    with open(config_path) as f:
+        raw = json.load(f)
+    return {k for k in raw.keys() if not k.startswith("_")}
+
+
 def find_opening_day(team_id, sport_id, end_date):
     """The date of this team's first completed game of the season, found by
     asking the Stats API for its real schedule -- not assumed from a
@@ -133,7 +144,7 @@ def find_opening_day(team_id, sport_id, end_date):
     return min(dates) if dates else None
 
 
-def fetch_team_season(affiliate_key, cfg, end_date):
+def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
     opening_day = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
     if not opening_day:
         print(f"  WARNING: could not find any completed games for "
@@ -146,6 +157,8 @@ def fetch_team_season(affiliate_key, cfg, end_date):
     for entry in roster:
         person = entry["person"]
         pid = str(person["id"])
+        if pid in traded_away:
+            continue
         name = person["fullName"]
 
         h_stat = get_player_stats_by_date_range(
@@ -172,7 +185,7 @@ def fetch_team_season(affiliate_key, cfg, end_date):
     return hitters, pitchers, opening_day
 
 
-def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date):
+def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date, traded_away):
     """Same idea as fetch_team_season(), but hitting stats only for the
     DSL/FCL rookie-level affiliates -- these hitters only ever feed the six
     counting-stat categories (see ROOKIE_LEVEL_INCLUDED_FIELDS in
@@ -191,6 +204,8 @@ def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date):
     for entry in roster:
         person = entry["person"]
         pid = str(person["id"])
+        if pid in traded_away:
+            continue
         name = person["fullName"]
 
         h_stat = get_player_stats_by_date_range(
@@ -213,13 +228,16 @@ def main():
     end_date = date.fromisoformat(args.end) if args.end else date.today() - timedelta(days=1)
     end_date_str = end_date.isoformat()
 
+    traded_away = load_traded_away()
+    print(f"Loaded {len(traded_away)} traded-away player IDs to exclude entirely.")
+
     all_hitters, all_pitchers = [], []
     opening_days = {}
     any_team_failed = False
 
     for key, cfg in AFFILIATES.items():
         print(f"Finding real Opening Day for {cfg['display_name']}...")
-        hitters, pitchers, opening_day = fetch_team_season(key, cfg, end_date_str)
+        hitters, pitchers, opening_day = fetch_team_season(key, cfg, end_date_str, traded_away)
         if opening_day is None:
             any_team_failed = True
             continue
@@ -229,18 +247,18 @@ def main():
         all_hitters.extend(hitters)
         all_pitchers.extend(pitchers)
 
-    # NOTE: hitters intentionally NOT deduped here anymore -- a player who
-    # played multiple affiliate levels this season shows up once per level,
-    # each row representing his real stats AT THAT LEVEL, not a duplicate.
-    # generate_leaderboard.py's combine_by_id() sums these correctly at
-    # read time. See lib/dedupe.py for the full explanation.
-    all_pitchers = dedupe_by_id(all_pitchers, "pitcher")
+    # NOTE: hitters and pitchers intentionally NOT deduped here anymore --
+    # a player who played multiple affiliate levels this season shows up
+    # once per level, each row representing his real stats AT THAT LEVEL,
+    # not a duplicate. generate_leaderboard.py's combine_by_id() sums these
+    # correctly at read time, for both hitters and pitchers. See
+    # lib/dedupe.py for the full explanation.
 
     all_rookie_hitters = []
     rookie_opening_days = {}
     for key, cfg in ROOKIE_AFFILIATES.items():
         print(f"Finding real Opening Day for {cfg['display_name']}...")
-        rookie_hitters, opening_day = fetch_rookie_team_season_hitting_only(key, cfg, end_date_str)
+        rookie_hitters, opening_day = fetch_rookie_team_season_hitting_only(key, cfg, end_date_str, traded_away)
         if opening_day is None:
             continue
         print(f"  Opening Day: {opening_day}. Pulling {opening_day} -> {end_date_str}...")
