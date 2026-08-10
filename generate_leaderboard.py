@@ -13,7 +13,16 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.dedupe import dedupe_by_id
+from lib.dedupe import dedupe_by_id, combine_by_id
+
+# Raw counting fields to sum when combine_by_id() merges a player's stats
+# across multiple affiliate levels (promotions/demotions, or a rookie-level
+# + full-season split). Matches the field names fetch_weekly_stats.py and
+# fetch_season_stats.py already write into each hitter row.
+HITTING_COUNT_FIELDS = [
+    "atBats", "hits", "doubles", "triples", "homeRuns", "rbi",
+    "baseOnBalls", "hitByPitch", "sacFlies", "stolenBases", "caughtStealing", "strikeOuts",
+]
 
 HITTING_CATEGORIES = [
     ("avg", "Batting Average", True),
@@ -22,10 +31,18 @@ HITTING_CATEGORIES = [
     ("ops", "OPS", True),
     ("hits", "Hits", False),
     ("doubles", "Doubles", False),
+    ("triples", "Triples", False),
     ("homeRuns", "Home Runs", False),
     ("rbi", "RBI", False),
     ("stolenBases", "Stolen Bases", False),
 ]
+
+# These six counting categories also include DSL/FCL (Rookie-level) hitters,
+# on top of the four full-season affiliates. Rate categories (AVG/OBP/SLG/
+# OPS) and all pitching categories do NOT -- DSL/FCL play much shorter,
+# unusually-scheduled seasons, so a rate stat there can be wildly misleading
+# on a tiny sample, while a raw counting total is still meaningful.
+ROOKIE_LEVEL_INCLUDED_FIELDS = {"hits", "doubles", "triples", "homeRuns", "rbi", "stolenBases"}
 
 # field, label, is_rate_stat, lower_is_better
 PITCHING_CATEGORIES = [
@@ -39,7 +56,34 @@ PITCHING_CATEGORIES = [
 
 TEAM_LABELS = {
     "tampa": "TAM", "hudson_valley": "HV", "somerset": "SOM", "scranton_wb": "SWB",
+    "fcl_yankees": "FCL", "dsl_yankees": "DSL-Y", "dsl_bombers": "DSL-B",
 }
+
+
+def recompute_hitting_rates(row):
+    """Same principle as fetch_season_stats.py's version of this function:
+    never trust a rate stat that wasn't derived from this row's own actual
+    counting stats. This matters here specifically because combine_by_id()
+    just summed a promoted player's at-bats/hits across multiple levels --
+    his OLD avg/obp/slg/ops (from whichever single team's row happened to
+    survive before) are now stale and must be recalculated from the
+    combined totals, or his batting average would still reflect only one
+    of the levels he played at."""
+    ab = row.get("atBats", 0)
+    h = row.get("hits", 0)
+    bb = row.get("baseOnBalls", 0)
+    hbp = row.get("hitByPitch", 0)
+    sf = row.get("sacFlies", 0)
+    doubles, triples, hr = row.get("doubles", 0), row.get("triples", 0), row.get("homeRuns", 0)
+    singles = h - doubles - triples - hr
+    tb = singles + 2 * doubles + 3 * triples + 4 * hr
+
+    row["avg"] = round(h / ab, 3) if ab else 0.0
+    pa_ob = ab + bb + hbp + sf
+    row["obp"] = round((h + bb + hbp) / pa_ob, 3) if pa_ob else 0.0
+    row["slg"] = round(tb / ab, 3) if ab else 0.0
+    row["ops"] = round(row["obp"] + row["slg"], 3)
+    return row
 
 
 def fmt_rate(val, field):
@@ -75,11 +119,26 @@ def top_n(rows, field, min_qual, qual_field, lower_is_better=False, n=10):
     return extended
 
 
-def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta):
+def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta, rookie_hitters=None):
     """Structured leaderboard data -- the single source of truth consumed by
     both the Markdown renderer (below) and push_to_wix.py. Keeping one
     ranking implementation means the website and the Instagram drafts can
-    never quietly disagree with each other."""
+    never quietly disagree with each other.
+
+    rookie_hitters (DSL/FCL) are merged in ONLY for the six counting
+    categories in ROOKIE_LEVEL_INCLUDED_FIELDS -- rate categories and all
+    pitching categories use `hitters` alone.
+
+    That merge uses combine_by_id(), not a plain list concatenation: a
+    player who played at both a rookie-level affiliate AND a full-season
+    affiliate (e.g. promoted from FCL to Tampa) exists as two separate
+    partial rows -- one in each list. Concatenating them would either show
+    him twice with two different partial totals, or let each partial total
+    individually miss a leaderboard cutoff his TRUE combined total would
+    have made. combine_by_id() unifies him into one row first."""
+    rookie_hitters = rookie_hitters or []
+    counting_pool = combine_by_id(hitters + rookie_hitters, HITTING_COUNT_FIELDS,
+                                   "hitters (full-season + rookie-level combined)")
     for row in pitchers:
         ip_val = row.get("inningsPitched")
         if isinstance(ip_val, str) and "." in ip_val:
@@ -92,7 +151,8 @@ def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta):
 
     for field, label, is_rate in HITTING_CATEGORIES:
         min_qual = min_ab if is_rate else 0
-        leaders = top_n(hitters, field, min_qual, "atBats" if is_rate else None)
+        pool = counting_pool if field in ROOKIE_LEVEL_INCLUDED_FIELDS else hitters
+        leaders = top_n(pool, field, min_qual, "atBats" if is_rate else None)
         categories[f"hitting_{field}"] = {
             "label": label, "group": "hitting", "isRate": is_rate,
             "entries": ranked_entries(leaders, field, is_rate),
@@ -148,11 +208,15 @@ def render_table(leaders, field, is_rate):
     return "\n".join(lines)
 
 
-def render_hitting(rows, min_ab):
+def render_hitting(rows, min_ab, rookie_rows=None):
+    rookie_rows = rookie_rows or []
+    counting_pool = combine_by_id(rows + rookie_rows, HITTING_COUNT_FIELDS,
+                                   "hitters (full-season + rookie-level combined)")
     out = ["## HITTING LEADERS\n"]
     for field, label, is_rate in HITTING_CATEGORIES:
         min_qual = min_ab if is_rate else 0
-        leaders = top_n(rows, field, min_qual, "atBats" if is_rate else None)
+        pool = counting_pool if field in ROOKIE_LEVEL_INCLUDED_FIELDS else rows
+        leaders = top_n(pool, field, min_qual, "atBats" if is_rate else None)
         out.append(f"### {label}")
         out.append(render_table(leaders, field, is_rate))
         out.append("")
@@ -199,15 +263,23 @@ def main():
     with open(args.file) as f:
         data = json.load(f)
 
-    data["hitters"] = dedupe_by_id(data["hitters"], "hitter")
+    # combine_by_id() (not dedupe_by_id()) for hitters: a player promoted
+    # through multiple affiliate levels this season needs his stats SUMMED
+    # across every level, not just the first one this list happens to
+    # contain. Rates are then recalculated from those combined counts, or
+    # his batting average would still reflect only one level.
+    data["hitters"] = combine_by_id(data["hitters"], HITTING_COUNT_FIELDS, "hitters")
+    for row in data["hitters"]:
+        recompute_hitting_rates(row)
     data["pitchers"] = dedupe_by_id(data["pitchers"], "pitcher")
+    rookie_hitters = combine_by_id(data.get("rookie_hitters", []), HITTING_COUNT_FIELDS, "rookie hitters")
 
     min_ip_outs = int(round(args.min_ip * 3))
 
     title = data.get("month") or f"{data.get('start_date')} to {data.get('end_date')}"
     report = [f"# YankeesFarm Stat Leaders — {title}", f"**Source file:** {args.file}",
               f"**Qualifying minimums:** {args.min_ab} AB / {args.min_ip} IP", ""]
-    report.append(render_hitting(data["hitters"], args.min_ab))
+    report.append(render_hitting(data["hitters"], args.min_ab, rookie_hitters))
     report.append(render_pitching(data["pitchers"], min_ip_outs))
     report.append("---")
     report.append("*Auto-generated. Verify top names per category against MiLB.com before posting.*")
@@ -225,7 +297,8 @@ def main():
             "minAB": args.min_ab,
             "minIP": args.min_ip,
         }
-        payload = build_payload(data["hitters"], data["pitchers"], args.min_ab, min_ip_outs, meta)
+        payload = build_payload(data["hitters"], data["pitchers"], args.min_ab, min_ip_outs, meta,
+                                 rookie_hitters=rookie_hitters)
         json_path = args.file.replace(".json", "_wix_payload.json")
         with open(json_path, "w") as f:
             json.dump(payload, f, indent=2)
