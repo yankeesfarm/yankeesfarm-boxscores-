@@ -31,7 +31,7 @@ from datetime import date, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config.affiliates import AFFILIATES
+from config.affiliates import AFFILIATES, ROOKIE_AFFILIATES
 from lib.mlb_api import get_active_roster, get_player_stats_by_date_range, get_team_schedule
 from lib.dedupe import dedupe_by_id
 
@@ -172,6 +172,39 @@ def fetch_team_season(affiliate_key, cfg, end_date):
     return hitters, pitchers, opening_day
 
 
+def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date):
+    """Same idea as fetch_team_season(), but hitting stats only for the
+    DSL/FCL rookie-level affiliates -- these hitters only ever feed the six
+    counting-stat categories (see ROOKIE_LEVEL_INCLUDED_FIELDS in
+    generate_leaderboard.py), so there's no reason to fetch pitching stats
+    here, or to skip a team just because its own Opening Day search failed
+    independently of the four main affiliates' searches."""
+    opening_day = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
+    if not opening_day:
+        print(f"  WARNING: could not find any completed games for "
+              f"{cfg['display_name']} between {SEARCH_FROM} and {end_date}. "
+              f"Skipping this team rather than guessing a start date.")
+        return [], None
+
+    roster = get_active_roster(cfg["team_id"], SEASON)
+    hitters = []
+    for entry in roster:
+        person = entry["person"]
+        pid = str(person["id"])
+        name = person["fullName"]
+
+        h_stat = get_player_stats_by_date_range(
+            pid, "hitting", cfg["sport_id"], SEASON, opening_day, end_date
+        )
+        if h_stat and int(h_stat.get("atBats", 0) or 0) > 0:
+            row = {"id": pid, "name": name, "team": affiliate_key}
+            row.update(_clean_row(h_stat, HITTING_FIELDS, HITTING_COUNT_FIELDS, HITTING_RATE_FIELDS))
+            row = recompute_hitting_rates(row)
+            hitters.append(row)
+
+    return hitters, opening_day
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--end", help="YYYY-MM-DD, defaults to yesterday")
@@ -196,8 +229,25 @@ def main():
         all_hitters.extend(hitters)
         all_pitchers.extend(pitchers)
 
-    all_hitters = dedupe_by_id(all_hitters, "hitter")
+    # NOTE: hitters intentionally NOT deduped here anymore -- a player who
+    # played multiple affiliate levels this season shows up once per level,
+    # each row representing his real stats AT THAT LEVEL, not a duplicate.
+    # generate_leaderboard.py's combine_by_id() sums these correctly at
+    # read time. See lib/dedupe.py for the full explanation.
     all_pitchers = dedupe_by_id(all_pitchers, "pitcher")
+
+    all_rookie_hitters = []
+    rookie_opening_days = {}
+    for key, cfg in ROOKIE_AFFILIATES.items():
+        print(f"Finding real Opening Day for {cfg['display_name']}...")
+        rookie_hitters, opening_day = fetch_rookie_team_season_hitting_only(key, cfg, end_date_str)
+        if opening_day is None:
+            continue
+        print(f"  Opening Day: {opening_day}. Pulling {opening_day} -> {end_date_str}...")
+        print(f"  {len(rookie_hitters)} hitters with season activity.")
+        rookie_opening_days[key] = opening_day
+        all_rookie_hitters.extend(rookie_hitters)
+    opening_days.update(rookie_opening_days)
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.join(script_dir, OUTPUT_DIR)
@@ -216,9 +266,11 @@ def main():
             "through_date": end_date_str,
             "hitters": all_hitters,
             "pitchers": all_pitchers,
+            "rookie_hitters": all_rookie_hitters,
         }, f, indent=2)
 
-    print(f"\nSaved {len(all_hitters)} hitters and {len(all_pitchers)} pitchers to {out_path}")
+    print(f"\nSaved {len(all_hitters)} hitters, {len(all_pitchers)} pitchers, and "
+          f"{len(all_rookie_hitters)} rookie-level (DSL/FCL) hitters to {out_path}")
     print(f"Opening Days used per team: {opening_days}")
     if any_team_failed:
         print("WARNING: at least one team's Opening Day could not be found -- "
