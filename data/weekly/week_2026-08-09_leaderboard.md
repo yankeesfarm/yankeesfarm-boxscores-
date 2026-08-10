@@ -193,12 +193,12 @@
 | T1 | Justin West | TAM | 0.00 |
 | T1 | Andrew Landry | HV | 0.00 |
 | T1 | Luis Serna | HV | 0.00 |
-| T1 | Jack Cebert | SOM | 0.00 |
 | T1 | Hayden Merda | SOM | 0.00 |
-| 7 | Brendan Beck | SWB | 0.84 |
-| 8 | Wyatt Parliament | TAM | 1.80 |
-| T9 | Henry Lalane | HV | 1.93 |
-| T9 | Hansel Rincon | HV | 1.93 |
+| 6 | Brendan Beck | SWB | 0.84 |
+| 7 | Wyatt Parliament | TAM | 1.80 |
+| 8 | Hansel Rincon | HV | 1.93 |
+| 9 | Edinzo Marquez | TAM | 2.08 |
+| 10 | Sean Paul Liñan | HV | 2.25 |
 
 ### WHIP
 | # | Player | Team | Value |
@@ -207,12 +207,12 @@
 | 2 | Justin West | TAM | 0.33 |
 | 3 | Tyler Boudreau | TAM | 0.53 |
 | 4 | Wyatt Parliament | TAM | 0.60 |
-| 5 | Jack Cebert | SOM | 0.75 |
-| 6 | Luis Serna | HV | 0.80 |
-| 7 | Hansel Rincon | HV | 0.86 |
-| 8 | Geoffrey Gilbert | SOM | 0.90 |
-| 9 | Zach Messinger | SWB | 1.00 |
-| 10 | Brendan Beck | SWB | 1.13 |
+| 5 | Luis Serna | HV | 0.80 |
+| 6 | Hansel Rincon | HV | 0.86 |
+| 7 | Geoffrey Gilbert | SOM | 0.90 |
+| 8 | Zach Messinger | SWB | 1.00 |
+| 9 | Brendan Beck | SWB | 1.12 |
+| 10 | Xavier Rivas | SOM | 1.17 |
 
 ### Innings Pitched
 | # | Player | Team | Value |
@@ -226,10 +226,9 @@
 | 7 | Wyatt Parliament | TAM | 5.0 |
 | 8 | Bryce Cunningham | HV | 5.0 |
 | 9 | Luis Serna | HV | 5.0 |
-| 10 | Henry Lalane | HV | 4.2 |
-| 11 | Hansel Rincon | HV | 4.2 |
-| 12 | Ben Hess | SOM | 4.2 |
-| 13 | Alexander Cornielle | SWB | 4.2 |
+| 10 | Hansel Rincon | HV | 4.2 |
+| 11 | Ben Hess | SOM | 4.2 |
+| 12 | Alexander Cornielle | SWB | 4.2 |
 
 ### Strikeouts
 | # | Player | Team | Value |
@@ -241,7 +240,6 @@
 | T4 | Alexander Cornielle | SWB | 7 |
 | T6 | Rafael Arias | TAM | 6 |
 | T6 | Thomas Balboni Jr. | HV | 6 |
-| T6 | Jack Cebert | SOM | 6 |
 | T6 | Ben Hess | SOM | 6 |
 | T6 | Xavier Rivas | SOM | 6 |
 | T6 | Zach Messinger | SWB | 6 |
@@ -251,21 +249,30 @@
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Justin West | TAM | 0.056 |
-| 2 | Jack Cebert | SOM | 0.077 |
-| T3 | Tyler Boudreau | TAM | 0.100 |
-| T3 | Anthony Mena | TAM | 0.100 |
-| 5 | Bradley Hanner | SWB | 0.167 |
-| 6 | Wyatt Parliament | TAM | 0.176 |
-| 7 | Elmer Rodríguez | SWB | 0.188 |
-| T8 | Sean Paul Liñan | HV | 0.200 |
-| T8 | Geoffrey Gilbert | SOM | 0.200 |
-| T8 | Xavier Rivas | SOM | 0.200 |
-| T8 | Brendan Beck | SWB | 0.200 |
-| T8 | Zach Messinger | SWB | 0.200 |
+| T2 | Tyler Boudreau | TAM | 0.100 |
+| T2 | Anthony Mena | TAM | 0.100 |
+| 4 | Bradley Hanner | SWB | 0.167 |
+| 5 | Wyatt Parliament | TAM | 0.176 |
+| 6 | Elmer Rodríguez | SWB | 0.188 |
+| T7 | Sean Paul Liñan | HV | 0.200 |
+| T7 | Geoffrey Gilbert | SOM | 0.200 |
+| T7 | Xavier Rivas | SOM | 0.200 |
+| T7 | Brendan Beck | SWB | 0.200 |
+| T7 | Zach Messinger | SWB | 0.200 |
 
 ### SO/9
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Allen Facundo | HV | 18.69 |
+| 2 | Brendan Beck | SWB | 16.88 |
+| T3 | Alexander Cornielle | SWB | 13.50 |
+| T3 | Zach Messinger | SWB | 13.50 |
+| T3 | Elmer Rodríguez | SWB | 13.50 |
+| 6 | Ben Hess | SOM | 11.57 |
+| T7 | Franyer Herrera | HV | 10.80 |
+| T7 | Geoffrey Gilbert | SOM | 10.80 |
+| T7 | Hayden Merda | SOM | 10.80 |
+| 10 | Justin West | TAM | 10.50 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*

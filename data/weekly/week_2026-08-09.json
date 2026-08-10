@@ -1570,25 +1570,6 @@
       "avg": 0.273
     },
     {
-      "id": "700649",
-      "name": "Henry Lalane",
-      "team": "hudson_valley",
-      "inningsPitched": "4.2",
-      "strikeOuts": 5,
-      "baseOnBalls": 1,
-      "hits": 5,
-      "atBats": 18,
-      "homeRuns": 0,
-      "earnedRuns": 1,
-      "runs": 3,
-      "wins": 0,
-      "losses": 0,
-      "saves": 0,
-      "era": 1.93,
-      "whip": 1.29,
-      "avg": 0.278
-    },
-    {
       "id": "815069",
       "name": "Andrew Landry",
       "team": "hudson_valley",
@@ -1798,25 +1779,6 @@
       "avg": 0.143
     },
     {
-      "id": "701411",
-      "name": "Jack Cebert",
-      "team": "somerset",
-      "inningsPitched": "4.0",
-      "strikeOuts": 6,
-      "baseOnBalls": 2,
-      "hits": 1,
-      "atBats": 13,
-      "homeRuns": 0,
-      "earnedRuns": 0,
-      "runs": 0,
-      "wins": 0,
-      "losses": 0,
-      "saves": 0,
-      "era": 0.0,
-      "whip": 0.75,
-      "avg": 0.077
-    },
-    {
       "id": "694660",
       "name": "Harrison Cohen",
       "team": "somerset",
@@ -1872,25 +1834,6 @@
       "era": 2.7,
       "whip": 0.9,
       "avg": 0.2
-    },
-    {
-      "id": "695066",
-      "name": "Ben Grable",
-      "team": "somerset",
-      "inningsPitched": "2.0",
-      "strikeOuts": 4,
-      "baseOnBalls": 0,
-      "hits": 0,
-      "atBats": 8,
-      "homeRuns": 0,
-      "earnedRuns": 0,
-      "runs": 0,
-      "wins": 0,
-      "losses": 0,
-      "saves": 0,
-      "era": 0.0,
-      "whip": 0.0,
-      "avg": 0.0
     },
     {
       "id": "694633",

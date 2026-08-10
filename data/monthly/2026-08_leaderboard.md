@@ -12,11 +12,11 @@
 | 3 | Luis Durango | SOM | 0.329 |
 | 4 | Jasson Domínguez | SWB | 0.309 |
 | 5 | Yostin Pena | TAM | 0.306 |
-| 6 | Kaeden Kent | HV | 0.302 |
-| T7 | David McCann | HV | 0.300 |
-| T7 | Marco Luciano | SWB | 0.300 |
-| 9 | Oswaldo Cabrera | SWB | 0.296 |
-| 10 | J.C. Escarra | SWB | 0.290 |
+| T6 | David McCann | HV | 0.300 |
+| T6 | Marco Luciano | SWB | 0.300 |
+| 8 | Oswaldo Cabrera | SWB | 0.296 |
+| 9 | J.C. Escarra | SWB | 0.290 |
+| 10 | Duncan Pastore | SWB | 0.286 |
 
 ### On-Base Percentage
 | # | Player | Team | Value |
@@ -68,11 +68,11 @@
 | 3 | Coby Morales | SOM | 102 |
 | 4 | Roderick Arias | SOM | 101 |
 | 5 | Tyler Hardman | SWB | 98 |
-| T6 | Bryce Martin-Grudzielanek | HV | 97 |
-| T6 | Kaeden Kent | HV | 97 |
-| T8 | Marco Luciano | SWB | 96 |
-| T8 | Yanquiel Fernández | SWB | 96 |
-| 10 | Kyle West | HV | 93 |
+| 6 | Bryce Martin-Grudzielanek | HV | 97 |
+| T7 | Marco Luciano | SWB | 96 |
+| T7 | Yanquiel Fernández | SWB | 96 |
+| 9 | Kyle West | HV | 93 |
+| 10 | DJ Gladney | SOM | 92 |
 
 ### Doubles
 | # | Player | Team | Value |
@@ -84,9 +84,9 @@
 | T5 | Wilberson De Pena | TAM | 20 |
 | T5 | Bryce Martin-Grudzielanek | HV | 20 |
 | T5 | Roderick Arias | SOM | 20 |
-| T5 | Kaeden Kent | HV | 20 |
 | T5 | DJ Gladney | SOM | 20 |
 | T5 | Coby Morales | SOM | 20 |
+| 10 | Tyler Hardman | SWB | 19 |
 
 ### Triples
 | # | Player | Team | Value |
@@ -152,87 +152,87 @@
 ### ERA
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Jack Cebert | HV | 0.98 |
-| T1 | Tony Rossi | HV | 0.98 |
-| 3 | Angel Chivilli | SWB | 1.00 |
-| 4 | Allen Facundo | TAM | 1.20 |
-| 5 | Kervin Castro | SWB | 1.80 |
+| T1 | Luis Velasquez | SOM | 1.00 |
+| T1 | Angel Chivilli | SWB | 1.00 |
+| 3 | Kervin Castro | SWB | 1.80 |
+| 4 | Chris Veach | SOM | 2.01 |
+| 5 | Tony Rossi | SOM | 2.02 |
 | 6 | Bradley Hanner | SWB | 2.10 |
-| 7 | Jose M. Rodriguez | TAM | 2.47 |
-| 8 | Dylan Coleman | SWB | 2.57 |
-| 9 | Brendan Beck | SWB | 2.66 |
-| 10 | Henry Lalane | TAM | 2.74 |
+| 7 | Dylan Coleman | SWB | 2.57 |
+| 8 | Brendan Beck | SWB | 2.66 |
+| 9 | Jose M. Rodriguez | HV | 2.83 |
+| 10 | Elmer Rodríguez | SWB | 2.85 |
 
 ### WHIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Jack Cebert | HV | 0.60 |
-| T1 | Tony Rossi | HV | 0.60 |
-| 3 | Angel Chivilli | SWB | 0.72 |
-| 4 | Eric Reyzelman | SOM | 0.81 |
-| T5 | Allen Facundo | TAM | 0.87 |
-| T5 | Kervin Castro | SWB | 0.87 |
-| 7 | Baron Stuart | HV | 0.89 |
-| 8 | Chris Kean | SOM | 0.97 |
-| 9 | Henry Lalane | TAM | 0.99 |
-| T10 | Tyler Boudreau | TAM | 1.04 |
-| T10 | Brendan Beck | SWB | 1.04 |
+| 1 | Angel Chivilli | SWB | 0.72 |
+| 2 | Kervin Castro | SWB | 0.87 |
+| 3 | Tony Rossi | SOM | 0.88 |
+| 4 | Chris Veach | SOM | 0.90 |
+| 5 | Baron Stuart | SOM | 0.98 |
+| T6 | Tyler Boudreau | TAM | 1.04 |
+| T6 | Brendan Beck | SWB | 1.04 |
+| 8 | Chris Kean | SWB | 1.06 |
+| 9 | Gerrit Cole | SWB | 1.07 |
+| 10 | Luis Velasquez | SOM | 1.11 |
 
 ### Innings Pitched
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Brendan Beck | SWB | 115.0 |
 | 2 | Luis Serna | HV | 93.1 |
-| 3 | Cade Smith | SOM | 92.0 |
-| 4 | Justin West | TAM | 91.1 |
-| 5 | Dom Hamel | SWB | 91.1 |
-| 6 | Tyler Boudreau | TAM | 91.0 |
-| 7 | Elmer Rodríguez | SWB | 85.1 |
-| 8 | Adam Kloffenstein | SWB | 84.0 |
-| 9 | Rory Fox | HV | 82.1 |
-| 10 | Xavier Rivas | SOM | 81.1 |
+| 3 | Rory Fox | SOM | 92.0 |
+| 4 | Cade Smith | SOM | 92.0 |
+| 5 | Allen Facundo | HV | 91.1 |
+| 6 | Justin West | TAM | 91.1 |
+| 7 | Dom Hamel | SWB | 91.1 |
+| 8 | Tyler Boudreau | TAM | 91.0 |
+| 9 | Elmer Rodríguez | SWB | 85.1 |
+| 10 | Adam Kloffenstein | SWB | 84.0 |
 
 ### Strikeouts
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Brendan Beck | SWB | 126 |
-| 2 | Xavier Rivas | SOM | 114 |
-| 3 | Luis Serna | HV | 106 |
-| 4 | Tyler Boudreau | TAM | 100 |
-| 5 | Justin West | TAM | 96 |
-| 6 | Rory Fox | HV | 90 |
-| 7 | Franyer Herrera | HV | 89 |
-| T8 | Trent Sellers | SOM | 87 |
-| T8 | Elmer Rodríguez | SWB | 87 |
-| 10 | Cade Smith | SOM | 85 |
+| 1 | Allen Facundo | HV | 127 |
+| 2 | Brendan Beck | SWB | 126 |
+| 3 | Xavier Rivas | SOM | 114 |
+| 4 | Luis Serna | HV | 106 |
+| 5 | Tyler Boudreau | TAM | 100 |
+| T6 | Justin West | TAM | 96 |
+| T6 | Rory Fox | SOM | 96 |
+| T6 | Kyle Carr | SWB | 96 |
+| 9 | Franyer Herrera | HV | 89 |
+| T10 | Trent Sellers | SOM | 87 |
+| T10 | Elmer Rodríguez | SWB | 87 |
 
 ### AVG Against
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Tony Rossi | HV | 0.100 |
-| 2 | Allen Facundo | TAM | 0.120 |
-| 3 | Baron Stuart | HV | 0.125 |
-| 4 | Jack Cebert | HV | 0.145 |
-| 5 | Angel Chivilli | SWB | 0.153 |
-| 6 | Jose M. Rodriguez | TAM | 0.156 |
-| 7 | Eric Reyzelman | SOM | 0.161 |
-| 8 | Thatcher Hurd | TAM | 0.165 |
-| 9 | Dylan Coleman | SWB | 0.167 |
+| 1 | Chris Veach | SOM | 0.130 |
+| 2 | Baron Stuart | SOM | 0.145 |
+| 3 | Angel Chivilli | SWB | 0.153 |
+| 4 | Thatcher Hurd | TAM | 0.165 |
+| 5 | Dylan Coleman | SWB | 0.167 |
+| 6 | Wilmy Sanchez | SOM | 0.169 |
+| 7 | Tony Rossi | SOM | 0.170 |
+| 8 | Jose M. Rodriguez | HV | 0.174 |
+| 9 | Luis Velasquez | SOM | 0.175 |
 | 10 | Xavier Rivas | SOM | 0.176 |
 
 ### SO/9
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Eric Reyzelman | SOM | 16.62 |
-| 2 | Allen Facundo | TAM | 15.00 |
-| 3 | Hayden Merda | SOM | 14.47 |
-| 4 | Wilmy Sanchez | HV | 14.16 |
-| 5 | Hansel Rincon | HV | 13.50 |
-| 6 | Matt Keating | SOM | 13.34 |
+| 1 | Eric Reyzelman | SWB | 14.59 |
+| 2 | Hayden Merda | SOM | 14.47 |
+| 3 | Hansel Rincon | HV | 13.50 |
+| 4 | Wilmy Sanchez | SOM | 13.37 |
+| 5 | Matt Keating | SOM | 13.34 |
+| 6 | Chris Veach | SOM | 13.30 |
 | 7 | J.T. Etheridge | TAM | 13.24 |
-| 8 | Yovanny Cruz | SWB | 13.12 |
-| 9 | Will Brian | SOM | 13.01 |
-| 10 | Parker Seay | TAM | 12.93 |
+| 8 | Parker Seay | TAM | 12.93 |
+| 9 | Thomas Balboni Jr. | HV | 12.62 |
+| 10 | Xavier Rivas | SOM | 12.61 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*

@@ -1094,44 +1094,44 @@
         {
           "rank": "T1",
           "isTied": true,
-          "name": "Jack Cebert",
-          "team": "SOM",
-          "value": "0.00"
-        },
-        {
-          "rank": "T1",
-          "isTied": true,
           "name": "Hayden Merda",
           "team": "SOM",
           "value": "0.00"
         },
         {
-          "rank": "7",
+          "rank": "6",
           "isTied": false,
           "name": "Brendan Beck",
           "team": "SWB",
           "value": "0.84"
         },
         {
-          "rank": "8",
+          "rank": "7",
           "isTied": false,
           "name": "Wyatt Parliament",
           "team": "TAM",
           "value": "1.80"
         },
         {
-          "rank": "T9",
-          "isTied": true,
-          "name": "Henry Lalane",
+          "rank": "8",
+          "isTied": false,
+          "name": "Hansel Rincon",
           "team": "HV",
           "value": "1.93"
         },
         {
-          "rank": "T9",
-          "isTied": true,
-          "name": "Hansel Rincon",
+          "rank": "9",
+          "isTied": false,
+          "name": "Edinzo Marquez",
+          "team": "TAM",
+          "value": "2.08"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Sean Paul Li\u00f1an",
           "team": "HV",
-          "value": "1.93"
+          "value": "2.25"
         }
       ]
     },
@@ -1171,44 +1171,44 @@
         {
           "rank": "5",
           "isTied": false,
-          "name": "Jack Cebert",
-          "team": "SOM",
-          "value": "0.75"
-        },
-        {
-          "rank": "6",
-          "isTied": false,
           "name": "Luis Serna",
           "team": "HV",
           "value": "0.80"
         },
         {
-          "rank": "7",
+          "rank": "6",
           "isTied": false,
           "name": "Hansel Rincon",
           "team": "HV",
           "value": "0.86"
         },
         {
-          "rank": "8",
+          "rank": "7",
           "isTied": false,
           "name": "Geoffrey Gilbert",
           "team": "SOM",
           "value": "0.90"
         },
         {
-          "rank": "9",
+          "rank": "8",
           "isTied": false,
           "name": "Zach Messinger",
           "team": "SWB",
           "value": "1.00"
         },
         {
-          "rank": "10",
+          "rank": "9",
           "isTied": false,
           "name": "Brendan Beck",
           "team": "SWB",
-          "value": "1.13"
+          "value": "1.12"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Xavier Rivas",
+          "team": "SOM",
+          "value": "1.17"
         }
       ]
     },
@@ -1283,26 +1283,19 @@
         {
           "rank": "10",
           "isTied": false,
-          "name": "Henry Lalane",
+          "name": "Hansel Rincon",
           "team": "HV",
           "value": "4.2"
         },
         {
           "rank": "11",
           "isTied": false,
-          "name": "Hansel Rincon",
-          "team": "HV",
-          "value": "4.2"
-        },
-        {
-          "rank": "12",
-          "isTied": false,
           "name": "Ben Hess",
           "team": "SOM",
           "value": "4.2"
         },
         {
-          "rank": "13",
+          "rank": "12",
           "isTied": false,
           "name": "Alexander Cornielle",
           "team": "SWB",
@@ -1367,13 +1360,6 @@
         {
           "rank": "T6",
           "isTied": true,
-          "name": "Jack Cebert",
-          "team": "SOM",
-          "value": 6
-        },
-        {
-          "rank": "T6",
-          "isTied": true,
           "name": "Ben Hess",
           "team": "SOM",
           "value": 6
@@ -1414,77 +1400,70 @@
           "value": "0.056"
         },
         {
-          "rank": "2",
-          "isTied": false,
-          "name": "Jack Cebert",
-          "team": "SOM",
-          "value": "0.077"
-        },
-        {
-          "rank": "T3",
+          "rank": "T2",
           "isTied": true,
           "name": "Tyler Boudreau",
           "team": "TAM",
           "value": "0.100"
         },
         {
-          "rank": "T3",
+          "rank": "T2",
           "isTied": true,
           "name": "Anthony Mena",
           "team": "TAM",
           "value": "0.100"
         },
         {
-          "rank": "5",
+          "rank": "4",
           "isTied": false,
           "name": "Bradley Hanner",
           "team": "SWB",
           "value": "0.167"
         },
         {
-          "rank": "6",
+          "rank": "5",
           "isTied": false,
           "name": "Wyatt Parliament",
           "team": "TAM",
           "value": "0.176"
         },
         {
-          "rank": "7",
+          "rank": "6",
           "isTied": false,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "0.188"
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Sean Paul Li\u00f1an",
           "team": "HV",
           "value": "0.200"
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Geoffrey Gilbert",
           "team": "SOM",
           "value": "0.200"
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Xavier Rivas",
           "team": "SOM",
           "value": "0.200"
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Brendan Beck",
           "team": "SWB",
           "value": "0.200"
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Zach Messinger",
           "team": "SWB",
@@ -1496,7 +1475,78 @@
       "label": "SO/9",
       "group": "pitching",
       "isRate": true,
-      "entries": []
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "18.69"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "16.88"
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Alexander Cornielle",
+          "team": "SWB",
+          "value": "13.50"
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Zach Messinger",
+          "team": "SWB",
+          "value": "13.50"
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Elmer Rodr\u00edguez",
+          "team": "SWB",
+          "value": "13.50"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Ben Hess",
+          "team": "SOM",
+          "value": "11.57"
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Franyer Herrera",
+          "team": "HV",
+          "value": "10.80"
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Geoffrey Gilbert",
+          "team": "SOM",
+          "value": "10.80"
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Hayden Merda",
+          "team": "SOM",
+          "value": "10.80"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "10.50"
+        }
+      ]
     }
   }
 }
