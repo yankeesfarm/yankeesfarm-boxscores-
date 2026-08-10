@@ -17,7 +17,7 @@ from datetime import date, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from config.affiliates import AFFILIATES
+from config.affiliates import AFFILIATES, ROOKIE_AFFILIATES
 from lib.mlb_api import get_active_roster, get_player_stats_by_date_range
 from lib.dedupe import dedupe_by_id
 
@@ -100,6 +100,31 @@ def fetch_team_week(affiliate_key, cfg, start_date, end_date, excluded):
     return hitters, pitchers
 
 
+def fetch_rookie_team_week_hitting_only(affiliate_key, cfg, start_date, end_date, excluded):
+    """Same idea as fetch_team_week(), but hitting stats only -- DSL/FCL
+    hitters only ever feed the six counting-stat categories (see
+    ROOKIE_LEVEL_INCLUDED_FIELDS in generate_leaderboard.py), so there's no
+    reason to spend API calls pulling pitching stats for these rosters."""
+    roster = get_active_roster(cfg["team_id"], SEASON)
+    hitters = []
+    for entry in roster:
+        person = entry["person"]
+        pid = str(person["id"])
+        if pid in excluded:
+            continue
+        name = person["fullName"]
+
+        h_stat = get_player_stats_by_date_range(
+            pid, "hitting", cfg["sport_id"], SEASON, start_date, end_date
+        )
+        if h_stat and int(h_stat.get("atBats", 0) or 0) > 0:
+            row = {"id": pid, "name": name, "team": affiliate_key}
+            row.update(_clean_row(h_stat, HITTING_FIELDS, HITTING_COUNT_FIELDS, HITTING_RATE_FIELDS))
+            hitters.append(row)
+
+    return hitters
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--start", help="YYYY-MM-DD, defaults to 6 days before --end")
@@ -122,8 +147,25 @@ def main():
         all_hitters.extend(hitters)
         all_pitchers.extend(pitchers)
 
-    all_hitters = dedupe_by_id(all_hitters, "hitter")
+    # NOTE: hitters are intentionally NOT deduped/combined here anymore.
+    # A player promoted between affiliates this week shows up once per team
+    # he was actually rostered/active on, each row representing his real
+    # stats AT THAT LEVEL (not a duplicate -- see lib/dedupe.py's
+    # combine_by_id() docstring for why dedupe_by_id() was silently
+    # discarding real production). generate_leaderboard.py is responsible
+    # for correctly summing these at read time. Pitchers are unaffected by
+    # this change and still deduped as before.
     all_pitchers = dedupe_by_id(all_pitchers, "pitcher")
+
+    all_rookie_hitters = []
+    for key, cfg in ROOKIE_AFFILIATES.items():
+        print(f"Fetching {cfg['display_name']} ({start_date} to {end_date})...")
+        rookie_hitters = fetch_rookie_team_week_hitting_only(
+            key, cfg, start_date.isoformat(), end_date.isoformat(), excluded
+        )
+        print(f"  {len(rookie_hitters)} hitters with activity.")
+        all_rookie_hitters.extend(rookie_hitters)
+    # Also intentionally not deduped -- same reasoning as above.
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     output_dir = os.path.join(script_dir, OUTPUT_DIR)
@@ -135,9 +177,11 @@ def main():
             "end_date": end_date.isoformat(),
             "hitters": all_hitters,
             "pitchers": all_pitchers,
+            "rookie_hitters": all_rookie_hitters,
         }, f, indent=2)
 
-    print(f"\nSaved {len(all_hitters)} hitters and {len(all_pitchers)} pitchers to {out_path}")
+    print(f"\nSaved {len(all_hitters)} hitters, {len(all_pitchers)} pitchers, and "
+          f"{len(all_rookie_hitters)} rookie-level (DSL/FCL) hitters to {out_path}")
     print("Next: run verify_data.py on this file BEFORE trusting the leaderboard.")
 
 
