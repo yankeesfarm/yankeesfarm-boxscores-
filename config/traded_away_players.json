@@ -1,0 +1,9 @@
+{
+  "_readme": "Players who have been TRADED AWAY from the Yankees organization -- excluded entirely from every leaderboard and every category, regardless of level. This is DIFFERENT from config/excluded_players.json (which filters established MLB veterans out of a 'prospects only' view): being on THIS list means the player simply isn't part of the Yankees organization anymore at all, even though he was earlier this season and his games while a Yankee are still real. Keyed by MLB Stats API person ID. IDs below were cross-referenced from MLB.com/MiLB.com player pages and Baseball America's trade deadline coverage, not guessed. Review this file at each trade deadline and whenever a name looks unfamiliar on a leaderboard -- that's often a sign someone left the org.",
+
+  "701411": {"name": "Jack Cebert", "reason": "Traded to Washington Nationals (with Grable, Cruz, Bird) for Luis Garcia Jr., Aug 2 2026", "date_added": "2026-08-10"},
+  "695066": {"name": "Ben Grable", "reason": "Traded to Washington Nationals (with Cebert, Cruz, Bird) for Luis Garcia Jr., Aug 2 2026", "date_added": "2026-08-10"},
+  "672442": {"name": "Yovanny Cruz", "reason": "Traded to Washington Nationals (with Cebert, Grable, Bird) for Luis Garcia Jr., Aug 2 2026", "date_added": "2026-08-10"},
+  "700649": {"name": "Henry Lalane", "reason": "Traded to San Francisco Giants (with Kent) for Heliot Ramos, Aug 3 2026", "date_added": "2026-08-10"},
+  "809763": {"name": "Kaeden Kent", "reason": "Traded to San Francisco Giants (with Lalane) for Heliot Ramos, Aug 3 2026", "date_added": "2026-08-10"}
+}
