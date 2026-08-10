@@ -13,7 +13,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.dedupe import dedupe_by_id, combine_by_id
+from lib.dedupe import combine_by_id
 
 # Raw counting fields to sum when combine_by_id() merges a player's stats
 # across multiple affiliate levels (promotions/demotions, or a rookie-level
@@ -53,6 +53,33 @@ PITCHING_CATEGORIES = [
     ("avg", "AVG Against", True, True),
     ("so9", "SO/9", True, False),
 ]
+
+# Raw counting fields to sum when combine_by_id() merges a pitcher's stats
+# across multiple affiliate levels. "ip_outs" (innings pitched, as whole
+# outs) is included here rather than the raw "inningsPitched" string field
+# -- outs are summable integers, the "6.1" display string is not. main()
+# is responsible for converting inningsPitched -> ip_outs on each RAW
+# per-team row BEFORE combining, so the innings actually add up correctly.
+PITCHING_COUNT_FIELDS = [
+    "ip_outs", "strikeOuts", "baseOnBalls", "hits", "atBats", "homeRuns",
+    "earnedRuns", "runs", "wins", "losses", "saves",
+]
+
+
+def recompute_pitching_rates(row):
+    """Same principle as recompute_hitting_rates() above: after
+    combine_by_id() sums a promoted/demoted pitcher's innings and earned
+    runs etc. across levels, his era/whip/so9/avg-against must be
+    recalculated from those combined totals, or his ERA would still
+    reflect only whichever single level's row happened to survive
+    before."""
+    ip_outs = row.get("ip_outs", 0)
+    ip_decimal = ip_outs / 3
+    row["era"] = round((row.get("earnedRuns", 0) * 9) / ip_decimal, 2) if ip_decimal else 0.0
+    row["whip"] = round((row.get("hits", 0) + row.get("baseOnBalls", 0)) / ip_decimal, 2) if ip_decimal else 0.0
+    row["so9"] = round((row.get("strikeOuts", 0) * 9) / ip_decimal, 2) if ip_decimal else 0.0
+    row["avg"] = round(row.get("hits", 0) / row["atBats"], 3) if row.get("atBats") else 0.0
+    return row
 
 TEAM_LABELS = {
     "tampa": "TAM", "hudson_valley": "HV", "somerset": "SOM", "scranton_wb": "SWB",
@@ -139,13 +166,11 @@ def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta, rookie_hitters=N
     rookie_hitters = rookie_hitters or []
     counting_pool = combine_by_id(hitters + rookie_hitters, HITTING_COUNT_FIELDS,
                                    "hitters (full-season + rookie-level combined)")
-    for row in pitchers:
-        ip_val = row.get("inningsPitched")
-        if isinstance(ip_val, str) and "." in ip_val:
-            whole, frac = ip_val.split(".")
-            row["ip_outs"] = int(whole) * 3 + int(frac)
-        else:
-            row["ip_outs"] = 0
+    # NOTE: pitchers arrive here with ip_outs already computed AND already
+    # combined across levels by main() -- recomputing inningsPitched -> ip_outs
+    # again in this function would read each row's original single-team
+    # "inningsPitched" string and silently overwrite the correctly-combined
+    # total with a stale partial one. Don't add that block back here.
 
     categories = {}
 
@@ -224,14 +249,9 @@ def render_hitting(rows, min_ab, rookie_rows=None):
 
 
 def render_pitching(rows, min_ip_outs):
-    for row in rows:
-        # innings pitched sorts on whole outs, not the "X.Y" display string
-        ip_val = row.get("inningsPitched")
-        if isinstance(ip_val, str) and "." in ip_val:
-            whole, frac = ip_val.split(".")
-            row["ip_outs"] = int(whole) * 3 + int(frac)
-        else:
-            row["ip_outs"] = 0
+    # NOTE: rows arrive here with ip_outs already computed AND combined
+    # across levels by main() -- see the matching comment in build_payload()
+    # for why that recomputation must not happen again in this function.
 
     out = ["## PITCHING LEADERS\n"]
     for field, label, is_rate, lower in PITCHING_CATEGORIES:
@@ -271,8 +291,24 @@ def main():
     data["hitters"] = combine_by_id(data["hitters"], HITTING_COUNT_FIELDS, "hitters")
     for row in data["hitters"]:
         recompute_hitting_rates(row)
-    data["pitchers"] = dedupe_by_id(data["pitchers"], "pitcher")
     rookie_hitters = combine_by_id(data.get("rookie_hitters", []), HITTING_COUNT_FIELDS, "rookie hitters")
+
+    # Same treatment for pitchers, same reasoning: a pitcher promoted
+    # between levels (e.g. Hudson Valley -> Somerset) needs his innings,
+    # strikeouts, and earned runs SUMMED, not just kept from whichever
+    # team's row survived a plain dedupe. inningsPitched -> ip_outs is
+    # converted here, on the RAW per-team rows, BEFORE combining -- ip_outs
+    # is a summable integer, the "6.1" display string is not.
+    for row in data["pitchers"]:
+        ip_val = row.get("inningsPitched")
+        if isinstance(ip_val, str) and "." in ip_val:
+            whole, frac = ip_val.split(".")
+            row["ip_outs"] = int(whole) * 3 + int(frac)
+        else:
+            row["ip_outs"] = 0
+    data["pitchers"] = combine_by_id(data["pitchers"], PITCHING_COUNT_FIELDS, "pitchers")
+    for row in data["pitchers"]:
+        recompute_pitching_rates(row)
 
     min_ip_outs = int(round(args.min_ip * 3))
 
