@@ -70,6 +70,19 @@ def load_excluded():
     return {k for k in raw.keys() if not k.startswith("_")}
 
 
+def load_traded_away():
+    """Players who have left the organization entirely via trade -- see
+    config/traded_away_players.json for the full explanation. These are
+    combined with the "excluded" (non-prospect) set at every roster
+    iteration in main(), so a traded player never appears on any
+    leaderboard, at any level, regardless of what he did while still a
+    Yankee."""
+    config_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config", "traded_away_players.json")
+    with open(config_path) as f:
+        raw = json.load(f)
+    return {k for k in raw.keys() if not k.startswith("_")}
+
+
 def fetch_team_week(affiliate_key, cfg, start_date, end_date, excluded):
     roster = get_active_roster(cfg["team_id"], SEASON)
     hitters, pitchers = [], []
@@ -134,8 +147,8 @@ def main():
     end_date = date.fromisoformat(args.end) if args.end else date.today() - timedelta(days=1)
     start_date = date.fromisoformat(args.start) if args.start else end_date - timedelta(days=6)
 
-    excluded = load_excluded()
-    print(f"Loaded {len(excluded)} excluded (non-prospect) player IDs.")
+    excluded = load_excluded() | load_traded_away()
+    print(f"Loaded {len(excluded)} excluded player IDs (non-prospects + traded-away combined).")
 
     all_hitters, all_pitchers = [], []
     for key, cfg in AFFILIATES.items():
