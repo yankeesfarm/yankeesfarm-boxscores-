@@ -129,28 +129,34 @@ def load_traded_away():
 
 
 def find_opening_day(team_id, sport_id, end_date):
-    """The date of this team's first completed game of the season, found by
-    asking the Stats API for its real schedule -- not assumed from a
-    generic 'MiLB season starts around late March' rule of thumb, since
-    that varies by level and we have a source of truth available.
+    """The date of this team's first completed game of the season, PLUS how
+    many completed games it's played total -- found by asking the Stats
+    API for its real schedule, not assumed from a generic 'MiLB season
+    starts around late March' rule of thumb, since that varies by level and
+    we have a source of truth available.
+
+    The games-played count returned here is used downstream to compute the
+    real "qualified for a rate title" threshold (3.1 PA / team game for
+    hitters, 1 IP / team game for pitchers -- the same rule MLB itself
+    uses), rather than a flat guessed minimum.
 
     Queries this team's own single sport_id rather than all levels at once
     -- MLB's API rejects date ranges over 45 days (this search spans
     several months) when multiple sportIds are requested together."""
     games = get_team_schedule(team_id, SEARCH_FROM, end_date, sport_id=sport_id)
     if not games:
-        return None
+        return None, 0
     dates = [g["gameDate"][:10] for g in games if g.get("gameDate")]
-    return min(dates) if dates else None
+    return (min(dates) if dates else None), len(games)
 
 
 def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
-    opening_day = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
+    opening_day, games_played = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
     if not opening_day:
         print(f"  WARNING: could not find any completed games for "
               f"{cfg['display_name']} between {SEARCH_FROM} and {end_date}. "
               f"Skipping this team rather than guessing a start date.")
-        return [], [], None
+        return [], [], None, 0
 
     roster = get_active_roster(cfg["team_id"], SEASON)
     hitters, pitchers = [], []
@@ -182,7 +188,7 @@ def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
             row = recompute_pitching_rates(row, ip_outs)
             pitchers.append(row)
 
-    return hitters, pitchers, opening_day
+    return hitters, pitchers, opening_day, games_played
 
 
 def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date, traded_away):
@@ -192,7 +198,7 @@ def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date, traded_a
     generate_leaderboard.py), so there's no reason to fetch pitching stats
     here, or to skip a team just because its own Opening Day search failed
     independently of the four main affiliates' searches."""
-    opening_day = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
+    opening_day, _games_played = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
     if not opening_day:
         print(f"  WARNING: could not find any completed games for "
               f"{cfg['display_name']} between {SEARCH_FROM} and {end_date}. "
@@ -233,19 +239,39 @@ def main():
 
     all_hitters, all_pitchers = [], []
     opening_days = {}
+    team_games_played = {}
     any_team_failed = False
 
     for key, cfg in AFFILIATES.items():
         print(f"Finding real Opening Day for {cfg['display_name']}...")
-        hitters, pitchers, opening_day = fetch_team_season(key, cfg, end_date_str, traded_away)
+        hitters, pitchers, opening_day, games_played = fetch_team_season(key, cfg, end_date_str, traded_away)
         if opening_day is None:
             any_team_failed = True
             continue
         print(f"  Opening Day: {opening_day}. Pulling {opening_day} -> {end_date_str}...")
-        print(f"  {len(hitters)} hitters, {len(pitchers)} pitchers with season activity.")
+        print(f"  {games_played} completed games played. {len(hitters)} hitters, "
+              f"{len(pitchers)} pitchers with season activity.")
         opening_days[key] = opening_day
+        team_games_played[key] = games_played
         all_hitters.extend(hitters)
         all_pitchers.extend(pitchers)
+
+    # "Qualified" for a rate-stat title (AVG/OBP/SLG/OPS/ERA/WHIP), using
+    # the same rule MLB itself uses: 3.1 plate appearances per team game
+    # for hitters, 1 inning pitched per team game for pitchers. Since the
+    # four affiliates have played slightly different numbers of games (each
+    # started on its own real Opening Day, with its own rainouts/makeups),
+    # this uses the MOST games any one of them has played as the season's
+    # reference point -- the same idea as MLB using its own 162-game
+    # schedule as the standard, just derived from real data instead of
+    # assumed. Using the max (not the average) means the threshold is
+    # never stricter than what's actually achievable by a full-season
+    # player at any level.
+    max_games = max(team_games_played.values()) if team_games_played else 0
+    qualifying_pa = round(3.1 * max_games)
+    qualifying_ip = round(1.0 * max_games, 1)
+    print(f"\nQualifying threshold: {max_games} games (max across affiliates) -> "
+          f"{qualifying_pa} PA / {qualifying_ip} IP to qualify for a rate-stat leaderboard.")
 
     # NOTE: hitters and pitchers intentionally NOT deduped here anymore --
     # a player who played multiple affiliate levels this season shows up
@@ -282,6 +308,9 @@ def main():
             "season_to_date": True,
             "opening_days_used": opening_days,
             "through_date": end_date_str,
+            "team_games_played": team_games_played,
+            "qualifying_pa": qualifying_pa,
+            "qualifying_ip": qualifying_ip,
             "hitters": all_hitters,
             "pitchers": all_pitchers,
             "rookie_hitters": all_rookie_hitters,
