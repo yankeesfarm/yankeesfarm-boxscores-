@@ -1,64 +1,65 @@
 # YankeesFarm Stat Leaders — 2026-08
 **Source file:** data/monthly/2026-08.json
-**Qualifying minimums:** 15 AB / 15.0 IP
+**Qualifying minimums:** 347 PA / 112.0 IP
 
 ## HITTING LEADERS
 
 ### Batting Average
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Jonathan Ornelas | SWB | 0.435 |
-| 2 | Christian Bethancourt | SWB | 0.400 |
-| 3 | Luis Durango | SOM | 0.329 |
-| 4 | Jasson Domínguez | SWB | 0.309 |
-| 5 | Yostin Pena | TAM | 0.306 |
-| T6 | David McCann | HV | 0.300 |
-| T6 | Marco Luciano | SWB | 0.300 |
-| 8 | Oswaldo Cabrera | SWB | 0.296 |
-| 9 | J.C. Escarra | SWB | 0.290 |
-| 10 | Duncan Pastore | SWB | 0.286 |
+| 1 | Marco Luciano | SWB | 0.300 |
+| 2 | Oswaldo Cabrera | SWB | 0.296 |
+| 3 | Jackson Lovich | HV | 0.284 |
+| 4 | George Lombard Jr. | SWB | 0.280 |
+| 5 | Roderick Arias | SOM | 0.277 |
+| 6 | Eric Genther | HV | 0.274 |
+| 7 | Willy Montero | HV | 0.272 |
+| 8 | Coby Morales | SOM | 0.271 |
+| 9 | Bryce Martin-Grudzielanek | HV | 0.269 |
+| 10 | DJ Gladney | SOM | 0.267 |
 
 ### On-Base Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Jonathan Ornelas | SWB | 0.536 |
-| 2 | Christian Bethancourt | SWB | 0.455 |
-| 3 | Luis Escudero | TAM | 0.414 |
-| 4 | Eric Genther | HV | 0.408 |
-| 5 | George Lombard Jr. | SWB | 0.403 |
-| 6 | JoJo Jackson | TAM | 0.399 |
-| 7 | Dax Kilby | TAM | 0.393 |
-| T8 | Luis Durango | SOM | 0.388 |
-| T8 | Marco Luciano | SWB | 0.388 |
-| T8 | Jasson Domínguez | SWB | 0.388 |
+| 1 | Eric Genther | HV | 0.408 |
+| 2 | George Lombard Jr. | SWB | 0.403 |
+| 3 | Marco Luciano | SWB | 0.388 |
+| 4 | Wilson Rodriguez | HV | 0.379 |
+| 5 | Bryce Martin-Grudzielanek | HV | 0.374 |
+| 6 | Core Jackson | HV | 0.369 |
+| 7 | Jace Avina | SOM | 0.364 |
+| 8 | Roderick Arias | SOM | 0.359 |
+| 9 | Hans Montero | TAM | 0.357 |
+| 10 | Coby Morales | SOM | 0.356 |
 
 ### Slugging Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Christian Bethancourt | SWB | 0.850 |
-| 2 | Jonathan Ornelas | SWB | 0.783 |
-| 3 | Garrett Martin | SWB | 0.570 |
-| 4 | David McCann | HV | 0.562 |
-| 5 | Spencer Jones | SWB | 0.557 |
-| 6 | Marco Luciano | SWB | 0.550 |
-| 7 | J.C. Escarra | SWB | 0.540 |
-| 8 | Paul DeJong | SWB | 0.516 |
-| 9 | Luis Puello | TAM | 0.515 |
-| 10 | Jace Avina | SOM | 0.507 |
+| 1 | Marco Luciano | SWB | 0.550 |
+| 2 | Jace Avina | SOM | 0.507 |
+| 3 | DJ Gladney | SOM | 0.503 |
+| 4 | Tyler Hardman | SWB | 0.496 |
+| 5 | Jackson Lovich | HV | 0.490 |
+| 6 | Coby Morales | SOM | 0.489 |
+| 7 | Josh Moylan | SOM | 0.479 |
+| 8 | George Lombard Jr. | SWB | 0.476 |
+| 9 | Core Jackson | HV | 0.474 |
+| 10 | Willy Montero | HV | 0.450 |
 
 ### OPS
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Jonathan Ornelas | SWB | 1.319 |
-| 2 | Christian Bethancourt | SWB | 1.305 |
-| T3 | David McCann | HV | 0.942 |
-| T3 | Spencer Jones | SWB | 0.942 |
-| 5 | Marco Luciano | SWB | 0.938 |
-| 6 | J.C. Escarra | SWB | 0.915 |
-| 7 | Garrett Martin | SWB | 0.907 |
-| 8 | Luis Escudero | TAM | 0.900 |
-| 9 | Jasson Domínguez | SWB | 0.884 |
-| 10 | George Lombard Jr. | SWB | 0.879 |
+| 1 | Marco Luciano | SWB | 0.938 |
+| 2 | George Lombard Jr. | SWB | 0.879 |
+| 3 | Jace Avina | SOM | 0.871 |
+| 4 | Tyler Hardman | SWB | 0.848 |
+| 5 | Coby Morales | SOM | 0.845 |
+| 6 | Jackson Lovich | HV | 0.844 |
+| 7 | Core Jackson | HV | 0.843 |
+| 8 | Eric Genther | HV | 0.841 |
+| 9 | DJ Gladney | SOM | 0.828 |
+| T10 | Roderick Arias | SOM | 0.806 |
+| T10 | Wilson Rodriguez | HV | 0.806 |
 
 ### Hits
 | # | Player | Team | Value |
@@ -152,30 +153,12 @@
 ### ERA
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Luis Velasquez | SOM | 1.00 |
-| T1 | Angel Chivilli | SWB | 1.00 |
-| 3 | Kervin Castro | SWB | 1.80 |
-| 4 | Chris Veach | SOM | 2.01 |
-| 5 | Tony Rossi | SOM | 2.02 |
-| 6 | Bradley Hanner | SWB | 2.10 |
-| 7 | Dylan Coleman | SWB | 2.57 |
-| 8 | Brendan Beck | SWB | 2.66 |
-| 9 | Jose M. Rodriguez | HV | 2.83 |
-| 10 | Elmer Rodríguez | SWB | 2.85 |
+| 1 | Brendan Beck | SWB | 2.66 |
 
 ### WHIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Angel Chivilli | SWB | 0.72 |
-| 2 | Kervin Castro | SWB | 0.87 |
-| 3 | Tony Rossi | SOM | 0.88 |
-| 4 | Chris Veach | SOM | 0.90 |
-| 5 | Baron Stuart | SOM | 0.98 |
-| T6 | Tyler Boudreau | TAM | 1.04 |
-| T6 | Brendan Beck | SWB | 1.04 |
-| 8 | Chris Kean | SWB | 1.06 |
-| 9 | Gerrit Cole | SWB | 1.07 |
-| 10 | Luis Velasquez | SOM | 1.11 |
+| 1 | Brendan Beck | SWB | 1.04 |
 
 ### Innings Pitched
 | # | Player | Team | Value |
@@ -209,30 +192,12 @@
 ### AVG Against
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Chris Veach | SOM | 0.130 |
-| 2 | Baron Stuart | SOM | 0.145 |
-| 3 | Angel Chivilli | SWB | 0.153 |
-| 4 | Thatcher Hurd | TAM | 0.165 |
-| 5 | Dylan Coleman | SWB | 0.167 |
-| 6 | Wilmy Sanchez | SOM | 0.169 |
-| 7 | Tony Rossi | SOM | 0.170 |
-| 8 | Jose M. Rodriguez | HV | 0.174 |
-| 9 | Luis Velasquez | SOM | 0.175 |
-| 10 | Xavier Rivas | SOM | 0.176 |
+| 1 | Brendan Beck | SWB | 0.202 |
 
 ### SO/9
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Eric Reyzelman | SWB | 14.59 |
-| 2 | Hayden Merda | SOM | 14.47 |
-| 3 | Hansel Rincon | HV | 13.50 |
-| 4 | Wilmy Sanchez | SOM | 13.37 |
-| 5 | Matt Keating | SOM | 13.34 |
-| 6 | Chris Veach | SOM | 13.30 |
-| 7 | J.T. Etheridge | TAM | 13.24 |
-| 8 | Parker Seay | TAM | 12.93 |
-| 9 | Thomas Balboni Jr. | HV | 12.62 |
-| 10 | Xavier Rivas | SOM | 12.61 |
+| 1 | Brendan Beck | SWB | 9.86 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*
