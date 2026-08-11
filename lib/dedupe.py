@@ -60,32 +60,70 @@ def combine_by_id(records, count_fields, label="records", verbose=True):
     duplicate. combine_by_id() adds his numbers together instead of
     throwing half of them away.
 
+    IMPORTANT: this first collapses to at most ONE row per (player, team)
+    pair before summing. A player should only ever have one real row per
+    team per run -- each team's roster and stat pull happens exactly once.
+    If the same (player, team) pair shows up more than once anyway, that's
+    a real upstream problem (a roster listing a player twice, a fetch
+    function called twice for the same team, etc.), not a second team he
+    legitimately played for -- and summing it in as if it were a second
+    team would silently double-count real production. This was found and
+    fixed after exactly that kind of inflation showed up in production
+    (a player's season total coming out higher than his two real teams'
+    numbers could add up to).
+
     The merged row is displayed under his most advanced level reached
     (e.g. "somerset"), with the full list of levels he played kept in
     teams_played for anyone who wants to show progression later."""
-    combined = {}
+    # Step 1: collapse to one row per (id, team) pair, warning loudly if a
+    # true duplicate (same player, same team, more than once) is found.
+    by_id_team = {}
+    dupe_same_team = []
     for r in records:
+        key = (r["id"], r.get("team"))
+        if key in by_id_team:
+            dupe_same_team.append((r.get("name"), r.get("team")))
+            continue
+        by_id_team[key] = r
+    if dupe_same_team and verbose:
+        print(f"  WARNING: found {len(dupe_same_team)} duplicate (player, team) "
+              f"row(s) in {label} -- kept only the first of each and discarded "
+              f"the rest, to avoid double-counting the same team twice: "
+              f"{dupe_same_team}. This points to an upstream fetch issue worth "
+              f"investigating (a roster listing someone twice, a team fetched "
+              f"more than once, etc.) even though the output here is now correct.")
+
+    # Step 2: sum counting fields across each player's remaining (now
+    # guaranteed-unique-per-team) rows.
+    combined = {}
+    contributions = {}
+    for r in by_id_team.values():
         pid = r["id"]
         if pid not in combined:
             combined[pid] = dict(r)
             combined[pid]["_teams_played"] = {r.get("team")}
+            contributions[pid] = [(r.get("team"), {f: r.get(f, 0) for f in count_fields})]
         else:
             for f in count_fields:
                 combined[pid][f] = combined[pid].get(f, 0) + r.get(f, 0)
             combined[pid]["_teams_played"].add(r.get("team"))
+            contributions[pid].append((r.get("team"), {f: r.get(f, 0) for f in count_fields}))
 
     merged_count = 0
-    for row in combined.values():
+    for pid, row in combined.items():
         teams = row.pop("_teams_played")
         if len(teams) > 1:
             merged_count += 1
             row["team"] = max(teams, key=_level_rank)
             row["teams_played"] = sorted(teams, key=_level_rank)
+            if verbose:
+                print(f"  NOTE: combined {row.get('name')} across {sorted(teams, key=_level_rank)} "
+                      f"-- per-team contribution: {contributions[pid]}")
         else:
             row["teams_played"] = list(teams)
 
     if merged_count and verbose:
-        print(f"  NOTE: combined {merged_count} {label} across multiple affiliate "
+        print(f"  Combined {merged_count} {label} total across multiple affiliate "
               f"levels this season (promotions/demotions) -- their counting "
               f"totals now reflect their FULL season, not just one team.")
     return list(combined.values())
