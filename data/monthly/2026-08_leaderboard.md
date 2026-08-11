@@ -1,6 +1,6 @@
 # YankeesFarm Stat Leaders — 2026-08
 **Source file:** data/monthly/2026-08.json
-**Qualifying minimums:** 347 PA / 112.0 IP
+**Qualifying minimums:** 347 PA / 56.0 IP
 
 ## HITTING LEADERS
 
@@ -154,11 +154,29 @@
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Brendan Beck | SWB | 2.66 |
+| 2 | Elmer Rodríguez | SWB | 2.85 |
+| 3 | Tyler Boudreau | TAM | 3.46 |
+| 4 | Xavier Rivas | SOM | 3.65 |
+| 5 | Kyle Carr | SWB | 4.37 |
+| 6 | Luis Serna | HV | 4.44 |
+| 7 | Ben Hess | SOM | 4.45 |
+| 8 | Bryce Cunningham | HV | 4.48 |
+| T9 | Chase Chaney | SOM | 4.55 |
+| T9 | Carlos Lagrange | SWB | 4.55 |
 
 ### WHIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Brendan Beck | SWB | 1.04 |
+| T1 | Tyler Boudreau | TAM | 1.04 |
+| T1 | Brendan Beck | SWB | 1.04 |
+| 3 | Xavier Rivas | SOM | 1.13 |
+| 4 | Luis Serna | HV | 1.22 |
+| 5 | Elmer Rodríguez | SWB | 1.32 |
+| T6 | Rory Fox | SOM | 1.34 |
+| T6 | Chase Chaney | SOM | 1.34 |
+| T8 | Justin West | TAM | 1.35 |
+| T8 | Bryce Cunningham | HV | 1.35 |
+| 10 | Carlos Lagrange | SWB | 1.36 |
 
 ### Innings Pitched
 | # | Player | Team | Value |
@@ -192,12 +210,30 @@
 ### AVG Against
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Brendan Beck | SWB | 0.202 |
+| 1 | Xavier Rivas | SOM | 0.176 |
+| 2 | Tyler Boudreau | TAM | 0.185 |
+| 3 | Allen Facundo | HV | 0.191 |
+| 4 | Brendan Beck | SWB | 0.202 |
+| T5 | Carlos Lagrange | SWB | 0.221 |
+| T5 | Elmer Rodríguez | SWB | 0.221 |
+| 7 | Bryce Cunningham | HV | 0.224 |
+| 8 | Luis Serna | HV | 0.230 |
+| 9 | Franyer Herrera | HV | 0.233 |
+| 10 | Adam Kloffenstein | SWB | 0.240 |
 
 ### SO/9
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Brendan Beck | SWB | 9.86 |
+| 1 | Xavier Rivas | SOM | 12.61 |
+| 2 | Allen Facundo | HV | 12.51 |
+| 3 | Trent Sellers | SOM | 11.80 |
+| 4 | Carlos Lagrange | SWB | 11.79 |
+| 5 | Sean Paul Liñan | HV | 11.01 |
+| 6 | Kyle Carr | SWB | 10.76 |
+| 7 | Franyer Herrera | HV | 10.45 |
+| 8 | Ben Hess | SOM | 10.32 |
+| 9 | Luis Serna | HV | 10.22 |
+| 10 | Tyler Boudreau | TAM | 9.89 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*
