@@ -256,20 +256,33 @@ def main():
         all_hitters.extend(hitters)
         all_pitchers.extend(pitchers)
 
-    # "Qualified" for a rate-stat title (AVG/OBP/SLG/OPS/ERA/WHIP), using
-    # the same rule MLB itself uses: 3.1 plate appearances per team game
-    # for hitters, 1 inning pitched per team game for pitchers. Since the
-    # four affiliates have played slightly different numbers of games (each
-    # started on its own real Opening Day, with its own rainouts/makeups),
-    # this uses the MOST games any one of them has played as the season's
-    # reference point -- the same idea as MLB using its own 162-game
-    # schedule as the standard, just derived from real data instead of
-    # assumed. Using the max (not the average) means the threshold is
-    # never stricter than what's actually achievable by a full-season
-    # player at any level.
+    # "Qualified" for a rate-stat title (AVG/OBP/SLG/OPS/ERA/WHIP). Hitters
+    # use MLB's own literal rule -- 3.1 plate appearances per team game --
+    # which works fine here since a regular position player really does
+    # appear in most of his team's games.
+    #
+    # Pitchers do NOT use MLB's literal "1 IP per team game" rule. That
+    # standard assumes an MLB workhorse starter throwing ~180-220 innings a
+    # year. It does not fit a player-development system that deliberately
+    # limits pitching prospects' workloads (six-man rotations, strict
+    # innings caps) -- confirmed by checking this org's actual innings
+    # totals mid-season: with the top team having played 112 games, literal
+    # "1 IP/game" (112 IP) let through exactly ONE pitcher organization-wide,
+    # while the #2-through-#10 most-worked pitchers (all legitimate,
+    # full-time rotation arms) were sitting at 84-93 innings and got
+    # excluded. 0.5 IP per team game is used instead, which comfortably
+    # includes every real rotation regular without lowering the bar so far
+    # that a September call-up's 8 innings would qualify.
+    #
+    # Since the four affiliates have played slightly different numbers of
+    # games (each started on its own real Opening Day, with its own
+    # rainouts/makeups), both thresholds use the MOST games any one of them
+    # has played as the season's reference point, so the bar is never
+    # stricter than what's actually achievable by a full-season player at
+    # any level.
     max_games = max(team_games_played.values()) if team_games_played else 0
     qualifying_pa = round(3.1 * max_games)
-    qualifying_ip = round(1.0 * max_games, 1)
+    qualifying_ip = round(0.5 * max_games, 1)
     print(f"\nQualifying threshold: {max_games} games (max across affiliates) -> "
           f"{qualifying_pa} PA / {qualifying_ip} IP to qualify for a rate-stat leaderboard.")
 
