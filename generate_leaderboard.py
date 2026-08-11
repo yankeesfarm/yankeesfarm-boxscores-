@@ -107,6 +107,9 @@ def recompute_hitting_rates(row):
 
     row["avg"] = round(h / ab, 3) if ab else 0.0
     pa_ob = ab + bb + hbp + sf
+    row["pa"] = pa_ob  # plate appearances -- the real qualifying metric for
+                        # a batting/OBP/SLG/OPS title, used by top_n() below
+                        # instead of raw at-bats.
     row["obp"] = round((h + bb + hbp) / pa_ob, 3) if pa_ob else 0.0
     row["slg"] = round(tb / ab, 3) if ab else 0.0
     row["ops"] = round(row["obp"] + row["slg"], 3)
@@ -177,7 +180,7 @@ def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta, rookie_hitters=N
     for field, label, is_rate in HITTING_CATEGORIES:
         min_qual = min_ab if is_rate else 0
         pool = counting_pool if field in ROOKIE_LEVEL_INCLUDED_FIELDS else hitters
-        leaders = top_n(pool, field, min_qual, "atBats" if is_rate else None)
+        leaders = top_n(pool, field, min_qual, "pa" if is_rate else None)
         categories[f"hitting_{field}"] = {
             "label": label, "group": "hitting", "isRate": is_rate,
             "entries": ranked_entries(leaders, field, is_rate),
@@ -241,7 +244,7 @@ def render_hitting(rows, min_ab, rookie_rows=None):
     for field, label, is_rate in HITTING_CATEGORIES:
         min_qual = min_ab if is_rate else 0
         pool = counting_pool if field in ROOKIE_LEVEL_INCLUDED_FIELDS else rows
-        leaders = top_n(pool, field, min_qual, "atBats" if is_rate else None)
+        leaders = top_n(pool, field, min_qual, "pa" if is_rate else None)
         out.append(f"### {label}")
         out.append(render_table(leaders, field, is_rate))
         out.append("")
@@ -310,12 +313,27 @@ def main():
     for row in data["pitchers"]:
         recompute_pitching_rates(row)
 
-    min_ip_outs = int(round(args.min_ip * 3))
+    # Season files carry a real, computed "qualified" threshold (3.1 PA /
+    # team game, 1 IP / team game -- the same standard MLB itself uses),
+    # derived from each affiliate's actual games played this season. Weekly
+    # files don't have this -- "qualified for a weekly title" isn't a real
+    # baseball concept -- so those keep using the flat --min-ab/--min-ip
+    # CLI defaults, just now measured in PA rather than raw at-bats.
+    if "qualifying_pa" in data and "qualifying_ip" in data:
+        min_ab = data["qualifying_pa"]
+        min_ip_outs = int(round(data["qualifying_ip"] * 3))
+        print(f"Using this file's computed qualifying threshold: "
+              f"{min_ab} PA / {data['qualifying_ip']} IP "
+              f"(derived from {data.get('team_games_played')}).")
+    else:
+        min_ab = args.min_ab
+        min_ip_outs = int(round(args.min_ip * 3))
 
     title = data.get("month") or f"{data.get('start_date')} to {data.get('end_date')}"
+    ip_display = min_ip_outs / 3
     report = [f"# YankeesFarm Stat Leaders — {title}", f"**Source file:** {args.file}",
-              f"**Qualifying minimums:** {args.min_ab} AB / {args.min_ip} IP", ""]
-    report.append(render_hitting(data["hitters"], args.min_ab, rookie_hitters))
+              f"**Qualifying minimums:** {min_ab} PA / {ip_display} IP", ""]
+    report.append(render_hitting(data["hitters"], min_ab, rookie_hitters))
     report.append(render_pitching(data["pitchers"], min_ip_outs))
     report.append("---")
     report.append("*Auto-generated. Verify top names per category against MiLB.com before posting.*")
@@ -330,10 +348,10 @@ def main():
             "title": title,
             "period": "monthly" if data.get("month") else "weekly",
             "sourceFile": args.file,
-            "minAB": args.min_ab,
-            "minIP": args.min_ip,
+            "minPA": min_ab,
+            "minIP": ip_display,
         }
-        payload = build_payload(data["hitters"], data["pitchers"], args.min_ab, min_ip_outs, meta,
+        payload = build_payload(data["hitters"], data["pitchers"], min_ab, min_ip_outs, meta,
                                  rookie_hitters=rookie_hitters)
         json_path = args.file.replace(".json", "_wix_payload.json")
         with open(json_path, "w") as f:
