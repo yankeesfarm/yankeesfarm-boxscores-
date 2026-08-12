@@ -1,9 +1,10 @@
 {
   "season": 2026,
-  "generated_at": "2026-08-12T19:32:53Z",
+  "generated_at": "2026-08-12T19:51:21Z",
   "hitters": [
     {
       "name": "Abrahan Gutierrez",
+      "mlbId": 670868,
       "pos": "C",
       "level": "AAA",
       "avg": 0.162,
@@ -23,6 +24,7 @@
     },
     {
       "name": "Anthony Volpe",
+      "mlbId": 683011,
       "pos": "SS",
       "level": "AAA",
       "avg": 0.224,
@@ -42,6 +44,7 @@
     },
     {
       "name": "Christian Bethancourt",
+      "mlbId": 542194,
       "pos": "C",
       "level": "AAA",
       "avg": 0.274,
@@ -61,6 +64,7 @@
     },
     {
       "name": "Duke Ellis",
+      "mlbId": 668752,
       "pos": "CF",
       "level": "AAA",
       "avg": 0.237,
@@ -80,6 +84,7 @@
     },
     {
       "name": "Ernesto Martinez Jr.",
+      "mlbId": 667803,
       "pos": "1B",
       "level": "AAA",
       "avg": 0.238,
@@ -99,6 +104,7 @@
     },
     {
       "name": "J.C. Escarra",
+      "mlbId": 641555,
       "pos": "C",
       "level": "AAA",
       "avg": 0.283,
@@ -118,6 +124,7 @@
     },
     {
       "name": "Jasson Dom\u00ednguez",
+      "mlbId": 691176,
       "pos": "RF",
       "level": "AAA",
       "avg": 0.313,
@@ -137,6 +144,7 @@
     },
     {
       "name": "Kenedy Corona",
+      "mlbId": 685744,
       "pos": "CF",
       "level": "AAA",
       "avg": 0.251,
@@ -156,6 +164,7 @@
     },
     {
       "name": "Marco Luciano",
+      "mlbId": 682617,
       "pos": "SS",
       "level": "AAA",
       "avg": 0.288,
@@ -175,6 +184,7 @@
     },
     {
       "name": "Max Schuemann",
+      "mlbId": 680474,
       "pos": "LF",
       "level": "AAA",
       "avg": 0.253,
@@ -194,6 +204,7 @@
     },
     {
       "name": "Oswaldo Cabrera",
+      "mlbId": 665828,
       "pos": "3B",
       "level": "AAA",
       "avg": 0.295,
@@ -213,6 +224,7 @@
     },
     {
       "name": "Tyler Hardman",
+      "mlbId": 676205,
       "pos": "1B",
       "level": "AAA",
       "avg": 0.242,
@@ -232,6 +244,7 @@
     },
     {
       "name": "Yanquiel Fern\u00e1ndez",
+      "mlbId": 692585,
       "pos": "RF",
       "level": "AAA",
       "avg": 0.256,
@@ -251,6 +264,7 @@
     },
     {
       "name": "Coby Morales",
+      "mlbId": 815089,
       "pos": "OF",
       "level": "AA",
       "avg": 0.273,
@@ -270,6 +284,7 @@
     },
     {
       "name": "Cole Gabrielson",
+      "mlbId": 702068,
       "pos": "OF",
       "level": "AA",
       "avg": 0.281,
@@ -289,6 +304,7 @@
     },
     {
       "name": "Connor McGinnis",
+      "mlbId": 821296,
       "pos": "2B",
       "level": "AA",
       "avg": 0.246,
@@ -308,6 +324,7 @@
     },
     {
       "name": "Core Jackson",
+      "mlbId": 692110,
       "pos": "SS",
       "level": "AA",
       "avg": 0.286,
@@ -327,6 +344,7 @@
     },
     {
       "name": "DJ Gladney",
+      "mlbId": 687554,
       "pos": "OF",
       "level": "AA",
       "avg": 0.269,
@@ -346,6 +364,7 @@
     },
     {
       "name": "Jace Avina",
+      "mlbId": 701778,
       "pos": "LF",
       "level": "AA",
       "avg": 0.261,
@@ -365,6 +384,7 @@
     },
     {
       "name": "Jackson Castillo",
+      "mlbId": 814431,
       "pos": "OF",
       "level": "AA",
       "avg": 0.243,
@@ -384,6 +404,7 @@
     },
     {
       "name": "Josh Moylan",
+      "mlbId": 694742,
       "pos": "1B",
       "level": "AA",
       "avg": 0.246,
@@ -403,6 +424,7 @@
     },
     {
       "name": "Kevin Verde",
+      "mlbId": 814269,
       "pos": "SS",
       "level": "AA",
       "avg": 0.211,
@@ -422,6 +444,7 @@
     },
     {
       "name": "Luis Durango",
+      "mlbId": 691411,
       "pos": "CF",
       "level": "AA",
       "avg": 0.323,
@@ -441,6 +464,7 @@
     },
     {
       "name": "Manuel Palencia",
+      "mlbId": 692633,
       "pos": "C",
       "level": "AA",
       "avg": 0.264,
@@ -460,6 +484,7 @@
     },
     {
       "name": "Miguel Palma",
+      "mlbId": 682692,
       "pos": "C",
       "level": "AA",
       "avg": 0.227,
@@ -479,6 +504,7 @@
     },
     {
       "name": "Omar Alfonzo",
+      "mlbId": 692657,
       "pos": "C",
       "level": "AA",
       "avg": 0.22,
@@ -498,6 +524,7 @@
     },
     {
       "name": "Roderick Arias",
+      "mlbId": 703149,
       "pos": "SS",
       "level": "AA",
       "avg": 0.344,
@@ -517,6 +544,7 @@
     },
     {
       "name": "Bryce Martin-Grudzielanek",
+      "mlbId": 701727,
       "pos": "SS",
       "level": "A+",
       "avg": 0.179,
@@ -536,6 +564,7 @@
     },
     {
       "name": "Camden Troyer",
+      "mlbId": 803131,
       "pos": "OF",
       "level": "A+",
       "avg": 0.241,
@@ -555,6 +584,7 @@
     },
     {
       "name": "David McCann",
+      "mlbId": 806154,
       "pos": "C",
       "level": "A+",
       "avg": 0.318,
@@ -574,6 +604,7 @@
     },
     {
       "name": "Dean Toigo",
+      "mlbId": 831025,
       "pos": "OF",
       "level": "A+",
       "avg": 0.353,
@@ -593,6 +624,7 @@
     },
     {
       "name": "Diomedes Hernandez",
+      "mlbId": 800299,
       "pos": "C",
       "level": "A+",
       "avg": 0.25,
@@ -612,6 +644,7 @@
     },
     {
       "name": "Enmanuel Tejeda",
+      "mlbId": 800285,
       "pos": "SS",
       "level": "A+",
       "avg": 0.219,
@@ -631,6 +664,7 @@
     },
     {
       "name": "Eric Genther",
+      "mlbId": 823759,
       "pos": "OF",
       "level": "A+",
       "avg": 0.274,
@@ -650,6 +684,7 @@
     },
     {
       "name": "Jackson Lovich",
+      "mlbId": 804944,
       "pos": "SS",
       "level": "A+",
       "avg": 0.319,
@@ -669,6 +704,7 @@
     },
     {
       "name": "Kyle West",
+      "mlbId": 823918,
       "pos": "1B",
       "level": "A+",
       "avg": 0.224,
@@ -688,6 +724,7 @@
     },
     {
       "name": "Maika Niu",
+      "mlbId": 809569,
       "pos": "OF",
       "level": "A+",
       "avg": 0.375,
@@ -707,6 +744,7 @@
     },
     {
       "name": "Robbie Burnett",
+      "mlbId": 823754,
       "pos": "OF",
       "level": "A+",
       "avg": 0.244,
@@ -726,6 +764,7 @@
     },
     {
       "name": "Willy Montero",
+      "mlbId": 701206,
       "pos": "CF",
       "level": "A+",
       "avg": 0.206,
@@ -745,6 +784,7 @@
     },
     {
       "name": "Anthony Potestio",
+      "mlbId": 835219,
       "pos": "SS",
       "level": "A",
       "avg": 0.444,
@@ -764,6 +804,7 @@
     },
     {
       "name": "Bayram Hot",
+      "mlbId": 822496,
       "pos": "SS",
       "level": "A",
       "avg": 0.0,
@@ -783,6 +824,7 @@
     },
     {
       "name": "Bear Harrison",
+      "mlbId": 824424,
       "pos": "C",
       "level": "A",
       "avg": 0.143,
@@ -802,6 +844,7 @@
     },
     {
       "name": "Blake Cyr",
+      "mlbId": 701331,
       "pos": "OF",
       "level": "A",
       "avg": 0.222,
@@ -821,6 +864,7 @@
     },
     {
       "name": "Brando Mayea",
+      "mlbId": 806963,
       "pos": "OF",
       "level": "A",
       "avg": 0.249,
@@ -840,6 +884,7 @@
     },
     {
       "name": "Dax Kilby",
+      "mlbId": 828076,
       "pos": "SS",
       "level": "A",
       "avg": 0.245,
@@ -859,6 +904,7 @@
     },
     {
       "name": "Diego Castellanos",
+      "mlbId": 824425,
       "pos": "OF",
       "level": "A",
       "avg": 0.385,
@@ -878,6 +924,7 @@
     },
     {
       "name": "Ediel Rivera",
+      "mlbId": 815528,
       "pos": "C",
       "level": "A",
       "avg": 0.19,
@@ -897,6 +944,7 @@
     },
     {
       "name": "Luis Escudero",
+      "mlbId": 806884,
       "pos": "2B",
       "level": "A",
       "avg": 0.229,
@@ -916,6 +964,7 @@
     },
     {
       "name": "Luis Puello",
+      "mlbId": 809772,
       "pos": "C",
       "level": "A",
       "avg": 0.264,
@@ -935,6 +984,7 @@
     },
     {
       "name": "Paul Gutierrez-Contreras II",
+      "mlbId": 827290,
       "pos": "OF",
       "level": "A",
       "avg": 0.154,
@@ -954,6 +1004,7 @@
     },
     {
       "name": "Tyce Armstrong",
+      "mlbId": 801489,
       "pos": "1B",
       "level": "A",
       "avg": 0.158,
@@ -973,6 +1024,7 @@
     },
     {
       "name": "Wilberson De Pena",
+      "mlbId": 821648,
       "pos": "OF",
       "level": "A",
       "avg": 0.143,
@@ -992,6 +1044,7 @@
     },
     {
       "name": "Yostin Pena",
+      "mlbId": 829769,
       "pos": "OF",
       "level": "A",
       "avg": 0.306,
@@ -1011,6 +1064,7 @@
     },
     {
       "name": "Carlos Rondon",
+      "mlbId": 821084,
       "pos": "C",
       "level": "ROK",
       "avg": 0.0,
@@ -1030,6 +1084,7 @@
     },
     {
       "name": "Dexters Peralta",
+      "mlbId": 820996,
       "pos": "SS",
       "level": "ROK",
       "avg": 0.229,
@@ -1049,6 +1104,7 @@
     },
     {
       "name": "Diego Flores",
+      "mlbId": 821282,
       "pos": "C",
       "level": "ROK",
       "avg": 0.32,
@@ -1068,6 +1124,7 @@
     },
     {
       "name": "Estivenzon Montero",
+      "mlbId": 821028,
       "pos": "OF",
       "level": "ROK",
       "avg": 0.22,
@@ -1087,6 +1144,7 @@
     },
     {
       "name": "Francisco Vilorio",
+      "mlbId": 815910,
       "pos": "OF",
       "level": "ROK",
       "avg": 0.235,
@@ -1106,6 +1164,7 @@
     },
     {
       "name": "Jose Castro",
+      "mlbId": 812161,
       "pos": "CF",
       "level": "ROK",
       "avg": 0.328,
@@ -1125,6 +1184,7 @@
     },
     {
       "name": "Justin Capellan",
+      "mlbId": 820886,
       "pos": "C",
       "level": "ROK",
       "avg": 0.221,
@@ -1144,6 +1204,7 @@
     },
     {
       "name": "Leni Done",
+      "mlbId": 830454,
       "pos": "3B",
       "level": "ROK",
       "avg": 0.28,
@@ -1163,6 +1224,7 @@
     },
     {
       "name": "Queni Pineda",
+      "mlbId": 821065,
       "pos": "C",
       "level": "ROK",
       "avg": 0.257,
@@ -1182,6 +1244,7 @@
     },
     {
       "name": "Richard Matic",
+      "mlbId": 821043,
       "pos": "3B",
       "level": "ROK",
       "avg": 0.283,
@@ -1201,6 +1264,7 @@
     },
     {
       "name": "Alessandro Rodriguez",
+      "mlbId": 832491,
       "pos": "C",
       "level": "DSL2",
       "avg": 0.31,
@@ -1220,6 +1284,7 @@
     },
     {
       "name": "Alfred Ciriaco",
+      "mlbId": 829486,
       "pos": "SS",
       "level": "DSL2",
       "avg": 0.309,
@@ -1239,6 +1304,7 @@
     },
     {
       "name": "Carlos Bello",
+      "mlbId": 830470,
       "pos": "SS",
       "level": "DSL2",
       "avg": 0.189,
@@ -1258,6 +1324,7 @@
     },
     {
       "name": "Dariel Santana",
+      "mlbId": 825266,
       "pos": "SS",
       "level": "DSL2",
       "avg": 0.205,
@@ -1277,6 +1344,7 @@
     },
     {
       "name": "David Carrera",
+      "mlbId": 821683,
       "pos": "OF",
       "level": "DSL2",
       "avg": 0.333,
@@ -1296,6 +1364,7 @@
     },
     {
       "name": "Eddison Charles",
+      "mlbId": 830458,
       "pos": "OF",
       "level": "DSL2",
       "avg": 0.214,
@@ -1315,6 +1384,7 @@
     },
     {
       "name": "Edgar Jimenez",
+      "mlbId": 821173,
       "pos": "C",
       "level": "DSL2",
       "avg": 0.342,
@@ -1334,6 +1404,7 @@
     },
     {
       "name": "Eliezer Adames",
+      "mlbId": 830414,
       "pos": "OF",
       "level": "DSL2",
       "avg": 0.253,
@@ -1353,6 +1424,7 @@
     },
     {
       "name": "Germayhoni Beltre",
+      "mlbId": 822236,
       "pos": "SS",
       "level": "DSL2",
       "avg": 0.289,
@@ -1372,6 +1444,7 @@
     },
     {
       "name": "Jesus Guerrero",
+      "mlbId": 815334,
       "pos": "C",
       "level": "DSL2",
       "avg": 0.171,
@@ -1391,6 +1464,7 @@
     },
     {
       "name": "Kenneth Melendez",
+      "mlbId": 837815,
       "pos": "C",
       "level": "DSL2",
       "avg": 0.212,
@@ -1410,6 +1484,7 @@
     },
     {
       "name": "Mani Cedeno",
+      "mlbId": 829041,
       "pos": "SS",
       "level": "DSL2",
       "avg": 0.228,
@@ -1429,6 +1504,7 @@
     },
     {
       "name": "Richard Meran",
+      "mlbId": 808152,
       "pos": "OF",
       "level": "DSL2",
       "avg": 0.206,
@@ -1448,6 +1524,7 @@
     },
     {
       "name": "Ruben Castillo",
+      "mlbId": 830419,
       "pos": "OF",
       "level": "DSL2",
       "avg": 0.297,
@@ -1467,6 +1544,7 @@
     },
     {
       "name": "Sebastian Pinto",
+      "mlbId": 837792,
       "pos": "OF",
       "level": "DSL2",
       "avg": 0.245,
@@ -1486,6 +1564,7 @@
     },
     {
       "name": "Abrahan Pichardo",
+      "mlbId": 822264,
       "pos": "SS",
       "level": "DSL1",
       "avg": 0.172,
@@ -1505,6 +1584,7 @@
     },
     {
       "name": "Adrian Feliz",
+      "mlbId": 832447,
       "pos": "SS",
       "level": "DSL1",
       "avg": 0.247,
@@ -1524,6 +1604,7 @@
     },
     {
       "name": "Alfiery Matos",
+      "mlbId": 832787,
       "pos": "OF",
       "level": "DSL1",
       "avg": 0.26,
@@ -1543,6 +1624,7 @@
     },
     {
       "name": "Cesar Lopez",
+      "mlbId": 822210,
       "pos": "C",
       "level": "DSL1",
       "avg": 0.287,
@@ -1562,6 +1644,7 @@
     },
     {
       "name": "Emmanuel Orozco",
+      "mlbId": 832789,
       "pos": "SS",
       "level": "DSL1",
       "avg": 0.179,
@@ -1581,6 +1664,7 @@
     },
     {
       "name": "Isaias Castillo",
+      "mlbId": 830461,
       "pos": "OF",
       "level": "DSL1",
       "avg": 0.302,
@@ -1600,6 +1684,7 @@
     },
     {
       "name": "John Rosillo",
+      "mlbId": 837798,
       "pos": "C",
       "level": "DSL1",
       "avg": 0.083,
@@ -1619,6 +1704,7 @@
     },
     {
       "name": "Jose Peralta",
+      "mlbId": 825186,
       "pos": "C",
       "level": "DSL1",
       "avg": 0.136,
@@ -1638,6 +1724,7 @@
     },
     {
       "name": "Juan Martinez",
+      "mlbId": 837831,
       "pos": "C",
       "level": "DSL1",
       "avg": 0.357,
@@ -1657,6 +1744,7 @@
     },
     {
       "name": "Juan Torres",
+      "mlbId": 825153,
       "pos": "2B",
       "level": "DSL1",
       "avg": 0.378,
@@ -1676,6 +1764,7 @@
     },
     {
       "name": "Kendry Diaz",
+      "mlbId": 833200,
       "pos": "OF",
       "level": "DSL1",
       "avg": 0.267,
@@ -1695,6 +1784,7 @@
     },
     {
       "name": "Luis Cruz",
+      "mlbId": 825411,
       "pos": "OF",
       "level": "DSL1",
       "avg": 0.299,
@@ -1714,6 +1804,7 @@
     },
     {
       "name": "Manuel Aguilar",
+      "mlbId": 839410,
       "pos": "OF",
       "level": "DSL1",
       "avg": 0.265,
@@ -1733,6 +1824,7 @@
     },
     {
       "name": "Poly Ojeda",
+      "mlbId": 822180,
       "pos": "C",
       "level": "DSL1",
       "avg": 0.327,
@@ -1752,6 +1844,7 @@
     },
     {
       "name": "Stalen Ramirez",
+      "mlbId": 830475,
       "pos": "C",
       "level": "DSL1",
       "avg": 0.286,
@@ -1771,6 +1864,7 @@
     },
     {
       "name": "Stiven Marinez",
+      "mlbId": 829501,
       "pos": "SS",
       "level": "DSL1",
       "avg": 0.313,
@@ -1792,6 +1886,7 @@
   "pitchers": [
     {
       "name": "Adam Kloffenstein",
+      "mlbId": 680572,
       "pos": "P",
       "level": "AAA",
       "w": 2,
@@ -1806,6 +1901,7 @@
     },
     {
       "name": "Alexander Cornielle",
+      "mlbId": 529017,
       "pos": "P",
       "level": "AAA",
       "w": 2,
@@ -1820,6 +1916,7 @@
     },
     {
       "name": "Angel Chivilli",
+      "mlbId": 683409,
       "pos": "P",
       "level": "AAA",
       "w": 1,
@@ -1834,6 +1931,7 @@
     },
     {
       "name": "Brendan Beck",
+      "mlbId": 694341,
       "pos": "P",
       "level": "AAA",
       "w": 9,
@@ -1848,6 +1946,7 @@
     },
     {
       "name": "Brian Hendry",
+      "mlbId": 809137,
       "pos": "P",
       "level": "AAA",
       "w": 0,
@@ -1862,6 +1961,7 @@
     },
     {
       "name": "Carlos Rod\u00f3n",
+      "mlbId": 607074,
       "pos": "P",
       "level": "AAA",
       "w": 0,
@@ -1876,6 +1976,7 @@
     },
     {
       "name": "Carson Coleman",
+      "mlbId": 679693,
       "pos": "P",
       "level": "AAA",
       "w": 1,
@@ -1890,6 +1991,7 @@
     },
     {
       "name": "Chris Kean",
+      "mlbId": 815454,
       "pos": "P",
       "level": "AAA",
       "w": 1,
@@ -1904,6 +2006,7 @@
     },
     {
       "name": "Elmer Rodr\u00edguez",
+      "mlbId": 695684,
       "pos": "P",
       "level": "AAA",
       "w": 7,
@@ -1918,6 +2021,7 @@
     },
     {
       "name": "Eric Reyzelman",
+      "mlbId": 801432,
       "pos": "P",
       "level": "AAA",
       "w": 1,
@@ -1932,6 +2036,7 @@
     },
     {
       "name": "Will Brian",
+      "mlbId": 684608,
       "pos": "P",
       "level": "AAA",
       "w": 0,
@@ -1946,6 +2051,7 @@
     },
     {
       "name": "Zach Messinger",
+      "mlbId": 684725,
       "pos": "P",
       "level": "AAA",
       "w": 7,
@@ -1960,6 +2066,7 @@
     },
     {
       "name": "Ben Hess",
+      "mlbId": 696292,
       "pos": "P",
       "level": "AA",
       "w": 3,
@@ -1974,6 +2081,7 @@
     },
     {
       "name": "Cade Smith",
+      "mlbId": 694696,
       "pos": "P",
       "level": "AA",
       "w": 5,
@@ -1988,6 +2096,7 @@
     },
     {
       "name": "Geoffrey Gilbert",
+      "mlbId": 687280,
       "pos": "P",
       "level": "AA",
       "w": 4,
@@ -2002,6 +2111,7 @@
     },
     {
       "name": "Harrison Cohen",
+      "mlbId": 694660,
       "pos": "P",
       "level": "AA",
       "w": 4,
@@ -2016,6 +2126,7 @@
     },
     {
       "name": "Hueston Morrill",
+      "mlbId": 680893,
       "pos": "P",
       "level": "AA",
       "w": 1,
@@ -2030,6 +2141,7 @@
     },
     {
       "name": "Kelly Austin",
+      "mlbId": 675502,
       "pos": "P",
       "level": "AA",
       "w": 3,
@@ -2044,6 +2156,7 @@
     },
     {
       "name": "Kevin Stevens",
+      "mlbId": 805728,
       "pos": "P",
       "level": "AA",
       "w": 0,
@@ -2058,6 +2171,7 @@
     },
     {
       "name": "Luis Velasquez",
+      "mlbId": 686433,
       "pos": "P",
       "level": "AA",
       "w": 0,
@@ -2072,6 +2186,7 @@
     },
     {
       "name": "Matt Keating",
+      "mlbId": 702046,
       "pos": "P",
       "level": "AA",
       "w": 2,
@@ -2086,6 +2201,7 @@
     },
     {
       "name": "Michael Arias",
+      "mlbId": 683522,
       "pos": "P",
       "level": "AA",
       "w": 3,
@@ -2100,6 +2216,7 @@
     },
     {
       "name": "Rory Fox",
+      "mlbId": 812431,
       "pos": "P",
       "level": "AA",
       "w": 1,
@@ -2114,6 +2231,7 @@
     },
     {
       "name": "Tony Rossi",
+      "mlbId": 702036,
       "pos": "P",
       "level": "AA",
       "w": 3,
@@ -2128,6 +2246,7 @@
     },
     {
       "name": "Trent Sellers",
+      "mlbId": 815587,
       "pos": "P",
       "level": "AA",
       "w": 3,
@@ -2142,6 +2261,7 @@
     },
     {
       "name": "Allen Facundo",
+      "mlbId": 702098,
       "pos": "P",
       "level": "A+",
       "w": 3,
@@ -2156,6 +2276,7 @@
     },
     {
       "name": "Andrew Landry",
+      "mlbId": 815069,
       "pos": "P",
       "level": "A+",
       "w": 2,
@@ -2170,6 +2291,7 @@
     },
     {
       "name": "Brady Kirtner",
+      "mlbId": 802374,
       "pos": "P",
       "level": "A+",
       "w": 3,
@@ -2184,6 +2306,7 @@
     },
     {
       "name": "Brandon Decker",
+      "mlbId": 804698,
       "pos": "P",
       "level": "A+",
       "w": 5,
@@ -2198,6 +2321,7 @@
     },
     {
       "name": "Bryce Cunningham",
+      "mlbId": 701480,
       "pos": "P",
       "level": "A+",
       "w": 2,
@@ -2212,6 +2336,7 @@
     },
     {
       "name": "Bryce Warrecker",
+      "mlbId": 695425,
       "pos": "P",
       "level": "A+",
       "w": 1,
@@ -2226,6 +2351,7 @@
     },
     {
       "name": "Franyer Herrera",
+      "mlbId": 800471,
       "pos": "P",
       "level": "A+",
       "w": 5,
@@ -2240,6 +2366,7 @@
     },
     {
       "name": "Hansel Rincon",
+      "mlbId": 692550,
       "pos": "P",
       "level": "A+",
       "w": 2,
@@ -2254,6 +2381,7 @@
     },
     {
       "name": "Jack Sokol",
+      "mlbId": 694662,
       "pos": "P",
       "level": "A+",
       "w": 1,
@@ -2268,6 +2396,7 @@
     },
     {
       "name": "Jose M. Rodriguez",
+      "mlbId": 815278,
       "pos": "P",
       "level": "A+",
       "w": 1,
@@ -2282,6 +2411,7 @@
     },
     {
       "name": "Luis Gil",
+      "mlbId": 661563,
       "pos": "P",
       "level": "A+",
       "w": 0,
@@ -2296,6 +2426,7 @@
     },
     {
       "name": "Luis Serna",
+      "mlbId": 702436,
       "pos": "P",
       "level": "A+",
       "w": 5,
@@ -2310,6 +2441,7 @@
     },
     {
       "name": "Pico Kohn",
+      "mlbId": 695560,
       "pos": "P",
       "level": "A+",
       "w": 1,
@@ -2324,6 +2456,7 @@
     },
     {
       "name": "Sean Paul Li\u00f1an",
+      "mlbId": 800344,
       "pos": "P",
       "level": "A+",
       "w": 2,
@@ -2338,6 +2471,7 @@
     },
     {
       "name": "Thomas Balboni Jr.",
+      "mlbId": 693647,
       "pos": "P",
       "level": "A+",
       "w": 1,
@@ -2352,6 +2486,7 @@
     },
     {
       "name": "Travis MacGregor",
+      "mlbId": 669740,
       "pos": "P",
       "level": "A+",
       "w": 0,
@@ -2366,6 +2501,7 @@
     },
     {
       "name": "Wilmy Sanchez",
+      "mlbId": 804522,
       "pos": "P",
       "level": "A+",
       "w": 0,
@@ -2380,6 +2516,7 @@
     },
     {
       "name": "Anthony Mena",
+      "mlbId": 827768,
       "pos": "P",
       "level": "A",
       "w": 0,
@@ -2394,6 +2531,7 @@
     },
     {
       "name": "Danny Flatt",
+      "mlbId": 814343,
       "pos": "P",
       "level": "A",
       "w": 1,
@@ -2408,6 +2546,7 @@
     },
     {
       "name": "Edinzo Marquez",
+      "mlbId": 805128,
       "pos": "P",
       "level": "A",
       "w": 1,
@@ -2422,6 +2561,7 @@
     },
     {
       "name": "Greysen Carter",
+      "mlbId": 701706,
       "pos": "P",
       "level": "A",
       "w": 5,
@@ -2436,6 +2576,7 @@
     },
     {
       "name": "J.T. Etheridge",
+      "mlbId": 822950,
       "pos": "P",
       "level": "A",
       "w": 7,
@@ -2450,6 +2591,7 @@
     },
     {
       "name": "Jordarlin Mendoza",
+      "mlbId": 702212,
       "pos": "P",
       "level": "A",
       "w": 4,
@@ -2464,6 +2606,7 @@
     },
     {
       "name": "Jose Ledesma",
+      "mlbId": 702874,
       "pos": "P",
       "level": "A",
       "w": 0,
@@ -2478,6 +2621,7 @@
     },
     {
       "name": "Jose Martinez",
+      "mlbId": 814715,
       "pos": "P",
       "level": "A",
       "w": 2,
@@ -2492,6 +2636,7 @@
     },
     {
       "name": "Josh Tiedemann",
+      "mlbId": 806244,
       "pos": "P",
       "level": "A",
       "w": 3,
@@ -2506,6 +2651,7 @@
     },
     {
       "name": "Justin West",
+      "mlbId": 804892,
       "pos": "P",
       "level": "A",
       "w": 8,
@@ -2520,6 +2666,7 @@
     },
     {
       "name": "Matthew Tippie",
+      "mlbId": 822915,
       "pos": "P",
       "level": "A",
       "w": 2,
@@ -2534,6 +2681,7 @@
     },
     {
       "name": "Rafael Arias",
+      "mlbId": 828266,
       "pos": "P",
       "level": "A",
       "w": 0,
@@ -2548,6 +2696,7 @@
     },
     {
       "name": "Sabier Marte",
+      "mlbId": 800239,
       "pos": "P",
       "level": "A",
       "w": 0,
@@ -2562,6 +2711,7 @@
     },
     {
       "name": "Tyler Boudreau",
+      "mlbId": 683332,
       "pos": "P",
       "level": "A",
       "w": 6,
@@ -2576,6 +2726,7 @@
     },
     {
       "name": "Wyatt Parliament",
+      "mlbId": 811963,
       "pos": "P",
       "level": "A",
       "w": 2,
@@ -2590,6 +2741,7 @@
     },
     {
       "name": "Yerry Rodr\u00edguez",
+      "mlbId": 666720,
       "pos": "P",
       "level": "A",
       "w": 0,
@@ -2604,6 +2756,7 @@
     },
     {
       "name": "Alexander Almonte",
+      "mlbId": 823012,
       "pos": "P",
       "level": "ROK",
       "w": 2,
@@ -2618,6 +2771,7 @@
     },
     {
       "name": "Austin Breedlove",
+      "mlbId": 824445,
       "pos": "P",
       "level": "ROK",
       "w": 2,
@@ -2632,6 +2786,7 @@
     },
     {
       "name": "Chalniel Arias",
+      "mlbId": 703921,
       "pos": "P",
       "level": "ROK",
       "w": 0,
@@ -2646,6 +2801,7 @@
     },
     {
       "name": "Enixon Sanchez",
+      "mlbId": 821198,
       "pos": "P",
       "level": "ROK",
       "w": 3,
@@ -2660,6 +2816,7 @@
     },
     {
       "name": "Jerson Alejandro",
+      "mlbId": 808394,
       "pos": "P",
       "level": "ROK",
       "w": 1,
@@ -2674,6 +2831,7 @@
     },
     {
       "name": "Jorge Luna",
+      "mlbId": 808659,
       "pos": "P",
       "level": "ROK",
       "w": 0,
@@ -2688,6 +2846,7 @@
     },
     {
       "name": "Mack Estrada",
+      "mlbId": 806070,
       "pos": "P",
       "level": "ROK",
       "w": 0,
@@ -2702,6 +2861,7 @@
     },
     {
       "name": "Manuel Cruz",
+      "mlbId": 825268,
       "pos": "P",
       "level": "ROK",
       "w": 3,
@@ -2716,6 +2876,7 @@
     },
     {
       "name": "Marco Manzano",
+      "mlbId": 821070,
       "pos": "P",
       "level": "ROK",
       "w": 1,
@@ -2730,6 +2891,7 @@
     },
     {
       "name": "Omar Gonzalez",
+      "mlbId": 800439,
       "pos": "P",
       "level": "ROK",
       "w": 2,
@@ -2744,6 +2906,7 @@
     },
     {
       "name": "Sunayro Martina",
+      "mlbId": 806103,
       "pos": "P",
       "level": "ROK",
       "w": 2,
@@ -2758,6 +2921,7 @@
     },
     {
       "name": "Andre Avila",
+      "mlbId": 830403,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2772,6 +2936,7 @@
     },
     {
       "name": "Argenis Veloz",
+      "mlbId": 840852,
       "pos": "P",
       "level": "DSL2",
       "w": 1,
@@ -2786,6 +2951,7 @@
     },
     {
       "name": "Brandy Luis",
+      "mlbId": 842651,
       "pos": "P",
       "level": "DSL2",
       "w": 2,
@@ -2800,6 +2966,7 @@
     },
     {
       "name": "Breidy Adames",
+      "mlbId": 842835,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2814,6 +2981,7 @@
     },
     {
       "name": "Carlos Hampshire",
+      "mlbId": 802388,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2828,6 +2996,7 @@
     },
     {
       "name": "Cesar Acosta",
+      "mlbId": 831048,
       "pos": "P",
       "level": "DSL2",
       "w": 4,
@@ -2842,6 +3011,7 @@
     },
     {
       "name": "Diego Carrillo",
+      "mlbId": 832796,
       "pos": "P",
       "level": "DSL2",
       "w": 2,
@@ -2856,6 +3026,7 @@
     },
     {
       "name": "Higor Requena",
+      "mlbId": 838137,
       "pos": "P",
       "level": "DSL2",
       "w": 3,
@@ -2870,6 +3041,7 @@
     },
     {
       "name": "Jhon Castro",
+      "mlbId": 837789,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2884,6 +3056,7 @@
     },
     {
       "name": "Jose Sanchez",
+      "mlbId": 839998,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2898,6 +3071,7 @@
     },
     {
       "name": "Josue Silvestre",
+      "mlbId": 827440,
       "pos": "P",
       "level": "DSL2",
       "w": 1,
@@ -2912,6 +3086,7 @@
     },
     {
       "name": "Junior Tavera",
+      "mlbId": 812563,
       "pos": "P",
       "level": "DSL2",
       "w": 2,
@@ -2926,6 +3101,7 @@
     },
     {
       "name": "Kevin Centeno",
+      "mlbId": 830400,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2940,6 +3116,7 @@
     },
     {
       "name": "Mauricio Vargas",
+      "mlbId": 827732,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2954,6 +3131,7 @@
     },
     {
       "name": "Oscar Vasquez",
+      "mlbId": 828012,
       "pos": "P",
       "level": "DSL2",
       "w": 1,
@@ -2968,6 +3146,7 @@
     },
     {
       "name": "Osveiker Chirino",
+      "mlbId": 842283,
       "pos": "P",
       "level": "DSL2",
       "w": 0,
@@ -2982,6 +3161,7 @@
     },
     {
       "name": "Randy Angomas",
+      "mlbId": 830411,
       "pos": "P",
       "level": "DSL2",
       "w": 1,
@@ -2996,6 +3176,7 @@
     },
     {
       "name": "Ronald Tejada",
+      "mlbId": 827348,
       "pos": "P",
       "level": "DSL2",
       "w": 2,
@@ -3010,6 +3191,7 @@
     },
     {
       "name": "Sebastian Castillo",
+      "mlbId": 832492,
       "pos": "P",
       "level": "DSL2",
       "w": 3,
@@ -3024,6 +3206,7 @@
     },
     {
       "name": "Angel Salazar",
+      "mlbId": 837827,
       "pos": "P",
       "level": "DSL1",
       "w": 2,
@@ -3038,6 +3221,7 @@
     },
     {
       "name": "Brandon Rodriguez",
+      "mlbId": 837823,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3052,6 +3236,7 @@
     },
     {
       "name": "Braulio Jaquez",
+      "mlbId": 843590,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3066,6 +3251,7 @@
     },
     {
       "name": "Cesar Vivanco",
+      "mlbId": 838518,
       "pos": "P",
       "level": "DSL1",
       "w": 0,
@@ -3080,6 +3266,7 @@
     },
     {
       "name": "Dalvin Taveras",
+      "mlbId": 839504,
       "pos": "P",
       "level": "DSL1",
       "w": 2,
@@ -3094,6 +3281,7 @@
     },
     {
       "name": "Dariel Chalas",
+      "mlbId": 840576,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3108,6 +3296,7 @@
     },
     {
       "name": "Emanuel Vargas",
+      "mlbId": 808375,
       "pos": "P",
       "level": "DSL1",
       "w": 0,
@@ -3122,6 +3311,7 @@
     },
     {
       "name": "Freddy Lopez",
+      "mlbId": 840309,
       "pos": "P",
       "level": "DSL1",
       "w": 3,
@@ -3136,6 +3326,7 @@
     },
     {
       "name": "Fredy Penuelas",
+      "mlbId": 832798,
       "pos": "P",
       "level": "DSL1",
       "w": 7,
@@ -3150,6 +3341,7 @@
     },
     {
       "name": "Hector Moreno",
+      "mlbId": 825396,
       "pos": "P",
       "level": "DSL1",
       "w": 0,
@@ -3164,6 +3356,7 @@
     },
     {
       "name": "Jhon Beltre",
+      "mlbId": 842321,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3178,6 +3371,7 @@
     },
     {
       "name": "Jhosneyker Colina",
+      "mlbId": 830466,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3192,6 +3386,7 @@
     },
     {
       "name": "Jose Vargas",
+      "mlbId": 832788,
       "pos": "P",
       "level": "DSL1",
       "w": 2,
@@ -3206,6 +3401,7 @@
     },
     {
       "name": "Luis Ilarraza",
+      "mlbId": 821184,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3220,6 +3416,7 @@
     },
     {
       "name": "Luis Rodriguez",
+      "mlbId": 830447,
       "pos": "P",
       "level": "DSL1",
       "w": 0,
@@ -3234,6 +3431,7 @@
     },
     {
       "name": "Varis Villarreal",
+      "mlbId": 827472,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3248,6 +3446,7 @@
     },
     {
       "name": "Victor De Leon",
+      "mlbId": 837834,
       "pos": "P",
       "level": "DSL1",
       "w": 1,
@@ -3262,6 +3461,7 @@
     },
     {
       "name": "Yunior Jerez",
+      "mlbId": 824881,
       "pos": "P",
       "level": "DSL1",
       "w": 5,
