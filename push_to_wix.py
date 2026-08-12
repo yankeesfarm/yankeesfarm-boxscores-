@@ -12,10 +12,17 @@ Auth: a shared secret, set as WIX_PUSH_SECRET in both GitHub Actions secrets
 and the Wix Secrets Manager. The endpoint rejects any request that doesn't
 present it. This is not a login system -- it's just enough to stop random
 POST requests from overwriting your site's stat leaders.
+
+Different periods can target different Wix HTTP functions (weekly/monthly
+go to post_leaderboards; analytics goes to its own post_analytics function
+with a different payload shape and its own collection). Use --endpoint-env
+to point at the right one; it defaults to WIX_PUSH_ENDPOINT so existing
+weekly/monthly calls are unaffected.
+
 Usage:
     python push_to_wix.py --file data/weekly/week_2026-08-03_wix_payload.json --period weekly
     python push_to_wix.py --file data/monthly/2026-08_wix_payload.json --period monthly
-    python push_to_wix.py --file data/analytics/data.json --period analytics
+    python push_to_wix.py --file data/analytics/data.json --period analytics --endpoint-env WIX_ANALYTICS_ENDPOINT
 """
 import argparse
 import json
@@ -60,11 +67,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", required=True, help="Path to a _wix_payload.json file")
     parser.add_argument("--period", required=True, choices=["weekly", "monthly", "analytics"])
+    parser.add_argument("--endpoint-env", default="WIX_PUSH_ENDPOINT",
+                         help="Name of the environment variable holding the target endpoint URL. "
+                              "Defaults to WIX_PUSH_ENDPOINT (weekly/monthly). Pass "
+                              "WIX_ANALYTICS_ENDPOINT for --period analytics.")
     args = parser.parse_args()
-    endpoint_url = os.environ.get("WIX_PUSH_ENDPOINT")
+    endpoint_url = os.environ.get(args.endpoint_env)
     secret = os.environ.get("WIX_PUSH_SECRET")
     if not endpoint_url or not secret:
-        print("ERROR: WIX_PUSH_ENDPOINT and WIX_PUSH_SECRET must be set as environment "
+        print(f"ERROR: {args.endpoint_env} and WIX_PUSH_SECRET must be set as environment "
               "variables (GitHub Actions: repo Settings -> Secrets and variables -> Actions).")
         sys.exit(1)
     with open(args.file) as f:
