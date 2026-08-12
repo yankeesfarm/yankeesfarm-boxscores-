@@ -8,6 +8,7 @@ caching and ambiguous-split issues we ran into pulling stats manually --
 this API returns exact, unambiguous, date-bounded JSON.
 """
 import time
+from datetime import date
 
 import requests
 
@@ -43,25 +44,27 @@ def get_player_stats_by_date_range(person_id, group, sport_id, season, start_dat
     hitting stats, pitchers won't have pitching stats, injured players will
     have neither).
 
-    team_id is optional but IMPORTANT whenever two teams share a sport_id --
-    e.g. DSL NYY Yankees and DSL NYY Bombers are both sportId 16 (Rookie).
-    Without team_id, this endpoint can't tell those two teams apart at all:
-    a query "for" the Yankees roster and a query "for" the Bombers roster
-    are the literal same request, and both return the player's whole
-    rookie-level aggregate rather than either team's actual games. This was
-    found in production -- a player who played for both DSL teams showed
-    IDENTICAL stats from both "team-specific" fetches, which combine_by_id
-    then dutifully summed into a number roughly double his real total."""
-    params = {
-        "stats": "byDateRange",
-        "group": group,
-        "sportId": sport_id,
-        "season": season,
-        "startDate": start_date,
-        "endDate": end_date,
-    }
-    if team_id is not None:
-        params["teamId"] = team_id
+    This pulls the player's full game-by-game log for the season, then
+    filters to the requested date range AND team ENTIRELY IN THIS FUNCTION
+    -- it does not ask the API's byDateRange/teamId aggregate filters to do
+    that filtering, because that was tried twice in production and failed
+    both times. sportId alone can't distinguish two teams at the same level
+    (DSL NYY Yankees and DSL NYY Bombers are both sportId 16); adding a
+    'teamId' parameter to that aggregate endpoint was the next attempt, and
+    it ALSO silently didn't work -- both "team-specific" queries kept
+    returning the player's identical whole-season rookie-level total. Since
+    that aggregate endpoint's team-filtering can't be trusted, this instead
+    fetches his raw per-game log (which includes each game's actual team)
+    and sums the counting stats itself for just the games that are truly
+    within this date range and for this team. This is more API calls per
+    player, but it's the one thing that's fully verifiable and within our
+    own control rather than depending on an unconfirmed filter parameter.
+
+    Rate stats (avg/obp/etc.) are NOT computed here -- callers already
+    recompute those from summed counting stats (recompute_hitting_rates /
+    recompute_pitching_rates), which is the correct approach regardless of
+    how the counting stats were sourced."""
+    params = {"stats": "gameLog", "group": group, "sportId": sport_id, "season": season}
     data = _get(f"/people/{person_id}/stats", params)
     stats_list = data.get("stats", [])
     if not stats_list:
@@ -69,7 +72,49 @@ def get_player_stats_by_date_range(person_id, group, sport_id, season, start_dat
     splits = stats_list[0].get("splits", [])
     if not splits:
         return None
-    return splits[0]["stat"]
+
+    start_d = date.fromisoformat(start_date)
+    end_d = date.fromisoformat(end_date)
+
+    relevant = []
+    for g in splits:
+        game_date_str = g.get("date")
+        if not game_date_str:
+            continue
+        try:
+            game_date = date.fromisoformat(game_date_str[:10])
+        except ValueError:
+            continue
+        if not (start_d <= game_date <= end_d):
+            continue
+        if team_id is not None:
+            g_team_id = (g.get("team") or {}).get("id")
+            if g_team_id != team_id:
+                continue
+        relevant.append(g.get("stat", {}))
+
+    if not relevant:
+        return None
+
+    summed = {}
+    ip_outs_total = 0
+    for stat in relevant:
+        for k, v in stat.items():
+            if k == "inningsPitched":
+                # "5.1" means 5 and 1/3 innings (i.e. 16 outs), NOT 5.1 in
+                # decimal -- outs are summed as integers, then the combined
+                # innings string is rebuilt from the total at the end.
+                ip_str = str(v)
+                whole, _, frac = ip_str.partition(".")
+                ip_outs_total += (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+                continue
+            if isinstance(v, (int, float)) and not isinstance(v, bool):
+                summed[k] = summed.get(k, 0) + v
+            elif k not in summed:
+                summed[k] = v
+    if ip_outs_total or group == "pitching":
+        summed["inningsPitched"] = f"{ip_outs_total // 3}.{ip_outs_total % 3}"
+    return summed
 
 
 def get_team_schedule(team_id, start_date, end_date, sport_id=None):
