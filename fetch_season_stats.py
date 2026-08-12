@@ -168,7 +168,7 @@ def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
         name = person["fullName"]
 
         h_stat = get_player_stats_by_date_range(
-            pid, "hitting", cfg["sport_id"], SEASON, opening_day, end_date
+            pid, "hitting", cfg["sport_id"], SEASON, opening_day, end_date, team_id=cfg["team_id"]
         )
         if h_stat and int(h_stat.get("atBats", 0) or 0) > 0:
             row = {"id": pid, "name": name, "team": affiliate_key}
@@ -177,7 +177,7 @@ def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
             hitters.append(row)
 
         p_stat = get_player_stats_by_date_range(
-            pid, "pitching", cfg["sport_id"], SEASON, opening_day, end_date
+            pid, "pitching", cfg["sport_id"], SEASON, opening_day, end_date, team_id=cfg["team_id"]
         )
         ip_raw = p_stat.get("inningsPitched") if p_stat else None
         if p_stat and ip_raw and str(ip_raw) not in ("0", "0.0"):
@@ -215,7 +215,7 @@ def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date, traded_a
         name = person["fullName"]
 
         h_stat = get_player_stats_by_date_range(
-            pid, "hitting", cfg["sport_id"], SEASON, opening_day, end_date
+            pid, "hitting", cfg["sport_id"], SEASON, opening_day, end_date, team_id=cfg["team_id"]
         )
         if h_stat and int(h_stat.get("atBats", 0) or 0) > 0:
             row = {"id": pid, "name": name, "team": affiliate_key}
