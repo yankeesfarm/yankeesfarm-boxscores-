@@ -69,41 +69,126 @@ def find_affiliate_teams(season):
     return teams
 
 
-def fetch_hydrated_roster(team_id, season, sport_id):
+MINOR_LEAGUE_SPORT_IDS = list(SPORT_LEVELS.keys())  # [11, 12, 13, 14, 16] -- deliberately excludes 1 (MLB)
+
+
+def fetch_hydrated_roster(team_id, season):
     """
     One call per team: roster entries come back with each player's season
     hitting AND pitching stat blocks already attached via hydrate.
 
-    sportId must be included INSIDE the hydrate stats sub-query, not just
-    as a top-level param -- without it, the stats hydration defaults to
-    Major League stats, silently returning nothing for anyone without MLB
-    time. This is the same underlying issue as the original per-player
-    /people/{id}/stats bug, just relocated into the hydrate string.
+    Requests ALL minor-league sportIds at once (comma-separated), not just
+    the roster's own level. Two reasons:
+      1. Omitting sportId entirely defaults to Major League stats, which
+         silently returns nothing for anyone without MLB time (the original
+         bug).
+      2. Scoping to a SINGLE sportId (an earlier fix) caused a different
+         problem: a player promoted mid-season -- e.g. High-A to AA --
+         would only show the stats from his current level, dropping
+         whatever he did before the promotion.
+    Requesting the full minor-league sportId list returns one split per
+    level/team a player actually appeared at this season, which
+    extract_stat_group then sums into a true combined season line.
     """
+    sport_ids = ",".join(str(s) for s in MINOR_LEAGUE_SPORT_IDS)
     params = {
         "rosterType": "active",
-        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season},sportId={sport_id}))",
+        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season},sportId={sport_ids}))",
     }
     data = get(f"{BASE}/teams/{team_id}/roster", params=params)
     return data.get("roster", [])
 
 
+def _ip_to_outs(ip_str):
+    """
+    Convert MLB's traditional innings-pitched notation (e.g. "62.2" meaning
+    62 and 2/3 innings) into whole outs. The digit after the decimal is
+    THIRDS of an inning, not a decimal fraction -- .1 = 1 out, .2 = 2 outs,
+    NOT .1 = 0.1 innings. Summing this field directly (as a float) across
+    multiple stints would silently produce wrong totals, which is exactly
+    the kind of error this whole rewrite exists to avoid.
+    """
+    if not ip_str:
+        return 0
+    whole, _, frac = str(ip_str).partition(".")
+    whole = int(whole or 0)
+    frac_outs = int(frac) if frac else 0  # 0, 1, or 2
+    return whole * 3 + frac_outs
+
+
+def _outs_to_ip_display(outs):
+    """Inverse of _ip_to_outs -- back to traditional "62.2" notation."""
+    return float(f"{outs // 3}.{outs % 3}")
+
+
 def extract_stat_group(person, group_name):
     """
-    Pull the season stat line for 'hitting' or 'pitching' out of a hydrated
-    person object. If a player was traded/promoted mid-season, the stats
-    endpoint returns multiple splits (one aggregate + one per team) -- the
-    aggregate split is the one WITHOUT a 'team' key, so prefer that; fall
-    back to the first split if no clean aggregate is present.
+    Sum raw counting stats for 'hitting' or 'pitching' across EVERY minor
+    league split a player has this season (i.e. across a mid-season
+    promotion/demotion), then derive rate stats (AVG/OBP/SLG/OPS or
+    ERA/WHIP/K9/BB9) from those true combined totals ourselves.
+
+    Deliberately does NOT trust any single split's precomputed rate stats,
+    and does NOT trust an "aggregate" split if the API happens to provide
+    one -- summing every team-level split ourselves is the only way to be
+    sure MLB time never sneaks into the total, since we explicitly only
+    ever request minor-league sportIds in the first place.
     """
     for block in person.get("stats", []):
-        if block.get("group", {}).get("displayName") == group_name:
-            splits = block.get("splits", [])
-            if not splits:
-                return None
-            aggregate = next((s for s in splits if "team" not in s), None)
-            chosen = aggregate or splits[0]
-            return chosen.get("stat")
+        if block.get("group", {}).get("displayName") != group_name:
+            continue
+        splits = block.get("splits", [])
+        # Only sum splits that represent an actual team stint. A split
+        # without a 'team' key is sometimes a pre-aggregated total the API
+        # itself computed -- skip those and sum from the real per-team
+        # entries instead, so the math is fully ours and fully auditable.
+        team_splits = [s for s in splits if "team" in s]
+        if not team_splits:
+            team_splits = splits  # fall back if the API only gave one, teamless split
+        if not team_splits:
+            return None
+
+        if group_name == "hitting":
+            totals = {"atBats": 0, "hits": 0, "doubles": 0, "triples": 0, "homeRuns": 0,
+                      "rbi": 0, "baseOnBalls": 0, "hitByPitch": 0, "sacFlies": 0,
+                      "strikeOuts": 0, "stolenBases": 0, "plateAppearances": 0}
+            for s in team_splits:
+                stat = s.get("stat", {})
+                for key in totals:
+                    totals[key] += stat.get(key) or 0
+            singles = totals["hits"] - totals["doubles"] - totals["triples"] - totals["homeRuns"]
+            total_bases = singles + 2 * totals["doubles"] + 3 * totals["triples"] + 4 * totals["homeRuns"]
+            ab, h, bb, hbp, sf = (totals["atBats"], totals["hits"], totals["baseOnBalls"],
+                                   totals["hitByPitch"], totals["sacFlies"])
+            obp_denom = ab + bb + hbp + sf
+            obp = round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0
+            slg = round(total_bases / ab, 3) if ab else 0.0
+            return {
+                **totals,
+                "avg": round(h / ab, 3) if ab else 0.0,
+                "obp": obp,
+                "slg": slg,
+                "ops": round(obp + slg, 3),
+            }
+
+        else:  # pitching
+            totals = {"wins": 0, "losses": 0, "earnedRuns": 0, "hits": 0,
+                      "baseOnBalls": 0, "strikeOuts": 0, "battersFaced": 0}
+            total_outs = 0
+            for s in team_splits:
+                stat = s.get("stat", {})
+                for key in totals:
+                    totals[key] += stat.get(key) or 0
+                total_outs += _ip_to_outs(stat.get("inningsPitched"))
+            true_ip = total_outs / 3 if total_outs else 0.0
+            return {
+                **totals,
+                "inningsPitched": _outs_to_ip_display(total_outs),
+                "era": round(9 * totals["earnedRuns"] / true_ip, 2) if true_ip else 0.0,
+                "whip": round((totals["baseOnBalls"] + totals["hits"]) / true_ip, 2) if true_ip else 0.0,
+                "strikeoutsPer9Inn": round(9 * totals["strikeOuts"] / true_ip, 1) if true_ip else 0.0,
+                "walksPer9Inn": round(9 * totals["baseOnBalls"] / true_ip, 1) if true_ip else 0.0,
+            }
     return None
 
 
@@ -223,7 +308,7 @@ def main():
 
     for t in teams:
         print(f"Fetching hydrated roster for {t['name']}...")
-        roster = fetch_hydrated_roster(t["teamId"], args.season, t["sportId"])
+        roster = fetch_hydrated_roster(t["teamId"], args.season)
         for entry in roster:
             person = entry["person"]
             pos_type = (entry.get("position") or {}).get("type", "")
