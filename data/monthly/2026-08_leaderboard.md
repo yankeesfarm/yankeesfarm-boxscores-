@@ -1,6 +1,6 @@
 # YankeesFarm Stat Leaders — 2026-08
 **Source file:** data/monthly/2026-08.json
-**Qualifying minimums:** 347 PA / 56.0 IP
+**Qualifying minimums:** 350 PA / 56.666666666666664 IP
 
 ## HITTING LEADERS
 

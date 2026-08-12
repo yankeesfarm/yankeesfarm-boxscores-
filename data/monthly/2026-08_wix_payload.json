@@ -3,8 +3,8 @@
     "title": "2026-08",
     "period": "monthly",
     "sourceFile": "data/monthly/2026-08.json",
-    "minPA": 347,
-    "minIP": 56.0
+    "minPA": 350,
+    "minIP": 56.666666666666664
   },
   "generatedAt": null,
   "categories": {
