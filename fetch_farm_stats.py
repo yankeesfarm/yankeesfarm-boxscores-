@@ -5,8 +5,15 @@ YankeesFarm analytics feed
 Pulls live season stats for every Yankees affiliate from the MLB Stats API
 and writes data.json in the shape analytics.html expects.
 
+v2: uses the "hydrate" parameter to attach each player's season stats
+directly onto the roster response, instead of making a separate
+/people/{id}/stats call per roster spot. This cuts the request count from
+roughly one-per-player (150-200 calls) down to one-per-team (7 calls),
+confirmed by inspecting how bronxpinstripes.com structures its own
+roster+stats payload.
+
 Run this from an environment that can reach statsapi.mlb.com (e.g. your
-existing yankeesfarm-boxscores GitHub Action) — NOT from a machine that
+existing yankeesfarm-boxscores GitHub Action) -- NOT from a machine that
 blocks that domain.
 
 Usage:
@@ -23,23 +30,18 @@ import requests
 BASE = "https://statsapi.mlb.com/api/v1"
 YANKEES_ORG_ID = 147
 
-# sportId -> our internal level code + display label
+# sportId -> our internal level code
 SPORT_LEVELS = {
-    11: {"id": "AAA", "lvl": "AAA"},
-    12: {"id": "AA",  "lvl": "AA"},
-    13: {"id": "A+",  "lvl": "A+"},
-    14: {"id": "A",   "lvl": "A"},
-    16: {"id": "ROK", "lvl": "ROK"},   # covers FCL + DSL — split further below
+    11: "AAA",
+    12: "AA",
+    13: "A+",
+    14: "A",
+    16: "ROK",   # covers FCL + DSL -- split further below
 }
-
-HIT_FIELDS = ["avg", "obp", "slg", "ops", "homeRuns", "rbi", "stolenBases",
-              "baseOnBalls", "strikeOuts", "plateAppearances", "atBats"]
-PIT_FIELDS = ["wins", "losses", "era", "whip", "inningsPitched",
-              "strikeOuts", "baseOnBalls", "battersFaced"]
 
 
 def get(url, params=None):
-    r = requests.get(url, params=params, timeout=20)
+    r = requests.get(url, params=params, timeout=30)
     r.raise_for_status()
     return r.json()
 
@@ -47,34 +49,56 @@ def get(url, params=None):
 def find_affiliate_teams(season):
     """Return list of {teamId, name, level_id, sportId} for every Yankees affiliate."""
     teams = []
-    for sport_id, level in SPORT_LEVELS.items():
+    for sport_id, level_id in SPORT_LEVELS.items():
         data = get(f"{BASE}/teams", params={"sportId": sport_id, "season": season})
         for t in data.get("teams", []):
             if t.get("parentOrgId") == YANKEES_ORG_ID:
                 # DSL Yankees org sometimes fields two DSL clubs (e.g. "DSL Yankees",
-                # "DSL Bombers") both tagged sportId 16 with "DSL" in the league name —
-                # split those out from the Rookie/FCL squad using the league name.
-                level_id = level["id"]
+                # "DSL Bombers") both tagged sportId 16 with "Dominican" in the league
+                # name -- split those out from the Rookie/FCL squad.
+                this_level = level_id
                 league_name = (t.get("league") or {}).get("name", "")
                 if sport_id == 16 and "Dominican" in league_name:
-                    # distinguish multiple DSL clubs by team name
-                    level_id = "DSL2" if "bomber" in t["name"].lower() else "DSL1"
-                teams.append({"teamId": t["id"], "name": t["name"], "level_id": level_id, "sportId": sport_id})
+                    this_level = "DSL2" if "bomber" in t["name"].lower() else "DSL1"
+                teams.append({
+                    "teamId": t["id"],
+                    "name": t["name"],
+                    "level_id": this_level,
+                    "sportId": sport_id,
+                })
     return teams
 
 
-def player_season_stats(person_id, season, group, sport_id):
-    # sportId is required here -- without it, this endpoint defaults to
-    # Major League stats, which means any player with zero MLB time
-    # (i.e. most of a minor league roster) comes back with an empty
-    # response and silently gets skipped by the caller. Scoping to the
-    # affiliate's own sportId is what makes pure minor leaguers show up.
-    data = get(f"{BASE}/people/{person_id}/stats",
-               params={"stats": "season", "group": group, "season": season, "sportId": sport_id})
-    for block in data.get("stats", []):
-        for split in block.get("splits", []):
-            return split.get("stat", {})
-    return {}
+def fetch_hydrated_roster(team_id, season):
+    """
+    One call per team: roster entries come back with each player's season
+    hitting AND pitching stat blocks already attached via hydrate.
+    """
+    params = {
+        "rosterType": "active",
+        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season}))",
+    }
+    data = get(f"{BASE}/teams/{team_id}/roster", params=params)
+    return data.get("roster", [])
+
+
+def extract_stat_group(person, group_name):
+    """
+    Pull the season stat line for 'hitting' or 'pitching' out of a hydrated
+    person object. If a player was traded/promoted mid-season, the stats
+    endpoint returns multiple splits (one aggregate + one per team) -- the
+    aggregate split is the one WITHOUT a 'team' key, so prefer that; fall
+    back to the first split if no clean aggregate is present.
+    """
+    for block in person.get("stats", []):
+        if block.get("group", {}).get("displayName") == group_name:
+            splits = block.get("splits", [])
+            if not splits:
+                return None
+            aggregate = next((s for s in splits if "team" not in s), None)
+            chosen = aggregate or splits[0]
+            return chosen.get("stat")
+    return None
 
 
 def pct(n, d):
@@ -101,9 +125,8 @@ def build_hitter_row(person, stat, level_id):
         "bbp": pct(bb, pa),
         "kp": pct(so, pa),
         "iso": round(slg - avg, 3),
-        # Statcast fields — only populated for levels with tracking (see
-        # enrich_with_statcast below). None means "not tracked at this level",
-        # and the page renders that as a dash rather than a fabricated number.
+        # Statcast fields -- not available from this endpoint; left null
+        # rather than fabricated. See enrich_with_statcast() below.
         "maxev": None,
         "barrelp": None,
         "gbp": None,
@@ -111,19 +134,35 @@ def build_hitter_row(person, stat, level_id):
     }
 
 
-STATCAST_LEVELS = {"AAA"}  # levels where Baseball Savant has park tracking
+def build_pitcher_row(person, stat, level_id):
+    bf = stat.get("battersFaced") or 0
+    so = stat.get("strikeOuts") or 0
+    bb = stat.get("baseOnBalls") or 0
+    return {
+        "name": person["fullName"],
+        "pos": (person.get("primaryPosition") or {}).get("abbreviation", "P"),
+        "level": level_id,
+        "w": stat.get("wins", 0),
+        "l": stat.get("losses", 0),
+        "era": float(stat.get("era") or 0),
+        "whip": float(stat.get("whip") or 0),
+        "ip": float(stat.get("inningsPitched") or 0),
+        "k9": float(stat.get("strikeoutsPer9Inn") or 0),
+        "bb9": float(stat.get("walksPer9Inn") or 0),
+        "kp": pct(so, bf),
+        "bbp": pct(bb, bf),
+    }
+
+
+STATCAST_LEVELS = {"AAA"}
 
 
 def enrich_with_statcast(hitters, season):
     """
-    Best-effort: Baseball Savant (baseballsavant.mlb.com) has an undocumented
-    CSV leaderboard endpoint that covers Triple-A parks with Statcast
-    installed. It is NOT the same as statsapi.mlb.com and has no guaranteed
-    schema, so treat this as optional and let it fail quietly per player.
-
-    If your network can't reach baseballsavant.mlb.com, or a given player
-    has too few batted-ball events tracked, the Statcast fields just stay
-    None and the page shows a dash for that row — that's expected, not a bug.
+    Best-effort: Baseball Savant has an undocumented CSV leaderboard endpoint
+    that covers Triple-A parks with Statcast installed. Not the same system
+    as statsapi.mlb.com, no guaranteed schema -- treat as optional, fail
+    quietly per player rather than raising.
     """
     import csv
     import io
@@ -134,14 +173,7 @@ def enrich_with_statcast(hitters, season):
 
     print(f"Attempting Statcast enrichment for {len(targets)} Triple-A hitters...")
     url = "https://baseballsavant.mlb.com/leaderboard/statcast"
-    params = {
-        "type": "batter",
-        "year": season,
-        "position": "",
-        "team": "",
-        "min": 1,
-        "csv": "true",
-    }
+    params = {"type": "batter", "year": season, "position": "", "team": "", "min": 1, "csv": "true"}
     try:
         r = requests.get(url, params=params, timeout=20)
         r.raise_for_status()
@@ -165,34 +197,14 @@ def enrich_with_statcast(hitters, season):
             h["gbp"] = round(float(row["groundballs_percent"]), 1) if row.get("groundballs_percent") else None
             h["fbp"] = round(float(row["flyballs_percent"]), 1) if row.get("flyballs_percent") else None
         except (KeyError, ValueError):
-            pass  # leave as None rather than guess at a differently-named column
-
-
-def build_pitcher_row(person, stat, level_id):
-    bf = stat.get("battersFaced") or 0
-    so = stat.get("strikeOuts") or 0
-    bb = stat.get("baseOnBalls") or 0
-    return {
-        "name": person["fullName"],
-        "pos": (person.get("primaryPosition") or {}).get("abbreviation", "P"),
-        "level": level_id,
-        "w": stat.get("wins", 0),
-        "l": stat.get("losses", 0),
-        "era": float(stat.get("era") or 0),
-        "whip": float(stat.get("whip") or 0),
-        "ip": float(stat.get("inningsPitched") or 0),
-        "k9": float(stat.get("strikeoutsPer9Inn") or 0),
-        "bb9": float(stat.get("walksPer9Inn") or 0),
-        "kp": pct(so, bf),
-        "bbp": pct(bb, bf),
-    }
+            pass
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--season", type=int, default=2026)
-    ap.add_argument("--out", default="data.json")
-    args = ap.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--season", type=int, default=2026)
+    parser.add_argument("--out", default="data.json")
+    args = parser.parse_args()
 
     print(f"Finding Yankees affiliate teams for {args.season}...")
     teams = find_affiliate_teams(args.season)
@@ -202,25 +214,24 @@ def main():
     hitters, pitchers = [], []
 
     for t in teams:
-        print(f"Fetching roster for {t['name']}...")
-        roster = get(f"{BASE}/teams/{t['teamId']}/roster",
-                      params={"rosterType": "active", "season": args.season})
-        for entry in roster.get("roster", []):
+        print(f"Fetching hydrated roster for {t['name']}...")
+        roster = fetch_hydrated_roster(t["teamId"], args.season)
+        for entry in roster:
             person = entry["person"]
             pos_type = (entry.get("position") or {}).get("type", "")
             is_pitcher = pos_type == "Pitcher"
-            group = "pitching" if is_pitcher else "hitting"
 
-            stat = player_season_stats(person["id"], args.season, group, t["sportId"])
+            group = "pitching" if is_pitcher else "hitting"
+            stat = extract_stat_group(person, group)
             if not stat:
-                continue  # no stats logged yet (e.g. IL, just signed)
+                continue  # no stats logged yet this season
 
             if is_pitcher:
                 pitchers.append(build_pitcher_row(person, stat, t["level_id"]))
             else:
                 hitters.append(build_hitter_row(person, stat, t["level_id"]))
 
-            time.sleep(0.05)  # be polite to the API
+        time.sleep(0.1)  # one pause per team now, not per player
 
     enrich_with_statcast(hitters, args.season)
 
