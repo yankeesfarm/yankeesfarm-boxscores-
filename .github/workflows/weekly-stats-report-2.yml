@@ -80,10 +80,10 @@ jobs:
       - name: Push analytics table to website
         if: steps.verify.outputs.exit_code == '0'
         env:
-          WIX_PUSH_ENDPOINT: ${{ secrets.WIX_PUSH_ENDPOINT }}
+          WIX_ANALYTICS_ENDPOINT: ${{ secrets.WIX_ANALYTICS_ENDPOINT }}
           WIX_PUSH_SECRET: ${{ secrets.WIX_PUSH_SECRET }}
         run: |
           if [ -f "data/analytics/data.json" ]; then
-            python3 push_to_wix.py --file "data/analytics/data.json" --period analytics
+            python3 push_to_wix.py --file "data/analytics/data.json" --period analytics --endpoint-env WIX_ANALYTICS_ENDPOINT
           fi
       # --- end new step ---
