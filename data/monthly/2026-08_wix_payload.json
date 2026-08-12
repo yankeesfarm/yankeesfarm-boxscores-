@@ -490,77 +490,63 @@
           "value": 7
         },
         {
-          "rank": "T2",
-          "isTied": true,
+          "rank": "2",
+          "isTied": false,
           "name": "Hans Montero",
           "team": "TAM",
           "value": 6
         },
         {
-          "rank": "T2",
-          "isTied": true,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 6
-        },
-        {
-          "rank": "T4",
+          "rank": "T3",
           "isTied": true,
           "name": "Core Jackson",
           "team": "HV",
           "value": 5
         },
         {
-          "rank": "T4",
+          "rank": "T3",
           "isTied": true,
           "name": "Wilson Rodriguez",
           "team": "HV",
           "value": 5
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Luis Durango",
           "team": "SOM",
           "value": 4
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": 4
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Coby Morales",
           "team": "SOM",
           "value": 4
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Ernesto Martinez Jr.",
           "team": "SWB",
           "value": 4
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Dexters Peralta",
           "team": "FCL",
           "value": 4
         },
         {
-          "rank": "T6",
-          "isTied": true,
-          "name": "Edgar Jimenez",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Dariel Santana",
           "team": "DSL-B",
@@ -737,72 +723,86 @@
         {
           "rank": "1",
           "isTied": false,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 44
-        },
-        {
-          "rank": "2",
-          "isTied": false,
           "name": "Duke Ellis",
           "team": "SWB",
           "value": 43
         },
         {
-          "rank": "3",
+          "rank": "2",
           "isTied": false,
           "name": "Luis Durango",
           "team": "SOM",
           "value": 40
         },
         {
-          "rank": "4",
+          "rank": "3",
           "isTied": false,
           "name": "Bryce Martin-Grudzielanek",
           "team": "HV",
           "value": 37
         },
         {
-          "rank": "5",
+          "rank": "4",
           "isTied": false,
           "name": "Hans Montero",
           "team": "TAM",
           "value": 35
         },
         {
-          "rank": "6",
+          "rank": "5",
           "isTied": false,
           "name": "Stiven Marinez",
           "team": "DSL-Y",
           "value": 34
         },
         {
-          "rank": "7",
+          "rank": "6",
           "isTied": false,
           "name": "Core Jackson",
           "team": "HV",
           "value": 32
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Roderick Arias",
           "team": "SOM",
           "value": 31
         },
         {
-          "rank": "T8",
+          "rank": "T7",
           "isTied": true,
           "name": "Jose Castro",
           "team": "FCL",
           "value": 31
         },
         {
-          "rank": "10",
+          "rank": "9",
           "isTied": false,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": 30
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 29
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Enmanuel Tejeda",
+          "team": "HV",
+          "value": 29
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Leni Done",
+          "team": "FCL",
+          "value": 29
         }
       ]
     },

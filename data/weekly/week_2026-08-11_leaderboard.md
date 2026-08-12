@@ -64,50 +64,80 @@
 ### Hits
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Alfiery Matos | DSL-B | 12 |
-| T1 | Kenneth Melendez | DSL-B | 12 |
-| 3 | Juan Torres | DSL-Y | 10 |
-| T4 | Roderick Arias | SOM | 8 |
-| T4 | Max Schuemann | SWB | 8 |
-| T4 | Alfred Ciriaco | DSL-B | 8 |
-| T4 | Poly Ojeda | DSL-B | 8 |
-| T8 | Luis Puello | TAM | 7 |
-| T8 | David McCann | HV | 7 |
-| T8 | Germayhoni Beltre | DSL-B | 7 |
+| 1 | Juan Torres | DSL-Y | 10 |
+| T2 | Roderick Arias | SOM | 8 |
+| T2 | Max Schuemann | SWB | 8 |
+| T4 | Luis Puello | TAM | 7 |
+| T4 | David McCann | HV | 7 |
+| T4 | Germayhoni Beltre | DSL-B | 7 |
+| T7 | Eric Genther | HV | 6 |
+| T7 | Enmanuel Tejeda | HV | 6 |
+| T7 | Josh Moylan | SOM | 6 |
+| T7 | Alfiery Matos | DSL-Y | 6 |
+| T7 | Kenneth Melendez | DSL-B | 6 |
 
 ### Doubles
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Alfiery Matos | DSL-B | 4 |
-| T1 | Poly Ojeda | DSL-B | 4 |
-| T3 | Josh Moylan | SOM | 3 |
-| T3 | Juan Martinez | DSL-Y | 3 |
-| T5 | Diomedes Hernandez | HV | 2 |
-| T5 | Roderick Arias | SOM | 2 |
-| T5 | Alfred Ciriaco | DSL-B | 2 |
-| T5 | Adrian Feliz | DSL-B | 2 |
-| T5 | Edgar Jimenez | DSL-B | 2 |
-| T5 | Stiven Marinez | DSL-Y | 2 |
-| T5 | Kenneth Melendez | DSL-B | 2 |
-| T5 | Carlos Bello | DSL-B | 2 |
-| T5 | Germayhoni Beltre | DSL-B | 2 |
+| T1 | Josh Moylan | SOM | 3 |
+| T1 | Juan Martinez | DSL-Y | 3 |
+| T3 | Diomedes Hernandez | HV | 2 |
+| T3 | Roderick Arias | SOM | 2 |
+| T3 | Stiven Marinez | DSL-Y | 2 |
+| T3 | Alfiery Matos | DSL-Y | 2 |
+| T3 | Poly Ojeda | DSL-Y | 2 |
+| T3 | Carlos Bello | DSL-B | 2 |
+| T3 | Germayhoni Beltre | DSL-B | 2 |
+| T10 | Tyce Armstrong | TAM | 1 |
+| T10 | Blake Cyr | TAM | 1 |
+| T10 | Bear Harrison | TAM | 1 |
+| T10 | Brando Mayea | TAM | 1 |
+| T10 | Luis Puello | TAM | 1 |
+| T10 | Robbie Burnett | HV | 1 |
+| T10 | Eric Genther | HV | 1 |
+| T10 | Josue Gonzalez | HV | 1 |
+| T10 | Bryce Martin-Grudzielanek | HV | 1 |
+| T10 | Maika Niu | HV | 1 |
+| T10 | Dean Toigo | HV | 1 |
+| T10 | Kyle West | HV | 1 |
+| T10 | Jace Avina | SOM | 1 |
+| T10 | Jackson Castillo | SOM | 1 |
+| T10 | Cole Gabrielson | SWB | 1 |
+| T10 | DJ Gladney | SOM | 1 |
+| T10 | Manuel Palencia | SOM | 1 |
+| T10 | Miguel Palma | SOM | 1 |
+| T10 | Duke Ellis | SWB | 1 |
+| T10 | Ernesto Martinez Jr. | SWB | 1 |
+| T10 | Max Schuemann | SWB | 1 |
+| T10 | Anthony Volpe | SWB | 1 |
+| T10 | Isaias Castillo | DSL-Y | 1 |
+| T10 | Adrian Feliz | DSL-Y | 1 |
+| T10 | Cesar Lopez | DSL-Y | 1 |
+| T10 | Abrahan Pichardo | DSL-Y | 1 |
+| T10 | Juan Torres | DSL-Y | 1 |
+| T10 | David Carrera | DSL-B | 1 |
+| T10 | Ruben Castillo | DSL-B | 1 |
+| T10 | Alfred Ciriaco | DSL-B | 1 |
+| T10 | Edgar Jimenez | DSL-B | 1 |
+| T10 | Kenneth Melendez | DSL-B | 1 |
+| T10 | Sebastian Pinto | DSL-B | 1 |
 
 ### Triples
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Core Jackson | HV | 2 |
-| T1 | Kenneth Melendez | DSL-B | 2 |
-| T1 | Poly Ojeda | DSL-B | 2 |
-| T4 | Wilberson De Pena | TAM | 1 |
-| T4 | Yostin Pena | TAM | 1 |
-| T4 | Bryce Martin-Grudzielanek | HV | 1 |
-| T4 | Dean Toigo | HV | 1 |
-| T4 | Roderick Arias | SOM | 1 |
-| T4 | Coby Morales | SOM | 1 |
-| T4 | Luis Cruz | DSL-Y | 1 |
-| T4 | Stiven Marinez | DSL-Y | 1 |
-| T4 | Germayhoni Beltre | DSL-B | 1 |
-| T4 | Dariel Santana | DSL-B | 1 |
+| 1 | Core Jackson | HV | 2 |
+| T2 | Wilberson De Pena | TAM | 1 |
+| T2 | Yostin Pena | TAM | 1 |
+| T2 | Bryce Martin-Grudzielanek | HV | 1 |
+| T2 | Dean Toigo | HV | 1 |
+| T2 | Roderick Arias | SOM | 1 |
+| T2 | Coby Morales | SOM | 1 |
+| T2 | Luis Cruz | DSL-Y | 1 |
+| T2 | Stiven Marinez | DSL-Y | 1 |
+| T2 | Poly Ojeda | DSL-Y | 1 |
+| T2 | Germayhoni Beltre | DSL-B | 1 |
+| T2 | Kenneth Melendez | DSL-B | 1 |
+| T2 | Dariel Santana | DSL-B | 1 |
 
 ### Home Runs
 | # | Player | Team | Value |
@@ -115,45 +145,45 @@
 | 1 | David McCann | HV | 3 |
 | T2 | Luis Puello | TAM | 2 |
 | T2 | Isaias Castillo | DSL-Y | 2 |
-| T2 | Alfiery Matos | DSL-B | 2 |
 | T2 | Jose Peralta | DSL-Y | 2 |
 | T2 | Juan Torres | DSL-Y | 2 |
-| T7 | Tyce Armstrong | TAM | 1 |
-| T7 | Hans Montero | TAM | 1 |
-| T7 | Yostin Pena | TAM | 1 |
-| T7 | Anthony Potestio | TAM | 1 |
-| T7 | Eric Genther | HV | 1 |
-| T7 | Maika Niu | HV | 1 |
-| T7 | Enmanuel Tejeda | HV | 1 |
-| T7 | Camden Troyer | HV | 1 |
-| T7 | Kyle West | HV | 1 |
-| T7 | Jackson Castillo | SOM | 1 |
-| T7 | DJ Gladney | SOM | 1 |
-| T7 | Connor McGinnis | SOM | 1 |
-| T7 | Josh Moylan | SOM | 1 |
-| T7 | Manuel Palencia | SOM | 1 |
-| T7 | Kenedy Corona | SWB | 1 |
-| T7 | Jasson Domínguez | SWB | 1 |
-| T7 | Max Schuemann | SWB | 1 |
-| T7 | Anthony Volpe | SWB | 1 |
-| T7 | Germayhoni Beltre | DSL-B | 1 |
-| T7 | David Carrera | DSL-B | 1 |
-| T7 | Ruben Castillo | DSL-B | 1 |
-| T7 | Richard Meran | DSL-B | 1 |
-| T7 | Dariel Santana | DSL-B | 1 |
+| T6 | Tyce Armstrong | TAM | 1 |
+| T6 | Hans Montero | TAM | 1 |
+| T6 | Yostin Pena | TAM | 1 |
+| T6 | Anthony Potestio | TAM | 1 |
+| T6 | Eric Genther | HV | 1 |
+| T6 | Maika Niu | HV | 1 |
+| T6 | Enmanuel Tejeda | HV | 1 |
+| T6 | Camden Troyer | HV | 1 |
+| T6 | Kyle West | HV | 1 |
+| T6 | Jackson Castillo | SOM | 1 |
+| T6 | DJ Gladney | SOM | 1 |
+| T6 | Connor McGinnis | SOM | 1 |
+| T6 | Josh Moylan | SOM | 1 |
+| T6 | Manuel Palencia | SOM | 1 |
+| T6 | Kenedy Corona | SWB | 1 |
+| T6 | Jasson Domínguez | SWB | 1 |
+| T6 | Max Schuemann | SWB | 1 |
+| T6 | Anthony Volpe | SWB | 1 |
+| T6 | Alfiery Matos | DSL-Y | 1 |
+| T6 | Germayhoni Beltre | DSL-B | 1 |
+| T6 | David Carrera | DSL-B | 1 |
+| T6 | Ruben Castillo | DSL-B | 1 |
+| T6 | Richard Meran | DSL-B | 1 |
+| T6 | Dariel Santana | DSL-B | 1 |
 
 ### RBI
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Alfiery Matos | DSL-B | 14 |
-| 2 | Kenneth Melendez | DSL-B | 10 |
-| T3 | David McCann | HV | 9 |
-| T3 | Juan Torres | DSL-Y | 9 |
-| 5 | Maika Niu | HV | 7 |
-| 6 | Germayhoni Beltre | DSL-B | 6 |
-| T7 | Yostin Pena | TAM | 5 |
-| T7 | Eric Genther | HV | 5 |
-| T7 | Ruben Castillo | DSL-B | 5 |
+| T1 | David McCann | HV | 9 |
+| T1 | Juan Torres | DSL-Y | 9 |
+| T3 | Maika Niu | HV | 7 |
+| T3 | Alfiery Matos | DSL-Y | 7 |
+| 5 | Germayhoni Beltre | DSL-B | 6 |
+| T6 | Yostin Pena | TAM | 5 |
+| T6 | Eric Genther | HV | 5 |
+| T6 | Ruben Castillo | DSL-B | 5 |
+| T6 | Kenneth Melendez | DSL-B | 5 |
 | T10 | Anthony Potestio | TAM | 4 |
 | T10 | Jackson Lovich | HV | 4 |
 | T10 | Roderick Arias | SOM | 4 |
@@ -161,29 +191,32 @@
 | T10 | Connor McGinnis | SOM | 4 |
 | T10 | Josh Moylan | SOM | 4 |
 | T10 | Max Schuemann | SWB | 4 |
-| T10 | Eliezer Adames | DSL-B | 4 |
 | T10 | Isaias Castillo | DSL-Y | 4 |
-| T10 | Alfred Ciriaco | DSL-B | 4 |
-| T10 | Edgar Jimenez | DSL-B | 4 |
 | T10 | Juan Martinez | DSL-Y | 4 |
 | T10 | Jose Peralta | DSL-Y | 4 |
-| T10 | Stalen Ramirez | DSL-B | 4 |
 
 ### Stolen Bases
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Enmanuel Tejeda | HV | 6 |
-| T1 | Eliezer Adames | DSL-B | 6 |
-| T3 | Dax Kilby | TAM | 5 |
-| T3 | Jackson Lovich | HV | 5 |
-| T5 | Hans Montero | TAM | 4 |
-| T5 | Edgar Jimenez | DSL-B | 4 |
-| T5 | Alfiery Matos | DSL-B | 4 |
-| T5 | Kenneth Melendez | DSL-B | 4 |
-| T9 | Core Jackson | HV | 3 |
-| T9 | Duke Ellis | SWB | 3 |
-| T9 | Germayhoni Beltre | DSL-B | 3 |
-| T9 | Ruben Castillo | DSL-B | 3 |
+| 1 | Enmanuel Tejeda | HV | 6 |
+| T2 | Dax Kilby | TAM | 5 |
+| T2 | Jackson Lovich | HV | 5 |
+| 4 | Hans Montero | TAM | 4 |
+| T5 | Core Jackson | HV | 3 |
+| T5 | Duke Ellis | SWB | 3 |
+| T5 | Eliezer Adames | DSL-B | 3 |
+| T5 | Germayhoni Beltre | DSL-B | 3 |
+| T5 | Ruben Castillo | DSL-B | 3 |
+| T10 | Bryce Martin-Grudzielanek | HV | 2 |
+| T10 | Willy Montero | HV | 2 |
+| T10 | Kyle West | HV | 2 |
+| T10 | Roderick Arias | SOM | 2 |
+| T10 | Stiven Marinez | DSL-Y | 2 |
+| T10 | Alfiery Matos | DSL-Y | 2 |
+| T10 | Carlos Bello | DSL-B | 2 |
+| T10 | Edgar Jimenez | DSL-B | 2 |
+| T10 | Kenneth Melendez | DSL-B | 2 |
+| T10 | Sebastian Pinto | DSL-B | 2 |
 
 ## PITCHING LEADERS
 

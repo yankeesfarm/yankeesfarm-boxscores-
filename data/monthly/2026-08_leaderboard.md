@@ -93,17 +93,15 @@
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Stiven Marinez | DSL-Y | 7 |
-| T2 | Hans Montero | TAM | 6 |
-| T2 | Alfiery Matos | DSL-B | 6 |
-| T4 | Core Jackson | HV | 5 |
-| T4 | Wilson Rodriguez | HV | 5 |
-| T6 | Luis Durango | SOM | 4 |
-| T6 | Yostin Pena | TAM | 4 |
-| T6 | Coby Morales | SOM | 4 |
-| T6 | Ernesto Martinez Jr. | SWB | 4 |
-| T6 | Dexters Peralta | FCL | 4 |
-| T6 | Edgar Jimenez | DSL-B | 4 |
-| T6 | Dariel Santana | DSL-B | 4 |
+| 2 | Hans Montero | TAM | 6 |
+| T3 | Core Jackson | HV | 5 |
+| T3 | Wilson Rodriguez | HV | 5 |
+| T5 | Luis Durango | SOM | 4 |
+| T5 | Yostin Pena | TAM | 4 |
+| T5 | Coby Morales | SOM | 4 |
+| T5 | Ernesto Martinez Jr. | SWB | 4 |
+| T5 | Dexters Peralta | FCL | 4 |
+| T5 | Dariel Santana | DSL-B | 4 |
 
 ### Home Runs
 | # | Player | Team | Value |
@@ -137,16 +135,18 @@
 ### Stolen Bases
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Alfiery Matos | DSL-B | 44 |
-| 2 | Duke Ellis | SWB | 43 |
-| 3 | Luis Durango | SOM | 40 |
-| 4 | Bryce Martin-Grudzielanek | HV | 37 |
-| 5 | Hans Montero | TAM | 35 |
-| 6 | Stiven Marinez | DSL-Y | 34 |
-| 7 | Core Jackson | HV | 32 |
-| T8 | Roderick Arias | SOM | 31 |
-| T8 | Jose Castro | FCL | 31 |
-| 10 | Yostin Pena | TAM | 30 |
+| 1 | Duke Ellis | SWB | 43 |
+| 2 | Luis Durango | SOM | 40 |
+| 3 | Bryce Martin-Grudzielanek | HV | 37 |
+| 4 | Hans Montero | TAM | 35 |
+| 5 | Stiven Marinez | DSL-Y | 34 |
+| 6 | Core Jackson | HV | 32 |
+| T7 | Roderick Arias | SOM | 31 |
+| T7 | Jose Castro | FCL | 31 |
+| 9 | Yostin Pena | TAM | 30 |
+| T10 | Jackson Lovich | HV | 29 |
+| T10 | Enmanuel Tejeda | HV | 29 |
+| T10 | Leni Done | FCL | 29 |
 
 ## PITCHING LEADERS
 

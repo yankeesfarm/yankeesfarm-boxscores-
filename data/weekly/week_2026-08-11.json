@@ -18,10 +18,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.231,
-      "obp": 0.375,
-      "slg": 0.538,
-      "ops": 0.913
+      "avg": 0.143,
+      "obp": 0.25,
+      "slg": 0.143,
+      "ops": 0.393
     },
     {
       "id": "824425",
@@ -39,10 +39,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.364,
-      "obp": 0.462,
-      "slg": 0.364,
-      "ops": 0.826
+      "avg": 0.0,
+      "obp": 0.2,
+      "slg": 0.0,
+      "ops": 0.2
     },
     {
       "id": "701331",
@@ -61,9 +61,9 @@
       "caughtStealing": 0,
       "strikeOuts": 1,
       "avg": 0.25,
-      "obp": 0.571,
-      "slg": 0.5,
-      "ops": 1.071
+      "obp": 0.5,
+      "slg": 0.25,
+      "ops": 0.75
     },
     {
       "id": "821648",
@@ -81,10 +81,10 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 7,
-      "avg": 0.118,
-      "obp": 0.167,
-      "slg": 0.235,
-      "ops": 0.402
+      "avg": 0.154,
+      "obp": 0.185,
+      "slg": 0.385,
+      "ops": 0.57
     },
     {
       "id": "806884",
@@ -102,10 +102,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.0,
-      "obp": 0.2,
-      "slg": 0.0,
-      "ops": 0.2
+      "avg": 0.247,
+      "obp": 0.426,
+      "slg": 0.526,
+      "ops": 0.952
     },
     {
       "id": "827290",
@@ -144,10 +144,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.167,
-      "obp": 0.375,
-      "slg": 0.333,
-      "ops": 0.708
+      "avg": 0.333,
+      "obp": 0.5,
+      "slg": 0.833,
+      "ops": 1.333
     },
     {
       "id": "828076",
@@ -165,10 +165,10 @@
       "stolenBases": 5,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.2,
-      "obp": 0.4,
-      "slg": 0.2,
-      "ops": 0.6
+      "avg": 0.286,
+      "obp": 0.39,
+      "slg": 0.457,
+      "ops": 0.847
     },
     {
       "id": "806963",
@@ -186,10 +186,10 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 2,
-      "avg": 0.364,
-      "obp": 0.417,
-      "slg": 0.455,
-      "ops": 0.872
+      "avg": 0.246,
+      "obp": 0.324,
+      "slg": 0.345,
+      "ops": 0.669
     },
     {
       "id": "694215",
@@ -207,10 +207,10 @@
       "stolenBases": 4,
       "caughtStealing": 0,
       "strikeOuts": 7,
-      "avg": 0.095,
-      "obp": 0.136,
-      "slg": 0.238,
-      "ops": 0.374
+      "avg": 0.239,
+      "obp": 0.365,
+      "slg": 0.43,
+      "ops": 0.795
     },
     {
       "id": "829769",
@@ -228,10 +228,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.286,
-      "obp": 0.313,
-      "slg": 0.643,
-      "ops": 0.956
+      "avg": 0.333,
+      "obp": 0.333,
+      "slg": 0.593,
+      "ops": 0.926
     },
     {
       "id": "835219",
@@ -249,10 +249,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.444,
-      "obp": 0.615,
-      "slg": 0.778,
-      "ops": 1.393
+      "avg": 0.5,
+      "obp": 0.5,
+      "slg": 1.25,
+      "ops": 1.75
     },
     {
       "id": "809772",
@@ -270,10 +270,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.583,
-      "obp": 0.643,
-      "slg": 1.167,
-      "ops": 1.81
+      "avg": 0.26,
+      "obp": 0.332,
+      "slg": 0.489,
+      "ops": 0.821
     },
     {
       "id": "815528",
@@ -291,10 +291,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.429,
-      "obp": 0.5,
-      "slg": 0.429,
-      "ops": 0.929
+      "avg": 0.183,
+      "obp": 0.297,
+      "slg": 0.261,
+      "ops": 0.558
     },
     {
       "id": "823754",
@@ -312,10 +312,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.167,
-      "obp": 0.375,
-      "slg": 0.25,
-      "ops": 0.625
+      "avg": 0.247,
+      "obp": 0.371,
+      "slg": 0.425,
+      "ops": 0.796
     },
     {
       "id": "823759",
@@ -333,10 +333,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.429,
-      "obp": 0.6,
-      "slg": 0.714,
-      "ops": 1.314
+      "avg": 0.27,
+      "obp": 0.401,
+      "slg": 0.421,
+      "ops": 0.822
     },
     {
       "id": "700648",
@@ -354,10 +354,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.75,
-      "obp": 0.75,
-      "slg": 1.0,
-      "ops": 1.75
+      "avg": 0.219,
+      "obp": 0.348,
+      "slg": 0.381,
+      "ops": 0.729
     },
     {
       "id": "800299",
@@ -375,10 +375,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.5,
-      "obp": 0.5,
-      "slg": 0.833,
-      "ops": 1.333
+      "avg": 0.25,
+      "obp": 0.368,
+      "slg": 0.375,
+      "ops": 0.743
     },
     {
       "id": "692110",
@@ -396,10 +396,10 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.333,
-      "obp": 0.5,
-      "slg": 0.6,
-      "ops": 1.1
+      "avg": 0.256,
+      "obp": 0.365,
+      "slg": 0.473,
+      "ops": 0.838
     },
     {
       "id": "804944",
@@ -417,10 +417,10 @@
       "stolenBases": 5,
       "caughtStealing": 0,
       "strikeOuts": 7,
-      "avg": 0.294,
-      "obp": 0.278,
-      "slg": 0.294,
-      "ops": 0.572
+      "avg": 0.4,
+      "obp": 0.441,
+      "slg": 0.4,
+      "ops": 0.841
     },
     {
       "id": "701727",
@@ -438,10 +438,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.217,
-      "obp": 0.24,
-      "slg": 0.348,
-      "ops": 0.588
+      "avg": 0.167,
+      "obp": 0.375,
+      "slg": 0.167,
+      "ops": 0.542
     },
     {
       "id": "806154",
@@ -459,10 +459,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 6,
-      "avg": 0.368,
-      "obp": 0.4,
-      "slg": 0.842,
-      "ops": 1.242
+      "avg": 0.25,
+      "obp": 0.25,
+      "slg": 1.0,
+      "ops": 1.25
     },
     {
       "id": "701206",
@@ -480,10 +480,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.333,
-      "obp": 0.333,
-      "slg": 0.333,
-      "ops": 0.666
+      "avg": 0.185,
+      "obp": 0.241,
+      "slg": 0.222,
+      "ops": 0.463
     },
     {
       "id": "809569",
@@ -501,10 +501,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.417,
-      "obp": 0.438,
-      "slg": 0.75,
-      "ops": 1.188
+      "avg": 0.333,
+      "obp": 0.25,
+      "slg": 0.333,
+      "ops": 0.583
     },
     {
       "id": "800285",
@@ -522,10 +522,10 @@
       "stolenBases": 6,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.375,
-      "obp": 0.474,
-      "slg": 0.563,
-      "ops": 1.037
+      "avg": 0.207,
+      "obp": 0.319,
+      "slg": 0.315,
+      "ops": 0.634
     },
     {
       "id": "831025",
@@ -543,10 +543,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.357,
-      "obp": 0.4,
-      "slg": 0.571,
-      "ops": 0.971
+      "avg": 0.25,
+      "obp": 0.25,
+      "slg": 0.25,
+      "ops": 0.5
     },
     {
       "id": "803131",
@@ -564,10 +564,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.077,
-      "obp": 0.143,
-      "slg": 0.308,
-      "ops": 0.451
+      "avg": 0.245,
+      "obp": 0.318,
+      "slg": 0.386,
+      "ops": 0.704
     },
     {
       "id": "823918",
@@ -585,10 +585,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.19,
-      "obp": 0.19,
-      "slg": 0.381,
-      "ops": 0.571
+      "avg": 0.225,
+      "obp": 0.288,
+      "slg": 0.4,
+      "ops": 0.688
     },
     {
       "id": "692657",
@@ -606,10 +606,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 8,
-      "avg": 0.059,
-      "obp": 0.158,
-      "slg": 0.059,
-      "ops": 0.217
+      "avg": 0.229,
+      "obp": 0.327,
+      "slg": 0.399,
+      "ops": 0.726
     },
     {
       "id": "703149",
@@ -627,10 +627,10 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 4,
-      "avg": 0.4,
-      "obp": 0.429,
-      "slg": 0.6,
-      "ops": 1.029
+      "avg": 0.333,
+      "obp": 0.333,
+      "slg": 0.444,
+      "ops": 0.777
     },
     {
       "id": "701778",
@@ -648,10 +648,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.154,
-      "obp": 0.353,
-      "slg": 0.231,
-      "ops": 0.584
+      "avg": 0.259,
+      "obp": 0.361,
+      "slg": 0.512,
+      "ops": 0.873
     },
     {
       "id": "814431",
@@ -669,10 +669,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.188,
-      "obp": 0.35,
-      "slg": 0.438,
-      "ops": 0.788
+      "avg": 0.245,
+      "obp": 0.341,
+      "slg": 0.362,
+      "ops": 0.703
     },
     {
       "id": "691411",
@@ -690,10 +690,10 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 1,
-      "avg": 0.3,
-      "obp": 0.364,
-      "slg": 0.3,
-      "ops": 0.664
+      "avg": 0.368,
+      "obp": 0.5,
+      "slg": 0.526,
+      "ops": 1.026
     },
     {
       "id": "702068",
@@ -711,10 +711,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.0,
-      "obp": 0.125,
-      "slg": 0.0,
-      "ops": 0.125
+      "avg": 0.288,
+      "obp": 0.358,
+      "slg": 0.492,
+      "ops": 0.85
     },
     {
       "id": "687554",
@@ -732,10 +732,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 9,
-      "avg": 0.2,
-      "obp": 0.294,
-      "slg": 0.467,
-      "ops": 0.761
+      "avg": 0.269,
+      "obp": 0.327,
+      "slg": 0.502,
+      "ops": 0.829
     },
     {
       "id": "821296",
@@ -753,10 +753,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.158,
-      "obp": 0.238,
-      "slg": 0.316,
-      "ops": 0.554
+      "avg": 0.253,
+      "obp": 0.329,
+      "slg": 0.392,
+      "ops": 0.721
     },
     {
       "id": "815089",
@@ -774,10 +774,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.286,
-      "obp": 0.444,
-      "slg": 0.429,
-      "ops": 0.873
+      "avg": 0.271,
+      "obp": 0.353,
+      "slg": 0.496,
+      "ops": 0.849
     },
     {
       "id": "694742",
@@ -795,10 +795,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 7,
-      "avg": 0.316,
-      "obp": 0.35,
-      "slg": 0.632,
-      "ops": 0.982
+      "avg": 0.244,
+      "obp": 0.307,
+      "slg": 0.431,
+      "ops": 0.738
     },
     {
       "id": "692633",
@@ -816,10 +816,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 0,
-      "avg": 0.5,
-      "obp": 0.5,
-      "slg": 1.0,
-      "ops": 1.5
+      "avg": 0.265,
+      "obp": 0.326,
+      "slg": 0.305,
+      "ops": 0.631
     },
     {
       "id": "682692",
@@ -837,10 +837,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.375,
-      "obp": 0.375,
-      "slg": 0.5,
-      "ops": 0.875
+      "avg": 0.226,
+      "obp": 0.312,
+      "slg": 0.411,
+      "ops": 0.723
     },
     {
       "id": "814269",
@@ -858,10 +858,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.0,
-      "obp": 0.0,
-      "slg": 0.0,
-      "ops": 0.0
+      "avg": 0.211,
+      "obp": 0.255,
+      "slg": 0.379,
+      "ops": 0.634
     },
     {
       "id": "685744",
@@ -879,10 +879,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.231,
-      "obp": 0.333,
-      "slg": 0.462,
-      "ops": 0.795
+      "avg": 0.253,
+      "obp": 0.351,
+      "slg": 0.404,
+      "ops": 0.755
     },
     {
       "id": "691176",
@@ -900,10 +900,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.231,
-      "obp": 0.286,
-      "slg": 0.462,
-      "ops": 0.748
+      "avg": 0.325,
+      "obp": 0.408,
+      "slg": 0.526,
+      "ops": 0.934
     },
     {
       "id": "668752",
@@ -921,10 +921,10 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.25,
-      "obp": 0.25,
-      "slg": 0.5,
-      "ops": 0.75
+      "avg": 0.237,
+      "obp": 0.301,
+      "slg": 0.358,
+      "ops": 0.659
     },
     {
       "id": "702068",
@@ -942,10 +942,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.75,
-      "obp": 0.75,
-      "slg": 1.0,
-      "ops": 1.75
+      "avg": 0.306,
+      "obp": 0.359,
+      "slg": 0.333,
+      "ops": 0.692
     },
     {
       "id": "676205",
@@ -963,31 +963,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.231,
-      "obp": 0.333,
-      "slg": 0.231,
-      "ops": 0.564
-    },
-    {
-      "id": "668721",
-      "name": "Payton Henry",
-      "team": "scranton_wb",
-      "atBats": 3,
-      "hits": 0,
-      "doubles": 0,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 0,
-      "baseOnBalls": 0,
-      "hitByPitch": 0,
-      "sacFlies": 0,
-      "stolenBases": 0,
-      "caughtStealing": 0,
-      "strikeOuts": 2,
-      "avg": 0.0,
-      "obp": 0.0,
-      "slg": 0.0,
-      "ops": 0.0
+      "avg": 0.239,
+      "obp": 0.339,
+      "slg": 0.421,
+      "ops": 0.76
     },
     {
       "id": "667803",
@@ -1005,10 +984,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.2,
-      "obp": 0.273,
-      "slg": 0.3,
-      "ops": 0.573
+      "avg": 0.236,
+      "obp": 0.323,
+      "slg": 0.447,
+      "ops": 0.77
     },
     {
       "id": "680474",
@@ -1026,31 +1005,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.471,
-      "obp": 0.5,
-      "slg": 0.706,
-      "ops": 1.206
-    },
-    {
-      "id": "669699",
-      "name": "Braden Shewmake",
-      "team": "scranton_wb",
-      "atBats": 9,
-      "hits": 2,
-      "doubles": 1,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 1,
-      "baseOnBalls": 0,
-      "hitByPitch": 0,
-      "sacFlies": 0,
-      "stolenBases": 0,
-      "caughtStealing": 0,
-      "strikeOuts": 2,
-      "avg": 0.222,
-      "obp": 0.222,
-      "slg": 0.333,
-      "ops": 0.555
+      "avg": 0.195,
+      "obp": 0.357,
+      "slg": 0.286,
+      "ops": 0.643
     },
     {
       "id": "683011",
@@ -1068,10 +1026,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 6,
-      "avg": 0.214,
-      "obp": 0.214,
-      "slg": 0.5,
-      "ops": 0.714
+      "avg": 0.205,
+      "obp": 0.234,
+      "slg": 0.386,
+      "ops": 0.62
     }
   ],
   "pitchers": [
@@ -1091,8 +1049,8 @@
       "losses": 0,
       "saves": 0,
       "era": 0.0,
-      "whip": 0.0,
-      "avg": 0.0
+      "whip": 0.86,
+      "avg": 0.125
     },
     {
       "id": "683332",
@@ -1109,9 +1067,9 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 4.76,
-      "whip": 0.53,
-      "avg": 0.1
+      "era": 3.46,
+      "whip": 1.04,
+      "avg": 0.185
     },
     {
       "id": "701706",
@@ -1128,9 +1086,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 5.4,
-      "whip": 1.8,
-      "avg": 0.167
+      "era": 3.86,
+      "whip": 1.57,
+      "avg": 0.196
     },
     {
       "id": "822950",
@@ -1147,9 +1105,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 40.5,
-      "whip": 9.0,
-      "avg": 0.5
+      "era": 6.27,
+      "whip": 1.63,
+      "avg": 0.26
     },
     {
       "id": "814343",
@@ -1166,9 +1124,9 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 4.5,
-      "whip": 1.5,
-      "avg": 0.167
+      "era": 5.4,
+      "whip": 1.24,
+      "avg": 0.244
     },
     {
       "id": "682625",
@@ -1204,9 +1162,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 13.5,
-      "whip": 1.5,
-      "avg": 0.333
+      "era": 3.41,
+      "whip": 1.39,
+      "avg": 0.227
     },
     {
       "id": "669740",
@@ -1224,8 +1182,8 @@
       "losses": 0,
       "saves": 0,
       "era": 0.0,
-      "whip": 0.5,
-      "avg": 0.143
+      "whip": 0.64,
+      "avg": 0.133
     },
     {
       "id": "805128",
@@ -1242,8 +1200,8 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 2.08,
-      "whip": 1.62,
+      "era": 2.16,
+      "whip": 1.32,
       "avg": 0.25
     },
     {
@@ -1261,9 +1219,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
-      "era": 0.0,
-      "whip": 0.0,
-      "avg": 0.0
+      "era": 3.2,
+      "whip": 1.4,
+      "avg": 0.254
     },
     {
       "id": "827768",
@@ -1299,9 +1257,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 1.5,
-      "avg": 0.333
+      "era": 8.51,
+      "whip": 1.86,
+      "avg": 0.274
     },
     {
       "id": "811963",
@@ -1318,9 +1276,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 1.8,
-      "whip": 0.6,
-      "avg": 0.176
+      "era": 4.8,
+      "whip": 1.38,
+      "avg": 0.273
     },
     {
       "id": "806244",
@@ -1337,9 +1295,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 18.0,
-      "whip": 3.0,
-      "avg": 0.6
+      "era": 5.79,
+      "whip": 1.58,
+      "avg": 0.299
     },
     {
       "id": "822915",
@@ -1356,9 +1314,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 1.0,
-      "avg": 0.0
+      "era": 3.49,
+      "whip": 1.27,
+      "avg": 0.213
     },
     {
       "id": "804892",
@@ -1375,9 +1333,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.33,
-      "avg": 0.056
+      "era": 4.63,
+      "whip": 1.35,
+      "avg": 0.272
     },
     {
       "id": "693647",
@@ -1394,9 +1352,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 9.0,
-      "whip": 3.0,
-      "avg": 0.4
+      "era": 4.18,
+      "whip": 1.21,
+      "avg": 0.208
     },
     {
       "id": "701480",
@@ -1413,9 +1371,9 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 5.4,
-      "whip": 1.6,
-      "avg": 0.286
+      "era": 4.48,
+      "whip": 1.35,
+      "avg": 0.224
     },
     {
       "id": "804698",
@@ -1432,9 +1390,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 1.71,
-      "avg": 0.222
+      "era": 3.32,
+      "whip": 1.2,
+      "avg": 0.219
     },
     {
       "id": "702098",
@@ -1451,9 +1409,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 8.31,
-      "whip": 2.08,
-      "avg": 0.278
+      "era": 5.31,
+      "whip": 1.48,
+      "avg": 0.204
     },
     {
       "id": "802374",
@@ -1470,9 +1428,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.5,
-      "avg": 0.167
+      "era": 4.96,
+      "whip": 1.59,
+      "avg": 0.228
     },
     {
       "id": "695560",
@@ -1489,9 +1447,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 2.25,
-      "avg": 0.273
+      "era": 1.08,
+      "whip": 1.32,
+      "avg": 0.188
     },
     {
       "id": "815069",
@@ -1508,9 +1466,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 2.57,
-      "avg": 0.417
+      "era": 3.53,
+      "whip": 1.32,
+      "avg": 0.209
     },
     {
       "id": "800344",
@@ -1527,9 +1485,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 2.25,
-      "whip": 1.25,
-      "avg": 0.2
+      "era": 5.77,
+      "whip": 1.43,
+      "avg": 0.241
     },
     {
       "id": "692550",
@@ -1546,9 +1504,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 1.93,
-      "whip": 0.86,
-      "avg": 0.222
+      "era": 3.06,
+      "whip": 1.33,
+      "avg": 0.205
     },
     {
       "id": "815278",
@@ -1565,9 +1523,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 6.75,
-      "whip": 2.0,
-      "avg": 0.333
+      "era": 4.5,
+      "whip": 1.5,
+      "avg": 0.25
     },
     {
       "id": "804522",
@@ -1584,9 +1542,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 3.38,
-      "whip": 1.88,
-      "avg": 0.333
+      "era": 3.51,
+      "whip": 1.29,
+      "avg": 0.178
     },
     {
       "id": "702436",
@@ -1603,9 +1561,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.8,
-      "avg": 0.222
+      "era": 4.44,
+      "whip": 1.22,
+      "avg": 0.23
     },
     {
       "id": "694662",
@@ -1622,28 +1580,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 9.0,
-      "whip": 3.0,
-      "avg": 0.444
-    },
-    {
-      "id": "685067",
-      "name": "Baron Stuart",
-      "team": "hudson_valley",
-      "inningsPitched": "1.2",
-      "strikeOuts": 3,
-      "baseOnBalls": 0,
-      "hits": 2,
-      "atBats": 7,
-      "homeRuns": 1,
-      "earnedRuns": 2,
-      "runs": 2,
-      "wins": 0,
-      "losses": 0,
-      "saves": 0,
-      "era": 10.8,
-      "whip": 1.2,
-      "avg": 0.286
+      "era": 4.02,
+      "whip": 1.6,
+      "avg": 0.285
     },
     {
       "id": "695425",
@@ -1660,9 +1599,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 4.5,
-      "whip": 3.0,
-      "avg": 0.333
+      "era": 4.35,
+      "whip": 1.45,
+      "avg": 0.267
     },
     {
       "id": "683522",
@@ -1679,9 +1618,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.75,
-      "avg": 0.2
+      "era": 6.75,
+      "whip": 1.63,
+      "avg": 0.274
     },
     {
       "id": "675502",
@@ -1698,9 +1637,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
-      "era": 0.0,
-      "whip": 1.0,
-      "avg": 0.25
+      "era": 3.5,
+      "whip": 1.17,
+      "avg": 0.209
     },
     {
       "id": "694660",
@@ -1717,9 +1656,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 67.5,
-      "whip": 7.5,
-      "avg": 0.667
+      "era": 7.78,
+      "whip": 1.93,
+      "avg": 0.253
     },
     {
       "id": "812431",
@@ -1736,8 +1675,8 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 7.94,
-      "whip": 1.41,
+      "era": 6.52,
+      "whip": 1.66,
       "avg": 0.333
     },
     {
@@ -1755,9 +1694,9 @@
       "wins": 1,
       "losses": 1,
       "saves": 0,
-      "era": 2.7,
-      "whip": 0.9,
-      "avg": 0.2
+      "era": 4.18,
+      "whip": 1.23,
+      "avg": 0.19
     },
     {
       "id": "694633",
@@ -1774,9 +1713,9 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 15.0,
-      "whip": 2.33,
-      "avg": 0.438
+      "era": 9.93,
+      "whip": 2.21,
+      "avg": 0.32
     },
     {
       "id": "696292",
@@ -1793,9 +1732,9 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 11.57,
-      "whip": 2.57,
-      "avg": 0.35
+      "era": 4.45,
+      "whip": 1.45,
+      "avg": 0.245
     },
     {
       "id": "702046",
@@ -1812,9 +1751,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 13.5,
-      "whip": 6.0,
-      "avg": 0.333
+      "era": 5.53,
+      "whip": 1.7,
+      "avg": 0.212
     },
     {
       "id": "675296",
@@ -1831,9 +1770,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 1.8,
-      "avg": 0.308
+      "era": 3.89,
+      "whip": 1.27,
+      "avg": 0.201
     },
     {
       "id": "680893",
@@ -1850,9 +1789,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 6.0,
-      "avg": 0.5
+      "era": 3.86,
+      "whip": 2.57,
+      "avg": 0.286
     },
     {
       "id": "814392",
@@ -1869,9 +1808,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 3.0,
-      "whip": 1.17,
-      "avg": 0.2
+      "era": 3.65,
+      "whip": 1.13,
+      "avg": 0.176
     },
     {
       "id": "702036",
@@ -1888,9 +1827,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.5,
-      "avg": 0.0
+      "era": 3.05,
+      "whip": 1.16,
+      "avg": 0.231
     },
     {
       "id": "815587",
@@ -1907,9 +1846,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 1.0,
-      "avg": 0.143
+      "era": 4.61,
+      "whip": 1.6,
+      "avg": 0.249
     },
     {
       "id": "694696",
@@ -1926,9 +1865,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 10.8,
-      "whip": 1.8,
-      "avg": 0.25
+      "era": 5.38,
+      "whip": 1.58,
+      "avg": 0.287
     },
     {
       "id": "805728",
@@ -1945,9 +1884,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.0,
-      "avg": 0.0
+      "era": 7.2,
+      "whip": 1.2,
+      "avg": 0.263
     },
     {
       "id": "686433",
@@ -1965,8 +1904,8 @@
       "losses": 0,
       "saves": 1,
       "era": 0.0,
-      "whip": 0.0,
-      "avg": 0.0
+      "whip": 1.32,
+      "avg": 0.185
     },
     {
       "id": "694341",
@@ -1983,9 +1922,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 1.93,
-      "whip": 1.5,
-      "avg": 0.222
+      "era": 2.66,
+      "whip": 1.04,
+      "avg": 0.202
     },
     {
       "id": "684608",
@@ -2002,9 +1941,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.6,
-      "avg": 0.167
+      "era": 2.87,
+      "whip": 1.28,
+      "avg": 0.115
     },
     {
       "id": "683409",
@@ -2021,9 +1960,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.75,
-      "avg": 0.167
+      "era": 1.0,
+      "whip": 0.72,
+      "avg": 0.153
     },
     {
       "id": "679693",
@@ -2040,9 +1979,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 54.0,
-      "whip": 8.0,
-      "avg": 0.667
+      "era": 5.45,
+      "whip": 1.5,
+      "avg": 0.252
     },
     {
       "id": "529017",
@@ -2059,9 +1998,9 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 3.86,
-      "whip": 1.29,
-      "avg": 0.25
+      "era": 3.79,
+      "whip": 1.51,
+      "avg": 0.246
     },
     {
       "id": "670868",
@@ -2097,9 +2036,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 10.38,
-      "whip": 2.08,
-      "avg": 0.45
+      "era": 6.9,
+      "whip": 1.71,
+      "avg": 0.291
     },
     {
       "id": "690440",
@@ -2116,9 +2055,9 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
-      "era": 2.45,
-      "whip": 1.64,
-      "avg": 0.167
+      "era": 2.01,
+      "whip": 1.14,
+      "avg": 0.195
     },
     {
       "id": "809137",
@@ -2135,9 +2074,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 0.0,
-      "whip": 0.0,
-      "avg": 0.0
+      "era": 3.86,
+      "whip": 1.29,
+      "avg": 0.222
     },
     {
       "id": "815454",
@@ -2154,9 +2093,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 12.27,
-      "whip": 1.36,
-      "avg": 0.267
+      "era": 8.0,
+      "whip": 1.44,
+      "avg": 0.257
     },
     {
       "id": "684725",
@@ -2173,9 +2112,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
-      "era": 7.71,
-      "whip": 0.86,
-      "avg": 0.222
+      "era": 3.64,
+      "whip": 1.16,
+      "avg": 0.19
     },
     {
       "id": "801432",
@@ -2192,9 +2131,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 12.0,
-      "whip": 2.0,
-      "avg": 0.273
+      "era": 8.5,
+      "whip": 1.89,
+      "avg": 0.275
     },
     {
       "id": "695684",
@@ -2211,9 +2150,9 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "era": 4.5,
-      "whip": 2.0,
-      "avg": 0.188
+      "era": 2.85,
+      "whip": 1.32,
+      "avg": 0.221
     },
     {
       "id": "702130",
@@ -2230,33 +2169,12 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
-      "era": 36.0,
-      "whip": 3.0,
-      "avg": 0.4
+      "era": 4.74,
+      "whip": 1.19,
+      "avg": 0.211
     }
   ],
   "rookie_hitters": [
-    {
-      "id": "830414",
-      "name": "Eliezer Adames",
-      "team": "dsl_yankees",
-      "atBats": 6,
-      "hits": 1,
-      "doubles": 0,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 2,
-      "baseOnBalls": 4,
-      "hitByPitch": 0,
-      "sacFlies": 0,
-      "stolenBases": 3,
-      "caughtStealing": 2,
-      "strikeOuts": 1,
-      "avg": 0.167,
-      "obp": 0.5,
-      "slg": 0.167,
-      "ops": 0.667
-    },
     {
       "id": "839410",
       "name": "Manuel Aguilar",
@@ -2273,10 +2191,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.0,
-      "obp": 0.0,
-      "slg": 0.0,
-      "ops": 0.0
+      "avg": 0.277,
+      "obp": 0.472,
+      "slg": 0.462,
+      "ops": 0.934
     },
     {
       "id": "830461",
@@ -2294,31 +2212,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 9,
-      "avg": 0.235,
-      "obp": 0.316,
-      "slg": 0.647,
-      "ops": 0.963
-    },
-    {
-      "id": "829486",
-      "name": "Alfred Ciriaco",
-      "team": "dsl_yankees",
-      "atBats": 12,
-      "hits": 4,
-      "doubles": 1,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 2,
-      "baseOnBalls": 4,
-      "hitByPitch": 2,
-      "sacFlies": 1,
-      "stolenBases": 0,
-      "caughtStealing": 0,
-      "strikeOuts": 0,
-      "avg": 0.333,
-      "obp": 0.526,
-      "slg": 0.417,
-      "ops": 0.943
+      "avg": 0.302,
+      "obp": 0.422,
+      "slg": 0.627,
+      "ops": 1.049
     },
     {
       "id": "825411",
@@ -2336,10 +2233,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 6,
-      "avg": 0.188,
-      "obp": 0.316,
-      "slg": 0.313,
-      "ops": 0.629
+      "avg": 0.313,
+      "obp": 0.471,
+      "slg": 0.422,
+      "ops": 0.893
     },
     {
       "id": "833200",
@@ -2357,10 +2254,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.333,
-      "obp": 0.333,
-      "slg": 0.333,
-      "ops": 0.666
+      "avg": 0.267,
+      "obp": 0.356,
+      "slg": 0.373,
+      "ops": 0.729
     },
     {
       "id": "832447",
@@ -2378,31 +2275,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.333,
-      "obp": 0.4,
-      "slg": 0.667,
-      "ops": 1.067
-    },
-    {
-      "id": "821173",
-      "name": "Edgar Jimenez",
-      "team": "dsl_yankees",
-      "atBats": 14,
-      "hits": 3,
-      "doubles": 1,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 2,
-      "baseOnBalls": 3,
-      "hitByPitch": 0,
-      "sacFlies": 0,
-      "stolenBases": 2,
-      "caughtStealing": 0,
-      "strikeOuts": 4,
-      "avg": 0.214,
-      "obp": 0.353,
-      "slg": 0.286,
-      "ops": 0.639
+      "avg": 0.247,
+      "obp": 0.404,
+      "slg": 0.329,
+      "ops": 0.733
     },
     {
       "id": "822210",
@@ -2420,10 +2296,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.25,
-      "obp": 0.4,
-      "slg": 0.333,
-      "ops": 0.733
+      "avg": 0.281,
+      "obp": 0.433,
+      "slg": 0.422,
+      "ops": 0.855
     },
     {
       "id": "829501",
@@ -2441,10 +2317,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.278,
-      "obp": 0.364,
-      "slg": 0.5,
-      "ops": 0.864
+      "avg": 0.315,
+      "obp": 0.45,
+      "slg": 0.53,
+      "ops": 0.98
     },
     {
       "id": "837831",
@@ -2462,10 +2338,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.357,
-      "obp": 0.357,
-      "slg": 0.571,
-      "ops": 0.928
+      "avg": 0.362,
+      "obp": 0.449,
+      "slg": 0.474,
+      "ops": 0.923
     },
     {
       "id": "832787",
@@ -2483,31 +2359,10 @@
       "stolenBases": 2,
       "caughtStealing": 2,
       "strikeOuts": 3,
-      "avg": 0.462,
-      "obp": 0.563,
-      "slg": 0.846,
-      "ops": 1.409
-    },
-    {
-      "id": "837815",
-      "name": "Kenneth Melendez",
-      "team": "dsl_yankees",
-      "atBats": 19,
-      "hits": 6,
-      "doubles": 1,
-      "triples": 1,
-      "homeRuns": 0,
-      "rbi": 5,
-      "baseOnBalls": 1,
-      "hitByPitch": 1,
-      "sacFlies": 1,
-      "stolenBases": 2,
-      "caughtStealing": 1,
-      "strikeOuts": 4,
-      "avg": 0.316,
-      "obp": 0.364,
-      "slg": 0.474,
-      "ops": 0.838
+      "avg": 0.237,
+      "obp": 0.381,
+      "slg": 0.356,
+      "ops": 0.737
     },
     {
       "id": "822180",
@@ -2525,10 +2380,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.444,
-      "obp": 0.583,
-      "slg": 0.889,
-      "ops": 1.472
+      "avg": 0.323,
+      "obp": 0.472,
+      "slg": 0.531,
+      "ops": 1.003
     },
     {
       "id": "825186",
@@ -2546,10 +2401,10 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 3,
-      "avg": 0.286,
-      "obp": 0.545,
-      "slg": 1.143,
-      "ops": 1.688
+      "avg": 0.132,
+      "obp": 0.431,
+      "slg": 0.316,
+      "ops": 0.747
     },
     {
       "id": "822264",
@@ -2567,10 +2422,10 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 2,
-      "avg": 0.143,
-      "obp": 0.333,
-      "slg": 0.286,
-      "ops": 0.619
+      "avg": 0.172,
+      "obp": 0.426,
+      "slg": 0.218,
+      "ops": 0.644
     },
     {
       "id": "830475",
@@ -2588,10 +2443,10 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 3,
-      "avg": 0.3,
-      "obp": 0.462,
-      "slg": 0.3,
-      "ops": 0.762
+      "avg": 0.282,
+      "obp": 0.406,
+      "slg": 0.423,
+      "ops": 0.829
     },
     {
       "id": "837798",
@@ -2609,10 +2464,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.0,
-      "obp": 0.333,
-      "slg": 0.0,
-      "ops": 0.333
+      "avg": 0.083,
+      "obp": 0.154,
+      "slg": 0.208,
+      "ops": 0.362
     },
     {
       "id": "825153",
@@ -2630,10 +2485,10 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 0,
-      "avg": 0.526,
-      "obp": 0.591,
-      "slg": 0.895,
-      "ops": 1.486
+      "avg": 0.37,
+      "obp": 0.454,
+      "slg": 0.618,
+      "ops": 1.072
     },
     {
       "id": "830414",
@@ -2651,10 +2506,10 @@
       "stolenBases": 3,
       "caughtStealing": 2,
       "strikeOuts": 1,
-      "avg": 0.167,
-      "obp": 0.5,
-      "slg": 0.167,
-      "ops": 0.667
+      "avg": 0.263,
+      "obp": 0.392,
+      "slg": 0.325,
+      "ops": 0.717
     },
     {
       "id": "830470",
@@ -2672,10 +2527,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.3,
-      "obp": 0.462,
-      "slg": 0.5,
-      "ops": 0.962
+      "avg": 0.19,
+      "obp": 0.337,
+      "slg": 0.362,
+      "ops": 0.699
     },
     {
       "id": "822236",
@@ -2693,10 +2548,10 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.636,
-      "obp": 0.643,
-      "slg": 1.273,
-      "ops": 1.916
+      "avg": 0.271,
+      "obp": 0.424,
+      "slg": 0.353,
+      "ops": 0.777
     },
     {
       "id": "821683",
@@ -2714,10 +2569,10 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 7,
-      "avg": 0.222,
-      "obp": 0.44,
-      "slg": 0.444,
-      "ops": 0.884
+      "avg": 0.343,
+      "obp": 0.515,
+      "slg": 0.607,
+      "ops": 1.122
     },
     {
       "id": "830419",
@@ -2735,10 +2590,10 @@
       "stolenBases": 3,
       "caughtStealing": 1,
       "strikeOuts": 4,
-      "avg": 0.357,
-      "obp": 0.625,
-      "slg": 0.643,
-      "ops": 1.268
+      "avg": 0.269,
+      "obp": 0.418,
+      "slg": 0.442,
+      "ops": 0.86
     },
     {
       "id": "830458",
@@ -2756,10 +2611,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
-      "avg": 0.5,
-      "obp": 0.833,
-      "slg": 0.5,
-      "ops": 1.333
+      "avg": 0.2,
+      "obp": 0.373,
+      "slg": 0.275,
+      "ops": 0.648
     },
     {
       "id": "829486",
@@ -2777,31 +2632,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 0,
-      "avg": 0.333,
-      "obp": 0.526,
-      "slg": 0.417,
-      "ops": 0.943
-    },
-    {
-      "id": "832447",
-      "name": "Adrian Feliz",
-      "team": "dsl_bombers",
-      "atBats": 3,
-      "hits": 1,
-      "doubles": 1,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 1,
-      "baseOnBalls": 1,
-      "hitByPitch": 0,
-      "sacFlies": 1,
-      "stolenBases": 0,
-      "caughtStealing": 0,
-      "strikeOuts": 2,
-      "avg": 0.333,
-      "obp": 0.4,
-      "slg": 0.667,
-      "ops": 1.067
+      "avg": 0.283,
+      "obp": 0.469,
+      "slg": 0.457,
+      "ops": 0.926
     },
     {
       "id": "821173",
@@ -2819,31 +2653,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.214,
-      "obp": 0.353,
-      "slg": 0.286,
-      "ops": 0.639
-    },
-    {
-      "id": "832787",
-      "name": "Alfiery Matos",
-      "team": "dsl_bombers",
-      "atBats": 13,
-      "hits": 6,
-      "doubles": 2,
-      "triples": 0,
-      "homeRuns": 1,
-      "rbi": 7,
-      "baseOnBalls": 2,
-      "hitByPitch": 1,
-      "sacFlies": 0,
-      "stolenBases": 2,
-      "caughtStealing": 2,
-      "strikeOuts": 3,
-      "avg": 0.462,
-      "obp": 0.563,
-      "slg": 0.846,
-      "ops": 1.409
+      "avg": 0.379,
+      "obp": 0.461,
+      "slg": 0.727,
+      "ops": 1.188
     },
     {
       "id": "837815",
@@ -2861,10 +2674,10 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 4,
-      "avg": 0.316,
-      "obp": 0.364,
-      "slg": 0.474,
-      "ops": 0.838
+      "avg": 0.183,
+      "obp": 0.352,
+      "slg": 0.211,
+      "ops": 0.563
     },
     {
       "id": "808152",
@@ -2882,31 +2695,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "avg": 0.2,
-      "obp": 0.429,
-      "slg": 0.4,
-      "ops": 0.829
-    },
-    {
-      "id": "822180",
-      "name": "Poly Ojeda",
-      "team": "dsl_bombers",
-      "atBats": 9,
-      "hits": 4,
-      "doubles": 2,
-      "triples": 1,
-      "homeRuns": 0,
-      "rbi": 1,
-      "baseOnBalls": 3,
-      "hitByPitch": 0,
-      "sacFlies": 0,
-      "stolenBases": 0,
-      "caughtStealing": 0,
-      "strikeOuts": 2,
-      "avg": 0.444,
-      "obp": 0.583,
-      "slg": 0.889,
-      "ops": 1.472
+      "avg": 0.226,
+      "obp": 0.359,
+      "slg": 0.396,
+      "ops": 0.755
     },
     {
       "id": "837792",
@@ -2924,31 +2716,10 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 2,
-      "avg": 0.25,
-      "obp": 0.538,
-      "slg": 0.375,
-      "ops": 0.913
-    },
-    {
-      "id": "830475",
-      "name": "Stalen Ramirez",
-      "team": "dsl_bombers",
-      "atBats": 10,
-      "hits": 3,
-      "doubles": 0,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 2,
-      "baseOnBalls": 1,
-      "hitByPitch": 2,
-      "sacFlies": 0,
-      "stolenBases": 1,
-      "caughtStealing": 1,
-      "strikeOuts": 3,
-      "avg": 0.3,
-      "obp": 0.462,
-      "slg": 0.3,
-      "ops": 0.762
+      "avg": 0.244,
+      "obp": 0.379,
+      "slg": 0.467,
+      "ops": 0.846
     },
     {
       "id": "832491",
@@ -2966,31 +2737,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
-      "avg": 0.25,
-      "obp": 0.4,
-      "slg": 0.25,
-      "ops": 0.65
-    },
-    {
-      "id": "837798",
-      "name": "John Rosillo",
-      "team": "dsl_bombers",
-      "atBats": 2,
-      "hits": 0,
-      "doubles": 0,
-      "triples": 0,
-      "homeRuns": 0,
-      "rbi": 0,
-      "baseOnBalls": 1,
-      "hitByPitch": 0,
-      "sacFlies": 0,
-      "stolenBases": 0,
-      "caughtStealing": 0,
-      "strikeOuts": 2,
-      "avg": 0.0,
-      "obp": 0.333,
-      "slg": 0.0,
-      "ops": 0.333
+      "avg": 0.313,
+      "obp": 0.459,
+      "slg": 0.435,
+      "ops": 0.894
     },
     {
       "id": "825266",
@@ -3008,10 +2758,10 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 6,
-      "avg": 0.182,
-      "obp": 0.357,
-      "slg": 0.636,
-      "ops": 0.993
+      "avg": 0.213,
+      "obp": 0.426,
+      "slg": 0.303,
+      "ops": 0.729
     }
   ]
 }

@@ -329,35 +329,21 @@
       "isRate": false,
       "entries": [
         {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 12
-        },
-        {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Kenneth Melendez",
-          "team": "DSL-B",
-          "value": 12
-        },
-        {
-          "rank": "3",
+          "rank": "1",
           "isTied": false,
           "name": "Juan Torres",
           "team": "DSL-Y",
           "value": 10
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Roderick Arias",
           "team": "SOM",
           "value": 8
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Max Schuemann",
           "team": "SWB",
@@ -366,37 +352,58 @@
         {
           "rank": "T4",
           "isTied": true,
-          "name": "Alfred Ciriaco",
-          "team": "DSL-B",
-          "value": 8
-        },
-        {
-          "rank": "T4",
-          "isTied": true,
-          "name": "Poly Ojeda",
-          "team": "DSL-B",
-          "value": 8
-        },
-        {
-          "rank": "T8",
-          "isTied": true,
           "name": "Luis Puello",
           "team": "TAM",
           "value": 7
         },
         {
-          "rank": "T8",
+          "rank": "T4",
           "isTied": true,
           "name": "David McCann",
           "team": "HV",
           "value": 7
         },
         {
-          "rank": "T8",
+          "rank": "T4",
           "isTied": true,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 7
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": 6
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Enmanuel Tejeda",
+          "team": "HV",
+          "value": 6
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": 6
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Alfiery Matos",
+          "team": "DSL-Y",
+          "value": 6
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Kenneth Melendez",
+          "team": "DSL-B",
+          "value": 6
         }
       ]
     },
@@ -408,93 +415,296 @@
         {
           "rank": "T1",
           "isTied": true,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Poly Ojeda",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T3",
-          "isTied": true,
           "name": "Josh Moylan",
           "team": "SOM",
           "value": 3
         },
         {
-          "rank": "T3",
+          "rank": "T1",
           "isTied": true,
           "name": "Juan Martinez",
           "team": "DSL-Y",
           "value": 3
         },
         {
-          "rank": "T5",
+          "rank": "T3",
           "isTied": true,
           "name": "Diomedes Hernandez",
           "team": "HV",
           "value": 2
         },
         {
-          "rank": "T5",
+          "rank": "T3",
           "isTied": true,
           "name": "Roderick Arias",
           "team": "SOM",
           "value": 2
         },
         {
-          "rank": "T5",
-          "isTied": true,
-          "name": "Alfred Ciriaco",
-          "team": "DSL-B",
-          "value": 2
-        },
-        {
-          "rank": "T5",
-          "isTied": true,
-          "name": "Adrian Feliz",
-          "team": "DSL-B",
-          "value": 2
-        },
-        {
-          "rank": "T5",
-          "isTied": true,
-          "name": "Edgar Jimenez",
-          "team": "DSL-B",
-          "value": 2
-        },
-        {
-          "rank": "T5",
+          "rank": "T3",
           "isTied": true,
           "name": "Stiven Marinez",
           "team": "DSL-Y",
           "value": 2
         },
         {
-          "rank": "T5",
+          "rank": "T3",
           "isTied": true,
-          "name": "Kenneth Melendez",
-          "team": "DSL-B",
+          "name": "Alfiery Matos",
+          "team": "DSL-Y",
           "value": 2
         },
         {
-          "rank": "T5",
+          "rank": "T3",
+          "isTied": true,
+          "name": "Poly Ojeda",
+          "team": "DSL-Y",
+          "value": 2
+        },
+        {
+          "rank": "T3",
           "isTied": true,
           "name": "Carlos Bello",
           "team": "DSL-B",
           "value": 2
         },
         {
-          "rank": "T5",
+          "rank": "T3",
           "isTied": true,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Tyce Armstrong",
+          "team": "TAM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Blake Cyr",
+          "team": "TAM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Bear Harrison",
+          "team": "TAM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Brando Mayea",
+          "team": "TAM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Luis Puello",
+          "team": "TAM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Robbie Burnett",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Josue Gonzalez",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Maika Niu",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Dean Toigo",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Kyle West",
+          "team": "HV",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Jackson Castillo",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Cole Gabrielson",
+          "team": "SWB",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Manuel Palencia",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Miguel Palma",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Duke Ellis",
+          "team": "SWB",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Ernesto Martinez Jr.",
+          "team": "SWB",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Max Schuemann",
+          "team": "SWB",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Anthony Volpe",
+          "team": "SWB",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Isaias Castillo",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Adrian Feliz",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Cesar Lopez",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Abrahan Pichardo",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Juan Torres",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "David Carrera",
+          "team": "DSL-B",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Ruben Castillo",
+          "team": "DSL-B",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Alfred Ciriaco",
+          "team": "DSL-B",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Edgar Jimenez",
+          "team": "DSL-B",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Kenneth Melendez",
+          "team": "DSL-B",
+          "value": 1
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Sebastian Pinto",
+          "team": "DSL-B",
+          "value": 1
         }
       ]
     },
@@ -504,91 +714,91 @@
       "isRate": false,
       "entries": [
         {
-          "rank": "T1",
-          "isTied": true,
+          "rank": "1",
+          "isTied": false,
           "name": "Core Jackson",
           "team": "HV",
           "value": 2
         },
         {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Kenneth Melendez",
-          "team": "DSL-B",
-          "value": 2
-        },
-        {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Poly Ojeda",
-          "team": "DSL-B",
-          "value": 2
-        },
-        {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Wilberson De Pena",
           "team": "TAM",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Bryce Martin-Grudzielanek",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Dean Toigo",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Roderick Arias",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Coby Morales",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Luis Cruz",
           "team": "DSL-Y",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
           "isTied": true,
           "name": "Stiven Marinez",
           "team": "DSL-Y",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
+          "isTied": true,
+          "name": "Poly Ojeda",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T2",
           "isTied": true,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 1
         },
         {
-          "rank": "T4",
+          "rank": "T2",
+          "isTied": true,
+          "name": "Kenneth Melendez",
+          "team": "DSL-B",
+          "value": 1
+        },
+        {
+          "rank": "T2",
           "isTied": true,
           "name": "Dariel Santana",
           "team": "DSL-B",
@@ -625,13 +835,6 @@
         {
           "rank": "T2",
           "isTied": true,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 2
-        },
-        {
-          "rank": "T2",
-          "isTied": true,
           "name": "Jose Peralta",
           "team": "DSL-Y",
           "value": 2
@@ -644,161 +847,168 @@
           "value": 2
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Tyce Armstrong",
           "team": "TAM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Hans Montero",
           "team": "TAM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Anthony Potestio",
           "team": "TAM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Eric Genther",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Maika Niu",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Enmanuel Tejeda",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Camden Troyer",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Kyle West",
           "team": "HV",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Jackson Castillo",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "DJ Gladney",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Connor McGinnis",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Josh Moylan",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Manuel Palencia",
           "team": "SOM",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Kenedy Corona",
           "team": "SWB",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Jasson Dom\u00ednguez",
           "team": "SWB",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Max Schuemann",
           "team": "SWB",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Anthony Volpe",
           "team": "SWB",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
+          "isTied": true,
+          "name": "Alfiery Matos",
+          "team": "DSL-Y",
+          "value": 1
+        },
+        {
+          "rank": "T6",
           "isTied": true,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "David Carrera",
           "team": "DSL-B",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Ruben Castillo",
           "team": "DSL-B",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Richard Meran",
           "team": "DSL-B",
           "value": 1
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Dariel Santana",
           "team": "DSL-B",
@@ -812,65 +1022,65 @@
       "isRate": false,
       "entries": [
         {
-          "rank": "1",
-          "isTied": false,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 14
-        },
-        {
-          "rank": "2",
-          "isTied": false,
-          "name": "Kenneth Melendez",
-          "team": "DSL-B",
-          "value": 10
-        },
-        {
-          "rank": "T3",
+          "rank": "T1",
           "isTied": true,
           "name": "David McCann",
           "team": "HV",
           "value": 9
         },
         {
-          "rank": "T3",
+          "rank": "T1",
           "isTied": true,
           "name": "Juan Torres",
           "team": "DSL-Y",
           "value": 9
         },
         {
-          "rank": "5",
-          "isTied": false,
+          "rank": "T3",
+          "isTied": true,
           "name": "Maika Niu",
           "team": "HV",
           "value": 7
         },
         {
-          "rank": "6",
+          "rank": "T3",
+          "isTied": true,
+          "name": "Alfiery Matos",
+          "team": "DSL-Y",
+          "value": 7
+        },
+        {
+          "rank": "5",
           "isTied": false,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 6
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": 5
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Eric Genther",
           "team": "HV",
           "value": 5
         },
         {
-          "rank": "T7",
+          "rank": "T6",
           "isTied": true,
           "name": "Ruben Castillo",
+          "team": "DSL-B",
+          "value": 5
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Kenneth Melendez",
           "team": "DSL-B",
           "value": 5
         },
@@ -926,29 +1136,8 @@
         {
           "rank": "T10",
           "isTied": true,
-          "name": "Eliezer Adames",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
           "name": "Isaias Castillo",
           "team": "DSL-Y",
-          "value": 4
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Alfred Ciriaco",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Edgar Jimenez",
-          "team": "DSL-B",
           "value": 4
         },
         {
@@ -964,13 +1153,6 @@
           "name": "Jose Peralta",
           "team": "DSL-Y",
           "value": 4
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Stalen Ramirez",
-          "team": "DSL-B",
-          "value": 4
         }
       ]
     },
@@ -980,36 +1162,29 @@
       "isRate": false,
       "entries": [
         {
-          "rank": "T1",
-          "isTied": true,
+          "rank": "1",
+          "isTied": false,
           "name": "Enmanuel Tejeda",
           "team": "HV",
           "value": 6
         },
         {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Eliezer Adames",
-          "team": "DSL-B",
-          "value": 6
-        },
-        {
-          "rank": "T3",
+          "rank": "T2",
           "isTied": true,
           "name": "Dax Kilby",
           "team": "TAM",
           "value": 5
         },
         {
-          "rank": "T3",
+          "rank": "T2",
           "isTied": true,
           "name": "Jackson Lovich",
           "team": "HV",
           "value": 5
         },
         {
-          "rank": "T5",
-          "isTied": true,
+          "rank": "4",
+          "isTied": false,
           "name": "Hans Montero",
           "team": "TAM",
           "value": 4
@@ -1017,51 +1192,107 @@
         {
           "rank": "T5",
           "isTied": true,
-          "name": "Edgar Jimenez",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T5",
-          "isTied": true,
-          "name": "Alfiery Matos",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T5",
-          "isTied": true,
-          "name": "Kenneth Melendez",
-          "team": "DSL-B",
-          "value": 4
-        },
-        {
-          "rank": "T9",
-          "isTied": true,
           "name": "Core Jackson",
           "team": "HV",
           "value": 3
         },
         {
-          "rank": "T9",
+          "rank": "T5",
           "isTied": true,
           "name": "Duke Ellis",
           "team": "SWB",
           "value": 3
         },
         {
-          "rank": "T9",
+          "rank": "T5",
+          "isTied": true,
+          "name": "Eliezer Adames",
+          "team": "DSL-B",
+          "value": 3
+        },
+        {
+          "rank": "T5",
           "isTied": true,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 3
         },
         {
-          "rank": "T9",
+          "rank": "T5",
           "isTied": true,
           "name": "Ruben Castillo",
           "team": "DSL-B",
           "value": 3
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Willy Montero",
+          "team": "HV",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Kyle West",
+          "team": "HV",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Stiven Marinez",
+          "team": "DSL-Y",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Alfiery Matos",
+          "team": "DSL-Y",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Carlos Bello",
+          "team": "DSL-B",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Edgar Jimenez",
+          "team": "DSL-B",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Kenneth Melendez",
+          "team": "DSL-B",
+          "value": 2
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Sebastian Pinto",
+          "team": "DSL-B",
+          "value": 2
         }
       ]
     },
