@@ -142,7 +142,7 @@
 | 3 | Luis Durango | SOM | 40 |
 | 4 | Bryce Martin-Grudzielanek | HV | 37 |
 | 5 | Hans Montero | TAM | 35 |
-| 6 | Stiven Marinez | DSL-Y | 33 |
+| 6 | Stiven Marinez | DSL-Y | 34 |
 | 7 | Core Jackson | HV | 32 |
 | T8 | Roderick Arias | SOM | 31 |
 | T8 | Jose Castro | FCL | 31 |
