@@ -45,7 +45,7 @@ def get(url, params=None):
 
 
 def find_affiliate_teams(season):
-    """Return list of {teamId, name, level_id} for every Yankees affiliate."""
+    """Return list of {teamId, name, level_id, sportId} for every Yankees affiliate."""
     teams = []
     for sport_id, level in SPORT_LEVELS.items():
         data = get(f"{BASE}/teams", params={"sportId": sport_id, "season": season})
@@ -59,13 +59,18 @@ def find_affiliate_teams(season):
                 if sport_id == 16 and "Dominican" in league_name:
                     # distinguish multiple DSL clubs by team name
                     level_id = "DSL2" if "bomber" in t["name"].lower() else "DSL1"
-                teams.append({"teamId": t["id"], "name": t["name"], "level_id": level_id})
+                teams.append({"teamId": t["id"], "name": t["name"], "level_id": level_id, "sportId": sport_id})
     return teams
 
 
-def player_season_stats(person_id, season, group):
+def player_season_stats(person_id, season, group, sport_id):
+    # sportId is required here -- without it, this endpoint defaults to
+    # Major League stats, which means any player with zero MLB time
+    # (i.e. most of a minor league roster) comes back with an empty
+    # response and silently gets skipped by the caller. Scoping to the
+    # affiliate's own sportId is what makes pure minor leaguers show up.
     data = get(f"{BASE}/people/{person_id}/stats",
-               params={"stats": "season", "group": group, "season": season})
+               params={"stats": "season", "group": group, "season": season, "sportId": sport_id})
     for block in data.get("stats", []):
         for split in block.get("splits", []):
             return split.get("stat", {})
@@ -206,7 +211,7 @@ def main():
             is_pitcher = pos_type == "Pitcher"
             group = "pitching" if is_pitcher else "hitting"
 
-            stat = player_season_stats(person["id"], args.season, group)
+            stat = player_season_stats(person["id"], args.season, group, t["sportId"])
             if not stat:
                 continue  # no stats logged yet (e.g. IL, just signed)
 
