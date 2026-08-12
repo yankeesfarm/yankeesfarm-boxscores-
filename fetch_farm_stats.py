@@ -119,6 +119,7 @@ def build_hitter_row(person, stat, level_id):
     slg = float(stat.get("slg") or 0)
     return {
         "name": person["fullName"],
+        "mlbId": person["id"],
         "pos": (person.get("primaryPosition") or {}).get("abbreviation", ""),
         "level": level_id,
         "avg": avg,
@@ -146,6 +147,7 @@ def build_pitcher_row(person, stat, level_id):
     bb = stat.get("baseOnBalls") or 0
     return {
         "name": person["fullName"],
+        "mlbId": person["id"],
         "pos": (person.get("primaryPosition") or {}).get("abbreviation", "P"),
         "level": level_id,
         "w": stat.get("wins", 0),
