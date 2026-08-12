@@ -72,28 +72,26 @@ def find_affiliate_teams(season):
 MINOR_LEAGUE_SPORT_IDS = list(SPORT_LEVELS.keys())  # [11, 12, 13, 14, 16] -- deliberately excludes 1 (MLB)
 
 
-def fetch_hydrated_roster(team_id, season):
+def fetch_hydrated_roster(team_id, season, own_sport_id):
     """
     One call per team: roster entries come back with each player's season
-    hitting AND pitching stat blocks already attached via hydrate.
+    hitting AND pitching stat blocks already attached via hydrate, scoped
+    to the team's own sportId.
 
-    Requests ALL minor-league sportIds at once (comma-separated), not just
-    the roster's own level. Two reasons:
-      1. Omitting sportId entirely defaults to Major League stats, which
-         silently returns nothing for anyone without MLB time (the original
-         bug).
-      2. Scoping to a SINGLE sportId (an earlier fix) caused a different
-         problem: a player promoted mid-season -- e.g. High-A to AA --
-         would only show the stats from his current level, dropping
-         whatever he did before the promotion.
-    Requesting the full minor-league sportId list returns one split per
-    level/team a player actually appeared at this season, which
-    extract_stat_group then sums into a true combined season line.
+    NOTE on cross-level combining (e.g. a player promoted High-A -> AA
+    mid-season): this version deliberately does NOT attempt to combine
+    stats across levels. Two earlier attempts at that broke in different
+    ways without a way to verify the real API response shape from this
+    environment (no live access to statsapi.mlb.com from this sandbox).
+    Rather than ship a third blind guess, this reverts to the version
+    confirmed working across all 7 levels, at the cost of only showing a
+    promoted/demoted player's CURRENT level's stats, not his combined
+    season line. See the bottom of this file for how to verify and
+    re-enable combining safely.
     """
-    sport_ids = ",".join(str(s) for s in MINOR_LEAGUE_SPORT_IDS)
     params = {
         "rosterType": "active",
-        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season},sportId={sport_ids}))",
+        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season},sportId={own_sport_id}))",
     }
     data = get(f"{BASE}/teams/{team_id}/roster", params=params)
     return data.get("roster", [])
@@ -308,7 +306,7 @@ def main():
 
     for t in teams:
         print(f"Fetching hydrated roster for {t['name']}...")
-        roster = fetch_hydrated_roster(t["teamId"], args.season)
+        roster = fetch_hydrated_roster(t["teamId"], args.season, t["sportId"])
         for entry in roster:
             person = entry["person"]
             pos_type = (entry.get("position") or {}).get("type", "")
@@ -342,3 +340,26 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# --- Notes on re-enabling cross-level stat combining ---
+#
+# To fix "promoted player only shows current level's stats" properly, the
+# real MLB Stats API response shape needs to be inspected first -- both
+# attempts at this broke in different ways from blind guesses at hydrate
+# syntax. Before trying again, run this from a machine that CAN reach
+# statsapi.mlb.com and inspect the raw JSON directly:
+#
+#   https://statsapi.mlb.com/api/v1/people/<Roderick-Arias-mlbId>/stats?
+#     stats=season&group=hitting&season=2026&sportId=11,12,13,14,16
+#
+# Check specifically:
+#   1. Does this return multiple splits (one per team), or does it error?
+#   2. If multiple splits, does each split include enough info (team id,
+#      sport id) to sum them reliably in this script?
+#   3. Try the bracket-array form too: sportId=[11,12,13,14,16]
+#
+# Once the real shape is confirmed, extract_stat_group() can be extended
+# to sum across splits -- the summation/rate-recomputation logic already
+# in that function is unit-tested and correct; it's only the REQUEST that
+# needs a verified-working query.
