@@ -69,14 +69,20 @@ def find_affiliate_teams(season):
     return teams
 
 
-def fetch_hydrated_roster(team_id, season):
+def fetch_hydrated_roster(team_id, season, sport_id):
     """
     One call per team: roster entries come back with each player's season
     hitting AND pitching stat blocks already attached via hydrate.
+
+    sportId must be included INSIDE the hydrate stats sub-query, not just
+    as a top-level param -- without it, the stats hydration defaults to
+    Major League stats, silently returning nothing for anyone without MLB
+    time. This is the same underlying issue as the original per-player
+    /people/{id}/stats bug, just relocated into the hydrate string.
     """
     params = {
         "rosterType": "active",
-        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season}))",
+        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season},sportId={sport_id}))",
     }
     data = get(f"{BASE}/teams/{team_id}/roster", params=params)
     return data.get("roster", [])
@@ -215,7 +221,7 @@ def main():
 
     for t in teams:
         print(f"Fetching hydrated roster for {t['name']}...")
-        roster = fetch_hydrated_roster(t["teamId"], args.season)
+        roster = fetch_hydrated_roster(t["teamId"], args.season, t["sportId"])
         for entry in roster:
             person = entry["person"]
             pos_type = (entry.get("position") or {}).get("type", "")
