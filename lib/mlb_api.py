@@ -37,11 +37,21 @@ def get_active_roster(team_id, season):
     return data.get("roster", [])
 
 
-def get_player_stats_by_date_range(person_id, group, sport_id, season, start_date, end_date):
+def get_player_stats_by_date_range(person_id, group, sport_id, season, start_date, end_date, team_id=None):
     """group: 'hitting' or 'pitching'. Returns None if the player had no
     activity in this window (common -- most of a 30+ man roster won't have
     hitting stats, pitchers won't have pitching stats, injured players will
-    have neither)."""
+    have neither).
+
+    team_id is optional but IMPORTANT whenever two teams share a sport_id --
+    e.g. DSL NYY Yankees and DSL NYY Bombers are both sportId 16 (Rookie).
+    Without team_id, this endpoint can't tell those two teams apart at all:
+    a query "for" the Yankees roster and a query "for" the Bombers roster
+    are the literal same request, and both return the player's whole
+    rookie-level aggregate rather than either team's actual games. This was
+    found in production -- a player who played for both DSL teams showed
+    IDENTICAL stats from both "team-specific" fetches, which combine_by_id
+    then dutifully summed into a number roughly double his real total."""
     params = {
         "stats": "byDateRange",
         "group": group,
@@ -50,6 +60,8 @@ def get_player_stats_by_date_range(person_id, group, sport_id, season, start_dat
         "startDate": start_date,
         "endDate": end_date,
     }
+    if team_id is not None:
+        params["teamId"] = team_id
     data = _get(f"/people/{person_id}/stats", params)
     stats_list = data.get("stats", [])
     if not stats_list:
