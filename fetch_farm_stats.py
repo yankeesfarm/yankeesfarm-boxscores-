@@ -154,7 +154,7 @@ def build_pitcher_row(person, stat, level_id):
     }
 
 
-STATCAST_LEVELS = {"AAA"}
+STATCAST_LEVELS = {"AAA", "A"}  # Tampa Tarpons play at Steinbrenner Field, which has Statcast installed
 
 
 def enrich_with_statcast(hitters, season):
