@@ -1,0 +1,118 @@
+{
+  "hitters": [
+    {
+      "playerId": 683011,
+      "name": "Anthony Volpe",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+      "statline": "2 for 4: Triple (1)"
+    },
+    {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "DH",
+      "bio": "AAA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "2 for 3: HR (20), RBI (68)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 702036,
+      "name": "Tony Rossi",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702036/spots/120",
+      "statline": "1.0 IP, 1 R, 2 K"
+    },
+    {
+      "playerId": 683522,
+      "name": "Michael Arias",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683522/spots/120",
+      "statline": "2.1 IP, 1 R, 2 K"
+    },
+    {
+      "playerId": 694660,
+      "name": "Harrison Cohen",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694660/spots/120",
+      "statline": "2.1 IP, 0 R, 2 K"
+    },
+    {
+      "playerId": 687280,
+      "name": "Geoffrey Gilbert",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/687280/spots/120",
+      "statline": "2.0 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 701706,
+      "name": "Greysen Carter",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701706/spots/120",
+      "statline": "1.0 IP, 1 R, 2 K"
+    },
+    {
+      "playerId": 804522,
+      "name": "Wilmy Sanchez",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804522/spots/120",
+      "statline": "1.0 IP, 0 R, 2 K"
+    },
+    {
+      "playerId": 684725,
+      "name": "Zach Messinger",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/684725/spots/120",
+      "statline": "2.1 IP, 1 R, 1 K"
+    },
+    {
+      "playerId": 679693,
+      "name": "Carson Coleman",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/679693/spots/120",
+      "statline": "2.0 IP, 1 R, 1 K"
+    },
+    {
+      "playerId": 815454,
+      "name": "Chris Kean",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815454/spots/120",
+      "statline": "1.1 IP, 0 R, 2 K"
+    }
+  ],
+  "date": "2026-08-12",
+  "generatedAt": "2026-08-13T21:02:36.607193+00:00"
+}
