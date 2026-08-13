@@ -3,13 +3,9 @@
 Push the day's Top Performers payload to yankeesfarmreport.com.
 
 Mirrors the existing push_to_wix.py pattern used for the weekly
-leaderboard: a plain HTTPS POST with a shared-secret header, hitting a
+leaderboard: a plain HTTPS POST with a shared-secret header (X-Yankeesfarm-Secret,
+matching post_leaderboards/post_analytics in http-functions.js), hitting a
 Velo HTTP function that writes into a Wix Data Collection.
-
-IMPORTANT: match this to whatever your real push_to_wix.py already does.
-If that script uses a different header name than X-Push-Secret, or a
-different auth scheme, change WIX_PUSH_SECRET_HEADER below to match --
-the two endpoints should use the same convention.
 
 ENV VARS:
     WIX_PUSH_SECRET   -- shared secret (same one used for the leaderboard
@@ -28,7 +24,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 WIX_ENDPOINT = "https://www.yankeesfarmreport.com/_functions/top_performers"
-WIX_PUSH_SECRET_HEADER = "X-Push-Secret"
+WIX_PUSH_SECRET_HEADER = "X-Yankeesfarm-Secret"
 
 
 def main():
