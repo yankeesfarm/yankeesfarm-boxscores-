@@ -194,6 +194,52 @@ def pct(n, d):
     return round(100 * n / d, 1) if d else 0.0
 
 
+def bio_fields(person):
+    """
+    Bio fields from the SAME person object already returned by the roster
+    hydrate -- no new API call, no new hydrate syntax, nothing that can
+    break the working roster/stats fetch. Every field here is read
+    defensively (.get with a fallback) so a missing field just shows blank
+    on the profile page rather than crashing the whole run.
+    """
+    birth_city = person.get("birthCity")
+    birth_state = person.get("birthStateProvince")
+    birth_country = person.get("birthCountry")
+    hometown_parts = [p for p in (birth_city, birth_state) if p]
+    hometown = ", ".join(hometown_parts)
+    if birth_country and birth_country not in ("USA",):
+        hometown = f"{hometown}, {birth_country}" if hometown else birth_country
+
+    draft_year = person.get("draftYear")
+    # MLB's basic person object reliably includes draftYear for drafted
+    # players and omits it for international signees -- there isn't a
+    # clean "IFA" flag available without a separate, unverified API call,
+    # so this is a reasonable inference, not a guarantee. Flagged as such
+    # in the UI (see profile.html) rather than stated as fact.
+    origin = f"Draft ({draft_year})" if draft_year else "International Free Agent (IFA)"
+
+    height = person.get("height")
+    weight = person.get("weight")
+    if height and weight:
+        height_weight = f"{height} / {weight} lbs"
+    elif height:
+        height_weight = height
+    elif weight:
+        height_weight = f"{weight} lbs"
+    else:
+        height_weight = None
+
+    return {
+        "age": person.get("currentAge"),
+        "heightWeight": height_weight,
+        "bats": (person.get("batSide") or {}).get("description"),
+        "throws": (person.get("pitchHand") or {}).get("description"),
+        "hometown": hometown or None,
+        "origin": origin,
+        "birthDate": person.get("birthDate"),
+    }
+
+
 def build_hitter_row(person, stat, level_id):
     pa = stat.get("plateAppearances") or 0
     bb = stat.get("baseOnBalls") or 0
@@ -221,6 +267,7 @@ def build_hitter_row(person, stat, level_id):
         "barrelp": None,
         "gbp": None,
         "fbp": None,
+        **bio_fields(person),
     }
 
 
@@ -242,6 +289,7 @@ def build_pitcher_row(person, stat, level_id):
         "bb9": float(stat.get("walksPer9Inn") or 0),
         "kp": pct(so, bf),
         "bbp": pct(bb, bf),
+        **bio_fields(person),
     }
 
 
