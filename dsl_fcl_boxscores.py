@@ -15,6 +15,17 @@ OUTPUT:
     ./output/YYYY-MM-DD_yankees_boxscores.json
     ./output/YYYY-MM-DD_yankees_boxscores.html
     ./output/YYYY-MM-DD_yankees_recap.txt
+
+CHANGE LOG (this version):
+    - summarize_batting() now also returns: id, doubles, triples, homeRuns,
+      stolenBases -- needed downstream by top_performers.py to find XBH
+      games and build season-total lines.
+    - summarize_pitching() now also returns: id, role (SP/RP).
+    - build_game_record() now also returns: sport_id and yankees_side
+      ("home"/"away") so downstream scripts know which half of the
+      box score is actually our affiliate without re-deriving it.
+    Nothing existing was removed or renamed, so the recap .txt/.html
+    output and anything already reading this JSON keeps working as-is.
 """
 
 import json
@@ -218,15 +229,20 @@ def summarize_batting(team_box: dict) -> list:
         if not stats:
             continue
         rows.append({
-            "name":     p["person"]["fullName"],
-            "position": p.get("position", {}).get("abbreviation", ""),
-            "ab":  stats.get("atBats", 0),
-            "r":   stats.get("runs", 0),
-            "h":   stats.get("hits", 0),
-            "rbi": stats.get("rbi", 0),
-            "bb":  stats.get("baseOnBalls", 0),
-            "so":  stats.get("strikeOuts", 0),
-            "avg": stats.get("avg", ""),
+            "id":         p["person"]["id"],
+            "name":       p["person"]["fullName"],
+            "position":   p.get("position", {}).get("abbreviation", ""),
+            "ab":         stats.get("atBats", 0),
+            "r":          stats.get("runs", 0),
+            "h":          stats.get("hits", 0),
+            "doubles":    stats.get("doubles", 0),
+            "triples":    stats.get("triples", 0),
+            "homeRuns":   stats.get("homeRuns", 0),
+            "rbi":        stats.get("rbi", 0),
+            "stolenBases": stats.get("stolenBases", 0),
+            "bb":         stats.get("baseOnBalls", 0),
+            "so":         stats.get("strikeOuts", 0),
+            "avg":        stats.get("avg", ""),
         })
     return rows
 
@@ -234,7 +250,8 @@ def summarize_batting(team_box: dict) -> list:
 def summarize_pitching(team_box: dict) -> list:
     rows = []
     players = team_box.get("players", {})
-    for pid in team_box.get("pitchers", []):
+    pitcher_ids = team_box.get("pitchers", [])
+    for idx, pid in enumerate(pitcher_ids):
         p = players.get(f"ID{pid}")
         if not p:
             continue
@@ -242,7 +259,9 @@ def summarize_pitching(team_box: dict) -> list:
         if not stats:
             continue
         rows.append({
+            "id":   p["person"]["id"],
             "name": p["person"]["fullName"],
+            "role": "SP" if idx == 0 else "RP",
             "ip":   stats.get("inningsPitched", ""),
             "h":    stats.get("hits", 0),
             "r":    stats.get("runs", 0),
@@ -322,9 +341,16 @@ def build_game_record(game: dict, yankees_ids: dict) -> dict:
     status    = game["status"]["detailedState"]
     league    = level_label(game, yankees_ids)
 
+    home_id = game["teams"]["home"]["team"]["id"]
+    yankees_side = "home" if home_id in yankees_ids else "away"
+    yankees_team_id = home_id if yankees_side == "home" else game["teams"]["away"]["team"]["id"]
+    sport_id = yankees_ids.get(yankees_team_id, {}).get("sportId")
+
     record = {
         "game_pk":       game_pk,
         "league":        league,
+        "sport_id":      sport_id,
+        "yankees_side":  yankees_side,
         "status":        status,
         "away_team":     away_name,
         "home_team":     home_name,
