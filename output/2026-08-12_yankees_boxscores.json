@@ -1,0 +1,1225 @@
+[
+  {
+    "game_pk": 818234,
+    "league": "AA",
+    "status": "Final",
+    "away_team": "New Hampshire Fisher Cats",
+    "home_team": "Somerset Patriots",
+    "away_score": 4,
+    "home_score": 7,
+    "away_batting": [
+      {
+        "name": "Victor Arias",
+        "position": "DH",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Adrian Pinto",
+        "position": "2B",
+        "ab": 5,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Dub Gleed",
+        "position": "3B",
+        "ab": 5,
+        "r": 1,
+        "h": 1,
+        "rbi": 1,
+        "bb": 0,
+        "so": 3,
+        "avg": ""
+      },
+      {
+        "name": "Hedbert Perez",
+        "position": "CF",
+        "ab": 3,
+        "r": 2,
+        "h": 1,
+        "rbi": 1,
+        "bb": 2,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Carter Cunningham",
+        "position": "1B",
+        "ab": 4,
+        "r": 1,
+        "h": 3,
+        "rbi": 1,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Alexis Hernandez",
+        "position": "RF",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Eric Snow",
+        "position": "SS",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 1,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Aaron Parker",
+        "position": "C",
+        "ab": 3,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Mathieu Vallee",
+        "position": "LF",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      }
+    ],
+    "home_batting": [
+      {
+        "name": "Jace Avina",
+        "position": "CF",
+        "ab": 3,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Core Jackson",
+        "position": "SS",
+        "ab": 3,
+        "r": 0,
+        "h": 0,
+        "rbi": 1,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Roderick Arias",
+        "position": "3B",
+        "ab": 3,
+        "r": 2,
+        "h": 1,
+        "rbi": 1,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Coby Morales",
+        "position": "1B",
+        "ab": 2,
+        "r": 1,
+        "h": 0,
+        "rbi": 1,
+        "bb": 2,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "DJ Gladney",
+        "position": "DH",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Jackson Castillo",
+        "position": "LF",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Connor McGinnis",
+        "position": "2B",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 4,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Manuel Palencia",
+        "position": "C",
+        "ab": 3,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Luis Durango",
+        "position": "RF",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      }
+    ],
+    "away_pitching": [
+      {
+        "name": "Nolan Perry",
+        "ip": "3.0",
+        "h": 1,
+        "r": 1,
+        "er": 1,
+        "bb": 3,
+        "so": 4,
+        "era": ""
+      },
+      {
+        "name": "T.J. Brock",
+        "ip": "1.1",
+        "h": 1,
+        "r": 1,
+        "er": 0,
+        "bb": 1,
+        "so": 0,
+        "era": ""
+      },
+      {
+        "name": "Angel Obando",
+        "ip": "1.2",
+        "h": 3,
+        "r": 4,
+        "er": 4,
+        "bb": 2,
+        "so": 0,
+        "era": ""
+      },
+      {
+        "name": "Daniel Guerra",
+        "ip": "2.0",
+        "h": 1,
+        "r": 1,
+        "er": 1,
+        "bb": 0,
+        "so": 4,
+        "era": ""
+      }
+    ],
+    "home_pitching": [
+      {
+        "name": "Trent Sellers",
+        "ip": "1.1",
+        "h": 4,
+        "r": 2,
+        "er": 2,
+        "bb": 2,
+        "so": 0,
+        "era": ""
+      },
+      {
+        "name": "Tony Rossi",
+        "ip": "1.0",
+        "h": 1,
+        "r": 1,
+        "er": 1,
+        "bb": 0,
+        "so": 2,
+        "era": ""
+      },
+      {
+        "name": "Michael Arias",
+        "ip": "2.1",
+        "h": 3,
+        "r": 1,
+        "er": 1,
+        "bb": 0,
+        "so": 2,
+        "era": ""
+      },
+      {
+        "name": "Harrison Cohen",
+        "ip": "2.1",
+        "h": 1,
+        "r": 0,
+        "er": 0,
+        "bb": 1,
+        "so": 2,
+        "era": ""
+      },
+      {
+        "name": "Geoffrey Gilbert",
+        "ip": "2.0",
+        "h": 0,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 3,
+        "era": ""
+      }
+    ]
+  },
+  {
+    "game_pk": 820636,
+    "league": "A",
+    "status": "Final",
+    "away_team": "Tampa Tarpons",
+    "home_team": "Dunedin Blue Jays",
+    "away_score": 1,
+    "home_score": 10,
+    "away_batting": [
+      {
+        "name": "Dax Kilby",
+        "position": "SS",
+        "ab": 3,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Wilberson De Pena",
+        "position": "CF",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Paul Gutierrez-Contreras II",
+        "position": "RF",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Bear Harrison",
+        "position": "DH",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Anthony Potestio",
+        "position": "3B",
+        "ab": 3,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Luis Puello",
+        "position": "C",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Blake Cyr",
+        "position": "LF",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Tyce Armstrong",
+        "position": "1B",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 1,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Luis Escudero",
+        "position": "2B",
+        "ab": 2,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      }
+    ],
+    "home_batting": [
+      {
+        "name": "Jake Cook",
+        "position": "CF",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Blaine Bullard",
+        "position": "RF",
+        "ab": 5,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Dameury Pena",
+        "position": "2B",
+        "ab": 4,
+        "r": 1,
+        "h": 3,
+        "rbi": 1,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Juan Sanchez",
+        "position": "3B",
+        "ab": 4,
+        "r": 2,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Ryan Cooney",
+        "position": "SS",
+        "ab": 3,
+        "r": 2,
+        "h": 1,
+        "rbi": 2,
+        "bb": 1,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Aldo Gaxiola",
+        "position": "1B",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 3,
+        "bb": 1,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Owen Carapellotti",
+        "position": "C",
+        "ab": 4,
+        "r": 2,
+        "h": 2,
+        "rbi": 3,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Jake Bennett",
+        "position": "DH",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Enmanuel Bonilla",
+        "position": "LF",
+        "ab": 3,
+        "r": 0,
+        "h": 1,
+        "rbi": 1,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      }
+    ],
+    "away_pitching": [
+      {
+        "name": "Edinzo Marquez",
+        "ip": "4.2",
+        "h": 6,
+        "r": 4,
+        "er": 4,
+        "bb": 2,
+        "so": 6,
+        "era": ""
+      },
+      {
+        "name": "Danny Flatt",
+        "ip": "1.1",
+        "h": 1,
+        "r": 2,
+        "er": 2,
+        "bb": 3,
+        "so": 2,
+        "era": ""
+      },
+      {
+        "name": "Jose Martinez",
+        "ip": "1.0",
+        "h": 2,
+        "r": 3,
+        "er": 3,
+        "bb": 0,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Greysen Carter",
+        "ip": "1.0",
+        "h": 2,
+        "r": 1,
+        "er": 1,
+        "bb": 0,
+        "so": 2,
+        "era": ""
+      }
+    ],
+    "home_pitching": [
+      {
+        "name": "Jack Nedrow",
+        "ip": "5.0",
+        "h": 4,
+        "r": 1,
+        "er": 1,
+        "bb": 0,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Josbel Garcia",
+        "ip": "2.0",
+        "h": 1,
+        "r": 0,
+        "er": 0,
+        "bb": 1,
+        "so": 3,
+        "era": ""
+      },
+      {
+        "name": "Landon Waters",
+        "ip": "1.0",
+        "h": 0,
+        "r": 0,
+        "er": 0,
+        "bb": 2,
+        "so": 2,
+        "era": ""
+      },
+      {
+        "name": "Reese Bassinger",
+        "ip": "1.0",
+        "h": 1,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 1,
+        "era": ""
+      }
+    ]
+  },
+  {
+    "game_pk": 822002,
+    "league": "High-A",
+    "status": "Final",
+    "away_team": "Wilmington Blue Rocks",
+    "home_team": "Hudson Valley Renegades",
+    "away_score": 6,
+    "home_score": 9,
+    "away_batting": [
+      {
+        "name": "Eli Willits",
+        "position": "SS",
+        "ab": 2,
+        "r": 2,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Ronny Cruz",
+        "position": "3B",
+        "ab": 4,
+        "r": 3,
+        "h": 2,
+        "rbi": 3,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Yeremy Cabrera",
+        "position": "CF",
+        "ab": 4,
+        "r": 1,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Luke Dickerson",
+        "position": "2B",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 1,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Jacob Walsh",
+        "position": "1B",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Teo Banks",
+        "position": "RF",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Caleb Farmer",
+        "position": "C",
+        "ab": 3,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Nate Rombach",
+        "position": "DH",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 3,
+        "avg": ""
+      },
+      {
+        "name": "Elijah Nunez",
+        "position": "LF",
+        "ab": 3,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      }
+    ],
+    "home_batting": [
+      {
+        "name": "Eric Genther",
+        "position": "C",
+        "ab": 3,
+        "r": 1,
+        "h": 0,
+        "rbi": 0,
+        "bb": 2,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Jackson Lovich",
+        "position": "SS",
+        "ab": 4,
+        "r": 3,
+        "h": 2,
+        "rbi": 1,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Maika Niu",
+        "position": "CF",
+        "ab": 3,
+        "r": 2,
+        "h": 1,
+        "rbi": 2,
+        "bb": 2,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "David McCann",
+        "position": "1B",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 2,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Kyle West",
+        "position": "DH",
+        "ab": 1,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Enmanuel Tejeda",
+        "position": "2B",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Bryce Martin-Grudzielanek",
+        "position": "3B",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Robbie Burnett",
+        "position": "LF",
+        "ab": 2,
+        "r": 0,
+        "h": 1,
+        "rbi": 1,
+        "bb": 2,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Camden Troyer",
+        "position": "RF",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 0,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      }
+    ],
+    "away_pitching": [
+      {
+        "name": "Baron Stuart",
+        "ip": "1.2",
+        "h": 1,
+        "r": 1,
+        "er": 0,
+        "bb": 2,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Austin Amaral",
+        "ip": "0.1",
+        "h": 0,
+        "r": 0,
+        "er": 0,
+        "bb": 1,
+        "so": 0,
+        "era": ""
+      },
+      {
+        "name": "Eriq Swan",
+        "ip": "0.1",
+        "h": 1,
+        "r": 3,
+        "er": 3,
+        "bb": 4,
+        "so": 0,
+        "era": ""
+      },
+      {
+        "name": "Mikey Tepper",
+        "ip": "4.2",
+        "h": 3,
+        "r": 1,
+        "er": 1,
+        "bb": 4,
+        "so": 3,
+        "era": ""
+      },
+      {
+        "name": "Brady Hill",
+        "ip": "0.2",
+        "h": 3,
+        "r": 4,
+        "er": 3,
+        "bb": 1,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Eiker Huizi",
+        "ip": "0.1",
+        "h": 0,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 1,
+        "era": ""
+      }
+    ],
+    "home_pitching": [
+      {
+        "name": "Sean Paul Li\u00f1an",
+        "ip": "4.2",
+        "h": 2,
+        "r": 2,
+        "er": 2,
+        "bb": 2,
+        "so": 5,
+        "era": ""
+      },
+      {
+        "name": "Brady Kirtner",
+        "ip": "1.1",
+        "h": 1,
+        "r": 2,
+        "er": 1,
+        "bb": 0,
+        "so": 3,
+        "era": ""
+      },
+      {
+        "name": "Brandon Decker",
+        "ip": "2.0",
+        "h": 1,
+        "r": 2,
+        "er": 0,
+        "bb": 0,
+        "so": 3,
+        "era": ""
+      },
+      {
+        "name": "Wilmy Sanchez",
+        "ip": "1.0",
+        "h": 0,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 2,
+        "era": ""
+      }
+    ]
+  },
+  {
+    "game_pk": 816316,
+    "league": "AAA",
+    "status": "Final",
+    "away_team": "Scranton/Wilkes-Barre RailRiders",
+    "home_team": "Lehigh Valley IronPigs",
+    "away_score": 3,
+    "home_score": 11,
+    "away_batting": [
+      {
+        "name": "Anthony Volpe",
+        "position": "2B",
+        "ab": 4,
+        "r": 1,
+        "h": 2,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Jasson Dom\u00ednguez",
+        "position": "RF",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Max Schuemann",
+        "position": "CF",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 1,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "J.C. Escarra",
+        "position": "C",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Duke Ellis",
+        "position": "LF",
+        "ab": 3,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Oswaldo Cabrera",
+        "position": "SS",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 1,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Yanquiel Fern\u00e1ndez",
+        "position": "DH",
+        "ab": 3,
+        "r": 1,
+        "h": 2,
+        "rbi": 1,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Tyler Hardman",
+        "position": "3B",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Ernesto Martinez Jr.",
+        "position": "1B",
+        "ab": 4,
+        "r": 0,
+        "h": 1,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      }
+    ],
+    "home_batting": [
+      {
+        "name": "Dylan Moore",
+        "position": "SS",
+        "ab": 4,
+        "r": 1,
+        "h": 0,
+        "rbi": 0,
+        "bb": 1,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Felix Reyes",
+        "position": "1B",
+        "ab": 5,
+        "r": 1,
+        "h": 2,
+        "rbi": 0,
+        "bb": 0,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Gabriel Rincones Jr.",
+        "position": "RF",
+        "ab": 4,
+        "r": 2,
+        "h": 2,
+        "rbi": 1,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Keaton Anthony",
+        "position": "DH",
+        "ab": 4,
+        "r": 2,
+        "h": 1,
+        "rbi": 3,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Tommy Pham",
+        "position": "LF",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 2,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Colby Thomas",
+        "position": "CF",
+        "ab": 4,
+        "r": 0,
+        "h": 0,
+        "rbi": 0,
+        "bb": 0,
+        "so": 2,
+        "avg": ""
+      },
+      {
+        "name": "Otto Kemp",
+        "position": "3B",
+        "ab": 3,
+        "r": 2,
+        "h": 2,
+        "rbi": 0,
+        "bb": 1,
+        "so": 0,
+        "avg": ""
+      },
+      {
+        "name": "Carter Kieboom",
+        "position": "2B",
+        "ab": 3,
+        "r": 1,
+        "h": 1,
+        "rbi": 1,
+        "bb": 1,
+        "so": 1,
+        "avg": ""
+      },
+      {
+        "name": "Paul McIntosh",
+        "position": "C",
+        "ab": 4,
+        "r": 1,
+        "h": 1,
+        "rbi": 4,
+        "bb": 0,
+        "so": 1,
+        "avg": ""
+      }
+    ],
+    "away_pitching": [
+      {
+        "name": "Xavier Rivas",
+        "ip": "0.2",
+        "h": 2,
+        "r": 6,
+        "er": 6,
+        "bb": 4,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Zach Messinger",
+        "ip": "2.1",
+        "h": 2,
+        "r": 1,
+        "er": 1,
+        "bb": 1,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Hayden Merda",
+        "ip": "1.2",
+        "h": 3,
+        "r": 3,
+        "er": 3,
+        "bb": 1,
+        "so": 3,
+        "era": ""
+      },
+      {
+        "name": "Carson Coleman",
+        "ip": "2.0",
+        "h": 1,
+        "r": 1,
+        "er": 1,
+        "bb": 0,
+        "so": 1,
+        "era": ""
+      },
+      {
+        "name": "Chris Kean",
+        "ip": "1.1",
+        "h": 2,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 2,
+        "era": ""
+      }
+    ],
+    "home_pitching": [
+      {
+        "name": "Drake Fellows",
+        "ip": "7.0",
+        "h": 7,
+        "r": 3,
+        "er": 3,
+        "bb": 1,
+        "so": 2,
+        "era": ""
+      },
+      {
+        "name": "Kyle Backhus",
+        "ip": "1.0",
+        "h": 1,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 0,
+        "era": ""
+      },
+      {
+        "name": "Grant Holman",
+        "ip": "1.0",
+        "h": 1,
+        "r": 0,
+        "er": 0,
+        "bb": 0,
+        "so": 0,
+        "era": ""
+      }
+    ]
+  },
+  {
+    "game_pk": 848465,
+    "league": "FCL",
+    "status": "Cancelled",
+    "away_team": "DSL Colorado",
+    "home_team": "DSL NYY Yankees",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  }
+]
