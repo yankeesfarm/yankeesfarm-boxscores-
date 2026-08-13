@@ -11,9 +11,9 @@
 | 2 | Oswaldo Cabrera | SWB | 0.295 |
 | 3 | Jackson Lovich | HV | 0.281 |
 | 4 | George Lombard Jr. | SWB | 0.280 |
-| 5 | Roderick Arias | SOM | 0.276 |
-| T6 | Eric Genther | HV | 0.274 |
-| T6 | Coby Morales | SOM | 0.274 |
+| 5 | Roderick Arias | SOM | 0.277 |
+| 6 | Eric Genther | HV | 0.274 |
+| 7 | Coby Morales | SOM | 0.273 |
 | 8 | Willy Montero | HV | 0.270 |
 | 9 | DJ Gladney | SOM | 0.269 |
 | 10 | Bryce Martin-Grudzielanek | HV | 0.268 |
@@ -26,25 +26,25 @@
 | 3 | Marco Luciano | SWB | 0.389 |
 | 4 | Wilson Rodriguez | HV | 0.379 |
 | 5 | Bryce Martin-Grudzielanek | HV | 0.374 |
-| 6 | Core Jackson | SOM | 0.373 |
-| 7 | Jace Avina | SOM | 0.364 |
-| 8 | Coby Morales | SOM | 0.361 |
-| 9 | Roderick Arias | SOM | 0.359 |
+| 6 | Core Jackson | SOM | 0.368 |
+| 7 | Jace Avina | SOM | 0.366 |
+| 8 | Coby Morales | SOM | 0.362 |
+| 9 | Roderick Arias | SOM | 0.360 |
 | 10 | Hans Montero | TAM | 0.357 |
 
 ### Slugging Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Marco Luciano | SWB | 0.548 |
-| 2 | DJ Gladney | SOM | 0.519 |
-| 3 | Jace Avina | SOM | 0.509 |
-| 4 | Coby Morales | SOM | 0.499 |
+| 2 | DJ Gladney | SOM | 0.516 |
+| 3 | Jace Avina | SOM | 0.507 |
+| 4 | Coby Morales | SOM | 0.496 |
 | 5 | Tyler Hardman | SWB | 0.493 |
 | 6 | Jackson Lovich | HV | 0.485 |
-| 7 | Core Jackson | SOM | 0.481 |
+| 7 | Core Jackson | SOM | 0.477 |
 | 8 | George Lombard Jr. | SWB | 0.476 |
 | 9 | Josh Moylan | SOM | 0.473 |
-| 10 | Yanquiel Fernández | SWB | 0.449 |
+| 10 | Roderick Arias | SOM | 0.452 |
 
 ### OPS
 | # | Player | Team | Value |
@@ -52,26 +52,26 @@
 | 1 | Marco Luciano | SWB | 0.937 |
 | 2 | George Lombard Jr. | SWB | 0.879 |
 | 3 | Jace Avina | SOM | 0.873 |
-| 4 | Coby Morales | SOM | 0.860 |
-| 5 | Core Jackson | SOM | 0.854 |
-| 6 | DJ Gladney | SOM | 0.845 |
-| 7 | Tyler Hardman | SWB | 0.844 |
+| 4 | Coby Morales | SOM | 0.858 |
+| 5 | Core Jackson | SOM | 0.845 |
+| 6 | Tyler Hardman | SWB | 0.844 |
+| 7 | DJ Gladney | SOM | 0.842 |
 | 8 | Eric Genther | HV | 0.840 |
 | 9 | Jackson Lovich | HV | 0.835 |
-| 10 | Wilson Rodriguez | HV | 0.806 |
+| 10 | Roderick Arias | SOM | 0.812 |
 
 ### Hits
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Oswaldo Cabrera | SWB | 108 |
 | 2 | Coby Morales | SOM | 104 |
-| 3 | Jackson Lovich | HV | 103 |
-| 4 | Roderick Arias | SOM | 102 |
+| T3 | Jackson Lovich | HV | 103 |
+| T3 | Roderick Arias | SOM | 103 |
 | 5 | Tyler Hardman | SWB | 99 |
 | T6 | Bryce Martin-Grudzielanek | HV | 97 |
 | T6 | Marco Luciano | SWB | 97 |
 | T6 | Yanquiel Fernández | SWB | 97 |
-| 9 | DJ Gladney | SOM | 94 |
+| 9 | DJ Gladney | SOM | 95 |
 | 10 | Kyle West | HV | 93 |
 
 ### Doubles
@@ -120,14 +120,14 @@
 ### RBI
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | DJ Gladney | SOM | 74 |
-| 2 | Coby Morales | SOM | 73 |
+| T1 | DJ Gladney | SOM | 74 |
+| T1 | Coby Morales | SOM | 74 |
 | 3 | Tyler Hardman | SWB | 71 |
 | T4 | Wilberson De Pena | TAM | 70 |
 | T4 | Kyle West | HV | 70 |
 | 6 | Jackson Lovich | HV | 69 |
-| T7 | Roderick Arias | SOM | 67 |
-| T7 | Yanquiel Fernández | SWB | 67 |
+| 7 | Roderick Arias | SOM | 68 |
+| 8 | Yanquiel Fernández | SWB | 67 |
 | T9 | Yostin Pena | TAM | 64 |
 | T9 | Garrett Martin | SWB | 64 |
 
@@ -135,7 +135,7 @@
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Duke Ellis | SWB | 43 |
-| 2 | Luis Durango | SOM | 40 |
+| 2 | Luis Durango | SOM | 41 |
 | 3 | Bryce Martin-Grudzielanek | HV | 37 |
 | 4 | Hans Montero | TAM | 35 |
 | 5 | Stiven Marinez | DSL-Y | 34 |
@@ -225,8 +225,8 @@
 |---|--------|------|-------|
 | 1 | Xavier Rivas | SOM | 12.61 |
 | 2 | Allen Facundo | HV | 12.51 |
-| 3 | Trent Sellers | SOM | 11.80 |
-| 4 | Carlos Lagrange | SWB | 11.79 |
+| 3 | Carlos Lagrange | SWB | 11.79 |
+| 4 | Trent Sellers | SOM | 11.57 |
 | 5 | Sean Paul Liñan | HV | 11.01 |
 | 6 | Kyle Carr | SWB | 10.76 |
 | 7 | Ben Hess | SOM | 10.32 |

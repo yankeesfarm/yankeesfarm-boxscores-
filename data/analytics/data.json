@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generated_at": "2026-08-12T20:49:31Z",
+  "generated_at": "2026-08-13T00:59:02Z",
   "hitters": [
     {
       "name": "Abrahan Gutierrez",
@@ -20,7 +20,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 26,
+      "heightWeight": "6' 1\" / 230 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1999-10-31"
     },
     {
       "name": "Anthony Volpe",
@@ -40,7 +47,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 25,
+      "heightWeight": "5' 10\" / 197 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "New York, NY",
+      "origin": "Draft (2019)",
+      "birthDate": "2001-04-28"
     },
     {
       "name": "Christian Bethancourt",
@@ -60,7 +74,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 34,
+      "heightWeight": "6' 3\" / 205 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Panama City, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1991-09-02"
     },
     {
       "name": "Duke Ellis",
@@ -80,7 +101,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 28,
+      "heightWeight": "6' 2\" / 180 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Nacogdoches, TX",
+      "origin": "Draft (2020)",
+      "birthDate": "1998-01-16"
     },
     {
       "name": "Ernesto Martinez Jr.",
@@ -100,7 +128,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 27,
+      "heightWeight": "6' 6\" / 254 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Holguin, Cuba",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1999-06-20"
     },
     {
       "name": "J.C. Escarra",
@@ -120,7 +155,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 31,
+      "heightWeight": "6' 2\" / 220 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Hialeah, FL",
+      "origin": "Draft (2017)",
+      "birthDate": "1995-04-24"
     },
     {
       "name": "Jasson Dom\u00ednguez",
@@ -140,7 +182,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "5' 9\" / 218 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Esperanza, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-02-07"
     },
     {
       "name": "Kenedy Corona",
@@ -160,7 +209,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 26,
+      "heightWeight": "5' 10\" / 189 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracaibo, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2000-03-21"
     },
     {
       "name": "Marco Luciano",
@@ -180,7 +236,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 24,
+      "heightWeight": "6' 1\" / 215 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Francisco de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2001-09-10"
     },
     {
       "name": "Max Schuemann",
@@ -200,7 +263,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 29,
+      "heightWeight": "6' 0\" / 198 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Kalamazoo, MI",
+      "origin": "Draft (2018)",
+      "birthDate": "1997-06-11"
     },
     {
       "name": "Oswaldo Cabrera",
@@ -220,7 +290,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 27,
+      "heightWeight": "6' 0\" / 200 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Guarenas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1999-03-01"
     },
     {
       "name": "Tyler Hardman",
@@ -240,7 +317,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 27,
+      "heightWeight": "6' 2\" / 228 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Mission Viejo, CA",
+      "origin": "Draft (2021)",
+      "birthDate": "1999-01-27"
     },
     {
       "name": "Yanquiel Fern\u00e1ndez",
@@ -260,7 +344,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 2\" / 198 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Havana, Cuba",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-01-01"
     },
     {
       "name": "Coby Morales",
@@ -280,7 +371,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 24,
+      "heightWeight": "6' 1\" / 225 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Downey, CA",
+      "origin": "Draft (2023)",
+      "birthDate": "2001-12-05"
     },
     {
       "name": "Cole Gabrielson",
@@ -300,7 +398,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 26,
+      "heightWeight": "5' 11\" / 195 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Portola Valley, CA",
+      "origin": "Draft (2023)",
+      "birthDate": "2000-07-05"
     },
     {
       "name": "Connor McGinnis",
@@ -320,7 +425,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 1\" / 185 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Frisco, TX",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-12-09"
     },
     {
       "name": "Core Jackson",
@@ -340,7 +452,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "6' 0\" / 190 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Sarnia, ON, Canada",
+      "origin": "Draft (2025)",
+      "birthDate": "2003-10-11"
     },
     {
       "name": "DJ Gladney",
@@ -360,7 +479,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 25,
+      "heightWeight": "6' 2\" / 195 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Oak Park, IL",
+      "origin": "Draft (2019)",
+      "birthDate": "2001-07-14"
     },
     {
       "name": "Jace Avina",
@@ -380,7 +506,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 0\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Reno, NV",
+      "origin": "Draft (2021)",
+      "birthDate": "2003-06-06"
     },
     {
       "name": "Jackson Castillo",
@@ -400,7 +533,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "5' 9\" / 195 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Murrieta, CA",
+      "origin": "Draft (2023)",
+      "birthDate": "2003-05-02"
     },
     {
       "name": "Josh Moylan",
@@ -420,7 +560,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 24,
+      "heightWeight": "6' 3\" / 216 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Baltimore, MD",
+      "origin": "Draft (2023)",
+      "birthDate": "2002-07-03"
     },
     {
       "name": "Kevin Verde",
@@ -440,7 +587,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "5' 9\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Carora, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-12-12"
     },
     {
       "name": "Luis Durango",
@@ -460,7 +614,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "5' 10\" / 135 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Panama City, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-04-08"
     },
     {
       "name": "Manuel Palencia",
@@ -480,7 +641,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 0\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Valencia, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2002-09-05"
     },
     {
       "name": "Miguel Palma",
@@ -500,7 +668,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 24,
+      "heightWeight": "5' 8\" / 170 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2002-01-04"
     },
     {
       "name": "Omar Alfonzo",
@@ -520,7 +695,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 1\" / 242 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Minneapolis, MN",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-08-03"
     },
     {
       "name": "Roderick Arias",
@@ -540,7 +722,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "6' 0\" / 178 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-09-09"
     },
     {
       "name": "Bryce Martin-Grudzielanek",
@@ -560,7 +749,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 1\" / 185 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Los Angeles, CA",
+      "origin": "Draft (2025)",
+      "birthDate": "2003-06-04"
     },
     {
       "name": "Camden Troyer",
@@ -580,7 +776,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 24,
+      "heightWeight": "6' 0\" / 205 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Dover, DE",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-08-03"
     },
     {
       "name": "David McCann",
@@ -600,7 +803,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "5' 10\" / 195 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Bridgeport, CT",
+      "origin": "Draft (2025)",
+      "birthDate": "2004-03-18"
     },
     {
       "name": "Dean Toigo",
@@ -620,7 +830,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 4\" / 205 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Newport Beach, CA",
+      "origin": "Draft (2026)",
+      "birthDate": "2002-09-04"
     },
     {
       "name": "Diomedes Hernandez",
@@ -640,7 +857,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "5' 10\" / 211 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Cabimas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-02-06"
     },
     {
       "name": "Enmanuel Tejeda",
@@ -660,7 +884,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "5' 9\" / 158 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, DOM",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-12-25"
     },
     {
       "name": "Eric Genther",
@@ -680,7 +911,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 24,
+      "heightWeight": "6' 1\" / 200 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Drexel Hill, PA",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-06-16"
     },
     {
       "name": "Jackson Lovich",
@@ -700,7 +938,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "6' 3\" / 192 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Overland Park, KS",
+      "origin": "Draft (2025)",
+      "birthDate": "2003-11-18"
     },
     {
       "name": "Kyle West",
@@ -720,7 +965,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 2\" / 195 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Martinsburg, WV",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-11-02"
     },
     {
       "name": "Maika Niu",
@@ -740,7 +992,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "6' 1\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Harrisburg, PA",
+      "origin": "Draft (2026)",
+      "birthDate": "2004-01-09"
     },
     {
       "name": "Robbie Burnett",
@@ -760,7 +1019,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "5' 8\" / 191 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Raleigh, NC",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-12-01"
     },
     {
       "name": "Willy Montero",
@@ -780,7 +1046,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "6' 4\" / 202 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Romana, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-08-04"
     },
     {
       "name": "Anthony Potestio",
@@ -800,7 +1073,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "5' 11\" / 195 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Castro Valley, CA",
+      "origin": "Draft (2026)",
+      "birthDate": "2004-11-05"
     },
     {
       "name": "Bayram Hot",
@@ -820,7 +1100,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "6' 2\" / 210 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "New York, NY",
+      "origin": "Draft (2026)",
+      "birthDate": "2004-02-16"
     },
     {
       "name": "Bear Harrison",
@@ -840,7 +1127,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "6' 3\" / 230 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Irvine, CA",
+      "origin": "Draft (2026)",
+      "birthDate": "2005-01-17"
     },
     {
       "name": "Blake Cyr",
@@ -860,7 +1154,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 22,
+      "heightWeight": "5' 11\" / 195 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Orlando, FL",
+      "origin": "Draft (2026)",
+      "birthDate": "2003-11-06"
     },
     {
       "name": "Brando Mayea",
@@ -880,7 +1181,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "5' 10\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Havana, Cuba",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-09-12"
     },
     {
       "name": "Dax Kilby",
@@ -900,7 +1208,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 2\" / 190 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Newnan, GA",
+      "origin": "Draft (2025)",
+      "birthDate": "2006-11-17"
     },
     {
       "name": "Diego Castellanos",
@@ -920,7 +1235,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "6' 0\" / 190 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "San Jose, CA",
+      "origin": "Draft (2026)",
+      "birthDate": "2005-01-26"
     },
     {
       "name": "Ediel Rivera",
@@ -940,7 +1262,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "5' 10\" / 185 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Ponce, Puerto Rico",
+      "origin": "Draft (2024)",
+      "birthDate": "2005-09-23"
     },
     {
       "name": "Luis Escudero",
@@ -960,7 +1289,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "5' 8\" / 165 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Aguadulce, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-02-09"
     },
     {
       "name": "Luis Puello",
@@ -980,7 +1316,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "5' 9\" / 162 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Sucre, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-01-22"
     },
     {
       "name": "Paul Gutierrez-Contreras II",
@@ -1000,7 +1343,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 21,
+      "heightWeight": "6' 3\" / 205 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Turlock, CA",
+      "origin": "Draft (2026)",
+      "birthDate": "2005-08-05"
     },
     {
       "name": "Tyce Armstrong",
@@ -1020,7 +1370,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 23,
+      "heightWeight": "6' 4\" / 228 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "The Woodlands, TX",
+      "origin": "Draft (2026)",
+      "birthDate": "2003-07-03"
     },
     {
       "name": "Wilberson De Pena",
@@ -1040,7 +1397,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 2\" / 185 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-11-10"
     },
     {
       "name": "Yostin Pena",
@@ -1060,7 +1424,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "6' 4\" / 205 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-10-19"
     },
     {
       "name": "Carlos Rondon",
@@ -1080,7 +1451,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "6' 0\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "El Limon, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-02-16"
     },
     {
       "name": "Dexters Peralta",
@@ -1100,7 +1478,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 2\" / 170 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-07-11"
     },
     {
       "name": "Diego Flores",
@@ -1120,7 +1505,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "5' 11\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracay, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-03-10"
     },
     {
       "name": "Estivenzon Montero",
@@ -1140,7 +1532,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 1\" / 189 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-10-09"
     },
     {
       "name": "Francisco Vilorio",
@@ -1160,7 +1559,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 4\" / 212 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Hato Mayor del Rey, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-10-31"
     },
     {
       "name": "Jose Castro",
@@ -1180,7 +1586,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "6' 2\" / 176 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-10-04"
     },
     {
       "name": "Justin Capellan",
@@ -1200,7 +1613,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "5' 10\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bonao, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-07-18"
     },
     {
       "name": "Leni Done",
@@ -1220,7 +1640,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 2\" / 184 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Cristobal, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-06-05"
     },
     {
       "name": "Queni Pineda",
@@ -1240,7 +1667,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "5' 10\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Azua, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-05-29"
     },
     {
       "name": "Richard Matic",
@@ -1260,7 +1694,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 0\" / 200 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Romana, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-07-26"
     },
     {
       "name": "Alessandro Rodriguez",
@@ -1280,7 +1721,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 176 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracay, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-08-10"
     },
     {
       "name": "Alfred Ciriaco",
@@ -1300,7 +1748,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "5' 11\" / 156 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Puerto Plata, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-10-05"
     },
     {
       "name": "Carlos Bello",
@@ -1320,7 +1775,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 11\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-12-19"
     },
     {
       "name": "Dariel Santana",
@@ -1340,7 +1802,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 168 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Bani, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-05-29"
     },
     {
       "name": "David Carrera",
@@ -1360,7 +1829,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "6' 3\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-09-07"
     },
     {
       "name": "Eddison Charles",
@@ -1380,7 +1856,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "6' 4\" / 182 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Guerra, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-01-09"
     },
     {
       "name": "Edgar Jimenez",
@@ -1400,7 +1883,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "5' 10\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-11-03"
     },
     {
       "name": "Eliezer Adames",
@@ -1420,7 +1910,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 171 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Peravia, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-09-16"
     },
     {
       "name": "Germayhoni Beltre",
@@ -1440,7 +1937,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 9\" / 179 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Azua, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-01-08"
     },
     {
       "name": "Jesus Guerrero",
@@ -1460,7 +1964,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 19,
+      "heightWeight": "5' 10\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Los Mochis, SI, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-05-21"
     },
     {
       "name": "Kenneth Melendez",
@@ -1480,7 +1991,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 16,
+      "heightWeight": "5' 11\" / 189 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Valencia, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-08-31"
     },
     {
       "name": "Mani Cedeno",
@@ -1500,7 +2018,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 10\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-08-14"
     },
     {
       "name": "Richard Meran",
@@ -1520,7 +2045,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 20,
+      "heightWeight": "6' 0\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-06-25"
     },
     {
       "name": "Ruben Castillo",
@@ -1540,7 +2072,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 9\" / 168 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-01-04"
     },
     {
       "name": "Sebastian Pinto",
@@ -1560,7 +2099,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 176 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Barquisimeto, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-12-11"
     },
     {
       "name": "Abrahan Pichardo",
@@ -1580,7 +2126,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 11\" / 154 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-03-17"
     },
     {
       "name": "Adrian Feliz",
@@ -1600,7 +2153,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "6' 2\" / 162 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-08-02"
     },
     {
       "name": "Alfiery Matos",
@@ -1620,7 +2180,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-09-10"
     },
     {
       "name": "Cesar Lopez",
@@ -1640,7 +2207,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 8\" / 170 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Coro, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-01-22"
     },
     {
       "name": "Emmanuel Orozco",
@@ -1660,7 +2234,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 153 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Barranquilla, Colombia",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-07-27"
     },
     {
       "name": "Isaias Castillo",
@@ -1680,7 +2261,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 11\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-06-15"
     },
     {
       "name": "John Rosillo",
@@ -1700,7 +2288,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 204 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracaibo, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-01-06"
     },
     {
       "name": "Jose Peralta",
@@ -1720,7 +2315,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 11\" / 189 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-10-10"
     },
     {
       "name": "Juan Martinez",
@@ -1740,7 +2342,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 159 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Sincelejo, Colombia",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-05-06"
     },
     {
       "name": "Juan Torres",
@@ -1760,7 +2369,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 162 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Jimani, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-09-27"
     },
     {
       "name": "Kendry Diaz",
@@ -1780,7 +2396,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 9\" / 173 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Invivienda, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-12-07"
     },
     {
       "name": "Luis Cruz",
@@ -1800,7 +2423,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "6' 1\" / 155 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-06-09"
     },
     {
       "name": "Manuel Aguilar",
@@ -1820,7 +2450,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 11\" / 184 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Poza Rica de Hidalgo, VE, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-08-01"
     },
     {
       "name": "Poly Ojeda",
@@ -1840,7 +2477,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 8\" / 174 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-11-11"
     },
     {
       "name": "Stalen Ramirez",
@@ -1860,7 +2504,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 17,
+      "heightWeight": "5' 11\" / 156 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Araure, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-08-17"
     },
     {
       "name": "Stiven Marinez",
@@ -1880,7 +2531,14 @@
       "maxev": null,
       "barrelp": null,
       "gbp": null,
-      "fbp": null
+      "fbp": null,
+      "age": 18,
+      "heightWeight": "5' 10\" / 175 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-08-20"
     }
   ],
   "pitchers": [
@@ -1897,7 +2555,14 @@
       "k9": 7.8,
       "bb9": 5.6,
       "kp": 19.3,
-      "bbp": 13.8
+      "bbp": 13.8,
+      "age": 25,
+      "heightWeight": "6' 5\" / 245 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Magnolia, TX",
+      "origin": "Draft (2018)",
+      "birthDate": "2000-08-25"
     },
     {
       "name": "Alexander Cornielle",
@@ -1912,7 +2577,14 @@
       "k9": 9.3,
       "bb9": 5.1,
       "kp": 23.3,
-      "bbp": 12.8
+      "bbp": 12.8,
+      "age": 24,
+      "heightWeight": "6' 2\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2001-08-22"
     },
     {
       "name": "Angel Chivilli",
@@ -1927,7 +2599,14 @@
       "k9": 9.5,
       "bb9": 2.0,
       "kp": 28.4,
-      "bbp": 6.0
+      "bbp": 6.0,
+      "age": 24,
+      "heightWeight": "6' 2\" / 185 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Victoria, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2002-07-28"
     },
     {
       "name": "Brendan Beck",
@@ -1942,7 +2621,14 @@
       "k9": 9.9,
       "bb9": 2.8,
       "kp": 27.6,
-      "bbp": 7.9
+      "bbp": 7.9,
+      "age": 27,
+      "heightWeight": "6' 2\" / 218 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Jolla, CA",
+      "origin": "Draft (2021)",
+      "birthDate": "1998-10-06"
     },
     {
       "name": "Brian Hendry",
@@ -1957,7 +2643,14 @@
       "k9": 13.5,
       "bb9": 5.4,
       "kp": 33.3,
-      "bbp": 13.3
+      "bbp": 13.3,
+      "age": 26,
+      "heightWeight": "6' 4\" / 225 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Medford, NJ",
+      "origin": "Draft (2023)",
+      "birthDate": "1999-10-11"
     },
     {
       "name": "Carlos Rod\u00f3n",
@@ -1972,7 +2665,14 @@
       "k9": 8.0,
       "bb9": 4.0,
       "kp": 20.0,
-      "bbp": 10.0
+      "bbp": 10.0,
+      "age": 33,
+      "heightWeight": "6' 2\" / 255 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Miami, FL",
+      "origin": "Draft (2014)",
+      "birthDate": "1992-12-10"
     },
     {
       "name": "Carson Coleman",
@@ -1987,7 +2687,14 @@
       "k9": 9.4,
       "bb9": 4.9,
       "kp": 22.7,
-      "bbp": 11.9
+      "bbp": 11.9,
+      "age": 28,
+      "heightWeight": "6' 2\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Lexington, KY",
+      "origin": "Draft (2020)",
+      "birthDate": "1998-04-07"
     },
     {
       "name": "Chris Kean",
@@ -2002,7 +2709,14 @@
       "k9": 9.5,
       "bb9": 3.2,
       "kp": 24.0,
-      "bbp": 8.0
+      "bbp": 8.0,
+      "age": 24,
+      "heightWeight": "6' 5\" / 210 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Harlingen, TX",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2002-06-12"
     },
     {
       "name": "Elmer Rodr\u00edguez",
@@ -2017,7 +2731,14 @@
       "k9": 9.2,
       "bb9": 4.7,
       "kp": 24.2,
-      "bbp": 12.5
+      "bbp": 12.5,
+      "age": 22,
+      "heightWeight": "6' 4\" / 177 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Trujillo Alto, Puerto Rico",
+      "origin": "Draft (2021)",
+      "birthDate": "2003-08-18"
     },
     {
       "name": "Eric Reyzelman",
@@ -2032,7 +2753,14 @@
       "k9": 12.4,
       "bb9": 7.5,
       "kp": 27.7,
-      "bbp": 16.8
+      "bbp": 16.8,
+      "age": 25,
+      "heightWeight": "6' 2\" / 188 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Ramon, CA",
+      "origin": "Draft (2022)",
+      "birthDate": "2001-06-27"
     },
     {
       "name": "Will Brian",
@@ -2047,7 +2775,14 @@
       "k9": 10.2,
       "bb9": 7.1,
       "kp": 27.4,
-      "bbp": 19.2
+      "bbp": 19.2,
+      "age": 27,
+      "heightWeight": "5' 11\" / 236 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Louisville, KY",
+      "origin": "Draft (2022)",
+      "birthDate": "1999-04-25"
     },
     {
       "name": "Zach Messinger",
@@ -2062,7 +2797,14 @@
       "k9": 8.1,
       "bb9": 4.2,
       "kp": 21.3,
-      "bbp": 11.1
+      "bbp": 11.1,
+      "age": 26,
+      "heightWeight": "6' 6\" / 225 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Chandler, IN",
+      "origin": "Draft (2021)",
+      "birthDate": "1999-10-04"
     },
     {
       "name": "Ben Hess",
@@ -2077,7 +2819,14 @@
       "k9": 10.3,
       "bb9": 4.8,
       "kp": 25.5,
-      "bbp": 11.8
+      "bbp": 11.8,
+      "age": 23,
+      "heightWeight": "6' 5\" / 255 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Moline, IL",
+      "origin": "Draft (2024)",
+      "birthDate": "2002-09-03"
     },
     {
       "name": "Cade Smith",
@@ -2092,7 +2841,14 @@
       "k9": 8.3,
       "bb9": 4.1,
       "kp": 20.6,
-      "bbp": 10.2
+      "bbp": 10.2,
+      "age": 24,
+      "heightWeight": "6' 0\" / 190 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Germantown, TN",
+      "origin": "Draft (2023)",
+      "birthDate": "2002-04-09"
     },
     {
       "name": "Geoffrey Gilbert",
@@ -2107,7 +2863,14 @@
       "k9": 10.4,
       "bb9": 4.2,
       "kp": 28.3,
-      "bbp": 11.5
+      "bbp": 11.5,
+      "age": 25,
+      "heightWeight": "6' 0\" / 215 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Charleston, SC",
+      "origin": "Draft (2022)",
+      "birthDate": "2001-05-03"
     },
     {
       "name": "Harrison Cohen",
@@ -2122,7 +2885,14 @@
       "k9": 9.4,
       "bb9": 8.2,
       "kp": 22.1,
-      "bbp": 19.2
+      "bbp": 19.2,
+      "age": 27,
+      "heightWeight": "6' 0\" / 211 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "New Hyde Park, NY",
+      "origin": "Draft (2022)",
+      "birthDate": "1999-05-28"
     },
     {
       "name": "Hueston Morrill",
@@ -2137,7 +2907,14 @@
       "k9": 7.7,
       "bb9": 11.6,
       "kp": 13.8,
-      "bbp": 20.7
+      "bbp": 20.7,
+      "age": 26,
+      "heightWeight": "5' 9\" / 168 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Gainesville, FL",
+      "origin": "Draft (2022)",
+      "birthDate": "1999-11-27"
     },
     {
       "name": "Kelly Austin",
@@ -2152,7 +2929,14 @@
       "k9": 9.4,
       "bb9": 3.6,
       "kp": 25.1,
-      "bbp": 9.6
+      "bbp": 9.6,
+      "age": 25,
+      "heightWeight": "6' 0\" / 195 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Costa Mesa, CA",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2000-12-17"
     },
     {
       "name": "Kevin Stevens",
@@ -2167,7 +2951,14 @@
       "k9": 12.0,
       "bb9": 1.5,
       "kp": 34.8,
-      "bbp": 4.3
+      "bbp": 4.3,
+      "age": 28,
+      "heightWeight": "6' 2\" / 225 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Tucson, AZ",
+      "origin": "Draft (2022)",
+      "birthDate": "1998-01-26"
     },
     {
       "name": "Luis Velasquez",
@@ -2182,7 +2973,14 @@
       "k9": 6.5,
       "bb9": 6.5,
       "kp": 17.1,
-      "bbp": 17.1
+      "bbp": 17.1,
+      "age": 25,
+      "heightWeight": "5' 10\" / 155 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Fantino, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2001-07-01"
     },
     {
       "name": "Matt Keating",
@@ -2197,7 +2995,14 @@
       "k9": 13.0,
       "bb9": 7.6,
       "kp": 31.4,
-      "bbp": 18.2
+      "bbp": 18.2,
+      "age": 25,
+      "heightWeight": "6' 1\" / 215 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Omaha, NE",
+      "origin": "Draft (2022)",
+      "birthDate": "2000-12-07"
     },
     {
       "name": "Michael Arias",
@@ -2212,7 +3017,14 @@
       "k9": 9.8,
       "bb9": 4.3,
       "kp": 23.1,
-      "bbp": 10.1
+      "bbp": 10.1,
+      "age": 24,
+      "heightWeight": "6' 3\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2001-11-15"
     },
     {
       "name": "Rory Fox",
@@ -2227,7 +3039,14 @@
       "k9": 6.5,
       "bb9": 2.3,
       "kp": 16.4,
-      "bbp": 6.0
+      "bbp": 6.0,
+      "age": 22,
+      "heightWeight": "6' 3\" / 200 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Milwaukee, WI",
+      "origin": "Draft (2025)",
+      "birthDate": "2004-02-03"
     },
     {
       "name": "Tony Rossi",
@@ -2242,7 +3061,14 @@
       "k9": 11.5,
       "bb9": 2.4,
       "kp": 30.9,
-      "bbp": 6.4
+      "bbp": 6.4,
+      "age": 27,
+      "heightWeight": "6' 3\" / 230 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Orlando, FL",
+      "origin": "Draft (2024)",
+      "birthDate": "1999-07-07"
     },
     {
       "name": "Trent Sellers",
@@ -2257,7 +3083,14 @@
       "k9": 11.6,
       "bb9": 5.9,
       "kp": 27.3,
-      "bbp": 13.8
+      "bbp": 13.8,
+      "age": 26,
+      "heightWeight": "6' 1\" / 207 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Kennewick, WA",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1999-10-30"
     },
     {
       "name": "Allen Facundo",
@@ -2272,7 +3105,14 @@
       "k9": 12.0,
       "bb9": 6.7,
       "kp": 29.4,
-      "bbp": 16.4
+      "bbp": 16.4,
+      "age": 23,
+      "heightWeight": "6' 0\" / 171 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Estado Vargas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2002-09-03"
     },
     {
       "name": "Andrew Landry",
@@ -2287,7 +3127,14 @@
       "k9": 9.9,
       "bb9": 4.5,
       "kp": 24.0,
-      "bbp": 10.8
+      "bbp": 10.8,
+      "age": 24,
+      "heightWeight": "6' 1\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Slidell, LA",
+      "origin": "Draft (2023)",
+      "birthDate": "2002-02-20"
     },
     {
       "name": "Brady Kirtner",
@@ -2302,7 +3149,14 @@
       "k9": 11.7,
       "bb9": 6.3,
       "kp": 27.4,
-      "bbp": 14.6
+      "bbp": 14.6,
+      "age": 24,
+      "heightWeight": "5' 10\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Warner Robins, GA",
+      "origin": "Draft (2024)",
+      "birthDate": "2001-11-21"
     },
     {
       "name": "Brandon Decker",
@@ -2317,7 +3171,14 @@
       "k9": 10.4,
       "bb9": 3.5,
       "kp": 27.3,
-      "bbp": 9.1
+      "bbp": 9.1,
+      "age": 24,
+      "heightWeight": "6' 3\" / 185 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Royal Oak, MI",
+      "origin": "Draft (2024)",
+      "birthDate": "2002-07-10"
     },
     {
       "name": "Bryce Cunningham",
@@ -2332,7 +3193,14 @@
       "k9": 7.9,
       "bb9": 4.5,
       "kp": 20.1,
-      "bbp": 11.4
+      "bbp": 11.4,
+      "age": 23,
+      "heightWeight": "6' 3\" / 230 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Headland, AL",
+      "origin": "Draft (2024)",
+      "birthDate": "2002-12-20"
     },
     {
       "name": "Bryce Warrecker",
@@ -2347,7 +3215,14 @@
       "k9": 9.7,
       "bb9": 5.5,
       "kp": 25.3,
-      "bbp": 14.3
+      "bbp": 14.3,
+      "age": 24,
+      "heightWeight": "6' 8\" / 225 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Santa Cruz, CA",
+      "origin": "Draft (2023)",
+      "birthDate": "2001-09-13"
     },
     {
       "name": "Franyer Herrera",
@@ -2362,7 +3237,14 @@
       "k9": 10.2,
       "bb9": 4.7,
       "kp": 26.1,
-      "bbp": 11.9
+      "bbp": 11.9,
+      "age": 21,
+      "heightWeight": "6' 0\" / 165 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Maracaibo, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-05-03"
     },
     {
       "name": "Hansel Rincon",
@@ -2377,7 +3259,14 @@
       "k9": 13.5,
       "bb9": 4.7,
       "kp": 33.1,
-      "bbp": 11.5
+      "bbp": 11.5,
+      "age": 23,
+      "heightWeight": "6' 1\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2002-08-23"
     },
     {
       "name": "Jack Sokol",
@@ -2392,7 +3281,14 @@
       "k9": 8.9,
       "bb9": 3.9,
       "kp": 20.8,
-      "bbp": 9.1
+      "bbp": 9.1,
+      "age": 24,
+      "heightWeight": "6' 4\" / 208 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "New Albany, OH",
+      "origin": "Draft (2024)",
+      "birthDate": "2001-12-17"
     },
     {
       "name": "Jose M. Rodriguez",
@@ -2407,7 +3303,14 @@
       "k9": 9.0,
       "bb9": 4.5,
       "kp": 19.0,
-      "bbp": 9.5
+      "bbp": 9.5,
+      "age": 22,
+      "heightWeight": "5' 11\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Victoria, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-01-06"
     },
     {
       "name": "Luis Gil",
@@ -2422,7 +3325,14 @@
       "k9": 9.0,
       "bb9": 0.0,
       "kp": 20.0,
-      "bbp": 0.0
+      "bbp": 0.0,
+      "age": 28,
+      "heightWeight": "6' 3\" / 215 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Azua, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1998-06-03"
     },
     {
       "name": "Luis Serna",
@@ -2437,7 +3347,14 @@
       "k9": 10.2,
       "bb9": 3.1,
       "kp": 26.8,
-      "bbp": 8.1
+      "bbp": 8.1,
+      "age": 22,
+      "heightWeight": "5' 11\" / 162 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Luis Rio Colorado, SO, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-07-20"
     },
     {
       "name": "Pico Kohn",
@@ -2452,7 +3369,14 @@
       "k9": 8.6,
       "bb9": 5.4,
       "kp": 21.6,
-      "bbp": 13.5
+      "bbp": 13.5,
+      "age": 23,
+      "heightWeight": "6' 4\" / 200 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Birmingham, AL",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-10-02"
     },
     {
       "name": "Sean Paul Li\u00f1an",
@@ -2467,7 +3391,14 @@
       "k9": 11.0,
       "bb9": 4.6,
       "kp": 27.2,
-      "bbp": 11.3
+      "bbp": 11.3,
+      "age": 21,
+      "heightWeight": "6' 0\" / 185 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Cartagena, Colombia",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-11-07"
     },
     {
       "name": "Thomas Balboni Jr.",
@@ -2482,7 +3413,14 @@
       "k9": 13.2,
       "bb9": 3.9,
       "kp": 33.3,
-      "bbp": 9.8
+      "bbp": 9.8,
+      "age": 26,
+      "heightWeight": "6' 4\" / 185 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Naples, FL",
+      "origin": "Draft (2022)",
+      "birthDate": "2000-07-06"
     },
     {
       "name": "Travis MacGregor",
@@ -2497,7 +3435,14 @@
       "k9": 18.0,
       "bb9": 18.0,
       "kp": 40.0,
-      "bbp": 40.0
+      "bbp": 40.0,
+      "age": 28,
+      "heightWeight": "6' 4\" / 215 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Tarpon Springs, FL",
+      "origin": "Draft (2016)",
+      "birthDate": "1997-10-15"
     },
     {
       "name": "Wilmy Sanchez",
@@ -2512,7 +3457,14 @@
       "k9": 14.2,
       "bb9": 5.9,
       "kp": 37.1,
-      "bbp": 15.5
+      "bbp": 15.5,
+      "age": 22,
+      "heightWeight": "5' 9\" / 210 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santiago, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-12-17"
     },
     {
       "name": "Anthony Mena",
@@ -2527,7 +3479,14 @@
       "k9": 2.7,
       "bb9": 0.0,
       "kp": 10.0,
-      "bbp": 0.0
+      "bbp": 0.0,
+      "age": 21,
+      "heightWeight": "6' 2\" / 173 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Francisco De Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-10-12"
     },
     {
       "name": "Danny Flatt",
@@ -2542,7 +3501,14 @@
       "k9": 6.2,
       "bb9": 3.1,
       "kp": 16.2,
-      "bbp": 8.1
+      "bbp": 8.1,
+      "age": 22,
+      "heightWeight": "6' 4\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Summerville, SC",
+      "origin": "Draft (2023)",
+      "birthDate": "2004-06-06"
     },
     {
       "name": "Edinzo Marquez",
@@ -2557,7 +3523,14 @@
       "k9": 9.7,
       "bb9": 3.2,
       "kp": 25.7,
-      "bbp": 8.6
+      "bbp": 8.6,
+      "age": 21,
+      "heightWeight": "6' 2\" / 208 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-12-16"
     },
     {
       "name": "Greysen Carter",
@@ -2572,7 +3545,14 @@
       "k9": 10.3,
       "bb9": 8.2,
       "kp": 25.0,
-      "bbp": 19.9
+      "bbp": 19.9,
+      "age": 23,
+      "heightWeight": "6' 4\" / 237 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Louisville, CO",
+      "origin": "Draft (2024)",
+      "birthDate": "2002-12-15"
     },
     {
       "name": "J.T. Etheridge",
@@ -2587,7 +3567,14 @@
       "k9": 13.2,
       "bb9": 5.2,
       "kp": 30.8,
-      "bbp": 12.1
+      "bbp": 12.1,
+      "age": 24,
+      "heightWeight": "6' 6\" / 225 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Sweet Water, AL",
+      "origin": "Draft (2024)",
+      "birthDate": "2002-01-30"
     },
     {
       "name": "Jordarlin Mendoza",
@@ -2602,7 +3589,14 @@
       "k9": 11.1,
       "bb9": 6.5,
       "kp": 24.8,
-      "bbp": 14.6
+      "bbp": 14.6,
+      "age": 22,
+      "heightWeight": "6' 0\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Romana, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-11-14"
     },
     {
       "name": "Jose Ledesma",
@@ -2617,7 +3611,14 @@
       "k9": 9.9,
       "bb9": 4.7,
       "kp": 24.7,
-      "bbp": 11.6
+      "bbp": 11.6,
+      "age": 23,
+      "heightWeight": "6' 0\" / 170 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Las Yayas, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-04-10"
     },
     {
       "name": "Jose Martinez",
@@ -2632,7 +3633,14 @@
       "k9": 10.4,
       "bb9": 4.0,
       "kp": 27.1,
-      "bbp": 10.4
+      "bbp": 10.4,
+      "age": 21,
+      "heightWeight": "6' 1\" / 204 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bayomo, Cuba",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-01-07"
     },
     {
       "name": "Josh Tiedemann",
@@ -2647,7 +3655,14 @@
       "k9": 9.4,
       "bb9": 3.5,
       "kp": 22.2,
-      "bbp": 8.3
+      "bbp": 8.3,
+      "age": 22,
+      "heightWeight": "6' 0\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Phoenix, AZ",
+      "origin": "Draft (2023)",
+      "birthDate": "2004-06-09"
     },
     {
       "name": "Justin West",
@@ -2662,7 +3677,14 @@
       "k9": 9.5,
       "bb9": 2.8,
       "kp": 24.9,
-      "bbp": 7.3
+      "bbp": 7.3,
+      "age": 22,
+      "heightWeight": "6' 3\" / 195 lbs",
+      "bats": "Right",
+      "throws": "Left",
+      "hometown": "Paducah, KY",
+      "origin": "Draft (2025)",
+      "birthDate": "2003-09-19"
     },
     {
       "name": "Matthew Tippie",
@@ -2677,7 +3699,14 @@
       "k9": 10.8,
       "bb9": 4.3,
       "kp": 27.9,
-      "bbp": 11.0
+      "bbp": 11.0,
+      "age": 23,
+      "heightWeight": "6' 4\" / 210 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Baytown, TX",
+      "origin": "Draft (2025)",
+      "birthDate": "2003-04-29"
     },
     {
       "name": "Rafael Arias",
@@ -2692,7 +3721,14 @@
       "k9": 23.1,
       "bb9": 3.9,
       "kp": 60.0,
-      "bbp": 10.0
+      "bbp": 10.0,
+      "age": 22,
+      "heightWeight": "6' 2\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Vega, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-11-05"
     },
     {
       "name": "Sabier Marte",
@@ -2707,7 +3743,14 @@
       "k9": 5.5,
       "bb9": 4.6,
       "kp": 13.0,
-      "bbp": 10.9
+      "bbp": 10.9,
+      "age": 22,
+      "heightWeight": "6' 5\" / 167 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Sabana Grande de Palenque, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-02-10"
     },
     {
       "name": "Tyler Boudreau",
@@ -2722,7 +3765,14 @@
       "k9": 9.9,
       "bb9": 3.5,
       "kp": 27.3,
-      "bbp": 9.6
+      "bbp": 9.6,
+      "age": 23,
+      "heightWeight": "6' 1\" / 169 lbs",
+      "bats": "Switch",
+      "throws": "Right",
+      "hometown": "Halifax, NS, Canada",
+      "origin": "Draft (2025)",
+      "birthDate": "2002-12-23"
     },
     {
       "name": "Wyatt Parliament",
@@ -2737,7 +3787,14 @@
       "k9": 8.7,
       "bb9": 3.0,
       "kp": 22.5,
-      "bbp": 7.8
+      "bbp": 7.8,
+      "age": 22,
+      "heightWeight": "6' 4\" / 215 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Carthage, NY",
+      "origin": "Draft (2024)",
+      "birthDate": "2004-01-29"
     },
     {
       "name": "Yerry Rodr\u00edguez",
@@ -2752,7 +3809,14 @@
       "k9": 4.5,
       "bb9": 1.5,
       "kp": 11.5,
-      "bbp": 3.8
+      "bbp": 3.8,
+      "age": 28,
+      "heightWeight": "6' 2\" / 225 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santiago, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "1997-10-15"
     },
     {
       "name": "Alexander Almonte",
@@ -2767,7 +3831,14 @@
       "k9": 6.0,
       "bb9": 9.1,
       "kp": 12.6,
-      "bbp": 19.3
+      "bbp": 19.3,
+      "age": 19,
+      "heightWeight": "6' 4\" / 205 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bonao, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-09-14"
     },
     {
       "name": "Austin Breedlove",
@@ -2782,7 +3853,14 @@
       "k9": 11.0,
       "bb9": 4.3,
       "kp": 28.3,
-      "bbp": 11.1
+      "bbp": 11.1,
+      "age": 22,
+      "heightWeight": "6' 2\" / 200 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Chattanooga, TN",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-10-03"
     },
     {
       "name": "Chalniel Arias",
@@ -2797,7 +3875,14 @@
       "k9": 6.8,
       "bb9": 0.0,
       "kp": 15.4,
-      "bbp": 0.0
+      "bbp": 0.0,
+      "age": 22,
+      "heightWeight": "6' 3\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bani, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-09-11"
     },
     {
       "name": "Enixon Sanchez",
@@ -2812,7 +3897,14 @@
       "k9": 11.7,
       "bb9": 9.5,
       "kp": 25.2,
-      "bbp": 20.5
+      "bbp": 20.5,
+      "age": 19,
+      "heightWeight": "6' 0\" / 150 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Barquisimeto, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-07-07"
     },
     {
       "name": "Jerson Alejandro",
@@ -2827,7 +3919,14 @@
       "k9": 13.5,
       "bb9": 11.2,
       "kp": 28.6,
-      "bbp": 23.8
+      "bbp": 23.8,
+      "age": 20,
+      "heightWeight": "6' 6\" / 255 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-02-23"
     },
     {
       "name": "Jorge Luna",
@@ -2842,7 +3941,14 @@
       "k9": 6.3,
       "bb9": 6.9,
       "kp": 14.5,
-      "bbp": 15.8
+      "bbp": 15.8,
+      "age": 21,
+      "heightWeight": "6' 0\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "El Rosario, SO, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-11-04"
     },
     {
       "name": "Mack Estrada",
@@ -2857,7 +3963,14 @@
       "k9": 4.2,
       "bb9": 8.3,
       "kp": 8.3,
-      "bbp": 16.7
+      "bbp": 16.7,
+      "age": 21,
+      "heightWeight": "6' 4\" / 220 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Tampa, FL",
+      "origin": "Draft (2024)",
+      "birthDate": "2004-09-12"
     },
     {
       "name": "Manuel Cruz",
@@ -2872,7 +3985,14 @@
       "k9": 7.8,
       "bb9": 6.4,
       "kp": 18.2,
-      "bbp": 14.9
+      "bbp": 14.9,
+      "age": 20,
+      "heightWeight": "6' 2\" / 178 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bani, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-02-18"
     },
     {
       "name": "Marco Manzano",
@@ -2887,7 +4007,14 @@
       "k9": 17.6,
       "bb9": 10.3,
       "kp": 41.8,
-      "bbp": 24.5
+      "bbp": 24.5,
+      "age": 22,
+      "heightWeight": "6' 3\" / 176 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Maracaibo, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-08-24"
     },
     {
       "name": "Omar Gonzalez",
@@ -2902,7 +4029,14 @@
       "k9": 9.1,
       "bb9": 3.0,
       "kp": 23.1,
-      "bbp": 7.7
+      "bbp": 7.7,
+      "age": 21,
+      "heightWeight": "6' 4\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Aguadulce, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-07-25"
     },
     {
       "name": "Sunayro Martina",
@@ -2917,7 +4051,14 @@
       "k9": 8.9,
       "bb9": 6.0,
       "kp": 18.3,
-      "bbp": 12.5
+      "bbp": 12.5,
+      "age": 22,
+      "heightWeight": "6' 3\" / 165 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Dordrecht, Netherlands",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-10-09"
     },
     {
       "name": "Andre Avila",
@@ -2932,7 +4073,14 @@
       "k9": 13.0,
       "bb9": 5.3,
       "kp": 30.3,
-      "bbp": 12.3
+      "bbp": 12.3,
+      "age": 20,
+      "heightWeight": "6' 0\" / 165 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "San Juan de los Morros, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-08-16"
     },
     {
       "name": "Argenis Veloz",
@@ -2947,7 +4095,14 @@
       "k9": 6.8,
       "bb9": 9.0,
       "kp": 12.9,
-      "bbp": 17.1
+      "bbp": 17.1,
+      "age": 17,
+      "heightWeight": "6' 0\" / 188 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bejuma, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-02-12"
     },
     {
       "name": "Brandy Luis",
@@ -2962,7 +4117,14 @@
       "k9": 5.8,
       "bb9": 7.7,
       "kp": 13.2,
-      "bbp": 17.5
+      "bbp": 17.5,
+      "age": 18,
+      "heightWeight": "6' 0\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "La Romana, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-10-15"
     },
     {
       "name": "Breidy Adames",
@@ -2977,7 +4139,14 @@
       "k9": 9.7,
       "bb9": 6.2,
       "kp": 21.5,
-      "bbp": 13.8
+      "bbp": 13.8,
+      "age": 19,
+      "heightWeight": "6' 1\" / 177 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Bajos De Haina, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-02-09"
     },
     {
       "name": "Carlos Hampshire",
@@ -2992,7 +4161,14 @@
       "k9": 9.4,
       "bb9": 15.3,
       "kp": 17.8,
-      "bbp": 28.9
+      "bbp": 28.9,
+      "age": 21,
+      "heightWeight": "5' 9\" / 181 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Oaxaca, OA, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-10-11"
     },
     {
       "name": "Cesar Acosta",
@@ -3007,7 +4183,14 @@
       "k9": 11.4,
       "bb9": 3.9,
       "kp": 31.9,
-      "bbp": 10.8
+      "bbp": 10.8,
+      "age": 19,
+      "heightWeight": "5' 11\" / 163 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracay, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-08-30"
     },
     {
       "name": "Diego Carrillo",
@@ -3022,7 +4205,14 @@
       "k9": 8.3,
       "bb9": 5.8,
       "kp": 17.7,
-      "bbp": 12.4
+      "bbp": 12.4,
+      "age": 19,
+      "heightWeight": "6' 1\" / 177 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Tecamachalco, PB, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-06-30"
     },
     {
       "name": "Higor Requena",
@@ -3037,7 +4227,14 @@
       "k9": 10.0,
       "bb9": 5.2,
       "kp": 22.2,
-      "bbp": 11.7
+      "bbp": 11.7,
+      "age": 18,
+      "heightWeight": "5' 10\" / 208 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracay, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-12-08"
     },
     {
       "name": "Jhon Castro",
@@ -3052,7 +4249,14 @@
       "k9": 13.5,
       "bb9": 50.6,
       "kp": 16.7,
-      "bbp": 62.5
+      "bbp": 62.5,
+      "age": 18,
+      "heightWeight": "6' 2\" / 195 lbs",
+      "bats": "Left",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-03-19"
     },
     {
       "name": "Jose Sanchez",
@@ -3067,7 +4271,14 @@
       "k9": 11.8,
       "bb9": 4.7,
       "kp": 32.1,
-      "bbp": 12.8
+      "bbp": 12.8,
+      "age": 17,
+      "heightWeight": "6' 0\" / 181 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Mazatlan, SI, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-10-28"
     },
     {
       "name": "Josue Silvestre",
@@ -3082,7 +4293,14 @@
       "k9": 13.7,
       "bb9": 8.7,
       "kp": 33.0,
-      "bbp": 21.0
+      "bbp": 21.0,
+      "age": 22,
+      "heightWeight": "6' 7\" / 198 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Hato Mayor, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-07-13"
     },
     {
       "name": "Junior Tavera",
@@ -3097,7 +4315,14 @@
       "k9": 10.8,
       "bb9": 6.2,
       "kp": 25.6,
-      "bbp": 14.7
+      "bbp": 14.7,
+      "age": 19,
+      "heightWeight": "6' 0\" / 184 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "San Pedro de Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-05-23"
     },
     {
       "name": "Kevin Centeno",
@@ -3112,7 +4337,14 @@
       "k9": 13.0,
       "bb9": 11.5,
       "kp": 28.6,
-      "bbp": 25.3
+      "bbp": 25.3,
+      "age": 20,
+      "heightWeight": "6' 2\" / 189 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Quibor, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-02-08"
     },
     {
       "name": "Mauricio Vargas",
@@ -3127,7 +4359,14 @@
       "k9": 7.7,
       "bb9": 20.6,
       "kp": 11.3,
-      "bbp": 30.2
+      "bbp": 30.2,
+      "age": 19,
+      "heightWeight": "6' 0\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Sincelejo, Colombia",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-02-06"
     },
     {
       "name": "Oscar Vasquez",
@@ -3142,7 +4381,14 @@
       "k9": 8.8,
       "bb9": 8.8,
       "kp": 18.1,
-      "bbp": 18.1
+      "bbp": 18.1,
+      "age": 21,
+      "heightWeight": "6' 1\" / 170 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Pedro De Macoris, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2004-12-11"
     },
     {
       "name": "Osveiker Chirino",
@@ -3157,7 +4403,14 @@
       "k9": 13.5,
       "bb9": 33.8,
       "kp": 15.4,
-      "bbp": 38.5
+      "bbp": 38.5,
+      "age": 17,
+      "heightWeight": "6' 3\" / 190 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-04-21"
     },
     {
       "name": "Randy Angomas",
@@ -3172,7 +4425,14 @@
       "k9": 10.0,
       "bb9": 12.1,
       "kp": 19.2,
-      "bbp": 23.2
+      "bbp": 23.2,
+      "age": 18,
+      "heightWeight": "6' 1\" / 198 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Palenque, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-05-26"
     },
     {
       "name": "Ronald Tejada",
@@ -3187,7 +4447,14 @@
       "k9": 8.0,
       "bb9": 7.2,
       "kp": 19.6,
-      "bbp": 17.8
+      "bbp": 17.8,
+      "age": 19,
+      "heightWeight": "6' 3\" / 160 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Peravia, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-01-11"
     },
     {
       "name": "Sebastian Castillo",
@@ -3202,7 +4469,14 @@
       "k9": 9.4,
       "bb9": 4.3,
       "kp": 20.3,
-      "bbp": 9.3
+      "bbp": 9.3,
+      "age": 19,
+      "heightWeight": "6' 2\" / 168 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Barinas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-02-14"
     },
     {
       "name": "Angel Salazar",
@@ -3217,7 +4491,14 @@
       "k9": 8.5,
       "bb9": 4.8,
       "kp": 20.7,
-      "bbp": 11.7
+      "bbp": 11.7,
+      "age": 19,
+      "heightWeight": "6' 0\" / 235 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Pampatar, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-05-22"
     },
     {
       "name": "Brandon Rodriguez",
@@ -3232,7 +4513,14 @@
       "k9": 10.2,
       "bb9": 11.2,
       "kp": 18.0,
-      "bbp": 19.7
+      "bbp": 19.7,
+      "age": 19,
+      "heightWeight": "6' 0\" / 196 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Maracay, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-02-07"
     },
     {
       "name": "Braulio Jaquez",
@@ -3247,7 +4535,14 @@
       "k9": 8.5,
       "bb9": 8.5,
       "kp": 19.4,
-      "bbp": 19.4
+      "bbp": 19.4,
+      "age": 23,
+      "heightWeight": "6' 1\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Montecristi, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2003-07-04"
     },
     {
       "name": "Cesar Vivanco",
@@ -3262,7 +4557,14 @@
       "k9": 2.2,
       "bb9": 2.2,
       "kp": 6.7,
-      "bbp": 6.7
+      "bbp": 6.7,
+      "age": 17,
+      "heightWeight": "5' 7\" / 180 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Salvador Huixcolotla, PB, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-03-20"
     },
     {
       "name": "Dalvin Taveras",
@@ -3277,7 +4579,14 @@
       "k9": 7.2,
       "bb9": 9.2,
       "kp": 15.1,
-      "bbp": 19.2
+      "bbp": 19.2,
+      "age": 18,
+      "heightWeight": "5' 10\" / 194 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Moca, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-05-07"
     },
     {
       "name": "Dariel Chalas",
@@ -3292,7 +4601,14 @@
       "k9": 11.2,
       "bb9": 10.2,
       "kp": 21.8,
-      "bbp": 20.0
+      "bbp": 20.0,
+      "age": 18,
+      "heightWeight": "6' 0\" / 215 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-07-24"
     },
     {
       "name": "Emanuel Vargas",
@@ -3307,7 +4623,14 @@
       "k9": 12.6,
       "bb9": 8.6,
       "kp": 28.2,
-      "bbp": 19.2
+      "bbp": 19.2,
+      "age": 20,
+      "heightWeight": "6' 1\" / 178 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Aguadulce, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-10-10"
     },
     {
       "name": "Freddy Lopez",
@@ -3322,7 +4645,14 @@
       "k9": 8.5,
       "bb9": 10.0,
       "kp": 18.2,
-      "bbp": 21.5
+      "bbp": 21.5,
+      "age": 17,
+      "heightWeight": "6' 1\" / 175 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Distrito Sucre, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2009-03-14"
     },
     {
       "name": "Fredy Penuelas",
@@ -3337,7 +4667,14 @@
       "k9": 10.1,
       "bb9": 3.4,
       "kp": 28.8,
-      "bbp": 9.8
+      "bbp": 9.8,
+      "age": 19,
+      "heightWeight": "5' 11\" / 190 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Guasave, SI, Mexico",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-05-22"
     },
     {
       "name": "Hector Moreno",
@@ -3352,7 +4689,14 @@
       "k9": 13.1,
       "bb9": 10.3,
       "kp": 28.0,
-      "bbp": 22.0
+      "bbp": 22.0,
+      "age": 18,
+      "heightWeight": "6' 6\" / 196 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "VIlla Hermosa, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2007-12-26"
     },
     {
       "name": "Jhon Beltre",
@@ -3367,7 +4711,14 @@
       "k9": 6.8,
       "bb9": 12.9,
       "kp": 13.5,
-      "bbp": 25.6
+      "bbp": 25.6,
+      "age": 17,
+      "heightWeight": "6' 1\" / 171 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Santo Domingo, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-11-15"
     },
     {
       "name": "Jhosneyker Colina",
@@ -3382,7 +4733,14 @@
       "k9": 8.4,
       "bb9": 2.8,
       "kp": 20.4,
-      "bbp": 6.8
+      "bbp": 6.8,
+      "age": 18,
+      "heightWeight": "5' 11\" / 150 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Barlovento, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-03-27"
     },
     {
       "name": "Jose Vargas",
@@ -3397,7 +4755,14 @@
       "k9": 7.0,
       "bb9": 6.5,
       "kp": 17.1,
-      "bbp": 15.7
+      "bbp": 15.7,
+      "age": 18,
+      "heightWeight": "6' 0\" / 150 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Lorica, Colombia",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-02-29"
     },
     {
       "name": "Luis Ilarraza",
@@ -3412,7 +4777,14 @@
       "k9": 12.7,
       "bb9": 11.0,
       "kp": 25.4,
-      "bbp": 22.0
+      "bbp": 22.0,
+      "age": 20,
+      "heightWeight": "6' 1\" / 155 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "San Felipe, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-07-30"
     },
     {
       "name": "Luis Rodriguez",
@@ -3427,7 +4799,14 @@
       "k9": 9.0,
       "bb9": 4.7,
       "kp": 21.6,
-      "bbp": 11.3
+      "bbp": 11.3,
+      "age": 21,
+      "heightWeight": "5' 10\" / 139 lbs",
+      "bats": "Left",
+      "throws": "Left",
+      "hometown": "Caracas, Venezuela",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-05-26"
     },
     {
       "name": "Varis Villarreal",
@@ -3442,7 +4821,14 @@
       "k9": 10.6,
       "bb9": 6.4,
       "kp": 25.0,
-      "bbp": 15.0
+      "bbp": 15.0,
+      "age": 21,
+      "heightWeight": "5' 11\" / 157 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Los Santos, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2005-07-01"
     },
     {
       "name": "Victor De Leon",
@@ -3457,7 +4843,14 @@
       "k9": 7.7,
       "bb9": 7.4,
       "kp": 18.9,
-      "bbp": 18.2
+      "bbp": 18.2,
+      "age": 18,
+      "heightWeight": "6' 2\" / 194 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Colon, Panama",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2008-06-20"
     },
     {
       "name": "Yunior Jerez",
@@ -3472,7 +4865,14 @@
       "k9": 9.0,
       "bb9": 4.5,
       "kp": 25.0,
-      "bbp": 12.5
+      "bbp": 12.5,
+      "age": 20,
+      "heightWeight": "5' 8\" / 160 lbs",
+      "bats": "Right",
+      "throws": "Right",
+      "hometown": "Cotui, Dominican Republic",
+      "origin": "International Free Agent (IFA)",
+      "birthDate": "2006-04-12"
     }
   ]
 }
