@@ -76,17 +76,33 @@ def fetch_json(url: str) -> dict:
 
 
 def get_schedule(game_date: str) -> list:
-    sport_ids_str = ",".join(str(s) for s in MILB_SPORT_IDS)
-    url = (
-        f"{STATS_API}/schedule"
-        f"?sportId={sport_ids_str}"
-        f"&date={game_date}"
-        f"&hydrate=linescore,team"
-    )
-    data = fetch_json(url)
+    """Fetches one sportId at a time (same proven pattern as
+    get_yankees_team_ids) rather than one combined request across all six
+    levels. Each returned game gets tagged with "_sport_id" from the
+    query that found it -- this is the ONLY source of truth for level
+    used downstream now.
+
+    This replaces an earlier approach that derived level by cross-
+    referencing team IDs against a separately-fetched "all Yankees teams
+    by sport" snapshot. That indirection caused real DSL/FCL mislabeling:
+    FCL and DSL share physical complexes, and MLB's API has been observed
+    to be inconsistent about which sportId a given team ID reports under
+    in that snapshot. Tagging games by the literal query that returned
+    them removes that ambiguity entirely -- there's no lookup to drift
+    out of sync."""
     games = []
-    for d in data.get("dates", []):
-        games.extend(d.get("games", []))
+    for sid in MILB_SPORT_IDS:
+        url = (
+            f"{STATS_API}/schedule"
+            f"?sportId={sid}"
+            f"&date={game_date}"
+            f"&hydrate=linescore,team"
+        )
+        data = fetch_json(url)
+        for d in data.get("dates", []):
+            for g in d.get("games", []):
+                g["_sport_id"] = sid
+                games.append(g)
     return games
 
 
@@ -97,13 +113,14 @@ def is_yankees_game(game: dict, yankees_ids: dict) -> bool:
 
 
 def level_label(game: dict, yankees_ids: dict) -> str:
-    home = game["teams"]["home"]["team"]
-    away = game["teams"]["away"]["team"]
-    sport_id = None
-    if home["id"] in yankees_ids:
-        sport_id = yankees_ids[home["id"]]["sportId"]
-    elif away["id"] in yankees_ids:
-        sport_id = yankees_ids[away["id"]]["sportId"]
+    sport_id = game.get("_sport_id")
+    if sport_id is None:
+        # Defensive fallback only -- shouldn't happen given get_schedule
+        # always tags every game now, but avoids a hard crash if this
+        # function is ever called on a game dict from somewhere else.
+        home_id = game["teams"]["home"]["team"]["id"]
+        team_id = home_id if home_id in yankees_ids else game["teams"]["away"]["team"]["id"]
+        sport_id = yankees_ids.get(team_id, {}).get("sportId")
     return LEVEL_LABELS.get(sport_id, "MiLB")
 
 
@@ -344,7 +361,9 @@ def build_game_record(game: dict, yankees_ids: dict) -> dict:
     home_id = game["teams"]["home"]["team"]["id"]
     yankees_side = "home" if home_id in yankees_ids else "away"
     yankees_team_id = home_id if yankees_side == "home" else game["teams"]["away"]["team"]["id"]
-    sport_id = yankees_ids.get(yankees_team_id, {}).get("sportId")
+    sport_id = game.get("_sport_id")
+    if sport_id is None:
+        sport_id = yankees_ids.get(yankees_team_id, {}).get("sportId")
 
     record = {
         "game_pk":       game_pk,
