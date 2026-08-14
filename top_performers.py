@@ -44,7 +44,9 @@ MIN_SP_OUTS       = 5 * 3   # 5.0 IP
 MAX_SP_RUNS       = 2
 MIN_SP_SO         = 3
 
-MAX_RP_RUNS       = 1
+MIN_RP_OUTS_FOR_NO_CAP  = 2 * 3   # 2.0 IP -- at/above this, no run/K cap
+MIN_RP_SHORT_SO_ZERO_R  = 3        # RP under 2.0 IP, 0 R allowed
+MIN_RP_SHORT_SO_ONE_R   = 5        # RP under 2.0 IP, 1 R allowed (tougher bar)
 
 
 def ip_to_outs(ip_str) -> int:
@@ -124,21 +126,36 @@ def qualifying_hitters(row: dict) -> bool:
 
 
 def qualifying_pitcher(row: dict) -> bool:
+    outs = ip_to_outs(row.get("ip"))
+
+    # Floor for everyone, SP or RP: must have recorded at least a full
+    # inning (3 outs) to be listed at all.
+    if outs < 3:
+        return False
+
     if row.get("role") == "SP":
         return (
-            ip_to_outs(row.get("ip")) >= MIN_SP_OUTS
+            outs >= MIN_SP_OUTS
             and row.get("r", 0) <= MAX_SP_RUNS
             and row.get("so", 0) >= MIN_SP_SO
         )
-    # RP: <=1 run allowed, EXCEPT a reliever who only got 3 outs (exactly
-    # 1.0 IP) and allowed that 1 run doesn't qualify -- a single inning
-    # with a run on it isn't a standout outing the way 2+ innings with a
-    # run is.
-    r = row.get("r", 0)
-    outs = ip_to_outs(row.get("ip"))
-    if outs == 3 and r == 1:
+
+    # RP: anyone who threw LESS than 2 full innings (i.e. exactly 1.0,
+    # 1.1, or 1.2 IP) needs the short-outing bar:
+    #   0 runs allowed -> 3+ strikeouts
+    #   1 run allowed  -> 5+ strikeouts (a tougher bar since he wasn't
+    #                     perfect)
+    #   2+ runs allowed -> never qualifies regardless of strikeouts
+    # 2.0+ IP outings only need the 1-inning floor above, no cap.
+    if outs < MIN_RP_OUTS_FOR_NO_CAP:
+        r = row.get("r", 0)
+        so = row.get("so", 0)
+        if r == 0:
+            return so >= MIN_RP_SHORT_SO_ZERO_R
+        if r == 1:
+            return so >= MIN_RP_SHORT_SO_ONE_R
         return False
-    return r <= MAX_RP_RUNS
+    return True
 
 
 def build_top_performers(records: list, season: str) -> dict:
