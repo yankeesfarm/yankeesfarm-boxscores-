@@ -123,16 +123,6 @@
       "statline": "7.0 IP, 0 R, 7 K"
     },
     {
-      "playerId": 832788,
-      "name": "Jose Vargas",
-      "level": "FCL",
-      "team": "DSL NYY Yankees",
-      "role": "RP",
-      "bio": "FCL | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/832788/spots/120",
-      "statline": "0.2 IP, 0 R, 0 K"
-    },
-    {
       "playerId": 702874,
       "name": "Jose Ledesma",
       "level": "A",
@@ -143,14 +133,14 @@
       "statline": "2.1 IP, 0 R, 4 K"
     },
     {
-      "playerId": 682625,
-      "name": "Antonio Gomez",
+      "playerId": 828266,
+      "name": "Rafael Arias",
       "level": "A",
       "team": "Tampa Tarpons",
       "role": "RP",
       "bio": "A | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682625/spots/120",
-      "statline": "1.0 IP, 0 R, 2 K"
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/828266/spots/120",
+      "statline": "2.0 IP, 3 R, 2 K"
     },
     {
       "playerId": 695425,
@@ -171,28 +161,8 @@
       "bio": "AA | RP",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/683332/spots/120",
       "statline": "3.2 IP, 0 R, 6 K"
-    },
-    {
-      "playerId": 669740,
-      "name": "Travis MacGregor",
-      "level": "AAA",
-      "team": "Scranton/Wilkes-Barre RailRiders",
-      "role": "RP",
-      "bio": "AAA | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/669740/spots/120",
-      "statline": "1.2 IP, 1 R, 2 K"
-    },
-    {
-      "playerId": 702130,
-      "name": "Danny Watson",
-      "level": "AAA",
-      "team": "Scranton/Wilkes-Barre RailRiders",
-      "role": "RP",
-      "bio": "AAA | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702130/spots/120",
-      "statline": "0.1 IP, 0 R, 1 K"
     }
   ],
   "date": "2026-08-13",
-  "generatedAt": "2026-08-14T02:06:01.833670+00:00"
+  "generatedAt": "2026-08-14T02:20:14.117504+00:00"
 }
