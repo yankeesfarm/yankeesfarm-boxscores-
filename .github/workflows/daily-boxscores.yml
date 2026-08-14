@@ -2,7 +2,8 @@ name: Daily Yankees Box Scores
 
 on:
   schedule:
-    - cron: '45 3 * * *'   # 11:45pm ET (EDT); switch to 4 in winter (EST)
+    - cron: '0 2 * * *'    # 10:00pm ET (EDT); add 1 hour to each in winter (EST)
+    - cron: '45 3 * * *'   # 11:45pm ET (EDT) -- your original daily run
   workflow_dispatch:
 
 jobs:
