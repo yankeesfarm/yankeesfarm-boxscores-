@@ -130,8 +130,15 @@ def qualifying_pitcher(row: dict) -> bool:
             and row.get("r", 0) <= MAX_SP_RUNS
             and row.get("so", 0) >= MIN_SP_SO
         )
-    # RP
-    return row.get("r", 0) <= MAX_RP_RUNS
+    # RP: <=1 run allowed, EXCEPT a reliever who only got 3 outs (exactly
+    # 1.0 IP) and allowed that 1 run doesn't qualify -- a single inning
+    # with a run on it isn't a standout outing the way 2+ innings with a
+    # run is.
+    r = row.get("r", 0)
+    outs = ip_to_outs(row.get("ip"))
+    if outs == 3 and r == 1:
+        return False
+    return r <= MAX_RP_RUNS
 
 
 def build_top_performers(records: list, season: str) -> dict:
@@ -177,6 +184,11 @@ def build_top_performers(records: list, season: str) -> dict:
                 "photoUrl": headshot(row["id"]),
                 "statline": format_pitcher_line(row),
             })
+
+    # SPs listed before RPs. Python's sort is stable, so within each
+    # group players stay in the order they were found (i.e. game order),
+    # only the SP/RP grouping itself is reordered.
+    pitchers.sort(key=lambda p: 0 if p["role"] == "SP" else 1)
 
     return {"hitters": hitters, "pitchers": pitchers}
 
