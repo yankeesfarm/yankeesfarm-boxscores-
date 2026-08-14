@@ -44,9 +44,9 @@ MIN_SP_OUTS       = 5 * 3   # 5.0 IP
 MAX_SP_RUNS       = 2
 MIN_SP_SO         = 3
 
-MIN_RP_OUTS_FOR_NO_CAP = 2 * 3   # 2.0 IP -- at/above this, no run/K cap
-MAX_RP_SHORT_RUNS      = 1        # for RP outings under 2.0 IP
-MIN_RP_SHORT_SO         = 3        # for RP outings under 2.0 IP
+MIN_RP_OUTS_FOR_NO_CAP  = 2 * 3   # 2.0 IP -- at/above this, no run/K cap
+MIN_RP_SHORT_SO_ZERO_R  = 3        # RP under 2.0 IP, 0 R allowed
+MIN_RP_SHORT_SO_ONE_R   = 5        # RP under 2.0 IP, 1 R allowed (tougher bar)
 
 
 def ip_to_outs(ip_str) -> int:
@@ -141,11 +141,20 @@ def qualifying_pitcher(row: dict) -> bool:
         )
 
     # RP: anyone who threw LESS than 2 full innings (i.e. exactly 1.0,
-    # 1.1, or 1.2 IP) needs the short-outing bar -- 1 run or fewer AND
-    # 3+ strikeouts. 2.0+ IP outings only need the 1-inning floor above,
-    # no run/strikeout cap.
+    # 1.1, or 1.2 IP) needs the short-outing bar:
+    #   0 runs allowed -> 3+ strikeouts
+    #   1 run allowed  -> 5+ strikeouts (a tougher bar since he wasn't
+    #                     perfect)
+    #   2+ runs allowed -> never qualifies regardless of strikeouts
+    # 2.0+ IP outings only need the 1-inning floor above, no cap.
     if outs < MIN_RP_OUTS_FOR_NO_CAP:
-        return row.get("r", 0) <= MAX_RP_SHORT_RUNS and row.get("so", 0) >= MIN_RP_SHORT_SO
+        r = row.get("r", 0)
+        so = row.get("so", 0)
+        if r == 0:
+            return so >= MIN_RP_SHORT_SO_ZERO_R
+        if r == 1:
+            return so >= MIN_RP_SHORT_SO_ONE_R
+        return False
     return True
 
 
