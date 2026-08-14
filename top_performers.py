@@ -38,7 +38,8 @@ from dsl_fcl_boxscores import get_season_totals, LEVEL_LABELS
 HEADSHOT_URL = "https://midfield.mlbstatic.com/v1/people/{id}/spots/120"
 
 MIN_HITTER_HITS   = 2
-MIN_HITTER_XBH    = 1
+MIN_HITTER_TB     = 4    # 2+ hits normally need 4+ total bases...
+MIN_HITTER_RBI_EXCEPTION = 2  # ...unless under 4 TB but 2+ RBI
 
 MIN_SP_OUTS       = 5 * 3   # 5.0 IP
 MAX_SP_RUNS       = 2
@@ -121,8 +122,22 @@ def format_pitcher_line(row: dict) -> str:
 
 
 def qualifying_hitters(row: dict) -> bool:
-    xbh = row.get("doubles", 0) + row.get("triples", 0) + row.get("homeRuns", 0)
-    return row.get("h", 0) >= MIN_HITTER_HITS and xbh >= MIN_HITTER_XBH
+    h = row.get("h", 0)
+    if h < MIN_HITTER_HITS:
+        return False
+
+    doubles = row.get("doubles", 0)
+    triples = row.get("triples", 0)
+    hr      = row.get("homeRuns", 0)
+    singles = h - doubles - triples - hr
+    total_bases = singles * 1 + doubles * 2 + triples * 3 + hr * 4
+
+    # Normal bar: 2+ hits AND 4+ total bases.
+    if total_bases >= MIN_HITTER_TB:
+        return True
+    # Exception: 2+ hits with fewer than 4 total bases still qualifies
+    # if he drove in at least 2 runs.
+    return row.get("rbi", 0) >= MIN_HITTER_RBI_EXCEPTION
 
 
 def qualifying_pitcher(row: dict) -> bool:
