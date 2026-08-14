@@ -1,34 +1,14 @@
 {
   "hitters": [
     {
-      "playerId": 829486,
-      "name": "Alfred Ciriaco",
-      "level": "FCL",
-      "team": "DSL NYY Bombers",
-      "position": "3B",
-      "bio": "FCL | 3B",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/829486/spots/120",
-      "statline": "2 for 3: 2 Doubles (5), 2 RBI (16)"
-    },
-    {
-      "playerId": 825153,
-      "name": "Juan Torres",
-      "level": "FCL",
-      "team": "DSL NYY Yankees",
-      "position": "3B",
-      "bio": "FCL | 3B",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825153/spots/120",
-      "statline": "3 for 3: Double (23), 2 SB (25)"
-    },
-    {
-      "playerId": 825186,
-      "name": "Jose Peralta",
-      "level": "FCL",
-      "team": "DSL NYY Yankees",
-      "position": "1B",
-      "bio": "FCL | 1B",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825186/spots/120",
-      "statline": "2 for 3: HR (4), 2 RBI (13)"
+      "playerId": 806154,
+      "name": "David McCann",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "C",
+      "bio": "High-A | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806154/spots/120",
+      "statline": "2 for 4: Double (1), RBI (12)"
     },
     {
       "playerId": 828076,
@@ -81,17 +61,47 @@
       "statline": "2 for 4: HR (8), RBI (18)"
     },
     {
-      "playerId": 806154,
-      "name": "David McCann",
-      "level": "High-A",
-      "team": "Hudson Valley Renegades",
-      "position": "C",
-      "bio": "High-A | C",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806154/spots/120",
-      "statline": "2 for 4: Double (1), RBI (12)"
+      "playerId": 829486,
+      "name": "Alfred Ciriaco",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "position": "3B",
+      "bio": "FCL | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/829486/spots/120",
+      "statline": "2 for 3: 2 Doubles (5), 2 RBI (16)"
+    },
+    {
+      "playerId": 825153,
+      "name": "Juan Torres",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "3B",
+      "bio": "FCL | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825153/spots/120",
+      "statline": "3 for 3: Double (23), 2 SB (25)"
+    },
+    {
+      "playerId": 825186,
+      "name": "Jose Peralta",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "1B",
+      "bio": "FCL | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825186/spots/120",
+      "statline": "2 for 3: HR (4), 2 RBI (13)"
     }
   ],
   "pitchers": [
+    {
+      "playerId": 695684,
+      "name": "Elmer Rodr\u00edguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695684/spots/120",
+      "statline": "7.0 IP, 0 R, 7 K"
+    },
     {
       "playerId": 831048,
       "name": "Cesar Acosta",
@@ -113,14 +123,24 @@
       "statline": "6.1 IP, 1 R, 8 K"
     },
     {
-      "playerId": 695684,
-      "name": "Elmer Rodr\u00edguez",
-      "level": "AAA",
-      "team": "Scranton/Wilkes-Barre RailRiders",
-      "role": "SP",
-      "bio": "AAA | SP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695684/spots/120",
-      "statline": "7.0 IP, 0 R, 7 K"
+      "playerId": 683332,
+      "name": "Tyler Boudreau",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683332/spots/120",
+      "statline": "3.2 IP, 0 R, 6 K"
+    },
+    {
+      "playerId": 695425,
+      "name": "Bryce Warrecker",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695425/spots/120",
+      "statline": "2.0 IP, 0 R, 2 K"
     },
     {
       "playerId": 702874,
@@ -141,28 +161,8 @@
       "bio": "A | RP",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/828266/spots/120",
       "statline": "2.0 IP, 3 R, 2 K"
-    },
-    {
-      "playerId": 695425,
-      "name": "Bryce Warrecker",
-      "level": "High-A",
-      "team": "Hudson Valley Renegades",
-      "role": "RP",
-      "bio": "High-A | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695425/spots/120",
-      "statline": "2.0 IP, 0 R, 2 K"
-    },
-    {
-      "playerId": 683332,
-      "name": "Tyler Boudreau",
-      "level": "AA",
-      "team": "Somerset Patriots",
-      "role": "RP",
-      "bio": "AA | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683332/spots/120",
-      "statline": "3.2 IP, 0 R, 6 K"
     }
   ],
   "date": "2026-08-13",
-  "generatedAt": "2026-08-14T08:40:42.019501+00:00"
+  "generatedAt": "2026-08-14T13:45:35.468187+00:00"
 }
