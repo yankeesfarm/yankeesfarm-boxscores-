@@ -185,6 +185,11 @@ def build_top_performers(records: list, season: str) -> dict:
                 "statline": format_pitcher_line(row),
             })
 
+    # SPs listed before RPs. Python's sort is stable, so within each
+    # group players stay in the order they were found (i.e. game order),
+    # only the SP/RP grouping itself is reordered.
+    pitchers.sort(key=lambda p: 0 if p["role"] == "SP" else 1)
+
     return {"hitters": hitters, "pitchers": pitchers}
 
 
