@@ -41,17 +41,53 @@ MIN_HITTER_HITS   = 2
 MIN_HITTER_TB     = 4    # 2+ hits normally need 4+ total bases...
 MIN_HITTER_RBI_EXCEPTION = 2  # ...unless under 4 TB but 2+ RBI
 
-MIN_PITCHER_OUTS   = 1 * 3   # 1.0 IP -- floor, must pitch at least this much
-MID_OUTING_OUTS     = 2 * 3   # 2.0 IP -- boundary where the "short" bucket ends
-LONG_OUTING_OUTS    = 5 * 3   # 5.0 IP -- boundary where the "long" bucket begins
+MIN_PITCHER_OUTS    = 1 * 3   # 1.0 IP -- floor, must pitch at least this much
+UP_TO_4_INN_OUTS     = 4 * 3   # 4.0 IP -- top of the 1.0-4.0 IP bucket (inclusive)
+LONG_OUTING_OUTS     = 5 * 3   # 5.0 IP -- boundary where the "long" bucket begins
 
-MAX_SHORT_RUNS      = 1        # 1.0-1.2 IP: max runs allowed
-MIN_SO_SHORT        = 3        # 1.0-1.2 IP: min strikeouts
+MIN_SO_UNDER_5        = 3       # 1.0 up to 4.2 IP: min strikeouts (unchanged throughout)
+MAX_RUNS_1_TO_4_INN   = 1       # 1.0-4.0 IP inclusive: max runs allowed
+MAX_RUNS_4_1_TO_4_2   = 2       # 4.1-4.2 IP exactly: max runs allowed
 
-MIN_SO_MID          = 3        # 2.0-4.2 IP: min strikeouts (no run cap)
+MAX_LONG_RUNS       = 2        # 5.0+ IP: max runs allowed (unchanged for both sub-tiers below)
+MIN_SO_LONG         = 4        # 5.0-5.2 IP: min strikeouts
 
-MAX_LONG_RUNS       = 2        # 5.0+ IP: max runs allowed
-MIN_SO_LONG         = 4        # 5.0+ IP: min strikeouts
+SIX_INN_OUTS        = 6 * 3   # 6.0 IP -- splits the "long" bucket in two
+MIN_SO_VERY_LONG    = 5        # 6.0+ IP: min strikeouts (raised from 4)
+
+# Dominant-strikeout exception: bypasses every tier above entirely.
+# Any outing (regardless of innings) with 10+ K qualifies as long as
+# runs and walks stay within these looser caps.
+MIN_SO_DOMINANT     = 10
+MAX_R_DOMINANT      = 4
+MAX_BB_DOMINANT     = 4
+
+# Walk (BB) caps, layered on top of the run/strikeout rules above.
+# Boundaries are contiguous starting at the 1.0 IP floor -- every
+# qualifying outing falls into exactly one of these five tiers.
+WALK_TIER_1_INN_OUTS      = 1 * 3   # 1.0 IP exactly
+WALK_TIER_1_1_1_2_OUTS    = 1 * 3 + 2   # 1.1-1.2 IP
+WALK_TIER_2_TO_4_INN_OUTS = 4 * 3   # 2.0-4.0 IP
+WALK_TIER_4_1_5_2_OUTS    = 5 * 3 + 2   # 4.1-5.2 IP
+# 6.0+ IP is everything above WALK_TIER_4_1_5_2_OUTS
+
+MAX_BB_1_INN        = 1   # 1.0 IP exactly
+MAX_BB_1_1_TO_1_2   = 2   # 1.1-1.2 IP
+MAX_BB_2_TO_4_INN   = 2   # 2.0-4.0 IP
+MAX_BB_4_1_TO_5_2   = 3   # 4.1-5.2 IP
+MAX_BB_6_PLUS       = 4   # 6.0+ IP
+
+
+def max_walks_allowed(outs: int) -> int:
+    if outs == WALK_TIER_1_INN_OUTS:
+        return MAX_BB_1_INN
+    if outs <= WALK_TIER_1_1_1_2_OUTS:
+        return MAX_BB_1_1_TO_1_2
+    if outs <= WALK_TIER_2_TO_4_INN_OUTS:
+        return MAX_BB_2_TO_4_INN
+    if outs <= WALK_TIER_4_1_5_2_OUTS:
+        return MAX_BB_4_1_TO_5_2
+    return MAX_BB_6_PLUS
 
 
 def ip_to_outs(ip_str) -> int:
@@ -148,24 +184,39 @@ def qualifying_pitcher(row: dict) -> bool:
     outs = ip_to_outs(row.get("ip"))
     r    = row.get("r", 0)
     so   = row.get("so", 0)
+    bb   = row.get("bb", 0)
 
     # Floor for everyone: must have recorded at least a full inning
     # (3 outs) to be listed at all.
     if outs < MIN_PITCHER_OUTS:
         return False
 
-    # 5.0+ IP: tougher strikeout bar, runs allowed cap unchanged.
+    # Dominant-strikeout exception: 10+ K qualifies on its own, ignoring
+    # every tier below (including the normal walk caps), as long as runs
+    # and walks stay within these looser limits.
+    if so >= MIN_SO_DOMINANT and r <= MAX_R_DOMINANT and bb <= MAX_BB_DOMINANT:
+        return True
+
+    # Walk cap applies on top of everything else below, regardless of
+    # which run/strikeout tier the outing falls into.
+    if bb > max_walks_allowed(outs):
+        return False
+
+    # 6.0+ IP: toughest strikeout bar, runs allowed cap unchanged.
+    if outs >= SIX_INN_OUTS:
+        return r <= MAX_LONG_RUNS and so >= MIN_SO_VERY_LONG
+
+    # 5.0-5.2 IP: runs allowed cap unchanged.
     if outs >= LONG_OUTING_OUTS:
         return r <= MAX_LONG_RUNS and so >= MIN_SO_LONG
 
-    # 1.0-1.2 IP: runs allowed cap unchanged, flat strikeout minimum
-    # (previously split 3K/0R vs 5K/1R -- now a single flat number).
-    if outs < MID_OUTING_OUTS:
-        return r <= MAX_SHORT_RUNS and so >= MIN_SO_SHORT
+    # 1.0 IP up to and including 4.0 IP: max 1 run allowed.
+    if outs <= UP_TO_4_INN_OUTS:
+        return r <= MAX_RUNS_1_TO_4_INN and so >= MIN_SO_UNDER_5
 
-    # 2.0 up to 4.2 IP: no runs-allowed cap (unchanged from before),
-    # just needs the strikeout minimum.
-    return so >= MIN_SO_MID
+    # 4.1-4.2 IP exactly: max 2 runs allowed instead. Strikeout minimum
+    # is the same as the bucket above -- only the run cap changes here.
+    return r <= MAX_RUNS_4_1_TO_4_2 and so >= MIN_SO_UNDER_5
 
 
 def build_top_performers(records: list, season: str) -> dict:
