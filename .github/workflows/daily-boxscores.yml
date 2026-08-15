@@ -2,8 +2,29 @@ name: Daily Yankees Box Scores
 
 on:
   schedule:
-    - cron: '0 2 * * *'    # 10:00pm ET (EDT); add 1 hour to each in winter (EST)
-    - cron: '45 3 * * *'   # 11:45pm ET (EDT) -- your original daily run
+    # GitHub Actions cron always runs in UTC and does not auto-adjust for
+    # daylight saving. These times are correct for EDT (UTC-4), currently
+    # in effect. Once EST (UTC-5) starts this fall, each cron below needs
+    # to shift one hour later in UTC terms to keep hitting the same ET
+    # clock times.
+
+    # 7:00am ET, Tuesday through Sunday (Monday excluded -- no DSL/FCL
+    # games that morning). 7am ET = 11:00 UTC, no day rollover, so the
+    # UTC weekday list matches the ET weekday list directly.
+    - cron: '0 11 * * 0,2,3,4,5,6'
+
+    # 10:00pm ET, Tuesday through Sunday. 10pm ET = 2:00am UTC the NEXT
+    # day, so each ET weekday's run actually fires on the following UTC
+    # weekday. To land on ET Tue-Sun, the UTC firing days are every day
+    # except Tuesday (i.e. Mon/Wed/Thu/Fri/Sat/Sun in UTC covers ET's
+    # Sun/Tue/Wed/Thu/Fri/Sat -- Monday ET's 10pm run would fire UTC
+    # Tuesday, which is excluded here on purpose, since Monday only gets
+    # its own separate 2pm run below).
+    - cron: '0 2 * * 0,1,3,4,5,6'
+
+    # 2:00pm ET, Monday only -- the one day DSL/FCL teams play at a
+    # different time. 2pm ET = 18:00 UTC, no rollover.
+    - cron: '0 18 * * 1'
   workflow_dispatch:
 
 jobs:
