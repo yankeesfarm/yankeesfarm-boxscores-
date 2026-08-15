@@ -1,26 +1,6 @@
 {
   "hitters": [
     {
-      "playerId": 822236,
-      "name": "Germayhoni Beltre",
-      "level": "FCL",
-      "team": "DSL NYY Bombers",
-      "position": "SS",
-      "bio": "FCL | SS",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822236/spots/120",
-      "statline": "2 for 4: Double (10), RBI (25)"
-    },
-    {
-      "playerId": 825153,
-      "name": "Juan Torres",
-      "level": "FCL",
-      "team": "DSL NYY Yankees",
-      "position": "2B",
-      "bio": "FCL | 2B",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825153/spots/120",
-      "statline": "2 for 5: Double (24)"
-    },
-    {
       "playerId": 832447,
       "name": "Adrian Feliz",
       "level": "FCL",
@@ -104,5 +84,5 @@
     }
   ],
   "date": "2026-08-14",
-  "generatedAt": "2026-08-15T06:16:42.155500+00:00"
+  "generatedAt": "2026-08-15T15:52:41.959565+00:00"
 }
