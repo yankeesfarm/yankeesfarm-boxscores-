@@ -23,26 +23,6 @@
       "statline": "2.0 IP, 0 R, 4 K"
     },
     {
-      "playerId": 839998,
-      "name": "Jose Sanchez",
-      "level": "FCL",
-      "team": "DSL NYY Bombers",
-      "role": "SP",
-      "bio": "FCL | SP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/839998/spots/120",
-      "statline": "4.1 IP, 3 R, 3 K"
-    },
-    {
-      "playerId": 837834,
-      "name": "Victor De Leon",
-      "level": "FCL",
-      "team": "DSL NYY Yankees",
-      "role": "SP",
-      "bio": "FCL | SP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/837834/spots/120",
-      "statline": "4.0 IP, 1 R, 4 K"
-    },
-    {
       "playerId": 675502,
       "name": "Kelly Austin",
       "level": "AA",
@@ -61,16 +41,6 @@
       "bio": "High-A | RP",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/695560/spots/120",
       "statline": "2.2 IP, 1 R, 4 K"
-    },
-    {
-      "playerId": 827768,
-      "name": "Anthony Mena",
-      "level": "A",
-      "team": "Tampa Tarpons",
-      "role": "RP",
-      "bio": "A | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/827768/spots/120",
-      "statline": "3.2 IP, 2 R, 4 K"
     },
     {
       "playerId": 822915,
@@ -94,5 +64,5 @@
     }
   ],
   "date": "2026-08-14",
-  "generatedAt": "2026-08-15T16:26:00.820121+00:00"
+  "generatedAt": "2026-08-15T16:59:59.977727+00:00"
 }
