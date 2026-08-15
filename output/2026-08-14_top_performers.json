@@ -13,6 +13,36 @@
   ],
   "pitchers": [
     {
+      "playerId": 666720,
+      "name": "Yerry Rodr\u00edguez",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/666720/spots/120",
+      "statline": "2.0 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 839998,
+      "name": "Jose Sanchez",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "role": "SP",
+      "bio": "FCL | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/839998/spots/120",
+      "statline": "4.1 IP, 3 R, 3 K"
+    },
+    {
+      "playerId": 837834,
+      "name": "Victor De Leon",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "role": "SP",
+      "bio": "FCL | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/837834/spots/120",
+      "statline": "4.0 IP, 1 R, 4 K"
+    },
+    {
       "playerId": 675502,
       "name": "Kelly Austin",
       "level": "AA",
@@ -31,16 +61,6 @@
       "bio": "High-A | RP",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/695560/spots/120",
       "statline": "2.2 IP, 1 R, 4 K"
-    },
-    {
-      "playerId": 694662,
-      "name": "Jack Sokol",
-      "level": "High-A",
-      "team": "Hudson Valley Renegades",
-      "role": "RP",
-      "bio": "High-A | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694662/spots/120",
-      "statline": "2.0 IP, 0 R, 1 K"
     },
     {
       "playerId": 827768,
@@ -63,16 +83,6 @@
       "statline": "1.2 IP, 0 R, 3 K"
     },
     {
-      "playerId": 830400,
-      "name": "Kevin Centeno",
-      "level": "FCL",
-      "team": "DSL NYY Bombers",
-      "role": "RP",
-      "bio": "FCL | RP",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/830400/spots/120",
-      "statline": "2.1 IP, 0 R, 1 K"
-    },
-    {
       "playerId": 830447,
       "name": "Luis Rodriguez",
       "level": "FCL",
@@ -84,5 +94,5 @@
     }
   ],
   "date": "2026-08-14",
-  "generatedAt": "2026-08-15T15:52:41.959565+00:00"
+  "generatedAt": "2026-08-15T16:17:39.541558+00:00"
 }
