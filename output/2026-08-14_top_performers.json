@@ -1,0 +1,108 @@
+{
+  "hitters": [
+    {
+      "playerId": 822236,
+      "name": "Germayhoni Beltre",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "position": "SS",
+      "bio": "FCL | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822236/spots/120",
+      "statline": "2 for 4: Double (10), RBI (25)"
+    },
+    {
+      "playerId": 825153,
+      "name": "Juan Torres",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "2B",
+      "bio": "FCL | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825153/spots/120",
+      "statline": "2 for 5: Double (24)"
+    },
+    {
+      "playerId": 832447,
+      "name": "Adrian Feliz",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "3B",
+      "bio": "FCL | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/832447/spots/120",
+      "statline": "2 for 3: Double (2), 2 RBI (11), SB (9)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 675502,
+      "name": "Kelly Austin",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/675502/spots/120",
+      "statline": "2.2 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 695560,
+      "name": "Pico Kohn",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695560/spots/120",
+      "statline": "2.2 IP, 1 R, 4 K"
+    },
+    {
+      "playerId": 694662,
+      "name": "Jack Sokol",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694662/spots/120",
+      "statline": "2.0 IP, 0 R, 1 K"
+    },
+    {
+      "playerId": 827768,
+      "name": "Anthony Mena",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/827768/spots/120",
+      "statline": "3.2 IP, 2 R, 4 K"
+    },
+    {
+      "playerId": 822915,
+      "name": "Matthew Tippie",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822915/spots/120",
+      "statline": "1.2 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 830400,
+      "name": "Kevin Centeno",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "role": "RP",
+      "bio": "FCL | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/830400/spots/120",
+      "statline": "2.1 IP, 0 R, 1 K"
+    },
+    {
+      "playerId": 830447,
+      "name": "Luis Rodriguez",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "role": "RP",
+      "bio": "FCL | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/830447/spots/120",
+      "statline": "2.2 IP, 0 R, 3 K"
+    }
+  ],
+  "date": "2026-08-14",
+  "generatedAt": "2026-08-15T03:59:57.318333+00:00"
+}
