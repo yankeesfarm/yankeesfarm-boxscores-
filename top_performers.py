@@ -41,13 +41,17 @@ MIN_HITTER_HITS   = 2
 MIN_HITTER_TB     = 4    # 2+ hits normally need 4+ total bases...
 MIN_HITTER_RBI_EXCEPTION = 2  # ...unless under 4 TB but 2+ RBI
 
-MIN_SP_OUTS       = 5 * 3   # 5.0 IP
-MAX_SP_RUNS       = 2
-MIN_SP_SO         = 3
+MIN_PITCHER_OUTS   = 1 * 3   # 1.0 IP -- floor, must pitch at least this much
+MID_OUTING_OUTS     = 2 * 3   # 2.0 IP -- boundary where the "short" bucket ends
+LONG_OUTING_OUTS    = 5 * 3   # 5.0 IP -- boundary where the "long" bucket begins
 
-MIN_RP_OUTS_FOR_NO_CAP  = 2 * 3   # 2.0 IP -- at/above this, no run/K cap
-MIN_RP_SHORT_SO_ZERO_R  = 3        # RP under 2.0 IP, 0 R allowed
-MIN_RP_SHORT_SO_ONE_R   = 5        # RP under 2.0 IP, 1 R allowed (tougher bar)
+MAX_SHORT_RUNS      = 1        # 1.0-1.2 IP: max runs allowed
+MIN_SO_SHORT        = 3        # 1.0-1.2 IP: min strikeouts
+
+MIN_SO_MID          = 3        # 2.0-4.2 IP: min strikeouts (no run cap)
+
+MAX_LONG_RUNS       = 2        # 5.0+ IP: max runs allowed
+MIN_SO_LONG         = 4        # 5.0+ IP: min strikeouts
 
 
 def ip_to_outs(ip_str) -> int:
@@ -142,35 +146,26 @@ def qualifying_hitters(row: dict) -> bool:
 
 def qualifying_pitcher(row: dict) -> bool:
     outs = ip_to_outs(row.get("ip"))
+    r    = row.get("r", 0)
+    so   = row.get("so", 0)
 
-    # Floor for everyone, SP or RP: must have recorded at least a full
-    # inning (3 outs) to be listed at all.
-    if outs < 3:
+    # Floor for everyone: must have recorded at least a full inning
+    # (3 outs) to be listed at all.
+    if outs < MIN_PITCHER_OUTS:
         return False
 
-    if row.get("role") == "SP":
-        return (
-            outs >= MIN_SP_OUTS
-            and row.get("r", 0) <= MAX_SP_RUNS
-            and row.get("so", 0) >= MIN_SP_SO
-        )
+    # 5.0+ IP: tougher strikeout bar, runs allowed cap unchanged.
+    if outs >= LONG_OUTING_OUTS:
+        return r <= MAX_LONG_RUNS and so >= MIN_SO_LONG
 
-    # RP: anyone who threw LESS than 2 full innings (i.e. exactly 1.0,
-    # 1.1, or 1.2 IP) needs the short-outing bar:
-    #   0 runs allowed -> 3+ strikeouts
-    #   1 run allowed  -> 5+ strikeouts (a tougher bar since he wasn't
-    #                     perfect)
-    #   2+ runs allowed -> never qualifies regardless of strikeouts
-    # 2.0+ IP outings only need the 1-inning floor above, no cap.
-    if outs < MIN_RP_OUTS_FOR_NO_CAP:
-        r = row.get("r", 0)
-        so = row.get("so", 0)
-        if r == 0:
-            return so >= MIN_RP_SHORT_SO_ZERO_R
-        if r == 1:
-            return so >= MIN_RP_SHORT_SO_ONE_R
-        return False
-    return True
+    # 1.0-1.2 IP: runs allowed cap unchanged, flat strikeout minimum
+    # (previously split 3K/0R vs 5K/1R -- now a single flat number).
+    if outs < MID_OUTING_OUTS:
+        return r <= MAX_SHORT_RUNS and so >= MIN_SO_SHORT
+
+    # 2.0 up to 4.2 IP: no runs-allowed cap (unchanged from before),
+    # just needs the strikeout minimum.
+    return so >= MIN_SO_MID
 
 
 def build_top_performers(records: list, season: str) -> dict:
