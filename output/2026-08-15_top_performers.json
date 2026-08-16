@@ -1,0 +1,148 @@
+{
+  "hitters": [
+    {
+      "playerId": 680474,
+      "name": "Max Schuemann",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "LF",
+      "bio": "AAA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/680474/spots/120",
+      "statline": "2 for 3: Double (8), HR (3), RBI (14)"
+    },
+    {
+      "playerId": 641555,
+      "name": "J.C. Escarra",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "C",
+      "bio": "AAA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/641555/spots/120",
+      "statline": "2 for 4: 2 Doubles (12), 2 RBI (28)"
+    },
+    {
+      "playerId": 692633,
+      "name": "Manuel Palencia",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "C",
+      "bio": "AA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692633/spots/120",
+      "statline": "2 for 4: HR (4), 2 RBI (18)"
+    },
+    {
+      "playerId": 804944,
+      "name": "Jackson Lovich",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "SS",
+      "bio": "High-A | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804944/spots/120",
+      "statline": "2 for 5: 2 HR (2), 4 RBI (13)"
+    },
+    {
+      "playerId": 809569,
+      "name": "Maika Niu",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "CF",
+      "bio": "High-A | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/809569/spots/120",
+      "statline": "3 for 4: HR (3), RBI (11), SB (3)"
+    },
+    {
+      "playerId": 828076,
+      "name": "Dax Kilby",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "SS",
+      "bio": "A | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/828076/spots/120",
+      "statline": "2 for 5: Triple (1), 2 RBI (17), SB (6)"
+    },
+    {
+      "playerId": 824424,
+      "name": "Bear Harrison",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "DH",
+      "bio": "A | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/824424/spots/120",
+      "statline": "2 for 4: 2 RBI (3)"
+    },
+    {
+      "playerId": 824425,
+      "name": "Diego Castellanos",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "CF",
+      "bio": "A | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/824425/spots/120",
+      "statline": "2 for 5: HR (2), RBI (5)"
+    },
+    {
+      "playerId": 835219,
+      "name": "Anthony Potestio",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "3B",
+      "bio": "A | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/835219/spots/120",
+      "statline": "2 for 4: HR (2), 2 RBI (7)"
+    },
+    {
+      "playerId": 830475,
+      "name": "Stalen Ramirez",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "DH",
+      "bio": "FCL | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/830475/spots/120",
+      "statline": "2 for 3: HR (3), 2 RBI (24)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 694696,
+      "name": "Cade Smith",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694696/spots/120",
+      "statline": "7.0 IP, 1 R, 6 K"
+    },
+    {
+      "playerId": 842321,
+      "name": "Jhon Beltre",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "role": "SP",
+      "bio": "FCL | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/842321/spots/120",
+      "statline": "4.0 IP, 0 R, 5 K"
+    },
+    {
+      "playerId": 687280,
+      "name": "Geoffrey Gilbert",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/687280/spots/120",
+      "statline": "1.1 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 693647,
+      "name": "Thomas Balboni Jr.",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/693647/spots/120",
+      "statline": "1.2 IP, 0 R, 3 K"
+    }
+  ],
+  "date": "2026-08-15",
+  "generatedAt": "2026-08-16T03:07:50.685991+00:00"
+}
