@@ -14,34 +14,74 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib.dedupe import combine_by_id
+from advanced_stats import (
+    calc_bb_rate,
+    calc_k_rate,
+    calc_k_minus_bb_rate_hitter,
+    calc_xbh_rate,
+    calc_iso,
+    calc_babip,
+    calc_woba,
+    calc_k_rate_pitcher,
+    calc_bb_rate_pitcher,
+    calc_k_minus_bb_rate_pitcher,
+    calc_fip_constant,
+    calc_fip,
+)
+
+# Fallback FIP constant, same reasoning as fetch_season_stats.py: used only
+# when a team's own pitcher pool is too small to compute a real per-level
+# constant. 3.10 is a recent MLB-wide norm, not level-accurate, but safer
+# than skipping FIP for that team entirely.
+FALLBACK_FIP_CONSTANT = 3.10
 
 # Raw counting fields to sum when combine_by_id() merges a player's stats
 # across multiple affiliate levels (promotions/demotions, or a rookie-level
 # + full-season split). Matches the field names fetch_weekly_stats.py and
 # fetch_season_stats.py already write into each hitter row.
+# plateAppearances/intentionalWalks were added alongside the BB%/K%/wOBA
+# advanced-stat work -- they must be summed here too, or a promoted
+# player's advanced rate stats (computed AFTER this combine step) would be
+# calculated on only one level's partial PA/IBB total instead of his real
+# combined season numbers.
 HITTING_COUNT_FIELDS = [
     "atBats", "hits", "doubles", "triples", "homeRuns", "rbi",
     "baseOnBalls", "hitByPitch", "sacFlies", "stolenBases", "caughtStealing", "strikeOuts",
+    "plateAppearances", "intentionalWalks",
 ]
 
+# field, label, is_rate_stat, lower_is_better
+# lower_is_better only matters for is_rate=True fields, since only rate
+# categories get ranked/sorted directly by top_n(); counting categories
+# (is_rate=False) are always ranked highest-first regardless of this flag.
 HITTING_CATEGORIES = [
-    ("avg", "Batting Average", True),
-    ("obp", "On-Base Percentage", True),
-    ("slg", "Slugging Percentage", True),
-    ("ops", "OPS", True),
-    ("hits", "Hits", False),
-    ("doubles", "Doubles", False),
-    ("triples", "Triples", False),
-    ("homeRuns", "Home Runs", False),
-    ("rbi", "RBI", False),
-    ("stolenBases", "Stolen Bases", False),
+    ("avg", "Batting Average", True, False),
+    ("obp", "On-Base Percentage", True, False),
+    ("slg", "Slugging Percentage", True, False),
+    ("ops", "OPS", True, False),
+    ("hits", "Hits", False, False),
+    ("doubles", "Doubles", False, False),
+    ("triples", "Triples", False, False),
+    ("homeRuns", "Home Runs", False, False),
+    ("rbi", "RBI", False, False),
+    ("stolenBases", "Stolen Bases", False, False),
+    ("bbPct", "BB%", True, False),
+    ("kPct", "K%", True, True),          # lower K% is better plate discipline
+    ("kMinusBbPct", "K-BB%", True, False),
+    ("xbhPct", "XBH%", True, False),
+    ("iso", "ISO", True, False),
+    ("babip", "BABIP", True, False),
+    ("woba", "wOBA", True, False),
 ]
 
 # These six counting categories also include DSL/FCL (Rookie-level) hitters,
 # on top of the four full-season affiliates. Rate categories (AVG/OBP/SLG/
-# OPS) and all pitching categories do NOT -- DSL/FCL play much shorter,
-# unusually-scheduled seasons, so a rate stat there can be wildly misleading
-# on a tiny sample, while a raw counting total is still meaningful.
+# OPS, and now the advanced rate stats below) do NOT -- DSL/FCL play much
+# shorter, unusually-scheduled seasons, so a rate stat there can be wildly
+# misleading on a tiny sample, while a raw counting total is still
+# meaningful. New advanced rate stats follow this same rule automatically:
+# since they're not listed here, top_n()/build_payload() only ever pull
+# them from the full-season `hitters` pool, never the rookie-merged pool.
 ROOKIE_LEVEL_INCLUDED_FIELDS = {"hits", "doubles", "triples", "homeRuns", "rbi", "stolenBases"}
 
 # field, label, is_rate_stat, lower_is_better
@@ -52,6 +92,10 @@ PITCHING_CATEGORIES = [
     ("strikeOuts", "Strikeouts", False, False),
     ("avg", "AVG Against", True, True),
     ("so9", "SO/9", True, False),
+    ("kPct", "K%", True, False),
+    ("bbPct", "BB%", True, True),        # lower BB% is better control
+    ("kMinusBbPct", "K-BB%", True, False),
+    ("fip", "FIP", True, True),          # lower FIP is better, same as ERA
 ]
 
 # Raw counting fields to sum when combine_by_id() merges a pitcher's stats
@@ -60,9 +104,12 @@ PITCHING_CATEGORIES = [
 # -- outs are summable integers, the "6.1" display string is not. main()
 # is responsible for converting inningsPitched -> ip_outs on each RAW
 # per-team row BEFORE combining, so the innings actually add up correctly.
+# battersFaced/hitByPitch were added alongside the K%/BB%/FIP advanced-stat
+# work -- both need to be summed the same way, or a promoted pitcher's
+# advanced rate stats would reflect only one level's partial totals.
 PITCHING_COUNT_FIELDS = [
     "ip_outs", "strikeOuts", "baseOnBalls", "hits", "atBats", "homeRuns",
-    "earnedRuns", "runs", "wins", "losses", "saves",
+    "earnedRuns", "runs", "wins", "losses", "saves", "battersFaced", "hitByPitch",
 ]
 
 
@@ -72,13 +119,21 @@ def recompute_pitching_rates(row):
     runs etc. across levels, his era/whip/so9/avg-against must be
     recalculated from those combined totals, or his ERA would still
     reflect only whichever single level's row happened to survive
-    before."""
+    before.
+
+    Also rebuilds "inningsPitched" as a display string (e.g. "72.1") from
+    the combined ip_outs -- advanced_stats.calc_fip()/calc_fip_constant()
+    expect that string format (outs-as-decimal, matching the MLB Stats API
+    convention), and the row's original "inningsPitched" value is stale
+    single-level data at this point, same as era/whip/so9 were before this
+    function recalculates them."""
     ip_outs = row.get("ip_outs", 0)
     ip_decimal = ip_outs / 3
     row["era"] = round((row.get("earnedRuns", 0) * 9) / ip_decimal, 2) if ip_decimal else 0.0
     row["whip"] = round((row.get("hits", 0) + row.get("baseOnBalls", 0)) / ip_decimal, 2) if ip_decimal else 0.0
     row["so9"] = round((row.get("strikeOuts", 0) * 9) / ip_decimal, 2) if ip_decimal else 0.0
     row["avg"] = round(row.get("hits", 0) / row["atBats"], 3) if row.get("atBats") else 0.0
+    row["inningsPitched"] = fmt_ip(ip_outs)
     return row
 
 TEAM_LABELS = {
@@ -116,8 +171,83 @@ def recompute_hitting_rates(row):
     return row
 
 
+def apply_advanced_hitting_stats(rows):
+    """Adds BB%, K%, K-BB%, XBH%, ISO, BABIP, and wOBA to each (already
+    combined + rate-recomputed) hitter row. Must run AFTER
+    recompute_hitting_rates() -- ISO needs 'avg'/'slg' already populated
+    from the combined totals, and every other field here reads directly
+    off the row's already-combined counting stats (atBats, hits,
+    plateAppearances, etc.), which is only correct post-combine_by_id().
+
+    Only ever called on the full-season `hitters` list (see
+    ROOKIE_LEVEL_INCLUDED_FIELDS above) -- never on the rookie-merged
+    counting_pool, since a DSL/FCL sample is too small to trust for a rate
+    stat."""
+    for row in rows:
+        row["bbPct"] = calc_bb_rate(row)
+        row["kPct"] = calc_k_rate(row)
+        row["kMinusBbPct"] = calc_k_minus_bb_rate_hitter(row)
+        row["xbhPct"] = calc_xbh_rate(row)
+        row["iso"] = calc_iso(row)
+        row["babip"] = calc_babip(row)
+        row["woba"] = calc_woba(row)
+    return rows
+
+
+def apply_advanced_pitching_stats(rows):
+    """Adds K%, BB%, K-BB%, and FIP to each (already combined +
+    rate-recomputed) pitcher row.
+
+    FIP needs a level-specific constant. Since `rows` here is the full
+    combined pitcher pool across ALL affiliates, FIP constants are computed
+    per TEAM (each affiliate = one level, same approach fetch_season_stats.py
+    uses at fetch time) rather than one org-wide constant -- an org-wide
+    constant would understate FIP at DSL/FCL and overstate it at AAA,
+    since offensive environments differ sharply by level.
+
+    Recomputed here rather than trusting any FIP value fetch_season_stats.py
+    may have already set, because combine_by_id() only sums the fields
+    listed in PITCHING_COUNT_FIELDS -- a promoted pitcher's pre-combine FIP
+    would be stale (based on one level's partial innings) and silently
+    wrong once his innings are correctly combined across levels here."""
+    for row in rows:
+        row["kPct"] = calc_k_rate_pitcher(row)
+        row["bbPct"] = calc_bb_rate_pitcher(row)
+        row["kMinusBbPct"] = calc_k_minus_bb_rate_pitcher(row)
+
+    by_team = {}
+    for row in rows:
+        by_team.setdefault(row.get("team"), []).append(row)
+
+    for team, team_rows in by_team.items():
+        era_values = [r["era"] for r in team_rows if r.get("era")]
+        league_era = sum(era_values) / len(era_values) if era_values else None
+        fip_constant = calc_fip_constant(team_rows, league_era) if league_era else None
+        if fip_constant is None:
+            fip_constant = FALLBACK_FIP_CONSTANT
+            print(f"  NOTE: using fallback FIP constant ({FALLBACK_FIP_CONSTANT}) for "
+                  f"team '{team}' -- could not compute a real per-level constant "
+                  f"(likely too few qualifying pitchers).")
+        for row in team_rows:
+            row["fip"] = calc_fip(row, fip_constant)
+
+    return rows
+
+
+# Percent-style advanced rate stats display as e.g. "9.6%" rather than the
+# .300-style decimal used for AVG/OBP/SLG -- more legible for a fan
+# audience and matches how BB%/K% are conventionally shown everywhere else
+# (FanGraphs, Baseball Savant, etc.).
+PERCENT_FIELDS = {"bbPct", "kPct", "kMinusBbPct", "xbhPct"}
+# ERA-style advanced rate stats (FIP) display with 2 decimals like ERA/WHIP,
+# not 3 like AVG/ISO/BABIP/wOBA.
+TWO_DECIMAL_FIELDS = {"era", "whip", "so9", "fip"}
+
+
 def fmt_rate(val, field):
-    if field in ("era", "whip", "so9"):
+    if field in PERCENT_FIELDS:
+        return f"{val * 100:.1f}%"
+    if field in TWO_DECIMAL_FIELDS:
         return f"{val:.2f}"
     return f"{val:.3f}"
 
@@ -156,8 +286,9 @@ def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta, rookie_hitters=N
     never quietly disagree with each other.
 
     rookie_hitters (DSL/FCL) are merged in ONLY for the six counting
-    categories in ROOKIE_LEVEL_INCLUDED_FIELDS -- rate categories and all
-    pitching categories use `hitters` alone.
+    categories in ROOKIE_LEVEL_INCLUDED_FIELDS -- rate categories
+    (including the new advanced ones) and all pitching categories use
+    `hitters`/`pitchers` alone.
 
     That merge uses combine_by_id(), not a plain list concatenation: a
     player who played at both a rookie-level affiliate AND a full-season
@@ -177,10 +308,10 @@ def build_payload(hitters, pitchers, min_ab, min_ip_outs, meta, rookie_hitters=N
 
     categories = {}
 
-    for field, label, is_rate in HITTING_CATEGORIES:
+    for field, label, is_rate, lower in HITTING_CATEGORIES:
         min_qual = min_ab if is_rate else 0
         pool = counting_pool if field in ROOKIE_LEVEL_INCLUDED_FIELDS else hitters
-        leaders = top_n(pool, field, min_qual, "pa" if is_rate else None)
+        leaders = top_n(pool, field, min_qual, "pa" if is_rate else None, lower_is_better=lower)
         categories[f"hitting_{field}"] = {
             "label": label, "group": "hitting", "isRate": is_rate,
             "entries": ranked_entries(leaders, field, is_rate),
@@ -241,10 +372,10 @@ def render_hitting(rows, min_ab, rookie_rows=None):
     counting_pool = combine_by_id(rows + rookie_rows, HITTING_COUNT_FIELDS,
                                    "hitters (full-season + rookie-level combined)")
     out = ["## HITTING LEADERS\n"]
-    for field, label, is_rate in HITTING_CATEGORIES:
+    for field, label, is_rate, lower in HITTING_CATEGORIES:
         min_qual = min_ab if is_rate else 0
         pool = counting_pool if field in ROOKIE_LEVEL_INCLUDED_FIELDS else rows
-        leaders = top_n(pool, field, min_qual, "pa" if is_rate else None)
+        leaders = top_n(pool, field, min_qual, "pa" if is_rate else None, lower_is_better=lower)
         out.append(f"### {label}")
         out.append(render_table(leaders, field, is_rate))
         out.append("")
@@ -294,6 +425,7 @@ def main():
     data["hitters"] = combine_by_id(data["hitters"], HITTING_COUNT_FIELDS, "hitters")
     for row in data["hitters"]:
         recompute_hitting_rates(row)
+    apply_advanced_hitting_stats(data["hitters"])
     rookie_hitters = combine_by_id(data.get("rookie_hitters", []), HITTING_COUNT_FIELDS, "rookie hitters")
 
     # Same treatment for pitchers, same reasoning: a pitcher promoted
@@ -312,6 +444,7 @@ def main():
     data["pitchers"] = combine_by_id(data["pitchers"], PITCHING_COUNT_FIELDS, "pitchers")
     for row in data["pitchers"]:
         recompute_pitching_rates(row)
+    apply_advanced_pitching_stats(data["pitchers"])
 
     # Season files carry a real, computed "qualified" threshold (3.1 PA /
     # team game, 1 IP / team game -- the same standard MLB itself uses),
