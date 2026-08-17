@@ -1,0 +1,68 @@
+{
+  "hitters": [
+    {
+      "playerId": 804944,
+      "name": "Jackson Lovich",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "SS",
+      "bio": "High-A | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804944/spots/120",
+      "statline": "2 for 4: Triple (1), 3 RBI (16), SB (10)"
+    },
+    {
+      "playerId": 806963,
+      "name": "Brando Mayea",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "LF",
+      "bio": "A | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806963/spots/120",
+      "statline": "4 for 5: RBI (32)"
+    },
+    {
+      "playerId": 801489,
+      "name": "Tyce Armstrong",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "1B",
+      "bio": "A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/801489/spots/120",
+      "statline": "3 for 6: HR (2), 6 RBI (9)"
+    },
+    {
+      "playerId": 806884,
+      "name": "Luis Escudero",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "2B",
+      "bio": "A | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806884/spots/120",
+      "statline": "3 for 5: HR (9), 3 RBI (21)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 702098,
+      "name": "Allen Facundo",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702098/spots/120",
+      "statline": "7.0 IP, 2 R, 6 K"
+    },
+    {
+      "playerId": 804522,
+      "name": "Wilmy Sanchez",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804522/spots/120",
+      "statline": "1.0 IP, 0 R, 3 K"
+    }
+  ],
+  "date": "2026-08-16",
+  "generatedAt": "2026-08-17T02:02:40.272810+00:00"
+}
