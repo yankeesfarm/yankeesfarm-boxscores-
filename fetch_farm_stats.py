@@ -12,6 +12,22 @@ roughly one-per-player (150-200 calls) down to one-per-team (7 calls),
 confirmed by inspecting how bronxpinstripes.com structures its own
 roster+stats payload.
 
+v3: adds XBH%, BABIP, wOBA, and K-BB% for hitters, and K-BB% and FIP for
+pitchers, using the same advanced_stats.py module the leaderboard/season
+pipeline already uses. These are computed INLINE inside
+build_hitter_row()/build_pitcher_row(), while the raw counting stats
+(atBats, hits, doubles, etc.) from extract_stat_group() are still in
+scope -- the final row dict never carried those raw fields forward before,
+so a separate post-processing pass over the finished rows wouldn't have
+had anything to compute from.
+
+FIP needed two supporting changes: extract_stat_group()'s pitching totals
+were missing homeRuns and hitByPitch entirely (never summed before,
+because nothing needed them until now), and FIP's own constant must be
+computed per LEVEL (not org-wide) since offensive environments differ
+sharply between e.g. DSL and AAA -- see apply_fip_by_level() below, called
+once in main() after every pitcher row is built.
+
 Run this from an environment that can reach statsapi.mlb.com (e.g. your
 existing yankeesfarm-boxscores GitHub Action) -- NOT from a machine that
 blocks that domain.
@@ -27,8 +43,22 @@ import json
 import time
 import requests
 
+from advanced_stats import (
+    calc_xbh_rate,
+    calc_babip,
+    calc_woba,
+    calc_fip_constant,
+    calc_fip,
+)
+
 BASE = "https://statsapi.mlb.com/api/v1"
 YANKEES_ORG_ID = 147
+
+# Fallback FIP constant, same reasoning as the rest of the pipeline: used
+# only when a level's own qualifying pitcher pool is too small to compute
+# a real constant. 3.10 is a recent MLB-wide norm, not level-accurate, but
+# safer than skipping FIP for that level entirely.
+FALLBACK_FIP_CONSTANT = 3.10
 
 # sportId -> our internal level code
 SPORT_LEVELS = {
@@ -131,6 +161,12 @@ def extract_stat_group(person, group_name):
     one -- summing every team-level split ourselves is the only way to be
     sure MLB time never sneaks into the total, since we explicitly only
     ever request minor-league sportIds in the first place.
+
+    hitting totals now also sum intentionalWalks (used by calc_woba() for
+    a slightly more accurate wOBA -- unintentional vs intentional walks
+    carry different value). pitching totals now also sum homeRuns and
+    hitByPitch (both required by calc_fip()) -- neither was summed before
+    because nothing needed them until FIP was added.
     """
     for block in person.get("stats", []):
         if block.get("group", {}).get("displayName") != group_name:
@@ -149,7 +185,8 @@ def extract_stat_group(person, group_name):
         if group_name == "hitting":
             totals = {"atBats": 0, "hits": 0, "doubles": 0, "triples": 0, "homeRuns": 0,
                       "rbi": 0, "baseOnBalls": 0, "hitByPitch": 0, "sacFlies": 0,
-                      "strikeOuts": 0, "stolenBases": 0, "plateAppearances": 0}
+                      "strikeOuts": 0, "stolenBases": 0, "plateAppearances": 0,
+                      "intentionalWalks": 0}
             for s in team_splits:
                 stat = s.get("stat", {})
                 for key in totals:
@@ -171,7 +208,8 @@ def extract_stat_group(person, group_name):
 
         else:  # pitching
             totals = {"wins": 0, "losses": 0, "earnedRuns": 0, "hits": 0,
-                      "baseOnBalls": 0, "strikeOuts": 0, "battersFaced": 0}
+                      "baseOnBalls": 0, "strikeOuts": 0, "battersFaced": 0,
+                      "homeRuns": 0, "hitByPitch": 0}
             total_outs = 0
             for s in team_splits:
                 stat = s.get("stat", {})
@@ -182,6 +220,9 @@ def extract_stat_group(person, group_name):
             return {
                 **totals,
                 "inningsPitched": _outs_to_ip_display(total_outs),
+                "inningsPitchedOuts": total_outs,  # raw outs, used by calc_fip() below --
+                                                    # avoids any float round-trip risk on
+                                                    # the display-formatted "62.2" value
                 "era": round(9 * totals["earnedRuns"] / true_ip, 2) if true_ip else 0.0,
                 "whip": round((totals["baseOnBalls"] + totals["hits"]) / true_ip, 2) if true_ip else 0.0,
                 "strikeoutsPer9Inn": round(9 * totals["strikeOuts"] / true_ip, 1) if true_ip else 0.0,
@@ -246,6 +287,17 @@ def build_hitter_row(person, stat, level_id):
     so = stat.get("strikeOuts") or 0
     avg = float(stat.get("avg") or 0)
     slg = float(stat.get("slg") or 0)
+    bbp = pct(bb, pa)
+    kp = pct(so, pa)
+
+    # XBH%, BABIP, and wOBA computed here (not in a later pass) because
+    # `stat` -- the raw counting-stat dict from extract_stat_group() -- is
+    # only ever in scope at this call site; the row dict returned below
+    # never carries atBats/hits/doubles/etc. forward on its own.
+    xbh_pct = calc_xbh_rate(stat)
+    babip = calc_babip(stat)
+    woba = calc_woba(stat)
+
     return {
         "name": person["fullName"],
         "mlbId": person["id"],
@@ -258,9 +310,13 @@ def build_hitter_row(person, stat, level_id):
         "hr": stat.get("homeRuns", 0),
         "rbi": stat.get("rbi", 0),
         "sb": stat.get("stolenBases", 0),
-        "bbp": pct(bb, pa),
-        "kp": pct(so, pa),
+        "bbp": bbp,
+        "kp": kp,
+        "kbb": round(kp - bbp, 1),  # K-BB%, same 0-100 scale as bbp/kp above
         "iso": round(slg - avg, 3),
+        "xbhp": round(xbh_pct * 100, 1) if xbh_pct is not None else None,  # same 0-100 scale as bbp/kp
+        "babip": babip,   # kept as a .358-style fraction, matching AVG/OBP/SLG convention
+        "woba": woba,     # kept as a .379-style fraction, matching AVG/OBP/SLG convention
         # Statcast fields -- not available from this endpoint; left null
         # rather than fabricated. See enrich_with_statcast() below.
         "maxev": None,
@@ -275,6 +331,9 @@ def build_pitcher_row(person, stat, level_id):
     bf = stat.get("battersFaced") or 0
     so = stat.get("strikeOuts") or 0
     bb = stat.get("baseOnBalls") or 0
+    kp = pct(so, bf)
+    bbp = pct(bb, bf)
+
     return {
         "name": person["fullName"],
         "mlbId": person["id"],
@@ -287,10 +346,75 @@ def build_pitcher_row(person, stat, level_id):
         "ip": float(stat.get("inningsPitched") or 0),
         "k9": float(stat.get("strikeoutsPer9Inn") or 0),
         "bb9": float(stat.get("walksPer9Inn") or 0),
-        "kp": pct(so, bf),
-        "bbp": pct(bb, bf),
+        "kp": kp,
+        "bbp": bbp,
+        "kbb": round(kp - bbp, 1),  # K-BB%, same 0-100 scale as kp/bbp above
+        # FIP is intentionally NOT set here -- it needs a level-wide
+        # constant that only exists after every pitcher at this level has
+        # been built. See apply_fip_by_level() in main(), which fills this
+        # in as a second pass. Raw fields it needs are stashed below so
+        # that second pass doesn't need to re-fetch or re-derive anything.
+        "fip": None,
+        "_homeRuns": stat.get("homeRuns", 0),
+        "_hitByPitch": stat.get("hitByPitch", 0),
+        "_inningsPitchedOuts": stat.get("inningsPitchedOuts", 0),
+        "_strikeOuts": so,
+        "_baseOnBalls": bb,
         **bio_fields(person),
     }
+
+
+def apply_fip_by_level(pitchers):
+    """
+    Computes FIP for every pitcher, grouped by level (AAA/AA/A+/A/ROK/
+    DSL1/DSL2) -- a level-specific FIP constant, not one org-wide constant,
+    since offensive environments differ sharply between e.g. DSL and AAA.
+    Same approach used in fetch_season_stats.py and generate_leaderboard.py
+    for the weekly/season leaderboard pipeline.
+
+    Cleans up the temporary "_"-prefixed raw fields build_pitcher_row()
+    stashed on each row afterward -- those exist only to make this
+    function possible without a second data-fetch pass, not as fields
+    analytics.html should ever see or display.
+    """
+    by_level = {}
+    for row in pitchers:
+        by_level.setdefault(row["level"], []).append(row)
+
+    for level, rows in by_level.items():
+        # Build the small dicts calc_fip_constant()/calc_fip() actually
+        # expect (homeRuns, baseOnBalls, hitByPitch, strikeOuts,
+        # inningsPitched-as-string), from the stashed raw fields.
+        fip_inputs = []
+        for row in rows:
+            outs = row["_inningsPitchedOuts"]
+            fip_inputs.append({
+                "homeRuns": row["_homeRuns"],
+                "baseOnBalls": row["_baseOnBalls"],
+                "hitByPitch": row["_hitByPitch"],
+                "strikeOuts": row["_strikeOuts"],
+                "inningsPitched": f"{outs // 3}.{outs % 3}",
+            })
+
+        era_values = [r["era"] for r in rows if r.get("era")]
+        league_era = sum(era_values) / len(era_values) if era_values else None
+        fip_constant = calc_fip_constant(fip_inputs, league_era) if league_era else None
+        if fip_constant is None:
+            fip_constant = FALLBACK_FIP_CONSTANT
+            print(f"  NOTE: using fallback FIP constant ({FALLBACK_FIP_CONSTANT}) for "
+                  f"level '{level}' -- could not compute a real per-level constant "
+                  f"(likely too few qualifying pitchers).")
+
+        for row, fip_input in zip(rows, fip_inputs):
+            row["fip"] = calc_fip(fip_input, fip_constant)
+
+    # Strip the temporary raw fields now that FIP is set -- they were
+    # never meant to reach data.json / analytics.html.
+    for row in pitchers:
+        for key in ("_homeRuns", "_hitByPitch", "_inningsPitchedOuts", "_strikeOuts", "_baseOnBalls"):
+            row.pop(key, None)
+
+    return pitchers
 
 
 STATCAST_LEVELS = {"AAA", "A"}  # Tampa Tarpons play at Steinbrenner Field, which has Statcast installed
@@ -372,6 +496,7 @@ def main():
 
         time.sleep(0.1)  # one pause per team now, not per player
 
+    apply_fip_by_level(pitchers)
     enrich_with_statcast(hitters, args.season)
 
     payload = {
