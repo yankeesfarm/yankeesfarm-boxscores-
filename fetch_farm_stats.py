@@ -5,28 +5,42 @@ YankeesFarm analytics feed
 Pulls live season stats for every Yankees affiliate from the MLB Stats API
 and writes data.json in the shape analytics.html expects.
 
-v2: uses the "hydrate" parameter to attach each player's season stats
-directly onto the roster response, instead of making a separate
-/people/{id}/stats call per roster spot. This cuts the request count from
-roughly one-per-player (150-200 calls) down to one-per-team (7 calls),
-confirmed by inspecting how bronxpinstripes.com structures its own
-roster+stats payload.
+v4: REWRITTEN to fix a real bug -- a promoted/demoted player's stats only
+ever reflected his CURRENT level, not his true combined season line (e.g.
+a player who hit 18 HR at Hudson Valley before being promoted to Somerset
+would show only his post-promotion Somerset home runs). v2/v3's approach
+fetched each team's CURRENT active roster with a season-type stat hydrate
+scoped to that team's own sportId -- a player no longer on a team's roster
+was invisible to that team's fetch entirely, so there was nothing for any
+downstream code to combine.
 
-v3: adds XBH%, BABIP, wOBA, and K-BB% for hitters, and K-BB% and FIP for
-pitchers, using the same advanced_stats.py module the leaderboard/season
-pipeline already uses. These are computed INLINE inside
-build_hitter_row()/build_pitcher_row(), while the raw counting stats
-(atBats, hits, doubles, etc.) from extract_stat_group() are still in
-scope -- the final row dict never carried those raw fields forward before,
-so a separate post-processing pass over the finished rows wouldn't have
-had anything to compute from.
+The fix: stop reinventing roster/stat fetching here and reuse the
+EXACT proven logic already powering fetch_season_stats.py's season
+leaderboard pipeline (lib/mlb_api.py), which is known-correct --
+confirmed against real promoted players showing accurate combined season
+totals on the live site:
+  - get_active_roster() uses rosterType="fullSeason", which includes every
+    player who was EVER on a team's roster this season, including players
+    later promoted/demoted away. A promoted player therefore appears on
+    BOTH his old and new team's roster pull.
+  - get_player_stats_by_date_range() fetches the player's full game log
+    for the season and filters to the requested team + date range IN CODE
+    (never trusting the MLB API's own byDateRange/teamId filters, which
+    silently failed in two earlier production attempts).
 
-FIP needed two supporting changes: extract_stat_group()'s pitching totals
-were missing homeRuns and hitByPitch entirely (never summed before,
-because nothing needed them until now), and FIP's own constant must be
-computed per LEVEL (not org-wide) since offensive environments differ
-sharply between e.g. DSL and AAA -- see apply_fip_by_level() below, called
-once in main() after every pitcher row is built.
+This script now calls those same two functions once per affiliate team,
+and manually SUMS a player's raw counting stats across every team stint
+he had this season (mirroring generate_leaderboard.py's combine_by_id()
+principle, just done inline here since analytics.html has no separate
+combine step downstream). A player's displayed "level" is his HIGHEST
+level reached this season (standard prospect-media convention), not
+necessarily his very last game -- see LEVEL_RANK below.
+
+Bio fields (age, height/weight, bats/throws, hometown, origin, birthDate)
+are no longer available "for free" from a hydrated roster response, since
+get_active_roster() doesn't hydrate bio data. These are now fetched in a
+single batched call to /people?personIds=... after all stats are combined,
+chunked to keep URLs a reasonable length.
 
 Run this from an environment that can reach statsapi.mlb.com (e.g. your
 existing yankeesfarm-boxscores GitHub Action) -- NOT from a machine that
@@ -40,9 +54,15 @@ Requires: requests  (pip install requests)
 
 import argparse
 import json
+import os
+import sys
 import time
+from datetime import date
+
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from lib.mlb_api import get_active_roster, get_player_stats_by_date_range, get_team_schedule
 from advanced_stats import (
     calc_xbh_rate,
     calc_babip,
@@ -56,8 +76,7 @@ YANKEES_ORG_ID = 147
 
 # Fallback FIP constant, same reasoning as the rest of the pipeline: used
 # only when a level's own qualifying pitcher pool is too small to compute
-# a real constant. 3.10 is a recent MLB-wide norm, not level-accurate, but
-# safer than skipping FIP for that level entirely.
+# a real constant.
 FALLBACK_FIP_CONSTANT = 3.10
 
 # sportId -> our internal level code
@@ -68,6 +87,16 @@ SPORT_LEVELS = {
     14: "A",
     16: "ROK",   # covers FCL + DSL -- split further below
 }
+
+# Used to pick a promoted/demoted player's DISPLAY level -- his highest
+# level reached this season, standard prospect-media convention. DSL1/DSL2
+# and ROK are treated as the same tier (both true rookie ball), so a player
+# who spent time at both isn't arbitrarily ranked one above the other.
+LEVEL_RANK = {"DSL1": 0, "DSL2": 0, "ROK": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5}
+
+# Earliest plausible date to search from when hunting for a team's actual
+# Opening Day -- same reasoning as fetch_season_stats.py's SEARCH_FROM.
+SEARCH_FROM_MONTH_DAY = "-02-01"
 
 
 def get(url, params=None):
@@ -83,9 +112,6 @@ def find_affiliate_teams(season):
         data = get(f"{BASE}/teams", params={"sportId": sport_id, "season": season})
         for t in data.get("teams", []):
             if t.get("parentOrgId") == YANKEES_ORG_ID:
-                # DSL Yankees org sometimes fields two DSL clubs (e.g. "DSL Yankees",
-                # "DSL Bombers") both tagged sportId 16 with "Dominican" in the league
-                # name -- split those out from the Rookie/FCL squad.
                 this_level = level_id
                 league_name = (t.get("league") or {}).get("name", "")
                 if sport_id == 16 and "Dominican" in league_name:
@@ -99,150 +125,64 @@ def find_affiliate_teams(season):
     return teams
 
 
-MINOR_LEAGUE_SPORT_IDS = list(SPORT_LEVELS.keys())  # [11, 12, 13, 14, 16] -- deliberately excludes 1 (MLB)
-
-
-def fetch_hydrated_roster(team_id, season, own_sport_id):
-    """
-    One call per team: roster entries come back with each player's season
-    hitting AND pitching stat blocks already attached via hydrate, scoped
-    to the team's own sportId.
-
-    NOTE on cross-level combining (e.g. a player promoted High-A -> AA
-    mid-season): this version deliberately does NOT attempt to combine
-    stats across levels. Two earlier attempts at that broke in different
-    ways without a way to verify the real API response shape from this
-    environment (no live access to statsapi.mlb.com from this sandbox).
-    Rather than ship a third blind guess, this reverts to the version
-    confirmed working across all 7 levels, at the cost of only showing a
-    promoted/demoted player's CURRENT level's stats, not his combined
-    season line. See the bottom of this file for how to verify and
-    re-enable combining safely.
-    """
-    params = {
-        "rosterType": "active",
-        "hydrate": f"person(stats(type=season,group=[hitting,pitching],season={season},sportId={own_sport_id}))",
-    }
-    data = get(f"{BASE}/teams/{team_id}/roster", params=params)
-    return data.get("roster", [])
-
-
-def _ip_to_outs(ip_str):
-    """
-    Convert MLB's traditional innings-pitched notation (e.g. "62.2" meaning
-    62 and 2/3 innings) into whole outs. The digit after the decimal is
-    THIRDS of an inning, not a decimal fraction -- .1 = 1 out, .2 = 2 outs,
-    NOT .1 = 0.1 innings. Summing this field directly (as a float) across
-    multiple stints would silently produce wrong totals, which is exactly
-    the kind of error this whole rewrite exists to avoid.
-    """
-    if not ip_str:
-        return 0
-    whole, _, frac = str(ip_str).partition(".")
-    whole = int(whole or 0)
-    frac_outs = int(frac) if frac else 0  # 0, 1, or 2
-    return whole * 3 + frac_outs
-
-
-def _outs_to_ip_display(outs):
-    """Inverse of _ip_to_outs -- back to traditional "62.2" notation."""
-    return float(f"{outs // 3}.{outs % 3}")
-
-
-def extract_stat_group(person, group_name):
-    """
-    Sum raw counting stats for 'hitting' or 'pitching' across EVERY minor
-    league split a player has this season (i.e. across a mid-season
-    promotion/demotion), then derive rate stats (AVG/OBP/SLG/OPS or
-    ERA/WHIP/K9/BB9) from those true combined totals ourselves.
-
-    Deliberately does NOT trust any single split's precomputed rate stats,
-    and does NOT trust an "aggregate" split if the API happens to provide
-    one -- summing every team-level split ourselves is the only way to be
-    sure MLB time never sneaks into the total, since we explicitly only
-    ever request minor-league sportIds in the first place.
-
-    hitting totals now also sum intentionalWalks (used by calc_woba() for
-    a slightly more accurate wOBA -- unintentional vs intentional walks
-    carry different value). pitching totals now also sum homeRuns and
-    hitByPitch (both required by calc_fip()) -- neither was summed before
-    because nothing needed them until FIP was added.
-    """
-    for block in person.get("stats", []):
-        if block.get("group", {}).get("displayName") != group_name:
-            continue
-        splits = block.get("splits", [])
-        # Only sum splits that represent an actual team stint. A split
-        # without a 'team' key is sometimes a pre-aggregated total the API
-        # itself computed -- skip those and sum from the real per-team
-        # entries instead, so the math is fully ours and fully auditable.
-        team_splits = [s for s in splits if "team" in s]
-        if not team_splits:
-            team_splits = splits  # fall back if the API only gave one, teamless split
-        if not team_splits:
-            return None
-
-        if group_name == "hitting":
-            totals = {"atBats": 0, "hits": 0, "doubles": 0, "triples": 0, "homeRuns": 0,
-                      "rbi": 0, "baseOnBalls": 0, "hitByPitch": 0, "sacFlies": 0,
-                      "strikeOuts": 0, "stolenBases": 0, "plateAppearances": 0,
-                      "intentionalWalks": 0}
-            for s in team_splits:
-                stat = s.get("stat", {})
-                for key in totals:
-                    totals[key] += stat.get(key) or 0
-            singles = totals["hits"] - totals["doubles"] - totals["triples"] - totals["homeRuns"]
-            total_bases = singles + 2 * totals["doubles"] + 3 * totals["triples"] + 4 * totals["homeRuns"]
-            ab, h, bb, hbp, sf = (totals["atBats"], totals["hits"], totals["baseOnBalls"],
-                                   totals["hitByPitch"], totals["sacFlies"])
-            obp_denom = ab + bb + hbp + sf
-            obp = round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0
-            slg = round(total_bases / ab, 3) if ab else 0.0
-            return {
-                **totals,
-                "avg": round(h / ab, 3) if ab else 0.0,
-                "obp": obp,
-                "slg": slg,
-                "ops": round(obp + slg, 3),
-            }
-
-        else:  # pitching
-            totals = {"wins": 0, "losses": 0, "earnedRuns": 0, "hits": 0,
-                      "baseOnBalls": 0, "strikeOuts": 0, "battersFaced": 0,
-                      "homeRuns": 0, "hitByPitch": 0}
-            total_outs = 0
-            for s in team_splits:
-                stat = s.get("stat", {})
-                for key in totals:
-                    totals[key] += stat.get(key) or 0
-                total_outs += _ip_to_outs(stat.get("inningsPitched"))
-            true_ip = total_outs / 3 if total_outs else 0.0
-            return {
-                **totals,
-                "inningsPitched": _outs_to_ip_display(total_outs),
-                "inningsPitchedOuts": total_outs,  # raw outs, used by calc_fip() below --
-                                                    # avoids any float round-trip risk on
-                                                    # the display-formatted "62.2" value
-                "era": round(9 * totals["earnedRuns"] / true_ip, 2) if true_ip else 0.0,
-                "whip": round((totals["baseOnBalls"] + totals["hits"]) / true_ip, 2) if true_ip else 0.0,
-                "strikeoutsPer9Inn": round(9 * totals["strikeOuts"] / true_ip, 1) if true_ip else 0.0,
-                "walksPer9Inn": round(9 * totals["baseOnBalls"] / true_ip, 1) if true_ip else 0.0,
-            }
-    return None
+def find_opening_day(team_id, sport_id, search_from, end_date):
+    """Same approach as fetch_season_stats.py: ask the Stats API for this
+    team's real schedule rather than guessing a generic season-start date,
+    since levels start on different dates in a given year."""
+    games = get_team_schedule(team_id, search_from, end_date, sport_id=sport_id)
+    if not games:
+        return None
+    dates = [g["gameDate"][:10] for g in games if g.get("gameDate")]
+    return min(dates) if dates else None
 
 
 def pct(n, d):
     return round(100 * n / d, 1) if d else 0.0
 
 
+def _accumulate(bucket, stat, is_pitcher):
+    """Sums one team-stint's already-summed stat dict into a player's
+    running combined total across every team he's played for this season.
+    inningsPitched needs special handling -- summed as whole outs, not as
+    a float, since '.1'/'.2' represent thirds of an inning, not decimal
+    tenths."""
+    for k, v in stat.items():
+        if k == "inningsPitched":
+            continue
+        if isinstance(v, (int, float)) and not isinstance(v, bool):
+            bucket[k] = bucket.get(k, 0) + v
+    if is_pitcher:
+        ip_str = stat.get("inningsPitched", "0.0")
+        whole, _, frac = str(ip_str).partition(".")
+        outs = (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+        bucket["_outs"] = bucket.get("_outs", 0) + outs
+
+
+def fetch_bios(person_ids):
+    """Single batched call per chunk to /people?personIds=... for full bio
+    data (birth info, draft year, height/weight, bats/throws) -- no longer
+    available "for free" from a hydrated roster response, since
+    get_active_roster() doesn't hydrate bio data the way the old
+    fetch_hydrated_roster() did."""
+    bios = {}
+    ids = list(person_ids)
+    chunk_size = 50
+    for i in range(0, len(ids), chunk_size):
+        chunk = ids[i:i + chunk_size]
+        data = get(f"{BASE}/people", params={"personIds": ",".join(str(x) for x in chunk)})
+        for person in data.get("people", []):
+            bios[person["id"]] = person
+    return bios
+
+
 def bio_fields(person):
-    """
-    Bio fields from the SAME person object already returned by the roster
-    hydrate -- no new API call, no new hydrate syntax, nothing that can
-    break the working roster/stats fetch. Every field here is read
-    defensively (.get with a fallback) so a missing field just shows blank
-    on the profile page rather than crashing the whole run.
-    """
+    """Bio fields read defensively (.get with a fallback) so a missing
+    field just shows blank on the profile page rather than crashing the
+    whole run."""
+    if not person:
+        return {"age": None, "heightWeight": None, "bats": None, "throws": None,
+                "hometown": None, "origin": None, "birthDate": None}
+
     birth_city = person.get("birthCity")
     birth_state = person.get("birthStateProvince")
     birth_country = person.get("birthCountry")
@@ -252,11 +192,6 @@ def bio_fields(person):
         hometown = f"{hometown}, {birth_country}" if hometown else birth_country
 
     draft_year = person.get("draftYear")
-    # MLB's basic person object reliably includes draftYear for drafted
-    # players and omits it for international signees -- there isn't a
-    # clean "IFA" flag available without a separate, unverified API call,
-    # so this is a reasonable inference, not a guarantee. Flagged as such
-    # in the UI (see profile.html) rather than stated as fact.
     origin = f"Draft ({draft_year})" if draft_year else "International Free Agent (IFA)"
 
     height = person.get("height")
@@ -281,113 +216,120 @@ def bio_fields(person):
     }
 
 
-def build_hitter_row(person, stat, level_id):
-    pa = stat.get("plateAppearances") or 0
-    bb = stat.get("baseOnBalls") or 0
-    so = stat.get("strikeOuts") or 0
-    avg = float(stat.get("avg") or 0)
-    slg = float(stat.get("slg") or 0)
+def finalize_hitter(pid, name, pos, level_id, totals, bio_person):
+    ab = totals.get("atBats", 0)
+    h = totals.get("hits", 0)
+    doubles = totals.get("doubles", 0)
+    triples = totals.get("triples", 0)
+    hr = totals.get("homeRuns", 0)
+    bb = totals.get("baseOnBalls", 0)
+    hbp = totals.get("hitByPitch", 0)
+    sf = totals.get("sacFlies", 0)
+    so = totals.get("strikeOuts", 0)
+    sb = totals.get("stolenBases", 0)
+    rbi = totals.get("rbi", 0)
+    pa = totals.get("plateAppearances", 0)
+    ibb = totals.get("intentionalWalks", 0)
+
+    singles = h - doubles - triples - hr
+    tb = singles + 2 * doubles + 3 * triples + 4 * hr
+    avg = round(h / ab, 3) if ab else 0.0
+    obp_denom = ab + bb + hbp + sf
+    obp = round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0
+    slg = round(tb / ab, 3) if ab else 0.0
+    ops = round(obp + slg, 3)
     bbp = pct(bb, pa)
     kp = pct(so, pa)
 
-    # XBH%, BABIP, and wOBA computed here (not in a later pass) because
-    # `stat` -- the raw counting-stat dict from extract_stat_group() -- is
-    # only ever in scope at this call site; the row dict returned below
-    # never carries atBats/hits/doubles/etc. forward on its own.
-    xbh_pct = calc_xbh_rate(stat)
-    babip = calc_babip(stat)
-    woba = calc_woba(stat)
+    adv_input = {
+        "atBats": ab, "hits": h, "doubles": doubles, "triples": triples, "homeRuns": hr,
+        "baseOnBalls": bb, "hitByPitch": hbp, "sacFlies": sf, "strikeOuts": so,
+        "plateAppearances": pa, "intentionalWalks": ibb, "avg": avg, "slg": slg,
+    }
+    xbh_pct = calc_xbh_rate(adv_input)
+    babip = calc_babip(adv_input)
+    woba = calc_woba(adv_input)
 
     return {
-        "name": person["fullName"],
-        "mlbId": person["id"],
-        "pos": (person.get("primaryPosition") or {}).get("abbreviation", ""),
+        "name": name,
+        "mlbId": pid,
+        "pos": pos,
         "level": level_id,
         "avg": avg,
-        "obp": float(stat.get("obp") or 0),
+        "obp": obp,
         "slg": slg,
-        "ops": float(stat.get("ops") or 0),
-        "hr": stat.get("homeRuns", 0),
-        "rbi": stat.get("rbi", 0),
-        "sb": stat.get("stolenBases", 0),
+        "ops": ops,
+        "hr": hr,
+        "rbi": rbi,
+        "sb": sb,
         "bbp": bbp,
         "kp": kp,
-        "kbb": round(kp - bbp, 1),  # K-BB%, same 0-100 scale as bbp/kp above
+        "kbb": round(kp - bbp, 1),
         "iso": round(slg - avg, 3),
-        "xbhp": round(xbh_pct * 100, 1) if xbh_pct is not None else None,  # same 0-100 scale as bbp/kp
-        "babip": babip,   # kept as a .358-style fraction, matching AVG/OBP/SLG convention
-        "woba": woba,     # kept as a .379-style fraction, matching AVG/OBP/SLG convention
-        # Statcast fields -- not available from this endpoint; left null
-        # rather than fabricated. See enrich_with_statcast() below.
+        "xbhp": round(xbh_pct * 100, 1) if xbh_pct is not None else None,
+        "babip": babip,
+        "woba": woba,
         "maxev": None,
         "barrelp": None,
         "gbp": None,
         "fbp": None,
-        **bio_fields(person),
+        **bio_fields(bio_person),
     }
 
 
-def build_pitcher_row(person, stat, level_id):
-    bf = stat.get("battersFaced") or 0
-    so = stat.get("strikeOuts") or 0
-    bb = stat.get("baseOnBalls") or 0
+def finalize_pitcher(pid, name, pos, level_id, totals):
+    wins = totals.get("wins", 0)
+    losses = totals.get("losses", 0)
+    earned_runs = totals.get("earnedRuns", 0)
+    hits = totals.get("hits", 0)
+    bb = totals.get("baseOnBalls", 0)
+    so = totals.get("strikeOuts", 0)
+    bf = totals.get("battersFaced", 0)
+    hr = totals.get("homeRuns", 0)
+    hbp = totals.get("hitByPitch", 0)
+    outs = totals.get("_outs", 0)
+    true_ip = outs / 3 if outs else 0.0
+
+    era = round(9 * earned_runs / true_ip, 2) if true_ip else 0.0
+    whip = round((bb + hits) / true_ip, 2) if true_ip else 0.0
+    k9 = round(9 * so / true_ip, 1) if true_ip else 0.0
+    bb9 = round(9 * bb / true_ip, 1) if true_ip else 0.0
     kp = pct(so, bf)
     bbp = pct(bb, bf)
 
     return {
-        "name": person["fullName"],
-        "mlbId": person["id"],
-        "pos": (person.get("primaryPosition") or {}).get("abbreviation", "P"),
+        "name": name,
+        "mlbId": pid,
+        "pos": pos,
         "level": level_id,
-        "w": stat.get("wins", 0),
-        "l": stat.get("losses", 0),
-        "era": float(stat.get("era") or 0),
-        "whip": float(stat.get("whip") or 0),
-        "ip": float(stat.get("inningsPitched") or 0),
-        "k9": float(stat.get("strikeoutsPer9Inn") or 0),
-        "bb9": float(stat.get("walksPer9Inn") or 0),
+        "w": wins,
+        "l": losses,
+        "era": era,
+        "whip": whip,
+        "ip": float(f"{outs // 3}.{outs % 3}") if outs else 0.0,
+        "k9": k9,
+        "bb9": bb9,
         "kp": kp,
         "bbp": bbp,
-        "kbb": round(kp - bbp, 1),  # K-BB%, same 0-100 scale as kp/bbp above
-        # FIP is intentionally NOT set here -- it needs a level-wide
-        # constant that only exists after every pitcher at this level has
-        # been built. See apply_fip_by_level() in main(), which fills this
-        # in as a second pass. Raw fields it needs are stashed below so
-        # that second pass doesn't need to re-fetch or re-derive anything.
+        "kbb": round(kp - bbp, 1),
         "fip": None,
-        "_homeRuns": stat.get("homeRuns", 0),
-        "_hitByPitch": stat.get("hitByPitch", 0),
-        "_inningsPitchedOuts": stat.get("inningsPitchedOuts", 0),
+        "_homeRuns": hr,
+        "_hitByPitch": hbp,
+        "_outs": outs,
         "_strikeOuts": so,
         "_baseOnBalls": bb,
-        **bio_fields(person),
     }
 
 
 def apply_fip_by_level(pitchers):
-    """
-    Computes FIP for every pitcher, grouped by level (AAA/AA/A+/A/ROK/
-    DSL1/DSL2) -- a level-specific FIP constant, not one org-wide constant,
-    since offensive environments differ sharply between e.g. DSL and AAA.
-    Same approach used in fetch_season_stats.py and generate_leaderboard.py
-    for the weekly/season leaderboard pipeline.
-
-    Cleans up the temporary "_"-prefixed raw fields build_pitcher_row()
-    stashed on each row afterward -- those exist only to make this
-    function possible without a second data-fetch pass, not as fields
-    analytics.html should ever see or display.
-    """
     by_level = {}
     for row in pitchers:
         by_level.setdefault(row["level"], []).append(row)
 
     for level, rows in by_level.items():
-        # Build the small dicts calc_fip_constant()/calc_fip() actually
-        # expect (homeRuns, baseOnBalls, hitByPitch, strikeOuts,
-        # inningsPitched-as-string), from the stashed raw fields.
         fip_inputs = []
         for row in rows:
-            outs = row["_inningsPitchedOuts"]
+            outs = row["_outs"]
             fip_inputs.append({
                 "homeRuns": row["_homeRuns"],
                 "baseOnBalls": row["_baseOnBalls"],
@@ -402,16 +344,13 @@ def apply_fip_by_level(pitchers):
         if fip_constant is None:
             fip_constant = FALLBACK_FIP_CONSTANT
             print(f"  NOTE: using fallback FIP constant ({FALLBACK_FIP_CONSTANT}) for "
-                  f"level '{level}' -- could not compute a real per-level constant "
-                  f"(likely too few qualifying pitchers).")
+                  f"level '{level}' -- could not compute a real per-level constant.")
 
         for row, fip_input in zip(rows, fip_inputs):
             row["fip"] = calc_fip(fip_input, fip_constant)
 
-    # Strip the temporary raw fields now that FIP is set -- they were
-    # never meant to reach data.json / analytics.html.
     for row in pitchers:
-        for key in ("_homeRuns", "_hitByPitch", "_inningsPitchedOuts", "_strikeOuts", "_baseOnBalls"):
+        for key in ("_homeRuns", "_hitByPitch", "_outs", "_strikeOuts", "_baseOnBalls"):
             row.pop(key, None)
 
     return pitchers
@@ -421,12 +360,6 @@ STATCAST_LEVELS = {"AAA", "A"}  # Tampa Tarpons play at Steinbrenner Field, whic
 
 
 def enrich_with_statcast(hitters, season):
-    """
-    Best-effort: Baseball Savant has an undocumented CSV leaderboard endpoint
-    that covers Triple-A parks with Statcast installed. Not the same system
-    as statsapi.mlb.com, no guaranteed schema -- treat as optional, fail
-    quietly per player rather than raising.
-    """
     import csv
     import io
 
@@ -434,7 +367,7 @@ def enrich_with_statcast(hitters, season):
     if not targets:
         return
 
-    print(f"Attempting Statcast enrichment for {len(targets)} Triple-A hitters...")
+    print(f"Attempting Statcast enrichment for {len(targets)} hitters...")
     url = "https://baseballsavant.mlb.com/leaderboard/statcast"
     params = {"type": "batter", "year": season, "position": "", "team": "", "min": 1, "csv": "true"}
     try:
@@ -469,38 +402,82 @@ def main():
     parser.add_argument("--out", default="data.json")
     args = parser.parse_args()
 
-    print(f"Finding Yankees affiliate teams for {args.season}...")
-    teams = find_affiliate_teams(args.season)
+    season = args.season
+    end_date = date.today().isoformat()
+    search_from = f"{season}{SEARCH_FROM_MONTH_DAY}"
+
+    print(f"Finding Yankees affiliate teams for {season}...")
+    teams = find_affiliate_teams(season)
     for t in teams:
         print(f"  {t['level_id']:5s} {t['name']} (teamId={t['teamId']})")
 
-    hitters, pitchers = [], []
+    hitting_totals = {}
+    pitching_totals = {}
+    person_names = {}
+    person_pos = {}
+    person_levels_touched = {}
 
     for t in teams:
-        print(f"Fetching hydrated roster for {t['name']}...")
-        roster = fetch_hydrated_roster(t["teamId"], args.season, t["sportId"])
+        print(f"Finding Opening Day for {t['name']}...")
+        opening_day = find_opening_day(t["teamId"], t["sportId"], search_from, end_date)
+        if not opening_day:
+            print(f"  WARNING: could not find any completed games for {t['name']}. Skipping.")
+            continue
+        print(f"  Opening Day: {opening_day}. Pulling full-season roster...")
+
+        roster = get_active_roster(t["teamId"], season)  # rosterType=fullSeason
         for entry in roster:
             person = entry["person"]
+            pid = person["id"]
             pos_type = (entry.get("position") or {}).get("type", "")
             is_pitcher = pos_type == "Pitcher"
+            pos_abbrev = (entry.get("position") or {}).get("abbreviation", "P" if is_pitcher else "")
 
             group = "pitching" if is_pitcher else "hitting"
-            stat = extract_stat_group(person, group)
+            stat = get_player_stats_by_date_range(
+                pid, group, t["sportId"], season, opening_day, end_date, team_id=t["teamId"]
+            )
             if not stat:
-                continue  # no stats logged yet this season
+                continue
 
-            if is_pitcher:
-                pitchers.append(build_pitcher_row(person, stat, t["level_id"]))
-            else:
-                hitters.append(build_hitter_row(person, stat, t["level_id"]))
+            person_names[pid] = person.get("fullName")
+            person_pos[pid] = pos_abbrev
+            person_levels_touched.setdefault(pid, []).append(t["level_id"])
 
-        time.sleep(0.1)  # one pause per team now, not per player
+            target = pitching_totals if is_pitcher else hitting_totals
+            bucket = target.setdefault(pid, {})
+            _accumulate(bucket, stat, is_pitcher)
+
+        time.sleep(0.1)
+
+    def display_level(pid):
+        levels = person_levels_touched.get(pid, [])
+        if not levels:
+            return "ROK"
+        return max(levels, key=lambda lv: LEVEL_RANK.get(lv, 0))
+
+    all_person_ids = set(hitting_totals) | set(pitching_totals)
+    print(f"Fetching bios for {len(all_person_ids)} players...")
+    bios = fetch_bios(all_person_ids)
+
+    hitters = [
+        finalize_hitter(pid, person_names[pid], person_pos.get(pid, ""), display_level(pid),
+                         totals, bios.get(pid))
+        for pid, totals in hitting_totals.items()
+    ]
+    pitchers = [
+        finalize_pitcher(pid, person_names[pid], person_pos.get(pid, "P"), display_level(pid), totals)
+        for pid, totals in pitching_totals.items()
+    ]
+
+    for row in pitchers:
+        row.update(bio_fields(bios.get(row["mlbId"])))
 
     apply_fip_by_level(pitchers)
-    enrich_with_statcast(hitters, args.season)
+    enrich_with_statcast(hitters, season)
 
     payload = {
-        "season": args.season,
+        "season": season,
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "hitters": hitters,
         "pitchers": pitchers,
@@ -513,26 +490,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# --- Notes on re-enabling cross-level stat combining ---
-#
-# To fix "promoted player only shows current level's stats" properly, the
-# real MLB Stats API response shape needs to be inspected first -- both
-# attempts at this broke in different ways from blind guesses at hydrate
-# syntax. Before trying again, run this from a machine that CAN reach
-# statsapi.mlb.com and inspect the raw JSON directly:
-#
-#   https://statsapi.mlb.com/api/v1/people/<Roderick-Arias-mlbId>/stats?
-#     stats=season&group=hitting&season=2026&sportId=11,12,13,14,16
-#
-# Check specifically:
-#   1. Does this return multiple splits (one per team), or does it error?
-#   2. If multiple splits, does each split include enough info (team id,
-#      sport id) to sum them reliably in this script?
-#   3. Try the bracket-array form too: sportId=[11,12,13,14,16]
-#
-# Once the real shape is confirmed, extract_stat_group() can be extended
-# to sum across splits -- the summation/rate-recomputation logic already
-# in that function is unit-tested and correct; it's only the REQUEST that
-# needs a verified-working query.
