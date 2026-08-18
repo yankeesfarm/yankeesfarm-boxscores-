@@ -178,41 +178,49 @@ def compute_team_record(games, team_id):
     return {"wins": wins, "losses": losses, "winPct": win_pct}
 
 
-def fetch_team_aggregate_stats(team_id, sport_id, season):
-    """Team-wide hitting/pitching totals via the Stats API's own
-    team-level stats endpoint -- NOT summed from individual player rows,
-    since MLB tracks team totals directly and that avoids any risk of
-    double-counting/undercounting from a promoted player's stats being
-    split across two teams' rosters (the exact class of bug the
-    cross-level hitter/pitcher combining fix elsewhere in this file deals
-    with -- team-level totals don't have that problem at all, since
-    they're the team's own tracked aggregate, not a sum of roster rows)."""
-    hitting = get(f"{BASE}/teams/{team_id}/stats",
-                   params={"stats": "season", "group": "hitting", "season": season, "sportId": sport_id})
-    pitching = get(f"{BASE}/teams/{team_id}/stats",
-                    params={"stats": "season", "group": "pitching", "season": season, "sportId": sport_id})
-
-    def first_split_stat(payload):
-        for block in payload.get("stats", []):
-            splits = block.get("splits", [])
-            if splits:
-                return splits[0].get("stat", {})
-        return {}
-
-    h = first_split_stat(hitting)
-    p = first_split_stat(pitching)
+def finalize_team_batting(totals):
+    """Team-wide batting line, computed the SAME way individual player
+    rows are (never trusted from a separate pre-aggregated API call) --
+    derived from raw counts accumulated directly from every player's
+    per-team stat fetch during the roster loop in main(), BEFORE any
+    cross-level combining happens. This is what actually fixes the
+    promoted-player undercount bug: a player promoted away from this team
+    mid-season still gets summed into these totals, since his team-scoped
+    stat fetch for THIS specific team already captured his real production
+    here, independent of where he ends up being displayed individually."""
+    ab = totals.get("atBats", 0)
+    h = totals.get("hits", 0)
+    doubles = totals.get("doubles", 0)
+    triples = totals.get("triples", 0)
+    hr = totals.get("homeRuns", 0)
+    bb = totals.get("baseOnBalls", 0)
+    hbp = totals.get("hitByPitch", 0)
+    sf = totals.get("sacFlies", 0)
+    singles = h - doubles - triples - hr
+    tb = singles + 2 * doubles + 3 * triples + 4 * hr
+    obp_denom = ab + bb + hbp + sf
     return {
-        "avg": float(h.get("avg") or 0),
-        "obp": float(h.get("obp") or 0),
-        "slg": float(h.get("slg") or 0),
-        "ops": float(h.get("ops") or 0),
-        "runs": h.get("runs", 0),
-        "homeRuns": h.get("homeRuns", 0),
-        "stolenBases": h.get("stolenBases", 0),
-        "era": float(p.get("era") or 0),
-        "whip": float(p.get("whip") or 0),
-        "strikeOuts": p.get("strikeOuts", 0),
-        "saves": p.get("saves", 0),
+        "avg": round(h / ab, 3) if ab else 0.0,
+        "obp": round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0,
+        "slg": round(tb / ab, 3) if ab else 0.0,
+        "ops": round(((h + bb + hbp) / obp_denom if obp_denom else 0.0) + (round(tb / ab, 3) if ab else 0.0), 3),
+        "runs": totals.get("runs", 0),
+        "homeRuns": hr,
+        "stolenBases": totals.get("stolenBases", 0),
+    }
+
+
+def finalize_team_pitching(totals):
+    """Same principle as finalize_team_batting() -- summed directly from
+    every pitcher's per-team stat fetch during the roster loop, not a
+    separate team-stats API call."""
+    outs = totals.get("_outs", 0)
+    true_ip = outs / 3 if outs else 0.0
+    return {
+        "era": round(9 * totals.get("earnedRuns", 0) / true_ip, 2) if true_ip else 0.0,
+        "whip": round((totals.get("baseOnBalls", 0) + totals.get("hits", 0)) / true_ip, 2) if true_ip else 0.0,
+        "strikeOuts": totals.get("strikeOuts", 0),
+        "saves": totals.get("saves", 0),
     }
 
 
@@ -525,14 +533,16 @@ def main():
         print(f"  Opening Day: {opening_day}. Pulling full-season roster...")
 
         record = compute_team_record(season_games, t["teamId"])
-        team_agg = fetch_team_aggregate_stats(t["teamId"], t["sportId"], season)
-        team_rows.append({
-            "teamId": t["teamId"],
-            "name": t["name"],
-            "level": t["level_id"],
-            **record,
-            **team_agg,
-        })
+
+        # Accumulated fresh per team, directly from each player's per-team
+        # stat fetch below -- NOT from the final cross-level "hitters"/
+        # "pitchers" lists, which intentionally show a promoted player
+        # under only his highest level reached. A player promoted AWAY
+        # from this team mid-season still needs to count toward THIS
+        # team's season totals, which only these team-scoped accumulators
+        # capture correctly.
+        team_batting_totals = {}
+        team_pitching_totals = {}
 
         roster = get_active_roster(t["teamId"], season)  # rosterType=fullSeason
         for entry in roster:
@@ -556,6 +566,18 @@ def main():
             target = pitching_totals if is_pitcher else hitting_totals
             bucket = target.setdefault(pid, {})
             _accumulate(bucket, stat, is_pitcher)
+
+            team_bucket = team_pitching_totals if is_pitcher else team_batting_totals
+            _accumulate(team_bucket, stat, is_pitcher)
+
+        team_rows.append({
+            "teamId": t["teamId"],
+            "name": t["name"],
+            "level": t["level_id"],
+            **record,
+            **finalize_team_batting(team_batting_totals),
+            **finalize_team_pitching(team_pitching_totals),
+        })
 
         time.sleep(0.1)
 
