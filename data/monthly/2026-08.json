@@ -36,10 +36,19 @@
       "stolenBases": 8,
       "caughtStealing": 2,
       "strikeOuts": 19,
+      "plateAppearances": 51,
+      "intentionalWalks": 0,
       "avg": 0.222,
       "obp": 0.314,
       "slg": 0.267,
-      "ops": 0.581
+      "ops": 0.581,
+      "bbPct": 0.1176,
+      "kPct": 0.3725,
+      "kMinusBbPct": 0.2549,
+      "xbhPct": 0.2,
+      "iso": 0.045,
+      "babip": 0.385,
+      "woba": 0.27
     },
     {
       "id": "801489",
@@ -57,10 +66,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 11,
+      "plateAppearances": 43,
+      "intentionalWalks": 0,
       "avg": 0.27,
       "obp": 0.372,
       "slg": 0.486,
-      "ops": 0.858
+      "ops": 0.858,
+      "bbPct": 0.1395,
+      "kPct": 0.2558,
+      "kMinusBbPct": 0.1163,
+      "xbhPct": 0.4,
+      "iso": 0.216,
+      "babip": 0.333,
+      "woba": 0.377
     },
     {
       "id": "801307",
@@ -78,10 +96,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 7,
+      "plateAppearances": 21,
+      "intentionalWalks": 0,
       "avg": 0.263,
       "obp": 0.333,
       "slg": 0.474,
-      "ops": 0.807
+      "ops": 0.807,
+      "bbPct": 0.0952,
+      "kPct": 0.3333,
+      "kMinusBbPct": 0.2381,
+      "xbhPct": 0.4,
+      "iso": 0.211,
+      "babip": 0.364,
+      "woba": 0.353
     },
     {
       "id": "824425",
@@ -99,10 +126,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 35,
+      "intentionalWalks": 0,
       "avg": 0.333,
       "obp": 0.429,
       "slg": 0.567,
-      "ops": 0.996
+      "ops": 0.996,
+      "bbPct": 0.1143,
+      "kPct": 0.1429,
+      "kMinusBbPct": 0.0286,
+      "xbhPct": 0.3,
+      "iso": 0.234,
+      "babip": 0.348,
+      "woba": 0.433
     },
     {
       "id": "701816",
@@ -120,10 +156,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 12,
+      "plateAppearances": 37,
+      "intentionalWalks": 0,
       "avg": 0.167,
       "obp": 0.324,
       "slg": 0.3,
-      "ops": 0.624
+      "ops": 0.624,
+      "bbPct": 0.1351,
+      "kPct": 0.3243,
+      "kMinusBbPct": 0.1892,
+      "xbhPct": 0.4,
+      "iso": 0.133,
+      "babip": 0.235,
+      "woba": 0.295
     },
     {
       "id": "701331",
@@ -141,10 +186,19 @@
       "stolenBases": 4,
       "caughtStealing": 0,
       "strikeOuts": 7,
+      "plateAppearances": 27,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.407,
       "slg": 0.3,
-      "ops": 0.707
+      "ops": 0.707,
+      "bbPct": 0.1481,
+      "kPct": 0.2593,
+      "kMinusBbPct": 0.1112,
+      "xbhPct": 0.2,
+      "iso": 0.05,
+      "babip": 0.357,
+      "woba": 0.334
     },
     {
       "id": "821648",
@@ -162,10 +216,19 @@
       "stolenBases": 1,
       "caughtStealing": 2,
       "strikeOuts": 20,
+      "plateAppearances": 68,
+      "intentionalWalks": 0,
       "avg": 0.19,
       "obp": 0.25,
       "slg": 0.381,
-      "ops": 0.631
+      "ops": 0.631,
+      "bbPct": 0.0588,
+      "kPct": 0.2941,
+      "kMinusBbPct": 0.2353,
+      "xbhPct": 0.4167,
+      "iso": 0.191,
+      "babip": 0.225,
+      "woba": 0.278
     },
     {
       "id": "691411",
@@ -183,10 +246,19 @@
       "stolenBases": 18,
       "caughtStealing": 6,
       "strikeOuts": 12,
+      "plateAppearances": 105,
+      "intentionalWalks": 0,
       "avg": 0.312,
       "obp": 0.362,
       "slg": 0.365,
-      "ops": 0.727
+      "ops": 0.727,
+      "bbPct": 0.0571,
+      "kPct": 0.1143,
+      "kMinusBbPct": 0.0572,
+      "xbhPct": 0.1333,
+      "iso": 0.053,
+      "babip": 0.353,
+      "woba": 0.325
     },
     {
       "id": "806884",
@@ -204,10 +276,19 @@
       "stolenBases": 9,
       "caughtStealing": 1,
       "strikeOuts": 30,
+      "plateAppearances": 159,
+      "intentionalWalks": 0,
       "avg": 0.256,
       "obp": 0.428,
       "slg": 0.529,
-      "ops": 0.957
+      "ops": 0.957,
+      "bbPct": 0.2264,
+      "kPct": 0.1887,
+      "kMinusBbPct": -0.0377,
+      "xbhPct": 0.4839,
+      "iso": 0.273,
+      "babip": 0.265,
+      "woba": 0.417
     },
     {
       "id": "801726",
@@ -225,10 +306,19 @@
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 14,
+      "plateAppearances": 74,
+      "intentionalWalks": 0,
       "avg": 0.206,
       "obp": 0.311,
       "slg": 0.317,
-      "ops": 0.628
+      "ops": 0.628,
+      "bbPct": 0.0946,
+      "kPct": 0.1892,
+      "kMinusBbPct": 0.0946,
+      "xbhPct": 0.4615,
+      "iso": 0.111,
+      "babip": 0.26,
+      "woba": 0.286
     },
     {
       "id": "809719",
@@ -246,10 +336,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 14,
+      "plateAppearances": 89,
+      "intentionalWalks": 0,
       "avg": 0.203,
       "obp": 0.326,
       "slg": 0.284,
-      "ops": 0.61
+      "ops": 0.61,
+      "bbPct": 0.1461,
+      "kPct": 0.1573,
+      "kMinusBbPct": 0.0112,
+      "xbhPct": 0.2,
+      "iso": 0.081,
+      "babip": 0.233,
+      "woba": 0.285
     },
     {
       "id": "827290",
@@ -267,10 +366,19 @@
       "stolenBases": 3,
       "caughtStealing": 1,
       "strikeOuts": 5,
+      "plateAppearances": 30,
+      "intentionalWalks": 0,
       "avg": 0.125,
       "obp": 0.3,
       "slg": 0.125,
-      "ops": 0.425
+      "ops": 0.425,
+      "bbPct": 0.1667,
+      "kPct": 0.1667,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.158,
+      "woba": 0.228
     },
     {
       "id": "824424",
@@ -288,10 +396,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 7,
+      "plateAppearances": 37,
+      "intentionalWalks": 0,
       "avg": 0.194,
       "obp": 0.324,
       "slg": 0.29,
-      "ops": 0.614
+      "ops": 0.614,
+      "bbPct": 0.1351,
+      "kPct": 0.1892,
+      "kMinusBbPct": 0.0541,
+      "xbhPct": 0.3333,
+      "iso": 0.096,
+      "babip": 0.25,
+      "woba": 0.287
     },
     {
       "id": "822496",
@@ -309,10 +426,19 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 8,
+      "plateAppearances": 18,
+      "intentionalWalks": 0,
       "avg": 0.077,
       "obp": 0.333,
       "slg": 0.077,
-      "ops": 0.41
+      "ops": 0.41,
+      "bbPct": 0.2222,
+      "kPct": 0.4444,
+      "kMinusBbPct": 0.2222,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.2,
+      "woba": 0.243
     },
     {
       "id": "826142",
@@ -330,10 +456,19 @@
       "stolenBases": 9,
       "caughtStealing": 8,
       "strikeOuts": 50,
+      "plateAppearances": 228,
+      "intentionalWalks": 0,
       "avg": 0.277,
       "obp": 0.399,
       "slg": 0.399,
-      "ops": 0.798
+      "ops": 0.798,
+      "bbPct": 0.1535,
+      "kPct": 0.2193,
+      "kMinusBbPct": 0.0658,
+      "xbhPct": 0.3269,
+      "iso": 0.122,
+      "babip": 0.365,
+      "woba": 0.36
     },
     {
       "id": "828076",
@@ -351,10 +486,19 @@
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 20,
+      "plateAppearances": 88,
+      "intentionalWalks": 0,
       "avg": 0.286,
       "obp": 0.432,
       "slg": 0.443,
-      "ops": 0.875
+      "ops": 0.875,
+      "bbPct": 0.2045,
+      "kPct": 0.2273,
+      "kMinusBbPct": 0.0228,
+      "xbhPct": 0.3,
+      "iso": 0.157,
+      "babip": 0.375,
+      "woba": 0.392
     },
     {
       "id": "808106",
@@ -372,10 +516,19 @@
       "stolenBases": 5,
       "caughtStealing": 1,
       "strikeOuts": 22,
+      "plateAppearances": 89,
+      "intentionalWalks": 0,
       "avg": 0.164,
       "obp": 0.315,
       "slg": 0.342,
-      "ops": 0.657
+      "ops": 0.657,
+      "bbPct": 0.1461,
+      "kPct": 0.2472,
+      "kMinusBbPct": 0.1011,
+      "xbhPct": 0.5833,
+      "iso": 0.178,
+      "babip": 0.188,
+      "woba": 0.303
     },
     {
       "id": "804944",
@@ -393,10 +546,19 @@
       "stolenBases": 21,
       "caughtStealing": 7,
       "strikeOuts": 101,
+      "plateAppearances": 363,
+      "intentionalWalks": 0,
       "avg": 0.275,
       "obp": 0.35,
       "slg": 0.509,
-      "ops": 0.859
+      "ops": 0.859,
+      "bbPct": 0.0992,
+      "kPct": 0.2782,
+      "kMinusBbPct": 0.179,
+      "xbhPct": 0.4205,
+      "iso": 0.234,
+      "babip": 0.341,
+      "woba": 0.372
     },
     {
       "id": "701727",
@@ -414,10 +576,19 @@
       "stolenBases": 34,
       "caughtStealing": 8,
       "strikeOuts": 94,
+      "plateAppearances": 404,
+      "intentionalWalks": 1,
       "avg": 0.275,
       "obp": 0.384,
       "slg": 0.425,
-      "ops": 0.809
+      "ops": 0.809,
+      "bbPct": 0.1287,
+      "kPct": 0.2327,
+      "kMinusBbPct": 0.104,
+      "xbhPct": 0.3261,
+      "iso": 0.15,
+      "babip": 0.349,
+      "woba": 0.359
     },
     {
       "id": "800741",
@@ -435,10 +606,19 @@
       "stolenBases": 9,
       "caughtStealing": 1,
       "strikeOuts": 24,
+      "plateAppearances": 124,
+      "intentionalWalks": 0,
       "avg": 0.27,
       "obp": 0.379,
       "slg": 0.46,
-      "ops": 0.839
+      "ops": 0.839,
+      "bbPct": 0.1532,
+      "kPct": 0.1935,
+      "kMinusBbPct": 0.0403,
+      "xbhPct": 0.3333,
+      "iso": 0.19,
+      "babip": 0.293,
+      "woba": 0.366
     },
     {
       "id": "806963",
@@ -456,10 +636,19 @@
       "stolenBases": 10,
       "caughtStealing": 3,
       "strikeOuts": 72,
+      "plateAppearances": 283,
+      "intentionalWalks": 0,
       "avg": 0.265,
       "obp": 0.343,
       "slg": 0.372,
-      "ops": 0.715
+      "ops": 0.715,
+      "bbPct": 0.0848,
+      "kPct": 0.2544,
+      "kMinusBbPct": 0.1696,
+      "xbhPct": 0.2239,
+      "iso": 0.107,
+      "babip": 0.349,
+      "woba": 0.322
     },
     {
       "id": "806154",
@@ -477,10 +666,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 36,
+      "plateAppearances": 130,
+      "intentionalWalks": 0,
       "avg": 0.288,
       "obp": 0.377,
       "slg": 0.514,
-      "ops": 0.891
+      "ops": 0.891,
+      "bbPct": 0.1077,
+      "kPct": 0.2769,
+      "kMinusBbPct": 0.1692,
+      "xbhPct": 0.4062,
+      "iso": 0.226,
+      "babip": 0.375,
+      "woba": 0.385
     },
     {
       "id": "694215",
@@ -498,10 +696,19 @@
       "stolenBases": 35,
       "caughtStealing": 7,
       "strikeOuts": 99,
+      "plateAppearances": 417,
+      "intentionalWalks": 0,
       "avg": 0.234,
       "obp": 0.357,
       "slg": 0.425,
-      "ops": 0.782
+      "ops": 0.782,
+      "bbPct": 0.1439,
+      "kPct": 0.2374,
+      "kMinusBbPct": 0.0935,
+      "xbhPct": 0.4444,
+      "iso": 0.191,
+      "babip": 0.29,
+      "woba": 0.348
     },
     {
       "id": "701206",
@@ -519,10 +726,19 @@
       "stolenBases": 18,
       "caughtStealing": 3,
       "strikeOuts": 83,
+      "plateAppearances": 323,
+      "intentionalWalks": 0,
       "avg": 0.278,
       "obp": 0.35,
       "slg": 0.472,
-      "ops": 0.822
+      "ops": 0.822,
+      "bbPct": 0.096,
+      "kPct": 0.257,
+      "kMinusBbPct": 0.161,
+      "xbhPct": 0.375,
+      "iso": 0.194,
+      "babip": 0.349,
+      "woba": 0.359
     },
     {
       "id": "829769",
@@ -540,10 +756,19 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 9,
+      "plateAppearances": 45,
+      "intentionalWalks": 0,
       "avg": 0.31,
       "obp": 0.333,
       "slg": 0.476,
-      "ops": 0.809
+      "ops": 0.809,
+      "bbPct": 0.0222,
+      "kPct": 0.2,
+      "kMinusBbPct": 0.1778,
+      "xbhPct": 0.2308,
+      "iso": 0.166,
+      "babip": 0.364,
+      "woba": 0.347
     },
     {
       "id": "835219",
@@ -561,10 +786,19 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 3,
+      "plateAppearances": 28,
+      "intentionalWalks": 0,
       "avg": 0.364,
       "obp": 0.5,
       "slg": 0.682,
-      "ops": 1.182
+      "ops": 1.182,
+      "bbPct": 0.1786,
+      "kPct": 0.1071,
+      "kMinusBbPct": -0.0715,
+      "xbhPct": 0.375,
+      "iso": 0.318,
+      "babip": 0.353,
+      "woba": 0.503
     },
     {
       "id": "809772",
@@ -582,10 +816,19 @@
       "stolenBases": 8,
       "caughtStealing": 4,
       "strikeOuts": 75,
+      "plateAppearances": 272,
+      "intentionalWalks": 0,
       "avg": 0.278,
       "obp": 0.346,
       "slg": 0.535,
-      "ops": 0.881
+      "ops": 0.881,
+      "bbPct": 0.0882,
+      "kPct": 0.2757,
+      "kMinusBbPct": 0.1875,
+      "xbhPct": 0.4706,
+      "iso": 0.257,
+      "babip": 0.344,
+      "woba": 0.38
     },
     {
       "id": "820991",
@@ -603,10 +846,19 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 15,
+      "plateAppearances": 37,
+      "intentionalWalks": 0,
       "avg": 0.206,
       "obp": 0.27,
       "slg": 0.265,
-      "ops": 0.535
+      "ops": 0.535,
+      "bbPct": 0.0811,
+      "kPct": 0.4054,
+      "kMinusBbPct": 0.3243,
+      "xbhPct": 0.2857,
+      "iso": 0.059,
+      "babip": 0.368,
+      "woba": 0.245
     },
     {
       "id": "815528",
@@ -624,10 +876,19 @@
       "stolenBases": 5,
       "caughtStealing": 1,
       "strikeOuts": 69,
+      "plateAppearances": 221,
+      "intentionalWalks": 0,
       "avg": 0.187,
       "obp": 0.303,
       "slg": 0.262,
-      "ops": 0.565
+      "ops": 0.565,
+      "bbPct": 0.095,
+      "kPct": 0.3122,
+      "kMinusBbPct": 0.2172,
+      "xbhPct": 0.2286,
+      "iso": 0.075,
+      "babip": 0.274,
+      "woba": 0.267
     },
     {
       "id": "800285",
@@ -645,10 +906,19 @@
       "stolenBases": 12,
       "caughtStealing": 4,
       "strikeOuts": 30,
+      "plateAppearances": 143,
+      "intentionalWalks": 0,
       "avg": 0.232,
       "obp": 0.392,
       "slg": 0.384,
-      "ops": 0.776
+      "ops": 0.776,
+      "bbPct": 0.1958,
+      "kPct": 0.2098,
+      "kMinusBbPct": 0.014,
+      "xbhPct": 0.4615,
+      "iso": 0.152,
+      "babip": 0.296,
+      "woba": 0.353
     },
     {
       "id": "800246",
@@ -666,10 +936,19 @@
       "stolenBases": 7,
       "caughtStealing": 4,
       "strikeOuts": 73,
+      "plateAppearances": 311,
+      "intentionalWalks": 0,
       "avg": 0.207,
       "obp": 0.331,
       "slg": 0.36,
-      "ops": 0.691
+      "ops": 0.691,
+      "bbPct": 0.1447,
+      "kPct": 0.2347,
+      "kMinusBbPct": 0.09,
+      "xbhPct": 0.463,
+      "iso": 0.153,
+      "babip": 0.258,
+      "woba": 0.314
     },
     {
       "id": "814269",
@@ -687,10 +966,19 @@
       "stolenBases": 3,
       "caughtStealing": 1,
       "strikeOuts": 12,
+      "plateAppearances": 36,
+      "intentionalWalks": 0,
       "avg": 0.152,
       "obp": 0.222,
       "slg": 0.273,
-      "ops": 0.495
+      "ops": 0.495,
+      "bbPct": 0.0833,
+      "kPct": 0.3333,
+      "kMinusBbPct": 0.25,
+      "xbhPct": 0.4,
+      "iso": 0.121,
+      "babip": 0.2,
+      "woba": 0.225
     },
     {
       "id": "703149",
@@ -708,10 +996,19 @@
       "stolenBases": 29,
       "caughtStealing": 10,
       "strikeOuts": 116,
+      "plateAppearances": 395,
+      "intentionalWalks": 0,
       "avg": 0.271,
       "obp": 0.357,
       "slg": 0.441,
-      "ops": 0.798
+      "ops": 0.798,
+      "bbPct": 0.1013,
+      "kPct": 0.2937,
+      "kMinusBbPct": 0.1924,
+      "xbhPct": 0.3478,
+      "iso": 0.17,
+      "babip": 0.367,
+      "woba": 0.351
     },
     {
       "id": "823754",
@@ -729,10 +1026,19 @@
       "stolenBases": 5,
       "caughtStealing": 0,
       "strikeOuts": 33,
+      "plateAppearances": 117,
+      "intentionalWalks": 0,
       "avg": 0.234,
       "obp": 0.376,
       "slg": 0.383,
-      "ops": 0.759
+      "ops": 0.759,
+      "bbPct": 0.188,
+      "kPct": 0.2821,
+      "kMinusBbPct": 0.0941,
+      "xbhPct": 0.3636,
+      "iso": 0.149,
+      "babip": 0.322,
+      "woba": 0.344
     },
     {
       "id": "691411",
@@ -750,10 +1056,19 @@
       "stolenBases": 18,
       "caughtStealing": 3,
       "strikeOuts": 13,
+      "plateAppearances": 103,
+      "intentionalWalks": 0,
       "avg": 0.347,
       "obp": 0.398,
       "slg": 0.442,
-      "ops": 0.84
+      "ops": 0.84,
+      "bbPct": 0.068,
+      "kPct": 0.1262,
+      "kMinusBbPct": 0.0582,
+      "xbhPct": 0.2121,
+      "iso": 0.095,
+      "babip": 0.402,
+      "woba": 0.371
     },
     {
       "id": "702068",
@@ -771,10 +1086,19 @@
       "stolenBases": 10,
       "caughtStealing": 5,
       "strikeOuts": 15,
+      "plateAppearances": 100,
+      "intentionalWalks": 0,
       "avg": 0.256,
       "obp": 0.42,
       "slg": 0.346,
-      "ops": 0.766
+      "ops": 0.766,
+      "bbPct": 0.19,
+      "kPct": 0.15,
+      "kMinusBbPct": -0.04,
+      "xbhPct": 0.25,
+      "iso": 0.09,
+      "babip": 0.306,
+      "woba": 0.358
     },
     {
       "id": "823759",
@@ -792,10 +1116,19 @@
       "stolenBases": 7,
       "caughtStealing": 1,
       "strikeOuts": 81,
+      "plateAppearances": 435,
+      "intentionalWalks": 1,
       "avg": 0.266,
       "obp": 0.402,
       "slg": 0.428,
-      "ops": 0.83
+      "ops": 0.83,
+      "bbPct": 0.131,
+      "kPct": 0.1862,
+      "kMinusBbPct": 0.0552,
+      "xbhPct": 0.337,
+      "iso": 0.162,
+      "babip": 0.309,
+      "woba": 0.372
     },
     {
       "id": "801726",
@@ -813,10 +1146,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 8,
+      "plateAppearances": 21,
+      "intentionalWalks": 0,
       "avg": 0.211,
       "obp": 0.286,
       "slg": 0.211,
-      "ops": 0.497
+      "ops": 0.497,
+      "bbPct": 0.0952,
+      "kPct": 0.381,
+      "kMinusBbPct": 0.2858,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.364,
+      "woba": 0.235
     },
     {
       "id": "700648",
@@ -834,10 +1176,19 @@
       "stolenBases": 8,
       "caughtStealing": 3,
       "strikeOuts": 64,
+      "plateAppearances": 264,
+      "intentionalWalks": 0,
       "avg": 0.219,
       "obp": 0.348,
       "slg": 0.381,
-      "ops": 0.729
+      "ops": 0.729,
+      "bbPct": 0.1477,
+      "kPct": 0.2424,
+      "kMinusBbPct": 0.0947,
+      "xbhPct": 0.4255,
+      "iso": 0.162,
+      "babip": 0.275,
+      "woba": 0.328
     },
     {
       "id": "800299",
@@ -855,10 +1206,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 19,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.368,
       "slg": 0.375,
-      "ops": 0.743
+      "ops": 0.743,
+      "bbPct": 0.1053,
+      "kPct": 0.2632,
+      "kMinusBbPct": 0.1579,
+      "xbhPct": 0.5,
+      "iso": 0.125,
+      "babip": 0.364,
+      "woba": 0.338
     },
     {
       "id": "692110",
@@ -876,10 +1236,19 @@
       "stolenBases": 32,
       "caughtStealing": 7,
       "strikeOuts": 72,
+      "plateAppearances": 352,
+      "intentionalWalks": 0,
       "avg": 0.259,
       "obp": 0.369,
       "slg": 0.474,
-      "ops": 0.843
+      "ops": 0.843,
+      "bbPct": 0.1278,
+      "kPct": 0.2045,
+      "kMinusBbPct": 0.0767,
+      "xbhPct": 0.4474,
+      "iso": 0.215,
+      "babip": 0.299,
+      "woba": 0.369
     },
     {
       "id": "808106",
@@ -897,10 +1266,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 16,
+      "intentionalWalks": 0,
       "avg": 0.167,
       "obp": 0.312,
       "slg": 0.167,
-      "ops": 0.479
+      "ops": 0.479,
+      "bbPct": 0.0625,
+      "kPct": 0.3125,
+      "kMinusBbPct": 0.25,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.25,
+      "woba": 0.244
     },
     {
       "id": "804944",
@@ -918,10 +1296,19 @@
       "stolenBases": 10,
       "caughtStealing": 1,
       "strikeOuts": 25,
+      "plateAppearances": 69,
+      "intentionalWalks": 0,
       "avg": 0.349,
       "obp": 0.391,
       "slg": 0.476,
-      "ops": 0.867
+      "ops": 0.867,
+      "bbPct": 0.0725,
+      "kPct": 0.3623,
+      "kMinusBbPct": 0.2898,
+      "xbhPct": 0.1364,
+      "iso": 0.127,
+      "babip": 0.541,
+      "woba": 0.379
     },
     {
       "id": "701727",
@@ -939,10 +1326,19 @@
       "stolenBases": 7,
       "caughtStealing": 0,
       "strikeOuts": 12,
+      "plateAppearances": 50,
+      "intentionalWalks": 0,
       "avg": 0.182,
       "obp": 0.26,
       "slg": 0.25,
-      "ops": 0.51
+      "ops": 0.51,
+      "bbPct": 0.08,
+      "kPct": 0.24,
+      "kMinusBbPct": 0.16,
+      "xbhPct": 0.25,
+      "iso": 0.068,
+      "babip": 0.242,
+      "woba": 0.234
     },
     {
       "id": "806154",
@@ -960,10 +1356,19 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 10,
+      "plateAppearances": 41,
+      "intentionalWalks": 0,
       "avg": 0.324,
       "obp": 0.39,
       "slg": 0.757,
-      "ops": 1.147
+      "ops": 1.147,
+      "bbPct": 0.0244,
+      "kPct": 0.2439,
+      "kMinusBbPct": 0.2195,
+      "xbhPct": 0.5,
+      "iso": 0.433,
+      "babip": 0.318,
+      "woba": 0.487
     },
     {
       "id": "821296",
@@ -981,10 +1386,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 19,
+      "plateAppearances": 71,
+      "intentionalWalks": 0,
       "avg": 0.241,
       "obp": 0.38,
       "slg": 0.362,
-      "ops": 0.742
+      "ops": 0.742,
+      "bbPct": 0.1408,
+      "kPct": 0.2676,
+      "kMinusBbPct": 0.1268,
+      "xbhPct": 0.3571,
+      "iso": 0.121,
+      "babip": 0.342,
+      "woba": 0.341
     },
     {
       "id": "694215",
@@ -1002,10 +1416,19 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 4,
+      "plateAppearances": 16,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.438,
       "slg": 0.25,
-      "ops": 0.688
+      "ops": 0.688,
+      "bbPct": 0.25,
+      "kPct": 0.25,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.375,
+      "woba": 0.339
     },
     {
       "id": "701206",
@@ -1023,10 +1446,19 @@
       "stolenBases": 4,
       "caughtStealing": 0,
       "strikeOuts": 13,
+      "plateAppearances": 47,
+      "intentionalWalks": 0,
       "avg": 0.205,
       "obp": 0.234,
       "slg": 0.25,
-      "ops": 0.484
+      "ops": 0.484,
+      "bbPct": 0.0426,
+      "kPct": 0.2766,
+      "kMinusBbPct": 0.234,
+      "xbhPct": 0.2222,
+      "iso": 0.045,
+      "babip": 0.281,
+      "woba": 0.216
     },
     {
       "id": "694742",
@@ -1044,10 +1476,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 93,
+      "plateAppearances": 213,
+      "intentionalWalks": 0,
       "avg": 0.229,
       "obp": 0.291,
       "slg": 0.495,
-      "ops": 0.786
+      "ops": 0.786,
+      "bbPct": 0.0751,
+      "kPct": 0.4366,
+      "kMinusBbPct": 0.3615,
+      "xbhPct": 0.5227,
+      "iso": 0.266,
+      "babip": 0.348,
+      "woba": 0.337
     },
     {
       "id": "809569",
@@ -1065,10 +1506,19 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 8,
+      "plateAppearances": 38,
+      "intentionalWalks": 0,
       "avg": 0.333,
       "obp": 0.421,
       "slg": 0.7,
-      "ops": 1.121
+      "ops": 1.121,
+      "bbPct": 0.1579,
+      "kPct": 0.2105,
+      "kMinusBbPct": 0.0526,
+      "xbhPct": 0.5,
+      "iso": 0.367,
+      "babip": 0.333,
+      "woba": 0.459
     },
     {
       "id": "815147",
@@ -1086,10 +1536,19 @@
       "stolenBases": 20,
       "caughtStealing": 5,
       "strikeOuts": 72,
+      "plateAppearances": 359,
+      "intentionalWalks": 0,
       "avg": 0.259,
       "obp": 0.379,
       "slg": 0.427,
-      "ops": 0.806
+      "ops": 0.806,
+      "bbPct": 0.1616,
+      "kPct": 0.2006,
+      "kMinusBbPct": 0.039,
+      "xbhPct": 0.3684,
+      "iso": 0.168,
+      "babip": 0.311,
+      "woba": 0.357
     },
     {
       "id": "800285",
@@ -1107,10 +1566,19 @@
       "stolenBases": 21,
       "caughtStealing": 6,
       "strikeOuts": 55,
+      "plateAppearances": 285,
+      "intentionalWalks": 0,
       "avg": 0.22,
       "obp": 0.333,
       "slg": 0.328,
-      "ops": 0.661
+      "ops": 0.661,
+      "bbPct": 0.1263,
+      "kPct": 0.193,
+      "kMinusBbPct": 0.0667,
+      "xbhPct": 0.2642,
+      "iso": 0.108,
+      "babip": 0.258,
+      "woba": 0.304
     },
     {
       "id": "831025",
@@ -1128,10 +1596,19 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 9,
+      "plateAppearances": 30,
+      "intentionalWalks": 0,
       "avg": 0.286,
       "obp": 0.333,
       "slg": 0.393,
-      "ops": 0.726
+      "ops": 0.726,
+      "bbPct": 0.0667,
+      "kPct": 0.3,
+      "kMinusBbPct": 0.2333,
+      "xbhPct": 0.25,
+      "iso": 0.107,
+      "babip": 0.421,
+      "woba": 0.32
     },
     {
       "id": "803131",
@@ -1149,10 +1626,19 @@
       "stolenBases": 12,
       "caughtStealing": 1,
       "strikeOuts": 74,
+      "plateAppearances": 347,
+      "intentionalWalks": 0,
       "avg": 0.238,
       "obp": 0.314,
       "slg": 0.381,
-      "ops": 0.695
+      "ops": 0.695,
+      "bbPct": 0.1037,
+      "kPct": 0.2133,
+      "kMinusBbPct": 0.1096,
+      "xbhPct": 0.3425,
+      "iso": 0.143,
+      "babip": 0.281,
+      "woba": 0.309
     },
     {
       "id": "823918",
@@ -1170,10 +1656,19 @@
       "stolenBases": 15,
       "caughtStealing": 2,
       "strikeOuts": 141,
+      "plateAppearances": 470,
+      "intentionalWalks": 0,
       "avg": 0.226,
       "obp": 0.291,
       "slg": 0.401,
-      "ops": 0.692
+      "ops": 0.692,
+      "bbPct": 0.0745,
+      "kPct": 0.3,
+      "kMinusBbPct": 0.2255,
+      "xbhPct": 0.3711,
+      "iso": 0.175,
+      "babip": 0.289,
+      "woba": 0.306
     },
     {
       "id": "694834",
@@ -1191,10 +1686,19 @@
       "stolenBases": 5,
       "caughtStealing": 1,
       "strikeOuts": 7,
+      "plateAppearances": 52,
+      "intentionalWalks": 0,
       "avg": 0.2,
       "obp": 0.288,
       "slg": 0.244,
-      "ops": 0.532
+      "ops": 0.532,
+      "bbPct": 0.1154,
+      "kPct": 0.1346,
+      "kMinusBbPct": 0.0192,
+      "xbhPct": 0.1111,
+      "iso": 0.044,
+      "babip": 0.231,
+      "woba": 0.247
     },
     {
       "id": "692657",
@@ -1212,10 +1716,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 20,
+      "plateAppearances": 49,
+      "intentionalWalks": 0,
       "avg": 0.111,
       "obp": 0.184,
       "slg": 0.178,
-      "ops": 0.362
+      "ops": 0.362,
+      "bbPct": 0.0612,
+      "kPct": 0.4082,
+      "kMinusBbPct": 0.347,
+      "xbhPct": 0.2,
+      "iso": 0.067,
+      "babip": 0.167,
+      "woba": 0.172
     },
     {
       "id": "703149",
@@ -1233,10 +1746,19 @@
       "stolenBases": 3,
       "caughtStealing": 3,
       "strikeOuts": 15,
+      "plateAppearances": 51,
+      "intentionalWalks": 0,
       "avg": 0.261,
       "obp": 0.333,
       "slg": 0.435,
-      "ops": 0.768
+      "ops": 0.768,
+      "bbPct": 0.0784,
+      "kPct": 0.2941,
+      "kMinusBbPct": 0.2157,
+      "xbhPct": 0.4167,
+      "iso": 0.174,
+      "babip": 0.367,
+      "woba": 0.338
     },
     {
       "id": "701778",
@@ -1254,10 +1776,19 @@
       "stolenBases": 14,
       "caughtStealing": 1,
       "strikeOuts": 106,
+      "plateAppearances": 426,
+      "intentionalWalks": 0,
       "avg": 0.254,
       "obp": 0.357,
       "slg": 0.495,
-      "ops": 0.852
+      "ops": 0.852,
+      "bbPct": 0.1244,
+      "kPct": 0.2488,
+      "kMinusBbPct": 0.1244,
+      "xbhPct": 0.5054,
+      "iso": 0.241,
+      "babip": 0.306,
+      "woba": 0.372
     },
     {
       "id": "814431",
@@ -1275,10 +1806,19 @@
       "stolenBases": 11,
       "caughtStealing": 1,
       "strikeOuts": 72,
+      "plateAppearances": 408,
+      "intentionalWalks": 0,
       "avg": 0.239,
       "obp": 0.343,
       "slg": 0.356,
-      "ops": 0.699
+      "ops": 0.699,
+      "bbPct": 0.1275,
+      "kPct": 0.1765,
+      "kMinusBbPct": 0.049,
+      "xbhPct": 0.2892,
+      "iso": 0.117,
+      "babip": 0.277,
+      "woba": 0.317
     },
     {
       "id": "686540",
@@ -1296,10 +1836,19 @@
       "stolenBases": 14,
       "caughtStealing": 1,
       "strikeOuts": 54,
+      "plateAppearances": 258,
+      "intentionalWalks": 0,
       "avg": 0.246,
       "obp": 0.298,
       "slg": 0.346,
-      "ops": 0.644
+      "ops": 0.644,
+      "bbPct": 0.0698,
+      "kPct": 0.2093,
+      "kMinusBbPct": 0.1395,
+      "xbhPct": 0.2881,
+      "iso": 0.1,
+      "babip": 0.306,
+      "woba": 0.287
     },
     {
       "id": "685744",
@@ -1317,10 +1866,19 @@
       "stolenBases": 7,
       "caughtStealing": 0,
       "strikeOuts": 21,
+      "plateAppearances": 87,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.333,
       "slg": 0.408,
-      "ops": 0.741
+      "ops": 0.741,
+      "bbPct": 0.092,
+      "kPct": 0.2414,
+      "kMinusBbPct": 0.1494,
+      "xbhPct": 0.3158,
+      "iso": 0.158,
+      "babip": 0.302,
+      "woba": 0.329
     },
     {
       "id": "701816",
@@ -1338,10 +1896,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 3,
+      "plateAppearances": 3,
+      "intentionalWalks": 0,
       "avg": 0.0,
       "obp": 0.0,
       "slg": 0.0,
-      "ops": 0.0
+      "ops": 0.0,
+      "bbPct": 0.0,
+      "kPct": 1.0,
+      "kMinusBbPct": 1.0,
+      "xbhPct": null,
+      "iso": 0.0,
+      "babip": null,
+      "woba": 0.0
     },
     {
       "id": "691411",
@@ -1359,10 +1926,19 @@
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 5,
+      "plateAppearances": 43,
+      "intentionalWalks": 0,
       "avg": 0.324,
       "obp": 0.419,
       "slg": 0.405,
-      "ops": 0.824
+      "ops": 0.824,
+      "bbPct": 0.093,
+      "kPct": 0.1163,
+      "kMinusBbPct": 0.0233,
+      "xbhPct": 0.1667,
+      "iso": 0.081,
+      "babip": 0.375,
+      "woba": 0.371
     },
     {
       "id": "694281",
@@ -1380,10 +1956,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 11,
+      "plateAppearances": 65,
+      "intentionalWalks": 0,
       "avg": 0.241,
       "obp": 0.308,
       "slg": 0.328,
-      "ops": 0.636
+      "ops": 0.636,
+      "bbPct": 0.0923,
+      "kPct": 0.1692,
+      "kMinusBbPct": 0.0769,
+      "xbhPct": 0.2143,
+      "iso": 0.087,
+      "babip": 0.277,
+      "woba": 0.285
     },
     {
       "id": "702068",
@@ -1401,10 +1986,19 @@
       "stolenBases": 7,
       "caughtStealing": 1,
       "strikeOuts": 21,
+      "plateAppearances": 85,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.353,
       "slg": 0.417,
-      "ops": 0.77
+      "ops": 0.77,
+      "bbPct": 0.1176,
+      "kPct": 0.2471,
+      "kMinusBbPct": 0.1295,
+      "xbhPct": 0.3333,
+      "iso": 0.167,
+      "babip": 0.306,
+      "woba": 0.343
     },
     {
       "id": "687554",
@@ -1422,10 +2016,19 @@
       "stolenBases": 17,
       "caughtStealing": 1,
       "strikeOuts": 137,
+      "plateAppearances": 394,
+      "intentionalWalks": 0,
       "avg": 0.265,
       "obp": 0.322,
       "slg": 0.508,
-      "ops": 0.83
+      "ops": 0.83,
+      "bbPct": 0.0711,
+      "kPct": 0.3477,
+      "kMinusBbPct": 0.2766,
+      "xbhPct": 0.4526,
+      "iso": 0.243,
+      "babip": 0.363,
+      "woba": 0.358
     },
     {
       "id": "801726",
@@ -1443,10 +2046,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
+      "plateAppearances": 10,
+      "intentionalWalks": 0,
       "avg": 0.375,
       "obp": 0.5,
       "slg": 0.625,
-      "ops": 1.125
+      "ops": 1.125,
+      "bbPct": 0.2,
+      "kPct": 0.2,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.6667,
+      "iso": 0.25,
+      "babip": 0.5,
+      "woba": 0.481
     },
     {
       "id": "663757",
@@ -1464,10 +2076,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 0,
+      "plateAppearances": 4,
+      "intentionalWalks": 0,
       "avg": 0.333,
       "obp": 0.5,
       "slg": 0.667,
-      "ops": 1.167
+      "ops": 1.167,
+      "bbPct": 0.25,
+      "kPct": 0.0,
+      "kMinusBbPct": -0.25,
+      "xbhPct": 1.0,
+      "iso": 0.334,
+      "babip": 0.333,
+      "woba": 0.49
     },
     {
       "id": "670868",
@@ -1485,10 +2106,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 10,
+      "plateAppearances": 61,
+      "intentionalWalks": 0,
       "avg": 0.305,
       "obp": 0.328,
       "slg": 0.373,
-      "ops": 0.701
+      "ops": 0.701,
+      "bbPct": 0.0328,
+      "kPct": 0.1639,
+      "kMinusBbPct": 0.1311,
+      "xbhPct": 0.2222,
+      "iso": 0.068,
+      "babip": 0.367,
+      "woba": 0.31
     },
     {
       "id": "676205",
@@ -1506,10 +2136,19 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 45,
+      "plateAppearances": 167,
+      "intentionalWalks": 0,
       "avg": 0.3,
       "obp": 0.371,
       "slg": 0.613,
-      "ops": 0.984
+      "ops": 0.984,
+      "bbPct": 0.0898,
+      "kPct": 0.2695,
+      "kMinusBbPct": 0.1797,
+      "xbhPct": 0.4667,
+      "iso": 0.313,
+      "babip": 0.348,
+      "woba": 0.423
     },
     {
       "id": "692110",
@@ -1527,10 +2166,19 @@
       "stolenBases": 4,
       "caughtStealing": 0,
       "strikeOuts": 3,
+      "plateAppearances": 22,
+      "intentionalWalks": 0,
       "avg": 0.294,
       "obp": 0.409,
       "slg": 0.412,
-      "ops": 0.821
+      "ops": 0.821,
+      "bbPct": 0.1818,
+      "kPct": 0.1364,
+      "kMinusBbPct": -0.0454,
+      "xbhPct": 0.2,
+      "iso": 0.118,
+      "babip": 0.333,
+      "woba": 0.36
     },
     {
       "id": "806146",
@@ -1548,10 +2196,19 @@
       "stolenBases": 4,
       "caughtStealing": 3,
       "strikeOuts": 19,
+      "plateAppearances": 90,
+      "intentionalWalks": 0,
       "avg": 0.312,
       "obp": 0.4,
       "slg": 0.571,
-      "ops": 0.971
+      "ops": 0.971,
+      "bbPct": 0.1333,
+      "kPct": 0.2111,
+      "kMinusBbPct": 0.0778,
+      "xbhPct": 0.5,
+      "iso": 0.259,
+      "babip": 0.364,
+      "woba": 0.417
     },
     {
       "id": "682617",
@@ -1569,10 +2226,19 @@
       "stolenBases": 3,
       "caughtStealing": 1,
       "strikeOuts": 32,
+      "plateAppearances": 117,
+      "intentionalWalks": 0,
       "avg": 0.327,
       "obp": 0.41,
       "slg": 0.713,
-      "ops": 1.123
+      "ops": 1.123,
+      "bbPct": 0.1111,
+      "kPct": 0.2735,
+      "kMinusBbPct": 0.1624,
+      "xbhPct": 0.5758,
+      "iso": 0.386,
+      "babip": 0.383,
+      "woba": 0.473
     },
     {
       "id": "682003",
@@ -1590,10 +2256,19 @@
       "stolenBases": 17,
       "caughtStealing": 4,
       "strikeOuts": 67,
+      "plateAppearances": 291,
+      "intentionalWalks": 0,
       "avg": 0.27,
       "obp": 0.344,
       "slg": 0.568,
-      "ops": 0.912
+      "ops": 0.912,
+      "bbPct": 0.0893,
+      "kPct": 0.2302,
+      "kMinusBbPct": 0.1409,
+      "xbhPct": 0.5,
+      "iso": 0.298,
+      "babip": 0.283,
+      "woba": 0.391
     },
     {
       "id": "821296",
@@ -1611,10 +2286,19 @@
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 63,
+      "plateAppearances": 274,
+      "intentionalWalks": 0,
       "avg": 0.246,
       "obp": 0.325,
       "slg": 0.393,
-      "ops": 0.718
+      "ops": 0.718,
+      "bbPct": 0.0766,
+      "kPct": 0.2299,
+      "kMinusBbPct": 0.1533,
+      "xbhPct": 0.3167,
+      "iso": 0.147,
+      "babip": 0.299,
+      "woba": 0.32
     },
     {
       "id": "815089",
@@ -1632,10 +2316,19 @@
       "stolenBases": 19,
       "caughtStealing": 9,
       "strikeOuts": 112,
+      "plateAppearances": 447,
+      "intentionalWalks": 0,
       "avg": 0.273,
       "obp": 0.362,
       "slg": 0.492,
-      "ops": 0.854
+      "ops": 0.854,
+      "bbPct": 0.1253,
+      "kPct": 0.2506,
+      "kMinusBbPct": 0.1253,
+      "xbhPct": 0.4057,
+      "iso": 0.219,
+      "babip": 0.335,
+      "woba": 0.372
     },
     {
       "id": "694742",
@@ -1653,10 +2346,19 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 55,
+      "plateAppearances": 171,
+      "intentionalWalks": 0,
       "avg": 0.239,
       "obp": 0.298,
       "slg": 0.458,
-      "ops": 0.756
+      "ops": 0.756,
+      "bbPct": 0.0819,
+      "kPct": 0.3216,
+      "kMinusBbPct": 0.2397,
+      "xbhPct": 0.4865,
+      "iso": 0.219,
+      "babip": 0.309,
+      "woba": 0.328
     },
     {
       "id": "692633",
@@ -1674,10 +2376,19 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 37,
+      "plateAppearances": 244,
+      "intentionalWalks": 0,
       "avg": 0.266,
       "obp": 0.324,
       "slg": 0.347,
-      "ops": 0.671
+      "ops": 0.671,
+      "bbPct": 0.0779,
+      "kPct": 0.1516,
+      "kMinusBbPct": 0.0737,
+      "xbhPct": 0.1695,
+      "iso": 0.081,
+      "babip": 0.301,
+      "woba": 0.301
     },
     {
       "id": "682692",
@@ -1695,10 +2406,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 41,
+      "plateAppearances": 193,
+      "intentionalWalks": 0,
       "avg": 0.227,
       "obp": 0.311,
       "slg": 0.407,
-      "ops": 0.718
+      "ops": 0.718,
+      "bbPct": 0.0881,
+      "kPct": 0.2124,
+      "kMinusBbPct": 0.1243,
+      "xbhPct": 0.3333,
+      "iso": 0.18,
+      "babip": 0.246,
+      "woba": 0.32
     },
     {
       "id": "804603",
@@ -1716,10 +2436,19 @@
       "stolenBases": 1,
       "caughtStealing": 1,
       "strikeOuts": 5,
+      "plateAppearances": 31,
+      "intentionalWalks": 0,
       "avg": 0.37,
       "obp": 0.452,
       "slg": 0.481,
-      "ops": 0.933
+      "ops": 0.933,
+      "bbPct": 0.129,
+      "kPct": 0.1613,
+      "kMinusBbPct": 0.0323,
+      "xbhPct": 0.3,
+      "iso": 0.111,
+      "babip": 0.455,
+      "woba": 0.413
     },
     {
       "id": "657051",
@@ -1737,10 +2466,19 @@
       "stolenBases": 5,
       "caughtStealing": 0,
       "strikeOuts": 41,
+      "plateAppearances": 162,
+      "intentionalWalks": 1,
       "avg": 0.247,
       "obp": 0.321,
       "slg": 0.315,
-      "ops": 0.636
+      "ops": 0.636,
+      "bbPct": 0.0864,
+      "kPct": 0.2531,
+      "kMinusBbPct": 0.1667,
+      "xbhPct": 0.1667,
+      "iso": 0.068,
+      "babip": 0.33,
+      "woba": 0.288
     },
     {
       "id": "814269",
@@ -1758,10 +2496,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 29,
+      "plateAppearances": 102,
+      "intentionalWalks": 0,
       "avg": 0.211,
       "obp": 0.255,
       "slg": 0.379,
-      "ops": 0.634
+      "ops": 0.634,
+      "bbPct": 0.0588,
+      "kPct": 0.2843,
+      "kMinusBbPct": 0.2255,
+      "xbhPct": 0.4,
+      "iso": 0.168,
+      "babip": 0.254,
+      "woba": 0.277
     },
     {
       "id": "683011",
@@ -1779,10 +2526,19 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 34,
+      "intentionalWalks": 0,
       "avg": 0.241,
       "obp": 0.324,
       "slg": 0.241,
-      "ops": 0.565
+      "ops": 0.565,
+      "bbPct": 0.1176,
+      "kPct": 0.1471,
+      "kMinusBbPct": 0.0295,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.28,
+      "woba": 0.264
     },
     {
       "id": "542194",
@@ -1800,10 +2556,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 26,
+      "intentionalWalks": 0,
       "avg": 0.348,
       "obp": 0.423,
       "slg": 0.739,
-      "ops": 1.162
+      "ops": 1.162,
+      "bbPct": 0.1154,
+      "kPct": 0.1923,
+      "kMinusBbPct": 0.0769,
+      "xbhPct": 0.375,
+      "iso": 0.391,
+      "babip": 0.333,
+      "woba": 0.493
     },
     {
       "id": "664913",
@@ -1821,10 +2586,19 @@
       "stolenBases": 3,
       "caughtStealing": 0,
       "strikeOuts": 69,
+      "plateAppearances": 208,
+      "intentionalWalks": 0,
       "avg": 0.235,
       "obp": 0.327,
       "slg": 0.426,
-      "ops": 0.753
+      "ops": 0.753,
+      "bbPct": 0.1106,
+      "kPct": 0.3317,
+      "kMinusBbPct": 0.2211,
+      "xbhPct": 0.3721,
+      "iso": 0.191,
+      "babip": 0.324,
+      "woba": 0.334
     },
     {
       "id": "665828",
@@ -1842,10 +2616,19 @@
       "stolenBases": 8,
       "caughtStealing": 1,
       "strikeOuts": 83,
+      "plateAppearances": 428,
+      "intentionalWalks": 1,
       "avg": 0.291,
       "obp": 0.348,
       "slg": 0.441,
-      "ops": 0.789
+      "ops": 0.789,
+      "bbPct": 0.0864,
+      "kPct": 0.1939,
+      "kMinusBbPct": 0.1075,
+      "xbhPct": 0.2523,
+      "iso": 0.15,
+      "babip": 0.331,
+      "woba": 0.344
     },
     {
       "id": "686540",
@@ -1863,10 +2646,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 21,
+      "intentionalWalks": 0,
       "avg": 0.238,
       "obp": 0.238,
       "slg": 0.381,
-      "ops": 0.619
+      "ops": 0.619,
+      "bbPct": 0.0,
+      "kPct": 0.2381,
+      "kMinusBbPct": 0.2381,
+      "xbhPct": 0.6,
+      "iso": 0.143,
+      "babip": 0.312,
+      "woba": 0.266
     },
     {
       "id": "685744",
@@ -1884,10 +2676,19 @@
       "stolenBases": 8,
       "caughtStealing": 6,
       "strikeOuts": 49,
+      "plateAppearances": 218,
+      "intentionalWalks": 0,
       "avg": 0.247,
       "obp": 0.349,
       "slg": 0.398,
-      "ops": 0.747
+      "ops": 0.747,
+      "bbPct": 0.1284,
+      "kPct": 0.2248,
+      "kMinusBbPct": 0.0964,
+      "xbhPct": 0.3261,
+      "iso": 0.151,
+      "babip": 0.301,
+      "woba": 0.333
     },
     {
       "id": "657557",
@@ -1905,10 +2706,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 18,
+      "plateAppearances": 83,
+      "intentionalWalks": 0,
       "avg": 0.203,
       "obp": 0.361,
       "slg": 0.516,
-      "ops": 0.877
+      "ops": 0.877,
+      "bbPct": 0.1928,
+      "kPct": 0.2169,
+      "kMinusBbPct": 0.0241,
+      "xbhPct": 0.6154,
+      "iso": 0.313,
+      "babip": 0.167,
+      "woba": 0.378
     },
     {
       "id": "691176",
@@ -1926,10 +2736,19 @@
       "stolenBases": 10,
       "caughtStealing": 2,
       "strikeOuts": 28,
+      "plateAppearances": 162,
+      "intentionalWalks": 1,
       "avg": 0.285,
       "obp": 0.364,
       "slg": 0.444,
-      "ops": 0.808
+      "ops": 0.808,
+      "bbPct": 0.1049,
+      "kPct": 0.1728,
+      "kMinusBbPct": 0.0679,
+      "xbhPct": 0.2683,
+      "iso": 0.159,
+      "babip": 0.318,
+      "woba": 0.356
     },
     {
       "id": "702750",
@@ -1947,10 +2766,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
+      "plateAppearances": 6,
+      "intentionalWalks": 0,
       "avg": 0.2,
       "obp": 0.333,
       "slg": 0.4,
-      "ops": 0.733
+      "ops": 0.733,
+      "bbPct": 0.1667,
+      "kPct": 0.1667,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 1.0,
+      "iso": 0.2,
+      "babip": 0.25,
+      "woba": 0.327
     },
     {
       "id": "668752",
@@ -1968,10 +2796,19 @@
       "stolenBases": 44,
       "caughtStealing": 6,
       "strikeOuts": 63,
+      "plateAppearances": 259,
+      "intentionalWalks": 1,
       "avg": 0.238,
       "obp": 0.301,
       "slg": 0.357,
-      "ops": 0.658
+      "ops": 0.658,
+      "bbPct": 0.0734,
+      "kPct": 0.2432,
+      "kMinusBbPct": 0.1698,
+      "xbhPct": 0.3036,
+      "iso": 0.119,
+      "babip": 0.306,
+      "woba": 0.291
     },
     {
       "id": "641555",
@@ -1989,10 +2826,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 19,
+      "plateAppearances": 164,
+      "intentionalWalks": 0,
       "avg": 0.287,
       "obp": 0.366,
       "slg": 0.517,
-      "ops": 0.883
+      "ops": 0.883,
+      "bbPct": 0.0915,
+      "kPct": 0.1159,
+      "kMinusBbPct": 0.0244,
+      "xbhPct": 0.4634,
+      "iso": 0.23,
+      "babip": 0.286,
+      "woba": 0.383
     },
     {
       "id": "692585",
@@ -2010,10 +2856,19 @@
       "stolenBases": 2,
       "caughtStealing": 2,
       "strikeOuts": 97,
+      "plateAppearances": 430,
+      "intentionalWalks": 0,
       "avg": 0.256,
       "obp": 0.309,
       "slg": 0.449,
-      "ops": 0.758
+      "ops": 0.758,
+      "bbPct": 0.0721,
+      "kPct": 0.2256,
+      "kMinusBbPct": 0.1535,
+      "xbhPct": 0.3465,
+      "iso": 0.193,
+      "babip": 0.288,
+      "woba": 0.331
     },
     {
       "id": "702068",
@@ -2031,10 +2886,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 6,
+      "plateAppearances": 39,
+      "intentionalWalks": 0,
       "avg": 0.306,
       "obp": 0.359,
       "slg": 0.333,
-      "ops": 0.692
+      "ops": 0.692,
+      "bbPct": 0.0769,
+      "kPct": 0.1538,
+      "kMinusBbPct": 0.0769,
+      "xbhPct": 0.0909,
+      "iso": 0.027,
+      "babip": 0.367,
+      "woba": 0.313
     },
     {
       "id": "641598",
@@ -2052,10 +2916,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
+      "plateAppearances": 4,
+      "intentionalWalks": 0,
       "avg": 0.333,
       "obp": 0.5,
       "slg": 0.667,
-      "ops": 1.167
+      "ops": 1.167,
+      "bbPct": 0.25,
+      "kPct": 0.25,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 1.0,
+      "iso": 0.334,
+      "babip": 0.5,
+      "woba": 0.49
     },
     {
       "id": "670868",
@@ -2073,10 +2946,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 7,
+      "plateAppearances": 40,
+      "intentionalWalks": 0,
       "avg": 0.162,
       "obp": 0.225,
       "slg": 0.324,
-      "ops": 0.549
+      "ops": 0.549,
+      "bbPct": 0.075,
+      "kPct": 0.175,
+      "kMinusBbPct": 0.1,
+      "xbhPct": 0.3333,
+      "iso": 0.162,
+      "babip": 0.143,
+      "woba": 0.246
     },
     {
       "id": "676205",
@@ -2094,10 +2976,19 @@
       "stolenBases": 7,
       "caughtStealing": 1,
       "strikeOuts": 58,
+      "plateAppearances": 272,
+      "intentionalWalks": 1,
       "avg": 0.235,
       "obp": 0.327,
       "slg": 0.408,
-      "ops": 0.735
+      "ops": 0.735,
+      "bbPct": 0.0993,
+      "kPct": 0.2132,
+      "kMinusBbPct": 0.1139,
+      "xbhPct": 0.375,
+      "iso": 0.173,
+      "babip": 0.269,
+      "woba": 0.326
     },
     {
       "id": "668721",
@@ -2115,10 +3006,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 44,
+      "plateAppearances": 173,
+      "intentionalWalks": 0,
       "avg": 0.224,
       "obp": 0.318,
       "slg": 0.329,
-      "ops": 0.647
+      "ops": 0.647,
+      "bbPct": 0.0983,
+      "kPct": 0.2543,
+      "kMinusBbPct": 0.156,
+      "xbhPct": 0.2353,
+      "iso": 0.105,
+      "babip": 0.288,
+      "woba": 0.296
     },
     {
       "id": "682987",
@@ -2136,10 +3036,19 @@
       "stolenBases": 10,
       "caughtStealing": 3,
       "strikeOuts": 72,
+      "plateAppearances": 231,
+      "intentionalWalks": 0,
       "avg": 0.273,
       "obp": 0.385,
       "slg": 0.557,
-      "ops": 0.942
+      "ops": 0.942,
+      "bbPct": 0.1342,
+      "kPct": 0.3117,
+      "kMinusBbPct": 0.1775,
+      "xbhPct": 0.5094,
+      "iso": 0.284,
+      "babip": 0.358,
+      "woba": 0.407
     },
     {
       "id": "806146",
@@ -2157,10 +3066,19 @@
       "stolenBases": 10,
       "caughtStealing": 5,
       "strikeOuts": 57,
+      "plateAppearances": 262,
+      "intentionalWalks": 0,
       "avg": 0.268,
       "obp": 0.405,
       "slg": 0.44,
-      "ops": 0.845
+      "ops": 0.845,
+      "bbPct": 0.1718,
+      "kPct": 0.2176,
+      "kMinusBbPct": 0.0458,
+      "xbhPct": 0.4107,
+      "iso": 0.172,
+      "babip": 0.336,
+      "woba": 0.376
     },
     {
       "id": "682617",
@@ -2178,10 +3096,19 @@
       "stolenBases": 4,
       "caughtStealing": 1,
       "strikeOuts": 60,
+      "plateAppearances": 259,
+      "intentionalWalks": 0,
       "avg": 0.287,
       "obp": 0.378,
       "slg": 0.471,
-      "ops": 0.849
+      "ops": 0.849,
+      "bbPct": 0.1274,
+      "kPct": 0.2317,
+      "kMinusBbPct": 0.1043,
+      "xbhPct": 0.3438,
+      "iso": 0.184,
+      "babip": 0.353,
+      "woba": 0.373
     },
     {
       "id": "682003",
@@ -2199,10 +3126,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 11,
+      "plateAppearances": 35,
+      "intentionalWalks": 0,
       "avg": 0.265,
       "obp": 0.286,
       "slg": 0.588,
-      "ops": 0.874
+      "ops": 0.874,
+      "bbPct": 0.0286,
+      "kPct": 0.3143,
+      "kMinusBbPct": 0.2857,
+      "xbhPct": 0.5556,
+      "iso": 0.323,
+      "babip": 0.3,
+      "woba": 0.374
     },
     {
       "id": "667803",
@@ -2220,10 +3156,19 @@
       "stolenBases": 10,
       "caughtStealing": 1,
       "strikeOuts": 100,
+      "plateAppearances": 381,
+      "intentionalWalks": 0,
       "avg": 0.247,
       "obp": 0.328,
       "slg": 0.452,
-      "ops": 0.78
+      "ops": 0.78,
+      "bbPct": 0.105,
+      "kPct": 0.2625,
+      "kMinusBbPct": 0.1575,
+      "xbhPct": 0.3902,
+      "iso": 0.205,
+      "babip": 0.297,
+      "woba": 0.34
     },
     {
       "id": "680716",
@@ -2241,10 +3186,19 @@
       "stolenBases": 9,
       "caughtStealing": 4,
       "strikeOuts": 63,
+      "plateAppearances": 279,
+      "intentionalWalks": 0,
       "avg": 0.299,
       "obp": 0.362,
       "slg": 0.48,
-      "ops": 0.842
+      "ops": 0.842,
+      "bbPct": 0.0753,
+      "kPct": 0.2258,
+      "kMinusBbPct": 0.1505,
+      "xbhPct": 0.3289,
+      "iso": 0.181,
+      "babip": 0.368,
+      "woba": 0.369
     },
     {
       "id": "682692",
@@ -2262,10 +3216,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 2,
+      "plateAppearances": 9,
+      "intentionalWalks": 0,
       "avg": 0.167,
       "obp": 0.444,
       "slg": 0.333,
-      "ops": 0.777
+      "ops": 0.777,
+      "bbPct": 0.3333,
+      "kPct": 0.2222,
+      "kMinusBbPct": -0.1111,
+      "xbhPct": 1.0,
+      "iso": 0.166,
+      "babip": 0.25,
+      "woba": 0.371
     },
     {
       "id": "804603",
@@ -2283,10 +3246,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
+      "plateAppearances": 9,
+      "intentionalWalks": 0,
       "avg": 0.0,
       "obp": 0.111,
       "slg": 0.0,
-      "ops": 0.111
+      "ops": 0.111,
+      "bbPct": 0.1111,
+      "kPct": 0.4444,
+      "kMinusBbPct": 0.3333,
+      "xbhPct": null,
+      "iso": 0.0,
+      "babip": 0.0,
+      "woba": 0.077
     },
     {
       "id": "645305",
@@ -2304,10 +3276,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 28,
+      "plateAppearances": 147,
+      "intentionalWalks": 0,
       "avg": 0.227,
       "obp": 0.327,
       "slg": 0.375,
-      "ops": 0.702
+      "ops": 0.702,
+      "bbPct": 0.1224,
+      "kPct": 0.1905,
+      "kMinusBbPct": 0.0681,
+      "xbhPct": 0.2414,
+      "iso": 0.148,
+      "babip": 0.245,
+      "woba": 0.317
     },
     {
       "id": "680474",
@@ -2325,10 +3306,19 @@
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 23,
+      "plateAppearances": 132,
+      "intentionalWalks": 0,
       "avg": 0.266,
       "obp": 0.386,
       "slg": 0.422,
-      "ops": 0.808
+      "ops": 0.808,
+      "bbPct": 0.1439,
+      "kPct": 0.1742,
+      "kMinusBbPct": 0.0303,
+      "xbhPct": 0.3793,
+      "iso": 0.156,
+      "babip": 0.31,
+      "woba": 0.362
     },
     {
       "id": "669699",
@@ -2346,10 +3336,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 6,
+      "plateAppearances": 35,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.314,
       "slg": 0.312,
-      "ops": 0.626
+      "ops": 0.626,
+      "bbPct": 0.0286,
+      "kPct": 0.1714,
+      "kMinusBbPct": 0.1428,
+      "xbhPct": 0.25,
+      "iso": 0.062,
+      "babip": 0.308,
+      "woba": 0.286
     },
     {
       "id": "683011",
@@ -2367,10 +3366,19 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 21,
+      "plateAppearances": 79,
+      "intentionalWalks": 0,
       "avg": 0.227,
       "obp": 0.253,
       "slg": 0.427,
-      "ops": 0.68
+      "ops": 0.68,
+      "bbPct": 0.0253,
+      "kPct": 0.2658,
+      "kMinusBbPct": 0.2405,
+      "xbhPct": 0.4706,
+      "iso": 0.2,
+      "babip": 0.269,
+      "woba": 0.292
     },
     {
       "id": "669224",
@@ -2388,10 +3396,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
+      "plateAppearances": 14,
+      "intentionalWalks": 0,
       "avg": 0.167,
       "obp": 0.286,
       "slg": 0.667,
-      "ops": 0.953
+      "ops": 0.953,
+      "bbPct": 0.1429,
+      "kPct": 0.2857,
+      "kMinusBbPct": 0.1428,
+      "xbhPct": 1.0,
+      "iso": 0.5,
+      "babip": 0.0,
+      "woba": 0.399
     }
   ],
   "pitchers": [
@@ -2410,10 +3427,16 @@
       "wins": 2,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 95,
+      "hitByPitch": 2,
       "era": 10.38,
       "whip": 2.37,
       "avg": 0.342,
-      "so9": 7.79
+      "so9": 7.79,
+      "kPct": 0.1579,
+      "bbPct": 0.1684,
+      "kMinusBbPct": -0.0105,
+      "fip": 7.71
     },
     {
       "id": "828266",
@@ -2430,10 +3453,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 25,
+      "hitByPitch": 2,
       "era": 6.35,
       "whip": 1.06,
       "avg": 0.19,
-      "so9": 14.29
+      "so9": 14.29,
+      "kPct": 0.36,
+      "bbPct": 0.08,
+      "kMinusBbPct": 0.28,
+      "fip": 6.07
     },
     {
       "id": "693647",
@@ -2450,10 +3479,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 11,
+      "hitByPitch": 1,
       "era": 3.38,
       "whip": 1.12,
       "avg": 0.222,
-      "so9": 6.75
+      "so9": 6.75,
+      "kPct": 0.1818,
+      "bbPct": 0.0909,
+      "kMinusBbPct": 0.0909,
+      "fip": 10.46
     },
     {
       "id": "683332",
@@ -2470,10 +3505,16 @@
       "wins": 6,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 366,
+      "hitByPitch": 3,
       "era": 3.46,
       "whip": 1.04,
       "avg": 0.185,
-      "so9": 9.89
+      "so9": 9.89,
+      "kPct": 0.2732,
+      "bbPct": 0.0956,
+      "kMinusBbPct": 0.1776,
+      "fip": 4.88
     },
     {
       "id": "801307",
@@ -2490,10 +3531,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 1,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.0,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "fip": 4.83
     },
     {
       "id": "824445",
@@ -2510,10 +3557,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 2,
+      "battersFaced": 35,
+      "hitByPitch": 0,
       "era": 7.04,
       "whip": 1.7,
       "avg": 0.241,
-      "so9": 5.87
+      "so9": 5.87,
+      "kPct": 0.1429,
+      "bbPct": 0.1714,
+      "kMinusBbPct": -0.0285,
+      "fip": 10.96
     },
     {
       "id": "701706",
@@ -2530,10 +3583,16 @@
       "wins": 5,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 209,
+      "hitByPitch": 9,
       "era": 4.37,
       "whip": 1.61,
       "avg": 0.214,
-      "so9": 10.52
+      "so9": 10.52,
+      "kPct": 0.2536,
+      "bbPct": 0.1866,
+      "kMinusBbPct": 0.067,
+      "fip": 6.53
     },
     {
       "id": "529017",
@@ -2550,10 +3609,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 14,
+      "hitByPitch": 0,
       "era": 2.45,
       "whip": 1.09,
       "avg": 0.167,
-      "so9": 7.36
+      "so9": 7.36,
+      "kPct": 0.2143,
+      "bbPct": 0.1429,
+      "kMinusBbPct": 0.0714,
+      "fip": 4.83
     },
     {
       "id": "806884",
@@ -2570,10 +3635,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 4,
+      "hitByPitch": 1,
       "era": 0.0,
       "whip": 3.0,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.5,
+      "kMinusBbPct": -0.5,
+      "fip": 18.33
     },
     {
       "id": "822950",
@@ -2590,10 +3661,16 @@
       "wins": 7,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 267,
+      "hitByPitch": 10,
       "era": 6.51,
       "whip": 1.64,
       "avg": 0.263,
-      "so9": 13.17
+      "so9": 13.17,
+      "kPct": 0.3034,
+      "bbPct": 0.1199,
+      "kMinusBbPct": 0.1835,
+      "fip": 5.59
     },
     {
       "id": "702098",
@@ -2610,10 +3687,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 59,
+      "hitByPitch": 2,
       "era": 1.2,
       "whip": 0.87,
       "avg": 0.12,
-      "so9": 15.0
+      "so9": 15.0,
+      "kPct": 0.4237,
+      "bbPct": 0.1186,
+      "kMinusBbPct": 0.3051,
+      "fip": 3.3
     },
     {
       "id": "814343",
@@ -2630,10 +3713,16 @@
       "wins": 2,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 117,
+      "hitByPitch": 2,
       "era": 6.26,
       "whip": 1.35,
       "avg": 0.257,
-      "so9": 6.59
+      "so9": 6.59,
+      "kPct": 0.1709,
+      "bbPct": 0.094,
+      "kMinusBbPct": 0.0769,
+      "fip": 7.17
     },
     {
       "id": "805730",
@@ -2650,10 +3739,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 65,
+      "hitByPitch": 0,
       "era": 2.87,
       "whip": 1.34,
       "avg": 0.241,
-      "so9": 8.62
+      "so9": 8.62,
+      "kPct": 0.2308,
+      "bbPct": 0.1077,
+      "kMinusBbPct": 0.1231,
+      "fip": 5.09
     },
     {
       "id": "682625",
@@ -2670,10 +3765,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 7,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.5,
       "avg": 0.143,
-      "so9": 18.0
+      "so9": 18.0,
+      "kPct": 0.5714,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.5714,
+      "fip": 0.83
     },
     {
       "id": "801726",
@@ -2690,10 +3791,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 6,
+      "hitByPitch": 0,
       "era": 40.5,
       "whip": 6.0,
       "avg": 0.5,
-      "so9": 13.5
+      "so9": 13.5,
+      "kPct": 0.1667,
+      "bbPct": 0.3333,
+      "kMinusBbPct": -0.1666,
+      "fip": 10.83
     },
     {
       "id": "694633",
@@ -2710,10 +3817,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 36,
+      "hitByPitch": 1,
       "era": 4.15,
       "whip": 0.92,
       "avg": 0.188,
-      "so9": 8.31
+      "so9": 8.31,
+      "kPct": 0.2222,
+      "bbPct": 0.0556,
+      "kMinusBbPct": 0.1666,
+      "fip": 7.02
     },
     {
       "id": "809137",
@@ -2730,10 +3843,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 19,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.56,
       "avg": 0.111,
-      "so9": 5.06
+      "so9": 5.06,
+      "kPct": 0.1579,
+      "bbPct": 0.0526,
+      "kMinusBbPct": 0.1053,
+      "fip": 4.27
     },
     {
       "id": "806121",
@@ -2750,10 +3869,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 93,
+      "hitByPitch": 0,
       "era": 3.43,
       "whip": 1.43,
       "avg": 0.208,
-      "so9": 11.57
+      "so9": 11.57,
+      "kPct": 0.2903,
+      "bbPct": 0.1505,
+      "kMinusBbPct": 0.1398,
+      "fip": 6.12
     },
     {
       "id": "695765",
@@ -2770,10 +3895,16 @@
       "wins": 1,
       "losses": 4,
       "saves": 0,
+      "battersFaced": 137,
+      "hitByPitch": 2,
       "era": 4.83,
       "whip": 1.23,
       "avg": 0.165,
-      "so9": 11.65
+      "so9": 11.65,
+      "kPct": 0.2993,
+      "bbPct": 0.146,
+      "kMinusBbPct": 0.1533,
+      "fip": 6.38
     },
     {
       "id": "702874",
@@ -2790,10 +3921,16 @@
       "wins": 1,
       "losses": 3,
       "saves": 1,
+      "battersFaced": 156,
+      "hitByPitch": 3,
       "era": 3.82,
       "whip": 1.39,
       "avg": 0.231,
-      "so9": 10.19
+      "so9": 10.19,
+      "kPct": 0.2564,
+      "bbPct": 0.1154,
+      "kMinusBbPct": 0.141,
+      "fip": 4.72
     },
     {
       "id": "669740",
@@ -2810,10 +3947,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 17,
+      "hitByPitch": 1,
       "era": 0.0,
       "whip": 0.64,
       "avg": 0.133,
-      "so9": 5.79
+      "so9": 5.79,
+      "kPct": 0.1765,
+      "bbPct": 0.0588,
+      "kMinusBbPct": 0.1177,
+      "fip": 4.83
     },
     {
       "id": "805128",
@@ -2830,10 +3973,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 57,
+      "hitByPitch": 0,
       "era": 4.15,
       "whip": 1.46,
       "avg": 0.269,
-      "so9": 10.38
+      "so9": 10.38,
+      "kPct": 0.2632,
+      "bbPct": 0.0877,
+      "kMinusBbPct": 0.1755,
+      "fip": 5.68
     },
     {
       "id": "800239",
@@ -2850,10 +3999,16 @@
       "wins": 0,
       "losses": 2,
       "saves": 0,
+      "battersFaced": 92,
+      "hitByPitch": 1,
       "era": 6.41,
       "whip": 1.68,
       "avg": 0.287,
-      "so9": 5.49
+      "so9": 5.49,
+      "kPct": 0.1304,
+      "bbPct": 0.1087,
+      "kMinusBbPct": 0.0217,
+      "fip": 8.59
     },
     {
       "id": "814715",
@@ -2870,10 +4025,16 @@
       "wins": 2,
       "losses": 0,
       "saves": 2,
+      "battersFaced": 204,
+      "hitByPitch": 3,
       "era": 4.21,
       "whip": 1.45,
       "avg": 0.263,
-      "so9": 10.53
+      "so9": 10.53,
+      "kPct": 0.2696,
+      "bbPct": 0.1029,
+      "kMinusBbPct": 0.1667,
+      "fip": 5.68
     },
     {
       "id": "827768",
@@ -2890,10 +4051,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 24,
+      "hitByPitch": 0,
       "era": 2.57,
       "whip": 0.71,
       "avg": 0.174,
-      "so9": 6.43
+      "so9": 6.43,
+      "kPct": 0.2083,
+      "bbPct": 0.0417,
+      "kMinusBbPct": 0.1666,
+      "fip": 5.69
     },
     {
       "id": "702212",
@@ -2910,10 +4077,16 @@
       "wins": 4,
       "losses": 3,
       "saves": 2,
+      "battersFaced": 166,
+      "hitByPitch": 8,
       "era": 8.45,
       "whip": 1.85,
       "avg": 0.276,
-      "so9": 11.18
+      "so9": 11.18,
+      "kPct": 0.247,
+      "bbPct": 0.1446,
+      "kMinusBbPct": 0.1024,
+      "fip": 7.22
     },
     {
       "id": "811963",
@@ -2930,10 +4103,16 @@
       "wins": 2,
       "losses": 2,
       "saves": 0,
+      "battersFaced": 232,
+      "hitByPitch": 4,
       "era": 4.86,
       "whip": 1.4,
       "avg": 0.279,
-      "so9": 9.06
+      "so9": 9.06,
+      "kPct": 0.2328,
+      "bbPct": 0.0733,
+      "kMinusBbPct": 0.1595,
+      "fip": 4.72
     },
     {
       "id": "815278",
@@ -2950,10 +4129,16 @@
       "wins": 3,
       "losses": 1,
       "saves": 2,
+      "battersFaced": 184,
+      "hitByPitch": 2,
       "era": 2.47,
       "whip": 1.12,
       "avg": 0.156,
-      "so9": 12.57
+      "so9": 12.57,
+      "kPct": 0.3315,
+      "bbPct": 0.1359,
+      "kMinusBbPct": 0.1956,
+      "fip": 4.78
     },
     {
       "id": "692646",
@@ -2970,10 +4155,16 @@
       "wins": 1,
       "losses": 2,
       "saves": 3,
+      "battersFaced": 114,
+      "hitByPitch": 2,
       "era": 5.76,
       "whip": 1.52,
       "avg": 0.242,
-      "so9": 10.44
+      "so9": 10.44,
+      "kPct": 0.2544,
+      "bbPct": 0.1316,
+      "kMinusBbPct": 0.1228,
+      "fip": 6.11
     },
     {
       "id": "666720",
@@ -2990,10 +4181,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 33,
+      "hitByPitch": 1,
       "era": 2.25,
       "whip": 1.12,
       "avg": 0.258,
-      "so9": 7.88
+      "so9": 7.88,
+      "kPct": 0.2121,
+      "bbPct": 0.0303,
+      "kMinusBbPct": 0.1818,
+      "fip": 3.83
     },
     {
       "id": "703752",
@@ -3010,10 +4207,16 @@
       "wins": 4,
       "losses": 0,
       "saves": 2,
+      "battersFaced": 149,
+      "hitByPitch": 3,
       "era": 3.73,
       "whip": 1.76,
       "avg": 0.262,
-      "so9": 12.93
+      "so9": 12.93,
+      "kPct": 0.302,
+      "bbPct": 0.1544,
+      "kMinusBbPct": 0.1476,
+      "fip": 5.28
     },
     {
       "id": "805728",
@@ -3030,10 +4233,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 16,
+      "hitByPitch": 0,
       "era": 2.7,
       "whip": 1.8,
       "avg": 0.333,
-      "so9": 10.8
+      "so9": 10.8,
+      "kPct": 0.25,
+      "bbPct": 0.0625,
+      "kMinusBbPct": 0.1875,
+      "fip": 7.23
     },
     {
       "id": "834863",
@@ -3050,10 +4259,16 @@
       "wins": 2,
       "losses": 2,
       "saves": 0,
+      "battersFaced": 169,
+      "hitByPitch": 3,
       "era": 4.57,
       "whip": 1.21,
       "avg": 0.243,
-      "so9": 8.27
+      "so9": 8.27,
+      "kPct": 0.2249,
+      "bbPct": 0.0769,
+      "kMinusBbPct": 0.148,
+      "fip": 6.04
     },
     {
       "id": "806244",
@@ -3070,10 +4285,16 @@
       "wins": 3,
       "losses": 2,
       "saves": 7,
+      "battersFaced": 189,
+      "hitByPitch": 2,
       "era": 6.13,
       "whip": 1.69,
       "avg": 0.301,
-      "so9": 9.3
+      "so9": 9.3,
+      "kPct": 0.2169,
+      "bbPct": 0.0899,
+      "kMinusBbPct": 0.127,
+      "fip": 6.82
     },
     {
       "id": "822915",
@@ -3090,10 +4311,16 @@
       "wins": 2,
       "losses": 5,
       "saves": 4,
+      "battersFaced": 182,
+      "hitByPitch": 5,
       "era": 3.16,
       "whip": 1.2,
       "avg": 0.201,
-      "so9": 10.97
+      "so9": 10.97,
+      "kPct": 0.2857,
+      "bbPct": 0.1099,
+      "kMinusBbPct": 0.1758,
+      "fip": 5.37
     },
     {
       "id": "686433",
@@ -3110,10 +4337,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 9,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.43,
       "avg": 0.0,
-      "so9": 19.29
+      "so9": 19.29,
+      "kPct": 0.5556,
+      "bbPct": 0.1111,
+      "kMinusBbPct": 0.4445,
+      "fip": 1.83
     },
     {
       "id": "814269",
@@ -3130,10 +4363,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 1,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.0,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "fip": 4.83
     },
     {
       "id": "695425",
@@ -3150,10 +4389,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 35,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 1.0,
       "avg": 0.212,
-      "so9": 5.0
+      "so9": 5.0,
+      "kPct": 0.1429,
+      "bbPct": 0.0571,
+      "kMinusBbPct": 0.0858,
+      "fip": 4.39
     },
     {
       "id": "804892",
@@ -3170,10 +4415,16 @@
       "wins": 9,
       "losses": 3,
       "saves": 1,
+      "battersFaced": 409,
+      "hitByPitch": 4,
       "era": 4.52,
       "whip": 1.32,
       "avg": 0.269,
-      "so9": 9.22
+      "so9": 9.22,
+      "kPct": 0.2445,
+      "bbPct": 0.0709,
+      "kMinusBbPct": 0.1736,
+      "fip": 5.13
     },
     {
       "id": "693647",
@@ -3190,10 +4441,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 140,
+      "hitByPitch": 11,
       "era": 3.69,
       "whip": 1.17,
       "avg": 0.196,
-      "so9": 13.36
+      "so9": 13.36,
+      "kPct": 0.3357,
+      "bbPct": 0.1071,
+      "kMinusBbPct": 0.2286,
+      "fip": 5.35
     },
     {
       "id": "703748",
@@ -3210,10 +4467,16 @@
       "wins": 2,
       "losses": 0,
       "saves": 2,
+      "battersFaced": 115,
+      "hitByPitch": 3,
       "era": 4.62,
       "whip": 1.62,
       "avg": 0.274,
-      "so9": 11.01
+      "so9": 11.01,
+      "kPct": 0.2696,
+      "bbPct": 0.1304,
+      "kMinusBbPct": 0.1392,
+      "fip": 5.43
     },
     {
       "id": "543037",
@@ -3230,10 +4493,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 38,
+      "hitByPitch": 1,
       "era": 6.23,
       "whip": 1.38,
       "avg": 0.333,
-      "so9": 8.31
+      "so9": 8.31,
+      "kPct": 0.2105,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.2105,
+      "fip": 7.21
     },
     {
       "id": "701480",
@@ -3250,10 +4519,16 @@
       "wins": 2,
       "losses": 8,
       "saves": 0,
+      "battersFaced": 325,
+      "hitByPitch": 1,
       "era": 4.6,
       "whip": 1.37,
       "avg": 0.239,
-      "so9": 8.23
+      "so9": 8.23,
+      "kPct": 0.2092,
+      "bbPct": 0.1046,
+      "kMinusBbPct": 0.1046,
+      "fip": 5.02
     },
     {
       "id": "804698",
@@ -3270,10 +4545,16 @@
       "wins": 7,
       "losses": 1,
       "saves": 1,
+      "battersFaced": 189,
+      "hitByPitch": 2,
       "era": 3.02,
       "whip": 1.16,
       "avg": 0.206,
-      "so9": 10.48
+      "so9": 10.48,
+      "kPct": 0.2751,
+      "bbPct": 0.0899,
+      "kMinusBbPct": 0.1852,
+      "fip": 4.32
     },
     {
       "id": "702098",
@@ -3290,10 +4571,16 @@
       "wins": 4,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 375,
+      "hitByPitch": 10,
       "era": 5.08,
       "whip": 1.45,
       "avg": 0.204,
-      "so9": 11.66
+      "so9": 11.66,
+      "kPct": 0.288,
+      "bbPct": 0.16,
+      "kMinusBbPct": 0.128,
+      "fip": 5.07
     },
     {
       "id": "812431",
@@ -3310,10 +4597,16 @@
       "wins": 6,
       "losses": 4,
       "saves": 0,
+      "battersFaced": 353,
+      "hitByPitch": 2,
       "era": 4.59,
       "whip": 1.3,
       "avg": 0.258,
-      "so9": 9.84
+      "so9": 9.84,
+      "kPct": 0.255,
+      "bbPct": 0.0652,
+      "kMinusBbPct": 0.1898,
+      "fip": 4.67
     },
     {
       "id": "690977",
@@ -3330,10 +4623,16 @@
       "wins": 2,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 75,
+      "hitByPitch": 0,
       "era": 9.6,
       "whip": 1.93,
       "avg": 0.2,
-      "so9": 7.8
+      "so9": 7.8,
+      "kPct": 0.1733,
+      "bbPct": 0.24,
+      "kMinusBbPct": -0.0667,
+      "fip": 6.94
     },
     {
       "id": "661563",
@@ -3350,10 +4649,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 12,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 1.0,
       "avg": 0.182,
-      "so9": 9.0
+      "so9": 9.0,
+      "kPct": 0.25,
+      "bbPct": 0.0833,
+      "kMinusBbPct": 0.1667,
+      "fip": 3.21
     },
     {
       "id": "694633",
@@ -3370,10 +4675,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 48,
+      "hitByPitch": 2,
       "era": 6.75,
       "whip": 1.31,
       "avg": 0.256,
-      "so9": 9.28
+      "so9": 9.28,
+      "kPct": 0.2292,
+      "bbPct": 0.0833,
+      "kMinusBbPct": 0.1459,
+      "fip": 5.05
     },
     {
       "id": "800471",
@@ -3390,10 +4701,16 @@
       "wins": 5,
       "losses": 4,
       "saves": 0,
+      "battersFaced": 360,
+      "hitByPitch": 4,
       "era": 4.57,
       "whip": 1.4,
       "avg": 0.236,
-      "so9": 10.23
+      "so9": 10.23,
+      "kPct": 0.2611,
+      "bbPct": 0.1194,
+      "kMinusBbPct": 0.1417,
+      "fip": 6.0
     },
     {
       "id": "802374",
@@ -3410,10 +4727,16 @@
       "wins": 3,
       "losses": 3,
       "saves": 2,
+      "battersFaced": 169,
+      "hitByPitch": 3,
       "era": 5.3,
       "whip": 1.54,
       "avg": 0.23,
-      "so9": 12.36
+      "so9": 12.36,
+      "kPct": 0.2899,
+      "bbPct": 0.1361,
+      "kMinusBbPct": 0.1538,
+      "fip": 5.11
     },
     {
       "id": "695560",
@@ -3430,10 +4753,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 47,
+      "hitByPitch": 0,
       "era": 1.64,
       "whip": 1.27,
       "avg": 0.175,
-      "so9": 9.82
+      "so9": 9.82,
+      "kPct": 0.2553,
+      "bbPct": 0.1489,
+      "kMinusBbPct": 0.1064,
+      "fip": 5.12
     },
     {
       "id": "815069",
@@ -3450,10 +4779,16 @@
       "wins": 2,
       "losses": 3,
       "saves": 1,
+      "battersFaced": 172,
+      "hitByPitch": 3,
       "era": 3.86,
       "whip": 1.39,
       "avg": 0.228,
-      "so9": 10.37
+      "so9": 10.37,
+      "kPct": 0.25,
+      "bbPct": 0.1047,
+      "kMinusBbPct": 0.1453,
+      "fip": 3.94
     },
     {
       "id": "800344",
@@ -3470,10 +4805,16 @@
       "wins": 2,
       "losses": 8,
       "saves": 0,
+      "battersFaced": 326,
+      "hitByPitch": 10,
       "era": 5.65,
       "whip": 1.39,
       "avg": 0.236,
-      "so9": 10.92
+      "so9": 10.92,
+      "kPct": 0.273,
+      "bbPct": 0.1135,
+      "kMinusBbPct": 0.1595,
+      "fip": 5.66
     },
     {
       "id": "669740",
@@ -3490,10 +4831,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 5,
+      "hitByPitch": 0,
       "era": 9.0,
       "whip": 2.0,
       "avg": 0.0,
-      "so9": 18.0
+      "so9": 18.0,
+      "kPct": 0.4,
+      "bbPct": 0.4,
+      "kMinusBbPct": 0.0,
+      "fip": 6.21
     },
     {
       "id": "691004",
@@ -3510,10 +4857,16 @@
       "wins": 2,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 82,
+      "hitByPitch": 2,
       "era": 5.94,
       "whip": 1.8,
       "avg": 0.279,
-      "so9": 8.64
+      "so9": 8.64,
+      "kPct": 0.1951,
+      "bbPct": 0.1341,
+      "kMinusBbPct": 0.061,
+      "fip": 5.41
     },
     {
       "id": "804603",
@@ -3530,10 +4883,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 8,
+      "hitByPitch": 2,
       "era": 0.0,
       "whip": 0.5,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.125,
+      "kMinusBbPct": -0.125,
+      "fip": 8.71
     },
     {
       "id": "692550",
@@ -3550,10 +4909,16 @@
       "wins": 2,
       "losses": 4,
       "saves": 0,
+      "battersFaced": 167,
+      "hitByPitch": 7,
       "era": 3.19,
       "whip": 1.28,
       "avg": 0.207,
-      "so9": 13.5
+      "so9": 13.5,
+      "kPct": 0.3293,
+      "bbPct": 0.1078,
+      "kMinusBbPct": 0.2215,
+      "fip": 3.96
     },
     {
       "id": "607074",
@@ -3570,10 +4935,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 16,
+      "hitByPitch": 1,
       "era": 0.0,
       "whip": 0.46,
       "avg": 0.071,
-      "so9": 8.31
+      "so9": 8.31,
+      "kPct": 0.25,
+      "bbPct": 0.0625,
+      "kMinusBbPct": 0.1875,
+      "fip": 3.75
     },
     {
       "id": "815278",
@@ -3590,10 +4961,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 29,
+      "hitByPitch": 1,
       "era": 10.12,
       "whip": 2.25,
       "avg": 0.36,
-      "so9": 10.12
+      "so9": 10.12,
+      "kPct": 0.2069,
+      "bbPct": 0.1034,
+      "kMinusBbPct": 0.1035,
+      "fip": 6.65
     },
     {
       "id": "666720",
@@ -3610,10 +4987,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 14,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.82,
       "avg": 0.214,
-      "so9": 9.82
+      "so9": 9.82,
+      "kPct": 0.2857,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.2857,
+      "fip": 2.03
     },
     {
       "id": "702036",
@@ -3630,10 +5013,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 1,
+      "battersFaced": 68,
+      "hitByPitch": 3,
       "era": 0.98,
       "whip": 0.6,
       "avg": 0.1,
-      "so9": 12.76
+      "so9": 12.76,
+      "kPct": 0.3824,
+      "bbPct": 0.0735,
+      "kMinusBbPct": 0.3089,
+      "fip": 2.68
     },
     {
       "id": "804522",
@@ -3650,10 +5039,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 5,
+      "battersFaced": 123,
+      "hitByPitch": 1,
       "era": 3.07,
       "whip": 1.23,
       "avg": 0.176,
-      "so9": 14.73
+      "so9": 14.73,
+      "kPct": 0.3902,
+      "bbPct": 0.1463,
+      "kMinusBbPct": 0.2439,
+      "fip": 3.32
     },
     {
       "id": "702436",
@@ -3670,10 +5065,16 @@
       "wins": 5,
       "losses": 5,
       "saves": 0,
+      "battersFaced": 416,
+      "hitByPitch": 6,
       "era": 4.39,
       "whip": 1.2,
       "avg": 0.229,
-      "so9": 10.43
+      "so9": 10.43,
+      "kPct": 0.274,
+      "bbPct": 0.0769,
+      "kMinusBbPct": 0.1971,
+      "fip": 4.37
     },
     {
       "id": "694662",
@@ -3690,10 +5091,16 @@
       "wins": 1,
       "losses": 4,
       "saves": 2,
+      "battersFaced": 160,
+      "hitByPitch": 4,
       "era": 3.67,
       "whip": 1.51,
       "avg": 0.271,
-      "so9": 8.65
+      "so9": 8.65,
+      "kPct": 0.2062,
+      "bbPct": 0.0875,
+      "kMinusBbPct": 0.1187,
+      "fip": 5.0
     },
     {
       "id": "805728",
@@ -3710,10 +5117,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 20,
+      "hitByPitch": 0,
       "era": 7.36,
       "whip": 2.45,
       "avg": 0.389,
-      "so9": 9.82
+      "so9": 9.82,
+      "kPct": 0.2,
+      "bbPct": 0.1,
+      "kMinusBbPct": 0.1,
+      "fip": 3.66
     },
     {
       "id": "685067",
@@ -3730,10 +5143,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 36,
+      "hitByPitch": 1,
       "era": 8.1,
       "whip": 2.4,
       "avg": 0.269,
-      "so9": 13.5
+      "so9": 13.5,
+      "kPct": 0.2778,
+      "bbPct": 0.25,
+      "kMinusBbPct": 0.0278,
+      "fip": 7.66
     },
     {
       "id": "810102",
@@ -3750,10 +5169,16 @@
       "wins": 2,
       "losses": 1,
       "saves": 1,
+      "battersFaced": 56,
+      "hitByPitch": 2,
       "era": 0.63,
       "whip": 0.7,
       "avg": 0.12,
-      "so9": 15.7
+      "so9": 15.7,
+      "kPct": 0.4464,
+      "bbPct": 0.0714,
+      "kMinusBbPct": 0.375,
+      "fip": 1.98
     },
     {
       "id": "686433",
@@ -3770,10 +5195,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 1,
+      "battersFaced": 30,
+      "hitByPitch": 0,
       "era": 2.45,
       "whip": 1.09,
       "avg": 0.214,
-      "so9": 13.5
+      "so9": 13.5,
+      "kPct": 0.3667,
+      "bbPct": 0.0667,
+      "kMinusBbPct": 0.3,
+      "fip": 2.03
     },
     {
       "id": "695425",
@@ -3790,10 +5221,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 99,
+      "hitByPitch": 1,
       "era": 4.24,
       "whip": 1.5,
       "avg": 0.241,
-      "so9": 9.64
+      "so9": 9.64,
+      "kPct": 0.2525,
+      "bbPct": 0.1515,
+      "kMinusBbPct": 0.101,
+      "fip": 6.35
     },
     {
       "id": "683522",
@@ -3810,10 +5247,16 @@
       "wins": 3,
       "losses": 1,
       "saves": 2,
+      "battersFaced": 201,
+      "hitByPitch": 5,
       "era": 6.49,
       "whip": 1.58,
       "avg": 0.273,
-      "so9": 9.84
+      "so9": 9.84,
+      "kPct": 0.2338,
+      "bbPct": 0.0995,
+      "kMinusBbPct": 0.1343,
+      "fip": 8.28
     },
     {
       "id": "675502",
@@ -3830,10 +5273,16 @@
       "wins": 4,
       "losses": 1,
       "saves": 4,
+      "battersFaced": 195,
+      "hitByPitch": 2,
       "era": 3.21,
       "whip": 1.09,
       "avg": 0.194,
-      "so9": 9.63
+      "so9": 9.63,
+      "kPct": 0.2615,
+      "bbPct": 0.0923,
+      "kMinusBbPct": 0.1692,
+      "fip": 6.78
     },
     {
       "id": "703748",
@@ -3850,10 +5299,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 9,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 1.29,
       "avg": 0.25,
-      "so9": 7.71
+      "so9": 7.71,
+      "kPct": 0.2222,
+      "bbPct": 0.1111,
+      "kMinusBbPct": 0.1111,
+      "fip": 5.87
     },
     {
       "id": "683332",
@@ -3870,10 +5325,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 12,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 0.55,
       "avg": 0.167,
-      "so9": 14.73
+      "so9": 14.73,
+      "kPct": 0.5,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.5,
+      "fip": 3.03
     },
     {
       "id": "684608",
@@ -3890,10 +5351,16 @@
       "wins": 1,
       "losses": 2,
       "saves": 2,
+      "battersFaced": 119,
+      "hitByPitch": 1,
       "era": 4.23,
       "whip": 1.37,
       "avg": 0.255,
-      "so9": 13.01
+      "so9": 13.01,
+      "kPct": 0.3361,
+      "bbPct": 0.0924,
+      "kMinusBbPct": 0.2437,
+      "fip": 6.12
     },
     {
       "id": "694805",
@@ -3910,10 +5377,16 @@
       "wins": 6,
       "losses": 5,
       "saves": 0,
+      "battersFaced": 296,
+      "hitByPitch": 2,
       "era": 4.32,
       "whip": 1.42,
       "avg": 0.259,
-      "so9": 11.21
+      "so9": 11.21,
+      "kPct": 0.2804,
+      "bbPct": 0.0912,
+      "kMinusBbPct": 0.1892,
+      "fip": 6.48
     },
     {
       "id": "681116",
@@ -3930,10 +5403,16 @@
       "wins": 3,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 283,
+      "hitByPitch": 6,
       "era": 4.55,
       "whip": 1.34,
       "avg": 0.245,
-      "so9": 6.82
+      "so9": 6.82,
+      "kPct": 0.1696,
+      "bbPct": 0.0848,
+      "kMinusBbPct": 0.0848,
+      "fip": 8.46
     },
     {
       "id": "686540",
@@ -3950,10 +5429,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 3,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 1.5,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.3333,
+      "kMinusBbPct": -0.3333,
+      "fip": 10.8
     },
     {
       "id": "694660",
@@ -3970,10 +5455,16 @@
       "wins": 4,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 105,
+      "hitByPitch": 1,
       "era": 6.85,
       "whip": 1.79,
       "avg": 0.238,
-      "so9": 9.67
+      "so9": 9.67,
+      "kPct": 0.2286,
+      "bbPct": 0.1905,
+      "kMinusBbPct": 0.0381,
+      "fip": 8.72
     },
     {
       "id": "543037",
@@ -3990,10 +5481,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 56,
+      "hitByPitch": 0,
       "era": 4.8,
       "whip": 0.8,
       "avg": 0.185,
-      "so9": 8.4
+      "so9": 8.4,
+      "kPct": 0.25,
+      "bbPct": 0.0357,
+      "kMinusBbPct": 0.2143,
+      "fip": 7.43
     },
     {
       "id": "529017",
@@ -4010,10 +5507,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 15,
+      "hitByPitch": 0,
       "era": 2.08,
       "whip": 0.92,
       "avg": 0.214,
-      "so9": 10.38
+      "so9": 10.38,
+      "kPct": 0.3333,
+      "bbPct": 0.0667,
+      "kMinusBbPct": 0.2666,
+      "fip": 7.68
     },
     {
       "id": "676442",
@@ -4030,10 +5533,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 30,
+      "hitByPitch": 0,
       "era": 2.16,
       "whip": 0.84,
       "avg": 0.042,
-      "so9": 6.48
+      "so9": 6.48,
+      "kPct": 0.2,
+      "bbPct": 0.2,
+      "kMinusBbPct": 0.0,
+      "fip": 7.02
     },
     {
       "id": "812431",
@@ -4050,10 +5559,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 100,
+      "hitByPitch": 0,
       "era": 4.84,
       "whip": 1.43,
       "avg": 0.287,
-      "so9": 6.45
+      "so9": 6.45,
+      "kPct": 0.16,
+      "bbPct": 0.05,
+      "kMinusBbPct": 0.11,
+      "fip": 6.12
     },
     {
       "id": "687280",
@@ -4070,10 +5585,16 @@
       "wins": 4,
       "losses": 2,
       "saves": 1,
+      "battersFaced": 118,
+      "hitByPitch": 2,
       "era": 3.72,
       "whip": 1.1,
       "avg": 0.176,
-      "so9": 10.86
+      "so9": 10.86,
+      "kPct": 0.2966,
+      "bbPct": 0.1186,
+      "kMinusBbPct": 0.178,
+      "fip": 8.68
     },
     {
       "id": "687589",
@@ -4090,10 +5611,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 18,
+      "hitByPitch": 1,
       "era": 4.5,
       "whip": 1.5,
       "avg": 0.267,
-      "so9": 4.5
+      "so9": 4.5,
+      "kPct": 0.1111,
+      "bbPct": 0.1111,
+      "kMinusBbPct": 0.0,
+      "fip": 7.55
     },
     {
       "id": "694633",
@@ -4110,10 +5637,16 @@
       "wins": 0,
       "losses": 5,
       "saves": 0,
+      "battersFaced": 148,
+      "hitByPitch": 0,
       "era": 9.93,
       "whip": 2.21,
       "avg": 0.32,
-      "so9": 8.69
+      "so9": 8.69,
+      "kPct": 0.1892,
+      "bbPct": 0.1689,
+      "kMinusBbPct": 0.0203,
+      "fip": 10.09
     },
     {
       "id": "800299",
@@ -4130,10 +5663,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 5,
+      "hitByPitch": 0,
       "era": 27.0,
       "whip": 4.5,
       "avg": 0.333,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.4,
+      "kMinusBbPct": -0.4,
+      "fip": 15.3
     },
     {
       "id": "696292",
@@ -4150,10 +5689,16 @@
       "wins": 3,
       "losses": 4,
       "saves": 0,
+      "battersFaced": 255,
+      "hitByPitch": 4,
       "era": 4.45,
       "whip": 1.45,
       "avg": 0.245,
-      "so9": 10.32
+      "so9": 10.32,
+      "kPct": 0.2549,
+      "bbPct": 0.1176,
+      "kMinusBbPct": 0.1373,
+      "fip": 7.41
     },
     {
       "id": "815454",
@@ -4170,10 +5715,16 @@
       "wins": 1,
       "losses": 2,
       "saves": 2,
+      "battersFaced": 140,
+      "hitByPitch": 4,
       "era": 3.34,
       "whip": 0.97,
       "avg": 0.223,
-      "so9": 11.06
+      "so9": 11.06,
+      "kPct": 0.3071,
+      "bbPct": 0.0357,
+      "kMinusBbPct": 0.2714,
+      "fip": 6.84
     },
     {
       "id": "702046",
@@ -4190,10 +5741,16 @@
       "wins": 2,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 141,
+      "hitByPitch": 1,
       "era": 4.99,
       "whip": 1.6,
       "avg": 0.202,
-      "so9": 12.62
+      "so9": 12.62,
+      "kPct": 0.305,
+      "bbPct": 0.1844,
+      "kMinusBbPct": 0.1206,
+      "fip": 8.26
     },
     {
       "id": "815069",
@@ -4210,10 +5767,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 15,
+      "hitByPitch": 0,
       "era": 13.5,
       "whip": 2.62,
       "avg": 0.5,
-      "so9": 10.12
+      "so9": 10.12,
+      "kPct": 0.2,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.2,
+      "fip": 13.8
     },
     {
       "id": "675296",
@@ -4230,10 +5793,16 @@
       "wins": 2,
       "losses": 3,
       "saves": 2,
+      "battersFaced": 178,
+      "hitByPitch": 2,
       "era": 3.67,
       "whip": 1.25,
       "avg": 0.203,
-      "so9": 14.47
+      "so9": 14.47,
+      "kPct": 0.3764,
+      "bbPct": 0.118,
+      "kMinusBbPct": 0.2584,
+      "fip": 5.99
     },
     {
       "id": "680893",
@@ -4250,10 +5819,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 29,
+      "hitByPitch": 1,
       "era": 3.86,
       "whip": 2.57,
       "avg": 0.286,
-      "so9": 7.71
+      "so9": 7.71,
+      "kPct": 0.1379,
+      "bbPct": 0.2069,
+      "kMinusBbPct": -0.069,
+      "fip": 9.09
     },
     {
       "id": "804603",
@@ -4270,10 +5845,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 3,
+      "hitByPitch": 1,
       "era": 0.0,
       "whip": 0.0,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "fip": 10.8
     },
     {
       "id": "801432",
@@ -4290,10 +5871,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 66,
+      "hitByPitch": 0,
       "era": 3.12,
       "whip": 0.81,
       "avg": 0.161,
-      "so9": 16.62
+      "so9": 16.62,
+      "kPct": 0.4848,
+      "bbPct": 0.0606,
+      "kMinusBbPct": 0.4242,
+      "fip": 4.8
     },
     {
       "id": "814392",
@@ -4310,10 +5897,16 @@
       "wins": 6,
       "losses": 4,
       "saves": 0,
+      "battersFaced": 332,
+      "hitByPitch": 0,
       "era": 3.65,
       "whip": 1.13,
       "avg": 0.176,
-      "so9": 12.61
+      "so9": 12.61,
+      "kPct": 0.3434,
+      "bbPct": 0.1235,
+      "kMinusBbPct": 0.2199,
+      "fip": 7.25
     },
     {
       "id": "607074",
@@ -4330,10 +5923,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 36,
+      "hitByPitch": 0,
       "era": 0.93,
       "whip": 0.83,
       "avg": 0.2,
-      "so9": 13.97
+      "so9": 13.97,
+      "kPct": 0.4167,
+      "bbPct": 0.0278,
+      "kMinusBbPct": 0.3889,
+      "fip": 4.85
     },
     {
       "id": "702036",
@@ -4350,10 +5949,16 @@
       "wins": 3,
       "losses": 0,
       "saves": 3,
+      "battersFaced": 97,
+      "hitByPitch": 3,
       "era": 3.04,
       "whip": 1.06,
       "avg": 0.216,
-      "so9": 11.79
+      "so9": 11.79,
+      "kPct": 0.3196,
+      "bbPct": 0.0619,
+      "kMinusBbPct": 0.2577,
+      "fip": 5.92
     },
     {
       "id": "804522",
@@ -4370,10 +5975,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 13,
+      "hitByPitch": 0,
       "era": 10.12,
       "whip": 1.88,
       "avg": 0.333,
-      "so9": 6.75
+      "so9": 6.75,
+      "kPct": 0.1538,
+      "bbPct": 0.0769,
+      "kMinusBbPct": 0.0769,
+      "fip": 5.92
     },
     {
       "id": "815587",
@@ -4390,10 +6001,16 @@
       "wins": 3,
       "losses": 4,
       "saves": 2,
+      "battersFaced": 319,
+      "hitByPitch": 4,
       "era": 4.79,
       "whip": 1.66,
       "avg": 0.257,
-      "so9": 11.57
+      "so9": 11.57,
+      "kPct": 0.2727,
+      "bbPct": 0.1379,
+      "kMinusBbPct": 0.1348,
+      "fip": 7.78
     },
     {
       "id": "694696",
@@ -4410,10 +6027,16 @@
       "wins": 6,
       "losses": 7,
       "saves": 0,
+      "battersFaced": 436,
+      "hitByPitch": 7,
       "era": 5.09,
       "whip": 1.49,
       "avg": 0.275,
-      "so9": 8.27
+      "so9": 8.27,
+      "kPct": 0.2087,
+      "bbPct": 0.0986,
+      "kMinusBbPct": 0.1101,
+      "fip": 8.6
     },
     {
       "id": "805728",
@@ -4430,10 +6053,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 33,
+      "hitByPitch": 0,
       "era": 5.87,
       "whip": 1.17,
       "avg": 0.226,
-      "so9": 11.74
+      "so9": 11.74,
+      "kPct": 0.303,
+      "bbPct": 0.0606,
+      "kMinusBbPct": 0.2424,
+      "fip": 7.87
     },
     {
       "id": "685067",
@@ -4450,10 +6079,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 8,
+      "hitByPitch": 2,
       "era": 27.0,
       "whip": 3.0,
       "avg": 0.4,
-      "so9": 9.0
+      "so9": 9.0,
+      "kPct": 0.125,
+      "bbPct": 0.125,
+      "kMinusBbPct": 0.0,
+      "fip": 26.3
     },
     {
       "id": "810102",
@@ -4470,10 +6105,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 1,
+      "battersFaced": 34,
+      "hitByPitch": 1,
       "era": 4.5,
       "whip": 1.25,
       "avg": 0.148,
-      "so9": 9.0
+      "so9": 9.0,
+      "kPct": 0.2353,
+      "bbPct": 0.1765,
+      "kMinusBbPct": 0.0588,
+      "fip": 8.55
     },
     {
       "id": "686433",
@@ -4490,10 +6131,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 41,
+      "hitByPitch": 0,
       "era": 1.86,
       "whip": 1.34,
       "avg": 0.212,
-      "so9": 8.38
+      "so9": 8.38,
+      "kPct": 0.2195,
+      "bbPct": 0.1463,
+      "kMinusBbPct": 0.0732,
+      "fip": 6.3
     },
     {
       "id": "814269",
@@ -4510,10 +6157,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 18,
+      "hitByPitch": 1,
       "era": 49.5,
       "whip": 5.5,
       "avg": 0.647,
-      "so9": 4.5
+      "so9": 4.5,
+      "kPct": 0.0556,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0556,
+      "fip": 26.3
     },
     {
       "id": "694341",
@@ -4530,10 +6183,16 @@
       "wins": 9,
       "losses": 2,
       "saves": 0,
+      "battersFaced": 482,
+      "hitByPitch": 1,
       "era": 2.75,
       "whip": 1.05,
       "avg": 0.205,
-      "so9": 9.89
+      "so9": 9.89,
+      "kPct": 0.2759,
+      "bbPct": 0.0768,
+      "kMinusBbPct": 0.1991,
+      "fip": 8.36
     },
     {
       "id": "542194",
@@ -4550,10 +6209,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 7,
+      "hitByPitch": 1,
       "era": 9.0,
       "whip": 3.0,
       "avg": 0.4,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.1429,
+      "kMinusBbPct": -0.1429,
+      "fip": 14.54
     },
     {
       "id": "656234",
@@ -4570,10 +6235,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 25,
+      "hitByPitch": 0,
       "era": 1.17,
       "whip": 0.39,
       "avg": 0.043,
-      "so9": 10.57
+      "so9": 10.57,
+      "kPct": 0.36,
+      "bbPct": 0.08,
+      "kMinusBbPct": 0.28,
+      "fip": 8.67
     },
     {
       "id": "684608",
@@ -4590,10 +6261,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 79,
+      "hitByPitch": 0,
       "era": 3.44,
       "whip": 1.36,
       "avg": 0.159,
-      "so9": 9.82
+      "so9": 9.82,
+      "kPct": 0.2532,
+      "bbPct": 0.1899,
+      "kMinusBbPct": 0.0633,
+      "fip": 9.52
     },
     {
       "id": "694805",
@@ -4610,10 +6287,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 65,
+      "hitByPitch": 0,
       "era": 4.61,
       "whip": 1.76,
       "avg": 0.293,
-      "so9": 8.56
+      "so9": 8.56,
+      "kPct": 0.2,
+      "bbPct": 0.1077,
+      "kMinusBbPct": 0.0923,
+      "fip": 11.98
     },
     {
       "id": "665645",
@@ -4630,10 +6313,16 @@
       "wins": 3,
       "losses": 0,
       "saves": 4,
+      "battersFaced": 112,
+      "hitByPitch": 0,
       "era": 1.8,
       "whip": 0.87,
       "avg": 0.19,
-      "so9": 9.6
+      "so9": 9.6,
+      "kPct": 0.2857,
+      "bbPct": 0.0536,
+      "kMinusBbPct": 0.2321,
+      "fip": 7.87
     },
     {
       "id": "683409",
@@ -4650,10 +6339,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 67,
+      "hitByPitch": 1,
       "era": 1.0,
       "whip": 0.72,
       "avg": 0.153,
-      "so9": 9.5
+      "so9": 9.5,
+      "kPct": 0.2836,
+      "bbPct": 0.0597,
+      "kMinusBbPct": 0.2239,
+      "fip": 7.98
     },
     {
       "id": "694660",
@@ -4670,10 +6365,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 1,
+      "battersFaced": 80,
+      "hitByPitch": 1,
       "era": 9.0,
       "whip": 2.0,
       "avg": 0.254,
-      "so9": 11.25
+      "so9": 11.25,
+      "kPct": 0.25,
+      "bbPct": 0.2,
+      "kMinusBbPct": 0.05,
+      "fip": 13.29
     },
     {
       "id": "543037",
@@ -4690,10 +6391,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 22,
+      "hitByPitch": 0,
       "era": 1.69,
       "whip": 1.31,
       "avg": 0.286,
-      "so9": 10.12
+      "so9": 10.12,
+      "kPct": 0.2727,
+      "bbPct": 0.0455,
+      "kMinusBbPct": 0.2272,
+      "fip": 6.85
     },
     {
       "id": "679693",
@@ -4710,10 +6417,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 3,
+      "battersFaced": 183,
+      "hitByPitch": 1,
       "era": 6.25,
       "whip": 1.54,
       "avg": 0.259,
-      "so9": 9.15
+      "so9": 9.15,
+      "kPct": 0.224,
+      "bbPct": 0.1148,
+      "kMinusBbPct": 0.1092,
+      "fip": 9.11
     },
     {
       "id": "669395",
@@ -4730,10 +6443,16 @@
       "wins": 1,
       "losses": 1,
       "saves": 2,
+      "battersFaced": 94,
+      "hitByPitch": 1,
       "era": 2.57,
       "whip": 1.52,
       "avg": 0.167,
-      "so9": 11.14
+      "so9": 11.14,
+      "kPct": 0.2766,
+      "bbPct": 0.2128,
+      "kMinusBbPct": 0.0638,
+      "fip": 10.3
     },
     {
       "id": "529017",
@@ -4750,10 +6469,16 @@
       "wins": 2,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 180,
+      "hitByPitch": 3,
       "era": 3.54,
       "whip": 1.5,
       "avg": 0.247,
-      "so9": 9.3
+      "so9": 9.3,
+      "kPct": 0.2333,
+      "bbPct": 0.1278,
+      "kMinusBbPct": 0.1055,
+      "fip": 9.99
     },
     {
       "id": "660787",
@@ -4770,10 +6495,16 @@
       "wins": 3,
       "losses": 2,
       "saves": 1,
+      "battersFaced": 168,
+      "hitByPitch": 3,
       "era": 4.02,
       "whip": 1.17,
       "avg": 0.238,
-      "so9": 9.6
+      "so9": 9.6,
+      "kPct": 0.256,
+      "bbPct": 0.0655,
+      "kMinusBbPct": 0.1905,
+      "fip": 8.09
     },
     {
       "id": "702750",
@@ -4790,10 +6521,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 33,
+      "hitByPitch": 2,
       "era": 9.95,
       "whip": 2.05,
       "avg": 0.304,
-      "so9": 4.26
+      "so9": 4.26,
+      "kPct": 0.0909,
+      "bbPct": 0.1818,
+      "kMinusBbPct": -0.0909,
+      "fip": 15.49
     },
     {
       "id": "608331",
@@ -4810,10 +6547,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 14,
+      "hitByPitch": 0,
       "era": 6.0,
       "whip": 1.67,
       "avg": 0.357,
-      "so9": 9.0
+      "so9": 9.0,
+      "kPct": 0.2143,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.2143,
+      "fip": 10.87
     },
     {
       "id": "702068",
@@ -4830,10 +6573,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 2,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 3.0,
       "avg": 0.0,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.5,
+      "kMinusBbPct": -0.5,
+      "fip": 17.54
     },
     {
       "id": "661563",
@@ -4850,10 +6599,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 22,
+      "hitByPitch": 0,
       "era": 5.79,
       "whip": 1.71,
       "avg": 0.222,
-      "so9": 11.57
+      "so9": 11.57,
+      "kPct": 0.2727,
+      "bbPct": 0.1818,
+      "kMinusBbPct": 0.0909,
+      "fip": 11.33
     },
     {
       "id": "670868",
@@ -4870,10 +6625,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 3,
+      "hitByPitch": 0,
       "era": 54.0,
       "whip": 6.0,
       "avg": 0.667,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "fip": 47.54
     },
     {
       "id": "687589",
@@ -4890,10 +6651,16 @@
       "wins": 3,
       "losses": 9,
       "saves": 0,
+      "battersFaced": 431,
+      "hitByPitch": 8,
       "era": 6.9,
       "whip": 1.71,
       "avg": 0.291,
-      "so9": 7.29
+      "so9": 7.29,
+      "kPct": 0.1717,
+      "bbPct": 0.116,
+      "kMinusBbPct": 0.0557,
+      "fip": 11.24
     },
     {
       "id": "690440",
@@ -4910,10 +6677,16 @@
       "wins": 6,
       "losses": 2,
       "saves": 4,
+      "battersFaced": 210,
+      "hitByPitch": 1,
       "era": 2.1,
       "whip": 1.17,
       "avg": 0.198,
-      "so9": 10.69
+      "so9": 10.69,
+      "kPct": 0.2905,
+      "bbPct": 0.1143,
+      "kMinusBbPct": 0.1762,
+      "fip": 8.13
     },
     {
       "id": "809137",
@@ -4930,10 +6703,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 20,
+      "hitByPitch": 0,
       "era": 10.38,
       "whip": 2.08,
       "avg": 0.353,
-      "so9": 12.46
+      "so9": 12.46,
+      "kPct": 0.3,
+      "bbPct": 0.15,
+      "kMinusBbPct": 0.15,
+      "fip": 10.85
     },
     {
       "id": "815454",
@@ -4950,10 +6729,16 @@
       "wins": 1,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 56,
+      "hitByPitch": 1,
       "era": 7.11,
       "whip": 1.34,
       "avg": 0.26,
-      "so9": 9.95
+      "so9": 9.95,
+      "kPct": 0.25,
+      "bbPct": 0.0714,
+      "kMinusBbPct": 0.1786,
+      "fip": 11.62
     },
     {
       "id": "680572",
@@ -4970,10 +6755,16 @@
       "wins": 2,
       "losses": 9,
       "saves": 0,
+      "battersFaced": 400,
+      "hitByPitch": 12,
       "era": 5.58,
       "whip": 1.53,
       "avg": 0.239,
-      "so9": 7.61
+      "so9": 7.61,
+      "kPct": 0.1875,
+      "bbPct": 0.145,
+      "kMinusBbPct": 0.0425,
+      "fip": 11.56
     },
     {
       "id": "801739",
@@ -4990,10 +6781,16 @@
       "wins": 1,
       "losses": 4,
       "saves": 1,
+      "battersFaced": 281,
+      "hitByPitch": 6,
       "era": 4.55,
       "whip": 1.36,
       "avg": 0.221,
-      "so9": 11.79
+      "so9": 11.79,
+      "kPct": 0.2954,
+      "bbPct": 0.1174,
+      "kMinusBbPct": 0.178,
+      "fip": 9.82
     },
     {
       "id": "669740",
@@ -5010,10 +6807,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 9,
+      "hitByPitch": 1,
       "era": 5.4,
       "whip": 1.8,
       "avg": 0.167,
-      "so9": 10.8
+      "so9": 10.8,
+      "kPct": 0.2222,
+      "bbPct": 0.2222,
+      "kMinusBbPct": 0.0,
+      "fip": 11.54
     },
     {
       "id": "675296",
@@ -5030,10 +6833,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 14,
+      "hitByPitch": 0,
       "era": 13.5,
       "whip": 2.25,
       "avg": 0.333,
-      "so9": 13.5
+      "so9": 13.5,
+      "kPct": 0.2857,
+      "bbPct": 0.1429,
+      "kMinusBbPct": 0.1428,
+      "fip": 17.54
     },
     {
       "id": "684725",
@@ -5050,10 +6859,16 @@
       "wins": 7,
       "losses": 1,
       "saves": 2,
+      "battersFaced": 245,
+      "hitByPitch": 5,
       "era": 3.59,
       "whip": 1.14,
       "avg": 0.188,
-      "so9": 7.96
+      "so9": 7.96,
+      "kPct": 0.2082,
+      "bbPct": 0.1102,
+      "kMinusBbPct": 0.098,
+      "fip": 9.79
     },
     {
       "id": "606160",
@@ -5070,10 +6885,16 @@
       "wins": 1,
       "losses": 4,
       "saves": 2,
+      "battersFaced": 128,
+      "hitByPitch": 1,
       "era": 5.67,
       "whip": 1.7,
       "avg": 0.295,
-      "so9": 11.0
+      "so9": 11.0,
+      "kPct": 0.2578,
+      "bbPct": 0.1016,
+      "kMinusBbPct": 0.1562,
+      "fip": 9.1
     },
     {
       "id": "801432",
@@ -5090,10 +6911,16 @@
       "wins": 1,
       "losses": 2,
       "saves": 1,
+      "battersFaced": 109,
+      "hitByPitch": 5,
       "era": 10.71,
       "whip": 2.1,
       "avg": 0.293,
-      "so9": 12.43
+      "so9": 12.43,
+      "kPct": 0.2661,
+      "bbPct": 0.1835,
+      "kMinusBbPct": 0.0826,
+      "fip": 12.44
     },
     {
       "id": "814392",
@@ -5110,10 +6937,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 8,
+      "hitByPitch": 0,
       "era": 81.0,
       "whip": 9.0,
       "avg": 0.5,
-      "so9": 13.5
+      "so9": 13.5,
+      "kPct": 0.125,
+      "bbPct": 0.5,
+      "kMinusBbPct": -0.375,
+      "fip": 23.54
     },
     {
       "id": "607074",
@@ -5130,10 +6963,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 40,
+      "hitByPitch": 0,
       "era": 8.0,
       "whip": 1.56,
       "avg": 0.286,
-      "so9": 8.0
+      "so9": 8.0,
+      "kPct": 0.2,
+      "bbPct": 0.1,
+      "kMinusBbPct": 0.1,
+      "fip": 12.43
     },
     {
       "id": "695684",
@@ -5150,10 +6989,16 @@
       "wins": 8,
       "losses": 3,
       "saves": 0,
+      "battersFaced": 385,
+      "hitByPitch": 5,
       "era": 2.63,
       "whip": 1.27,
       "avg": 0.215,
-      "so9": 9.16
+      "so9": 9.16,
+      "kPct": 0.2442,
+      "bbPct": 0.1195,
+      "kMinusBbPct": 0.1247,
+      "fip": 8.86
     },
     {
       "id": "669699",
@@ -5170,10 +7015,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 0,
+      "battersFaced": 3,
+      "hitByPitch": 0,
       "era": 27.0,
       "whip": 6.0,
       "avg": 0.667,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "fip": 8.54
     },
     {
       "id": "657265",
@@ -5190,10 +7041,16 @@
       "wins": 0,
       "losses": 0,
       "saves": 1,
+      "battersFaced": 22,
+      "hitByPitch": 2,
       "era": 7.71,
       "whip": 1.07,
       "avg": 0.211,
-      "so9": 17.36
+      "so9": 17.36,
+      "kPct": 0.4091,
+      "bbPct": 0.0455,
+      "kMinusBbPct": 0.3636,
+      "fip": 9.4
     },
     {
       "id": "623437",
@@ -5210,10 +7067,16 @@
       "wins": 0,
       "losses": 1,
       "saves": 0,
+      "battersFaced": 4,
+      "hitByPitch": 0,
       "era": 0.0,
       "whip": 1.0,
       "avg": 0.25,
-      "so9": 0.0
+      "so9": 0.0,
+      "kPct": 0.0,
+      "bbPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "fip": 8.54
     },
     {
       "id": "702130",
@@ -5230,10 +7093,16 @@
       "wins": 4,
       "losses": 3,
       "saves": 2,
+      "battersFaced": 189,
+      "hitByPitch": 8,
       "era": 4.7,
       "whip": 1.18,
       "avg": 0.21,
-      "so9": 10.64
+      "so9": 10.64,
+      "kPct": 0.2751,
+      "bbPct": 0.0952,
+      "kMinusBbPct": 0.1799,
+      "fip": 9.43
     }
   ],
   "rookie_hitters": [
@@ -5253,10 +7122,19 @@
       "stolenBases": 7,
       "caughtStealing": 0,
       "strikeOuts": 15,
+      "plateAppearances": 56,
+      "intentionalWalks": 0,
       "avg": 0.154,
       "obp": 0.214,
       "slg": 0.231,
-      "ops": 0.445
+      "ops": 0.445,
+      "bbPct": 0.0714,
+      "kPct": 0.2679,
+      "kMinusBbPct": 0.1965,
+      "xbhPct": 0.25,
+      "iso": 0.077,
+      "babip": 0.194,
+      "woba": 0.205
     },
     {
       "id": "823754",
@@ -5274,10 +7152,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 22,
+      "intentionalWalks": 0,
       "avg": 0.368,
       "obp": 0.455,
       "slg": 0.947,
-      "ops": 1.402
+      "ops": 1.402,
+      "bbPct": 0.0909,
+      "kPct": 0.2273,
+      "kMinusBbPct": 0.1364,
+      "xbhPct": 0.7143,
+      "iso": 0.579,
+      "babip": 0.364,
+      "woba": 0.578
     },
     {
       "id": "820886",
@@ -5295,10 +7182,19 @@
       "stolenBases": 5,
       "caughtStealing": 5,
       "strikeOuts": 43,
+      "plateAppearances": 173,
+      "intentionalWalks": 0,
       "avg": 0.221,
       "obp": 0.306,
       "slg": 0.39,
-      "ops": 0.696
+      "ops": 0.696,
+      "bbPct": 0.0694,
+      "kPct": 0.2486,
+      "kMinusBbPct": 0.1792,
+      "xbhPct": 0.5,
+      "iso": 0.169,
+      "babip": 0.28,
+      "woba": 0.31
     },
     {
       "id": "812161",
@@ -5316,10 +7212,19 @@
       "stolenBases": 31,
       "caughtStealing": 9,
       "strikeOuts": 40,
+      "plateAppearances": 166,
+      "intentionalWalks": 0,
       "avg": 0.328,
       "obp": 0.488,
       "slg": 0.552,
-      "ops": 1.04
+      "ops": 1.04,
+      "bbPct": 0.1807,
+      "kPct": 0.241,
+      "kMinusBbPct": 0.0603,
+      "xbhPct": 0.3171,
+      "iso": 0.224,
+      "babip": 0.43,
+      "woba": 0.455
     },
     {
       "id": "701816",
@@ -5337,10 +7242,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 6,
+      "plateAppearances": 22,
+      "intentionalWalks": 0,
       "avg": 0.312,
       "obp": 0.5,
       "slg": 0.938,
-      "ops": 1.438
+      "ops": 1.438,
+      "bbPct": 0.2273,
+      "kPct": 0.2727,
+      "kMinusBbPct": 0.0454,
+      "xbhPct": 0.8,
+      "iso": 0.626,
+      "babip": 0.286,
+      "woba": 0.574
     },
     {
       "id": "821648",
@@ -5358,10 +7272,19 @@
       "stolenBases": 23,
       "caughtStealing": 7,
       "strikeOuts": 49,
+      "plateAppearances": 248,
+      "intentionalWalks": 0,
       "avg": 0.358,
       "obp": 0.411,
       "slg": 0.677,
-      "ops": 1.088
+      "ops": 1.088,
+      "bbPct": 0.0685,
+      "kPct": 0.1976,
+      "kMinusBbPct": 0.1291,
+      "xbhPct": 0.4691,
+      "iso": 0.319,
+      "babip": 0.401,
+      "woba": 0.464
     },
     {
       "id": "830454",
@@ -5379,10 +7302,19 @@
       "stolenBases": 29,
       "caughtStealing": 8,
       "strikeOuts": 44,
+      "plateAppearances": 226,
+      "intentionalWalks": 0,
       "avg": 0.28,
       "obp": 0.389,
       "slg": 0.455,
-      "ops": 0.844
+      "ops": 0.844,
+      "bbPct": 0.1018,
+      "kPct": 0.1947,
+      "kMinusBbPct": 0.0929,
+      "xbhPct": 0.3396,
+      "iso": 0.175,
+      "babip": 0.333,
+      "woba": 0.374
     },
     {
       "id": "806884",
@@ -5400,10 +7332,19 @@
       "stolenBases": 4,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 25,
+      "intentionalWalks": 0,
       "avg": 0.222,
       "obp": 0.44,
       "slg": 0.389,
-      "ops": 0.829
+      "ops": 0.829,
+      "bbPct": 0.24,
+      "kPct": 0.2,
+      "kMinusBbPct": -0.04,
+      "xbhPct": 0.25,
+      "iso": 0.167,
+      "babip": 0.25,
+      "woba": 0.385
     },
     {
       "id": "821282",
@@ -5421,10 +7362,19 @@
       "stolenBases": 4,
       "caughtStealing": 1,
       "strikeOuts": 8,
+      "plateAppearances": 31,
+      "intentionalWalks": 0,
       "avg": 0.32,
       "obp": 0.452,
       "slg": 0.4,
-      "ops": 0.852
+      "ops": 0.852,
+      "bbPct": 0.129,
+      "kPct": 0.2581,
+      "kMinusBbPct": 0.1291,
+      "xbhPct": 0.25,
+      "iso": 0.08,
+      "babip": 0.471,
+      "woba": 0.389
     },
     {
       "id": "809719",
@@ -5442,10 +7392,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 0,
+      "plateAppearances": 3,
+      "intentionalWalks": 0,
       "avg": 0.333,
       "obp": 0.333,
       "slg": 0.333,
-      "ops": 0.666
+      "ops": 0.666,
+      "bbPct": 0.0,
+      "kPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.333,
+      "woba": 0.296
     },
     {
       "id": "828076",
@@ -5463,10 +7422,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
+      "plateAppearances": 10,
+      "intentionalWalks": 0,
       "avg": 0.0,
       "obp": 0.1,
       "slg": 0.0,
-      "ops": 0.1
+      "ops": 0.1,
+      "bbPct": 0.1,
+      "kPct": 0.4,
+      "kMinusBbPct": 0.3,
+      "xbhPct": null,
+      "iso": 0.0,
+      "babip": 0.0,
+      "woba": 0.069
     },
     {
       "id": "808106",
@@ -5484,10 +7452,19 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 9,
+      "plateAppearances": 24,
+      "intentionalWalks": 0,
       "avg": 0.222,
       "obp": 0.417,
       "slg": 0.444,
-      "ops": 0.861
+      "ops": 0.861,
+      "bbPct": 0.2083,
+      "kPct": 0.375,
+      "kMinusBbPct": 0.1667,
+      "xbhPct": 0.5,
+      "iso": 0.222,
+      "babip": 0.375,
+      "woba": 0.388
     },
     {
       "id": "806146",
@@ -5505,10 +7482,19 @@
       "stolenBases": 0,
       "caughtStealing": 1,
       "strikeOuts": 0,
+      "plateAppearances": 6,
+      "intentionalWalks": 0,
       "avg": 0.667,
       "obp": 0.833,
       "slg": 2.667,
-      "ops": 3.5
+      "ops": 3.5,
+      "bbPct": 0.5,
+      "kPct": 0.0,
+      "kMinusBbPct": -0.5,
+      "xbhPct": 1.0,
+      "iso": 2.0,
+      "babip": 0.0,
+      "woba": 1.045
     },
     {
       "id": "821043",
@@ -5526,10 +7512,19 @@
       "stolenBases": 15,
       "caughtStealing": 4,
       "strikeOuts": 61,
+      "plateAppearances": 264,
+      "intentionalWalks": 0,
       "avg": 0.283,
       "obp": 0.394,
       "slg": 0.439,
-      "ops": 0.833
+      "ops": 0.833,
+      "bbPct": 0.1364,
+      "kPct": 0.2311,
+      "kMinusBbPct": 0.0947,
+      "xbhPct": 0.381,
+      "iso": 0.156,
+      "babip": 0.373,
+      "woba": 0.371
     },
     {
       "id": "800741",
@@ -5547,10 +7542,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 0,
+      "plateAppearances": 3,
+      "intentionalWalks": 0,
       "avg": 0.667,
       "obp": 0.667,
       "slg": 0.667,
-      "ops": 1.334
+      "ops": 1.334,
+      "bbPct": 0.0,
+      "kPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.667,
+      "woba": 0.592
     },
     {
       "id": "806154",
@@ -5568,10 +7572,19 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 10,
+      "plateAppearances": 35,
+      "intentionalWalks": 0,
       "avg": 0.321,
       "obp": 0.429,
       "slg": 0.786,
-      "ops": 1.215
+      "ops": 1.215,
+      "bbPct": 0.0857,
+      "kPct": 0.2857,
+      "kMinusBbPct": 0.2,
+      "xbhPct": 0.5556,
+      "iso": 0.465,
+      "babip": 0.333,
+      "woba": 0.499
     },
     {
       "id": "821028",
@@ -5589,10 +7602,19 @@
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 43,
+      "plateAppearances": 144,
+      "intentionalWalks": 0,
       "avg": 0.22,
       "obp": 0.312,
       "slg": 0.346,
-      "ops": 0.658
+      "ops": 0.658,
+      "bbPct": 0.1042,
+      "kPct": 0.2986,
+      "kMinusBbPct": 0.1944,
+      "xbhPct": 0.3571,
+      "iso": 0.126,
+      "babip": 0.309,
+      "woba": 0.298
     },
     {
       "id": "820996",
@@ -5610,10 +7632,19 @@
       "stolenBases": 9,
       "caughtStealing": 2,
       "strikeOuts": 81,
+      "plateAppearances": 227,
+      "intentionalWalks": 1,
       "avg": 0.229,
       "obp": 0.352,
       "slg": 0.505,
-      "ops": 0.857
+      "ops": 0.857,
+      "bbPct": 0.1366,
+      "kPct": 0.3568,
+      "kMinusBbPct": 0.2202,
+      "xbhPct": 0.5116,
+      "iso": 0.276,
+      "babip": 0.312,
+      "woba": 0.371
     },
     {
       "id": "821065",
@@ -5631,10 +7662,19 @@
       "stolenBases": 15,
       "caughtStealing": 4,
       "strikeOuts": 69,
+      "plateAppearances": 240,
+      "intentionalWalks": 0,
       "avg": 0.257,
       "obp": 0.4,
       "slg": 0.429,
-      "ops": 0.829
+      "ops": 0.829,
+      "bbPct": 0.175,
+      "kPct": 0.2875,
+      "kMinusBbPct": 0.1125,
+      "xbhPct": 0.3265,
+      "iso": 0.172,
+      "babip": 0.353,
+      "woba": 0.372
     },
     {
       "id": "809772",
@@ -5652,10 +7692,19 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 5,
+      "plateAppearances": 26,
+      "intentionalWalks": 0,
       "avg": 0.292,
       "obp": 0.346,
       "slg": 0.583,
-      "ops": 0.929
+      "ops": 0.929,
+      "bbPct": 0.0385,
+      "kPct": 0.1923,
+      "kMinusBbPct": 0.1538,
+      "xbhPct": 0.4286,
+      "iso": 0.291,
+      "babip": 0.294,
+      "woba": 0.401
     },
     {
       "id": "820991",
@@ -5673,10 +7722,19 @@
       "stolenBases": 7,
       "caughtStealing": 2,
       "strikeOuts": 19,
+      "plateAppearances": 77,
+      "intentionalWalks": 0,
       "avg": 0.275,
       "obp": 0.338,
       "slg": 0.319,
-      "ops": 0.657
+      "ops": 0.657,
+      "bbPct": 0.0779,
+      "kPct": 0.2468,
+      "kMinusBbPct": 0.1689,
+      "xbhPct": 0.1579,
+      "iso": 0.044,
+      "babip": 0.373,
+      "woba": 0.297
     },
     {
       "id": "821084",
@@ -5694,10 +7752,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 8,
+      "plateAppearances": 12,
+      "intentionalWalks": 0,
       "avg": 0.0,
       "obp": 0.083,
       "slg": 0.0,
-      "ops": 0.083
+      "ops": 0.083,
+      "bbPct": 0.0833,
+      "kPct": 0.6667,
+      "kMinusBbPct": 0.5834,
+      "xbhPct": null,
+      "iso": 0.0,
+      "babip": 0.0,
+      "woba": 0.057
     },
     {
       "id": "814269",
@@ -5715,10 +7782,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 0,
+      "plateAppearances": 1,
+      "intentionalWalks": 0,
       "avg": 0.0,
       "obp": 0.0,
       "slg": 0.0,
-      "ops": 0.0
+      "ops": 0.0,
+      "bbPct": 0.0,
+      "kPct": 0.0,
+      "kMinusBbPct": 0.0,
+      "xbhPct": null,
+      "iso": 0.0,
+      "babip": 0.0,
+      "woba": 0.0
     },
     {
       "id": "815910",
@@ -5736,10 +7812,19 @@
       "stolenBases": 7,
       "caughtStealing": 1,
       "strikeOuts": 40,
+      "plateAppearances": 117,
+      "intentionalWalks": 0,
       "avg": 0.235,
       "obp": 0.316,
       "slg": 0.333,
-      "ops": 0.649
+      "ops": 0.649,
+      "bbPct": 0.0769,
+      "kPct": 0.3419,
+      "kMinusBbPct": 0.265,
+      "xbhPct": 0.3333,
+      "iso": 0.098,
+      "babip": 0.365,
+      "woba": 0.293
     },
     {
       "id": "830414",
@@ -5757,10 +7842,19 @@
       "stolenBases": 4,
       "caughtStealing": 1,
       "strikeOuts": 31,
+      "plateAppearances": 91,
+      "intentionalWalks": 0,
       "avg": 0.263,
       "obp": 0.385,
       "slg": 0.329,
-      "ops": 0.714
+      "ops": 0.714,
+      "bbPct": 0.1429,
+      "kPct": 0.3407,
+      "kMinusBbPct": 0.1978,
+      "xbhPct": 0.15,
+      "iso": 0.066,
+      "babip": 0.432,
+      "woba": 0.331
     },
     {
       "id": "839410",
@@ -5778,10 +7872,19 @@
       "stolenBases": 9,
       "caughtStealing": 3,
       "strikeOuts": 34,
+      "plateAppearances": 99,
+      "intentionalWalks": 0,
       "avg": 0.27,
       "obp": 0.455,
       "slg": 0.459,
-      "ops": 0.914
+      "ops": 0.914,
+      "bbPct": 0.202,
+      "kPct": 0.3434,
+      "kMinusBbPct": 0.1414,
+      "xbhPct": 0.5,
+      "iso": 0.189,
+      "babip": 0.487,
+      "woba": 0.409
     },
     {
       "id": "830461",
@@ -5799,10 +7902,19 @@
       "stolenBases": 28,
       "caughtStealing": 3,
       "strikeOuts": 72,
+      "plateAppearances": 240,
+      "intentionalWalks": 0,
       "avg": 0.294,
       "obp": 0.408,
       "slg": 0.629,
-      "ops": 1.037
+      "ops": 1.037,
+      "bbPct": 0.1375,
+      "kPct": 0.3,
+      "kMinusBbPct": 0.1625,
+      "xbhPct": 0.6034,
+      "iso": 0.335,
+      "babip": 0.386,
+      "woba": 0.439
     },
     {
       "id": "829486",
@@ -5820,10 +7932,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 3,
+      "plateAppearances": 31,
+      "intentionalWalks": 0,
       "avg": 0.263,
       "obp": 0.516,
       "slg": 0.316,
-      "ops": 0.832
+      "ops": 0.832,
+      "bbPct": 0.2903,
+      "kPct": 0.0968,
+      "kMinusBbPct": -0.1935,
+      "xbhPct": 0.2,
+      "iso": 0.053,
+      "babip": 0.294,
+      "woba": 0.402
     },
     {
       "id": "825411",
@@ -5841,10 +7962,19 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 7,
+      "plateAppearances": 45,
+      "intentionalWalks": 0,
       "avg": 0.222,
       "obp": 0.356,
       "slg": 0.333,
-      "ops": 0.689
+      "ops": 0.689,
+      "bbPct": 0.1556,
+      "kPct": 0.1556,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.25,
+      "iso": 0.111,
+      "babip": 0.267,
+      "woba": 0.314
     },
     {
       "id": "833200",
@@ -5862,10 +7992,19 @@
       "stolenBases": 4,
       "caughtStealing": 1,
       "strikeOuts": 15,
+      "plateAppearances": 88,
+      "intentionalWalks": 0,
       "avg": 0.263,
       "obp": 0.352,
       "slg": 0.368,
-      "ops": 0.72
+      "ops": 0.72,
+      "bbPct": 0.1023,
+      "kPct": 0.1705,
+      "kMinusBbPct": 0.0682,
+      "xbhPct": 0.3,
+      "iso": 0.105,
+      "babip": 0.311,
+      "woba": 0.324
     },
     {
       "id": "832447",
@@ -5883,10 +8022,19 @@
       "stolenBases": 5,
       "caughtStealing": 1,
       "strikeOuts": 9,
+      "plateAppearances": 55,
+      "intentionalWalks": 0,
       "avg": 0.244,
       "obp": 0.418,
       "slg": 0.293,
-      "ops": 0.711
+      "ops": 0.711,
+      "bbPct": 0.1818,
+      "kPct": 0.1636,
+      "kMinusBbPct": -0.0182,
+      "xbhPct": 0.2,
+      "iso": 0.049,
+      "babip": 0.303,
+      "woba": 0.34
     },
     {
       "id": "821173",
@@ -5904,10 +8052,19 @@
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 9,
+      "plateAppearances": 59,
+      "intentionalWalks": 0,
       "avg": 0.36,
       "obp": 0.458,
       "slg": 0.68,
-      "ops": 1.138
+      "ops": 1.138,
+      "bbPct": 0.1356,
+      "kPct": 0.1525,
+      "kMinusBbPct": 0.0169,
+      "xbhPct": 0.4444,
+      "iso": 0.32,
+      "babip": 0.378,
+      "woba": 0.485
     },
     {
       "id": "832717",
@@ -5925,10 +8082,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 1,
+      "plateAppearances": 9,
+      "intentionalWalks": 0,
       "avg": 0.2,
       "obp": 0.444,
       "slg": 0.2,
-      "ops": 0.644
+      "ops": 0.644,
+      "bbPct": 0.3333,
+      "kPct": 0.1111,
+      "kMinusBbPct": -0.2222,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.2,
+      "woba": 0.329
     },
     {
       "id": "822210",
@@ -5946,10 +8112,19 @@
       "stolenBases": 9,
       "caughtStealing": 1,
       "strikeOuts": 31,
+      "plateAppearances": 180,
+      "intentionalWalks": 0,
       "avg": 0.286,
       "obp": 0.439,
       "slg": 0.421,
-      "ops": 0.86
+      "ops": 0.86,
+      "bbPct": 0.1667,
+      "kPct": 0.1722,
+      "kMinusBbPct": 0.0055,
+      "xbhPct": 0.25,
+      "iso": 0.135,
+      "babip": 0.34,
+      "woba": 0.39
     },
     {
       "id": "829501",
@@ -5967,10 +8142,19 @@
       "stolenBases": 37,
       "caughtStealing": 7,
       "strikeOuts": 31,
+      "plateAppearances": 245,
+      "intentionalWalks": 0,
       "avg": 0.315,
       "obp": 0.441,
       "slg": 0.543,
-      "ops": 0.984
+      "ops": 0.984,
+      "bbPct": 0.1592,
+      "kPct": 0.1265,
+      "kMinusBbPct": -0.0327,
+      "xbhPct": 0.3548,
+      "iso": 0.228,
+      "babip": 0.338,
+      "woba": 0.427
     },
     {
       "id": "837831",
@@ -5988,10 +8172,19 @@
       "stolenBases": 21,
       "caughtStealing": 2,
       "strikeOuts": 16,
+      "plateAppearances": 166,
+      "intentionalWalks": 0,
       "avg": 0.362,
       "obp": 0.446,
       "slg": 0.475,
-      "ops": 0.921
+      "ops": 0.921,
+      "bbPct": 0.1325,
+      "kPct": 0.0964,
+      "kMinusBbPct": -0.0361,
+      "xbhPct": 0.2745,
+      "iso": 0.113,
+      "babip": 0.402,
+      "woba": 0.405
     },
     {
       "id": "832787",
@@ -6009,10 +8202,19 @@
       "stolenBases": 11,
       "caughtStealing": 2,
       "strikeOuts": 10,
+      "plateAppearances": 48,
+      "intentionalWalks": 0,
       "avg": 0.361,
       "obp": 0.521,
       "slg": 0.528,
-      "ops": 1.049
+      "ops": 1.049,
+      "bbPct": 0.2083,
+      "kPct": 0.2083,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.3077,
+      "iso": 0.167,
+      "babip": 0.48,
+      "woba": 0.464
     },
     {
       "id": "837815",
@@ -6030,10 +8232,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 4,
+      "plateAppearances": 11,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.364,
       "slg": 0.25,
-      "ops": 0.614
+      "ops": 0.614,
+      "bbPct": 0.1818,
+      "kPct": 0.3636,
+      "kMinusBbPct": 0.1818,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.4,
+      "woba": 0.287
     },
     {
       "id": "822180",
@@ -6051,10 +8262,19 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 9,
+      "plateAppearances": 53,
+      "intentionalWalks": 0,
       "avg": 0.231,
       "obp": 0.415,
       "slg": 0.41,
-      "ops": 0.825
+      "ops": 0.825,
+      "bbPct": 0.2264,
+      "kPct": 0.1698,
+      "kMinusBbPct": -0.0566,
+      "xbhPct": 0.5556,
+      "iso": 0.179,
+      "babip": 0.29,
+      "woba": 0.37
     },
     {
       "id": "832789",
@@ -6072,10 +8292,19 @@
       "stolenBases": 6,
       "caughtStealing": 0,
       "strikeOuts": 16,
+      "plateAppearances": 62,
+      "intentionalWalks": 0,
       "avg": 0.2,
       "obp": 0.484,
       "slg": 0.25,
-      "ops": 0.734
+      "ops": 0.734,
+      "bbPct": 0.2742,
+      "kPct": 0.2581,
+      "kMinusBbPct": -0.0161,
+      "xbhPct": 0.25,
+      "iso": 0.05,
+      "babip": 0.333,
+      "woba": 0.374
     },
     {
       "id": "829769",
@@ -6093,10 +8322,19 @@
       "stolenBases": 27,
       "caughtStealing": 3,
       "strikeOuts": 24,
+      "plateAppearances": 175,
+      "intentionalWalks": 1,
       "avg": 0.375,
       "obp": 0.457,
       "slg": 0.646,
-      "ops": 1.103
+      "ops": 1.103,
+      "bbPct": 0.1371,
+      "kPct": 0.1371,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.3889,
+      "iso": 0.271,
+      "babip": 0.393,
+      "woba": 0.463
     },
     {
       "id": "825186",
@@ -6114,10 +8352,19 @@
       "stolenBases": 3,
       "caughtStealing": 1,
       "strikeOuts": 21,
+      "plateAppearances": 79,
+      "intentionalWalks": 0,
       "avg": 0.189,
       "obp": 0.456,
       "slg": 0.453,
-      "ops": 0.909
+      "ops": 0.909,
+      "bbPct": 0.3038,
+      "kPct": 0.2658,
+      "kMinusBbPct": -0.038,
+      "xbhPct": 0.6,
+      "iso": 0.264,
+      "babip": 0.214,
+      "woba": 0.411
     },
     {
       "id": "822264",
@@ -6135,10 +8382,19 @@
       "stolenBases": 9,
       "caughtStealing": 2,
       "strikeOuts": 36,
+      "plateAppearances": 138,
+      "intentionalWalks": 0,
       "avg": 0.168,
       "obp": 0.413,
       "slg": 0.221,
-      "ops": 0.634
+      "ops": 0.634,
+      "bbPct": 0.2826,
+      "kPct": 0.2609,
+      "kMinusBbPct": -0.0217,
+      "xbhPct": 0.3125,
+      "iso": 0.053,
+      "babip": 0.262,
+      "woba": 0.322
     },
     {
       "id": "830475",
@@ -6156,10 +8412,19 @@
       "stolenBases": 2,
       "caughtStealing": 1,
       "strikeOuts": 9,
+      "plateAppearances": 41,
+      "intentionalWalks": 0,
       "avg": 0.25,
       "obp": 0.39,
       "slg": 0.438,
-      "ops": 0.828
+      "ops": 0.828,
+      "bbPct": 0.122,
+      "kPct": 0.2195,
+      "kMinusBbPct": 0.0975,
+      "xbhPct": 0.375,
+      "iso": 0.188,
+      "babip": 0.304,
+      "woba": 0.367
     },
     {
       "id": "837798",
@@ -6177,10 +8442,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 5,
+      "plateAppearances": 14,
+      "intentionalWalks": 0,
       "avg": 0.167,
       "obp": 0.286,
       "slg": 0.417,
-      "ops": 0.703
+      "ops": 0.703,
+      "bbPct": 0.1429,
+      "kPct": 0.3571,
+      "kMinusBbPct": 0.2142,
+      "xbhPct": 0.5,
+      "iso": 0.25,
+      "babip": 0.167,
+      "woba": 0.312
     },
     {
       "id": "825153",
@@ -6198,10 +8472,19 @@
       "stolenBases": 26,
       "caughtStealing": 6,
       "strikeOuts": 17,
+      "plateAppearances": 242,
+      "intentionalWalks": 0,
       "avg": 0.384,
       "obp": 0.471,
       "slg": 0.645,
-      "ops": 1.116
+      "ops": 1.116,
+      "bbPct": 0.1157,
+      "kPct": 0.0702,
+      "kMinusBbPct": -0.0455,
+      "xbhPct": 0.4487,
+      "iso": 0.261,
+      "babip": 0.387,
+      "woba": 0.476
     },
     {
       "id": "830414",
@@ -6219,10 +8502,19 @@
       "stolenBases": 3,
       "caughtStealing": 2,
       "strikeOuts": 4,
+      "plateAppearances": 17,
+      "intentionalWalks": 0,
       "avg": 0.083,
       "obp": 0.353,
       "slg": 0.083,
-      "ops": 0.436
+      "ops": 0.436,
+      "bbPct": 0.2941,
+      "kPct": 0.2353,
+      "kMinusBbPct": -0.0588,
+      "xbhPct": 0.0,
+      "iso": 0.0,
+      "babip": 0.125,
+      "woba": 0.255
     },
     {
       "id": "830470",
@@ -6240,10 +8532,19 @@
       "stolenBases": 25,
       "caughtStealing": 4,
       "strikeOuts": 52,
+      "plateAppearances": 210,
+      "intentionalWalks": 0,
       "avg": 0.189,
       "obp": 0.338,
       "slg": 0.361,
-      "ops": 0.699
+      "ops": 0.699,
+      "bbPct": 0.1381,
+      "kPct": 0.2476,
+      "kMinusBbPct": 0.1095,
+      "xbhPct": 0.5,
+      "iso": 0.172,
+      "babip": 0.23,
+      "woba": 0.32
     },
     {
       "id": "822236",
@@ -6261,10 +8562,19 @@
       "stolenBases": 23,
       "caughtStealing": 4,
       "strikeOuts": 25,
+      "plateAppearances": 195,
+      "intentionalWalks": 0,
       "avg": 0.29,
       "obp": 0.426,
       "slg": 0.413,
-      "ops": 0.839
+      "ops": 0.839,
+      "bbPct": 0.1487,
+      "kPct": 0.1282,
+      "kMinusBbPct": -0.0205,
+      "xbhPct": 0.3111,
+      "iso": 0.123,
+      "babip": 0.331,
+      "woba": 0.379
     },
     {
       "id": "821683",
@@ -6282,10 +8592,19 @@
       "stolenBases": 8,
       "caughtStealing": 5,
       "strikeOuts": 41,
+      "plateAppearances": 225,
+      "intentionalWalks": 0,
       "avg": 0.333,
       "obp": 0.502,
       "slg": 0.594,
-      "ops": 1.096
+      "ops": 1.096,
+      "bbPct": 0.2311,
+      "kPct": 0.1822,
+      "kMinusBbPct": -0.0489,
+      "xbhPct": 0.4182,
+      "iso": 0.261,
+      "babip": 0.393,
+      "woba": 0.471
     },
     {
       "id": "830419",
@@ -6303,10 +8622,19 @@
       "stolenBases": 9,
       "caughtStealing": 4,
       "strikeOuts": 13,
+      "plateAppearances": 99,
+      "intentionalWalks": 0,
       "avg": 0.27,
       "obp": 0.444,
       "slg": 0.446,
-      "ops": 0.89
+      "ops": 0.89,
+      "bbPct": 0.1313,
+      "kPct": 0.1313,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.35,
+      "iso": 0.176,
+      "babip": 0.288,
+      "woba": 0.402
     },
     {
       "id": "829041",
@@ -6324,10 +8652,19 @@
       "stolenBases": 9,
       "caughtStealing": 2,
       "strikeOuts": 38,
+      "plateAppearances": 126,
+      "intentionalWalks": 0,
       "avg": 0.228,
       "obp": 0.365,
       "slg": 0.396,
-      "ops": 0.761
+      "ops": 0.761,
+      "bbPct": 0.1746,
+      "kPct": 0.3016,
+      "kMinusBbPct": 0.127,
+      "xbhPct": 0.4783,
+      "iso": 0.168,
+      "babip": 0.323,
+      "woba": 0.341
     },
     {
       "id": "830458",
@@ -6345,10 +8682,19 @@
       "stolenBases": 5,
       "caughtStealing": 1,
       "strikeOuts": 27,
+      "plateAppearances": 62,
+      "intentionalWalks": 0,
       "avg": 0.188,
       "obp": 0.371,
       "slg": 0.25,
-      "ops": 0.621
+      "ops": 0.621,
+      "bbPct": 0.1613,
+      "kPct": 0.4355,
+      "kMinusBbPct": 0.2742,
+      "xbhPct": 0.2222,
+      "iso": 0.062,
+      "babip": 0.429,
+      "woba": 0.305
     },
     {
       "id": "829486",
@@ -6366,10 +8712,19 @@
       "stolenBases": 1,
       "caughtStealing": 2,
       "strikeOuts": 8,
+      "plateAppearances": 61,
+      "intentionalWalks": 0,
       "avg": 0.356,
       "obp": 0.508,
       "slg": 0.6,
-      "ops": 1.108
+      "ops": 1.108,
+      "bbPct": 0.1639,
+      "kPct": 0.1311,
+      "kMinusBbPct": -0.0328,
+      "xbhPct": 0.4375,
+      "iso": 0.244,
+      "babip": 0.389,
+      "woba": 0.476
     },
     {
       "id": "832447",
@@ -6387,10 +8742,19 @@
       "stolenBases": 4,
       "caughtStealing": 1,
       "strikeOuts": 6,
+      "plateAppearances": 48,
+      "intentionalWalks": 0,
       "avg": 0.286,
       "obp": 0.417,
       "slg": 0.429,
-      "ops": 0.846
+      "ops": 0.846,
+      "bbPct": 0.1875,
+      "kPct": 0.125,
+      "kMinusBbPct": -0.0625,
+      "xbhPct": 0.2,
+      "iso": 0.143,
+      "babip": 0.29,
+      "woba": 0.37
     },
     {
       "id": "815334",
@@ -6408,10 +8772,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 15,
+      "plateAppearances": 52,
+      "intentionalWalks": 0,
       "avg": 0.184,
       "obp": 0.404,
       "slg": 0.237,
-      "ops": 0.641
+      "ops": 0.641,
+      "bbPct": 0.1731,
+      "kPct": 0.2885,
+      "kMinusBbPct": 0.1154,
+      "xbhPct": 0.2857,
+      "iso": 0.053,
+      "babip": 0.304,
+      "woba": 0.323
     },
     {
       "id": "821173",
@@ -6429,10 +8802,19 @@
       "stolenBases": 2,
       "caughtStealing": 0,
       "strikeOuts": 10,
+      "plateAppearances": 39,
+      "intentionalWalks": 0,
       "avg": 0.229,
       "obp": 0.308,
       "slg": 0.429,
-      "ops": 0.737
+      "ops": 0.737,
+      "bbPct": 0.1026,
+      "kPct": 0.2564,
+      "kMinusBbPct": 0.1538,
+      "xbhPct": 0.625,
+      "iso": 0.2,
+      "babip": 0.32,
+      "woba": 0.32
     },
     {
       "id": "832787",
@@ -6450,10 +8832,19 @@
       "stolenBases": 22,
       "caughtStealing": 2,
       "strikeOuts": 26,
+      "plateAppearances": 131,
+      "intentionalWalks": 0,
       "avg": 0.24,
       "obp": 0.389,
       "slg": 0.365,
-      "ops": 0.754
+      "ops": 0.754,
+      "bbPct": 0.1679,
+      "kPct": 0.1985,
+      "kMinusBbPct": 0.0306,
+      "xbhPct": 0.24,
+      "iso": 0.125,
+      "babip": 0.299,
+      "woba": 0.346
     },
     {
       "id": "837815",
@@ -6471,10 +8862,19 @@
       "stolenBases": 4,
       "caughtStealing": 2,
       "strikeOuts": 24,
+      "plateAppearances": 112,
+      "intentionalWalks": 0,
       "avg": 0.218,
       "obp": 0.384,
       "slg": 0.299,
-      "ops": 0.683
+      "ops": 0.683,
+      "bbPct": 0.1964,
+      "kPct": 0.2143,
+      "kMinusBbPct": 0.0179,
+      "xbhPct": 0.3158,
+      "iso": 0.081,
+      "babip": 0.297,
+      "woba": 0.323
     },
     {
       "id": "808152",
@@ -6492,10 +8892,19 @@
       "stolenBases": 2,
       "caughtStealing": 3,
       "strikeOuts": 25,
+      "plateAppearances": 90,
+      "intentionalWalks": 0,
       "avg": 0.203,
       "obp": 0.378,
       "slg": 0.348,
-      "ops": 0.726
+      "ops": 0.726,
+      "bbPct": 0.1778,
+      "kPct": 0.2778,
+      "kMinusBbPct": 0.1,
+      "xbhPct": 0.3571,
+      "iso": 0.145,
+      "babip": 0.279,
+      "woba": 0.336
     },
     {
       "id": "822180",
@@ -6513,10 +8922,19 @@
       "stolenBases": 3,
       "caughtStealing": 3,
       "strikeOuts": 11,
+      "plateAppearances": 90,
+      "intentionalWalks": 0,
       "avg": 0.362,
       "obp": 0.5,
       "slg": 0.623,
-      "ops": 1.123
+      "ops": 1.123,
+      "bbPct": 0.1667,
+      "kPct": 0.1222,
+      "kMinusBbPct": -0.0445,
+      "xbhPct": 0.32,
+      "iso": 0.261,
+      "babip": 0.37,
+      "woba": 0.482
     },
     {
       "id": "837792",
@@ -6534,10 +8952,19 @@
       "stolenBases": 5,
       "caughtStealing": 2,
       "strikeOuts": 20,
+      "plateAppearances": 128,
+      "intentionalWalks": 0,
       "avg": 0.242,
       "obp": 0.406,
       "slg": 0.453,
-      "ops": 0.859
+      "ops": 0.859,
+      "bbPct": 0.1484,
+      "kPct": 0.1562,
+      "kMinusBbPct": 0.0078,
+      "xbhPct": 0.5652,
+      "iso": 0.211,
+      "babip": 0.263,
+      "woba": 0.379
     },
     {
       "id": "830475",
@@ -6555,10 +8982,19 @@
       "stolenBases": 6,
       "caughtStealing": 2,
       "strikeOuts": 10,
+      "plateAppearances": 74,
+      "intentionalWalks": 0,
       "avg": 0.317,
       "obp": 0.432,
       "slg": 0.467,
-      "ops": 0.899
+      "ops": 0.899,
+      "bbPct": 0.1216,
+      "kPct": 0.1351,
+      "kMinusBbPct": 0.0135,
+      "xbhPct": 0.2632,
+      "iso": 0.15,
+      "babip": 0.347,
+      "woba": 0.399
     },
     {
       "id": "832491",
@@ -6576,10 +9012,19 @@
       "stolenBases": 6,
       "caughtStealing": 0,
       "strikeOuts": 27,
+      "plateAppearances": 181,
+      "intentionalWalks": 0,
       "avg": 0.311,
       "obp": 0.464,
       "slg": 0.417,
-      "ops": 0.881
+      "ops": 0.881,
+      "bbPct": 0.2044,
+      "kPct": 0.1492,
+      "kMinusBbPct": -0.0552,
+      "xbhPct": 0.2439,
+      "iso": 0.106,
+      "babip": 0.358,
+      "woba": 0.396
     },
     {
       "id": "837798",
@@ -6597,10 +9042,19 @@
       "stolenBases": 0,
       "caughtStealing": 0,
       "strikeOuts": 7,
+      "plateAppearances": 13,
+      "intentionalWalks": 0,
       "avg": 0.0,
       "obp": 0.0,
       "slg": 0.0,
-      "ops": 0.0
+      "ops": 0.0,
+      "bbPct": 0.0,
+      "kPct": 0.5385,
+      "kMinusBbPct": 0.5385,
+      "xbhPct": null,
+      "iso": 0.0,
+      "babip": 0.0,
+      "woba": 0.0
     },
     {
       "id": "825266",
@@ -6618,10 +9072,19 @@
       "stolenBases": 24,
       "caughtStealing": 4,
       "strikeOuts": 55,
+      "plateAppearances": 197,
+      "intentionalWalks": 0,
       "avg": 0.199,
       "obp": 0.401,
       "slg": 0.308,
-      "ops": 0.709
+      "ops": 0.709,
+      "bbPct": 0.2234,
+      "kPct": 0.2792,
+      "kMinusBbPct": 0.0558,
+      "xbhPct": 0.3103,
+      "iso": 0.109,
+      "babip": 0.308,
+      "woba": 0.337
     }
   ]
 }

@@ -173,14 +173,45 @@
 ### BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Coby Morales | SOM | 29.4% |
+| T2 | Jackson Castillo | SOM | 28.6% |
+| T2 | Cole Gabrielson | SOM | 28.6% |
+| T4 | Robbie Burnett | HV | 25.0% |
+| T4 | Hans Montero | HV | 25.0% |
+| 6 | Kyle West | HV | 22.7% |
+| 7 | Bayram Hot | TAM | 22.2% |
+| 8 | Dax Kilby | TAM | 21.9% |
+| 9 | Eric Genther | HV | 21.7% |
+| 10 | Camden Troyer | HV | 20.0% |
 
 ### K%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| T1 | Luis Durango | SOM | 0.0% |
+| T1 | Ernesto Martinez Jr. | SWB | 0.0% |
+| 3 | Jackson Castillo | SOM | 7.1% |
+| 4 | Max Schuemann | SWB | 10.0% |
+| T5 | Luis Escudero | TAM | 10.5% |
+| T5 | Enmanuel Tejeda | HV | 10.5% |
+| T5 | Manuel Palencia | SOM | 10.5% |
+| 8 | Coby Morales | SOM | 11.8% |
+| 9 | Jasson Domínguez | SWB | 13.0% |
+| T10 | Brando Mayea | TAM | 13.3% |
+| T10 | Anthony Potestio | TAM | 13.3% |
 
 ### K-BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Josh Moylan | SOM | 33.3% |
+| 2 | Willy Montero | HV | 30.8% |
+| 3 | Omar Alfonzo | SOM | 28.6% |
+| 4 | Dean Toigo | HV | 26.7% |
+| 5 | Tyler Hardman | SWB | 26.3% |
+| T6 | DJ Gladney | SOM | 25.0% |
+| T6 | Kenedy Corona | SWB | 25.0% |
+| 8 | Roderick Arias | SOM | 24.0% |
+| 9 | Bryce Martin-Grudzielanek | HV | 23.8% |
+| 10 | Blake Cyr | TAM | 23.5% |
 
 ### XBH%
 | # | Player | Team | Value |
@@ -336,14 +367,45 @@
 ### K%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Geoffrey Gilbert | SOM | 54.5% |
+| 2 | Kelly Austin | SOM | 53.8% |
+| 3 | Yerry Rodríguez | TAM | 50.0% |
+| 4 | Tyler Boudreau | SOM | 46.2% |
+| T5 | Matthew Tippie | TAM | 42.9% |
+| T5 | Thomas Balboni Jr. | HV | 42.9% |
+| 7 | Luis Serna | HV | 42.1% |
+| 8 | Brandon Decker | HV | 36.4% |
+| 9 | Wyatt Parliament | TAM | 35.7% |
+| 10 | Bryce Cunningham | HV | 28.6% |
 
 ### BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| T1 | Wyatt Parliament | TAM | 0.0% |
+| T1 | Yerry Rodríguez | TAM | 0.0% |
+| T1 | Bryce Cunningham | HV | 0.0% |
+| T1 | Luis Serna | HV | 0.0% |
+| T1 | Michael Arias | SOM | 0.0% |
+| T1 | Tyler Boudreau | SOM | 0.0% |
+| 7 | Rory Fox | SOM | 3.7% |
+| T8 | Justin West | TAM | 4.0% |
+| T8 | Franyer Herrera | HV | 4.0% |
+| T8 | Brendan Beck | SWB | 4.0% |
+| T8 | Elmer Rodríguez | SWB | 4.0% |
 
 ### K-BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Yerry Rodríguez | TAM | 50.0% |
+| 2 | Kelly Austin | SOM | 46.2% |
+| 3 | Tyler Boudreau | SOM | 46.2% |
+| 4 | Geoffrey Gilbert | SOM | 45.5% |
+| 5 | Luis Serna | HV | 42.1% |
+| 6 | Matthew Tippie | TAM | 35.7% |
+| 7 | Wyatt Parliament | TAM | 35.7% |
+| T8 | Thomas Balboni Jr. | HV | 28.6% |
+| T8 | Bryce Cunningham | HV | 28.6% |
+| 10 | Brandon Decker | HV | 27.3% |
 
 ### FIP
 | # | Player | Team | Value |

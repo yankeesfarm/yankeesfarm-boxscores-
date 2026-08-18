@@ -150,14 +150,44 @@
 ### BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Enmanuel Tejeda | HV | 14.9% |
+| 2 | Hans Montero | HV | 14.8% |
+| T3 | Eric Genther | HV | 13.1% |
+| T3 | Core Jackson | SOM | 13.1% |
+| 5 | Jackson Castillo | SOM | 12.8% |
+| 6 | Coby Morales | SOM | 12.5% |
+| 7 | Jace Avina | SOM | 12.4% |
+| 8 | Bryce Martin-Grudzielanek | HV | 12.3% |
+| 9 | Marco Luciano | SWB | 12.2% |
+| 10 | Ernesto Martinez Jr. | SWB | 10.5% |
 
 ### K%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Jackson Castillo | SOM | 17.6% |
+| 2 | Eric Genther | HV | 18.6% |
+| 3 | Oswaldo Cabrera | SWB | 19.4% |
+| 4 | Enmanuel Tejeda | HV | 19.9% |
+| 5 | Core Jackson | SOM | 20.1% |
+| 6 | Yanquiel Fernández | SWB | 22.6% |
+| 7 | Bryce Martin-Grudzielanek | HV | 23.4% |
+| 8 | Tyler Hardman | SWB | 23.5% |
+| 9 | Hans Montero | HV | 23.8% |
+| 10 | Marco Luciano | SWB | 24.5% |
 
 ### K-BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Josh Moylan | SOM | 30.7% |
+| 2 | DJ Gladney | SOM | 27.7% |
+| 3 | Kyle West | HV | 22.6% |
+| 4 | Jackson Lovich | HV | 19.7% |
+| 5 | Roderick Arias | SOM | 19.5% |
+| 6 | Willy Montero | HV | 17.0% |
+| 7 | Ernesto Martinez Jr. | SWB | 15.8% |
+| 8 | Yanquiel Fernández | SWB | 15.3% |
+| 9 | Tyler Hardman | SWB | 13.9% |
+| 10 | Coby Morales | SOM | 12.5% |
 
 ### XBH%
 | # | Player | Team | Value |
@@ -210,7 +240,7 @@
 | T3 | Jace Avina | SOM | 0.372 |
 | T3 | Coby Morales | SOM | 0.372 |
 | 6 | Core Jackson | SOM | 0.368 |
-| 7 | Tyler Hardman | SWB | 0.364 |
+| 7 | Tyler Hardman | SWB | 0.363 |
 | 8 | DJ Gladney | SOM | 0.358 |
 | 9 | Roderick Arias | SOM | 0.350 |
 | 10 | Hans Montero | HV | 0.347 |
@@ -305,28 +335,58 @@
 ### K%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Xavier Rivas | SWB | 33.8% |
+| 2 | Allen Facundo | HV | 30.6% |
+| 3 | Carlos Lagrange | SWB | 29.5% |
+| 4 | Tyler Boudreau | SOM | 28.0% |
+| 5 | Brendan Beck | SWB | 27.6% |
+| 6 | Luis Serna | HV | 27.4% |
+| 7 | Sean Paul Liñan | HV | 27.3% |
+| 8 | Trent Sellers | SOM | 27.3% |
+| 9 | Kyle Carr | SWB | 26.6% |
+| 10 | Franyer Herrera | HV | 26.1% |
 
 ### BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Rory Fox | SOM | 6.2% |
+| 2 | Justin West | TAM | 7.1% |
+| 3 | Brendan Beck | SWB | 7.7% |
+| 4 | Luis Serna | HV | 7.7% |
+| 5 | Chase Chaney | SOM | 8.5% |
+| 6 | Tyler Boudreau | SOM | 9.3% |
+| 7 | Kyle Carr | SWB | 9.4% |
+| 8 | Cade Smith | SOM | 9.9% |
+| 9 | Bryce Cunningham | HV | 10.5% |
+| 10 | Sean Paul Liñan | HV | 11.3% |
 
 ### K-BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
+| 1 | Xavier Rivas | SWB | 20.6% |
+| 2 | Brendan Beck | SWB | 19.9% |
+| 3 | Luis Serna | HV | 19.7% |
+| 4 | Tyler Boudreau | SOM | 18.8% |
+| 5 | Carlos Lagrange | SWB | 17.8% |
+| 6 | Justin West | TAM | 17.4% |
+| 7 | Rory Fox | SOM | 17.2% |
+| 8 | Kyle Carr | SWB | 17.2% |
+| 9 | Sean Paul Liñan | HV | 16.0% |
+| 10 | Allen Facundo | HV | 15.2% |
 
 ### FIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luis Serna | HV | 3.68 |
-| 2 | Allen Facundo | HV | 3.83 |
-| 3 | Bryce Cunningham | HV | 4.47 |
-| 4 | Sean Paul Liñan | HV | 4.74 |
-| 5 | Franyer Herrera | HV | 5.35 |
-| 6 | Brendan Beck | SWB | 5.63 |
-| 7 | Elmer Rodríguez | SWB | 6.00 |
-| 8 | Tyler Boudreau | SOM | 6.03 |
-| 9 | Justin West | TAM | 6.07 |
-| 10 | Rory Fox | SOM | 6.47 |
+| 1 | Luis Serna | HV | 3.59 |
+| 2 | Allen Facundo | HV | 3.93 |
+| 3 | Bryce Cunningham | HV | 4.24 |
+| 4 | Sean Paul Liñan | HV | 4.88 |
+| 5 | Franyer Herrera | HV | 5.22 |
+| 6 | Brendan Beck | SWB | 5.47 |
+| T7 | Tyler Boudreau | SOM | 5.92 |
+| T7 | Justin West | TAM | 5.92 |
+| 9 | Elmer Rodríguez | SWB | 5.97 |
+| 10 | Rory Fox | SOM | 6.31 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*
