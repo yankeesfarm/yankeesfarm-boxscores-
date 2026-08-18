@@ -235,6 +235,16 @@ def finalize_hitter(pid, name, pos, level_id, totals, bio_person):
     tb = singles + 2 * doubles + 3 * triples + 4 * hr
     avg = round(h / ab, 3) if ab else 0.0
     obp_denom = ab + bb + hbp + sf
+    # The raw "plateAppearances" field as fetched/summed from the MLB
+    # Stats API is NOT reliably present -- this was confirmed live on the
+    # season-leaderboard pipeline (identical data source): BB%/K%/K-BB%
+    # came back completely empty while XBH%/ISO/BABIP/wOBA (which don't
+    # depend on plateAppearances) worked fine. obp_denom (AB+BB+HBP+SF) is
+    # the same value plate appearances should equal and is already
+    # reliably computed here from raw counting stats, so use it instead of
+    # trusting whatever combine_by_id()/totals summed from the raw fetch.
+    if obp_denom:
+        pa = obp_denom
     obp = round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0
     slg = round(tb / ab, 3) if ab else 0.0
     ops = round(obp + slg, 3)
@@ -289,6 +299,14 @@ def finalize_pitcher(pid, name, pos, level_id, totals):
     hbp = totals.get("hitByPitch", 0)
     outs = totals.get("_outs", 0)
     true_ip = outs / 3 if outs else 0.0
+
+    # Same fallback as finalize_hitter()'s plateAppearances fix: the raw
+    # "battersFaced" field isn't reliably present from the API fetch,
+    # which would otherwise silently zero out pitcher K%/BB%/K-BB%. Falls
+    # back to the standard estimate -- outs recorded + hits + walks + HBP
+    # -- only when the raw fetched value is missing/zero.
+    if not bf:
+        bf = outs + hits + bb + hbp
 
     era = round(9 * earned_runs / true_ip, 2) if true_ip else 0.0
     whip = round((bb + hits) / true_ip, 2) if true_ip else 0.0
