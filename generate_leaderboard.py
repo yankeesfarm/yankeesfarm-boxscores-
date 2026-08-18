@@ -179,11 +179,24 @@ def apply_advanced_hitting_stats(rows):
     off the row's already-combined counting stats (atBats, hits,
     plateAppearances, etc.), which is only correct post-combine_by_id().
 
+    IMPORTANT: the raw "plateAppearances" field as fetched/summed from the
+    MLB Stats API is NOT reliably present/correct -- this silently zeroed
+    out BB%/K%/K-BB% site-wide (confirmed live: XBH%/ISO/BABIP/wOBA, which
+    don't depend on plateAppearances, populated correctly; these three
+    came back completely empty). Same root cause as why avg/obp/slg/ops
+    are always RECOMPUTED from raw counts rather than trusted from the
+    API -- recompute_hitting_rates() already derives this exact value as
+    "pa" (AB+BB+HBP+SF) just before this function runs, so sync it into
+    "plateAppearances" here rather than trusting whatever combine_by_id()
+    summed from the raw fetch.
+
     Only ever called on the full-season `hitters` list (see
     ROOKIE_LEVEL_INCLUDED_FIELDS above) -- never on the rookie-merged
     counting_pool, since a DSL/FCL sample is too small to trust for a rate
     stat."""
     for row in rows:
+        if row.get("pa"):
+            row["plateAppearances"] = row["pa"]
         row["bbPct"] = calc_bb_rate(row)
         row["kPct"] = calc_k_rate(row)
         row["kMinusBbPct"] = calc_k_minus_bb_rate_hitter(row)
@@ -198,6 +211,14 @@ def apply_advanced_pitching_stats(rows):
     """Adds K%, BB%, K-BB%, and FIP to each (already combined +
     rate-recomputed) pitcher row.
 
+    IMPORTANT: same root-cause fix as apply_advanced_hitting_stats() above
+    -- the raw "battersFaced" field isn't reliably present either, which is
+    why FIP (doesn't use battersFaced) worked live while K%/BB%/K-BB%
+    (both need it) came back completely empty. Falls back to the standard
+    estimate -- outs recorded + hits + walks + HBP -- only when the raw
+    summed value is missing/zero, so a genuinely-present real value is
+    never overwritten with an estimate.
+
     FIP needs a level-specific constant. Since `rows` here is the full
     combined pitcher pool across ALL affiliates, FIP constants are computed
     per TEAM (each affiliate = one level, same approach fetch_season_stats.py
@@ -211,6 +232,9 @@ def apply_advanced_pitching_stats(rows):
     would be stale (based on one level's partial innings) and silently
     wrong once his innings are correctly combined across levels here."""
     for row in rows:
+        if not row.get("battersFaced"):
+            row["battersFaced"] = row.get("ip_outs", 0) + row.get("hits", 0) + \
+                row.get("baseOnBalls", 0) + row.get("hitByPitch", 0)
         row["kPct"] = calc_k_rate_pitcher(row)
         row["bbPct"] = calc_bb_rate_pitcher(row)
         row["kMinusBbPct"] = calc_k_minus_bb_rate_pitcher(row)
