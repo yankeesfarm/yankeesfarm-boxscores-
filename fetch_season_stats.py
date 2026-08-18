@@ -33,6 +33,20 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config.affiliates import AFFILIATES, ROOKIE_AFFILIATES
 from lib.mlb_api import get_active_roster, get_player_stats_by_date_range, get_team_schedule
+from advanced_stats import (
+    calc_bb_rate,
+    calc_k_rate,
+    calc_k_minus_bb_rate_hitter,
+    calc_xbh_rate,
+    calc_iso,
+    calc_babip,
+    calc_woba,
+    calc_k_rate_pitcher,
+    calc_bb_rate_pitcher,
+    calc_k_minus_bb_rate_pitcher,
+    calc_fip_constant,
+    calc_fip,
+)
 
 SEASON = 2026
 OUTPUT_DIR = "data/monthly"
@@ -44,9 +58,16 @@ OUTPUT_DIR = "data/monthly"
 # of the season.
 SEARCH_FROM = f"{SEASON}-02-01"
 
+# Fallback FIP constant used only if a team's own qualifying pitcher pool is
+# too small (see fetch_team_season()) to compute a real per-level constant.
+# 3.10 is a recent MLB-wide norm -- not level-accurate, but a safe fallback
+# rather than skipping FIP for that team entirely.
+FALLBACK_FIP_CONSTANT = 3.10
+
 HITTING_COUNT_FIELDS = [
     "atBats", "hits", "doubles", "triples", "homeRuns", "rbi",
     "baseOnBalls", "hitByPitch", "sacFlies", "stolenBases", "caughtStealing", "strikeOuts",
+    "plateAppearances", "intentionalWalks",
 ]
 HITTING_RATE_FIELDS = ["avg", "obp", "slg", "ops"]
 HITTING_FIELDS = HITTING_COUNT_FIELDS + HITTING_RATE_FIELDS
@@ -54,6 +75,7 @@ HITTING_FIELDS = HITTING_COUNT_FIELDS + HITTING_RATE_FIELDS
 PITCHING_COUNT_FIELDS = [
     "strikeOuts", "baseOnBalls", "hits", "atBats", "homeRuns",
     "earnedRuns", "runs", "wins", "losses", "saves",
+    "battersFaced", "hitByPitch",
 ]
 PITCHING_RATE_FIELDS = ["era", "whip", "avg"]
 PITCHING_FIELDS = ["inningsPitched"] + PITCHING_COUNT_FIELDS + PITCHING_RATE_FIELDS
@@ -116,6 +138,63 @@ def recompute_pitching_rates(row, ip_outs):
     return row
 
 
+def apply_advanced_hitting_stats(row):
+    """Adds BB%, K%, K-BB%, XBH%, ISO, BABIP, and wOBA to a hitter row.
+    Called after recompute_hitting_rates() so 'avg' and 'slg' are already
+    populated (ISO needs both). Every advanced_stats function tolerates
+    missing/zero denominators by returning None, so a tiny-sample row never
+    crashes this pipeline -- it just carries a null for that field, which
+    push_to_wix.py should treat the same way it already treats other
+    optional numeric fields.
+
+    IMPORTANT: the raw "plateAppearances" field as fetched from the MLB
+    Stats API is NOT reliably present/correct for every player -- this
+    silently zeroed out BB%/K%/K-BB% site-wide (confirmed live: every
+    other advanced stat that doesn't depend on plateAppearances -- XBH%,
+    ISO, BABIP, wOBA -- populated correctly, while these three came back
+    completely empty). Same root cause as why avg/obp/slg/ops are always
+    RECOMPUTED from raw counts rather than trusted from the API -- so
+    plateAppearances gets the same treatment here, derived from AB+BB+
+    HBP+SF (the same formula recompute_hitting_rates() already uses)
+    rather than trusted as fetched."""
+    row["plateAppearances"] = row.get("atBats", 0) + row.get("baseOnBalls", 0) + \
+        row.get("hitByPitch", 0) + row.get("sacFlies", 0)
+    row["bbPct"] = calc_bb_rate(row)
+    row["kPct"] = calc_k_rate(row)
+    row["kMinusBbPct"] = calc_k_minus_bb_rate_hitter(row)
+    row["xbhPct"] = calc_xbh_rate(row)
+    row["iso"] = calc_iso(row)
+    row["babip"] = calc_babip(row)
+    row["woba"] = calc_woba(row)
+    return row
+
+
+def apply_advanced_pitching_stats(row):
+    """Adds K%, BB%, K-BB% to a pitcher row. FIP is intentionally NOT set
+    here -- it needs a level-specific constant computed from the full
+    qualifying pool for that team, which only exists after every pitcher on
+    the team has been fetched. See fetch_team_season(), which applies FIP
+    in a second pass after this function runs for every pitcher.
+
+    IMPORTANT: same root-cause fix as apply_advanced_hitting_stats() above
+    -- the raw "battersFaced" field isn't reliably present from the API
+    fetch either, which is why FIP (doesn't use battersFaced) worked live
+    while K%/BB%/K-BB% (both need it) came back completely empty. Falls
+    back to the standard estimate -- outs recorded + hits + walks + HBP --
+    only when the raw fetched value is missing/zero, so a genuinely-present
+    real value from the API is never overwritten with an estimate."""
+    if not row.get("battersFaced"):
+        outs = row.get("ip_outs")
+        if outs is None:
+            whole, _, frac = str(row.get("inningsPitched", "0.0")).partition(".")
+            outs = (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+        row["battersFaced"] = outs + row.get("hits", 0) + row.get("baseOnBalls", 0) + row.get("hitByPitch", 0)
+    row["kPct"] = calc_k_rate_pitcher(row)
+    row["bbPct"] = calc_bb_rate_pitcher(row)
+    row["kMinusBbPct"] = calc_k_minus_bb_rate_pitcher(row)
+    return row
+
+
 def load_traded_away():
     """Players who have left the organization entirely via trade -- see
     config/traded_away_players.json for the full explanation. Excluded at
@@ -174,6 +253,7 @@ def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
             row = {"id": pid, "name": name, "team": affiliate_key}
             row.update(_clean_row(h_stat, HITTING_FIELDS, HITTING_COUNT_FIELDS, HITTING_RATE_FIELDS))
             row = recompute_hitting_rates(row)
+            row = apply_advanced_hitting_stats(row)
             hitters.append(row)
 
         p_stat = get_player_stats_by_date_range(
@@ -186,7 +266,26 @@ def fetch_team_season(affiliate_key, cfg, end_date, traded_away):
             whole, _, frac = str(ip_raw).partition(".")
             ip_outs = (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
             row = recompute_pitching_rates(row, ip_outs)
+            row = apply_advanced_pitching_stats(row)
             pitchers.append(row)
+
+    # Second pass: compute this team's own FIP constant from its pitcher
+    # pool (one level per affiliate, so this is a real per-level constant,
+    # not a generic MLB-wide guess) and apply FIP to every pitcher on the
+    # team. Falls back to FALLBACK_FIP_CONSTANT only if the pool or league
+    # ERA can't be computed -- e.g. a team with zero pitchers reaching the
+    # innings floor above -- rather than skipping FIP for the whole team.
+    if pitchers:
+        era_values = [p["era"] for p in pitchers if p.get("era")]
+        league_era = sum(era_values) / len(era_values) if era_values else None
+        fip_constant = calc_fip_constant(pitchers, league_era) if league_era else None
+        if fip_constant is None:
+            fip_constant = FALLBACK_FIP_CONSTANT
+            print(f"  NOTE: using fallback FIP constant ({FALLBACK_FIP_CONSTANT}) for "
+                  f"{cfg['display_name']} -- could not compute a real per-level constant "
+                  f"(likely too few qualifying pitchers yet).")
+        for row in pitchers:
+            row["fip"] = calc_fip(row, fip_constant)
 
     return hitters, pitchers, opening_day, games_played
 
@@ -197,7 +296,13 @@ def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date, traded_a
     counting-stat categories (see ROOKIE_LEVEL_INCLUDED_FIELDS in
     generate_leaderboard.py), so there's no reason to fetch pitching stats
     here, or to skip a team just because its own Opening Day search failed
-    independently of the four main affiliates' searches."""
+    independently of the four main affiliates' searches.
+
+    Advanced hitting stats (BB%, K%, K-BB%, XBH%, ISO, BABIP, wOBA) ARE
+    computed here even though rookie hitters otherwise only feed counting
+    stats on the leaderboard -- generate_leaderboard.py can choose whether
+    to surface them for this tier; the raw numbers are captured either way
+    so that decision doesn't require another fetch pass later."""
     opening_day, _games_played = find_opening_day(cfg["team_id"], cfg["sport_id"], end_date)
     if not opening_day:
         print(f"  WARNING: could not find any completed games for "
@@ -221,6 +326,7 @@ def fetch_rookie_team_season_hitting_only(affiliate_key, cfg, end_date, traded_a
             row = {"id": pid, "name": name, "team": affiliate_key}
             row.update(_clean_row(h_stat, HITTING_FIELDS, HITTING_COUNT_FIELDS, HITTING_RATE_FIELDS))
             row = recompute_hitting_rates(row)
+            row = apply_advanced_hitting_stats(row)
             hitters.append(row)
 
     return hitters, opening_day
