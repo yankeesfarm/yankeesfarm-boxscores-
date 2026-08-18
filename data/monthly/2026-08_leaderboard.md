@@ -77,9 +77,9 @@
 ### Doubles
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Jace Avina | SOM | 25 |
-| T2 | George Lombard Jr. | SWB | 24 |
-| T2 | Juan Torres | DSL-Y | 24 |
+| T1 | Jace Avina | SOM | 25 |
+| T1 | Juan Torres | DSL-Y | 25 |
+| 3 | George Lombard Jr. | SWB | 24 |
 | T4 | Wilberson De Pena | TAM | 21 |
 | T4 | Roderick Arias | SOM | 21 |
 | T4 | Marco Luciano | SWB | 21 |
@@ -129,7 +129,8 @@
 | 7 | Roderick Arias | SOM | 69 |
 | 8 | Yanquiel Fernández | SWB | 68 |
 | 9 | Yostin Pena | TAM | 65 |
-| 10 | Garrett Martin | SWB | 64 |
+| T10 | Garrett Martin | SWB | 64 |
+| T10 | Juan Torres | DSL-Y | 64 |
 
 ### Stolen Bases
 | # | Player | Team | Value |
@@ -145,6 +146,74 @@
 | 9 | Roderick Arias | SOM | 32 |
 | T10 | Jackson Lovich | HV | 31 |
 | T10 | Jose Castro | FCL | 31 |
+
+### BB%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+
+### K%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+
+### K-BB%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+
+### XBH%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+| 1 | Josh Moylan | SOM | 50.6% |
+| 2 | Jace Avina | SOM | 50.5% |
+| 3 | DJ Gladney | SOM | 45.3% |
+| 4 | Core Jackson | SOM | 43.2% |
+| 5 | Hans Montero | HV | 42.9% |
+| 6 | Marco Luciano | SWB | 42.3% |
+| 7 | Tyler Hardman | SWB | 41.6% |
+| 8 | Coby Morales | SOM | 40.6% |
+| 9 | Ernesto Martinez Jr. | SWB | 39.0% |
+| 10 | Kyle West | HV | 37.1% |
+
+### ISO
+| # | Player | Team | Value |
+|---|--------|------|-------|
+| 1 | Marco Luciano | SWB | 0.247 |
+| 2 | Josh Moylan | SOM | 0.245 |
+| 3 | DJ Gladney | SOM | 0.243 |
+| 4 | Jace Avina | SOM | 0.241 |
+| 5 | Tyler Hardman | SWB | 0.227 |
+| 6 | Coby Morales | SOM | 0.219 |
+| 7 | Jackson Lovich | HV | 0.217 |
+| 8 | Core Jackson | SOM | 0.210 |
+| 9 | Ernesto Martinez Jr. | SWB | 0.205 |
+| 10 | Yanquiel Fernández | SWB | 0.193 |
+
+### BABIP
+| # | Player | Team | Value |
+|---|--------|------|-------|
+| 1 | Jackson Lovich | HV | 0.372 |
+| 2 | Roderick Arias | SOM | 0.367 |
+| 3 | DJ Gladney | SOM | 0.363 |
+| 4 | Marco Luciano | SWB | 0.361 |
+| 5 | Willy Montero | HV | 0.339 |
+| 6 | Bryce Martin-Grudzielanek | HV | 0.336 |
+| 7 | Coby Morales | SOM | 0.335 |
+| 8 | Oswaldo Cabrera | SWB | 0.331 |
+| 9 | Josh Moylan | SOM | 0.328 |
+| 10 | Eric Genther | HV | 0.309 |
+
+### wOBA
+| # | Player | Team | Value |
+|---|--------|------|-------|
+| 1 | Marco Luciano | SWB | 0.404 |
+| 2 | Jackson Lovich | HV | 0.373 |
+| T3 | Eric Genther | HV | 0.372 |
+| T3 | Jace Avina | SOM | 0.372 |
+| T3 | Coby Morales | SOM | 0.372 |
+| 6 | Core Jackson | SOM | 0.368 |
+| 7 | Tyler Hardman | SWB | 0.364 |
+| 8 | DJ Gladney | SOM | 0.358 |
+| 9 | Roderick Arias | SOM | 0.350 |
+| 10 | Hans Montero | HV | 0.347 |
 
 ## PITCHING LEADERS
 
@@ -232,6 +301,32 @@
 | 8 | Franyer Herrera | HV | 10.23 |
 | 9 | Tyler Boudreau | SOM | 10.08 |
 | 10 | Brendan Beck | SWB | 9.89 |
+
+### K%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+
+### BB%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+
+### K-BB%
+| # | Player | Team | Value |
+|---|--------|------|-------|
+
+### FIP
+| # | Player | Team | Value |
+|---|--------|------|-------|
+| 1 | Luis Serna | HV | 3.68 |
+| 2 | Allen Facundo | HV | 3.83 |
+| 3 | Bryce Cunningham | HV | 4.47 |
+| 4 | Sean Paul Liñan | HV | 4.74 |
+| 5 | Franyer Herrera | HV | 5.35 |
+| 6 | Brendan Beck | SWB | 5.63 |
+| 7 | Elmer Rodríguez | SWB | 6.00 |
+| 8 | Tyler Boudreau | SOM | 6.03 |
+| 9 | Justin West | TAM | 6.07 |
+| 10 | Rory Fox | SOM | 6.47 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*
