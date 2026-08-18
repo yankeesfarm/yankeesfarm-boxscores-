@@ -125,15 +125,95 @@ def find_affiliate_teams(season):
     return teams
 
 
-def find_opening_day(team_id, sport_id, search_from, end_date):
+def find_opening_day_and_games(team_id, sport_id, search_from, end_date):
     """Same approach as fetch_season_stats.py: ask the Stats API for this
     team's real schedule rather than guessing a generic season-start date,
-    since levels start on different dates in a given year."""
+    since levels start on different dates in a given year. Also returns
+    the full completed-games list (not just dates) so compute_team_record()
+    can derive a real W-L record from the same schedule call, instead of
+    fetching it twice."""
     games = get_team_schedule(team_id, search_from, end_date, sport_id=sport_id)
     if not games:
-        return None
+        return None, []
     dates = [g["gameDate"][:10] for g in games if g.get("gameDate")]
-    return min(dates) if dates else None
+    return (min(dates) if dates else None), games
+
+
+def compute_team_record(games, team_id):
+    """Derives W-L record and win% directly from this team's own completed
+    schedule (the same schedule data get_team_schedule() already proven
+    reliable for elsewhere in this pipeline), rather than a separate
+    standings API call.
+
+    NOTE: this intentionally does NOT compute "place in division" --
+    that needs every other team in the division's record too, and the
+    MLB Stats API's dedicated standings endpoint needs its MiLB
+    league-ID mapping verified against a real response before trusting it
+    (same class of issue the promoted-player cross-level bug was -- this
+    environment can't reach statsapi.mlb.com to verify that shape).
+    Flagged as a known follow-up rather than guessed at."""
+    wins = losses = 0
+    for g in games:
+        teams = g.get("teams", {})
+        home = teams.get("home", {})
+        away = teams.get("away", {})
+        home_id = (home.get("team") or {}).get("id")
+        away_id = (away.get("team") or {}).get("id")
+        home_score = home.get("score")
+        away_score = away.get("score")
+        if home_score is None or away_score is None:
+            continue
+        if team_id == home_id:
+            won = home_score > away_score
+        elif team_id == away_id:
+            won = away_score > home_score
+        else:
+            continue
+        if won:
+            wins += 1
+        else:
+            losses += 1
+    total = wins + losses
+    win_pct = round(wins / total, 3) if total else 0.0
+    return {"wins": wins, "losses": losses, "winPct": win_pct}
+
+
+def fetch_team_aggregate_stats(team_id, sport_id, season):
+    """Team-wide hitting/pitching totals via the Stats API's own
+    team-level stats endpoint -- NOT summed from individual player rows,
+    since MLB tracks team totals directly and that avoids any risk of
+    double-counting/undercounting from a promoted player's stats being
+    split across two teams' rosters (the exact class of bug the
+    cross-level hitter/pitcher combining fix elsewhere in this file deals
+    with -- team-level totals don't have that problem at all, since
+    they're the team's own tracked aggregate, not a sum of roster rows)."""
+    hitting = get(f"{BASE}/teams/{team_id}/stats",
+                   params={"stats": "season", "group": "hitting", "season": season, "sportId": sport_id})
+    pitching = get(f"{BASE}/teams/{team_id}/stats",
+                    params={"stats": "season", "group": "pitching", "season": season, "sportId": sport_id})
+
+    def first_split_stat(payload):
+        for block in payload.get("stats", []):
+            splits = block.get("splits", [])
+            if splits:
+                return splits[0].get("stat", {})
+        return {}
+
+    h = first_split_stat(hitting)
+    p = first_split_stat(pitching)
+    return {
+        "avg": float(h.get("avg") or 0),
+        "obp": float(h.get("obp") or 0),
+        "slg": float(h.get("slg") or 0),
+        "ops": float(h.get("ops") or 0),
+        "runs": h.get("runs", 0),
+        "homeRuns": h.get("homeRuns", 0),
+        "stolenBases": h.get("stolenBases", 0),
+        "era": float(p.get("era") or 0),
+        "whip": float(p.get("whip") or 0),
+        "strikeOuts": p.get("strikeOuts", 0),
+        "saves": p.get("saves", 0),
+    }
 
 
 def pct(n, d):
@@ -434,14 +514,25 @@ def main():
     person_names = {}
     person_pos = {}
     person_levels_touched = {}
+    team_rows = []
 
     for t in teams:
         print(f"Finding Opening Day for {t['name']}...")
-        opening_day = find_opening_day(t["teamId"], t["sportId"], search_from, end_date)
+        opening_day, season_games = find_opening_day_and_games(t["teamId"], t["sportId"], search_from, end_date)
         if not opening_day:
             print(f"  WARNING: could not find any completed games for {t['name']}. Skipping.")
             continue
         print(f"  Opening Day: {opening_day}. Pulling full-season roster...")
+
+        record = compute_team_record(season_games, t["teamId"])
+        team_agg = fetch_team_aggregate_stats(t["teamId"], t["sportId"], season)
+        team_rows.append({
+            "teamId": t["teamId"],
+            "name": t["name"],
+            "level": t["level_id"],
+            **record,
+            **team_agg,
+        })
 
         roster = get_active_roster(t["teamId"], season)  # rosterType=fullSeason
         for entry in roster:
@@ -499,6 +590,7 @@ def main():
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "hitters": hitters,
         "pitchers": pitchers,
+        "teams": team_rows,
     }
     with open(args.out, "w") as f:
         json.dump(payload, f, indent=2)
