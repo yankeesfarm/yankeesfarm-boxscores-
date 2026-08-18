@@ -1,0 +1,38 @@
+{
+  "hitters": [
+    {
+      "playerId": 825411,
+      "name": "Luis Cruz",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "LF",
+      "bio": "FCL | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825411/spots/120",
+      "statline": "2 for 5: 3 RBI (16)"
+    },
+    {
+      "playerId": 837831,
+      "name": "Juan Martinez",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "C",
+      "bio": "FCL | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/837831/spots/120",
+      "statline": "2 for 5: Triple (2), RBI (29)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 838137,
+      "name": "Higor Requena",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "role": "RP",
+      "bio": "FCL | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/838137/spots/120",
+      "statline": "4.0 IP, 0 R, 3 K"
+    }
+  ],
+  "date": "2026-08-17",
+  "generatedAt": "2026-08-18T01:40:25.900599+00:00"
+}
