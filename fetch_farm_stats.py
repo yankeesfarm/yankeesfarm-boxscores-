@@ -29,12 +29,10 @@ totals on the live site:
     silently failed in two earlier production attempts).
 
 This script now calls those same two functions once per affiliate team,
-and manually SUMS a player's raw counting stats across every team stint
-he had this season (mirroring generate_leaderboard.py's combine_by_id()
-principle, just done inline here since analytics.html has no separate
-combine step downstream). A player's displayed "level" is his HIGHEST
-level reached this season (standard prospect-media convention), not
-necessarily his very last game -- see LEVEL_RANK below.
+and captures BOTH each player's per-team stint (his stats at that specific
+level only) AND his combined season total across every team, so the site
+can show either view depending on which level filter is selected -- see
+the "two kinds of rows" comment in main() for details.
 
 Bio fields (age, height/weight, bats/throws, hometown, origin, birthDate)
 are no longer available "for free" from a hydrated roster response, since
@@ -88,11 +86,9 @@ SPORT_LEVELS = {
     16: "ROK",   # covers FCL + DSL -- split further below
 }
 
-# Used to pick a promoted/demoted player's DISPLAY level -- his highest
-# level reached this season, standard prospect-media convention. DSL1/DSL2
-# and ROK are treated as the same tier (both true rookie ball), so a player
-# who spent time at both isn't arbitrarily ranked one above the other.
-LEVEL_RANK = {"DSL1": 0, "DSL2": 0, "ROK": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5}
+# NOTE: promoted/demoted players are no longer collapsed into a single
+# "highest level reached" row -- see the two-kinds-of-rows comment in
+# main() for how level-specific vs. combined-season display now works.
 
 # Earliest plausible date to search from when hunting for a team's actual
 # Opening Day -- same reasoning as fetch_season_stats.py's SEARCH_FROM.
@@ -385,7 +381,16 @@ def finalize_pitcher(pid, name, pos, level_id, totals):
     bf = totals.get("battersFaced", 0)
     hr = totals.get("homeRuns", 0)
     hbp = totals.get("hitByPitch", 0)
-    outs = totals.get("_outs", 0)
+    # "_outs" is only present if this dict already went through
+    # _accumulate() (the cross-level combined totals). A single team
+    # stint's raw stat dict (used for level-specific rows) never gets that
+    # treatment, so fall back to parsing "inningsPitched" directly here --
+    # same outs-are-thirds-not-decimals conversion used everywhere else in
+    # this pipeline.
+    outs = totals.get("_outs")
+    if outs is None:
+        whole, _, frac = str(totals.get("inningsPitched", "0.0")).partition(".")
+        outs = (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
     true_ip = outs / 3 if outs else 0.0
 
     # Same fallback as finalize_hitter()'s plateAppearances fix: the raw
@@ -519,9 +524,10 @@ def main():
 
     hitting_totals = {}
     pitching_totals = {}
+    hitting_stints = []
+    pitching_stints = []
     person_names = {}
     person_pos = {}
-    person_levels_touched = {}
     team_rows = []
 
     for t in teams:
@@ -561,7 +567,14 @@ def main():
 
             person_names[pid] = person.get("fullName")
             person_pos[pid] = pos_abbrev
-            person_levels_touched.setdefault(pid, []).append(t["level_id"])
+
+            # Keep this stint's OWN team-scoped stat line intact (not just
+            # accumulated into the cross-level total) -- this is what lets
+            # the site show Jackson Lovich's 2 HR while filtered to Hudson
+            # Valley specifically, separate from his 20 HR combined season
+            # line under "All Levels" below.
+            stint_list = pitching_stints if is_pitcher else hitting_stints
+            stint_list.append({"pid": pid, "level": t["level_id"], "stat": dict(stat)})
 
             target = pitching_totals if is_pitcher else hitting_totals
             bucket = target.setdefault(pid, {})
@@ -581,23 +594,38 @@ def main():
 
         time.sleep(0.1)
 
-    def display_level(pid):
-        levels = person_levels_touched.get(pid, [])
-        if not levels:
-            return "ROK"
-        return max(levels, key=lambda lv: LEVEL_RANK.get(lv, 0))
-
     all_person_ids = set(hitting_totals) | set(pitching_totals)
     print(f"Fetching bios for {len(all_person_ids)} players...")
     bios = fetch_bios(all_person_ids)
 
+    # Two kinds of rows per player, both tagged via the same "level" field
+    # the site already filters on:
+    #   1. One row per level he actually played at this season, showing
+    #      ONLY that level's stats (e.g. Jackson Lovich's 2 HR at
+    #      Hudson Valley specifically, tagged level="A+").
+    #   2. One additional row tagged level="all" with his combined season
+    #      totals -- matches the "ALL" entry's id in analytics.html's
+    #      LEVELS array exactly, so clicking that button already filters
+    #      to just these combined rows with zero client-side changes needed.
+    # A player who stayed at one level all year simply gets two nearly
+    # identical rows (his level-specific stint and his "all" total, which
+    # are the same number) -- harmless, and keeps the data model uniform.
     hitters = [
-        finalize_hitter(pid, person_names[pid], person_pos.get(pid, ""), display_level(pid),
-                         totals, bios.get(pid))
+        finalize_hitter(s["pid"], person_names[s["pid"]], person_pos.get(s["pid"], ""), s["level"],
+                         s["stat"], bios.get(s["pid"]))
+        for s in hitting_stints
+    ]
+    hitters += [
+        finalize_hitter(pid, person_names[pid], person_pos.get(pid, ""), "all", totals, bios.get(pid))
         for pid, totals in hitting_totals.items()
     ]
+
     pitchers = [
-        finalize_pitcher(pid, person_names[pid], person_pos.get(pid, "P"), display_level(pid), totals)
+        finalize_pitcher(s["pid"], person_names[s["pid"]], person_pos.get(s["pid"], "P"), s["level"], s["stat"])
+        for s in pitching_stints
+    ]
+    pitchers += [
+        finalize_pitcher(pid, person_names[pid], person_pos.get(pid, "P"), "all", totals)
         for pid, totals in pitching_totals.items()
     ]
 
