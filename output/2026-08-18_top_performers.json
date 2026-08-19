@@ -1,0 +1,138 @@
+{
+  "hitters": [
+    {
+      "playerId": 823759,
+      "name": "Eric Genther",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "C",
+      "bio": "High-A | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/823759/spots/120",
+      "statline": "2 for 6: Double (19), 4 RBI (61)"
+    },
+    {
+      "playerId": 831025,
+      "name": "Dean Toigo",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "RF",
+      "bio": "High-A | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/831025/spots/120",
+      "statline": "3 for 5: 2 Doubles (3), RBI (6)"
+    },
+    {
+      "playerId": 827290,
+      "name": "Paul Gutierrez-Contreras II",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "RF",
+      "bio": "A | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/827290/spots/120",
+      "statline": "2 for 4: Triple (1), 2 RBI (3)"
+    },
+    {
+      "playerId": 835219,
+      "name": "Anthony Potestio",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "3B",
+      "bio": "A | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/835219/spots/120",
+      "statline": "2 for 2: Triple (1)"
+    },
+    {
+      "playerId": 830339,
+      "name": "Luke Pettitte",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "DH",
+      "bio": "A | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/830339/spots/120",
+      "statline": "2 for 3: HR (1), 2 RBI (2)"
+    },
+    {
+      "playerId": 806884,
+      "name": "Luis Escudero",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "2B",
+      "bio": "A | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806884/spots/120",
+      "statline": "3 for 5: Double (7), 2 RBI (23), SB (10)"
+    },
+    {
+      "playerId": 825411,
+      "name": "Luis Cruz",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "position": "CF",
+      "bio": "FCL | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/825411/spots/120",
+      "statline": "3 for 5: 2 RBI (18)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 842283,
+      "name": "Osveiker Chirino",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "role": "SP",
+      "bio": "FCL | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/842283/spots/120",
+      "statline": "1.2 IP, 1 R, 3 K"
+    },
+    {
+      "playerId": 815069,
+      "name": "Andrew Landry",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815069/spots/120",
+      "statline": "1.1 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 702212,
+      "name": "Jordarlin Mendoza",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702212/spots/120",
+      "statline": "2.0 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 701706,
+      "name": "Greysen Carter",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701706/spots/120",
+      "statline": "2.0 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 812563,
+      "name": "Junior Tavera",
+      "level": "FCL",
+      "team": "DSL NYY Bombers",
+      "role": "RP",
+      "bio": "FCL | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/812563/spots/120",
+      "statline": "3.1 IP, 0 R, 6 K"
+    },
+    {
+      "playerId": 840309,
+      "name": "Freddy Lopez",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "role": "RP",
+      "bio": "FCL | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/840309/spots/120",
+      "statline": "3.2 IP, 1 R, 5 K"
+    }
+  ],
+  "date": "2026-08-18",
+  "generatedAt": "2026-08-19T02:30:35.566217+00:00"
+}
