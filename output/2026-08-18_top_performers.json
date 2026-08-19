@@ -73,6 +73,16 @@
   ],
   "pitchers": [
     {
+      "playerId": 695684,
+      "name": "Elmer Rodr\u00edguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695684/spots/120",
+      "statline": "5.0 IP, 1 R, 5 K"
+    },
+    {
       "playerId": 842283,
       "name": "Osveiker Chirino",
       "level": "FCL",
@@ -134,5 +144,5 @@
     }
   ],
   "date": "2026-08-18",
-  "generatedAt": "2026-08-19T02:30:35.566217+00:00"
+  "generatedAt": "2026-08-19T04:08:27.766535+00:00"
 }
