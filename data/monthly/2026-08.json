@@ -10,10 +10,10 @@
     "dsl_yankees": "2026-06-01",
     "dsl_bombers": "2026-06-01"
   },
-  "through_date": "2026-08-18",
+  "through_date": "2026-08-19",
   "team_games_played": {
-    "tampa": 115,
-    "hudson_valley": 111,
+    "tampa": 116,
+    "hudson_valley": 112,
     "somerset": 115,
     "scranton_wb": 118
   },
@@ -54,31 +54,31 @@
       "id": "801489",
       "name": "Tyce Armstrong",
       "team": "tampa",
-      "atBats": 40,
-      "hits": 10,
+      "atBats": 42,
+      "hits": 11,
       "doubles": 2,
       "triples": 0,
       "homeRuns": 2,
       "rbi": 11,
-      "baseOnBalls": 6,
+      "baseOnBalls": 9,
       "hitByPitch": 0,
       "sacFlies": 2,
       "stolenBases": 1,
       "caughtStealing": 0,
-      "strikeOuts": 12,
-      "plateAppearances": 48,
+      "strikeOuts": 13,
+      "plateAppearances": 53,
       "intentionalWalks": 0,
-      "avg": 0.25,
-      "obp": 0.333,
-      "slg": 0.45,
-      "ops": 0.783,
-      "bbPct": 0.125,
-      "kPct": 0.25,
-      "kMinusBbPct": 0.125,
-      "xbhPct": 0.4,
-      "iso": 0.2,
-      "babip": 0.286,
-      "woba": 0.338
+      "avg": 0.262,
+      "obp": 0.377,
+      "slg": 0.452,
+      "ops": 0.829,
+      "bbPct": 0.1698,
+      "kPct": 0.2453,
+      "kMinusBbPct": 0.0755,
+      "xbhPct": 0.3636,
+      "iso": 0.19,
+      "babip": 0.31,
+      "woba": 0.362
     },
     {
       "id": "801307",
@@ -114,31 +114,31 @@
       "id": "824425",
       "name": "Diego Castellanos",
       "team": "tampa",
-      "atBats": 30,
-      "hits": 10,
+      "atBats": 36,
+      "hits": 11,
       "doubles": 1,
       "triples": 0,
       "homeRuns": 2,
-      "rbi": 5,
+      "rbi": 6,
       "baseOnBalls": 4,
       "hitByPitch": 1,
       "sacFlies": 0,
       "stolenBases": 1,
       "caughtStealing": 0,
       "strikeOuts": 5,
-      "plateAppearances": 35,
+      "plateAppearances": 41,
       "intentionalWalks": 0,
-      "avg": 0.333,
-      "obp": 0.429,
-      "slg": 0.567,
-      "ops": 0.996,
-      "bbPct": 0.1143,
-      "kPct": 0.1429,
-      "kMinusBbPct": 0.0286,
-      "xbhPct": 0.3,
-      "iso": 0.234,
-      "babip": 0.348,
-      "woba": 0.433
+      "avg": 0.306,
+      "obp": 0.39,
+      "slg": 0.5,
+      "ops": 0.89,
+      "bbPct": 0.0976,
+      "kPct": 0.122,
+      "kMinusBbPct": 0.0244,
+      "xbhPct": 0.2727,
+      "iso": 0.194,
+      "babip": 0.31,
+      "woba": 0.392
     },
     {
       "id": "701816",
@@ -174,31 +174,31 @@
       "id": "701331",
       "name": "Blake Cyr",
       "team": "tampa",
-      "atBats": 20,
-      "hits": 5,
+      "atBats": 23,
+      "hits": 7,
       "doubles": 1,
       "triples": 0,
       "homeRuns": 0,
       "rbi": 1,
-      "baseOnBalls": 4,
+      "baseOnBalls": 6,
       "hitByPitch": 2,
       "sacFlies": 1,
       "stolenBases": 4,
       "caughtStealing": 0,
-      "strikeOuts": 7,
-      "plateAppearances": 27,
+      "strikeOuts": 8,
+      "plateAppearances": 32,
       "intentionalWalks": 0,
-      "avg": 0.25,
-      "obp": 0.407,
-      "slg": 0.3,
-      "ops": 0.707,
-      "bbPct": 0.1481,
-      "kPct": 0.2593,
-      "kMinusBbPct": 0.1112,
-      "xbhPct": 0.2,
-      "iso": 0.05,
-      "babip": 0.357,
-      "woba": 0.334
+      "avg": 0.304,
+      "obp": 0.469,
+      "slg": 0.348,
+      "ops": 0.817,
+      "bbPct": 0.1875,
+      "kPct": 0.25,
+      "kMinusBbPct": 0.0625,
+      "xbhPct": 0.1429,
+      "iso": 0.044,
+      "babip": 0.438,
+      "woba": 0.381
     },
     {
       "id": "821648",
@@ -354,61 +354,61 @@
       "id": "827290",
       "name": "Paul Gutierrez-Contreras II",
       "team": "tampa",
-      "atBats": 28,
-      "hits": 5,
-      "doubles": 0,
+      "atBats": 34,
+      "hits": 9,
+      "doubles": 1,
       "triples": 1,
       "homeRuns": 0,
-      "rbi": 3,
+      "rbi": 5,
       "baseOnBalls": 6,
       "hitByPitch": 1,
       "sacFlies": 0,
       "stolenBases": 3,
       "caughtStealing": 1,
-      "strikeOuts": 5,
-      "plateAppearances": 35,
+      "strikeOuts": 6,
+      "plateAppearances": 41,
       "intentionalWalks": 0,
-      "avg": 0.179,
-      "obp": 0.343,
-      "slg": 0.25,
-      "ops": 0.593,
-      "bbPct": 0.1714,
-      "kPct": 0.1429,
-      "kMinusBbPct": -0.0285,
-      "xbhPct": 0.2,
-      "iso": 0.071,
-      "babip": 0.217,
-      "woba": 0.287
+      "avg": 0.265,
+      "obp": 0.39,
+      "slg": 0.353,
+      "ops": 0.743,
+      "bbPct": 0.1463,
+      "kPct": 0.1463,
+      "kMinusBbPct": 0.0,
+      "xbhPct": 0.2222,
+      "iso": 0.088,
+      "babip": 0.321,
+      "woba": 0.341
     },
     {
       "id": "824424",
       "name": "Bear Harrison",
       "team": "tampa",
-      "atBats": 36,
+      "atBats": 39,
       "hits": 7,
       "doubles": 1,
       "triples": 1,
       "homeRuns": 0,
       "rbi": 4,
-      "baseOnBalls": 5,
-      "hitByPitch": 1,
+      "baseOnBalls": 7,
+      "hitByPitch": 2,
       "sacFlies": 0,
       "stolenBases": 0,
       "caughtStealing": 0,
-      "strikeOuts": 9,
-      "plateAppearances": 42,
+      "strikeOuts": 11,
+      "plateAppearances": 48,
       "intentionalWalks": 0,
-      "avg": 0.194,
-      "obp": 0.31,
-      "slg": 0.278,
-      "ops": 0.588,
-      "bbPct": 0.119,
-      "kPct": 0.2143,
-      "kMinusBbPct": 0.0953,
+      "avg": 0.179,
+      "obp": 0.333,
+      "slg": 0.256,
+      "ops": 0.589,
+      "bbPct": 0.1458,
+      "kPct": 0.2292,
+      "kMinusBbPct": 0.0834,
       "xbhPct": 0.2857,
-      "iso": 0.084,
-      "babip": 0.259,
-      "woba": 0.274
+      "iso": 0.077,
+      "babip": 0.25,
+      "woba": 0.283
     },
     {
       "id": "822496",
@@ -474,31 +474,31 @@
       "id": "828076",
       "name": "Dax Kilby",
       "team": "tampa",
-      "atBats": 75,
-      "hits": 21,
+      "atBats": 79,
+      "hits": 23,
       "doubles": 3,
-      "triples": 1,
+      "triples": 2,
       "homeRuns": 2,
       "rbi": 19,
-      "baseOnBalls": 19,
+      "baseOnBalls": 21,
       "hitByPitch": 0,
       "sacFlies": 0,
       "stolenBases": 6,
       "caughtStealing": 1,
       "strikeOuts": 22,
-      "plateAppearances": 94,
+      "plateAppearances": 100,
       "intentionalWalks": 0,
-      "avg": 0.28,
-      "obp": 0.426,
-      "slg": 0.427,
-      "ops": 0.853,
-      "bbPct": 0.2021,
-      "kPct": 0.234,
-      "kMinusBbPct": 0.0319,
-      "xbhPct": 0.2857,
-      "iso": 0.147,
-      "babip": 0.373,
-      "woba": 0.384
+      "avg": 0.291,
+      "obp": 0.44,
+      "slg": 0.456,
+      "ops": 0.896,
+      "bbPct": 0.21,
+      "kPct": 0.22,
+      "kMinusBbPct": 0.01,
+      "xbhPct": 0.3043,
+      "iso": 0.165,
+      "babip": 0.382,
+      "woba": 0.399
     },
     {
       "id": "808106",
@@ -744,31 +744,31 @@
       "id": "829769",
       "name": "Yostin Pena",
       "team": "tampa",
-      "atBats": 47,
-      "hits": 16,
+      "atBats": 53,
+      "hits": 20,
       "doubles": 0,
       "triples": 2,
-      "homeRuns": 1,
-      "rbi": 8,
+      "homeRuns": 2,
+      "rbi": 13,
       "baseOnBalls": 1,
       "hitByPitch": 1,
       "sacFlies": 1,
       "stolenBases": 4,
       "caughtStealing": 0,
       "strikeOuts": 10,
-      "plateAppearances": 50,
+      "plateAppearances": 56,
       "intentionalWalks": 0,
-      "avg": 0.34,
-      "obp": 0.36,
-      "slg": 0.489,
-      "ops": 0.849,
-      "bbPct": 0.02,
-      "kPct": 0.2,
-      "kMinusBbPct": 0.18,
-      "xbhPct": 0.1875,
-      "iso": 0.149,
-      "babip": 0.405,
-      "woba": 0.366
+      "avg": 0.377,
+      "obp": 0.393,
+      "slg": 0.566,
+      "ops": 0.959,
+      "bbPct": 0.0179,
+      "kPct": 0.1786,
+      "kMinusBbPct": 0.1607,
+      "xbhPct": 0.2,
+      "iso": 0.189,
+      "babip": 0.429,
+      "woba": 0.412
     },
     {
       "id": "830339",
@@ -804,31 +804,31 @@
       "id": "835219",
       "name": "Anthony Potestio",
       "team": "tampa",
-      "atBats": 24,
-      "hits": 10,
-      "doubles": 1,
+      "atBats": 27,
+      "hits": 11,
+      "doubles": 2,
       "triples": 1,
       "homeRuns": 2,
-      "rbi": 7,
-      "baseOnBalls": 7,
+      "rbi": 9,
+      "baseOnBalls": 10,
       "hitByPitch": 2,
       "sacFlies": 0,
       "stolenBases": 2,
       "caughtStealing": 0,
-      "strikeOuts": 3,
-      "plateAppearances": 33,
+      "strikeOuts": 4,
+      "plateAppearances": 39,
       "intentionalWalks": 0,
-      "avg": 0.417,
-      "obp": 0.576,
-      "slg": 0.792,
+      "avg": 0.407,
+      "obp": 0.59,
+      "slg": 0.778,
       "ops": 1.368,
-      "bbPct": 0.2121,
-      "kPct": 0.0909,
-      "kMinusBbPct": -0.1212,
-      "xbhPct": 0.4,
-      "iso": 0.375,
-      "babip": 0.421,
-      "woba": 0.566
+      "bbPct": 0.2564,
+      "kPct": 0.1026,
+      "kMinusBbPct": -0.1538,
+      "xbhPct": 0.4545,
+      "iso": 0.371,
+      "babip": 0.429,
+      "woba": 0.565
     },
     {
       "id": "809772",
@@ -894,31 +894,31 @@
       "id": "815528",
       "name": "Ediel Rivera",
       "team": "tampa",
-      "atBats": 187,
-      "hits": 35,
+      "atBats": 192,
+      "hits": 37,
       "doubles": 5,
       "triples": 0,
-      "homeRuns": 3,
-      "rbi": 20,
+      "homeRuns": 4,
+      "rbi": 24,
       "baseOnBalls": 21,
       "hitByPitch": 11,
       "sacFlies": 2,
       "stolenBases": 5,
       "caughtStealing": 1,
       "strikeOuts": 69,
-      "plateAppearances": 221,
+      "plateAppearances": 226,
       "intentionalWalks": 0,
-      "avg": 0.187,
-      "obp": 0.303,
-      "slg": 0.262,
-      "ops": 0.565,
-      "bbPct": 0.095,
-      "kPct": 0.3122,
-      "kMinusBbPct": 0.2172,
-      "xbhPct": 0.2286,
-      "iso": 0.075,
-      "babip": 0.274,
-      "woba": 0.267
+      "avg": 0.193,
+      "obp": 0.305,
+      "slg": 0.281,
+      "ops": 0.586,
+      "bbPct": 0.0929,
+      "kPct": 0.3053,
+      "kMinusBbPct": 0.2124,
+      "xbhPct": 0.2432,
+      "iso": 0.088,
+      "babip": 0.273,
+      "woba": 0.275
     },
     {
       "id": "800285",
@@ -1044,31 +1044,31 @@
       "id": "823754",
       "name": "Robbie Burnett",
       "team": "hudson_valley",
-      "atBats": 97,
-      "hits": 23,
+      "atBats": 100,
+      "hits": 24,
       "doubles": 6,
       "triples": 0,
       "homeRuns": 3,
       "rbi": 19,
-      "baseOnBalls": 24,
+      "baseOnBalls": 25,
       "hitByPitch": 0,
       "sacFlies": 1,
       "stolenBases": 5,
       "caughtStealing": 0,
-      "strikeOuts": 35,
-      "plateAppearances": 122,
+      "strikeOuts": 37,
+      "plateAppearances": 126,
       "intentionalWalks": 0,
-      "avg": 0.237,
-      "obp": 0.385,
-      "slg": 0.392,
-      "ops": 0.777,
-      "bbPct": 0.1967,
-      "kPct": 0.2869,
-      "kMinusBbPct": 0.0902,
-      "xbhPct": 0.3913,
-      "iso": 0.155,
-      "babip": 0.333,
-      "woba": 0.352
+      "avg": 0.24,
+      "obp": 0.389,
+      "slg": 0.39,
+      "ops": 0.779,
+      "bbPct": 0.1984,
+      "kPct": 0.2937,
+      "kMinusBbPct": 0.0953,
+      "xbhPct": 0.375,
+      "iso": 0.15,
+      "babip": 0.344,
+      "woba": 0.353
     },
     {
       "id": "691411",
@@ -1134,31 +1134,31 @@
       "id": "823759",
       "name": "Eric Genther",
       "team": "hudson_valley",
-      "atBats": 352,
-      "hits": 94,
+      "atBats": 355,
+      "hits": 95,
       "doubles": 19,
       "triples": 1,
-      "homeRuns": 12,
-      "rbi": 61,
-      "baseOnBalls": 57,
+      "homeRuns": 13,
+      "rbi": 64,
+      "baseOnBalls": 59,
       "hitByPitch": 26,
       "sacFlies": 6,
       "stolenBases": 7,
       "caughtStealing": 1,
-      "strikeOuts": 82,
-      "plateAppearances": 441,
+      "strikeOuts": 83,
+      "plateAppearances": 446,
       "intentionalWalks": 1,
-      "avg": 0.267,
-      "obp": 0.401,
-      "slg": 0.429,
-      "ops": 0.83,
-      "bbPct": 0.1293,
-      "kPct": 0.1859,
-      "kMinusBbPct": 0.0566,
-      "xbhPct": 0.3404,
-      "iso": 0.162,
-      "babip": 0.311,
-      "woba": 0.371
+      "avg": 0.268,
+      "obp": 0.404,
+      "slg": 0.437,
+      "ops": 0.841,
+      "bbPct": 0.1323,
+      "kPct": 0.1861,
+      "kMinusBbPct": 0.0538,
+      "xbhPct": 0.3474,
+      "iso": 0.169,
+      "babip": 0.309,
+      "woba": 0.375
     },
     {
       "id": "801726",
@@ -1314,67 +1314,67 @@
       "id": "804944",
       "name": "Jackson Lovich",
       "team": "hudson_valley",
-      "atBats": 67,
-      "hits": 23,
+      "atBats": 70,
+      "hits": 24,
       "doubles": 0,
       "triples": 1,
       "homeRuns": 3,
-      "rbi": 19,
-      "baseOnBalls": 7,
+      "rbi": 20,
+      "baseOnBalls": 8,
       "hitByPitch": 0,
-      "sacFlies": 1,
-      "stolenBases": 10,
+      "sacFlies": 2,
+      "stolenBases": 12,
       "caughtStealing": 1,
-      "strikeOuts": 27,
-      "plateAppearances": 75,
+      "strikeOuts": 28,
+      "plateAppearances": 80,
       "intentionalWalks": 0,
       "avg": 0.343,
       "obp": 0.4,
-      "slg": 0.507,
-      "ops": 0.907,
-      "bbPct": 0.0933,
-      "kPct": 0.36,
-      "kMinusBbPct": 0.2667,
-      "xbhPct": 0.1739,
-      "iso": 0.164,
-      "babip": 0.526,
-      "woba": 0.395
+      "slg": 0.5,
+      "ops": 0.9,
+      "bbPct": 0.1,
+      "kPct": 0.35,
+      "kMinusBbPct": 0.25,
+      "xbhPct": 0.1667,
+      "iso": 0.157,
+      "babip": 0.512,
+      "woba": 0.39
     },
     {
       "id": "701727",
       "name": "Bryce Martin-Grudzielanek",
       "team": "hudson_valley",
-      "atBats": 48,
-      "hits": 9,
+      "atBats": 51,
+      "hits": 10,
       "doubles": 1,
       "triples": 1,
       "homeRuns": 0,
       "rbi": 1,
-      "baseOnBalls": 5,
+      "baseOnBalls": 6,
       "hitByPitch": 1,
       "sacFlies": 1,
       "stolenBases": 7,
       "caughtStealing": 0,
-      "strikeOuts": 13,
-      "plateAppearances": 55,
+      "strikeOuts": 14,
+      "plateAppearances": 59,
       "intentionalWalks": 0,
-      "avg": 0.188,
-      "obp": 0.273,
-      "slg": 0.25,
-      "ops": 0.523,
-      "bbPct": 0.0909,
-      "kPct": 0.2364,
-      "kMinusBbPct": 0.1455,
-      "xbhPct": 0.2222,
-      "iso": 0.062,
-      "babip": 0.25,
-      "woba": 0.241
+      "avg": 0.196,
+      "obp": 0.288,
+      "slg": 0.255,
+      "ops": 0.543,
+      "bbPct": 0.1017,
+      "kPct": 0.2373,
+      "kMinusBbPct": 0.1356,
+      "xbhPct": 0.2,
+      "iso": 0.059,
+      "babip": 0.263,
+      "woba": 0.252
     },
     {
       "id": "806154",
       "name": "David McCann",
       "team": "hudson_valley",
-      "atBats": 37,
+      "atBats": 41,
       "hits": 12,
       "doubles": 1,
       "triples": 0,
@@ -1385,20 +1385,20 @@
       "sacFlies": 0,
       "stolenBases": 2,
       "caughtStealing": 0,
-      "strikeOuts": 10,
-      "plateAppearances": 41,
+      "strikeOuts": 13,
+      "plateAppearances": 45,
       "intentionalWalks": 0,
-      "avg": 0.324,
-      "obp": 0.39,
-      "slg": 0.757,
-      "ops": 1.147,
-      "bbPct": 0.0244,
-      "kPct": 0.2439,
-      "kMinusBbPct": 0.2195,
+      "avg": 0.293,
+      "obp": 0.356,
+      "slg": 0.683,
+      "ops": 1.039,
+      "bbPct": 0.0222,
+      "kPct": 0.2889,
+      "kMinusBbPct": 0.2667,
       "xbhPct": 0.5,
-      "iso": 0.433,
-      "babip": 0.318,
-      "woba": 0.487
+      "iso": 0.39,
+      "babip": 0.304,
+      "woba": 0.444
     },
     {
       "id": "821296",
@@ -1434,31 +1434,31 @@
       "id": "694215",
       "name": "Hans Montero",
       "team": "hudson_valley",
-      "atBats": 16,
-      "hits": 4,
+      "atBats": 20,
+      "hits": 5,
       "doubles": 0,
       "triples": 0,
-      "homeRuns": 0,
-      "rbi": 2,
+      "homeRuns": 1,
+      "rbi": 3,
       "baseOnBalls": 5,
       "hitByPitch": 0,
       "sacFlies": 0,
       "stolenBases": 1,
       "caughtStealing": 1,
-      "strikeOuts": 7,
-      "plateAppearances": 21,
+      "strikeOuts": 9,
+      "plateAppearances": 25,
       "intentionalWalks": 0,
       "avg": 0.25,
-      "obp": 0.429,
-      "slg": 0.25,
-      "ops": 0.679,
-      "bbPct": 0.2381,
-      "kPct": 0.3333,
-      "kMinusBbPct": 0.0952,
-      "xbhPct": 0.0,
-      "iso": 0.0,
-      "babip": 0.444,
-      "woba": 0.333
+      "obp": 0.4,
+      "slg": 0.4,
+      "ops": 0.8,
+      "bbPct": 0.2,
+      "kPct": 0.36,
+      "kMinusBbPct": 0.16,
+      "xbhPct": 0.2,
+      "iso": 0.15,
+      "babip": 0.4,
+      "woba": 0.364
     },
     {
       "id": "701206",
@@ -1524,7 +1524,7 @@
       "id": "809569",
       "name": "Maika Niu",
       "team": "hudson_valley",
-      "atBats": 34,
+      "atBats": 39,
       "hits": 11,
       "doubles": 2,
       "triples": 0,
@@ -1535,20 +1535,20 @@
       "sacFlies": 2,
       "stolenBases": 3,
       "caughtStealing": 0,
-      "strikeOuts": 10,
-      "plateAppearances": 43,
+      "strikeOuts": 12,
+      "plateAppearances": 48,
       "intentionalWalks": 0,
-      "avg": 0.324,
-      "obp": 0.419,
-      "slg": 0.647,
-      "ops": 1.066,
-      "bbPct": 0.1628,
-      "kPct": 0.2326,
-      "kMinusBbPct": 0.0698,
+      "avg": 0.282,
+      "obp": 0.375,
+      "slg": 0.564,
+      "ops": 0.939,
+      "bbPct": 0.1458,
+      "kPct": 0.25,
+      "kMinusBbPct": 0.1042,
       "xbhPct": 0.4545,
-      "iso": 0.323,
-      "babip": 0.348,
-      "woba": 0.442
+      "iso": 0.282,
+      "babip": 0.308,
+      "woba": 0.396
     },
     {
       "id": "815147",
@@ -1584,31 +1584,31 @@
       "id": "800285",
       "name": "Enmanuel Tejeda",
       "team": "hudson_valley",
-      "atBats": 246,
+      "atBats": 249,
       "hits": 55,
       "doubles": 8,
       "triples": 0,
       "homeRuns": 6,
       "rbi": 30,
-      "baseOnBalls": 36,
+      "baseOnBalls": 37,
       "hitByPitch": 6,
       "sacFlies": 2,
-      "stolenBases": 21,
+      "stolenBases": 22,
       "caughtStealing": 6,
-      "strikeOuts": 55,
-      "plateAppearances": 290,
+      "strikeOuts": 56,
+      "plateAppearances": 294,
       "intentionalWalks": 0,
-      "avg": 0.224,
-      "obp": 0.334,
-      "slg": 0.329,
-      "ops": 0.663,
-      "bbPct": 0.1241,
-      "kPct": 0.1897,
-      "kMinusBbPct": 0.0656,
+      "avg": 0.221,
+      "obp": 0.333,
+      "slg": 0.325,
+      "ops": 0.658,
+      "bbPct": 0.1259,
+      "kPct": 0.1905,
+      "kMinusBbPct": 0.0646,
       "xbhPct": 0.2545,
-      "iso": 0.105,
-      "babip": 0.262,
-      "woba": 0.305
+      "iso": 0.104,
+      "babip": 0.259,
+      "woba": 0.303
     },
     {
       "id": "831025",
@@ -1644,31 +1644,31 @@
       "id": "803131",
       "name": "Camden Troyer",
       "team": "hudson_valley",
-      "atBats": 307,
-      "hits": 73,
+      "atBats": 311,
+      "hits": 74,
       "doubles": 15,
       "triples": 1,
       "homeRuns": 9,
-      "rbi": 34,
+      "rbi": 35,
       "baseOnBalls": 36,
       "hitByPitch": 0,
       "sacFlies": 4,
       "stolenBases": 12,
       "caughtStealing": 1,
       "strikeOuts": 74,
-      "plateAppearances": 347,
+      "plateAppearances": 351,
       "intentionalWalks": 0,
       "avg": 0.238,
-      "obp": 0.314,
-      "slg": 0.381,
-      "ops": 0.695,
-      "bbPct": 0.1037,
-      "kPct": 0.2133,
-      "kMinusBbPct": 0.1096,
-      "xbhPct": 0.3425,
-      "iso": 0.143,
-      "babip": 0.281,
-      "woba": 0.309
+      "obp": 0.313,
+      "slg": 0.379,
+      "ops": 0.692,
+      "bbPct": 0.1026,
+      "kPct": 0.2108,
+      "kMinusBbPct": 0.1082,
+      "xbhPct": 0.3378,
+      "iso": 0.141,
+      "babip": 0.28,
+      "woba": 0.308
     },
     {
       "id": "823918",
@@ -3466,7 +3466,7 @@
       "kPct": 0.1579,
       "bbPct": 0.1684,
       "kMinusBbPct": -0.0105,
-      "fip": 7.77
+      "fip": 7.75
     },
     {
       "id": "828266",
@@ -3492,7 +3492,7 @@
       "kPct": 0.36,
       "bbPct": 0.08,
       "kMinusBbPct": 0.28,
-      "fip": 6.13
+      "fip": 6.11
     },
     {
       "id": "693647",
@@ -3518,33 +3518,33 @@
       "kPct": 0.1818,
       "bbPct": 0.0909,
       "kMinusBbPct": 0.0909,
-      "fip": 10.52
+      "fip": 10.5
     },
     {
       "id": "683332",
       "name": "Tyler Boudreau",
       "team": "tampa",
-      "inningsPitched": "91.0",
-      "strikeOuts": 100,
-      "baseOnBalls": 35,
-      "hits": 60,
-      "atBats": 324,
-      "homeRuns": 7,
-      "earnedRuns": 35,
-      "runs": 41,
+      "inningsPitched": "95.0",
+      "strikeOuts": 104,
+      "baseOnBalls": 37,
+      "hits": 67,
+      "atBats": 342,
+      "homeRuns": 8,
+      "earnedRuns": 38,
+      "runs": 44,
       "wins": 6,
       "losses": 3,
       "saves": 0,
-      "battersFaced": 366,
+      "battersFaced": 386,
       "hitByPitch": 3,
-      "era": 3.46,
-      "whip": 1.04,
-      "avg": 0.185,
-      "so9": 9.89,
-      "kPct": 0.2732,
-      "bbPct": 0.0956,
-      "kMinusBbPct": 0.1776,
-      "fip": 4.94
+      "era": 3.6,
+      "whip": 1.09,
+      "avg": 0.196,
+      "so9": 9.85,
+      "kPct": 0.2694,
+      "bbPct": 0.0959,
+      "kMinusBbPct": 0.1735,
+      "fip": 5.04
     },
     {
       "id": "801307",
@@ -3570,7 +3570,7 @@
       "kPct": 0.0,
       "bbPct": 0.0,
       "kMinusBbPct": 0.0,
-      "fip": 4.89
+      "fip": 4.87
     },
     {
       "id": "824445",
@@ -3596,7 +3596,7 @@
       "kPct": 0.1429,
       "bbPct": 0.1714,
       "kMinusBbPct": -0.0285,
-      "fip": 11.02
+      "fip": 11.0
     },
     {
       "id": "701706",
@@ -3622,7 +3622,7 @@
       "kPct": 0.2651,
       "bbPct": 0.186,
       "kMinusBbPct": 0.0791,
-      "fip": 6.41
+      "fip": 6.39
     },
     {
       "id": "529017",
@@ -3648,7 +3648,7 @@
       "kPct": 0.2143,
       "bbPct": 0.1429,
       "kMinusBbPct": 0.0714,
-      "fip": 4.89
+      "fip": 4.87
     },
     {
       "id": "806884",
@@ -3674,7 +3674,7 @@
       "kPct": 0.0,
       "bbPct": 0.5,
       "kMinusBbPct": -0.5,
-      "fip": 18.39
+      "fip": 18.37
     },
     {
       "id": "822950",
@@ -3700,7 +3700,7 @@
       "kPct": 0.3034,
       "bbPct": 0.1199,
       "kMinusBbPct": 0.1835,
-      "fip": 5.65
+      "fip": 5.63
     },
     {
       "id": "702098",
@@ -3726,7 +3726,7 @@
       "kPct": 0.4237,
       "bbPct": 0.1186,
       "kMinusBbPct": 0.3051,
-      "fip": 3.36
+      "fip": 3.34
     },
     {
       "id": "814343",
@@ -3752,7 +3752,7 @@
       "kPct": 0.1709,
       "bbPct": 0.094,
       "kMinusBbPct": 0.0769,
-      "fip": 7.23
+      "fip": 7.21
     },
     {
       "id": "805730",
@@ -3778,7 +3778,7 @@
       "kPct": 0.2308,
       "bbPct": 0.1077,
       "kMinusBbPct": 0.1231,
-      "fip": 5.15
+      "fip": 5.13
     },
     {
       "id": "682625",
@@ -3804,7 +3804,7 @@
       "kPct": 0.3333,
       "bbPct": 0.0,
       "kMinusBbPct": 0.3333,
-      "fip": 6.56
+      "fip": 6.54
     },
     {
       "id": "801726",
@@ -3830,7 +3830,7 @@
       "kPct": 0.1667,
       "bbPct": 0.3333,
       "kMinusBbPct": -0.1666,
-      "fip": 10.89
+      "fip": 10.87
     },
     {
       "id": "694633",
@@ -3856,7 +3856,7 @@
       "kPct": 0.2222,
       "bbPct": 0.0556,
       "kMinusBbPct": 0.1666,
-      "fip": 7.08
+      "fip": 7.06
     },
     {
       "id": "809137",
@@ -3882,7 +3882,7 @@
       "kPct": 0.1579,
       "bbPct": 0.0526,
       "kMinusBbPct": 0.1053,
-      "fip": 4.33
+      "fip": 4.31
     },
     {
       "id": "806121",
@@ -3908,7 +3908,7 @@
       "kPct": 0.2903,
       "bbPct": 0.1505,
       "kMinusBbPct": 0.1398,
-      "fip": 6.18
+      "fip": 6.16
     },
     {
       "id": "695765",
@@ -3934,7 +3934,7 @@
       "kPct": 0.2993,
       "bbPct": 0.146,
       "kMinusBbPct": 0.1533,
-      "fip": 6.44
+      "fip": 6.42
     },
     {
       "id": "702874",
@@ -3960,7 +3960,7 @@
       "kPct": 0.2562,
       "bbPct": 0.1187,
       "kMinusBbPct": 0.1375,
-      "fip": 4.81
+      "fip": 4.79
     },
     {
       "id": "669740",
@@ -3986,7 +3986,7 @@
       "kPct": 0.1765,
       "bbPct": 0.0588,
       "kMinusBbPct": 0.1177,
-      "fip": 4.89
+      "fip": 4.87
     },
     {
       "id": "805128",
@@ -4012,7 +4012,7 @@
       "kPct": 0.2632,
       "bbPct": 0.0877,
       "kMinusBbPct": 0.1755,
-      "fip": 5.74
+      "fip": 5.72
     },
     {
       "id": "800239",
@@ -4038,7 +4038,7 @@
       "kPct": 0.1111,
       "bbPct": 0.1204,
       "kMinusBbPct": -0.0093,
-      "fip": 10.0
+      "fip": 9.98
     },
     {
       "id": "814715",
@@ -4064,33 +4064,33 @@
       "kPct": 0.2679,
       "bbPct": 0.1005,
       "kMinusBbPct": 0.1674,
-      "fip": 5.68
+      "fip": 5.66
     },
     {
       "id": "827768",
       "name": "Anthony Mena",
       "team": "tampa",
-      "inningsPitched": "7.0",
-      "strikeOuts": 5,
-      "baseOnBalls": 1,
-      "hits": 4,
-      "atBats": 23,
+      "inningsPitched": "10.2",
+      "strikeOuts": 7,
+      "baseOnBalls": 2,
+      "hits": 6,
+      "atBats": 35,
       "homeRuns": 1,
       "earnedRuns": 2,
       "runs": 2,
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
       "saves": 0,
-      "battersFaced": 24,
+      "battersFaced": 37,
       "hitByPitch": 0,
-      "era": 2.57,
-      "whip": 0.71,
-      "avg": 0.174,
-      "so9": 6.43,
-      "kPct": 0.2083,
-      "bbPct": 0.0417,
-      "kMinusBbPct": 0.1666,
-      "fip": 5.75
+      "era": 1.69,
+      "whip": 0.75,
+      "avg": 0.171,
+      "so9": 5.91,
+      "kPct": 0.1892,
+      "bbPct": 0.0541,
+      "kMinusBbPct": 0.1351,
+      "fip": 5.34
     },
     {
       "id": "702212",
@@ -4116,7 +4116,7 @@
       "kPct": 0.2543,
       "bbPct": 0.1387,
       "kMinusBbPct": 0.1156,
-      "fip": 6.98
+      "fip": 6.96
     },
     {
       "id": "811963",
@@ -4142,7 +4142,7 @@
       "kPct": 0.2328,
       "bbPct": 0.0733,
       "kMinusBbPct": 0.1595,
-      "fip": 4.78
+      "fip": 4.76
     },
     {
       "id": "815278",
@@ -4168,7 +4168,7 @@
       "kPct": 0.3315,
       "bbPct": 0.1359,
       "kMinusBbPct": 0.1956,
-      "fip": 4.84
+      "fip": 4.82
     },
     {
       "id": "692646",
@@ -4194,7 +4194,7 @@
       "kPct": 0.2544,
       "bbPct": 0.1316,
       "kMinusBbPct": 0.1228,
-      "fip": 6.17
+      "fip": 6.15
     },
     {
       "id": "666720",
@@ -4220,7 +4220,7 @@
       "kPct": 0.2121,
       "bbPct": 0.0303,
       "kMinusBbPct": 0.1818,
-      "fip": 3.89
+      "fip": 3.87
     },
     {
       "id": "703752",
@@ -4246,7 +4246,7 @@
       "kPct": 0.302,
       "bbPct": 0.1544,
       "kMinusBbPct": 0.1476,
-      "fip": 5.34
+      "fip": 5.32
     },
     {
       "id": "805728",
@@ -4272,7 +4272,7 @@
       "kPct": 0.25,
       "bbPct": 0.0625,
       "kMinusBbPct": 0.1875,
-      "fip": 7.29
+      "fip": 7.27
     },
     {
       "id": "834863",
@@ -4298,7 +4298,7 @@
       "kPct": 0.2249,
       "bbPct": 0.0769,
       "kMinusBbPct": 0.148,
-      "fip": 6.1
+      "fip": 6.08
     },
     {
       "id": "806244",
@@ -4324,33 +4324,33 @@
       "kPct": 0.2169,
       "bbPct": 0.0899,
       "kMinusBbPct": 0.127,
-      "fip": 6.88
+      "fip": 6.86
     },
     {
       "id": "822915",
       "name": "Matthew Tippie",
       "team": "tampa",
-      "inningsPitched": "42.2",
-      "strikeOuts": 52,
+      "inningsPitched": "44.0",
+      "strikeOuts": 55,
       "baseOnBalls": 20,
       "hits": 31,
-      "atBats": 154,
+      "atBats": 158,
       "homeRuns": 4,
       "earnedRuns": 15,
       "runs": 23,
       "wins": 2,
       "losses": 5,
       "saves": 4,
-      "battersFaced": 182,
+      "battersFaced": 186,
       "hitByPitch": 5,
-      "era": 3.16,
-      "whip": 1.2,
-      "avg": 0.201,
-      "so9": 10.97,
-      "kPct": 0.2857,
-      "bbPct": 0.1099,
-      "kMinusBbPct": 0.1758,
-      "fip": 5.43
+      "era": 3.07,
+      "whip": 1.16,
+      "avg": 0.196,
+      "so9": 11.25,
+      "kPct": 0.2957,
+      "bbPct": 0.1075,
+      "kMinusBbPct": 0.1882,
+      "fip": 5.26
     },
     {
       "id": "686433",
@@ -4376,7 +4376,7 @@
       "kPct": 0.5556,
       "bbPct": 0.1111,
       "kMinusBbPct": 0.4445,
-      "fip": 1.89
+      "fip": 1.87
     },
     {
       "id": "814269",
@@ -4402,7 +4402,7 @@
       "kPct": 0.0,
       "bbPct": 0.0,
       "kMinusBbPct": 0.0,
-      "fip": 4.89
+      "fip": 4.87
     },
     {
       "id": "695425",
@@ -4428,7 +4428,7 @@
       "kPct": 0.1429,
       "bbPct": 0.0571,
       "kMinusBbPct": 0.0858,
-      "fip": 4.45
+      "fip": 4.43
     },
     {
       "id": "804892",
@@ -4454,7 +4454,7 @@
       "kPct": 0.2445,
       "bbPct": 0.0709,
       "kMinusBbPct": 0.1736,
-      "fip": 5.19
+      "fip": 5.17
     },
     {
       "id": "693647",
@@ -4480,7 +4480,7 @@
       "kPct": 0.3427,
       "bbPct": 0.1049,
       "kMinusBbPct": 0.2378,
-      "fip": 5.05
+      "fip": 5.04
     },
     {
       "id": "703748",
@@ -4506,7 +4506,7 @@
       "kPct": 0.2696,
       "bbPct": 0.1304,
       "kMinusBbPct": 0.1392,
-      "fip": 5.29
+      "fip": 5.28
     },
     {
       "id": "543037",
@@ -4532,33 +4532,33 @@
       "kPct": 0.2105,
       "bbPct": 0.0,
       "kMinusBbPct": 0.2105,
-      "fip": 7.07
+      "fip": 7.06
     },
     {
       "id": "701480",
       "name": "Bryce Cunningham",
       "team": "hudson_valley",
-      "inningsPitched": "74.1",
-      "strikeOuts": 68,
-      "baseOnBalls": 34,
-      "hits": 68,
-      "atBats": 284,
-      "homeRuns": 7,
-      "earnedRuns": 38,
-      "runs": 42,
+      "inningsPitched": "80.1",
+      "strikeOuts": 69,
+      "baseOnBalls": 37,
+      "hits": 77,
+      "atBats": 310,
+      "homeRuns": 8,
+      "earnedRuns": 42,
+      "runs": 46,
       "wins": 2,
       "losses": 8,
       "saves": 0,
-      "battersFaced": 325,
+      "battersFaced": 354,
       "hitByPitch": 1,
-      "era": 4.6,
-      "whip": 1.37,
-      "avg": 0.239,
-      "so9": 8.23,
-      "kPct": 0.2092,
-      "bbPct": 0.1046,
-      "kMinusBbPct": 0.1046,
-      "fip": 4.88
+      "era": 4.71,
+      "whip": 1.42,
+      "avg": 0.248,
+      "so9": 7.73,
+      "kPct": 0.1949,
+      "bbPct": 0.1045,
+      "kMinusBbPct": 0.0904,
+      "fip": 5.06
     },
     {
       "id": "804698",
@@ -4584,7 +4584,7 @@
       "kPct": 0.2751,
       "bbPct": 0.0899,
       "kMinusBbPct": 0.1852,
-      "fip": 4.18
+      "fip": 4.17
     },
     {
       "id": "702098",
@@ -4610,7 +4610,7 @@
       "kPct": 0.288,
       "bbPct": 0.16,
       "kMinusBbPct": 0.128,
-      "fip": 4.93
+      "fip": 4.92
     },
     {
       "id": "812431",
@@ -4636,7 +4636,7 @@
       "kPct": 0.255,
       "bbPct": 0.0652,
       "kMinusBbPct": 0.1898,
-      "fip": 4.53
+      "fip": 4.52
     },
     {
       "id": "690977",
@@ -4662,7 +4662,7 @@
       "kPct": 0.1733,
       "bbPct": 0.24,
       "kMinusBbPct": -0.0667,
-      "fip": 6.8
+      "fip": 6.79
     },
     {
       "id": "661563",
@@ -4688,7 +4688,7 @@
       "kPct": 0.25,
       "bbPct": 0.0833,
       "kMinusBbPct": 0.1667,
-      "fip": 3.07
+      "fip": 3.06
     },
     {
       "id": "694633",
@@ -4714,7 +4714,7 @@
       "kPct": 0.2292,
       "bbPct": 0.0833,
       "kMinusBbPct": 0.1459,
-      "fip": 4.91
+      "fip": 4.9
     },
     {
       "id": "800471",
@@ -4740,7 +4740,7 @@
       "kPct": 0.252,
       "bbPct": 0.126,
       "kMinusBbPct": 0.126,
-      "fip": 6.1
+      "fip": 6.09
     },
     {
       "id": "802374",
@@ -4766,7 +4766,7 @@
       "kPct": 0.2899,
       "bbPct": 0.1361,
       "kMinusBbPct": 0.1538,
-      "fip": 4.97
+      "fip": 4.96
     },
     {
       "id": "695560",
@@ -4792,7 +4792,7 @@
       "kPct": 0.2553,
       "bbPct": 0.1489,
       "kMinusBbPct": 0.1064,
-      "fip": 4.98
+      "fip": 4.97
     },
     {
       "id": "815069",
@@ -4818,7 +4818,7 @@
       "kPct": 0.2599,
       "bbPct": 0.1017,
       "kMinusBbPct": 0.1582,
-      "fip": 3.66
+      "fip": 3.65
     },
     {
       "id": "800344",
@@ -4844,7 +4844,7 @@
       "kPct": 0.273,
       "bbPct": 0.1135,
       "kMinusBbPct": 0.1595,
-      "fip": 5.52
+      "fip": 5.51
     },
     {
       "id": "669740",
@@ -4870,7 +4870,7 @@
       "kPct": 0.4,
       "bbPct": 0.4,
       "kMinusBbPct": 0.0,
-      "fip": 6.07
+      "fip": 6.06
     },
     {
       "id": "691004",
@@ -4896,7 +4896,7 @@
       "kPct": 0.1951,
       "bbPct": 0.1341,
       "kMinusBbPct": 0.061,
-      "fip": 5.27
+      "fip": 5.26
     },
     {
       "id": "804603",
@@ -4922,33 +4922,33 @@
       "kPct": 0.0,
       "bbPct": 0.125,
       "kMinusBbPct": -0.125,
-      "fip": 8.57
+      "fip": 8.56
     },
     {
       "id": "692550",
       "name": "Hansel Rincon",
       "team": "hudson_valley",
-      "inningsPitched": "36.2",
-      "strikeOuts": 55,
+      "inningsPitched": "37.2",
+      "strikeOuts": 56,
       "baseOnBalls": 18,
-      "hits": 29,
-      "atBats": 140,
+      "hits": 30,
+      "atBats": 144,
       "homeRuns": 2,
       "earnedRuns": 13,
       "runs": 19,
       "wins": 2,
       "losses": 4,
-      "saves": 0,
-      "battersFaced": 167,
+      "saves": 1,
+      "battersFaced": 171,
       "hitByPitch": 7,
-      "era": 3.19,
-      "whip": 1.28,
-      "avg": 0.207,
-      "so9": 13.5,
-      "kPct": 0.3293,
-      "bbPct": 0.1078,
-      "kMinusBbPct": 0.2215,
-      "fip": 3.82
+      "era": 3.11,
+      "whip": 1.27,
+      "avg": 0.208,
+      "so9": 13.38,
+      "kPct": 0.3275,
+      "bbPct": 0.1053,
+      "kMinusBbPct": 0.2222,
+      "fip": 3.77
     },
     {
       "id": "607074",
@@ -4974,7 +4974,7 @@
       "kPct": 0.25,
       "bbPct": 0.0625,
       "kMinusBbPct": 0.1875,
-      "fip": 3.61
+      "fip": 3.6
     },
     {
       "id": "815278",
@@ -5000,7 +5000,7 @@
       "kPct": 0.1795,
       "bbPct": 0.1538,
       "kMinusBbPct": 0.0257,
-      "fip": 6.57
+      "fip": 6.56
     },
     {
       "id": "666720",
@@ -5026,7 +5026,7 @@
       "kPct": 0.2857,
       "bbPct": 0.0,
       "kMinusBbPct": 0.2857,
-      "fip": 1.89
+      "fip": 1.88
     },
     {
       "id": "702036",
@@ -5052,33 +5052,33 @@
       "kPct": 0.3824,
       "bbPct": 0.0735,
       "kMinusBbPct": 0.3089,
-      "fip": 2.54
+      "fip": 2.53
     },
     {
       "id": "804522",
       "name": "Wilmy Sanchez",
       "team": "hudson_valley",
-      "inningsPitched": "29.1",
-      "strikeOuts": 48,
+      "inningsPitched": "31.1",
+      "strikeOuts": 53,
       "baseOnBalls": 18,
-      "hits": 18,
-      "atBats": 102,
-      "homeRuns": 1,
-      "earnedRuns": 10,
-      "runs": 13,
-      "wins": 0,
+      "hits": 21,
+      "atBats": 111,
+      "homeRuns": 2,
+      "earnedRuns": 11,
+      "runs": 14,
+      "wins": 1,
       "losses": 0,
       "saves": 5,
-      "battersFaced": 123,
+      "battersFaced": 132,
       "hitByPitch": 1,
-      "era": 3.07,
-      "whip": 1.23,
-      "avg": 0.176,
-      "so9": 14.73,
-      "kPct": 0.3902,
-      "bbPct": 0.1463,
-      "kMinusBbPct": 0.2439,
-      "fip": 3.18
+      "era": 3.16,
+      "whip": 1.24,
+      "avg": 0.189,
+      "so9": 15.22,
+      "kPct": 0.4015,
+      "bbPct": 0.1364,
+      "kMinusBbPct": 0.2651,
+      "fip": 3.33
     },
     {
       "id": "702436",
@@ -5104,7 +5104,7 @@
       "kPct": 0.274,
       "bbPct": 0.0769,
       "kMinusBbPct": 0.1971,
-      "fip": 4.23
+      "fip": 4.22
     },
     {
       "id": "694662",
@@ -5130,7 +5130,7 @@
       "kPct": 0.2062,
       "bbPct": 0.0875,
       "kMinusBbPct": 0.1187,
-      "fip": 4.86
+      "fip": 4.85
     },
     {
       "id": "805728",
@@ -5156,7 +5156,7 @@
       "kPct": 0.2,
       "bbPct": 0.1,
       "kMinusBbPct": 0.1,
-      "fip": 3.52
+      "fip": 3.51
     },
     {
       "id": "685067",
@@ -5182,7 +5182,7 @@
       "kPct": 0.2778,
       "bbPct": 0.25,
       "kMinusBbPct": 0.0278,
-      "fip": 7.52
+      "fip": 7.51
     },
     {
       "id": "810102",
@@ -5208,7 +5208,7 @@
       "kPct": 0.4464,
       "bbPct": 0.0714,
       "kMinusBbPct": 0.375,
-      "fip": 1.84
+      "fip": 1.83
     },
     {
       "id": "686433",
@@ -5234,7 +5234,7 @@
       "kPct": 0.3667,
       "bbPct": 0.0667,
       "kMinusBbPct": 0.3,
-      "fip": 1.89
+      "fip": 1.88
     },
     {
       "id": "695425",
@@ -5260,7 +5260,7 @@
       "kPct": 0.2453,
       "bbPct": 0.1415,
       "kMinusBbPct": 0.1038,
-      "fip": 6.02
+      "fip": 6.01
     },
     {
       "id": "683522",
