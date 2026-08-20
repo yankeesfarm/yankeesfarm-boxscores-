@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generated_at": "2026-08-20T17:22:41Z",
+  "generated_at": "2026-08-20T22:24:52Z",
   "hitters": [
     {
       "name": "Christian Bethancourt",
@@ -18138,8 +18138,8 @@
       "name": "DSL NYY Yankees",
       "level": "DSL1",
       "wins": 32,
-      "losses": 22,
-      "winPct": 0.593,
+      "losses": 23,
+      "winPct": 0.582,
       "avg": 0.3,
       "obp": 0.434,
       "slg": 0.492,
