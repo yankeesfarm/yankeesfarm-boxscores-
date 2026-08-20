@@ -30,30 +30,30 @@
         {
           "rank": "3",
           "isTied": false,
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": "0.556"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
           "name": "Ernesto Martinez Jr.",
           "team": "SWB",
           "value": "0.545"
         },
         {
-          "rank": "4",
+          "rank": "5",
           "isTied": false,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": "0.529"
         },
         {
-          "rank": "5",
+          "rank": "6",
           "isTied": false,
           "name": "Luis Escudero",
           "team": "TAM",
           "value": "0.526"
-        },
-        {
-          "rank": "6",
-          "isTied": false,
-          "name": "Coby Morales",
-          "team": "SOM",
-          "value": "0.444"
         },
         {
           "rank": "7",
@@ -114,20 +114,20 @@
         {
           "rank": "3",
           "isTied": false,
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": "0.600"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
           "name": "Anthony Potestio",
           "team": "TAM",
           "value": "0.591"
         },
         {
-          "rank": "T4",
-          "isTied": true,
-          "name": "Coby Morales",
-          "team": "SOM",
-          "value": "0.583"
-        },
-        {
-          "rank": "T4",
-          "isTied": true,
+          "rank": "5",
+          "isTied": false,
           "name": "Ernesto Martinez Jr.",
           "team": "SWB",
           "value": "0.583"
@@ -161,11 +161,18 @@
           "value": "0.545"
         },
         {
-          "rank": "10",
-          "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
-          "value": "0.529"
+          "rank": "T10",
+          "isTied": true,
+          "name": "Blake Cyr",
+          "team": "TAM",
+          "value": "0.500"
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Connor McGinnis",
+          "team": "SOM",
+          "value": "0.500"
         }
       ]
     },
@@ -219,9 +226,9 @@
         {
           "rank": "7",
           "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
-          "value": "0.750"
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.714"
         },
         {
           "rank": "8",
@@ -233,16 +240,16 @@
         {
           "rank": "9",
           "isTied": false,
-          "name": "Manuel Palencia",
-          "team": "SOM",
-          "value": "0.692"
+          "name": "Dax Kilby",
+          "team": "TAM",
+          "value": "0.667"
         },
         {
           "rank": "10",
           "isTied": false,
-          "name": "Dax Kilby",
-          "team": "TAM",
-          "value": "0.667"
+          "name": "Ernesto Martinez Jr.",
+          "team": "SWB",
+          "value": "0.636"
         }
       ]
     },
@@ -296,30 +303,30 @@
         {
           "rank": "7",
           "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
-          "value": "1.279"
-        },
-        {
-          "rank": "8",
-          "isTied": false,
           "name": "Yostin Pena",
           "team": "TAM",
           "value": "1.262"
         },
         {
-          "rank": "9",
+          "rank": "8",
           "isTied": false,
           "name": "Dax Kilby",
           "team": "TAM",
           "value": "1.223"
         },
         {
-          "rank": "10",
+          "rank": "9",
           "isTied": false,
           "name": "Ernesto Martinez Jr.",
           "team": "SWB",
           "value": "1.219"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": "1.156"
         }
       ]
     },
@@ -434,91 +441,98 @@
       "isRate": false,
       "entries": [
         {
-          "rank": "1",
-          "isTied": false,
+          "rank": "T1",
+          "isTied": true,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": 4
+        },
+        {
+          "rank": "T1",
+          "isTied": true,
           "name": "Juan Torres",
           "team": "DSL-Y",
           "value": 4
         },
         {
-          "rank": "2",
+          "rank": "3",
           "isTied": false,
           "name": "Alfred Ciriaco",
           "team": "DSL-B",
           "value": 3
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Anthony Potestio",
           "team": "TAM",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Dean Toigo",
           "team": "HV",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Kyle West",
           "team": "HV",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
-          "name": "Roderick Arias",
+          "name": "DJ Gladney",
           "team": "SOM",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Manuel Palencia",
           "team": "SOM",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Max Schuemann",
           "team": "SWB",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Anthony Volpe",
           "team": "SWB",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Isaias Castillo",
           "team": "DSL-Y",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Germayhoni Beltre",
           "team": "DSL-B",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "David Carrera",
           "team": "DSL-B",
           "value": 2
         },
         {
-          "rank": "T3",
+          "rank": "T4",
           "isTied": true,
           "name": "Kenneth Melendez",
           "team": "DSL-B",
@@ -744,6 +758,20 @@
         {
           "rank": "T8",
           "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": 1
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
           "name": "Manuel Palencia",
           "team": "SOM",
           "value": 1
@@ -842,6 +870,13 @@
         {
           "rank": "T4",
           "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 6
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
           "name": "Josh Moylan",
           "team": "SOM",
           "value": 6
@@ -854,56 +889,56 @@
           "value": 6
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Wilberson De Pena",
           "team": "TAM",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Anthony Potestio",
           "team": "TAM",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Luis Puello",
           "team": "TAM",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Omar Alfonzo",
           "team": "SOM",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Manuel Palencia",
           "team": "SOM",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Anthony Volpe",
           "team": "SWB",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Isaias Castillo",
           "team": "DSL-Y",
           "value": 5
         },
         {
-          "rank": "T9",
+          "rank": "T10",
           "isTied": true,
           "name": "Alfred Ciriaco",
           "team": "DSL-B",
@@ -1017,34 +1052,27 @@
         {
           "rank": "3",
           "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
-          "value": "29.4%"
-        },
-        {
-          "rank": "4",
-          "isTied": false,
           "name": "Connor McGinnis",
           "team": "SOM",
           "value": "28.6%"
         },
         {
-          "rank": "5",
+          "rank": "4",
           "isTied": false,
           "name": "Anthony Potestio",
           "team": "TAM",
           "value": "27.3%"
         },
         {
-          "rank": "6",
+          "rank": "5",
           "isTied": false,
           "name": "Bayram Hot",
           "team": "TAM",
           "value": "26.7%"
         },
         {
-          "rank": "T7",
-          "isTied": true,
+          "rank": "6",
+          "isTied": false,
           "name": "Dax Kilby",
           "team": "TAM",
           "value": "25.0%"
@@ -1052,23 +1080,30 @@
         {
           "rank": "T7",
           "isTied": true,
-          "name": "Coby Morales",
-          "team": "SOM",
-          "value": "25.0%"
+          "name": "Robbie Burnett",
+          "team": "HV",
+          "value": "23.8%"
         },
         {
           "rank": "T7",
           "isTied": true,
-          "name": "Anthony Volpe",
+          "name": "Max Schuemann",
           "team": "SWB",
-          "value": "25.0%"
+          "value": "23.8%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "23.1%"
         },
         {
           "rank": "10",
           "isTied": false,
-          "name": "Robbie Burnett",
-          "team": "HV",
-          "value": "23.8%"
+          "name": "Anthony Volpe",
+          "team": "SWB",
+          "value": "20.8%"
         }
       ]
     },
@@ -1101,36 +1136,36 @@
         {
           "rank": "4",
           "isTied": false,
-          "name": "Coby Morales",
-          "team": "SOM",
-          "value": "8.3%"
-        },
-        {
-          "rank": "5",
-          "isTied": false,
           "name": "Paul Gutierrez-Contreras II",
           "team": "TAM",
           "value": "9.1%"
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Camden Troyer",
           "team": "HV",
           "value": "10.0%"
         },
         {
-          "rank": "T6",
+          "rank": "T5",
           "isTied": true,
           "name": "Jackson Castillo",
           "team": "SOM",
           "value": "10.0%"
         },
         {
+          "rank": "7",
+          "isTied": false,
+          "name": "Manuel Palencia",
+          "team": "SOM",
+          "value": "11.1%"
+        },
+        {
           "rank": "8",
           "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
+          "name": "Coby Morales",
+          "team": "SOM",
           "value": "11.8%"
         },
         {
@@ -1164,72 +1199,72 @@
         {
           "rank": "1",
           "isTied": false,
-          "name": "Tyler Hardman",
-          "team": "SWB",
-          "value": "41.7%"
-        },
-        {
-          "rank": "2",
-          "isTied": false,
           "name": "Willy Montero",
           "team": "HV",
           "value": "40.0%"
         },
         {
-          "rank": "3",
-          "isTied": false,
-          "name": "Roderick Arias",
-          "team": "SOM",
-          "value": "38.1%"
-        },
-        {
-          "rank": "4",
+          "rank": "2",
           "isTied": false,
           "name": "Dean Toigo",
           "team": "HV",
           "value": "35.3%"
         },
         {
+          "rank": "3",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "34.6%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "33.3%"
+        },
+        {
           "rank": "5",
           "isTied": false,
           "name": "Josh Moylan",
           "team": "SOM",
-          "value": "33.3%"
+          "value": "31.8%"
         },
         {
           "rank": "6",
+          "isTied": false,
+          "name": "Omar Alfonzo",
+          "team": "SOM",
+          "value": "30.8%"
+        },
+        {
+          "rank": "7",
           "isTied": false,
           "name": "Hans Montero",
           "team": "HV",
           "value": "28.6%"
         },
         {
-          "rank": "T7",
-          "isTied": true,
-          "name": "Kenedy Corona",
-          "team": "SWB",
-          "value": "25.0%"
-        },
-        {
-          "rank": "T7",
-          "isTied": true,
-          "name": "Jasson Dom\u00ednguez",
-          "team": "SWB",
-          "value": "25.0%"
-        },
-        {
-          "rank": "9",
-          "isTied": false,
-          "name": "Omar Alfonzo",
-          "team": "SOM",
-          "value": "23.8%"
-        },
-        {
-          "rank": "10",
+          "rank": "8",
           "isTied": false,
           "name": "David McCann",
           "team": "HV",
           "value": "23.5%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Jasson Dom\u00ednguez",
+          "team": "SWB",
+          "value": "20.8%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Robbie Burnett",
+          "team": "HV",
+          "value": "19.1%"
         }
       ]
     },
@@ -1241,21 +1276,7 @@
         {
           "rank": "T1",
           "isTied": true,
-          "name": "Roderick Arias",
-          "team": "SOM",
-          "value": "100.0%"
-        },
-        {
-          "rank": "T1",
-          "isTied": true,
           "name": "Jace Avina",
-          "team": "SOM",
-          "value": "100.0%"
-        },
-        {
-          "rank": "T1",
-          "isTied": true,
-          "name": "Josh Moylan",
           "team": "SOM",
           "value": "100.0%"
         },
@@ -1267,88 +1288,60 @@
           "value": "100.0%"
         },
         {
-          "rank": "T5",
+          "rank": "3",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "80.0%"
+        },
+        {
+          "rank": "T4",
           "isTied": true,
           "name": "Eric Genther",
           "team": "HV",
           "value": "75.0%"
         },
         {
-          "rank": "T5",
-          "isTied": true,
-          "name": "Manuel Palencia",
-          "team": "SOM",
-          "value": "75.0%"
-        },
-        {
-          "rank": "T5",
+          "rank": "T4",
           "isTied": true,
           "name": "Max Schuemann",
           "team": "SWB",
           "value": "75.0%"
         },
         {
-          "rank": "8",
-          "isTied": false,
+          "rank": "T6",
+          "isTied": true,
           "name": "Anthony Potestio",
           "team": "TAM",
           "value": "66.7%"
         },
         {
-          "rank": "9",
+          "rank": "T6",
+          "isTied": true,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": "66.7%"
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "60.0%"
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "Manuel Palencia",
+          "team": "SOM",
+          "value": "60.0%"
+        },
+        {
+          "rank": "10",
           "isTied": false,
           "name": "Jackson Lovich",
           "team": "HV",
           "value": "57.1%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Luke Pettitte",
-          "team": "TAM",
-          "value": "50.0%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Ediel Rivera",
-          "team": "TAM",
-          "value": "50.0%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "David McCann",
-          "team": "HV",
-          "value": "50.0%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Willy Montero",
-          "team": "HV",
-          "value": "50.0%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Kyle West",
-          "team": "HV",
-          "value": "50.0%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Mitch Garver",
-          "team": "SWB",
-          "value": "50.0%"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Tyler Hardman",
-          "team": "SWB",
-          "value": "50.0%"
         }
       ]
     },
@@ -1388,44 +1381,44 @@
         {
           "rank": "5",
           "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
-          "value": "0.417"
-        },
-        {
-          "rank": "6",
-          "isTied": false,
-          "name": "Manuel Palencia",
-          "team": "SOM",
-          "value": "0.384"
-        },
-        {
-          "rank": "7",
-          "isTied": false,
           "name": "Ediel Rivera",
           "team": "TAM",
           "value": "0.375"
         },
         {
-          "rank": "8",
+          "rank": "6",
           "isTied": false,
           "name": "Luis Escudero",
           "team": "TAM",
           "value": "0.369"
         },
         {
-          "rank": "9",
+          "rank": "7",
           "isTied": false,
-          "name": "Josh Moylan",
+          "name": "DJ Gladney",
           "team": "SOM",
-          "value": "0.353"
+          "value": "0.357"
         },
         {
-          "rank": "10",
+          "rank": "8",
           "isTied": false,
           "name": "Eric Genther",
           "team": "HV",
           "value": "0.350"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Manuel Palencia",
+          "team": "SOM",
+          "value": "0.313"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Max Schuemann",
+          "team": "SWB",
+          "value": "0.312"
         }
       ]
     },
@@ -1463,38 +1456,38 @@
           "value": "0.571"
         },
         {
-          "rank": "5",
-          "isTied": false,
+          "rank": "T5",
+          "isTied": true,
           "name": "Dean Toigo",
           "team": "HV",
           "value": "0.556"
         },
         {
-          "rank": "6",
+          "rank": "T5",
+          "isTied": true,
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": "0.556"
+        },
+        {
+          "rank": "7",
           "isTied": false,
           "name": "Ernesto Martinez Jr.",
           "team": "SWB",
           "value": "0.545"
         },
         {
-          "rank": "T7",
+          "rank": "T8",
           "isTied": true,
           "name": "Dax Kilby",
           "team": "TAM",
           "value": "0.500"
         },
         {
-          "rank": "T7",
+          "rank": "T8",
           "isTied": true,
           "name": "Luke Pettitte",
           "team": "TAM",
-          "value": "0.500"
-        },
-        {
-          "rank": "T7",
-          "isTied": true,
-          "name": "Coby Morales",
-          "team": "SOM",
           "value": "0.500"
         },
         {
@@ -1570,16 +1563,16 @@
         {
           "rank": "9",
           "isTied": false,
-          "name": "Max Schuemann",
-          "team": "SWB",
-          "value": "0.528"
+          "name": "Dax Kilby",
+          "team": "TAM",
+          "value": "0.518"
         },
         {
           "rank": "10",
           "isTied": false,
-          "name": "Dax Kilby",
-          "team": "TAM",
-          "value": "0.518"
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": "0.513"
         }
       ]
     },
@@ -1603,67 +1596,67 @@
           "value": "0.00"
         },
         {
-          "rank": "3",
+          "rank": "T1",
+          "isTied": true,
+          "name": "Geoffrey Gilbert",
+          "team": "SOM",
+          "value": "0.00"
+        },
+        {
+          "rank": "T1",
+          "isTied": true,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "0.00"
+        },
+        {
+          "rank": "5",
           "isTied": false,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "0.75"
         },
         {
-          "rank": "4",
+          "rank": "6",
           "isTied": false,
           "name": "Cade Smith",
           "team": "SOM",
           "value": "1.29"
         },
         {
-          "rank": "5",
+          "rank": "7",
           "isTied": false,
           "name": "Kelly Austin",
           "team": "SOM",
           "value": "2.25"
         },
         {
-          "rank": "6",
+          "rank": "8",
           "isTied": false,
           "name": "Anthony Mena",
           "team": "TAM",
           "value": "2.45"
         },
         {
-          "rank": "7",
+          "rank": "9",
           "isTied": false,
           "name": "Allen Facundo",
           "team": "HV",
           "value": "2.57"
         },
         {
-          "rank": "8",
-          "isTied": false,
+          "rank": "T10",
+          "isTied": true,
           "name": "Bryce Warrecker",
           "team": "HV",
           "value": "2.70"
         },
         {
-          "rank": "9",
-          "isTied": false,
-          "name": "Justin West",
-          "team": "TAM",
-          "value": "2.84"
-        },
-        {
           "rank": "T10",
           "isTied": true,
-          "name": "Hansel Rincon",
-          "team": "HV",
-          "value": "3.00"
-        },
-        {
-          "rank": "T10",
-          "isTied": true,
-          "name": "Wilmy Sanchez",
-          "team": "HV",
-          "value": "3.00"
+          "name": "Travis MacGregor",
+          "team": "SWB",
+          "value": "2.70"
         }
       ]
     },
@@ -1673,74 +1666,74 @@
       "isRate": true,
       "entries": [
         {
-          "rank": "T1",
+          "rank": "1",
+          "isTied": false,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "0.00"
+        },
+        {
+          "rank": "T2",
           "isTied": true,
           "name": "Matthew Tippie",
           "team": "TAM",
           "value": "0.25"
         },
         {
-          "rank": "T1",
+          "rank": "T2",
           "isTied": true,
           "name": "Kelly Austin",
           "team": "SOM",
           "value": "0.25"
         },
         {
-          "rank": "3",
+          "rank": "4",
           "isTied": false,
           "name": "Cade Smith",
           "team": "SOM",
           "value": "0.43"
         },
         {
-          "rank": "4",
+          "rank": "5",
           "isTied": false,
           "name": "Jose Ledesma",
           "team": "TAM",
           "value": "0.75"
         },
         {
-          "rank": "5",
+          "rank": "6",
           "isTied": false,
           "name": "Luis Serna",
           "team": "HV",
           "value": "0.80"
         },
         {
-          "rank": "6",
+          "rank": "7",
           "isTied": false,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "0.83"
         },
         {
-          "rank": "T7",
+          "rank": "T8",
           "isTied": true,
           "name": "Anthony Mena",
           "team": "TAM",
           "value": "0.95"
         },
         {
-          "rank": "T7",
+          "rank": "T8",
           "isTied": true,
           "name": "Justin West",
           "team": "TAM",
           "value": "0.95"
         },
         {
-          "rank": "9",
-          "isTied": false,
-          "name": "Allen Facundo",
-          "team": "HV",
-          "value": "1.14"
-        },
-        {
           "rank": "10",
           "isTied": false,
-          "name": "Brendan Beck",
-          "team": "SWB",
-          "value": "1.17"
+          "name": "Geoffrey Gilbert",
+          "team": "SOM",
+          "value": "1.00"
         }
       ]
     },
@@ -1918,74 +1911,74 @@
       "isRate": true,
       "entries": [
         {
-          "rank": "1",
-          "isTied": false,
+          "rank": "T1",
+          "isTied": true,
           "name": "Matthew Tippie",
           "team": "TAM",
           "value": "0.000"
         },
         {
-          "rank": "2",
+          "rank": "T1",
+          "isTied": true,
+          "name": "Geoffrey Gilbert",
+          "team": "SOM",
+          "value": "0.000"
+        },
+        {
+          "rank": "T1",
+          "isTied": true,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "0.000"
+        },
+        {
+          "rank": "4",
           "isTied": false,
           "name": "Kelly Austin",
           "team": "SOM",
           "value": "0.077"
         },
         {
-          "rank": "3",
+          "rank": "5",
           "isTied": false,
           "name": "Jose Ledesma",
           "team": "TAM",
           "value": "0.083"
         },
         {
-          "rank": "4",
+          "rank": "6",
           "isTied": false,
           "name": "Cade Smith",
           "team": "SOM",
           "value": "0.087"
         },
         {
-          "rank": "T5",
+          "rank": "T7",
           "isTied": true,
           "name": "Anthony Mena",
           "team": "TAM",
           "value": "0.200"
         },
         {
-          "rank": "T5",
+          "rank": "T7",
           "isTied": true,
           "name": "Luis Serna",
           "team": "HV",
           "value": "0.200"
         },
         {
-          "rank": "T5",
+          "rank": "T7",
           "isTied": true,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "0.200"
         },
         {
-          "rank": "8",
+          "rank": "10",
           "isTied": false,
           "name": "Allen Facundo",
           "team": "HV",
           "value": "0.208"
-        },
-        {
-          "rank": "9",
-          "isTied": false,
-          "name": "Jose M. Rodriguez",
-          "team": "HV",
-          "value": "0.214"
-        },
-        {
-          "rank": "10",
-          "isTied": false,
-          "name": "Justin West",
-          "team": "TAM",
-          "value": "0.217"
         }
       ]
     },
@@ -2016,53 +2009,53 @@
           "value": "15.75"
         },
         {
-          "rank": "4",
-          "isTied": false,
+          "rank": "T4",
+          "isTied": true,
           "name": "Wyatt Parliament",
           "team": "TAM",
           "value": "15.00"
         },
         {
-          "rank": "5",
+          "rank": "T4",
+          "isTied": true,
+          "name": "Geoffrey Gilbert",
+          "team": "SOM",
+          "value": "15.00"
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "15.00"
+        },
+        {
+          "rank": "7",
           "isTied": false,
           "name": "Luis Serna",
           "team": "HV",
           "value": "14.40"
         },
         {
-          "rank": "T6",
+          "rank": "T8",
           "isTied": true,
           "name": "Jordarlin Mendoza",
           "team": "TAM",
           "value": "13.50"
         },
         {
-          "rank": "T6",
+          "rank": "T8",
           "isTied": true,
           "name": "Kelly Austin",
           "team": "SOM",
           "value": "13.50"
         },
         {
-          "rank": "8",
+          "rank": "10",
           "isTied": false,
           "name": "J.T. Etheridge",
           "team": "TAM",
           "value": "12.27"
-        },
-        {
-          "rank": "T9",
-          "isTied": true,
-          "name": "Hansel Rincon",
-          "team": "HV",
-          "value": "12.00"
-        },
-        {
-          "rank": "T9",
-          "isTied": true,
-          "name": "Luis Velasquez",
-          "team": "SOM",
-          "value": "12.00"
         }
       ]
     },
@@ -2081,65 +2074,65 @@
         {
           "rank": "2",
           "isTied": false,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "55.6%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
           "name": "Matthew Tippie",
           "team": "TAM",
           "value": "53.8%"
         },
         {
-          "rank": "3",
+          "rank": "4",
           "isTied": false,
           "name": "Kelly Austin",
           "team": "SOM",
           "value": "46.2%"
         },
         {
-          "rank": "4",
+          "rank": "5",
           "isTied": false,
           "name": "Greysen Carter",
           "team": "TAM",
           "value": "42.9%"
         },
         {
-          "rank": "5",
+          "rank": "6",
           "isTied": false,
           "name": "Luis Serna",
           "team": "HV",
           "value": "42.1%"
         },
         {
-          "rank": "6",
+          "rank": "7",
+          "isTied": false,
+          "name": "Geoffrey Gilbert",
+          "team": "SOM",
+          "value": "41.7%"
+        },
+        {
+          "rank": "8",
           "isTied": false,
           "name": "Wyatt Parliament",
           "team": "TAM",
           "value": "35.7%"
         },
         {
-          "rank": "T7",
+          "rank": "T9",
           "isTied": true,
           "name": "Jose Ledesma",
           "team": "TAM",
           "value": "33.3%"
         },
         {
-          "rank": "T7",
+          "rank": "T9",
           "isTied": true,
           "name": "Jordarlin Mendoza",
           "team": "TAM",
           "value": "33.3%"
-        },
-        {
-          "rank": "9",
-          "isTied": false,
-          "name": "Hansel Rincon",
-          "team": "HV",
-          "value": "30.8%"
-        },
-        {
-          "rank": "10",
-          "isTied": false,
-          "name": "Luis Velasquez",
-          "team": "SOM",
-          "value": "28.6%"
         }
       ]
     },
@@ -2184,39 +2177,39 @@
           "value": "0.0%"
         },
         {
-          "rank": "6",
+          "rank": "T1",
+          "isTied": true,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "0.0%"
+        },
+        {
+          "rank": "7",
           "isTied": false,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "2.2%"
         },
         {
-          "rank": "7",
+          "rank": "8",
           "isTied": false,
           "name": "Rory Fox",
           "team": "SOM",
           "value": "3.2%"
         },
         {
-          "rank": "T8",
+          "rank": "T9",
           "isTied": true,
           "name": "Justin West",
           "team": "TAM",
           "value": "4.0%"
         },
         {
-          "rank": "T8",
+          "rank": "T9",
           "isTied": true,
           "name": "Brendan Beck",
           "team": "SWB",
           "value": "4.0%"
-        },
-        {
-          "rank": "10",
-          "isTied": false,
-          "name": "Cade Smith",
-          "team": "SOM",
-          "value": "4.2%"
         }
       ]
     },
@@ -2235,65 +2228,65 @@
         {
           "rank": "2",
           "isTied": false,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "55.6%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
           "name": "Matthew Tippie",
           "team": "TAM",
           "value": "46.2%"
         },
         {
-          "rank": "3",
+          "rank": "4",
           "isTied": false,
           "name": "Kelly Austin",
           "team": "SOM",
           "value": "46.2%"
         },
         {
-          "rank": "4",
+          "rank": "5",
           "isTied": false,
           "name": "Luis Serna",
           "team": "HV",
           "value": "42.1%"
         },
         {
-          "rank": "5",
+          "rank": "6",
           "isTied": false,
           "name": "Greysen Carter",
           "team": "TAM",
           "value": "35.7%"
         },
         {
-          "rank": "6",
+          "rank": "7",
           "isTied": false,
           "name": "Wyatt Parliament",
           "team": "TAM",
           "value": "35.7%"
         },
         {
-          "rank": "7",
+          "rank": "8",
           "isTied": false,
           "name": "Hansel Rincon",
           "team": "HV",
           "value": "30.8%"
         },
         {
-          "rank": "8",
+          "rank": "9",
           "isTied": false,
           "name": "Jordarlin Mendoza",
           "team": "TAM",
           "value": "26.7%"
         },
         {
-          "rank": "9",
+          "rank": "10",
           "isTied": false,
           "name": "Brendan Beck",
           "team": "SWB",
           "value": "24.0%"
-        },
-        {
-          "rank": "10",
-          "isTied": false,
-          "name": "Elmer Rodr\u00edguez",
-          "team": "SWB",
-          "value": "23.9%"
         }
       ]
     },
@@ -2305,23 +2298,23 @@
         {
           "rank": "1",
           "isTied": false,
+          "name": "Tony Rossi",
+          "team": "SOM",
+          "value": "1.89"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
           "name": "Wilmy Sanchez",
           "team": "HV",
           "value": "3.56"
         },
         {
-          "rank": "2",
+          "rank": "3",
           "isTied": false,
           "name": "Cade Smith",
           "team": "SOM",
-          "value": "3.62"
-        },
-        {
-          "rank": "3",
-          "isTied": false,
-          "name": "Rory Fox",
-          "team": "SOM",
-          "value": "3.91"
+          "value": "3.93"
         },
         {
           "rank": "4",
@@ -2333,44 +2326,44 @@
         {
           "rank": "5",
           "isTied": false,
-          "name": "Luis Velasquez",
+          "name": "Rory Fox",
           "team": "SOM",
-          "value": "4.24"
+          "value": "4.22"
         },
         {
           "rank": "6",
+          "isTied": false,
+          "name": "Luis Velasquez",
+          "team": "SOM",
+          "value": "4.55"
+        },
+        {
+          "rank": "7",
           "isTied": false,
           "name": "Bryce Warrecker",
           "team": "HV",
           "value": "4.56"
         },
         {
-          "rank": "7",
-          "isTied": false,
+          "rank": "T8",
+          "isTied": true,
           "name": "Bryce Cunningham",
           "team": "HV",
           "value": "4.89"
         },
         {
-          "rank": "8",
-          "isTied": false,
-          "name": "Kelly Austin",
+          "rank": "T8",
+          "isTied": true,
+          "name": "Geoffrey Gilbert",
           "team": "SOM",
-          "value": "5.16"
-        },
-        {
-          "rank": "9",
-          "isTied": false,
-          "name": "Dom Hamel",
-          "team": "SOM",
-          "value": "5.41"
+          "value": "4.89"
         },
         {
           "rank": "10",
           "isTied": false,
-          "name": "Allen Facundo",
-          "team": "HV",
-          "value": "5.99"
+          "name": "Kelly Austin",
+          "team": "SOM",
+          "value": "5.47"
         }
       ]
     }
