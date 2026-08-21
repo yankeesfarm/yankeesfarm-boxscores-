@@ -7,114 +7,116 @@
 ### Batting Average
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 0.667 |
-| T2 | Brando Mayea | TAM | 0.556 |
-| T2 | Anthony Potestio | TAM | 0.556 |
-| T2 | Luis Durango | SOM | 0.556 |
+| 1 | Luis Escudero | TAM | 0.588 |
+| 2 | Brando Mayea | TAM | 0.583 |
+| T3 | Anthony Potestio | TAM | 0.556 |
+| T3 | Luis Durango | SOM | 0.556 |
 | 5 | Ernesto Martinez Jr. | SWB | 0.545 |
-| 6 | Luis Escudero | TAM | 0.533 |
-| 7 | Yostin Pena | TAM | 0.529 |
-| T8 | Luis Puello | TAM | 0.429 |
-| T8 | Kenedy Corona | SWB | 0.429 |
-| 10 | Paul Gutierrez-Contreras II | TAM | 0.412 |
+| 6 | Yostin Pena | TAM | 0.529 |
+| 7 | Kenedy Corona | SWB | 0.429 |
+| 8 | Luis Puello | TAM | 0.421 |
+| 9 | Dean Toigo | HV | 0.385 |
+| 10 | Paul Gutierrez-Contreras II | TAM | 0.381 |
 
 ### On-Base Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 0.800 |
-| 2 | Anthony Potestio | TAM | 0.750 |
-| T3 | Brando Mayea | TAM | 0.600 |
-| T3 | Luis Durango | SOM | 0.600 |
+| 1 | Anthony Potestio | TAM | 0.750 |
+| 2 | Luis Escudero | TAM | 0.650 |
+| 3 | Brando Mayea | TAM | 0.643 |
+| 4 | Luis Durango | SOM | 0.600 |
 | 5 | Ernesto Martinez Jr. | SWB | 0.583 |
-| 6 | Dax Kilby | TAM | 0.567 |
-| 7 | Luis Escudero | TAM | 0.562 |
-| T8 | Yostin Pena | TAM | 0.556 |
-| T8 | Core Jackson | SOM | 0.556 |
-| 10 | Paul Gutierrez-Contreras II | TAM | 0.545 |
+| T6 | Yostin Pena | TAM | 0.556 |
+| T6 | Core Jackson | SOM | 0.556 |
+| 8 | Dax Kilby | TAM | 0.543 |
+| 9 | Luke Pettitte | TAM | 0.500 |
+| 10 | Paul Gutierrez-Contreras II | TAM | 0.481 |
 
 ### Slugging Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 1.667 |
-| 2 | Anthony Potestio | TAM | 1.222 |
-| 3 | Jackson Lovich | HV | 0.947 |
-| 4 | Luis Puello | TAM | 0.857 |
-| 5 | Luis Escudero | TAM | 0.800 |
-| 6 | DJ Gladney | SOM | 0.714 |
-| 7 | Yostin Pena | TAM | 0.706 |
-| 8 | Ernesto Martinez Jr. | SWB | 0.636 |
-| 9 | Ediel Rivera | TAM | 0.625 |
-| 10 | Manuel Palencia | SOM | 0.615 |
+| 1 | Anthony Potestio | TAM | 1.222 |
+| 2 | Jackson Lovich | HV | 0.947 |
+| 3 | Luis Escudero | TAM | 0.882 |
+| 4 | Luke Pettitte | TAM | 0.875 |
+| 5 | Brando Mayea | TAM | 0.833 |
+| 6 | Luis Puello | TAM | 0.789 |
+| 7 | DJ Gladney | SOM | 0.714 |
+| 8 | Yostin Pena | TAM | 0.706 |
+| 9 | Ernesto Martinez Jr. | SWB | 0.636 |
+| 10 | Ediel Rivera | TAM | 0.625 |
 
 ### OPS
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 2.467 |
-| 2 | Anthony Potestio | TAM | 1.972 |
-| 3 | Jackson Lovich | HV | 1.405 |
-| 4 | Luis Escudero | TAM | 1.362 |
-| 5 | Luis Puello | TAM | 1.324 |
+| 1 | Anthony Potestio | TAM | 1.972 |
+| 2 | Luis Escudero | TAM | 1.532 |
+| 3 | Brando Mayea | TAM | 1.476 |
+| 4 | Jackson Lovich | HV | 1.405 |
+| 5 | Luke Pettitte | TAM | 1.375 |
 | 6 | Yostin Pena | TAM | 1.262 |
-| 7 | Ernesto Martinez Jr. | SWB | 1.219 |
-| T8 | Brando Mayea | TAM | 1.156 |
-| T8 | Luis Durango | SOM | 1.156 |
-| 10 | Dax Kilby | TAM | 1.138 |
+| 7 | Luis Puello | TAM | 1.239 |
+| 8 | Ernesto Martinez Jr. | SWB | 1.219 |
+| 9 | Luis Durango | SOM | 1.156 |
+| 10 | DJ Gladney | SOM | 1.126 |
 
 ### Hits
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Yostin Pena | TAM | 9 |
-| T2 | Luis Escudero | TAM | 8 |
-| T2 | Dax Kilby | TAM | 8 |
-| T4 | Paul Gutierrez-Contreras II | TAM | 7 |
-| T4 | Jackson Lovich | HV | 7 |
-| T6 | Luis Puello | TAM | 6 |
-| T6 | Ernesto Martinez Jr. | SWB | 6 |
-| T6 | Juan Torres | DSL-Y | 6 |
-| T9 | Tyce Armstrong | TAM | 5 |
-| T9 | Diego Castellanos | TAM | 5 |
-| T9 | Brando Mayea | TAM | 5 |
-| T9 | Anthony Potestio | TAM | 5 |
-| T9 | Dean Toigo | HV | 5 |
-| T9 | Roderick Arias | SOM | 5 |
-| T9 | Luis Durango | SOM | 5 |
-| T9 | DJ Gladney | SOM | 5 |
-| T9 | Coby Morales | SOM | 5 |
-| T9 | Luis Cruz | DSL-Y | 5 |
-| T9 | Stiven Marinez | DSL-Y | 5 |
+| 1 | Luis Escudero | TAM | 10 |
+| T2 | Dax Kilby | TAM | 9 |
+| T2 | Yostin Pena | TAM | 9 |
+| T4 | Paul Gutierrez-Contreras II | TAM | 8 |
+| T4 | Luis Puello | TAM | 8 |
+| T6 | Brando Mayea | TAM | 7 |
+| T6 | Jackson Lovich | HV | 7 |
+| T8 | Ernesto Martinez Jr. | SWB | 6 |
+| T8 | Juan Torres | DSL-Y | 6 |
+| T10 | Tyce Armstrong | TAM | 5 |
+| T10 | Diego Castellanos | TAM | 5 |
+| T10 | Anthony Potestio | TAM | 5 |
+| T10 | Dean Toigo | HV | 5 |
+| T10 | Roderick Arias | SOM | 5 |
+| T10 | Luis Durango | SOM | 5 |
+| T10 | DJ Gladney | SOM | 5 |
+| T10 | Coby Morales | SOM | 5 |
+| T10 | Luis Cruz | DSL-Y | 5 |
+| T10 | Stiven Marinez | DSL-Y | 5 |
 
 ### Doubles
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Roderick Arias | SOM | 4 |
 | 2 | Juan Torres | DSL-Y | 3 |
+| T3 | Luis Escudero | TAM | 2 |
 | T3 | Dean Toigo | HV | 2 |
 | T3 | Kyle West | HV | 2 |
 | T3 | DJ Gladney | SOM | 2 |
 | T3 | Germayhoni Beltre | DSL-B | 2 |
 | T3 | Kenneth Melendez | DSL-B | 2 |
-| T8 | Luis Escudero | TAM | 1 |
-| T8 | Paul Gutierrez-Contreras II | TAM | 1 |
-| T8 | Anthony Potestio | TAM | 1 |
-| T8 | Robbie Burnett | HV | 1 |
-| T8 | Eric Genther | HV | 1 |
-| T8 | Willy Montero | HV | 1 |
-| T8 | Jace Avina | SOM | 1 |
-| T8 | Manuel Palencia | SOM | 1 |
-| T8 | Jasson Domínguez | SWB | 1 |
-| T8 | Mitch Garver | SWB | 1 |
-| T8 | Ernesto Martinez Jr. | SWB | 1 |
-| T8 | Max Schuemann | SWB | 1 |
-| T8 | Anthony Volpe | SWB | 1 |
-| T8 | Isaias Castillo | DSL-Y | 1 |
-| T8 | Adrian Feliz | DSL-Y | 1 |
-| T8 | Stiven Marinez | DSL-Y | 1 |
-| T8 | Jose Peralta | DSL-Y | 1 |
-| T8 | Stalen Ramirez | DSL-Y | 1 |
-| T8 | David Carrera | DSL-B | 1 |
-| T8 | Ruben Castillo | DSL-B | 1 |
-| T8 | Alfred Ciriaco | DSL-B | 1 |
-| T8 | Richard Meran | DSL-B | 1 |
+| T9 | Paul Gutierrez-Contreras II | TAM | 1 |
+| T9 | Luke Pettitte | TAM | 1 |
+| T9 | Anthony Potestio | TAM | 1 |
+| T9 | Luis Puello | TAM | 1 |
+| T9 | Robbie Burnett | HV | 1 |
+| T9 | Eric Genther | HV | 1 |
+| T9 | Willy Montero | HV | 1 |
+| T9 | Jace Avina | SOM | 1 |
+| T9 | Manuel Palencia | SOM | 1 |
+| T9 | Jasson Domínguez | SWB | 1 |
+| T9 | Mitch Garver | SWB | 1 |
+| T9 | Ernesto Martinez Jr. | SWB | 1 |
+| T9 | Max Schuemann | SWB | 1 |
+| T9 | Anthony Volpe | SWB | 1 |
+| T9 | Isaias Castillo | DSL-Y | 1 |
+| T9 | Adrian Feliz | DSL-Y | 1 |
+| T9 | Stiven Marinez | DSL-Y | 1 |
+| T9 | Jose Peralta | DSL-Y | 1 |
+| T9 | Stalen Ramirez | DSL-Y | 1 |
+| T9 | David Carrera | DSL-B | 1 |
+| T9 | Ruben Castillo | DSL-B | 1 |
+| T9 | Alfred Ciriaco | DSL-B | 1 |
+| T9 | Richard Meran | DSL-B | 1 |
 
 ### Triples
 | # | Player | Team | Value |
@@ -207,6 +209,7 @@
 | T5 | Diego Castellanos | TAM | 1 |
 | T5 | Wilberson De Pena | TAM | 1 |
 | T5 | Luis Escudero | TAM | 1 |
+| T5 | Brando Mayea | TAM | 1 |
 | T5 | Yostin Pena | TAM | 1 |
 | T5 | Luke Pettitte | TAM | 1 |
 | T5 | Anthony Potestio | TAM | 1 |
@@ -230,14 +233,16 @@
 | 1 | Jackson Lovich | HV | 11 |
 | 2 | Tyce Armstrong | TAM | 9 |
 | 3 | Eric Genther | HV | 8 |
-| T4 | Yostin Pena | TAM | 6 |
-| T4 | DJ Gladney | SOM | 6 |
-| T4 | Luis Cruz | DSL-Y | 6 |
-| T7 | Luis Escudero | TAM | 5 |
-| T7 | Luis Puello | TAM | 5 |
-| T7 | Omar Alfonzo | SOM | 5 |
-| T7 | Manuel Palencia | SOM | 5 |
-| T7 | Isaias Castillo | DSL-Y | 5 |
+| 4 | Luis Escudero | TAM | 7 |
+| T5 | Yostin Pena | TAM | 6 |
+| T5 | DJ Gladney | SOM | 6 |
+| T5 | Luis Cruz | DSL-Y | 6 |
+| T8 | Paul Gutierrez-Contreras II | TAM | 5 |
+| T8 | Dax Kilby | TAM | 5 |
+| T8 | Luis Puello | TAM | 5 |
+| T8 | Omar Alfonzo | SOM | 5 |
+| T8 | Manuel Palencia | SOM | 5 |
+| T8 | Isaias Castillo | DSL-Y | 5 |
 
 ### Stolen Bases
 | # | Player | Team | Value |
@@ -249,6 +254,7 @@
 | T5 | Luis Escudero | TAM | 2 |
 | T5 | Paul Gutierrez-Contreras II | TAM | 2 |
 | T5 | Bayram Hot | TAM | 2 |
+| T5 | Dax Kilby | TAM | 2 |
 | T5 | Bryce Martin-Grudzielanek | HV | 2 |
 | T5 | Luis Durango | SOM | 2 |
 | T5 | Core Jackson | SOM | 2 |
@@ -261,13 +267,13 @@
 ### BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 40.0% |
-| 2 | Anthony Potestio | TAM | 37.5% |
-| 3 | Connor McGinnis | SOM | 36.4% |
-| 4 | Core Jackson | SOM | 33.3% |
-| T5 | Bayram Hot | TAM | 30.0% |
-| T5 | Dax Kilby | TAM | 30.0% |
-| 7 | Jackson Castillo | SOM | 28.6% |
+| 1 | Anthony Potestio | TAM | 37.5% |
+| 2 | Connor McGinnis | SOM | 36.4% |
+| 3 | Core Jackson | SOM | 33.3% |
+| 4 | Bayram Hot | TAM | 30.0% |
+| T5 | Dax Kilby | TAM | 28.6% |
+| T5 | Jackson Castillo | SOM | 28.6% |
+| 7 | Bear Harrison | TAM | 25.9% |
 | 8 | Tyce Armstrong | TAM | 23.8% |
 | T9 | Robbie Burnett | HV | 23.5% |
 | T9 | Max Schuemann | SWB | 23.5% |
@@ -275,14 +281,14 @@
 ### K%
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Luke Pettitte | TAM | 0.0% |
 | T1 | Jackson Castillo | SOM | 0.0% |
 | T1 | Luis Durango | SOM | 0.0% |
 | T1 | Ernesto Martinez Jr. | SWB | 0.0% |
-| 5 | Anthony Potestio | TAM | 6.2% |
-| T6 | Paul Gutierrez-Contreras II | TAM | 9.1% |
-| T6 | Cole Gabrielson | SOM | 9.1% |
-| T8 | Brando Mayea | TAM | 10.0% |
+| 4 | Anthony Potestio | TAM | 6.2% |
+| 5 | Brando Mayea | TAM | 7.1% |
+| 6 | Paul Gutierrez-Contreras II | TAM | 7.4% |
+| 7 | Cole Gabrielson | SOM | 9.1% |
+| T8 | Luis Escudero | TAM | 10.0% |
 | T8 | Camden Troyer | HV | 10.0% |
 | 10 | Core Jackson | SOM | 11.1% |
 
@@ -308,55 +314,53 @@
 | T1 | Anthony Volpe | SWB | 100.0% |
 | 4 | Roderick Arias | SOM | 80.0% |
 | 5 | Eric Genther | HV | 75.0% |
+| T6 | Luke Pettitte | TAM | 66.7% |
 | T6 | Kyle West | HV | 66.7% |
 | T6 | Max Schuemann | SWB | 66.7% |
-| T8 | Anthony Potestio | TAM | 60.0% |
-| T8 | DJ Gladney | SOM | 60.0% |
-| 10 | Jackson Lovich | HV | 57.1% |
+| T9 | Anthony Potestio | TAM | 60.0% |
+| T9 | DJ Gladney | SOM | 60.0% |
 
 ### ISO
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 1.000 |
-| 2 | Anthony Potestio | TAM | 0.666 |
-| 3 | Jackson Lovich | HV | 0.579 |
-| 4 | Luis Puello | TAM | 0.428 |
-| 5 | Ediel Rivera | TAM | 0.375 |
-| 6 | Eric Genther | HV | 0.368 |
+| 1 | Anthony Potestio | TAM | 0.666 |
+| 2 | Jackson Lovich | HV | 0.579 |
+| 3 | Luke Pettitte | TAM | 0.500 |
+| 4 | Ediel Rivera | TAM | 0.375 |
+| T5 | Luis Puello | TAM | 0.368 |
+| T5 | Eric Genther | HV | 0.368 |
 | 7 | DJ Gladney | SOM | 0.357 |
 | T8 | Manuel Palencia | SOM | 0.307 |
 | T8 | Max Schuemann | SWB | 0.307 |
-| T10 | Luis Escudero | TAM | 0.267 |
-| T10 | Anthony Volpe | SWB | 0.267 |
+| 10 | Luis Escudero | TAM | 0.294 |
 
 ### BABIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Brando Mayea | TAM | 0.625 |
-| T1 | Dean Toigo | HV | 0.625 |
+| 1 | Luis Escudero | TAM | 0.643 |
+| 2 | Dean Toigo | HV | 0.625 |
 | 3 | Yostin Pena | TAM | 0.615 |
-| 4 | Luis Escudero | TAM | 0.583 |
-| T5 | Blake Cyr | TAM | 0.571 |
-| T5 | Anthony Potestio | TAM | 0.571 |
-| 7 | Luis Durango | SOM | 0.556 |
-| 8 | Ernesto Martinez Jr. | SWB | 0.545 |
-| T9 | Luke Pettitte | TAM | 0.500 |
-| T9 | Robbie Burnett | HV | 0.500 |
-| T9 | Kenedy Corona | SWB | 0.500 |
+| 4 | Brando Mayea | TAM | 0.600 |
+| 5 | Anthony Potestio | TAM | 0.571 |
+| 6 | Luis Durango | SOM | 0.556 |
+| 7 | Ernesto Martinez Jr. | SWB | 0.545 |
+| T8 | Robbie Burnett | HV | 0.500 |
+| T8 | Kenedy Corona | SWB | 0.500 |
+| 10 | Luis Puello | TAM | 0.462 |
 
 ### wOBA
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luke Pettitte | TAM | 0.874 |
-| 2 | Anthony Potestio | TAM | 0.727 |
-| 3 | Luis Escudero | TAM | 0.587 |
-| 4 | Luis Puello | TAM | 0.563 |
+| 1 | Anthony Potestio | TAM | 0.727 |
+| 2 | Luis Escudero | TAM | 0.648 |
+| 3 | Brando Mayea | TAM | 0.632 |
+| 4 | Luke Pettitte | TAM | 0.564 |
 | 5 | Jackson Lovich | HV | 0.556 |
 | 6 | Yostin Pena | TAM | 0.550 |
 | 7 | Ernesto Martinez Jr. | SWB | 0.533 |
-| 8 | Brando Mayea | TAM | 0.516 |
+| 8 | Luis Puello | TAM | 0.530 |
 | 9 | Luis Durango | SOM | 0.513 |
-| 10 | Dax Kilby | TAM | 0.492 |
+| 10 | Dax Kilby | TAM | 0.467 |
 
 ## PITCHING LEADERS
 
@@ -368,12 +372,11 @@
 | T1 | Tony Rossi | SOM | 0.00 |
 | 4 | Cade Smith | SOM | 1.29 |
 | 5 | Elmer Rodríguez | SWB | 1.80 |
-| 6 | Kelly Austin | SOM | 2.25 |
-| 7 | Anthony Mena | TAM | 2.45 |
-| 8 | Allen Facundo | HV | 2.57 |
-| 9 | Justin West | TAM | 2.84 |
-| T10 | Hansel Rincon | HV | 3.00 |
-| T10 | Wilmy Sanchez | HV | 3.00 |
+| T6 | Rafael Arias | TAM | 2.25 |
+| T6 | Kelly Austin | SOM | 2.25 |
+| 8 | Anthony Mena | TAM | 2.45 |
+| 9 | Allen Facundo | HV | 2.57 |
+| 10 | Justin West | TAM | 2.84 |
 
 ### WHIP
 | # | Player | Team | Value |
@@ -382,12 +385,12 @@
 | T2 | Matthew Tippie | TAM | 0.25 |
 | T2 | Kelly Austin | SOM | 0.25 |
 | 4 | Cade Smith | SOM | 0.43 |
-| 5 | Luis Serna | HV | 0.80 |
-| T6 | Anthony Mena | TAM | 0.95 |
-| T6 | Justin West | TAM | 0.95 |
-| 8 | Geoffrey Gilbert | SOM | 1.00 |
-| 9 | Allen Facundo | HV | 1.14 |
-| 10 | Brendan Beck | SWB | 1.17 |
+| 5 | Rafael Arias | TAM | 0.75 |
+| 6 | Luis Serna | HV | 0.80 |
+| T7 | Anthony Mena | TAM | 0.95 |
+| T7 | Justin West | TAM | 0.95 |
+| 9 | Geoffrey Gilbert | SOM | 1.00 |
+| 10 | Allen Facundo | HV | 1.14 |
 
 ### Innings Pitched
 | # | Player | Team | Value |
@@ -399,9 +402,10 @@
 | 5 | Justin West | TAM | 6.1 |
 | 6 | Bryce Cunningham | HV | 6.0 |
 | 7 | Brendan Beck | SWB | 6.0 |
-| 8 | Luis Serna | HV | 5.0 |
-| 9 | Sean Paul Liñan | SOM | 5.0 |
-| 10 | Elmer Rodríguez | SWB | 5.0 |
+| 8 | Danny Flatt | TAM | 5.0 |
+| 9 | Luis Serna | HV | 5.0 |
+| 10 | Sean Paul Liñan | SOM | 5.0 |
+| 11 | Elmer Rodríguez | SWB | 5.0 |
 
 ### Strikeouts
 | # | Player | Team | Value |
@@ -431,11 +435,11 @@
 | T1 | Tony Rossi | SOM | 0.000 |
 | 4 | Kelly Austin | SOM | 0.077 |
 | 5 | Cade Smith | SOM | 0.087 |
-| T6 | Anthony Mena | TAM | 0.200 |
-| T6 | Luis Serna | HV | 0.200 |
-| 8 | Allen Facundo | HV | 0.208 |
-| 9 | Jose M. Rodriguez | HV | 0.214 |
-| 10 | Justin West | TAM | 0.217 |
+| 6 | Rafael Arias | TAM | 0.143 |
+| T7 | Anthony Mena | TAM | 0.200 |
+| T7 | Luis Serna | HV | 0.200 |
+| 9 | Allen Facundo | HV | 0.208 |
+| 10 | Jose M. Rodriguez | HV | 0.214 |
 
 ### SO/9
 | # | Player | Team | Value |

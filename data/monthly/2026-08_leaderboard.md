@@ -383,7 +383,7 @@
 | 5 | Franyer Herrera | HV | 5.54 |
 | 6 | Elmer Rodríguez | SWB | 5.78 |
 | 7 | Tyler Boudreau | SOM | 5.81 |
-| 8 | Justin West | TAM | 5.94 |
+| 8 | Justin West | TAM | 5.90 |
 | 9 | Rory Fox | SOM | 6.09 |
 | 10 | Kyle Carr | SWB | 6.30 |
 
