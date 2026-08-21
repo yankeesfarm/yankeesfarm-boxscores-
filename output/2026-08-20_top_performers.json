@@ -1,6 +1,38 @@
 {
-  "hitters": [],
-  "pitchers": [],
+  "hitters": [
+    {
+      "playerId": 806963,
+      "name": "Brando Mayea",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "CF",
+      "bio": "A | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806963/spots/120",
+      "statline": "2 for 3: HR (7), RBI (33)"
+    },
+    {
+      "playerId": 806884,
+      "name": "Luis Escudero",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "3B",
+      "bio": "A | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806884/spots/120",
+      "statline": "2 for 2: Double (8), 2 RBI (25)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 680572,
+      "name": "Adam Kloffenstein",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/680572/spots/120",
+      "statline": "6.0 IP, 0 R, 8 K"
+    }
+  ],
   "date": "2026-08-20",
-  "generatedAt": "2026-08-21T01:26:10.076018+00:00"
+  "generatedAt": "2026-08-21T02:56:54.954412+00:00"
 }
