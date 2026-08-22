@@ -1,0 +1,57 @@
+{
+  "hitters": [],
+  "pitchers": [
+    {
+      "playerId": 694696,
+      "name": "Cade Smith",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694696/spots/120",
+      "statline": "6.0 IP, 0 R, 7 K"
+    },
+    {
+      "playerId": 695560,
+      "name": "Pico Kohn",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695560/spots/120",
+      "statline": "4.0 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 702436,
+      "name": "Luis Serna",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702436/spots/120",
+      "statline": "5.2 IP, 0 R, 7 K"
+    },
+    {
+      "playerId": 822950,
+      "name": "J.T. Etheridge",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+      "statline": "5.0 IP, 1 R, 8 K"
+    },
+    {
+      "playerId": 843590,
+      "name": "Braulio Jaquez",
+      "level": "FCL",
+      "team": "DSL NYY Yankees",
+      "role": "RP",
+      "bio": "FCL | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/843590/spots/120",
+      "statline": "2.2 IP, 1 R, 3 K"
+    }
+  ],
+  "date": "2026-08-21",
+  "generatedAt": "2026-08-22T02:48:43.151106+00:00"
+}
