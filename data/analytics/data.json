@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generated_at": "2026-08-22T16:57:43Z",
+  "generated_at": "2026-08-22T23:38:25Z",
   "hitters": [
     {
       "name": "Cody Bellinger",
@@ -33,7 +33,8 @@
       "throws": "Left",
       "hometown": "Scottsdale, AZ",
       "origin": "Draft (2013)",
-      "birthDate": "1995-07-13"
+      "birthDate": "1995-07-13",
+      "qualified": false
     },
     {
       "name": "Christian Bethancourt",
@@ -66,7 +67,8 @@
       "throws": "Right",
       "hometown": "Panama City, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1991-09-02"
+      "birthDate": "1991-09-02",
+      "qualified": false
     },
     {
       "name": "Seth Brown",
@@ -99,7 +101,8 @@
       "throws": "Left",
       "hometown": "Klamath Falls, OR",
       "origin": "Draft (2015)",
-      "birthDate": "1992-07-13"
+      "birthDate": "1992-07-13",
+      "qualified": false
     },
     {
       "name": "Oswaldo Cabrera",
@@ -132,7 +135,8 @@
       "throws": "Right",
       "hometown": "Guarenas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-03-01"
+      "birthDate": "1999-03-01",
+      "qualified": true
     },
     {
       "name": "Owen Cobb",
@@ -165,7 +169,8 @@
       "throws": "Right",
       "hometown": "Seattle, WA",
       "origin": "Draft (2024)",
-      "birthDate": "2001-06-24"
+      "birthDate": "2001-06-24",
+      "qualified": false
     },
     {
       "name": "Kenedy Corona",
@@ -198,7 +203,8 @@
       "throws": "Right",
       "hometown": "Maracaibo, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2000-03-21"
+      "birthDate": "2000-03-21",
+      "qualified": false
     },
     {
       "name": "Paul DeJong",
@@ -231,7 +237,8 @@
       "throws": "Right",
       "hometown": "Orlando, FL",
       "origin": "Draft (2015)",
-      "birthDate": "1993-08-02"
+      "birthDate": "1993-08-02",
+      "qualified": false
     },
     {
       "name": "Jasson Dom\u00ednguez",
@@ -264,7 +271,8 @@
       "throws": "Right",
       "hometown": "Esperanza, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-02-07"
+      "birthDate": "2003-02-07",
+      "qualified": false
     },
     {
       "name": "Edinson Duran",
@@ -297,7 +305,8 @@
       "throws": "Right",
       "hometown": "San Juan de los Morros, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-07-22"
+      "birthDate": "2002-07-22",
+      "qualified": false
     },
     {
       "name": "Duke Ellis",
@@ -330,7 +339,8 @@
       "throws": "Left",
       "hometown": "Nacogdoches, TX",
       "origin": "Draft (2020)",
-      "birthDate": "1998-01-16"
+      "birthDate": "1998-01-16",
+      "qualified": false
     },
     {
       "name": "J.C. Escarra",
@@ -363,7 +373,8 @@
       "throws": "Right",
       "hometown": "Hialeah, FL",
       "origin": "Draft (2017)",
-      "birthDate": "1995-04-24"
+      "birthDate": "1995-04-24",
+      "qualified": false
     },
     {
       "name": "Yanquiel Fern\u00e1ndez",
@@ -396,7 +407,8 @@
       "throws": "Left",
       "hometown": "Havana, Cuba",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-01-01"
+      "birthDate": "2003-01-01",
+      "qualified": true
     },
     {
       "name": "Cole Gabrielson",
@@ -429,7 +441,8 @@
       "throws": "Right",
       "hometown": "Portola Valley, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2000-07-05"
+      "birthDate": "2000-07-05",
+      "qualified": false
     },
     {
       "name": "Mitch Garver",
@@ -462,7 +475,8 @@
       "throws": "Right",
       "hometown": "Albuquerque, NM",
       "origin": "Draft (2013)",
-      "birthDate": "1991-01-15"
+      "birthDate": "1991-01-15",
+      "qualified": false
     },
     {
       "name": "Abrahan Gutierrez",
@@ -495,7 +509,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-10-31"
+      "birthDate": "1999-10-31",
+      "qualified": false
     },
     {
       "name": "Tyler Hardman",
@@ -528,7 +543,8 @@
       "throws": "Right",
       "hometown": "Mission Viejo, CA",
       "origin": "Draft (2021)",
-      "birthDate": "1999-01-27"
+      "birthDate": "1999-01-27",
+      "qualified": false
     },
     {
       "name": "Payton Henry",
@@ -561,7 +577,8 @@
       "throws": "Right",
       "hometown": "American Fork, UT",
       "origin": "Draft (2016)",
-      "birthDate": "1997-06-24"
+      "birthDate": "1997-06-24",
+      "qualified": false
     },
     {
       "name": "Spencer Jones",
@@ -594,7 +611,8 @@
       "throws": "Left",
       "hometown": "Encinitas, CA",
       "origin": "Draft (2022)",
-      "birthDate": "2001-05-14"
+      "birthDate": "2001-05-14",
+      "qualified": false
     },
     {
       "name": "George Lombard Jr.",
@@ -627,7 +645,8 @@
       "throws": "Right",
       "hometown": "Miami, FL",
       "origin": "Draft (2023)",
-      "birthDate": "2005-06-02"
+      "birthDate": "2005-06-02",
+      "qualified": false
     },
     {
       "name": "Marco Luciano",
@@ -660,7 +679,8 @@
       "throws": "Right",
       "hometown": "San Francisco de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2001-09-10"
+      "birthDate": "2001-09-10",
+      "qualified": false
     },
     {
       "name": "Garrett Martin",
@@ -693,7 +713,8 @@
       "throws": "Right",
       "hometown": "Arlington, TX",
       "origin": "Draft (2023)",
-      "birthDate": "2000-06-28"
+      "birthDate": "2000-06-28",
+      "qualified": false
     },
     {
       "name": "Ernesto Martinez Jr.",
@@ -726,7 +747,8 @@
       "throws": "Left",
       "hometown": "Holguin, Cuba",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-06-20"
+      "birthDate": "1999-06-20",
+      "qualified": true
     },
     {
       "name": "Jonathan Ornelas",
@@ -759,7 +781,8 @@
       "throws": "Right",
       "hometown": "Glendale, AZ",
       "origin": "Draft (2018)",
-      "birthDate": "2000-05-26"
+      "birthDate": "2000-05-26",
+      "qualified": false
     },
     {
       "name": "Miguel Palma",
@@ -792,7 +815,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-01-04"
+      "birthDate": "2002-01-04",
+      "qualified": false
     },
     {
       "name": "Duncan Pastore",
@@ -825,7 +849,8 @@
       "throws": "Right",
       "hometown": "Tampa, FL",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2000-05-27"
+      "birthDate": "2000-05-27",
+      "qualified": false
     },
     {
       "name": "Ali S\u00e1nchez",
@@ -858,7 +883,8 @@
       "throws": "Right",
       "hometown": "Carora, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1997-01-20"
+      "birthDate": "1997-01-20",
+      "qualified": false
     },
     {
       "name": "Max Schuemann",
@@ -891,7 +917,8 @@
       "throws": "Right",
       "hometown": "Kalamazoo, MI",
       "origin": "Draft (2018)",
-      "birthDate": "1997-06-11"
+      "birthDate": "1997-06-11",
+      "qualified": false
     },
     {
       "name": "Braden Shewmake",
@@ -924,7 +951,8 @@
       "throws": "Right",
       "hometown": "Wylie, TX",
       "origin": "Draft (2019)",
-      "birthDate": "1997-11-19"
+      "birthDate": "1997-11-19",
+      "qualified": false
     },
     {
       "name": "Anthony Volpe",
@@ -957,7 +985,8 @@
       "throws": "Right",
       "hometown": "New York, NY",
       "origin": "Draft (2019)",
-      "birthDate": "2001-04-28"
+      "birthDate": "2001-04-28",
+      "qualified": false
     },
     {
       "name": "Austin Wells",
@@ -990,7 +1019,8 @@
       "throws": "Right",
       "hometown": "Scottsdale, AZ",
       "origin": "Draft (2020)",
-      "birthDate": "1999-07-12"
+      "birthDate": "1999-07-12",
+      "qualified": false
     },
     {
       "name": "Omar Alfonzo",
@@ -1023,7 +1053,8 @@
       "throws": "Right",
       "hometown": "Minneapolis, MN",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-08-03"
+      "birthDate": "2003-08-03",
+      "qualified": false
     },
     {
       "name": "Roderick Arias",
@@ -1056,7 +1087,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-09-09"
+      "birthDate": "2004-09-09",
+      "qualified": false
     },
     {
       "name": "Jace Avina",
@@ -1089,7 +1121,8 @@
       "throws": "Right",
       "hometown": "Reno, NV",
       "origin": "Draft (2021)",
-      "birthDate": "2003-06-06"
+      "birthDate": "2003-06-06",
+      "qualified": true
     },
     {
       "name": "Jackson Castillo",
@@ -1122,7 +1155,8 @@
       "throws": "Left",
       "hometown": "Murrieta, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2003-05-02"
+      "birthDate": "2003-05-02",
+      "qualified": true
     },
     {
       "name": "Owen Cobb",
@@ -1155,7 +1189,8 @@
       "throws": "Right",
       "hometown": "Seattle, WA",
       "origin": "Draft (2024)",
-      "birthDate": "2001-06-24"
+      "birthDate": "2001-06-24",
+      "qualified": false
     },
     {
       "name": "Kenedy Corona",
@@ -1188,7 +1223,8 @@
       "throws": "Right",
       "hometown": "Maracaibo, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2000-03-21"
+      "birthDate": "2000-03-21",
+      "qualified": false
     },
     {
       "name": "John Cristino",
@@ -1221,7 +1257,8 @@
       "throws": "Right",
       "hometown": "Voorhees, NJ",
       "origin": "Draft (2023)",
-      "birthDate": "1999-12-08"
+      "birthDate": "1999-12-08",
+      "qualified": false
     },
     {
       "name": "Luis Durango",
@@ -1254,7 +1291,8 @@
       "throws": "Left",
       "hometown": "Panama City, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-04-08"
+      "birthDate": "2003-04-08",
+      "qualified": false
     },
     {
       "name": "Tomas Frick",
@@ -1287,7 +1325,8 @@
       "throws": "Right",
       "hometown": "Greenville, SC",
       "origin": "Draft (2023)",
-      "birthDate": "2000-10-11"
+      "birthDate": "2000-10-11",
+      "qualified": false
     },
     {
       "name": "Cole Gabrielson",
@@ -1320,7 +1359,8 @@
       "throws": "Right",
       "hometown": "Portola Valley, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2000-07-05"
+      "birthDate": "2000-07-05",
+      "qualified": false
     },
     {
       "name": "DJ Gladney",
@@ -1353,7 +1393,8 @@
       "throws": "Right",
       "hometown": "Oak Park, IL",
       "origin": "Draft (2019)",
-      "birthDate": "2001-07-14"
+      "birthDate": "2001-07-14",
+      "qualified": true
     },
     {
       "name": "Santiago Gomez",
@@ -1386,7 +1427,8 @@
       "throws": "Right",
       "hometown": "Ciudad de Mexico, DF, MEX",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-04-05"
+      "birthDate": "2004-04-05",
+      "qualified": false
     },
     {
       "name": "Trent Grisham",
@@ -1419,7 +1461,8 @@
       "throws": "Left",
       "hometown": "Burleson, TX",
       "origin": "Draft (2015)",
-      "birthDate": "1996-11-01"
+      "birthDate": "1996-11-01",
+      "qualified": false
     },
     {
       "name": "Abrahan Gutierrez",
@@ -1452,7 +1495,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-10-31"
+      "birthDate": "1999-10-31",
+      "qualified": false
     },
     {
       "name": "Tyler Hardman",
@@ -1485,7 +1529,8 @@
       "throws": "Right",
       "hometown": "Mission Viejo, CA",
       "origin": "Draft (2021)",
-      "birthDate": "1999-01-27"
+      "birthDate": "1999-01-27",
+      "qualified": false
     },
     {
       "name": "Core Jackson",
@@ -1518,7 +1563,8 @@
       "throws": "Right",
       "hometown": "Sarnia, ON, Canada",
       "origin": "Draft (2025)",
-      "birthDate": "2003-10-11"
+      "birthDate": "2003-10-11",
+      "qualified": false
     },
     {
       "name": "George Lombard Jr.",
@@ -1551,7 +1597,8 @@
       "throws": "Right",
       "hometown": "Miami, FL",
       "origin": "Draft (2023)",
-      "birthDate": "2005-06-02"
+      "birthDate": "2005-06-02",
+      "qualified": false
     },
     {
       "name": "Marco Luciano",
@@ -1584,7 +1631,8 @@
       "throws": "Right",
       "hometown": "San Francisco de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2001-09-10"
+      "birthDate": "2001-09-10",
+      "qualified": false
     },
     {
       "name": "Garrett Martin",
@@ -1617,7 +1665,8 @@
       "throws": "Right",
       "hometown": "Arlington, TX",
       "origin": "Draft (2023)",
-      "birthDate": "2000-06-28"
+      "birthDate": "2000-06-28",
+      "qualified": false
     },
     {
       "name": "Connor McGinnis",
@@ -1650,7 +1699,8 @@
       "throws": "Right",
       "hometown": "Frisco, TX",
       "origin": "Draft (2025)",
-      "birthDate": "2002-12-09"
+      "birthDate": "2002-12-09",
+      "qualified": false
     },
     {
       "name": "Coby Morales",
@@ -1683,7 +1733,8 @@
       "throws": "Right",
       "hometown": "Downey, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2001-12-05"
+      "birthDate": "2001-12-05",
+      "qualified": true
     },
     {
       "name": "Josh Moylan",
@@ -1716,7 +1767,8 @@
       "throws": "Right",
       "hometown": "Baltimore, MD",
       "origin": "Draft (2023)",
-      "birthDate": "2002-07-03"
+      "birthDate": "2002-07-03",
+      "qualified": false
     },
     {
       "name": "Manuel Palencia",
@@ -1749,7 +1801,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-09-05"
+      "birthDate": "2002-09-05",
+      "qualified": false
     },
     {
       "name": "Miguel Palma",
@@ -1782,7 +1835,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-01-04"
+      "birthDate": "2002-01-04",
+      "qualified": false
     },
     {
       "name": "Duncan Pastore",
@@ -1815,7 +1869,8 @@
       "throws": "Right",
       "hometown": "Tampa, FL",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2000-05-27"
+      "birthDate": "2000-05-27",
+      "qualified": false
     },
     {
       "name": "Nicholas Torres",
@@ -1848,7 +1903,8 @@
       "throws": "Right",
       "hometown": "Long Beach, CA",
       "origin": "Draft (2014)",
-      "birthDate": "1993-06-30"
+      "birthDate": "1993-06-30",
+      "qualified": false
     },
     {
       "name": "Kevin Verde",
@@ -1881,7 +1937,8 @@
       "throws": "Right",
       "hometown": "Carora, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-12-12"
+      "birthDate": "2005-12-12",
+      "qualified": false
     },
     {
       "name": "Anthony Volpe",
@@ -1914,7 +1971,8 @@
       "throws": "Right",
       "hometown": "New York, NY",
       "origin": "Draft (2019)",
-      "birthDate": "2001-04-28"
+      "birthDate": "2001-04-28",
+      "qualified": false
     },
     {
       "name": "Roderick Arias",
@@ -1947,7 +2005,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-09-09"
+      "birthDate": "2004-09-09",
+      "qualified": true
     },
     {
       "name": "Robbie Burnett",
@@ -1980,7 +2039,8 @@
       "throws": "Right",
       "hometown": "Raleigh, NC",
       "origin": "Draft (2025)",
-      "birthDate": "2002-12-01"
+      "birthDate": "2002-12-01",
+      "qualified": false
     },
     {
       "name": "Luis Durango",
@@ -2013,7 +2073,8 @@
       "throws": "Left",
       "hometown": "Panama City, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-04-08"
+      "birthDate": "2003-04-08",
+      "qualified": false
     },
     {
       "name": "Cole Gabrielson",
@@ -2046,7 +2107,8 @@
       "throws": "Right",
       "hometown": "Portola Valley, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2000-07-05"
+      "birthDate": "2000-07-05",
+      "qualified": false
     },
     {
       "name": "Eric Genther",
@@ -2079,7 +2141,8 @@
       "throws": "Right",
       "hometown": "Drexel Hill, PA",
       "origin": "Draft (2025)",
-      "birthDate": "2002-06-16"
+      "birthDate": "2002-06-16",
+      "qualified": true
     },
     {
       "name": "Santiago Gomez",
@@ -2112,7 +2175,8 @@
       "throws": "Right",
       "hometown": "Ciudad de Mexico, DF, MEX",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-04-05"
+      "birthDate": "2004-04-05",
+      "qualified": false
     },
     {
       "name": "Josue Gonzalez",
@@ -2145,7 +2209,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-10-30"
+      "birthDate": "2003-10-30",
+      "qualified": false
     },
     {
       "name": "Diomedes Hernandez",
@@ -2178,7 +2243,8 @@
       "throws": "Right",
       "hometown": "Cabimas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-02-06"
+      "birthDate": "2005-02-06",
+      "qualified": false
     },
     {
       "name": "Core Jackson",
@@ -2211,7 +2277,8 @@
       "throws": "Right",
       "hometown": "Sarnia, ON, Canada",
       "origin": "Draft (2025)",
-      "birthDate": "2003-10-11"
+      "birthDate": "2003-10-11",
+      "qualified": false
     },
     {
       "name": "Kaeden Kent",
@@ -2244,7 +2311,8 @@
       "throws": "Right",
       "hometown": "Austin, TX",
       "origin": "Draft (2025)",
-      "birthDate": "2003-08-29"
+      "birthDate": "2003-08-29",
+      "qualified": false
     },
     {
       "name": "Gabriel Lara",
@@ -2277,7 +2345,8 @@
       "throws": "Left",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-11-27"
+      "birthDate": "2005-11-27",
+      "qualified": false
     },
     {
       "name": "Jackson Lovich",
@@ -2310,7 +2379,8 @@
       "throws": "Right",
       "hometown": "Overland Park, KS",
       "origin": "Draft (2025)",
-      "birthDate": "2003-11-18"
+      "birthDate": "2003-11-18",
+      "qualified": false
     },
     {
       "name": "Bryce Martin-Grudzielanek",
@@ -2343,7 +2413,8 @@
       "throws": "Right",
       "hometown": "Los Angeles, CA",
       "origin": "Draft (2025)",
-      "birthDate": "2003-06-04"
+      "birthDate": "2003-06-04",
+      "qualified": false
     },
     {
       "name": "David McCann",
@@ -2376,7 +2447,8 @@
       "throws": "Right",
       "hometown": "Bridgeport, CT",
       "origin": "Draft (2025)",
-      "birthDate": "2004-03-18"
+      "birthDate": "2004-03-18",
+      "qualified": false
     },
     {
       "name": "Connor McGinnis",
@@ -2409,7 +2481,8 @@
       "throws": "Right",
       "hometown": "Frisco, TX",
       "origin": "Draft (2025)",
-      "birthDate": "2002-12-09"
+      "birthDate": "2002-12-09",
+      "qualified": false
     },
     {
       "name": "Hans Montero",
@@ -2442,7 +2515,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-12-25"
+      "birthDate": "2003-12-25",
+      "qualified": false
     },
     {
       "name": "Willy Montero",
@@ -2475,7 +2549,8 @@
       "throws": "Right",
       "hometown": "La Romana, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-08-04"
+      "birthDate": "2004-08-04",
+      "qualified": false
     },
     {
       "name": "Josh Moylan",
@@ -2508,7 +2583,8 @@
       "throws": "Right",
       "hometown": "Baltimore, MD",
       "origin": "Draft (2023)",
-      "birthDate": "2002-07-03"
+      "birthDate": "2002-07-03",
+      "qualified": false
     },
     {
       "name": "Maika Niu",
@@ -2541,7 +2617,8 @@
       "throws": "Right",
       "hometown": "Harrisburg, PA",
       "origin": "Draft (2026)",
-      "birthDate": "2004-01-09"
+      "birthDate": "2004-01-09",
+      "qualified": false
     },
     {
       "name": "Wilson Rodriguez",
@@ -2574,7 +2651,8 @@
       "throws": "Left",
       "hometown": "San Juan, Puerto Rico",
       "origin": "Draft (2023)",
-      "birthDate": "2004-09-10"
+      "birthDate": "2004-09-10",
+      "qualified": false
     },
     {
       "name": "Enmanuel Tejeda",
@@ -2607,7 +2685,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, DOM",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-12-25"
+      "birthDate": "2004-12-25",
+      "qualified": false
     },
     {
       "name": "Dean Toigo",
@@ -2640,7 +2719,8 @@
       "throws": "Right",
       "hometown": "Newport Beach, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2002-09-04"
+      "birthDate": "2002-09-04",
+      "qualified": false
     },
     {
       "name": "Camden Troyer",
@@ -2673,7 +2753,8 @@
       "throws": "Left",
       "hometown": "Dover, DE",
       "origin": "Draft (2025)",
-      "birthDate": "2002-08-03"
+      "birthDate": "2002-08-03",
+      "qualified": false
     },
     {
       "name": "Kyle West",
@@ -2706,7 +2787,8 @@
       "throws": "Right",
       "hometown": "Martinsburg, WV",
       "origin": "Draft (2025)",
-      "birthDate": "2002-11-02"
+      "birthDate": "2002-11-02",
+      "qualified": true
     },
     {
       "name": "Tyler Wilson",
@@ -2739,7 +2821,8 @@
       "throws": "Right",
       "hometown": "Tainan, Taiwan",
       "origin": "Draft (2024)",
-      "birthDate": "2002-07-10"
+      "birthDate": "2002-07-10",
+      "qualified": false
     },
     {
       "name": "Isael Arias",
@@ -2772,7 +2855,8 @@
       "throws": "Right",
       "hometown": "Mazatlan, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-08-11"
+      "birthDate": "2005-08-11",
+      "qualified": false
     },
     {
       "name": "Tyce Armstrong",
@@ -2805,7 +2889,8 @@
       "throws": "Right",
       "hometown": "The Woodlands, TX",
       "origin": "Draft (2026)",
-      "birthDate": "2003-07-03"
+      "birthDate": "2003-07-03",
+      "qualified": false
     },
     {
       "name": "Gregory Bozzo",
@@ -2838,29 +2923,30 @@
       "throws": "Right",
       "hometown": "Morristown, NJ",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-04-11"
+      "birthDate": "2002-04-11",
+      "qualified": false
     },
     {
       "name": "Diego Castellanos",
       "mlbId": 824425,
       "pos": "OF",
       "level": "A",
-      "ab": 44,
-      "pa": 50,
-      "avg": 0.273,
-      "obp": 0.36,
-      "slg": 0.432,
-      "ops": 0.792,
+      "ab": 48,
+      "pa": 54,
+      "avg": 0.292,
+      "obp": 0.37,
+      "slg": 0.438,
+      "ops": 0.808,
       "hr": 2,
       "rbi": 6,
       "sb": 1,
-      "bbp": 10.0,
-      "kp": 14.0,
-      "kbb": 4.0,
-      "iso": 0.159,
-      "xbhp": 25.0,
-      "babip": 0.286,
-      "woba": 0.353,
+      "bbp": 9.3,
+      "kp": 14.8,
+      "kbb": 5.5,
+      "iso": 0.146,
+      "xbhp": 21.4,
+      "babip": 0.316,
+      "woba": 0.36,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -2871,7 +2957,8 @@
       "throws": "Left",
       "hometown": "San Jose, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2005-01-26"
+      "birthDate": "2005-01-26",
+      "qualified": false
     },
     {
       "name": "John Cristino",
@@ -2904,7 +2991,8 @@
       "throws": "Right",
       "hometown": "Voorhees, NJ",
       "origin": "Draft (2023)",
-      "birthDate": "1999-12-08"
+      "birthDate": "1999-12-08",
+      "qualified": false
     },
     {
       "name": "Blake Cyr",
@@ -2937,7 +3025,8 @@
       "throws": "Right",
       "hometown": "Orlando, FL",
       "origin": "Draft (2026)",
-      "birthDate": "2003-11-06"
+      "birthDate": "2003-11-06",
+      "qualified": false
     },
     {
       "name": "Wilberson De Pena",
@@ -2970,7 +3059,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-11-10"
+      "birthDate": "2006-11-10",
+      "qualified": false
     },
     {
       "name": "Luis Durango",
@@ -3003,29 +3093,30 @@
       "throws": "Left",
       "hometown": "Panama City, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-04-08"
+      "birthDate": "2003-04-08",
+      "qualified": false
     },
     {
       "name": "Luis Escudero",
       "mlbId": 806884,
       "pos": "2B",
       "level": "A",
-      "ab": 132,
-      "pa": 172,
-      "avg": 0.288,
-      "obp": 0.448,
-      "slg": 0.553,
-      "ops": 1.001,
+      "ab": 134,
+      "pa": 176,
+      "avg": 0.284,
+      "obp": 0.449,
+      "slg": 0.545,
+      "ops": 0.994,
       "hr": 9,
       "rbi": 25,
-      "sb": 10,
-      "bbp": 21.5,
-      "kp": 18.6,
-      "kbb": -2.9,
-      "iso": 0.265,
+      "sb": 11,
+      "bbp": 21.6,
+      "kp": 18.8,
+      "kbb": -2.8,
+      "iso": 0.261,
       "xbhp": 44.7,
-      "babip": 0.315,
-      "woba": 0.434,
+      "babip": 0.312,
+      "woba": 0.432,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3036,7 +3127,8 @@
       "throws": "Right",
       "hometown": "Aguadulce, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-02-09"
+      "birthDate": "2006-02-09",
+      "qualified": false
     },
     {
       "name": "Santiago Gomez",
@@ -3069,7 +3161,8 @@
       "throws": "Right",
       "hometown": "Ciudad de Mexico, DF, MEX",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-04-05"
+      "birthDate": "2004-04-05",
+      "qualified": false
     },
     {
       "name": "Austin Green",
@@ -3102,29 +3195,30 @@
       "throws": "Right",
       "hometown": "Diana, TX",
       "origin": "Draft (2024)",
-      "birthDate": "2002-05-20"
+      "birthDate": "2002-05-20",
+      "qualified": false
     },
     {
       "name": "Paul Gutierrez-Contreras II",
       "mlbId": 827290,
       "pos": "OF",
       "level": "A",
-      "ab": 38,
-      "pa": 46,
-      "avg": 0.263,
-      "obp": 0.37,
-      "slg": 0.342,
-      "ops": 0.712,
+      "ab": 43,
+      "pa": 51,
+      "avg": 0.233,
+      "obp": 0.333,
+      "slg": 0.302,
+      "ops": 0.635,
       "hr": 0,
       "rbi": 6,
       "sb": 3,
-      "bbp": 13.0,
-      "kp": 13.0,
+      "bbp": 11.8,
+      "kp": 11.8,
       "kbb": 0.0,
-      "iso": 0.079,
+      "iso": 0.069,
       "xbhp": 20.0,
-      "babip": 0.303,
-      "woba": 0.323,
+      "babip": 0.263,
+      "woba": 0.291,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3135,29 +3229,30 @@
       "throws": "Right",
       "hometown": "Turlock, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2005-08-05"
+      "birthDate": "2005-08-05",
+      "qualified": false
     },
     {
       "name": "Bear Harrison",
       "mlbId": 824424,
       "pos": "C",
       "level": "A",
-      "ab": 42,
-      "pa": 53,
-      "avg": 0.167,
-      "obp": 0.34,
-      "slg": 0.238,
-      "ops": 0.578,
+      "ab": 46,
+      "pa": 57,
+      "avg": 0.152,
+      "obp": 0.316,
+      "slg": 0.217,
+      "ops": 0.533,
       "hr": 0,
       "rbi": 4,
       "sb": 0,
-      "bbp": 17.0,
-      "kp": 20.8,
-      "kbb": 3.8,
-      "iso": 0.071,
+      "bbp": 15.8,
+      "kp": 21.1,
+      "kbb": 5.3,
+      "iso": 0.065,
       "xbhp": 28.6,
-      "babip": 0.226,
-      "woba": 0.283,
+      "babip": 0.206,
+      "woba": 0.263,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3168,7 +3263,8 @@
       "throws": "Right",
       "hometown": "Irvine, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2005-01-17"
+      "birthDate": "2005-01-17",
+      "qualified": false
     },
     {
       "name": "Bayram Hot",
@@ -3201,7 +3297,8 @@
       "throws": "Right",
       "hometown": "New York, NY",
       "origin": "Draft (2026)",
-      "birthDate": "2004-02-16"
+      "birthDate": "2004-02-16",
+      "qualified": false
     },
     {
       "name": "JoJo Jackson",
@@ -3234,29 +3331,30 @@
       "throws": "Left",
       "hometown": "Stone Mountain, GA",
       "origin": "Draft (2024)",
-      "birthDate": "2002-10-06"
+      "birthDate": "2002-10-06",
+      "qualified": false
     },
     {
       "name": "Dax Kilby",
       "mlbId": 828076,
       "pos": "SS",
       "level": "A",
-      "ab": 83,
-      "pa": 105,
-      "avg": 0.289,
-      "obp": 0.438,
-      "slg": 0.446,
-      "ops": 0.884,
+      "ab": 85,
+      "pa": 110,
+      "avg": 0.282,
+      "obp": 0.445,
+      "slg": 0.435,
+      "ops": 0.88,
       "hr": 2,
-      "rbi": 20,
+      "rbi": 21,
       "sb": 7,
-      "bbp": 21.0,
-      "kp": 21.0,
-      "kbb": 0.0,
-      "iso": 0.157,
+      "bbp": 22.7,
+      "kp": 20.0,
+      "kbb": -2.7,
+      "iso": 0.153,
       "xbhp": 29.2,
-      "babip": 0.373,
-      "woba": 0.395,
+      "babip": 0.361,
+      "woba": 0.396,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3267,7 +3365,8 @@
       "throws": "Right",
       "hometown": "Newnan, GA",
       "origin": "Draft (2025)",
-      "birthDate": "2006-11-17"
+      "birthDate": "2006-11-17",
+      "qualified": false
     },
     {
       "name": "Gabriel Lara",
@@ -3300,7 +3399,8 @@
       "throws": "Left",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-11-27"
+      "birthDate": "2005-11-27",
+      "qualified": false
     },
     {
       "name": "Jackson Lovich",
@@ -3333,7 +3433,8 @@
       "throws": "Right",
       "hometown": "Overland Park, KS",
       "origin": "Draft (2025)",
-      "birthDate": "2003-11-18"
+      "birthDate": "2003-11-18",
+      "qualified": false
     },
     {
       "name": "Bryce Martin-Grudzielanek",
@@ -3366,7 +3467,8 @@
       "throws": "Right",
       "hometown": "Los Angeles, CA",
       "origin": "Draft (2025)",
-      "birthDate": "2003-06-04"
+      "birthDate": "2003-06-04",
+      "qualified": true
     },
     {
       "name": "Logan Maxwell",
@@ -3399,29 +3501,30 @@
       "throws": "Left",
       "hometown": "Columbus, OH",
       "origin": "Draft (2025)",
-      "birthDate": "2002-10-24"
+      "birthDate": "2002-10-24",
+      "qualified": false
     },
     {
       "name": "Brando Mayea",
       "mlbId": 806963,
       "pos": "CF",
       "level": "A",
-      "ab": 260,
-      "pa": 291,
+      "ab": 264,
+      "pa": 295,
       "avg": 0.269,
-      "obp": 0.347,
-      "slg": 0.396,
-      "ops": 0.743,
+      "obp": 0.346,
+      "slg": 0.394,
+      "ops": 0.74,
       "hr": 8,
-      "rbi": 35,
+      "rbi": 37,
       "sb": 10,
-      "bbp": 8.6,
-      "kp": 25.4,
-      "kbb": 16.8,
-      "iso": 0.127,
-      "xbhp": 24.3,
-      "babip": 0.348,
-      "woba": 0.333,
+      "bbp": 8.5,
+      "kp": 25.8,
+      "kbb": 17.3,
+      "iso": 0.125,
+      "xbhp": 23.9,
+      "babip": 0.35,
+      "woba": 0.331,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3432,7 +3535,8 @@
       "throws": "Right",
       "hometown": "Havana, Cuba",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-09-12"
+      "birthDate": "2005-09-12",
+      "qualified": false
     },
     {
       "name": "David McCann",
@@ -3465,7 +3569,8 @@
       "throws": "Right",
       "hometown": "Bridgeport, CT",
       "origin": "Draft (2025)",
-      "birthDate": "2004-03-18"
+      "birthDate": "2004-03-18",
+      "qualified": false
     },
     {
       "name": "Hans Montero",
@@ -3498,7 +3603,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-12-25"
+      "birthDate": "2003-12-25",
+      "qualified": true
     },
     {
       "name": "Willy Montero",
@@ -3531,29 +3637,30 @@
       "throws": "Right",
       "hometown": "La Romana, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-08-04"
+      "birthDate": "2004-08-04",
+      "qualified": false
     },
     {
       "name": "Yostin Pena",
       "mlbId": 829769,
       "pos": "OF",
       "level": "A",
-      "ab": 58,
-      "pa": 61,
-      "avg": 0.345,
-      "obp": 0.361,
-      "slg": 0.517,
-      "ops": 0.878,
-      "hr": 2,
-      "rbi": 13,
+      "ab": 63,
+      "pa": 66,
+      "avg": 0.349,
+      "obp": 0.364,
+      "slg": 0.603,
+      "ops": 0.967,
+      "hr": 4,
+      "rbi": 19,
       "sb": 4,
-      "bbp": 1.6,
-      "kp": 18.0,
-      "kbb": 16.4,
-      "iso": 0.172,
-      "xbhp": 20.0,
-      "babip": 0.391,
-      "woba": 0.378,
+      "bbp": 1.5,
+      "kp": 18.2,
+      "kbb": 16.7,
+      "iso": 0.254,
+      "xbhp": 27.3,
+      "babip": 0.375,
+      "woba": 0.413,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3564,29 +3671,30 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-10-19"
+      "birthDate": "2007-10-19",
+      "qualified": false
     },
     {
       "name": "Anthony Potestio",
       "mlbId": 835219,
       "pos": "2B",
       "level": "A",
-      "ab": 29,
-      "pa": 43,
-      "avg": 0.414,
-      "obp": 0.581,
-      "slg": 0.793,
-      "ops": 1.374,
+      "ab": 32,
+      "pa": 47,
+      "avg": 0.406,
+      "obp": 0.574,
+      "slg": 0.75,
+      "ops": 1.324,
       "hr": 2,
       "rbi": 11,
       "sb": 3,
-      "bbp": 25.6,
-      "kp": 9.3,
-      "kbb": -16.3,
-      "iso": 0.379,
-      "xbhp": 50.0,
-      "babip": 0.417,
-      "woba": 0.558,
+      "bbp": 25.5,
+      "kp": 8.5,
+      "kbb": -17.0,
+      "iso": 0.344,
+      "xbhp": 46.2,
+      "babip": 0.407,
+      "woba": 0.544,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -3597,7 +3705,8 @@
       "throws": "Right",
       "hometown": "Castro Valley, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2004-11-05"
+      "birthDate": "2004-11-05",
+      "qualified": false
     },
     {
       "name": "Luis Puello",
@@ -3630,7 +3739,8 @@
       "throws": "Right",
       "hometown": "Sucre, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-01-22"
+      "birthDate": "2006-01-22",
+      "qualified": false
     },
     {
       "name": "Christofer Reyes",
@@ -3663,7 +3773,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-08-23"
+      "birthDate": "2007-08-23",
+      "qualified": false
     },
     {
       "name": "Ediel Rivera",
@@ -3696,7 +3807,8 @@
       "throws": "Right",
       "hometown": "Ponce, Puerto Rico",
       "origin": "Draft (2024)",
-      "birthDate": "2005-09-23"
+      "birthDate": "2005-09-23",
+      "qualified": false
     },
     {
       "name": "Enmanuel Tejeda",
@@ -3729,7 +3841,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, DOM",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-12-25"
+      "birthDate": "2004-12-25",
+      "qualified": false
     },
     {
       "name": "Engelth Urena",
@@ -3762,7 +3875,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-08-17"
+      "birthDate": "2004-08-17",
+      "qualified": false
     },
     {
       "name": "Kevin Verde",
@@ -3795,7 +3909,8 @@
       "throws": "Right",
       "hometown": "Carora, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-12-12"
+      "birthDate": "2005-12-12",
+      "qualified": false
     },
     {
       "name": "Isael Arias",
@@ -3828,7 +3943,8 @@
       "throws": "Right",
       "hometown": "Mazatlan, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-08-11"
+      "birthDate": "2005-08-11",
+      "qualified": false
     },
     {
       "name": "Robbie Burnett",
@@ -3861,7 +3977,8 @@
       "throws": "Right",
       "hometown": "Raleigh, NC",
       "origin": "Draft (2025)",
-      "birthDate": "2002-12-01"
+      "birthDate": "2002-12-01",
+      "qualified": false
     },
     {
       "name": "Justin Capellan",
@@ -3894,7 +4011,8 @@
       "throws": "Right",
       "hometown": "Bonao, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-07-18"
+      "birthDate": "2006-07-18",
+      "qualified": false
     },
     {
       "name": "Jose Castro",
@@ -3927,7 +4045,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-10-04"
+      "birthDate": "2005-10-04",
+      "qualified": false
     },
     {
       "name": "John Cristino",
@@ -3960,7 +4079,8 @@
       "throws": "Right",
       "hometown": "Voorhees, NJ",
       "origin": "Draft (2023)",
-      "birthDate": "1999-12-08"
+      "birthDate": "1999-12-08",
+      "qualified": false
     },
     {
       "name": "Wilberson De Pena",
@@ -3993,7 +4113,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-11-10"
+      "birthDate": "2006-11-10",
+      "qualified": false
     },
     {
       "name": "Leni Done",
@@ -4026,7 +4147,8 @@
       "throws": "Right",
       "hometown": "San Cristobal, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-06-05"
+      "birthDate": "2007-06-05",
+      "qualified": false
     },
     {
       "name": "Luis Escudero",
@@ -4059,7 +4181,8 @@
       "throws": "Right",
       "hometown": "Aguadulce, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-02-09"
+      "birthDate": "2006-02-09",
+      "qualified": false
     },
     {
       "name": "Diego Flores",
@@ -4092,7 +4215,8 @@
       "throws": "Right",
       "hometown": "Maracay, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-03-10"
+      "birthDate": "2007-03-10",
+      "qualified": false
     },
     {
       "name": "Austin Green",
@@ -4125,7 +4249,8 @@
       "throws": "Right",
       "hometown": "Diana, TX",
       "origin": "Draft (2024)",
-      "birthDate": "2002-05-20"
+      "birthDate": "2002-05-20",
+      "qualified": false
     },
     {
       "name": "Dax Kilby",
@@ -4158,7 +4283,8 @@
       "throws": "Right",
       "hometown": "Newnan, GA",
       "origin": "Draft (2025)",
-      "birthDate": "2006-11-17"
+      "birthDate": "2006-11-17",
+      "qualified": false
     },
     {
       "name": "Gabriel Lara",
@@ -4191,7 +4317,8 @@
       "throws": "Left",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-11-27"
+      "birthDate": "2005-11-27",
+      "qualified": false
     },
     {
       "name": "George Lombard Jr.",
@@ -4224,7 +4351,8 @@
       "throws": "Right",
       "hometown": "Miami, FL",
       "origin": "Draft (2023)",
-      "birthDate": "2005-06-02"
+      "birthDate": "2005-06-02",
+      "qualified": false
     },
     {
       "name": "Richard Matic",
@@ -4257,7 +4385,8 @@
       "throws": "Right",
       "hometown": "La Romana, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-07-26"
+      "birthDate": "2007-07-26",
+      "qualified": false
     },
     {
       "name": "Logan Maxwell",
@@ -4290,7 +4419,8 @@
       "throws": "Left",
       "hometown": "Columbus, OH",
       "origin": "Draft (2025)",
-      "birthDate": "2002-10-24"
+      "birthDate": "2002-10-24",
+      "qualified": false
     },
     {
       "name": "David McCann",
@@ -4323,7 +4453,8 @@
       "throws": "Right",
       "hometown": "Bridgeport, CT",
       "origin": "Draft (2025)",
-      "birthDate": "2004-03-18"
+      "birthDate": "2004-03-18",
+      "qualified": false
     },
     {
       "name": "Estivenzon Montero",
@@ -4356,7 +4487,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-09"
+      "birthDate": "2006-10-09",
+      "qualified": false
     },
     {
       "name": "Dexters Peralta",
@@ -4389,7 +4521,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-07-11"
+      "birthDate": "2007-07-11",
+      "qualified": false
     },
     {
       "name": "Queni Pineda",
@@ -4422,7 +4555,8 @@
       "throws": "Right",
       "hometown": "Azua, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-05-29"
+      "birthDate": "2007-05-29",
+      "qualified": false
     },
     {
       "name": "Luis Puello",
@@ -4455,7 +4589,8 @@
       "throws": "Right",
       "hometown": "Sucre, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-01-22"
+      "birthDate": "2006-01-22",
+      "qualified": false
     },
     {
       "name": "Christofer Reyes",
@@ -4488,7 +4623,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-08-23"
+      "birthDate": "2007-08-23",
+      "qualified": false
     },
     {
       "name": "Carlos Rondon",
@@ -4521,7 +4657,8 @@
       "throws": "Right",
       "hometown": "El Limon, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-02-16"
+      "birthDate": "2006-02-16",
+      "qualified": false
     },
     {
       "name": "Kevin Verde",
@@ -4554,7 +4691,8 @@
       "throws": "Right",
       "hometown": "Carora, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-12-12"
+      "birthDate": "2005-12-12",
+      "qualified": false
     },
     {
       "name": "Francisco Vilorio",
@@ -4587,7 +4725,8 @@
       "throws": "Right",
       "hometown": "Hato Mayor del Rey, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-31"
+      "birthDate": "2006-10-31",
+      "qualified": false
     },
     {
       "name": "Eliezer Adames",
@@ -4620,7 +4759,8 @@
       "throws": "Right",
       "hometown": "Peravia, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-16"
+      "birthDate": "2007-09-16",
+      "qualified": false
     },
     {
       "name": "Carlos Bello",
@@ -4653,7 +4793,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-12-19"
+      "birthDate": "2007-12-19",
+      "qualified": false
     },
     {
       "name": "Germayhoni Beltre",
@@ -4686,7 +4827,8 @@
       "throws": "Right",
       "hometown": "Azua, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-01-08"
+      "birthDate": "2009-01-08",
+      "qualified": false
     },
     {
       "name": "David Carrera",
@@ -4719,7 +4861,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-09-07"
+      "birthDate": "2006-09-07",
+      "qualified": false
     },
     {
       "name": "Ruben Castillo",
@@ -4752,7 +4895,8 @@
       "throws": "Left",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-04"
+      "birthDate": "2008-01-04",
+      "qualified": false
     },
     {
       "name": "Mani Cedeno",
@@ -4785,7 +4929,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-14"
+      "birthDate": "2008-08-14",
+      "qualified": false
     },
     {
       "name": "Eddison Charles",
@@ -4818,7 +4963,8 @@
       "throws": "Right",
       "hometown": "Guerra, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-09"
+      "birthDate": "2008-01-09",
+      "qualified": false
     },
     {
       "name": "Alfred Ciriaco",
@@ -4851,7 +4997,8 @@
       "throws": "Right",
       "hometown": "Puerto Plata, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-05"
+      "birthDate": "2006-10-05",
+      "qualified": false
     },
     {
       "name": "Adrian Feliz",
@@ -4884,7 +5031,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-02"
+      "birthDate": "2008-08-02",
+      "qualified": false
     },
     {
       "name": "Jesus Guerrero",
@@ -4917,7 +5065,8 @@
       "throws": "Right",
       "hometown": "Los Mochis, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-05-21"
+      "birthDate": "2007-05-21",
+      "qualified": false
     },
     {
       "name": "Edgar Jimenez",
@@ -4950,7 +5099,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-11-03"
+      "birthDate": "2006-11-03",
+      "qualified": false
     },
     {
       "name": "Alfiery Matos",
@@ -4983,7 +5133,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-10"
+      "birthDate": "2007-09-10",
+      "qualified": false
     },
     {
       "name": "Kenneth Melendez",
@@ -5016,7 +5167,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-08-31"
+      "birthDate": "2009-08-31",
+      "qualified": false
     },
     {
       "name": "Richard Meran",
@@ -5049,7 +5201,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-06-25"
+      "birthDate": "2006-06-25",
+      "qualified": false
     },
     {
       "name": "Poly Ojeda",
@@ -5082,7 +5235,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-11-11"
+      "birthDate": "2008-11-11",
+      "qualified": false
     },
     {
       "name": "Sebastian Pinto",
@@ -5115,7 +5269,8 @@
       "throws": "Right",
       "hometown": "Barquisimeto, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-12-11"
+      "birthDate": "2007-12-11",
+      "qualified": false
     },
     {
       "name": "Stalen Ramirez",
@@ -5148,7 +5303,8 @@
       "throws": "Right",
       "hometown": "Araure, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-17"
+      "birthDate": "2008-08-17",
+      "qualified": false
     },
     {
       "name": "Alessandro Rodriguez",
@@ -5181,7 +5337,8 @@
       "throws": "Right",
       "hometown": "Maracay, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-10"
+      "birthDate": "2008-08-10",
+      "qualified": false
     },
     {
       "name": "John Rosillo",
@@ -5214,7 +5371,8 @@
       "throws": "Right",
       "hometown": "Maracaibo, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-06"
+      "birthDate": "2008-01-06",
+      "qualified": false
     },
     {
       "name": "Dariel Santana",
@@ -5247,7 +5405,8 @@
       "throws": "Right",
       "hometown": "Bani, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-05-29"
+      "birthDate": "2008-05-29",
+      "qualified": false
     },
     {
       "name": "Eliezer Adames",
@@ -5280,7 +5439,8 @@
       "throws": "Right",
       "hometown": "Peravia, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-16"
+      "birthDate": "2007-09-16",
+      "qualified": false
     },
     {
       "name": "Manuel Aguilar",
@@ -5313,7 +5473,8 @@
       "throws": "Right",
       "hometown": "Poza Rica de Hidalgo, VE, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-08-01"
+      "birthDate": "2009-08-01",
+      "qualified": false
     },
     {
       "name": "Isaias Castillo",
@@ -5346,7 +5507,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-06-15"
+      "birthDate": "2008-06-15",
+      "qualified": false
     },
     {
       "name": "Alfred Ciriaco",
@@ -5379,7 +5541,8 @@
       "throws": "Right",
       "hometown": "Puerto Plata, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-05"
+      "birthDate": "2006-10-05",
+      "qualified": false
     },
     {
       "name": "Luis Cruz",
@@ -5412,7 +5575,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-06-09"
+      "birthDate": "2008-06-09",
+      "qualified": false
     },
     {
       "name": "Kendry Diaz",
@@ -5445,7 +5609,8 @@
       "throws": "Left",
       "hometown": "Invivienda, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-12-07"
+      "birthDate": "2008-12-07",
+      "qualified": false
     },
     {
       "name": "Adrian Feliz",
@@ -5478,7 +5643,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-02"
+      "birthDate": "2008-08-02",
+      "qualified": false
     },
     {
       "name": "Edgar Jimenez",
@@ -5511,7 +5677,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-11-03"
+      "birthDate": "2006-11-03",
+      "qualified": false
     },
     {
       "name": "Jose Lavagnino",
@@ -5544,7 +5711,8 @@
       "throws": "Right",
       "hometown": "Guasave, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-06-21"
+      "birthDate": "2007-06-21",
+      "qualified": false
     },
     {
       "name": "Cesar Lopez",
@@ -5577,7 +5745,8 @@
       "throws": "Right",
       "hometown": "Coro, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-01-22"
+      "birthDate": "2009-01-22",
+      "qualified": false
     },
     {
       "name": "Stiven Marinez",
@@ -5610,7 +5779,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-08-20"
+      "birthDate": "2007-08-20",
+      "qualified": false
     },
     {
       "name": "Juan Martinez",
@@ -5643,7 +5813,8 @@
       "throws": "Right",
       "hometown": "Sincelejo, Colombia",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-05-06"
+      "birthDate": "2008-05-06",
+      "qualified": false
     },
     {
       "name": "Alfiery Matos",
@@ -5676,7 +5847,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-10"
+      "birthDate": "2007-09-10",
+      "qualified": false
     },
     {
       "name": "Kenneth Melendez",
@@ -5709,7 +5881,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-08-31"
+      "birthDate": "2009-08-31",
+      "qualified": false
     },
     {
       "name": "Poly Ojeda",
@@ -5742,7 +5915,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-11-11"
+      "birthDate": "2008-11-11",
+      "qualified": false
     },
     {
       "name": "Emmanuel Orozco",
@@ -5775,7 +5949,8 @@
       "throws": "Right",
       "hometown": "Barranquilla, Colombia",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-07-27"
+      "birthDate": "2008-07-27",
+      "qualified": false
     },
     {
       "name": "Yostin Pena",
@@ -5808,7 +5983,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-10-19"
+      "birthDate": "2007-10-19",
+      "qualified": false
     },
     {
       "name": "Jose Peralta",
@@ -5841,7 +6017,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-10-10"
+      "birthDate": "2007-10-10",
+      "qualified": false
     },
     {
       "name": "Abrahan Pichardo",
@@ -5874,7 +6051,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-03-17"
+      "birthDate": "2009-03-17",
+      "qualified": false
     },
     {
       "name": "Stalen Ramirez",
@@ -5907,7 +6085,8 @@
       "throws": "Right",
       "hometown": "Araure, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-17"
+      "birthDate": "2008-08-17",
+      "qualified": false
     },
     {
       "name": "John Rosillo",
@@ -5940,7 +6119,8 @@
       "throws": "Right",
       "hometown": "Maracaibo, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-06"
+      "birthDate": "2008-01-06",
+      "qualified": false
     },
     {
       "name": "Juan Torres",
@@ -5973,7 +6153,8 @@
       "throws": "Right",
       "hometown": "Jimani, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-27"
+      "birthDate": "2007-09-27",
+      "qualified": false
     },
     {
       "name": "Cody Bellinger",
@@ -6006,7 +6187,8 @@
       "throws": "Left",
       "hometown": "Scottsdale, AZ",
       "origin": "Draft (2013)",
-      "birthDate": "1995-07-13"
+      "birthDate": "1995-07-13",
+      "qualified": false
     },
     {
       "name": "Christian Bethancourt",
@@ -6039,7 +6221,8 @@
       "throws": "Right",
       "hometown": "Panama City, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1991-09-02"
+      "birthDate": "1991-09-02",
+      "qualified": false
     },
     {
       "name": "Seth Brown",
@@ -6072,7 +6255,8 @@
       "throws": "Left",
       "hometown": "Klamath Falls, OR",
       "origin": "Draft (2015)",
-      "birthDate": "1992-07-13"
+      "birthDate": "1992-07-13",
+      "qualified": false
     },
     {
       "name": "Oswaldo Cabrera",
@@ -6105,7 +6289,8 @@
       "throws": "Right",
       "hometown": "Guarenas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-03-01"
+      "birthDate": "1999-03-01",
+      "qualified": true
     },
     {
       "name": "Owen Cobb",
@@ -6138,7 +6323,8 @@
       "throws": "Right",
       "hometown": "Seattle, WA",
       "origin": "Draft (2024)",
-      "birthDate": "2001-06-24"
+      "birthDate": "2001-06-24",
+      "qualified": false
     },
     {
       "name": "Kenedy Corona",
@@ -6171,7 +6357,8 @@
       "throws": "Right",
       "hometown": "Maracaibo, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2000-03-21"
+      "birthDate": "2000-03-21",
+      "qualified": false
     },
     {
       "name": "Paul DeJong",
@@ -6204,7 +6391,8 @@
       "throws": "Right",
       "hometown": "Orlando, FL",
       "origin": "Draft (2015)",
-      "birthDate": "1993-08-02"
+      "birthDate": "1993-08-02",
+      "qualified": false
     },
     {
       "name": "Jasson Dom\u00ednguez",
@@ -6237,7 +6425,8 @@
       "throws": "Right",
       "hometown": "Esperanza, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-02-07"
+      "birthDate": "2003-02-07",
+      "qualified": false
     },
     {
       "name": "Edinson Duran",
@@ -6270,7 +6459,8 @@
       "throws": "Right",
       "hometown": "San Juan de los Morros, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-07-22"
+      "birthDate": "2002-07-22",
+      "qualified": false
     },
     {
       "name": "Duke Ellis",
@@ -6303,7 +6493,8 @@
       "throws": "Left",
       "hometown": "Nacogdoches, TX",
       "origin": "Draft (2020)",
-      "birthDate": "1998-01-16"
+      "birthDate": "1998-01-16",
+      "qualified": false
     },
     {
       "name": "J.C. Escarra",
@@ -6336,7 +6527,8 @@
       "throws": "Right",
       "hometown": "Hialeah, FL",
       "origin": "Draft (2017)",
-      "birthDate": "1995-04-24"
+      "birthDate": "1995-04-24",
+      "qualified": false
     },
     {
       "name": "Yanquiel Fern\u00e1ndez",
@@ -6369,7 +6561,8 @@
       "throws": "Left",
       "hometown": "Havana, Cuba",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-01-01"
+      "birthDate": "2003-01-01",
+      "qualified": true
     },
     {
       "name": "Cole Gabrielson",
@@ -6402,7 +6595,8 @@
       "throws": "Right",
       "hometown": "Portola Valley, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2000-07-05"
+      "birthDate": "2000-07-05",
+      "qualified": false
     },
     {
       "name": "Mitch Garver",
@@ -6435,7 +6629,8 @@
       "throws": "Right",
       "hometown": "Albuquerque, NM",
       "origin": "Draft (2013)",
-      "birthDate": "1991-01-15"
+      "birthDate": "1991-01-15",
+      "qualified": false
     },
     {
       "name": "Abrahan Gutierrez",
@@ -6468,7 +6663,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-10-31"
+      "birthDate": "1999-10-31",
+      "qualified": false
     },
     {
       "name": "Tyler Hardman",
@@ -6501,7 +6697,8 @@
       "throws": "Right",
       "hometown": "Mission Viejo, CA",
       "origin": "Draft (2021)",
-      "birthDate": "1999-01-27"
+      "birthDate": "1999-01-27",
+      "qualified": true
     },
     {
       "name": "Payton Henry",
@@ -6534,7 +6731,8 @@
       "throws": "Right",
       "hometown": "American Fork, UT",
       "origin": "Draft (2016)",
-      "birthDate": "1997-06-24"
+      "birthDate": "1997-06-24",
+      "qualified": false
     },
     {
       "name": "Spencer Jones",
@@ -6567,7 +6765,8 @@
       "throws": "Left",
       "hometown": "Encinitas, CA",
       "origin": "Draft (2022)",
-      "birthDate": "2001-05-14"
+      "birthDate": "2001-05-14",
+      "qualified": false
     },
     {
       "name": "George Lombard Jr.",
@@ -6600,7 +6799,8 @@
       "throws": "Right",
       "hometown": "Miami, FL",
       "origin": "Draft (2023)",
-      "birthDate": "2005-06-02"
+      "birthDate": "2005-06-02",
+      "qualified": false
     },
     {
       "name": "Marco Luciano",
@@ -6633,7 +6833,8 @@
       "throws": "Right",
       "hometown": "San Francisco de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2001-09-10"
+      "birthDate": "2001-09-10",
+      "qualified": true
     },
     {
       "name": "Garrett Martin",
@@ -6666,7 +6867,8 @@
       "throws": "Right",
       "hometown": "Arlington, TX",
       "origin": "Draft (2023)",
-      "birthDate": "2000-06-28"
+      "birthDate": "2000-06-28",
+      "qualified": false
     },
     {
       "name": "Ernesto Martinez Jr.",
@@ -6699,7 +6901,8 @@
       "throws": "Left",
       "hometown": "Holguin, Cuba",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1999-06-20"
+      "birthDate": "1999-06-20",
+      "qualified": true
     },
     {
       "name": "Jonathan Ornelas",
@@ -6732,7 +6935,8 @@
       "throws": "Right",
       "hometown": "Glendale, AZ",
       "origin": "Draft (2018)",
-      "birthDate": "2000-05-26"
+      "birthDate": "2000-05-26",
+      "qualified": false
     },
     {
       "name": "Miguel Palma",
@@ -6765,7 +6969,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-01-04"
+      "birthDate": "2002-01-04",
+      "qualified": false
     },
     {
       "name": "Duncan Pastore",
@@ -6798,7 +7003,8 @@
       "throws": "Right",
       "hometown": "Tampa, FL",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2000-05-27"
+      "birthDate": "2000-05-27",
+      "qualified": false
     },
     {
       "name": "Ali S\u00e1nchez",
@@ -6831,7 +7037,8 @@
       "throws": "Right",
       "hometown": "Carora, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "1997-01-20"
+      "birthDate": "1997-01-20",
+      "qualified": false
     },
     {
       "name": "Max Schuemann",
@@ -6864,7 +7071,8 @@
       "throws": "Right",
       "hometown": "Kalamazoo, MI",
       "origin": "Draft (2018)",
-      "birthDate": "1997-06-11"
+      "birthDate": "1997-06-11",
+      "qualified": false
     },
     {
       "name": "Braden Shewmake",
@@ -6897,7 +7105,8 @@
       "throws": "Right",
       "hometown": "Wylie, TX",
       "origin": "Draft (2019)",
-      "birthDate": "1997-11-19"
+      "birthDate": "1997-11-19",
+      "qualified": false
     },
     {
       "name": "Anthony Volpe",
@@ -6930,7 +7139,8 @@
       "throws": "Right",
       "hometown": "New York, NY",
       "origin": "Draft (2019)",
-      "birthDate": "2001-04-28"
+      "birthDate": "2001-04-28",
+      "qualified": false
     },
     {
       "name": "Austin Wells",
@@ -6963,7 +7173,8 @@
       "throws": "Right",
       "hometown": "Scottsdale, AZ",
       "origin": "Draft (2020)",
-      "birthDate": "1999-07-12"
+      "birthDate": "1999-07-12",
+      "qualified": false
     },
     {
       "name": "Omar Alfonzo",
@@ -6996,7 +7207,8 @@
       "throws": "Right",
       "hometown": "Minneapolis, MN",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-08-03"
+      "birthDate": "2003-08-03",
+      "qualified": false
     },
     {
       "name": "Roderick Arias",
@@ -7029,7 +7241,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-09-09"
+      "birthDate": "2004-09-09",
+      "qualified": true
     },
     {
       "name": "Jace Avina",
@@ -7062,7 +7275,8 @@
       "throws": "Right",
       "hometown": "Reno, NV",
       "origin": "Draft (2021)",
-      "birthDate": "2003-06-06"
+      "birthDate": "2003-06-06",
+      "qualified": true
     },
     {
       "name": "Jackson Castillo",
@@ -7095,7 +7309,8 @@
       "throws": "Left",
       "hometown": "Murrieta, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2003-05-02"
+      "birthDate": "2003-05-02",
+      "qualified": true
     },
     {
       "name": "John Cristino",
@@ -7128,7 +7343,8 @@
       "throws": "Right",
       "hometown": "Voorhees, NJ",
       "origin": "Draft (2023)",
-      "birthDate": "1999-12-08"
+      "birthDate": "1999-12-08",
+      "qualified": false
     },
     {
       "name": "Luis Durango",
@@ -7161,7 +7377,8 @@
       "throws": "Left",
       "hometown": "Panama City, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-04-08"
+      "birthDate": "2003-04-08",
+      "qualified": false
     },
     {
       "name": "Tomas Frick",
@@ -7194,7 +7411,8 @@
       "throws": "Right",
       "hometown": "Greenville, SC",
       "origin": "Draft (2023)",
-      "birthDate": "2000-10-11"
+      "birthDate": "2000-10-11",
+      "qualified": false
     },
     {
       "name": "DJ Gladney",
@@ -7227,7 +7445,8 @@
       "throws": "Right",
       "hometown": "Oak Park, IL",
       "origin": "Draft (2019)",
-      "birthDate": "2001-07-14"
+      "birthDate": "2001-07-14",
+      "qualified": true
     },
     {
       "name": "Santiago Gomez",
@@ -7260,7 +7479,8 @@
       "throws": "Right",
       "hometown": "Ciudad de Mexico, DF, MEX",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-04-05"
+      "birthDate": "2004-04-05",
+      "qualified": false
     },
     {
       "name": "Trent Grisham",
@@ -7293,7 +7513,8 @@
       "throws": "Left",
       "hometown": "Burleson, TX",
       "origin": "Draft (2015)",
-      "birthDate": "1996-11-01"
+      "birthDate": "1996-11-01",
+      "qualified": false
     },
     {
       "name": "Core Jackson",
@@ -7326,7 +7547,8 @@
       "throws": "Right",
       "hometown": "Sarnia, ON, Canada",
       "origin": "Draft (2025)",
-      "birthDate": "2003-10-11"
+      "birthDate": "2003-10-11",
+      "qualified": false
     },
     {
       "name": "Connor McGinnis",
@@ -7359,7 +7581,8 @@
       "throws": "Right",
       "hometown": "Frisco, TX",
       "origin": "Draft (2025)",
-      "birthDate": "2002-12-09"
+      "birthDate": "2002-12-09",
+      "qualified": false
     },
     {
       "name": "Coby Morales",
@@ -7392,7 +7615,8 @@
       "throws": "Right",
       "hometown": "Downey, CA",
       "origin": "Draft (2023)",
-      "birthDate": "2001-12-05"
+      "birthDate": "2001-12-05",
+      "qualified": true
     },
     {
       "name": "Josh Moylan",
@@ -7425,7 +7649,8 @@
       "throws": "Right",
       "hometown": "Baltimore, MD",
       "origin": "Draft (2023)",
-      "birthDate": "2002-07-03"
+      "birthDate": "2002-07-03",
+      "qualified": true
     },
     {
       "name": "Manuel Palencia",
@@ -7458,7 +7683,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-09-05"
+      "birthDate": "2002-09-05",
+      "qualified": false
     },
     {
       "name": "Nicholas Torres",
@@ -7491,7 +7717,8 @@
       "throws": "Right",
       "hometown": "Long Beach, CA",
       "origin": "Draft (2014)",
-      "birthDate": "1993-06-30"
+      "birthDate": "1993-06-30",
+      "qualified": false
     },
     {
       "name": "Kevin Verde",
@@ -7524,7 +7751,8 @@
       "throws": "Right",
       "hometown": "Carora, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-12-12"
+      "birthDate": "2005-12-12",
+      "qualified": false
     },
     {
       "name": "Robbie Burnett",
@@ -7557,7 +7785,8 @@
       "throws": "Right",
       "hometown": "Raleigh, NC",
       "origin": "Draft (2025)",
-      "birthDate": "2002-12-01"
+      "birthDate": "2002-12-01",
+      "qualified": false
     },
     {
       "name": "Eric Genther",
@@ -7590,7 +7819,8 @@
       "throws": "Right",
       "hometown": "Drexel Hill, PA",
       "origin": "Draft (2025)",
-      "birthDate": "2002-06-16"
+      "birthDate": "2002-06-16",
+      "qualified": true
     },
     {
       "name": "Josue Gonzalez",
@@ -7623,7 +7853,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-10-30"
+      "birthDate": "2003-10-30",
+      "qualified": false
     },
     {
       "name": "Diomedes Hernandez",
@@ -7656,7 +7887,8 @@
       "throws": "Right",
       "hometown": "Cabimas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-02-06"
+      "birthDate": "2005-02-06",
+      "qualified": false
     },
     {
       "name": "Kaeden Kent",
@@ -7689,7 +7921,8 @@
       "throws": "Right",
       "hometown": "Austin, TX",
       "origin": "Draft (2025)",
-      "birthDate": "2003-08-29"
+      "birthDate": "2003-08-29",
+      "qualified": false
     },
     {
       "name": "Gabriel Lara",
@@ -7722,7 +7955,8 @@
       "throws": "Left",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-11-27"
+      "birthDate": "2005-11-27",
+      "qualified": false
     },
     {
       "name": "Jackson Lovich",
@@ -7755,7 +7989,8 @@
       "throws": "Right",
       "hometown": "Overland Park, KS",
       "origin": "Draft (2025)",
-      "birthDate": "2003-11-18"
+      "birthDate": "2003-11-18",
+      "qualified": true
     },
     {
       "name": "Bryce Martin-Grudzielanek",
@@ -7788,7 +8023,8 @@
       "throws": "Right",
       "hometown": "Los Angeles, CA",
       "origin": "Draft (2025)",
-      "birthDate": "2003-06-04"
+      "birthDate": "2003-06-04",
+      "qualified": true
     },
     {
       "name": "David McCann",
@@ -7821,7 +8057,8 @@
       "throws": "Right",
       "hometown": "Bridgeport, CT",
       "origin": "Draft (2025)",
-      "birthDate": "2004-03-18"
+      "birthDate": "2004-03-18",
+      "qualified": false
     },
     {
       "name": "Hans Montero",
@@ -7854,7 +8091,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2003-12-25"
+      "birthDate": "2003-12-25",
+      "qualified": true
     },
     {
       "name": "Willy Montero",
@@ -7887,7 +8125,8 @@
       "throws": "Right",
       "hometown": "La Romana, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-08-04"
+      "birthDate": "2004-08-04",
+      "qualified": false
     },
     {
       "name": "Maika Niu",
@@ -7920,7 +8159,8 @@
       "throws": "Right",
       "hometown": "Harrisburg, PA",
       "origin": "Draft (2026)",
-      "birthDate": "2004-01-09"
+      "birthDate": "2004-01-09",
+      "qualified": false
     },
     {
       "name": "Wilson Rodriguez",
@@ -7953,7 +8193,8 @@
       "throws": "Left",
       "hometown": "San Juan, Puerto Rico",
       "origin": "Draft (2023)",
-      "birthDate": "2004-09-10"
+      "birthDate": "2004-09-10",
+      "qualified": false
     },
     {
       "name": "Enmanuel Tejeda",
@@ -7986,7 +8227,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, DOM",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-12-25"
+      "birthDate": "2004-12-25",
+      "qualified": true
     },
     {
       "name": "Dean Toigo",
@@ -8019,7 +8261,8 @@
       "throws": "Right",
       "hometown": "Newport Beach, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2002-09-04"
+      "birthDate": "2002-09-04",
+      "qualified": false
     },
     {
       "name": "Camden Troyer",
@@ -8052,7 +8295,8 @@
       "throws": "Left",
       "hometown": "Dover, DE",
       "origin": "Draft (2025)",
-      "birthDate": "2002-08-03"
+      "birthDate": "2002-08-03",
+      "qualified": false
     },
     {
       "name": "Kyle West",
@@ -8085,7 +8329,8 @@
       "throws": "Right",
       "hometown": "Martinsburg, WV",
       "origin": "Draft (2025)",
-      "birthDate": "2002-11-02"
+      "birthDate": "2002-11-02",
+      "qualified": true
     },
     {
       "name": "Tyler Wilson",
@@ -8118,7 +8363,8 @@
       "throws": "Right",
       "hometown": "Tainan, Taiwan",
       "origin": "Draft (2024)",
-      "birthDate": "2002-07-10"
+      "birthDate": "2002-07-10",
+      "qualified": false
     },
     {
       "name": "Isael Arias",
@@ -8151,7 +8397,8 @@
       "throws": "Right",
       "hometown": "Mazatlan, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-08-11"
+      "birthDate": "2005-08-11",
+      "qualified": false
     },
     {
       "name": "Tyce Armstrong",
@@ -8184,7 +8431,8 @@
       "throws": "Right",
       "hometown": "The Woodlands, TX",
       "origin": "Draft (2026)",
-      "birthDate": "2003-07-03"
+      "birthDate": "2003-07-03",
+      "qualified": false
     },
     {
       "name": "Gregory Bozzo",
@@ -8217,29 +8465,30 @@
       "throws": "Right",
       "hometown": "Morristown, NJ",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2002-04-11"
+      "birthDate": "2002-04-11",
+      "qualified": false
     },
     {
       "name": "Diego Castellanos",
       "mlbId": 824425,
       "pos": "OF",
       "level": "all",
-      "ab": 44,
-      "pa": 50,
-      "avg": 0.273,
-      "obp": 0.36,
-      "slg": 0.432,
-      "ops": 0.792,
+      "ab": 48,
+      "pa": 54,
+      "avg": 0.292,
+      "obp": 0.37,
+      "slg": 0.438,
+      "ops": 0.808,
       "hr": 2,
       "rbi": 6,
       "sb": 1,
-      "bbp": 10.0,
-      "kp": 14.0,
-      "kbb": 4.0,
-      "iso": 0.159,
-      "xbhp": 25.0,
-      "babip": 0.286,
-      "woba": 0.353,
+      "bbp": 9.3,
+      "kp": 14.8,
+      "kbb": 5.5,
+      "iso": 0.146,
+      "xbhp": 21.4,
+      "babip": 0.316,
+      "woba": 0.36,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8250,7 +8499,8 @@
       "throws": "Left",
       "hometown": "San Jose, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2005-01-26"
+      "birthDate": "2005-01-26",
+      "qualified": false
     },
     {
       "name": "Blake Cyr",
@@ -8283,7 +8533,8 @@
       "throws": "Right",
       "hometown": "Orlando, FL",
       "origin": "Draft (2026)",
-      "birthDate": "2003-11-06"
+      "birthDate": "2003-11-06",
+      "qualified": false
     },
     {
       "name": "Wilberson De Pena",
@@ -8316,29 +8567,30 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-11-10"
+      "birthDate": "2006-11-10",
+      "qualified": false
     },
     {
       "name": "Luis Escudero",
       "mlbId": 806884,
       "pos": "2B",
       "level": "all",
-      "ab": 150,
-      "pa": 197,
-      "avg": 0.28,
-      "obp": 0.447,
-      "slg": 0.533,
-      "ops": 0.98,
+      "ab": 152,
+      "pa": 201,
+      "avg": 0.276,
+      "obp": 0.448,
+      "slg": 0.526,
+      "ops": 0.974,
       "hr": 10,
       "rbi": 27,
-      "sb": 14,
-      "bbp": 21.8,
-      "kp": 18.8,
+      "sb": 15,
+      "bbp": 21.9,
+      "kp": 18.9,
       "kbb": -3.0,
-      "iso": 0.253,
+      "iso": 0.25,
       "xbhp": 42.9,
-      "babip": 0.308,
-      "woba": 0.428,
+      "babip": 0.305,
+      "woba": 0.427,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8349,7 +8601,8 @@
       "throws": "Right",
       "hometown": "Aguadulce, Panama",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-02-09"
+      "birthDate": "2006-02-09",
+      "qualified": false
     },
     {
       "name": "Austin Green",
@@ -8382,29 +8635,30 @@
       "throws": "Right",
       "hometown": "Diana, TX",
       "origin": "Draft (2024)",
-      "birthDate": "2002-05-20"
+      "birthDate": "2002-05-20",
+      "qualified": false
     },
     {
       "name": "Paul Gutierrez-Contreras II",
       "mlbId": 827290,
       "pos": "OF",
       "level": "all",
-      "ab": 38,
-      "pa": 46,
-      "avg": 0.263,
-      "obp": 0.37,
-      "slg": 0.342,
-      "ops": 0.712,
+      "ab": 43,
+      "pa": 51,
+      "avg": 0.233,
+      "obp": 0.333,
+      "slg": 0.302,
+      "ops": 0.635,
       "hr": 0,
       "rbi": 6,
       "sb": 3,
-      "bbp": 13.0,
-      "kp": 13.0,
+      "bbp": 11.8,
+      "kp": 11.8,
       "kbb": 0.0,
-      "iso": 0.079,
+      "iso": 0.069,
       "xbhp": 20.0,
-      "babip": 0.303,
-      "woba": 0.323,
+      "babip": 0.263,
+      "woba": 0.291,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8415,29 +8669,30 @@
       "throws": "Right",
       "hometown": "Turlock, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2005-08-05"
+      "birthDate": "2005-08-05",
+      "qualified": false
     },
     {
       "name": "Bear Harrison",
       "mlbId": 824424,
       "pos": "C",
       "level": "all",
-      "ab": 42,
-      "pa": 53,
-      "avg": 0.167,
-      "obp": 0.34,
-      "slg": 0.238,
-      "ops": 0.578,
+      "ab": 46,
+      "pa": 57,
+      "avg": 0.152,
+      "obp": 0.316,
+      "slg": 0.217,
+      "ops": 0.533,
       "hr": 0,
       "rbi": 4,
       "sb": 0,
-      "bbp": 17.0,
-      "kp": 20.8,
-      "kbb": 3.8,
-      "iso": 0.071,
+      "bbp": 15.8,
+      "kp": 21.1,
+      "kbb": 5.3,
+      "iso": 0.065,
       "xbhp": 28.6,
-      "babip": 0.226,
-      "woba": 0.283,
+      "babip": 0.206,
+      "woba": 0.263,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8448,7 +8703,8 @@
       "throws": "Right",
       "hometown": "Irvine, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2005-01-17"
+      "birthDate": "2005-01-17",
+      "qualified": false
     },
     {
       "name": "Bayram Hot",
@@ -8481,7 +8737,8 @@
       "throws": "Right",
       "hometown": "New York, NY",
       "origin": "Draft (2026)",
-      "birthDate": "2004-02-16"
+      "birthDate": "2004-02-16",
+      "qualified": false
     },
     {
       "name": "JoJo Jackson",
@@ -8514,29 +8771,30 @@
       "throws": "Left",
       "hometown": "Stone Mountain, GA",
       "origin": "Draft (2024)",
-      "birthDate": "2002-10-06"
+      "birthDate": "2002-10-06",
+      "qualified": false
     },
     {
       "name": "Dax Kilby",
       "mlbId": 828076,
       "pos": "SS",
       "level": "all",
-      "ab": 92,
-      "pa": 115,
-      "avg": 0.261,
-      "obp": 0.409,
-      "slg": 0.402,
+      "ab": 94,
+      "pa": 120,
+      "avg": 0.255,
+      "obp": 0.417,
+      "slg": 0.394,
       "ops": 0.811,
       "hr": 2,
-      "rbi": 20,
+      "rbi": 21,
       "sb": 7,
-      "bbp": 20.0,
-      "kp": 22.6,
-      "kbb": 2.6,
-      "iso": 0.141,
+      "bbp": 21.7,
+      "kp": 21.7,
+      "kbb": 0.0,
+      "iso": 0.139,
       "xbhp": 29.2,
-      "babip": 0.344,
-      "woba": 0.367,
+      "babip": 0.333,
+      "woba": 0.369,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8547,7 +8805,8 @@
       "throws": "Right",
       "hometown": "Newnan, GA",
       "origin": "Draft (2025)",
-      "birthDate": "2006-11-17"
+      "birthDate": "2006-11-17",
+      "qualified": false
     },
     {
       "name": "Logan Maxwell",
@@ -8580,29 +8839,30 @@
       "throws": "Left",
       "hometown": "Columbus, OH",
       "origin": "Draft (2025)",
-      "birthDate": "2002-10-24"
+      "birthDate": "2002-10-24",
+      "qualified": false
     },
     {
       "name": "Brando Mayea",
       "mlbId": 806963,
       "pos": "CF",
       "level": "all",
-      "ab": 260,
-      "pa": 291,
+      "ab": 264,
+      "pa": 295,
       "avg": 0.269,
-      "obp": 0.347,
-      "slg": 0.396,
-      "ops": 0.743,
+      "obp": 0.346,
+      "slg": 0.394,
+      "ops": 0.74,
       "hr": 8,
-      "rbi": 35,
+      "rbi": 37,
       "sb": 10,
-      "bbp": 8.6,
-      "kp": 25.4,
-      "kbb": 16.8,
-      "iso": 0.127,
-      "xbhp": 24.3,
-      "babip": 0.348,
-      "woba": 0.333,
+      "bbp": 8.5,
+      "kp": 25.8,
+      "kbb": 17.3,
+      "iso": 0.125,
+      "xbhp": 23.9,
+      "babip": 0.35,
+      "woba": 0.331,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8613,29 +8873,30 @@
       "throws": "Right",
       "hometown": "Havana, Cuba",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-09-12"
+      "birthDate": "2005-09-12",
+      "qualified": false
     },
     {
       "name": "Yostin Pena",
       "mlbId": 829769,
       "pos": "OF",
       "level": "all",
-      "ab": 202,
-      "pa": 236,
-      "avg": 0.366,
+      "ab": 207,
+      "pa": 241,
+      "avg": 0.367,
       "obp": 0.432,
-      "slg": 0.609,
-      "ops": 1.041,
-      "hr": 10,
-      "rbi": 70,
+      "slg": 0.633,
+      "ops": 1.065,
+      "hr": 12,
+      "rbi": 76,
       "sb": 31,
-      "bbp": 10.6,
-      "kp": 14.8,
-      "kbb": 4.2,
-      "iso": 0.243,
-      "xbhp": 33.8,
-      "babip": 0.393,
-      "woba": 0.441,
+      "bbp": 10.4,
+      "kp": 14.9,
+      "kbb": 4.5,
+      "iso": 0.266,
+      "xbhp": 35.5,
+      "babip": 0.388,
+      "woba": 0.45,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8646,29 +8907,30 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-10-19"
+      "birthDate": "2007-10-19",
+      "qualified": false
     },
     {
       "name": "Anthony Potestio",
       "mlbId": 835219,
       "pos": "2B",
       "level": "all",
-      "ab": 29,
-      "pa": 43,
-      "avg": 0.414,
-      "obp": 0.581,
-      "slg": 0.793,
-      "ops": 1.374,
+      "ab": 32,
+      "pa": 47,
+      "avg": 0.406,
+      "obp": 0.574,
+      "slg": 0.75,
+      "ops": 1.324,
       "hr": 2,
       "rbi": 11,
       "sb": 3,
-      "bbp": 25.6,
-      "kp": 9.3,
-      "kbb": -16.3,
-      "iso": 0.379,
-      "xbhp": 50.0,
-      "babip": 0.417,
-      "woba": 0.558,
+      "bbp": 25.5,
+      "kp": 8.5,
+      "kbb": -17.0,
+      "iso": 0.344,
+      "xbhp": 46.2,
+      "babip": 0.407,
+      "woba": 0.544,
       "maxev": null,
       "barrelp": null,
       "gbp": null,
@@ -8679,7 +8941,8 @@
       "throws": "Right",
       "hometown": "Castro Valley, CA",
       "origin": "Draft (2026)",
-      "birthDate": "2004-11-05"
+      "birthDate": "2004-11-05",
+      "qualified": false
     },
     {
       "name": "Luis Puello",
@@ -8712,7 +8975,8 @@
       "throws": "Right",
       "hometown": "Sucre, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-01-22"
+      "birthDate": "2006-01-22",
+      "qualified": false
     },
     {
       "name": "Christofer Reyes",
@@ -8745,7 +9009,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-08-23"
+      "birthDate": "2007-08-23",
+      "qualified": false
     },
     {
       "name": "Ediel Rivera",
@@ -8778,7 +9043,8 @@
       "throws": "Right",
       "hometown": "Ponce, Puerto Rico",
       "origin": "Draft (2024)",
-      "birthDate": "2005-09-23"
+      "birthDate": "2005-09-23",
+      "qualified": false
     },
     {
       "name": "Engelth Urena",
@@ -8811,7 +9077,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2004-08-17"
+      "birthDate": "2004-08-17",
+      "qualified": false
     },
     {
       "name": "Justin Capellan",
@@ -8844,7 +9111,8 @@
       "throws": "Right",
       "hometown": "Bonao, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-07-18"
+      "birthDate": "2006-07-18",
+      "qualified": false
     },
     {
       "name": "Jose Castro",
@@ -8877,7 +9145,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2005-10-04"
+      "birthDate": "2005-10-04",
+      "qualified": false
     },
     {
       "name": "Leni Done",
@@ -8910,7 +9179,8 @@
       "throws": "Right",
       "hometown": "San Cristobal, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-06-05"
+      "birthDate": "2007-06-05",
+      "qualified": false
     },
     {
       "name": "Diego Flores",
@@ -8943,7 +9213,8 @@
       "throws": "Right",
       "hometown": "Maracay, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-03-10"
+      "birthDate": "2007-03-10",
+      "qualified": false
     },
     {
       "name": "Richard Matic",
@@ -8976,7 +9247,8 @@
       "throws": "Right",
       "hometown": "La Romana, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-07-26"
+      "birthDate": "2007-07-26",
+      "qualified": false
     },
     {
       "name": "Estivenzon Montero",
@@ -9009,7 +9281,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-09"
+      "birthDate": "2006-10-09",
+      "qualified": false
     },
     {
       "name": "Dexters Peralta",
@@ -9042,7 +9315,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-07-11"
+      "birthDate": "2007-07-11",
+      "qualified": false
     },
     {
       "name": "Queni Pineda",
@@ -9075,7 +9349,8 @@
       "throws": "Right",
       "hometown": "Azua, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-05-29"
+      "birthDate": "2007-05-29",
+      "qualified": false
     },
     {
       "name": "Carlos Rondon",
@@ -9108,7 +9383,8 @@
       "throws": "Right",
       "hometown": "El Limon, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-02-16"
+      "birthDate": "2006-02-16",
+      "qualified": false
     },
     {
       "name": "Francisco Vilorio",
@@ -9141,7 +9417,8 @@
       "throws": "Right",
       "hometown": "Hato Mayor del Rey, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-31"
+      "birthDate": "2006-10-31",
+      "qualified": false
     },
     {
       "name": "Eliezer Adames",
@@ -9174,7 +9451,8 @@
       "throws": "Right",
       "hometown": "Peravia, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-16"
+      "birthDate": "2007-09-16",
+      "qualified": false
     },
     {
       "name": "Carlos Bello",
@@ -9207,7 +9485,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-12-19"
+      "birthDate": "2007-12-19",
+      "qualified": false
     },
     {
       "name": "Germayhoni Beltre",
@@ -9240,7 +9519,8 @@
       "throws": "Right",
       "hometown": "Azua, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-01-08"
+      "birthDate": "2009-01-08",
+      "qualified": false
     },
     {
       "name": "David Carrera",
@@ -9273,7 +9553,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-09-07"
+      "birthDate": "2006-09-07",
+      "qualified": false
     },
     {
       "name": "Ruben Castillo",
@@ -9306,7 +9587,8 @@
       "throws": "Left",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-04"
+      "birthDate": "2008-01-04",
+      "qualified": false
     },
     {
       "name": "Mani Cedeno",
@@ -9339,7 +9621,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-14"
+      "birthDate": "2008-08-14",
+      "qualified": false
     },
     {
       "name": "Eddison Charles",
@@ -9372,7 +9655,8 @@
       "throws": "Right",
       "hometown": "Guerra, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-09"
+      "birthDate": "2008-01-09",
+      "qualified": false
     },
     {
       "name": "Alfred Ciriaco",
@@ -9405,7 +9689,8 @@
       "throws": "Right",
       "hometown": "Puerto Plata, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-10-05"
+      "birthDate": "2006-10-05",
+      "qualified": false
     },
     {
       "name": "Adrian Feliz",
@@ -9438,7 +9723,8 @@
       "throws": "Right",
       "hometown": "San Pedro de Macoris, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-02"
+      "birthDate": "2008-08-02",
+      "qualified": false
     },
     {
       "name": "Jesus Guerrero",
@@ -9471,7 +9757,8 @@
       "throws": "Right",
       "hometown": "Los Mochis, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-05-21"
+      "birthDate": "2007-05-21",
+      "qualified": false
     },
     {
       "name": "Edgar Jimenez",
@@ -9504,7 +9791,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-11-03"
+      "birthDate": "2006-11-03",
+      "qualified": false
     },
     {
       "name": "Alfiery Matos",
@@ -9537,7 +9825,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-10"
+      "birthDate": "2007-09-10",
+      "qualified": false
     },
     {
       "name": "Kenneth Melendez",
@@ -9570,7 +9859,8 @@
       "throws": "Right",
       "hometown": "Valencia, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-08-31"
+      "birthDate": "2009-08-31",
+      "qualified": false
     },
     {
       "name": "Richard Meran",
@@ -9603,7 +9893,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2006-06-25"
+      "birthDate": "2006-06-25",
+      "qualified": false
     },
     {
       "name": "Poly Ojeda",
@@ -9636,7 +9927,8 @@
       "throws": "Right",
       "hometown": "Caracas, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-11-11"
+      "birthDate": "2008-11-11",
+      "qualified": false
     },
     {
       "name": "Sebastian Pinto",
@@ -9669,7 +9961,8 @@
       "throws": "Right",
       "hometown": "Barquisimeto, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-12-11"
+      "birthDate": "2007-12-11",
+      "qualified": false
     },
     {
       "name": "Stalen Ramirez",
@@ -9702,7 +9995,8 @@
       "throws": "Right",
       "hometown": "Araure, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-17"
+      "birthDate": "2008-08-17",
+      "qualified": false
     },
     {
       "name": "Alessandro Rodriguez",
@@ -9735,7 +10029,8 @@
       "throws": "Right",
       "hometown": "Maracay, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-08-10"
+      "birthDate": "2008-08-10",
+      "qualified": false
     },
     {
       "name": "John Rosillo",
@@ -9768,7 +10063,8 @@
       "throws": "Right",
       "hometown": "Maracaibo, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-01-06"
+      "birthDate": "2008-01-06",
+      "qualified": false
     },
     {
       "name": "Dariel Santana",
@@ -9801,7 +10097,8 @@
       "throws": "Right",
       "hometown": "Bani, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-05-29"
+      "birthDate": "2008-05-29",
+      "qualified": false
     },
     {
       "name": "Manuel Aguilar",
@@ -9834,7 +10131,8 @@
       "throws": "Right",
       "hometown": "Poza Rica de Hidalgo, VE, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-08-01"
+      "birthDate": "2009-08-01",
+      "qualified": false
     },
     {
       "name": "Isaias Castillo",
@@ -9867,7 +10165,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-06-15"
+      "birthDate": "2008-06-15",
+      "qualified": false
     },
     {
       "name": "Luis Cruz",
@@ -9900,7 +10199,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-06-09"
+      "birthDate": "2008-06-09",
+      "qualified": false
     },
     {
       "name": "Kendry Diaz",
@@ -9933,7 +10233,8 @@
       "throws": "Left",
       "hometown": "Invivienda, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-12-07"
+      "birthDate": "2008-12-07",
+      "qualified": false
     },
     {
       "name": "Jose Lavagnino",
@@ -9966,7 +10267,8 @@
       "throws": "Right",
       "hometown": "Guasave, SI, Mexico",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-06-21"
+      "birthDate": "2007-06-21",
+      "qualified": false
     },
     {
       "name": "Cesar Lopez",
@@ -9999,7 +10301,8 @@
       "throws": "Right",
       "hometown": "Coro, Venezuela",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-01-22"
+      "birthDate": "2009-01-22",
+      "qualified": false
     },
     {
       "name": "Stiven Marinez",
@@ -10032,7 +10335,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-08-20"
+      "birthDate": "2007-08-20",
+      "qualified": false
     },
     {
       "name": "Juan Martinez",
@@ -10065,7 +10369,8 @@
       "throws": "Right",
       "hometown": "Sincelejo, Colombia",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-05-06"
+      "birthDate": "2008-05-06",
+      "qualified": false
     },
     {
       "name": "Emmanuel Orozco",
@@ -10098,7 +10403,8 @@
       "throws": "Right",
       "hometown": "Barranquilla, Colombia",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2008-07-27"
+      "birthDate": "2008-07-27",
+      "qualified": false
     },
     {
       "name": "Jose Peralta",
@@ -10131,7 +10437,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-10-10"
+      "birthDate": "2007-10-10",
+      "qualified": false
     },
     {
       "name": "Abrahan Pichardo",
@@ -10164,7 +10471,8 @@
       "throws": "Right",
       "hometown": "Santo Domingo, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2009-03-17"
+      "birthDate": "2009-03-17",
+      "qualified": false
     },
     {
       "name": "Juan Torres",
@@ -10197,7 +10505,8 @@
       "throws": "Right",
       "hometown": "Jimani, Dominican Republic",
       "origin": "International Free Agent (IFA)",
-      "birthDate": "2007-09-27"
+      "birthDate": "2007-09-27",
+      "qualified": false
     }
   ],
   "pitchers": [
@@ -10217,6 +10526,7 @@
       "bbp": 7.7,
       "kbb": 19.9,
       "fip": 4.22,
+      "qualified": true,
       "age": 27,
       "heightWeight": "6' 2\" / 218 lbs",
       "bats": "Right",
@@ -10241,6 +10551,7 @@
       "bbp": 8.0,
       "kbb": 28.0,
       "fip": 4.53,
+      "qualified": false,
       "age": 30,
       "heightWeight": "6' 3\" / 215 lbs",
       "bats": "Right",
@@ -10265,6 +10576,7 @@
       "bbp": 19.0,
       "kbb": 6.3,
       "fip": 5.38,
+      "qualified": false,
       "age": 27,
       "heightWeight": "5' 11\" / 236 lbs",
       "bats": "Left",
@@ -10289,6 +10601,7 @@
       "bbp": 10.8,
       "kbb": 9.2,
       "fip": 7.84,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Left",
@@ -10313,6 +10626,7 @@
       "bbp": 5.4,
       "kbb": 23.2,
       "fip": 3.73,
+      "qualified": false,
       "age": 27,
       "heightWeight": "5' 10\" / 234 lbs",
       "bats": "Right",
@@ -10337,6 +10651,7 @@
       "bbp": 6.0,
       "kbb": 22.4,
       "fip": 3.84,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 2\" / 185 lbs",
       "bats": "Right",
@@ -10361,6 +10676,7 @@
       "bbp": 20.0,
       "kbb": 5.0,
       "fip": 9.15,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 0\" / 211 lbs",
       "bats": "Right",
@@ -10385,6 +10701,7 @@
       "bbp": 4.5,
       "kbb": 22.8,
       "fip": 2.71,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 4\" / 220 lbs",
       "bats": "Right",
@@ -10409,6 +10726,7 @@
       "bbp": 12.2,
       "kbb": 10.0,
       "fip": 5.38,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 190 lbs",
       "bats": "Right",
@@ -10433,6 +10751,7 @@
       "bbp": 21.3,
       "kbb": 6.4,
       "fip": 6.16,
+      "qualified": false,
       "age": 29,
       "heightWeight": "6' 5\" / 235 lbs",
       "bats": "Right",
@@ -10457,6 +10776,7 @@
       "bbp": 13.9,
       "kbb": 9.5,
       "fip": 5.79,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 180 lbs",
       "bats": "Right",
@@ -10481,6 +10801,7 @@
       "bbp": 8.9,
       "kbb": 24.2,
       "fip": 4.26,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 0\" / 180 lbs",
       "bats": "Right",
@@ -10505,6 +10826,7 @@
       "bbp": 6.5,
       "kbb": 19.1,
       "fip": 3.95,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -10529,6 +10851,7 @@
       "bbp": 0.0,
       "kbb": 21.4,
       "fip": 6.73,
+      "qualified": false,
       "age": 32,
       "heightWeight": "6' 4\" / 190 lbs",
       "bats": "Left",
@@ -10553,6 +10876,7 @@
       "bbp": 20.0,
       "kbb": 6.7,
       "fip": 6.65,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 3\" / 215 lbs",
       "bats": "Right",
@@ -10577,6 +10901,7 @@
       "bbp": 11.6,
       "kbb": 5.6,
       "fip": 7.1,
+      "qualified": true,
       "age": 27,
       "heightWeight": "6' 2\" / 206 lbs",
       "bats": "Right",
@@ -10601,6 +10926,7 @@
       "bbp": 11.4,
       "kbb": 17.6,
       "fip": 3.99,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 4\" / 210 lbs",
       "bats": "Right",
@@ -10625,6 +10951,7 @@
       "bbp": 15.0,
       "kbb": 15.0,
       "fip": 6.71,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -10649,6 +10976,7 @@
       "bbp": 5.5,
       "kbb": 16.4,
       "fip": 6.54,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 5\" / 210 lbs",
       "bats": "Right",
@@ -10673,6 +11001,7 @@
       "bbp": 14.4,
       "kbb": 5.1,
       "fip": 7.19,
+      "qualified": true,
       "age": 25,
       "heightWeight": "6' 5\" / 245 lbs",
       "bats": "Right",
@@ -10697,6 +11026,7 @@
       "bbp": 11.7,
       "kbb": 17.8,
       "fip": 5.68,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 7\" / 248 lbs",
       "bats": "Right",
@@ -10721,6 +11051,7 @@
       "bbp": 12.5,
       "kbb": 12.5,
       "fip": 4.7,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -10745,6 +11076,7 @@
       "bbp": 11.8,
       "kbb": 17.6,
       "fip": 10.4,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 6\" / 245 lbs",
       "bats": "Right",
@@ -10769,6 +11101,7 @@
       "bbp": 11.0,
       "kbb": 10.3,
       "fip": 5.55,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 6\" / 225 lbs",
       "bats": "Right",
@@ -10793,6 +11126,7 @@
       "bbp": 10.2,
       "kbb": 15.6,
       "fip": 4.96,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 0\" / 193 lbs",
       "bats": "Right",
@@ -10817,6 +11151,7 @@
       "bbp": 18.0,
       "kbb": 9.0,
       "fip": 8.09,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 188 lbs",
       "bats": "Right",
@@ -10841,6 +11176,7 @@
       "bbp": 30.8,
       "kbb": -15.4,
       "fip": 14.9,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 4\" / 235 lbs",
       "bats": "Left",
@@ -10865,6 +11201,7 @@
       "bbp": 10.0,
       "kbb": 10.0,
       "fip": 8.29,
+      "qualified": false,
       "age": 33,
       "heightWeight": "6' 2\" / 255 lbs",
       "bats": "Left",
@@ -10889,6 +11226,7 @@
       "bbp": 11.3,
       "kbb": 13.1,
       "fip": 4.61,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 4\" / 177 lbs",
       "bats": "Left",
@@ -10913,6 +11251,7 @@
       "bbp": 4.5,
       "kbb": 36.4,
       "fip": 5.26,
+      "qualified": false,
       "age": 31,
       "heightWeight": "6' 2\" / 210 lbs",
       "bats": "Right",
@@ -10937,6 +11276,7 @@
       "bbp": 7.7,
       "kbb": 7.7,
       "fip": 4.07,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 4\" / 200 lbs",
       "bats": "Right",
@@ -10961,6 +11301,7 @@
       "bbp": 10.6,
       "kbb": 16.0,
       "fip": 5.55,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 7\" / 230 lbs",
       "bats": "Right",
@@ -10985,6 +11326,7 @@
       "bbp": 10.2,
       "kbb": 13.1,
       "fip": 6.74,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 160 lbs",
       "bats": "Right",
@@ -11009,6 +11351,7 @@
       "bbp": 9.0,
       "kbb": 17.5,
       "fip": 5.44,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 0\" / 195 lbs",
       "bats": "Right",
@@ -11033,6 +11376,7 @@
       "bbp": 11.1,
       "kbb": 11.1,
       "fip": 4.36,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 5\" / 225 lbs",
       "bats": "Left",
@@ -11057,6 +11401,7 @@
       "bbp": 0.0,
       "kbb": 50.0,
       "fip": 1.52,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 1\" / 169 lbs",
       "bats": "Switch",
@@ -11081,6 +11426,7 @@
       "bbp": 9.2,
       "kbb": 24.4,
       "fip": 4.61,
+      "qualified": false,
       "age": 27,
       "heightWeight": "5' 11\" / 236 lbs",
       "bats": "Left",
@@ -11105,6 +11451,7 @@
       "bbp": 9.1,
       "kbb": 18.9,
       "fip": 4.97,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Left",
@@ -11129,6 +11476,7 @@
       "bbp": 8.1,
       "kbb": 19.7,
       "fip": 5.82,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 3\" / 209 lbs",
       "bats": "Right",
@@ -11153,6 +11501,7 @@
       "bbp": 8.5,
       "kbb": 8.5,
       "fip": 6.95,
+      "qualified": true,
       "age": 26,
       "heightWeight": "6' 1\" / 199 lbs",
       "bats": "Right",
@@ -11177,6 +11526,7 @@
       "bbp": 18.3,
       "kbb": 6.5,
       "fip": 6.98,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 0\" / 211 lbs",
       "bats": "Right",
@@ -11201,6 +11551,7 @@
       "bbp": 3.6,
       "kbb": 21.4,
       "fip": 5.92,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 4\" / 220 lbs",
       "bats": "Right",
@@ -11225,6 +11576,7 @@
       "bbp": 6.7,
       "kbb": 26.6,
       "fip": 6.17,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 180 lbs",
       "bats": "Right",
@@ -11249,6 +11601,7 @@
       "bbp": 20.0,
       "kbb": 0.0,
       "fip": 5.51,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 8\" / 247 lbs",
       "bats": "Right",
@@ -11273,6 +11626,7 @@
       "bbp": 5.0,
       "kbb": 11.0,
       "fip": 4.61,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 200 lbs",
       "bats": "Left",
@@ -11297,6 +11651,7 @@
       "bbp": 12.7,
       "kbb": 16.7,
       "fip": 7.11,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 0\" / 215 lbs",
       "bats": "Left",
@@ -11321,6 +11676,7 @@
       "bbp": 6.8,
       "kbb": 26.5,
       "fip": 3.48,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Left",
@@ -11345,6 +11701,7 @@
       "bbp": 10.0,
       "kbb": 7.5,
       "fip": 8.31,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 2\" / 206 lbs",
       "bats": "Right",
@@ -11369,6 +11726,7 @@
       "bbp": 16.9,
       "kbb": 2.0,
       "fip": 8.58,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -11393,6 +11751,7 @@
       "bbp": 11.8,
       "kbb": 13.7,
       "fip": 5.9,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 5\" / 255 lbs",
       "bats": "Right",
@@ -11417,6 +11776,7 @@
       "bbp": 3.6,
       "kbb": 27.1,
       "fip": 5.33,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 5\" / 210 lbs",
       "bats": "Right",
@@ -11441,6 +11801,7 @@
       "bbp": 18.5,
       "kbb": 11.6,
       "fip": 6.7,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 1\" / 215 lbs",
       "bats": "Right",
@@ -11465,6 +11826,7 @@
       "bbp": 0.0,
       "kbb": 20.0,
       "fip": 12.29,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -11489,6 +11851,7 @@
       "bbp": 7.7,
       "kbb": 3.8,
       "fip": 8.59,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 0\" / 185 lbs",
       "bats": "Right",
@@ -11513,6 +11876,7 @@
       "bbp": 11.8,
       "kbb": 25.8,
       "fip": 4.48,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 6\" / 245 lbs",
       "bats": "Right",
@@ -11537,6 +11901,7 @@
       "bbp": 20.7,
       "kbb": -6.9,
       "fip": 7.58,
+      "qualified": false,
       "age": 26,
       "heightWeight": "5' 9\" / 168 lbs",
       "bats": "Right",
@@ -11561,6 +11926,7 @@
       "bbp": 6.1,
       "kbb": 42.4,
       "fip": 3.29,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 188 lbs",
       "bats": "Right",
@@ -11585,6 +11951,7 @@
       "bbp": 12.3,
       "kbb": 22.0,
       "fip": 5.74,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 4\" / 235 lbs",
       "bats": "Left",
@@ -11609,6 +11976,7 @@
       "bbp": 2.8,
       "kbb": 38.9,
       "fip": 3.34,
+      "qualified": false,
       "age": 33,
       "heightWeight": "6' 2\" / 255 lbs",
       "bats": "Left",
@@ -11633,6 +12001,7 @@
       "bbp": 12.5,
       "kbb": 25.0,
       "fip": 10.79,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -11657,6 +12026,7 @@
       "bbp": 5.8,
       "kbb": 26.9,
       "fip": 4.32,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -11681,6 +12051,7 @@
       "bbp": 7.7,
       "kbb": 7.7,
       "fip": 4.42,
+      "qualified": false,
       "age": 22,
       "heightWeight": "5' 9\" / 210 lbs",
       "bats": "Right",
@@ -11705,6 +12076,7 @@
       "bbp": 13.6,
       "kbb": 13.7,
       "fip": 6.21,
+      "qualified": true,
       "age": 26,
       "heightWeight": "6' 1\" / 207 lbs",
       "bats": "Right",
@@ -11729,6 +12101,7 @@
       "bbp": 9.6,
       "kbb": 11.9,
       "fip": 6.86,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 0\" / 190 lbs",
       "bats": "Left",
@@ -11753,6 +12126,7 @@
       "bbp": 5.6,
       "kbb": 27.7,
       "fip": 5.71,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -11777,6 +12151,7 @@
       "bbp": 12.5,
       "kbb": 0.0,
       "fip": 24.79,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -11801,6 +12176,7 @@
       "bbp": 17.6,
       "kbb": 5.9,
       "fip": 7.04,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 0\" / 195 lbs",
       "bats": "Right",
@@ -11825,6 +12201,7 @@
       "bbp": 16.3,
       "kbb": 4.1,
       "fip": 5.14,
+      "qualified": false,
       "age": 25,
       "heightWeight": "5' 10\" / 155 lbs",
       "bats": "Right",
@@ -11849,6 +12226,7 @@
       "bbp": 10.5,
       "kbb": 23.8,
       "fip": 4.77,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 185 lbs",
       "bats": "Left",
@@ -11873,6 +12251,7 @@
       "bbp": 13.0,
       "kbb": 14.0,
       "fip": 5.01,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 5\" / 225 lbs",
       "bats": "Left",
@@ -11897,6 +12276,7 @@
       "bbp": 3.0,
       "kbb": 22.8,
       "fip": 3.3,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 209 lbs",
       "bats": "Right",
@@ -11921,6 +12301,7 @@
       "bbp": 0.0,
       "kbb": 21.1,
       "fip": 6.79,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 4\" / 220 lbs",
       "bats": "Right",
@@ -11945,6 +12326,7 @@
       "bbp": 10.5,
       "kbb": 9.0,
       "fip": 4.79,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -11969,6 +12351,7 @@
       "bbp": 10.2,
       "kbb": 16.3,
       "fip": 4.1,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 185 lbs",
       "bats": "Right",
@@ -11993,6 +12376,7 @@
       "bbp": 16.0,
       "kbb": 12.8,
       "fip": 4.65,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 0\" / 171 lbs",
       "bats": "Left",
@@ -12017,6 +12401,7 @@
       "bbp": 6.5,
       "kbb": 19.0,
       "fip": 4.25,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 3\" / 200 lbs",
       "bats": "Left",
@@ -12041,6 +12426,7 @@
       "bbp": 24.0,
       "kbb": -6.7,
       "fip": 6.52,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 4\" / 210 lbs",
       "bats": "Right",
@@ -12065,6 +12451,7 @@
       "bbp": 8.3,
       "kbb": 16.7,
       "fip": 2.79,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 3\" / 215 lbs",
       "bats": "Right",
@@ -12089,6 +12476,7 @@
       "bbp": 6.9,
       "kbb": 51.7,
       "fip": 0.53,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Left",
@@ -12113,6 +12501,7 @@
       "bbp": 8.3,
       "kbb": 14.6,
       "fip": 4.63,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -12137,6 +12526,7 @@
       "bbp": 12.6,
       "kbb": 12.6,
       "fip": 5.82,
+      "qualified": true,
       "age": 21,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Left",
@@ -12161,6 +12551,7 @@
       "bbp": 14.5,
       "kbb": 14.4,
       "fip": 4.79,
+      "qualified": false,
       "age": 24,
       "heightWeight": "5' 10\" / 180 lbs",
       "bats": "Right",
@@ -12185,6 +12576,7 @@
       "bbp": 11.5,
       "kbb": 14.7,
       "fip": 3.92,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 200 lbs",
       "bats": "Left",
@@ -12209,6 +12601,7 @@
       "bbp": 6.3,
       "kbb": 20.7,
       "fip": 4.88,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 7\" / 211 lbs",
       "bats": "Left",
@@ -12233,6 +12626,7 @@
       "bbp": 10.4,
       "kbb": 14.9,
       "fip": 3.46,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -12257,6 +12651,7 @@
       "bbp": 11.3,
       "kbb": 16.0,
       "fip": 5.24,
+      "qualified": true,
       "age": 21,
       "heightWeight": "6' 0\" / 185 lbs",
       "bats": "Right",
@@ -12281,6 +12676,7 @@
       "bbp": 40.0,
       "kbb": 0.0,
       "fip": 5.79,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -12305,6 +12701,7 @@
       "bbp": 13.4,
       "kbb": 6.1,
       "fip": 4.99,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 0\" / 210 lbs",
       "bats": "Right",
@@ -12329,6 +12726,7 @@
       "bbp": 10.4,
       "kbb": 22.0,
       "fip": 3.5,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 1\" / 160 lbs",
       "bats": "Right",
@@ -12353,6 +12751,7 @@
       "bbp": 6.2,
       "kbb": 18.8,
       "fip": 3.33,
+      "qualified": false,
       "age": 33,
       "heightWeight": "6' 2\" / 255 lbs",
       "bats": "Left",
@@ -12377,6 +12776,7 @@
       "bbp": 15.4,
       "kbb": 2.5,
       "fip": 6.29,
+      "qualified": false,
       "age": 22,
       "heightWeight": "5' 11\" / 160 lbs",
       "bats": "Right",
@@ -12401,6 +12801,7 @@
       "bbp": 0.0,
       "kbb": 28.6,
       "fip": 1.61,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -12425,6 +12826,7 @@
       "bbp": 7.4,
       "kbb": 30.8,
       "fip": 2.26,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -12449,6 +12851,7 @@
       "bbp": 13.6,
       "kbb": 26.6,
       "fip": 3.06,
+      "qualified": false,
       "age": 22,
       "heightWeight": "5' 9\" / 210 lbs",
       "bats": "Right",
@@ -12473,6 +12876,7 @@
       "bbp": 7.8,
       "kbb": 20.0,
       "fip": 3.87,
+      "qualified": true,
       "age": 22,
       "heightWeight": "5' 11\" / 162 lbs",
       "bats": "Right",
@@ -12497,6 +12901,7 @@
       "bbp": 8.4,
       "kbb": 12.1,
       "fip": 4.48,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 4\" / 208 lbs",
       "bats": "Right",
@@ -12521,6 +12926,7 @@
       "bbp": 10.0,
       "kbb": 10.0,
       "fip": 3.24,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -12545,6 +12951,7 @@
       "bbp": 25.0,
       "kbb": 2.8,
       "fip": 7.24,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -12569,6 +12976,7 @@
       "bbp": 7.1,
       "kbb": 37.5,
       "fip": 1.56,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 0\" / 195 lbs",
       "bats": "Right",
@@ -12593,6 +13001,7 @@
       "bbp": 6.7,
       "kbb": 30.0,
       "fip": 1.61,
+      "qualified": false,
       "age": 25,
       "heightWeight": "5' 10\" / 155 lbs",
       "bats": "Right",
@@ -12617,6 +13026,7 @@
       "bbp": 14.2,
       "kbb": 10.3,
       "fip": 5.74,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 8\" / 225 lbs",
       "bats": "Left",
@@ -12640,7 +13050,8 @@
       "kp": 15.8,
       "bbp": 16.8,
       "kbb": -1.0,
-      "fip": 6.66,
+      "fip": 6.67,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 177 lbs",
       "bats": "Right",
@@ -12664,7 +13075,8 @@
       "kp": 30.6,
       "bbp": 8.3,
       "kbb": 22.3,
-      "fip": 4.86,
+      "fip": 4.87,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 190 lbs",
       "bats": "Right",
@@ -12688,7 +13100,8 @@
       "kp": 18.2,
       "bbp": 9.1,
       "kbb": 9.1,
-      "fip": 9.4,
+      "fip": 9.41,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 185 lbs",
       "bats": "Left",
@@ -12712,7 +13125,8 @@
       "kp": 26.9,
       "bbp": 9.6,
       "kbb": 17.3,
-      "fip": 3.95,
+      "fip": 3.96,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 1\" / 169 lbs",
       "bats": "Switch",
@@ -12736,7 +13150,8 @@
       "kp": 14.3,
       "bbp": 17.1,
       "kbb": -2.8,
-      "fip": 9.91,
+      "fip": 9.92,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 200 lbs",
       "bats": "Right",
@@ -12760,7 +13175,8 @@
       "kp": 26.1,
       "bbp": 18.9,
       "kbb": 7.2,
-      "fip": 5.61,
+      "fip": 5.62,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 237 lbs",
       "bats": "Switch",
@@ -12784,7 +13200,8 @@
       "kp": 21.4,
       "bbp": 14.3,
       "kbb": 7.1,
-      "fip": 3.78,
+      "fip": 3.79,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 180 lbs",
       "bats": "Right",
@@ -12808,7 +13225,8 @@
       "kp": 31.0,
       "bbp": 11.8,
       "kbb": 19.2,
-      "fip": 4.36,
+      "fip": 4.37,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 6\" / 225 lbs",
       "bats": "Right",
@@ -12832,7 +13250,8 @@
       "kp": 42.4,
       "bbp": 11.9,
       "kbb": 30.5,
-      "fip": 2.25,
+      "fip": 2.26,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 0\" / 171 lbs",
       "bats": "Left",
@@ -12856,7 +13275,8 @@
       "kp": 16.3,
       "bbp": 10.9,
       "kbb": 5.4,
-      "fip": 6.17,
+      "fip": 6.18,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 4\" / 190 lbs",
       "bats": "Right",
@@ -12880,7 +13300,8 @@
       "kp": 23.1,
       "bbp": 10.8,
       "kbb": 12.3,
-      "fip": 4.04,
+      "fip": 4.05,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 205 lbs",
       "bats": "Switch",
@@ -12904,7 +13325,8 @@
       "kp": 33.3,
       "bbp": 0.0,
       "kbb": 33.3,
-      "fip": 5.45,
+      "fip": 5.46,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 2\" / 239 lbs",
       "bats": "Right",
@@ -12928,7 +13350,8 @@
       "kp": 22.2,
       "bbp": 5.6,
       "kbb": 16.6,
-      "fip": 5.97,
+      "fip": 5.98,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -12952,7 +13375,8 @@
       "kp": 15.8,
       "bbp": 5.3,
       "kbb": 10.5,
-      "fip": 3.22,
+      "fip": 3.23,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -12976,7 +13400,8 @@
       "kp": 29.0,
       "bbp": 15.1,
       "kbb": 13.9,
-      "fip": 5.07,
+      "fip": 5.08,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 5\" / 265 lbs",
       "bats": "Right",
@@ -13000,7 +13425,8 @@
       "kp": 29.9,
       "bbp": 14.6,
       "kbb": 15.3,
-      "fip": 5.33,
+      "fip": 5.34,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 230 lbs",
       "bats": "Right",
@@ -13024,7 +13450,8 @@
       "kp": 32.8,
       "bbp": 8.9,
       "kbb": 23.9,
-      "fip": 2.64,
+      "fip": 2.65,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 7\" / 211 lbs",
       "bats": "Left",
@@ -13048,7 +13475,8 @@
       "kp": 24.6,
       "bbp": 12.0,
       "kbb": 12.6,
-      "fip": 3.78,
+      "fip": 3.79,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 0\" / 170 lbs",
       "bats": "Left",
@@ -13072,7 +13500,8 @@
       "kp": 17.6,
       "bbp": 5.9,
       "kbb": 11.7,
-      "fip": 3.78,
+      "fip": 3.79,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -13096,7 +13525,8 @@
       "kp": 22.4,
       "bbp": 7.9,
       "kbb": 14.5,
-      "fip": 5.16,
+      "fip": 5.17,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 2\" / 208 lbs",
       "bats": "Right",
@@ -13120,7 +13550,8 @@
       "kp": 11.1,
       "bbp": 12.0,
       "kbb": -0.9,
-      "fip": 8.89,
+      "fip": 8.9,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 5\" / 167 lbs",
       "bats": "Right",
@@ -13136,15 +13567,16 @@
       "level": "A",
       "w": 2,
       "l": 0,
-      "era": 4.31,
-      "whip": 1.46,
-      "ip": 48.0,
-      "k9": 10.5,
-      "bb9": 3.9,
-      "kp": 26.8,
-      "bbp": 10.0,
-      "kbb": 16.8,
-      "fip": 4.57,
+      "era": 4.14,
+      "whip": 1.42,
+      "ip": 50.0,
+      "k9": 10.4,
+      "bb9": 3.8,
+      "kp": 26.9,
+      "bbp": 9.7,
+      "kbb": 17.2,
+      "fip": 4.47,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 1\" / 204 lbs",
       "bats": "Right",
@@ -13168,7 +13600,8 @@
       "kp": 18.9,
       "bbp": 5.4,
       "kbb": 13.5,
-      "fip": 4.25,
+      "fip": 4.26,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 2\" / 173 lbs",
       "bats": "Right",
@@ -13192,7 +13625,8 @@
       "kp": 26.3,
       "bbp": 13.7,
       "kbb": 12.6,
-      "fip": 5.71,
+      "fip": 5.72,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 175 lbs",
       "bats": "Right",
@@ -13216,7 +13650,8 @@
       "kp": 23.3,
       "bbp": 7.3,
       "kbb": 16.0,
-      "fip": 3.67,
+      "fip": 3.68,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -13240,7 +13675,8 @@
       "kp": 33.2,
       "bbp": 13.6,
       "kbb": 19.6,
-      "fip": 3.73,
+      "fip": 3.74,
+      "qualified": false,
       "age": 22,
       "heightWeight": "5' 11\" / 160 lbs",
       "bats": "Right",
@@ -13264,7 +13700,8 @@
       "kp": 25.4,
       "bbp": 13.2,
       "kbb": 12.2,
-      "fip": 5.06,
+      "fip": 5.07,
+      "qualified": false,
       "age": 24,
       "heightWeight": "5' 10\" / 145 lbs",
       "bats": "Left",
@@ -13288,7 +13725,8 @@
       "kp": 21.2,
       "bbp": 3.0,
       "kbb": 18.2,
-      "fip": 2.78,
+      "fip": 2.79,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -13312,7 +13750,8 @@
       "kp": 30.2,
       "bbp": 15.4,
       "kbb": 14.8,
-      "fip": 4.23,
+      "fip": 4.24,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 197 lbs",
       "bats": "Left",
@@ -13336,7 +13775,8 @@
       "kp": 25.0,
       "bbp": 6.2,
       "kbb": 18.8,
-      "fip": 6.18,
+      "fip": 6.19,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -13360,7 +13800,8 @@
       "kp": 22.5,
       "bbp": 7.7,
       "kbb": 14.8,
-      "fip": 4.99,
+      "fip": 5.0,
+      "qualified": false,
       "age": 24,
       "heightWeight": "5' 10\" / 210 lbs",
       "bats": "Right",
@@ -13384,7 +13825,8 @@
       "kp": 21.0,
       "bbp": 9.7,
       "kbb": 11.3,
-      "fip": 5.9,
+      "fip": 5.92,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Right",
@@ -13400,15 +13842,16 @@
       "level": "A",
       "w": 2,
       "l": 5,
-      "era": 3.07,
-      "whip": 1.16,
-      "ip": 44.0,
-      "k9": 11.2,
-      "bb9": 4.1,
-      "kp": 29.6,
-      "bbp": 10.8,
+      "era": 3.0,
+      "whip": 1.18,
+      "ip": 45.0,
+      "k9": 11.4,
+      "bb9": 4.2,
+      "kp": 29.8,
+      "bbp": 11.0,
       "kbb": 18.8,
-      "fip": 4.17,
+      "fip": 4.15,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 210 lbs",
       "bats": "Right",
@@ -13432,7 +13875,8 @@
       "kp": 55.6,
       "bbp": 11.1,
       "kbb": 44.5,
-      "fip": 0.78,
+      "fip": 0.79,
+      "qualified": false,
       "age": 25,
       "heightWeight": "5' 10\" / 155 lbs",
       "bats": "Right",
@@ -13456,7 +13900,8 @@
       "kp": 14.3,
       "bbp": 5.7,
       "kbb": 8.6,
-      "fip": 3.34,
+      "fip": 3.35,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 8\" / 225 lbs",
       "bats": "Left",
@@ -13470,17 +13915,18 @@
       "mlbId": 804892,
       "pos": "P",
       "level": "A",
-      "w": 9,
+      "w": 10,
       "l": 3,
-      "era": 4.52,
-      "whip": 1.32,
-      "ip": 97.2,
-      "k9": 9.2,
-      "bb9": 2.7,
-      "kp": 24.4,
-      "bbp": 7.1,
-      "kbb": 17.3,
-      "fip": 4.08,
+      "era": 4.25,
+      "whip": 1.26,
+      "ip": 103.2,
+      "k9": 9.4,
+      "bb9": 2.6,
+      "kp": 25.2,
+      "bbp": 7.0,
+      "kbb": 18.2,
+      "fip": 3.94,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 3\" / 195 lbs",
       "bats": "Right",
@@ -13505,6 +13951,7 @@
       "bbp": 21.2,
       "kbb": -2.4,
       "fip": 8.68,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 6\" / 187 lbs",
       "bats": "Right",
@@ -13529,6 +13976,7 @@
       "bbp": 23.8,
       "kbb": 4.8,
       "fip": 6.47,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 6\" / 255 lbs",
       "bats": "Right",
@@ -13553,6 +14001,7 @@
       "bbp": 19.3,
       "kbb": -6.7,
       "fip": 7.53,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 4\" / 205 lbs",
       "bats": "Right",
@@ -13577,6 +14026,7 @@
       "bbp": 24.2,
       "kbb": 3.2,
       "fip": 7.41,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 177 lbs",
       "bats": "Right",
@@ -13601,6 +14051,7 @@
       "bbp": 0.0,
       "kbb": 15.4,
       "fip": 3.47,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 165 lbs",
       "bats": "Right",
@@ -13625,6 +14076,7 @@
       "bbp": 12.9,
       "kbb": 12.1,
       "fip": 9.08,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 190 lbs",
       "bats": "Right",
@@ -13649,6 +14101,7 @@
       "bbp": 11.1,
       "kbb": 17.2,
       "fip": 3.97,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 200 lbs",
       "bats": "Right",
@@ -13673,6 +14126,7 @@
       "bbp": 15.4,
       "kbb": 11.5,
       "fip": 5.89,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 180 lbs",
       "bats": "Right",
@@ -13697,6 +14151,7 @@
       "bbp": 14.9,
       "kbb": 3.3,
       "fip": 7.05,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 2\" / 178 lbs",
       "bats": "Right",
@@ -13721,6 +14176,7 @@
       "bbp": 16.7,
       "kbb": -8.4,
       "fip": 10.51,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 4\" / 220 lbs",
       "bats": "Right",
@@ -13745,6 +14201,7 @@
       "bbp": 13.4,
       "kbb": 9.3,
       "fip": 6.21,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 4\" / 190 lbs",
       "bats": "Right",
@@ -13769,6 +14226,7 @@
       "bbp": 4.9,
       "kbb": 23.3,
       "fip": 5.33,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 205 lbs",
       "bats": "Switch",
@@ -13793,6 +14251,7 @@
       "bbp": 7.7,
       "kbb": 15.4,
       "fip": 6.4,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 4\" / 175 lbs",
       "bats": "Right",
@@ -13817,6 +14276,7 @@
       "bbp": 2.6,
       "kbb": 36.9,
       "fip": 3.73,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -13841,6 +14301,7 @@
       "bbp": 11.6,
       "kbb": 16.3,
       "fip": 5.32,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 230 lbs",
       "bats": "Right",
@@ -13865,6 +14326,7 @@
       "bbp": 15.8,
       "kbb": -1.3,
       "fip": 6.82,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Right",
@@ -13889,6 +14351,7 @@
       "bbp": 24.5,
       "kbb": 17.3,
       "fip": 5.4,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 176 lbs",
       "bats": "Left",
@@ -13913,6 +14376,7 @@
       "bbp": 11.3,
       "kbb": 16.1,
       "fip": 5.53,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 2\" / 208 lbs",
       "bats": "Right",
@@ -13937,6 +14401,7 @@
       "bbp": 10.5,
       "kbb": 16.3,
       "fip": 5.67,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 5\" / 167 lbs",
       "bats": "Right",
@@ -13961,6 +14426,7 @@
       "bbp": 12.5,
       "kbb": 5.8,
       "fip": 8.01,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 165 lbs",
       "bats": "Right",
@@ -13985,6 +14451,7 @@
       "bbp": 4.4,
       "kbb": 11.8,
       "fip": 6.53,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 2\" / 173 lbs",
       "bats": "Right",
@@ -14009,6 +14476,7 @@
       "bbp": 6.7,
       "kbb": 26.6,
       "fip": 7.22,
+      "qualified": false,
       "age": 26,
       "heightWeight": "5' 9\" / 168 lbs",
       "bats": "Right",
@@ -14033,6 +14501,7 @@
       "bbp": 4.8,
       "kbb": 23.8,
       "fip": 4.47,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -14057,6 +14526,7 @@
       "bbp": 15.4,
       "kbb": 11.5,
       "fip": 7.51,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 185 lbs",
       "bats": "Right",
@@ -14081,6 +14551,7 @@
       "bbp": 20.5,
       "kbb": 4.7,
       "fip": 7.48,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 150 lbs",
       "bats": "Right",
@@ -14105,6 +14576,7 @@
       "bbp": 0.0,
       "kbb": 50.0,
       "fip": 1.22,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -14129,6 +14601,7 @@
       "bbp": 7.7,
       "kbb": 23.1,
       "fip": 5.27,
+      "qualified": false,
       "age": 25,
       "heightWeight": "5' 10\" / 155 lbs",
       "bats": "Right",
@@ -14153,6 +14626,7 @@
       "bbp": 10.3,
       "kbb": 24.2,
       "fip": 10.0,
+      "qualified": false,
       "age": 19,
       "heightWeight": "5' 11\" / 163 lbs",
       "bats": "Right",
@@ -14177,6 +14651,7 @@
       "bbp": 13.0,
       "kbb": 3.7,
       "fip": 15.34,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 177 lbs",
       "bats": "Right",
@@ -14201,6 +14676,7 @@
       "bbp": 23.2,
       "kbb": -4.0,
       "fip": 15.2,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 1\" / 198 lbs",
       "bats": "Right",
@@ -14225,6 +14701,7 @@
       "bbp": 12.7,
       "kbb": 16.7,
       "fip": 11.61,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Left",
@@ -14249,6 +14726,7 @@
       "bbp": 38.7,
       "kbb": -9.7,
       "fip": 15.62,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 209 lbs",
       "bats": "Right",
@@ -14273,6 +14751,7 @@
       "bbp": 13.1,
       "kbb": 5.8,
       "fip": 13.82,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 177 lbs",
       "bats": "Right",
@@ -14297,6 +14776,7 @@
       "bbp": 11.0,
       "kbb": 8.9,
       "fip": 12.41,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 2\" / 168 lbs",
       "bats": "Right",
@@ -14321,6 +14801,7 @@
       "bbp": 62.5,
       "kbb": -45.8,
       "fip": 26.12,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 2\" / 195 lbs",
       "bats": "Left",
@@ -14345,6 +14826,7 @@
       "bbp": 22.1,
       "kbb": 4.8,
       "fip": 13.47,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 2\" / 189 lbs",
       "bats": "Left",
@@ -14369,6 +14851,7 @@
       "bbp": 30.0,
       "kbb": -5.0,
       "fip": 19.12,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 3\" / 190 lbs",
       "bats": "Right",
@@ -14393,6 +14876,7 @@
       "bbp": 23.1,
       "kbb": -15.4,
       "fip": 30.62,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 0\" / 174 lbs",
       "bats": "Right",
@@ -14417,6 +14901,7 @@
       "bbp": 53.3,
       "kbb": -53.3,
       "fip": 33.62,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 166 lbs",
       "bats": "Right",
@@ -14441,6 +14926,7 @@
       "bbp": 28.9,
       "kbb": -11.1,
       "fip": 17.9,
+      "qualified": false,
       "age": 21,
       "heightWeight": "5' 9\" / 181 lbs",
       "bats": "Right",
@@ -14465,6 +14951,7 @@
       "bbp": 17.2,
       "kbb": -3.1,
       "fip": 12.6,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 0\" / 180 lbs",
       "bats": "Right",
@@ -14489,6 +14976,7 @@
       "bbp": 11.8,
       "kbb": 10.1,
       "fip": 11.51,
+      "qualified": false,
       "age": 18,
       "heightWeight": "5' 10\" / 208 lbs",
       "bats": "Right",
@@ -14513,6 +15001,7 @@
       "bbp": 13.4,
       "kbb": 16.5,
       "fip": 12.41,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 0\" / 181 lbs",
       "bats": "Left",
@@ -14537,6 +15026,7 @@
       "bbp": 22.1,
       "kbb": 9.6,
       "fip": 11.8,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 7\" / 198 lbs",
       "bats": "Right",
@@ -14561,6 +15051,7 @@
       "bbp": 14.8,
       "kbb": 12.1,
       "fip": 12.15,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 184 lbs",
       "bats": "Left",
@@ -14585,6 +15076,7 @@
       "bbp": 17.2,
       "kbb": 2.6,
       "fip": 11.79,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 3\" / 160 lbs",
       "bats": "Left",
@@ -14609,6 +15101,7 @@
       "bbp": 30.2,
       "kbb": -18.9,
       "fip": 20.69,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 160 lbs",
       "bats": "Right",
@@ -14633,6 +15126,7 @@
       "bbp": 17.4,
       "kbb": 1.1,
       "fip": 13.94,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 1\" / 170 lbs",
       "bats": "Right",
@@ -14657,6 +15151,7 @@
       "bbp": 19.5,
       "kbb": -3.6,
       "fip": 13.07,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 0\" / 188 lbs",
       "bats": "Right",
@@ -14681,6 +15176,7 @@
       "bbp": 18.2,
       "kbb": 27.3,
       "fip": 3.09,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 177 lbs",
       "bats": "Right",
@@ -14705,6 +15201,7 @@
       "bbp": 23.5,
       "kbb": -8.1,
       "fip": 8.6,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 1\" / 171 lbs",
       "bats": "Right",
@@ -14729,6 +15226,7 @@
       "bbp": 20.3,
       "kbb": 1.7,
       "fip": 10.5,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 0\" / 215 lbs",
       "bats": "Right",
@@ -14753,6 +15251,7 @@
       "bbp": 7.0,
       "kbb": 14.9,
       "fip": 5.26,
+      "qualified": false,
       "age": 18,
       "heightWeight": "5' 11\" / 150 lbs",
       "bats": "Right",
@@ -14777,6 +15276,7 @@
       "bbp": 18.8,
       "kbb": 0.7,
       "fip": 6.24,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 2\" / 194 lbs",
       "bats": "Right",
@@ -14801,6 +15301,7 @@
       "bbp": 21.5,
       "kbb": 1.6,
       "fip": 6.6,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 1\" / 155 lbs",
       "bats": "Right",
@@ -14825,6 +15326,7 @@
       "bbp": 18.6,
       "kbb": 0.0,
       "fip": 6.55,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -14849,6 +15351,7 @@
       "bbp": 12.0,
       "kbb": 14.3,
       "fip": 5.24,
+      "qualified": false,
       "age": 20,
       "heightWeight": "5' 8\" / 160 lbs",
       "bats": "Right",
@@ -14873,6 +15376,7 @@
       "bbp": 19.7,
       "kbb": 0.0,
       "fip": 7.69,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -14897,6 +15401,7 @@
       "bbp": 24.7,
       "kbb": 3.4,
       "fip": 8.28,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 6\" / 196 lbs",
       "bats": "Right",
@@ -14921,6 +15426,7 @@
       "bbp": 9.4,
       "kbb": 18.3,
       "fip": 4.24,
+      "qualified": false,
       "age": 19,
       "heightWeight": "5' 11\" / 190 lbs",
       "bats": "Left",
@@ -14945,6 +15451,7 @@
       "bbp": 15.4,
       "kbb": 23.1,
       "fip": 3.3,
+      "qualified": false,
       "age": 17,
       "heightWeight": "5' 7\" / 169 lbs",
       "bats": "Right",
@@ -14969,6 +15476,7 @@
       "bbp": 18.8,
       "kbb": -1.6,
       "fip": 12.06,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 196 lbs",
       "bats": "Right",
@@ -14993,6 +15501,7 @@
       "bbp": 11.6,
       "kbb": 11.6,
       "fip": 5.04,
+      "qualified": false,
       "age": 21,
       "heightWeight": "5' 10\" / 139 lbs",
       "bats": "Left",
@@ -15017,6 +15526,7 @@
       "bbp": 11.5,
       "kbb": 8.9,
       "fip": 5.29,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 235 lbs",
       "bats": "Right",
@@ -15041,6 +15551,7 @@
       "bbp": 18.8,
       "kbb": -3.6,
       "fip": 7.43,
+      "qualified": false,
       "age": 18,
       "heightWeight": "5' 10\" / 194 lbs",
       "bats": "Right",
@@ -15065,6 +15576,7 @@
       "bbp": 20.0,
       "kbb": 8.2,
       "fip": 5.68,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 1\" / 178 lbs",
       "bats": "Right",
@@ -15089,6 +15601,7 @@
       "bbp": 15.1,
       "kbb": 1.3,
       "fip": 6.11,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 0\" / 150 lbs",
       "bats": "Right",
@@ -15113,6 +15626,7 @@
       "bbp": 14.6,
       "kbb": 9.8,
       "fip": 6.99,
+      "qualified": false,
       "age": 21,
       "heightWeight": "5' 11\" / 157 lbs",
       "bats": "Right",
@@ -15137,6 +15651,7 @@
       "bbp": 6.7,
       "kbb": 0.0,
       "fip": 5.05,
+      "qualified": false,
       "age": 17,
       "heightWeight": "5' 7\" / 180 lbs",
       "bats": "Right",
@@ -15161,6 +15676,7 @@
       "bbp": 7.7,
       "kbb": 19.9,
       "fip": 4.92,
+      "qualified": true,
       "age": 27,
       "heightWeight": "6' 2\" / 218 lbs",
       "bats": "Right",
@@ -15185,6 +15701,7 @@
       "bbp": 8.0,
       "kbb": 28.0,
       "fip": 5.23,
+      "qualified": false,
       "age": 30,
       "heightWeight": "6' 3\" / 215 lbs",
       "bats": "Right",
@@ -15209,6 +15726,7 @@
       "bbp": 13.1,
       "kbb": 17.2,
       "fip": 5.38,
+      "qualified": false,
       "age": 27,
       "heightWeight": "5' 11\" / 236 lbs",
       "bats": "Left",
@@ -15233,6 +15751,7 @@
       "bbp": 9.4,
       "kbb": 17.2,
       "fip": 5.83,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Left",
@@ -15257,6 +15776,7 @@
       "bbp": 5.4,
       "kbb": 23.2,
       "fip": 4.43,
+      "qualified": false,
       "age": 27,
       "heightWeight": "5' 10\" / 234 lbs",
       "bats": "Right",
@@ -15281,6 +15801,7 @@
       "bbp": 6.0,
       "kbb": 22.4,
       "fip": 4.54,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 2\" / 185 lbs",
       "bats": "Right",
@@ -15305,6 +15826,7 @@
       "bbp": 19.0,
       "kbb": 5.9,
       "fip": 8.33,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 0\" / 211 lbs",
       "bats": "Right",
@@ -15329,6 +15851,7 @@
       "bbp": 2.6,
       "kbb": 21.5,
       "fip": 6.27,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 4\" / 220 lbs",
       "bats": "Right",
@@ -15353,6 +15876,7 @@
       "bbp": 12.2,
       "kbb": 10.0,
       "fip": 6.08,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 190 lbs",
       "bats": "Right",
@@ -15377,6 +15901,7 @@
       "bbp": 21.3,
       "kbb": 6.4,
       "fip": 6.86,
+      "qualified": false,
       "age": 29,
       "heightWeight": "6' 5\" / 235 lbs",
       "bats": "Right",
@@ -15401,6 +15926,7 @@
       "bbp": 13.7,
       "kbb": 10.5,
       "fip": 6.37,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 180 lbs",
       "bats": "Right",
@@ -15425,6 +15951,7 @@
       "bbp": 8.9,
       "kbb": 24.2,
       "fip": 4.96,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 0\" / 180 lbs",
       "bats": "Right",
@@ -15449,6 +15976,7 @@
       "bbp": 6.5,
       "kbb": 19.1,
       "fip": 4.65,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -15473,6 +16001,7 @@
       "bbp": 0.0,
       "kbb": 21.4,
       "fip": 7.43,
+      "qualified": false,
       "age": 32,
       "heightWeight": "6' 4\" / 190 lbs",
       "bats": "Left",
@@ -15497,6 +16026,7 @@
       "bbp": 16.7,
       "kbb": 9.5,
       "fip": 6.34,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 3\" / 215 lbs",
       "bats": "Right",
@@ -15521,6 +16051,7 @@
       "bbp": 11.5,
       "kbb": 5.7,
       "fip": 7.87,
+      "qualified": true,
       "age": 27,
       "heightWeight": "6' 2\" / 206 lbs",
       "bats": "Right",
@@ -15545,6 +16076,7 @@
       "bbp": 11.4,
       "kbb": 17.6,
       "fip": 4.69,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 4\" / 210 lbs",
       "bats": "Right",
@@ -15569,6 +16101,7 @@
       "bbp": 6.5,
       "kbb": 24.7,
       "fip": 4.77,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -15593,6 +16126,7 @@
       "bbp": 4.2,
       "kbb": 23.5,
       "fip": 6.15,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 5\" / 210 lbs",
       "bats": "Right",
@@ -15617,6 +16151,7 @@
       "bbp": 14.4,
       "kbb": 5.1,
       "fip": 7.89,
+      "qualified": true,
       "age": 25,
       "heightWeight": "6' 5\" / 245 lbs",
       "bats": "Right",
@@ -15641,6 +16176,7 @@
       "bbp": 11.7,
       "kbb": 17.8,
       "fip": 6.38,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 7\" / 248 lbs",
       "bats": "Right",
@@ -15665,6 +16201,7 @@
       "bbp": 13.2,
       "kbb": 10.5,
       "fip": 5.43,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -15689,6 +16226,7 @@
       "bbp": 11.8,
       "kbb": 25.1,
       "fip": 5.3,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 6\" / 245 lbs",
       "bats": "Right",
@@ -15713,6 +16251,7 @@
       "bbp": 11.0,
       "kbb": 10.3,
       "fip": 6.25,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 6\" / 225 lbs",
       "bats": "Right",
@@ -15737,6 +16276,7 @@
       "bbp": 10.2,
       "kbb": 15.6,
       "fip": 5.66,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 0\" / 193 lbs",
       "bats": "Right",
@@ -15761,6 +16301,7 @@
       "bbp": 13.6,
       "kbb": 21.4,
       "fip": 6.48,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 188 lbs",
       "bats": "Right",
@@ -15785,6 +16326,7 @@
       "bbp": 13.7,
       "kbb": 19.3,
       "fip": 6.49,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 4\" / 235 lbs",
       "bats": "Left",
@@ -15809,6 +16351,7 @@
       "bbp": 6.5,
       "kbb": 22.8,
       "fip": 5.93,
+      "qualified": false,
       "age": 33,
       "heightWeight": "6' 2\" / 255 lbs",
       "bats": "Left",
@@ -15833,6 +16376,7 @@
       "bbp": 11.3,
       "kbb": 13.1,
       "fip": 5.31,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 4\" / 177 lbs",
       "bats": "Left",
@@ -15857,6 +16401,7 @@
       "bbp": 4.5,
       "kbb": 36.4,
       "fip": 5.96,
+      "qualified": false,
       "age": 31,
       "heightWeight": "6' 2\" / 210 lbs",
       "bats": "Right",
@@ -15881,6 +16426,7 @@
       "bbp": 7.7,
       "kbb": 7.7,
       "fip": 4.77,
+      "qualified": false,
       "age": 35,
       "heightWeight": "6' 4\" / 200 lbs",
       "bats": "Right",
@@ -15905,6 +16451,7 @@
       "bbp": 10.6,
       "kbb": 16.0,
       "fip": 6.25,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 7\" / 230 lbs",
       "bats": "Right",
@@ -15929,6 +16476,7 @@
       "bbp": 10.2,
       "kbb": 13.1,
       "fip": 7.05,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 160 lbs",
       "bats": "Right",
@@ -15953,6 +16501,7 @@
       "bbp": 9.0,
       "kbb": 17.5,
       "fip": 5.75,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 0\" / 195 lbs",
       "bats": "Right",
@@ -15977,6 +16526,7 @@
       "bbp": 12.9,
       "kbb": 13.7,
       "fip": 6.18,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 5\" / 225 lbs",
       "bats": "Left",
@@ -16001,6 +16551,7 @@
       "bbp": 9.3,
       "kbb": 18.3,
       "fip": 5.14,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 1\" / 169 lbs",
       "bats": "Switch",
@@ -16025,6 +16576,7 @@
       "bbp": 7.1,
       "kbb": 20.3,
       "fip": 5.79,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 3\" / 209 lbs",
       "bats": "Right",
@@ -16049,6 +16601,7 @@
       "bbp": 8.5,
       "kbb": 8.5,
       "fip": 7.26,
+      "qualified": true,
       "age": 26,
       "heightWeight": "6' 1\" / 199 lbs",
       "bats": "Right",
@@ -16073,6 +16626,7 @@
       "bbp": 20.0,
       "kbb": 0.0,
       "fip": 5.82,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 8\" / 247 lbs",
       "bats": "Right",
@@ -16097,6 +16651,7 @@
       "bbp": 6.2,
       "kbb": 17.2,
       "fip": 5.42,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 3\" / 200 lbs",
       "bats": "Left",
@@ -16121,6 +16676,7 @@
       "bbp": 12.7,
       "kbb": 16.7,
       "fip": 7.42,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 0\" / 215 lbs",
       "bats": "Left",
@@ -16145,6 +16701,7 @@
       "bbp": 6.8,
       "kbb": 31.6,
       "fip": 3.38,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Left",
@@ -16169,6 +16726,7 @@
       "bbp": 13.4,
       "kbb": 6.9,
       "fip": 7.96,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -16193,6 +16751,7 @@
       "bbp": 11.8,
       "kbb": 13.7,
       "fip": 6.21,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 5\" / 255 lbs",
       "bats": "Right",
@@ -16217,6 +16776,7 @@
       "bbp": 18.5,
       "kbb": 11.6,
       "fip": 7.01,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 1\" / 215 lbs",
       "bats": "Right",
@@ -16241,6 +16801,7 @@
       "bbp": 9.6,
       "kbb": 15.3,
       "fip": 5.27,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -16265,6 +16826,7 @@
       "bbp": 11.1,
       "kbb": 15.0,
       "fip": 6.7,
+      "qualified": true,
       "age": 21,
       "heightWeight": "6' 0\" / 185 lbs",
       "bats": "Right",
@@ -16289,6 +16851,7 @@
       "bbp": 13.6,
       "kbb": 10.1,
       "fip": 7.57,
+      "qualified": false,
       "age": 26,
       "heightWeight": "5' 9\" / 168 lbs",
       "bats": "Right",
@@ -16313,6 +16876,7 @@
       "bbp": 3.6,
       "kbb": 21.9,
       "fip": 4.65,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -16337,6 +16901,7 @@
       "bbp": 6.4,
       "kbb": 28.5,
       "fip": 4.19,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -16361,6 +16926,7 @@
       "bbp": 13.1,
       "kbb": 24.8,
       "fip": 4.39,
+      "qualified": false,
       "age": 22,
       "heightWeight": "5' 9\" / 210 lbs",
       "bats": "Right",
@@ -16385,6 +16951,7 @@
       "bbp": 13.6,
       "kbb": 13.7,
       "fip": 6.52,
+      "qualified": true,
       "age": 26,
       "heightWeight": "6' 1\" / 207 lbs",
       "bats": "Right",
@@ -16409,6 +16976,7 @@
       "bbp": 9.6,
       "kbb": 11.9,
       "fip": 7.17,
+      "qualified": true,
       "age": 24,
       "heightWeight": "6' 0\" / 190 lbs",
       "bats": "Left",
@@ -16433,6 +17001,7 @@
       "bbp": 6.1,
       "kbb": 24.4,
       "fip": 5.32,
+      "qualified": false,
       "age": 28,
       "heightWeight": "6' 2\" / 225 lbs",
       "bats": "Right",
@@ -16457,6 +17026,7 @@
       "bbp": 22.7,
       "kbb": 2.3,
       "fip": 10.71,
+      "qualified": false,
       "age": 27,
       "heightWeight": "6' 4\" / 225 lbs",
       "bats": "Right",
@@ -16481,6 +17051,7 @@
       "bbp": 11.1,
       "kbb": 25.6,
       "fip": 4.47,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 0\" / 195 lbs",
       "bats": "Right",
@@ -16505,6 +17076,7 @@
       "bbp": 11.9,
       "kbb": 17.8,
       "fip": 4.36,
+      "qualified": false,
       "age": 25,
       "heightWeight": "5' 10\" / 155 lbs",
       "bats": "Right",
@@ -16529,6 +17101,7 @@
       "bbp": 10.4,
       "kbb": 22.7,
       "fip": 6.43,
+      "qualified": false,
       "age": 26,
       "heightWeight": "6' 4\" / 185 lbs",
       "bats": "Left",
@@ -16553,6 +17126,7 @@
       "bbp": 10.5,
       "kbb": 9.0,
       "fip": 6.1,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 3\" / 230 lbs",
       "bats": "Right",
@@ -16577,6 +17151,7 @@
       "bbp": 10.2,
       "kbb": 16.3,
       "fip": 5.41,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 185 lbs",
       "bats": "Right",
@@ -16601,6 +17176,7 @@
       "bbp": 15.4,
       "kbb": 15.2,
       "fip": 5.6,
+      "qualified": true,
       "age": 23,
       "heightWeight": "6' 0\" / 171 lbs",
       "bats": "Left",
@@ -16625,6 +17201,7 @@
       "bbp": 24.0,
       "kbb": -6.7,
       "fip": 7.83,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 4\" / 210 lbs",
       "bats": "Right",
@@ -16649,6 +17226,7 @@
       "bbp": 12.6,
       "kbb": 12.6,
       "fip": 7.13,
+      "qualified": true,
       "age": 21,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Left",
@@ -16673,6 +17251,7 @@
       "bbp": 14.5,
       "kbb": 14.4,
       "fip": 6.1,
+      "qualified": false,
       "age": 24,
       "heightWeight": "5' 10\" / 180 lbs",
       "bats": "Right",
@@ -16697,6 +17276,7 @@
       "bbp": 11.5,
       "kbb": 14.7,
       "fip": 5.23,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 200 lbs",
       "bats": "Left",
@@ -16721,6 +17301,7 @@
       "bbp": 8.4,
       "kbb": 23.2,
       "fip": 4.41,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 7\" / 211 lbs",
       "bats": "Left",
@@ -16745,6 +17326,7 @@
       "bbp": 13.4,
       "kbb": 6.1,
       "fip": 6.3,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 0\" / 210 lbs",
       "bats": "Right",
@@ -16769,6 +17351,7 @@
       "bbp": 10.4,
       "kbb": 22.0,
       "fip": 4.81,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 1\" / 160 lbs",
       "bats": "Right",
@@ -16793,6 +17376,7 @@
       "bbp": 13.9,
       "kbb": 16.6,
       "fip": 5.45,
+      "qualified": false,
       "age": 22,
       "heightWeight": "5' 11\" / 160 lbs",
       "bats": "Right",
@@ -16817,6 +17401,7 @@
       "bbp": 7.8,
       "kbb": 20.0,
       "fip": 5.18,
+      "qualified": true,
       "age": 22,
       "heightWeight": "5' 11\" / 162 lbs",
       "bats": "Right",
@@ -16841,6 +17426,7 @@
       "bbp": 8.4,
       "kbb": 12.1,
       "fip": 5.79,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 4\" / 208 lbs",
       "bats": "Right",
@@ -16865,6 +17451,7 @@
       "bbp": 12.1,
       "kbb": 9.9,
       "fip": 6.41,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 8\" / 225 lbs",
       "bats": "Left",
@@ -16889,6 +17476,7 @@
       "bbp": 19.7,
       "kbb": 0.7,
       "fip": 7.81,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 177 lbs",
       "bats": "Right",
@@ -16913,6 +17501,7 @@
       "bbp": 11.8,
       "kbb": 14.5,
       "fip": 8.44,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 190 lbs",
       "bats": "Right",
@@ -16937,6 +17526,7 @@
       "bbp": 12.7,
       "kbb": 11.9,
       "fip": 5.88,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 200 lbs",
       "bats": "Right",
@@ -16961,6 +17551,7 @@
       "bbp": 18.9,
       "kbb": 7.2,
       "fip": 6.93,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 237 lbs",
       "bats": "Switch",
@@ -16985,6 +17576,7 @@
       "bbp": 11.8,
       "kbb": 19.2,
       "fip": 5.68,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 6\" / 225 lbs",
       "bats": "Right",
@@ -17009,6 +17601,7 @@
       "bbp": 11.9,
       "kbb": 7.1,
       "fip": 7.04,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 4\" / 190 lbs",
       "bats": "Right",
@@ -17033,6 +17626,7 @@
       "bbp": 7.1,
       "kbb": 19.1,
       "fip": 5.42,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 2\" / 205 lbs",
       "bats": "Switch",
@@ -17057,6 +17651,7 @@
       "bbp": 0.0,
       "kbb": 33.3,
       "fip": 6.77,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 2\" / 239 lbs",
       "bats": "Right",
@@ -17081,6 +17676,7 @@
       "bbp": 15.1,
       "kbb": 13.9,
       "fip": 6.39,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 5\" / 265 lbs",
       "bats": "Right",
@@ -17105,6 +17701,7 @@
       "bbp": 13.9,
       "kbb": 15.5,
       "fip": 6.33,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 230 lbs",
       "bats": "Right",
@@ -17129,6 +17726,7 @@
       "bbp": 12.0,
       "kbb": 12.6,
       "fip": 5.1,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 0\" / 170 lbs",
       "bats": "Left",
@@ -17153,6 +17751,7 @@
       "bbp": 10.0,
       "kbb": 15.5,
       "fip": 5.96,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 2\" / 208 lbs",
       "bats": "Right",
@@ -17177,6 +17776,7 @@
       "bbp": 11.1,
       "kbb": 9.2,
       "fip": 7.49,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 5\" / 167 lbs",
       "bats": "Right",
@@ -17192,15 +17792,16 @@
       "level": "all",
       "w": 2,
       "l": 0,
-      "era": 4.31,
-      "whip": 1.46,
-      "ip": 48.0,
-      "k9": 10.5,
-      "bb9": 3.9,
-      "kp": 26.8,
-      "bbp": 10.0,
-      "kbb": 16.8,
-      "fip": 5.89,
+      "era": 4.14,
+      "whip": 1.42,
+      "ip": 50.0,
+      "k9": 10.4,
+      "bb9": 3.8,
+      "kp": 26.9,
+      "bbp": 9.7,
+      "kbb": 17.2,
+      "fip": 5.78,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 1\" / 204 lbs",
       "bats": "Right",
@@ -17225,6 +17826,7 @@
       "bbp": 4.8,
       "kbb": 12.3,
       "fip": 6.23,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 2\" / 173 lbs",
       "bats": "Right",
@@ -17249,6 +17851,7 @@
       "bbp": 13.7,
       "kbb": 12.6,
       "fip": 7.03,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 175 lbs",
       "bats": "Right",
@@ -17273,6 +17876,7 @@
       "bbp": 6.9,
       "kbb": 17.2,
       "fip": 4.93,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 4\" / 215 lbs",
       "bats": "Right",
@@ -17297,6 +17901,7 @@
       "bbp": 13.2,
       "kbb": 12.2,
       "fip": 6.38,
+      "qualified": false,
       "age": 24,
       "heightWeight": "5' 10\" / 145 lbs",
       "bats": "Left",
@@ -17321,6 +17926,7 @@
       "bbp": 15.4,
       "kbb": 14.8,
       "fip": 5.55,
+      "qualified": false,
       "age": 25,
       "heightWeight": "6' 2\" / 197 lbs",
       "bats": "Left",
@@ -17345,6 +17951,7 @@
       "bbp": 7.7,
       "kbb": 14.8,
       "fip": 6.31,
+      "qualified": false,
       "age": 24,
       "heightWeight": "5' 10\" / 210 lbs",
       "bats": "Right",
@@ -17369,6 +17976,7 @@
       "bbp": 9.7,
       "kbb": 11.3,
       "fip": 7.22,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Right",
@@ -17384,15 +17992,16 @@
       "level": "all",
       "w": 2,
       "l": 5,
-      "era": 3.07,
-      "whip": 1.16,
-      "ip": 44.0,
-      "k9": 11.2,
-      "bb9": 4.1,
-      "kp": 29.6,
-      "bbp": 10.8,
+      "era": 3.0,
+      "whip": 1.18,
+      "ip": 45.0,
+      "k9": 11.4,
+      "bb9": 4.2,
+      "kp": 29.8,
+      "bbp": 11.0,
       "kbb": 18.8,
-      "fip": 5.49,
+      "fip": 5.46,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 4\" / 210 lbs",
       "bats": "Right",
@@ -17406,17 +18015,18 @@
       "mlbId": 804892,
       "pos": "P",
       "level": "all",
-      "w": 9,
+      "w": 10,
       "l": 3,
-      "era": 4.52,
-      "whip": 1.32,
-      "ip": 97.2,
-      "k9": 9.2,
-      "bb9": 2.7,
-      "kp": 24.4,
-      "bbp": 7.1,
-      "kbb": 17.3,
-      "fip": 5.4,
+      "era": 4.25,
+      "whip": 1.26,
+      "ip": 103.2,
+      "k9": 9.4,
+      "bb9": 2.6,
+      "kp": 25.2,
+      "bbp": 7.0,
+      "kbb": 18.2,
+      "fip": 5.25,
+      "qualified": true,
       "age": 22,
       "heightWeight": "6' 3\" / 195 lbs",
       "bats": "Right",
@@ -17441,6 +18051,7 @@
       "bbp": 21.2,
       "kbb": -2.4,
       "fip": 8.81,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 6\" / 187 lbs",
       "bats": "Right",
@@ -17465,6 +18076,7 @@
       "bbp": 23.8,
       "kbb": 4.8,
       "fip": 6.6,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 6\" / 255 lbs",
       "bats": "Right",
@@ -17489,6 +18101,7 @@
       "bbp": 19.3,
       "kbb": -6.7,
       "fip": 7.66,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 4\" / 205 lbs",
       "bats": "Right",
@@ -17513,6 +18126,7 @@
       "bbp": 0.0,
       "kbb": 15.4,
       "fip": 3.6,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 165 lbs",
       "bats": "Right",
@@ -17537,6 +18151,7 @@
       "bbp": 14.9,
       "kbb": 3.3,
       "fip": 7.18,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 2\" / 178 lbs",
       "bats": "Right",
@@ -17561,6 +18176,7 @@
       "bbp": 16.7,
       "kbb": -8.4,
       "fip": 10.64,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 4\" / 220 lbs",
       "bats": "Right",
@@ -17585,6 +18201,7 @@
       "bbp": 7.7,
       "kbb": 15.4,
       "fip": 6.53,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 4\" / 175 lbs",
       "bats": "Right",
@@ -17609,6 +18226,7 @@
       "bbp": 15.8,
       "kbb": -1.3,
       "fip": 6.95,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Right",
@@ -17633,6 +18251,7 @@
       "bbp": 24.5,
       "kbb": 17.3,
       "fip": 5.53,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 176 lbs",
       "bats": "Left",
@@ -17657,6 +18276,7 @@
       "bbp": 12.5,
       "kbb": 5.8,
       "fip": 8.14,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 3\" / 165 lbs",
       "bats": "Right",
@@ -17681,6 +18301,7 @@
       "bbp": 15.4,
       "kbb": 11.5,
       "fip": 7.64,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 185 lbs",
       "bats": "Right",
@@ -17705,6 +18326,7 @@
       "bbp": 20.5,
       "kbb": 4.7,
       "fip": 7.61,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 150 lbs",
       "bats": "Right",
@@ -17729,6 +18351,7 @@
       "bbp": 10.3,
       "kbb": 24.2,
       "fip": 3.98,
+      "qualified": false,
       "age": 19,
       "heightWeight": "5' 11\" / 163 lbs",
       "bats": "Right",
@@ -17753,6 +18376,7 @@
       "bbp": 13.8,
       "kbb": 7.7,
       "fip": 8.25,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 177 lbs",
       "bats": "Right",
@@ -17777,6 +18401,7 @@
       "bbp": 23.2,
       "kbb": -4.0,
       "fip": 9.18,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 1\" / 198 lbs",
       "bats": "Right",
@@ -17801,6 +18426,7 @@
       "bbp": 12.7,
       "kbb": 16.7,
       "fip": 5.59,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 0\" / 165 lbs",
       "bats": "Left",
@@ -17825,6 +18451,7 @@
       "bbp": 38.7,
       "kbb": -9.7,
       "fip": 9.6,
+      "qualified": false,
       "age": 24,
       "heightWeight": "6' 3\" / 209 lbs",
       "bats": "Right",
@@ -17849,6 +18476,7 @@
       "bbp": 13.1,
       "kbb": 5.8,
       "fip": 7.8,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 177 lbs",
       "bats": "Right",
@@ -17873,6 +18501,7 @@
       "bbp": 11.0,
       "kbb": 8.9,
       "fip": 6.39,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 2\" / 168 lbs",
       "bats": "Right",
@@ -17897,6 +18526,7 @@
       "bbp": 62.5,
       "kbb": -45.8,
       "fip": 20.1,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 2\" / 195 lbs",
       "bats": "Left",
@@ -17921,6 +18551,7 @@
       "bbp": 22.1,
       "kbb": 4.8,
       "fip": 7.45,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 2\" / 189 lbs",
       "bats": "Left",
@@ -17945,6 +18576,7 @@
       "bbp": 30.0,
       "kbb": -5.0,
       "fip": 13.1,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 3\" / 190 lbs",
       "bats": "Right",
@@ -17969,6 +18601,7 @@
       "bbp": 23.1,
       "kbb": -15.4,
       "fip": 24.6,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 0\" / 174 lbs",
       "bats": "Right",
@@ -17993,6 +18626,7 @@
       "bbp": 53.3,
       "kbb": -53.3,
       "fip": 27.6,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 1\" / 166 lbs",
       "bats": "Right",
@@ -18017,6 +18651,7 @@
       "bbp": 28.9,
       "kbb": -11.1,
       "fip": 11.88,
+      "qualified": false,
       "age": 21,
       "heightWeight": "5' 9\" / 181 lbs",
       "bats": "Right",
@@ -18041,6 +18676,7 @@
       "bbp": 17.2,
       "kbb": -3.1,
       "fip": 6.58,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 0\" / 180 lbs",
       "bats": "Right",
@@ -18065,6 +18701,7 @@
       "bbp": 11.8,
       "kbb": 10.1,
       "fip": 5.49,
+      "qualified": false,
       "age": 18,
       "heightWeight": "5' 10\" / 208 lbs",
       "bats": "Right",
@@ -18089,6 +18726,7 @@
       "bbp": 13.4,
       "kbb": 16.5,
       "fip": 6.39,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 0\" / 181 lbs",
       "bats": "Left",
@@ -18113,6 +18751,7 @@
       "bbp": 22.1,
       "kbb": 9.6,
       "fip": 5.78,
+      "qualified": false,
       "age": 22,
       "heightWeight": "6' 7\" / 198 lbs",
       "bats": "Right",
@@ -18137,6 +18776,7 @@
       "bbp": 14.8,
       "kbb": 12.1,
       "fip": 6.13,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 184 lbs",
       "bats": "Left",
@@ -18161,6 +18801,7 @@
       "bbp": 17.2,
       "kbb": 2.6,
       "fip": 5.77,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 3\" / 160 lbs",
       "bats": "Left",
@@ -18185,6 +18826,7 @@
       "bbp": 30.2,
       "kbb": -18.9,
       "fip": 14.67,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 160 lbs",
       "bats": "Right",
@@ -18209,6 +18851,7 @@
       "bbp": 17.4,
       "kbb": 1.1,
       "fip": 7.92,
+      "qualified": false,
       "age": 21,
       "heightWeight": "6' 1\" / 170 lbs",
       "bats": "Right",
@@ -18233,6 +18876,7 @@
       "bbp": 19.5,
       "kbb": -3.6,
       "fip": 7.05,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 0\" / 188 lbs",
       "bats": "Right",
@@ -18257,6 +18901,7 @@
       "bbp": 23.5,
       "kbb": -8.1,
       "fip": 8.9,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 1\" / 171 lbs",
       "bats": "Right",
@@ -18281,6 +18926,7 @@
       "bbp": 20.3,
       "kbb": 1.7,
       "fip": 10.8,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 0\" / 215 lbs",
       "bats": "Right",
@@ -18305,6 +18951,7 @@
       "bbp": 7.0,
       "kbb": 14.9,
       "fip": 5.56,
+      "qualified": false,
       "age": 18,
       "heightWeight": "5' 11\" / 150 lbs",
       "bats": "Right",
@@ -18329,6 +18976,7 @@
       "bbp": 18.8,
       "kbb": 0.7,
       "fip": 6.54,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 2\" / 194 lbs",
       "bats": "Right",
@@ -18353,6 +19001,7 @@
       "bbp": 21.5,
       "kbb": 1.6,
       "fip": 6.9,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 1\" / 155 lbs",
       "bats": "Right",
@@ -18377,6 +19026,7 @@
       "bbp": 18.6,
       "kbb": 0.0,
       "fip": 6.85,
+      "qualified": false,
       "age": 23,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -18401,6 +19051,7 @@
       "bbp": 12.0,
       "kbb": 14.3,
       "fip": 5.54,
+      "qualified": false,
       "age": 20,
       "heightWeight": "5' 8\" / 160 lbs",
       "bats": "Right",
@@ -18425,6 +19076,7 @@
       "bbp": 19.7,
       "kbb": 0.0,
       "fip": 7.99,
+      "qualified": false,
       "age": 17,
       "heightWeight": "6' 1\" / 175 lbs",
       "bats": "Right",
@@ -18449,6 +19101,7 @@
       "bbp": 24.7,
       "kbb": 3.4,
       "fip": 8.58,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 6\" / 196 lbs",
       "bats": "Right",
@@ -18473,6 +19126,7 @@
       "bbp": 9.4,
       "kbb": 18.3,
       "fip": 4.54,
+      "qualified": false,
       "age": 19,
       "heightWeight": "5' 11\" / 190 lbs",
       "bats": "Left",
@@ -18497,6 +19151,7 @@
       "bbp": 15.4,
       "kbb": 23.1,
       "fip": 3.6,
+      "qualified": false,
       "age": 17,
       "heightWeight": "5' 7\" / 169 lbs",
       "bats": "Right",
@@ -18521,6 +19176,7 @@
       "bbp": 18.8,
       "kbb": -1.6,
       "fip": 12.36,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 196 lbs",
       "bats": "Right",
@@ -18545,6 +19201,7 @@
       "bbp": 11.6,
       "kbb": 11.6,
       "fip": 5.34,
+      "qualified": false,
       "age": 21,
       "heightWeight": "5' 10\" / 139 lbs",
       "bats": "Left",
@@ -18569,6 +19226,7 @@
       "bbp": 11.5,
       "kbb": 8.9,
       "fip": 5.59,
+      "qualified": false,
       "age": 19,
       "heightWeight": "6' 0\" / 235 lbs",
       "bats": "Right",
@@ -18593,6 +19251,7 @@
       "bbp": 18.8,
       "kbb": -3.6,
       "fip": 7.73,
+      "qualified": false,
       "age": 18,
       "heightWeight": "5' 10\" / 194 lbs",
       "bats": "Right",
@@ -18617,6 +19276,7 @@
       "bbp": 20.0,
       "kbb": 8.2,
       "fip": 5.98,
+      "qualified": false,
       "age": 20,
       "heightWeight": "6' 1\" / 178 lbs",
       "bats": "Right",
@@ -18641,6 +19301,7 @@
       "bbp": 15.1,
       "kbb": 1.3,
       "fip": 6.41,
+      "qualified": false,
       "age": 18,
       "heightWeight": "6' 0\" / 150 lbs",
       "bats": "Right",
@@ -18665,6 +19326,7 @@
       "bbp": 14.6,
       "kbb": 9.8,
       "fip": 7.29,
+      "qualified": false,
       "age": 21,
       "heightWeight": "5' 11\" / 157 lbs",
       "bats": "Right",
@@ -18689,6 +19351,7 @@
       "bbp": 6.7,
       "kbb": 0.0,
       "fip": 5.35,
+      "qualified": false,
       "age": 17,
       "heightWeight": "5' 7\" / 180 lbs",
       "bats": "Right",
@@ -18706,6 +19369,7 @@
       "wins": 64,
       "losses": 57,
       "winPct": 0.529,
+      "games": 121,
       "avg": 0.257,
       "obp": 0.341,
       "slg": 0.437,
@@ -18725,6 +19389,7 @@
       "wins": 62,
       "losses": 56,
       "winPct": 0.525,
+      "games": 118,
       "avg": 0.26,
       "obp": 0.338,
       "slg": 0.446,
@@ -18744,6 +19409,7 @@
       "wins": 58,
       "losses": 56,
       "winPct": 0.509,
+      "games": 114,
       "avg": 0.253,
       "obp": 0.35,
       "slg": 0.412,
@@ -18760,19 +19426,20 @@
       "teamId": 587,
       "name": "Tampa Tarpons",
       "level": "A",
-      "wins": 68,
+      "wins": 69,
       "losses": 50,
-      "winPct": 0.576,
-      "avg": 0.254,
+      "winPct": 0.58,
+      "games": 119,
+      "avg": 0.253,
       "obp": 0.359,
       "slg": 0.421,
       "ops": 0.78,
-      "runs": 685,
-      "homeRuns": 128,
-      "stolenBases": 247,
-      "era": 4.49,
-      "whip": 1.36,
-      "strikeOuts": 1138,
+      "runs": 695,
+      "homeRuns": 130,
+      "stolenBases": 248,
+      "era": 4.45,
+      "whip": 1.35,
+      "strikeOuts": 1150,
       "saves": 28
     },
     {
@@ -18782,6 +19449,7 @@
       "wins": 29,
       "losses": 31,
       "winPct": 0.483,
+      "games": 60,
       "avg": 0.27,
       "obp": 0.377,
       "slg": 0.471,
@@ -18801,6 +19469,7 @@
       "wins": 25,
       "losses": 29,
       "winPct": 0.463,
+      "games": 54,
       "avg": 0.254,
       "obp": 0.413,
       "slg": 0.408,
@@ -18820,6 +19489,7 @@
       "wins": 32,
       "losses": 24,
       "winPct": 0.571,
+      "games": 56,
       "avg": 0.3,
       "obp": 0.434,
       "slg": 0.492,
