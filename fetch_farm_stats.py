@@ -349,6 +349,8 @@ def finalize_hitter(pid, name, pos, level_id, totals, bio_person):
         "mlbId": pid,
         "pos": pos,
         "level": level_id,
+        "ab": ab,
+        "pa": pa,
         "avg": avg,
         "obp": obp,
         "slg": slg,
