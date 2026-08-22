@@ -171,7 +171,7 @@ def compute_team_record(games, team_id):
             losses += 1
     total = wins + losses
     win_pct = round(wins / total, 3) if total else 0.0
-    return {"wins": wins, "losses": losses, "winPct": win_pct}
+    return {"wins": wins, "losses": losses, "winPct": win_pct, "games": total}
 
 
 def finalize_team_batting(totals):
@@ -600,6 +600,19 @@ def main():
     print(f"Fetching bios for {len(all_person_ids)} players...")
     bios = fetch_bios(all_person_ids)
 
+    # Qualifying threshold for the "All Qualified" filter on /the-farm --
+    # same formula fetch_season_stats.py already uses for the season
+    # leaderboard (3.1 PA / team game for hitters, 0.5 IP / team game for
+    # pitchers, using the MOST games any one affiliate has played as the
+    # season's reference point, per that file's own reasoning: minor
+    # league pitcher workloads are deliberately capped, so MLB's literal
+    # "1 IP/team game" rule excludes legitimate rotation regulars).
+    max_games = max((t.get("games", 0) for t in team_rows), default=0)
+    qualifying_pa = round(3.1 * max_games)
+    qualifying_ip = round(0.5 * max_games, 1)
+    print(f"Qualifying threshold: {max_games} games (max across affiliates) -> "
+          f"{qualifying_pa} PA / {qualifying_ip} IP to be marked qualified.")
+
     # Two kinds of rows per player, both tagged via the same "level" field
     # the site already filters on:
     #   1. One row per level he actually played at this season, showing
@@ -612,6 +625,9 @@ def main():
     # A player who stayed at one level all year simply gets two nearly
     # identical rows (his level-specific stint and his "all" total, which
     # are the same number) -- harmless, and keeps the data model uniform.
+    # Every row also gets a "qualified" boolean (PA/IP vs. the threshold
+    # above) so the site's "All Qualified" button can filter out
+    # small-sample noise from the "All Levels" view.
     hitters = [
         finalize_hitter(s["pid"], person_names[s["pid"]], person_pos.get(s["pid"], ""), s["level"],
                          s["stat"], bios.get(s["pid"]))
@@ -621,6 +637,8 @@ def main():
         finalize_hitter(pid, person_names[pid], person_pos.get(pid, ""), "all", totals, bios.get(pid))
         for pid, totals in hitting_totals.items()
     ]
+    for row in hitters:
+        row["qualified"] = row["pa"] >= qualifying_pa
 
     pitchers = [
         finalize_pitcher(s["pid"], person_names[s["pid"]], person_pos.get(s["pid"], "P"), s["level"], s["stat"])
@@ -630,6 +648,8 @@ def main():
         finalize_pitcher(pid, person_names[pid], person_pos.get(pid, "P"), "all", totals)
         for pid, totals in pitching_totals.items()
     ]
+    for row in pitchers:
+        row["qualified"] = row["ip"] >= qualifying_ip
 
     for row in pitchers:
         row.update(bio_fields(bios.get(row["mlbId"])))
