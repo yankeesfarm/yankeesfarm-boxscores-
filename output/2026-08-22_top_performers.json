@@ -1,0 +1,68 @@
+{
+  "hitters": [
+    {
+      "playerId": 641555,
+      "name": "J.C. Escarra",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "DH",
+      "bio": "AAA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/641555/spots/120",
+      "statline": "2 for 5: 2 RBI (32)"
+    },
+    {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "2 for 3: Double (16), HR (21), RBI (70)"
+    },
+    {
+      "playerId": 694742,
+      "name": "Josh Moylan",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "1B",
+      "bio": "AA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694742/spots/120",
+      "statline": "2 for 5: 2 RBI (28)"
+    },
+    {
+      "playerId": 829769,
+      "name": "Yostin Pena",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "CF",
+      "bio": "A | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/829769/spots/120",
+      "statline": "2 for 5: 2 HR (4), 6 RBI (19)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 804892,
+      "name": "Justin West",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804892/spots/120",
+      "statline": "6.0 IP, 0 R, 8 K"
+    },
+    {
+      "playerId": 693647,
+      "name": "Thomas Balboni Jr.",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/693647/spots/120",
+      "statline": "2.0 IP, 0 R, 6 K"
+    }
+  ],
+  "date": "2026-08-22",
+  "generatedAt": "2026-08-23T02:56:18.372826+00:00"
+}
