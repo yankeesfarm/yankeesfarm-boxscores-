@@ -1,0 +1,78 @@
+{
+  "hitters": [
+    {
+      "playerId": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+      "statline": "2 for 4: HR (7), 4 RBI (27)"
+    },
+    {
+      "playerId": 665828,
+      "name": "Oswaldo Cabrera",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "SS",
+      "bio": "AAA | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/665828/spots/120",
+      "statline": "3 for 4: 2 HR (17), 3 RBI (57)"
+    },
+    {
+      "playerId": 692633,
+      "name": "Manuel Palencia",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "C",
+      "bio": "AA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692633/spots/120",
+      "statline": "2 for 4: HR (5), 3 RBI (26)"
+    },
+    {
+      "playerId": 831025,
+      "name": "Dean Toigo",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "RF",
+      "bio": "High-A | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/831025/spots/120",
+      "statline": "2 for 4: Triple (2)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 669740,
+      "name": "Travis MacGregor",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/669740/spots/120",
+      "statline": "3.0 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 661563,
+      "name": "Luis Gil",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/661563/spots/120",
+      "statline": "1.2 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 694660,
+      "name": "Harrison Cohen",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694660/spots/120",
+      "statline": "2.1 IP, 1 R, 3 K"
+    }
+  ],
+  "date": "2026-08-23",
+  "generatedAt": "2026-08-24T02:57:13.547229+00:00"
+}
