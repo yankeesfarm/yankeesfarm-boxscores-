@@ -41,16 +41,6 @@
       "statline": "2 for 5: HR (23), 3 RBI (85)"
     },
     {
-      "playerId": 694742,
-      "name": "Josh Moylan",
-      "level": "AA",
-      "team": "Somerset Patriots",
-      "position": "1B",
-      "bio": "AA | 1B",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694742/spots/120",
-      "statline": "2 for 4: HR (10), RBI (29)"
-    },
-    {
       "playerId": 701331,
       "name": "Blake Cyr",
       "level": "A",
@@ -104,5 +94,5 @@
     }
   ],
   "date": "2026-08-25",
-  "generatedAt": "2026-08-26T11:36:17.065210+00:00"
+  "generatedAt": "2026-08-26T20:55:26.138264+00:00"
 }
