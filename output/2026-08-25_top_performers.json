@@ -1,0 +1,98 @@
+{
+  "hitters": [
+    {
+      "playerId": 682617,
+      "name": "Marco Luciano",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "LF",
+      "bio": "AAA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682617/spots/120",
+      "statline": "3 for 4: 2 HR (12), 3 RBI (36)"
+    },
+    {
+      "playerId": 701778,
+      "name": "Jace Avina",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "CF",
+      "bio": "AA | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701778/spots/120",
+      "statline": "2 for 5: 3 RBI (60)"
+    },
+    {
+      "playerId": 703149,
+      "name": "Roderick Arias",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "2B",
+      "bio": "AA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/703149/spots/120",
+      "statline": "2 for 5: HR (2), RBI (14)"
+    },
+    {
+      "playerId": 687554,
+      "name": "DJ Gladney",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "RF",
+      "bio": "AA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/687554/spots/120",
+      "statline": "2 for 5: HR (23), 3 RBI (85)"
+    },
+    {
+      "playerId": 701331,
+      "name": "Blake Cyr",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "2B",
+      "bio": "A | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701331/spots/120",
+      "statline": "2 for 5: Double (2), 2 RBI (5)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 694805,
+      "name": "Kyle Carr",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694805/spots/120",
+      "statline": "1.0 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 805728,
+      "name": "Kevin Stevens",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/805728/spots/120",
+      "statline": "1.0 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 682625,
+      "name": "Antonio Gomez",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682625/spots/120",
+      "statline": "1.0 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 828266,
+      "name": "Rafael Arias",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/828266/spots/120",
+      "statline": "1.0 IP, 0 R, 3 K"
+    }
+  ],
+  "date": "2026-08-25",
+  "generatedAt": "2026-08-26T02:52:06.020391+00:00"
+}
