@@ -1,0 +1,282 @@
+{
+  "jackson-lovich": {
+    "mlbId": 804944,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "bryce-martin-grudzielanek": {
+    "mlbId": 701727,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "dax-kilby": {
+    "mlbId": 828076,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "carlos-lagrange": {
+    "mlbId": 801739,
+    "team": "scranton-wb",
+    "type": "pitching",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  },
+  "luis-puello": {
+    "mlbId": 809772,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "brando-mayea": {
+    "mlbId": 806963,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "anthony-potestio": {
+    "mlbId": 835219,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "hans-montero": {
+    "mlbId": 694215,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "yostin-pena": {
+    "mlbId": 829769,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "wilberson-de-pena": {
+    "mlbId": 821648,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "tony-rossi": {
+    "mlbId": 702036,
+    "team": "somerset",
+    "type": "pitching",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "sabier-marte": {
+    "mlbId": 800239,
+    "team": "tampa",
+    "type": "pitching",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "roderick-arias": {
+    "mlbId": 703149,
+    "team": "somerset",
+    "type": "hitting",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "jace-avina": {
+    "mlbId": 701778,
+    "team": "somerset",
+    "type": "hitting",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "luke-pettitte": {
+    "mlbId": 830339,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "david-mccann": {
+    "mlbId": 806154,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "coby-morales": {
+    "mlbId": 815089,
+    "team": "somerset",
+    "type": "hitting",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "matthew-tippie": {
+    "mlbId": 822915,
+    "team": "hudson-valley",
+    "type": "pitching",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "ben-hess": {
+    "mlbId": 696292,
+    "team": "somerset",
+    "type": "pitching",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "kyle-west": {
+    "mlbId": 823918,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "bryce-cunningham": {
+    "mlbId": 701480,
+    "team": "hudson-valley",
+    "type": "pitching",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "eric-genther": {
+    "mlbId": 823759,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "jose-m-rodriguez": {
+    "mlbId": 815278,
+    "team": "hudson-valley",
+    "type": "pitching",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "luis-escudero": {
+    "mlbId": 806884,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "willy-montero": {
+    "mlbId": 701206,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "brendan-beck": {
+    "mlbId": 694341,
+    "team": "scranton-wb",
+    "type": "pitching",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  },
+  "dean-toigo": {
+    "mlbId": 831025,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "thatcher-hurd": {
+    "mlbId": 695765,
+    "team": "tampa",
+    "type": "pitching",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "chase-hampton": {
+    "mlbId": 694633,
+    "team": "somerset",
+    "type": "pitching",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "oswaldo-cabrera": {
+    "mlbId": 665828,
+    "team": "scranton-wb",
+    "type": "hitting",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  },
+  "ernesto-martinez-jr": {
+    "mlbId": 667803,
+    "team": "scranton-wb",
+    "type": "hitting",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  },
+  "manuel-palencia": {
+    "mlbId": 692633,
+    "team": "somerset",
+    "type": "hitting",
+    "levelCode": "AA",
+    "levelLabel": "Somerset Patriots (Double-A)"
+  },
+  "jasson-dominguez": {
+    "mlbId": 672822,
+    "team": "scranton-wb",
+    "type": "hitting",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  },
+  "marco-luciano": {
+    "mlbId": 682617,
+    "team": "scranton-wb",
+    "type": "hitting",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  },
+  "robbie-burnett": {
+    "mlbId": 823754,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "enmanuel-tejeda": {
+    "mlbId": 800285,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "gabriel-lara": {
+    "mlbId": 808106,
+    "team": "tampa",
+    "type": "hitting",
+    "levelCode": "LOA",
+    "levelLabel": "Tampa Tarpons (Low-A)"
+  },
+  "maika-niu": {
+    "mlbId": 809569,
+    "team": "hudson-valley",
+    "type": "hitting",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "allen-facundo": {
+    "mlbId": 702098,
+    "team": "hudson-valley",
+    "type": "pitching",
+    "levelCode": "HIA",
+    "levelLabel": "Hudson Valley Renegades (High-A)"
+  },
+  "jc-escarra": {
+    "mlbId": 641555,
+    "team": "scranton-wb",
+    "type": "hitting",
+    "levelCode": "AAA",
+    "levelLabel": "SWB RailRiders (Triple-A)"
+  }
+}
