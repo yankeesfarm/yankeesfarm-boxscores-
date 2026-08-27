@@ -29,6 +29,7 @@ job is just to keep each player's CURRENT team's numbers fresh daily).
 
 import json
 import os
+import re
 import time
 import requests
 from pathlib import Path
@@ -64,28 +65,50 @@ def fetch_team_table(team_slug, stat_type):
     resp.raise_for_status()
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    table = soup.find("table")
-    if table is None:
+    tables = soup.find_all("table")
+    print(f"[DEBUG] {team_slug}/{stat_type}: found {len(tables)} <table> element(s)")
+    if not tables:
         print(f"[WARN] No <table> found for {team_slug}/{stat_type} — "
-              f"page is likely JS-rendered; plain requests won't work here.")
+              f"page may use div-based grid markup instead of real <table> tags.")
         return {}
+    table = tables[0]
 
-    header_cells = [th.get_text(strip=True) for th in table.find("thead").find_all("th")]
+    thead = table.find("thead")
+    header_cells = [th.get_text(strip=True) for th in thead.find_all("th")] if thead else []
+    print(f"[DEBUG] Headers found (informational only, not used for mapping): {header_cells}")
+
+    tbody = table.find("tbody")
+    if tbody is None:
+        print(f"[WARN] Table found but no <tbody>.")
+        return {}
+    body_rows = tbody.find_all("tr")
+    print(f"[DEBUG] Found {len(body_rows)} <tr> rows in tbody")
+
+    # Confirmed via manual inspection of real decoded row data (Aug 2026) — the PLAYER
+    # column has no <td> of its own (name lives only in the row's <a> link), so these
+    # lists are one shorter than the visible header count and start at TEAM.
+    HITTING_COLS = ["TEAM","G","AB","R","H","2B","3B","HR","RBI","BB","SO","SB","CS","AVG","OBP","SLG","OPS"]
+    PITCHING_COLS = ["TEAM","W","L","ERA","G","GS","CG","SHO","SV","SVO","IP","H","R","ER","HR","HB","BB","SO","WHIP","AVG"]
+    expected_cols = PITCHING_COLS if stat_type == "pitching" else HITTING_COLS
+
     rows_out = {}
-    for row in table.find("tbody").find_all("tr"):
+    for i, row in enumerate(body_rows):
         cells = row.find_all("td")
-        if len(cells) != len(header_cells):
-            continue
         link = row.find("a", href=True)
-        id_match = re.search(r"-(\d+)(?:\?|$)", link["href"]) if link else None
+        cell_texts = [c.get_text(strip=True) for c in cells]
+        if i == 0:
+            print(f"[DEBUG] Row 0 cell values: {cell_texts}")
+            print(f"[DEBUG] Row 0: {len(cells)} cells (expected {len(expected_cols)}), "
+                  f"link href={link['href'] if link else None}")
+        if len(cells) != len(expected_cols):
+            continue
+        id_match = re.search(r"/player/(\d+)", link["href"]) if link else None
         if not id_match:
             continue
         mlb_id = int(id_match.group(1))
-        row_data = {}
-        for header, cell in zip(header_cells, cells):
-            text = cell.get_text(strip=True)
-            row_data[header] = text
+        row_data = dict(zip(expected_cols, cell_texts))
         rows_out[mlb_id] = normalize_row(row_data, stat_type)
+    print(f"[DEBUG] Successfully parsed {len(rows_out)} player rows")
     return rows_out
 
 
@@ -134,6 +157,7 @@ def build_stint(row, level_code, level_label, stat_type):
             "D": row["2B"], "T": row["3B"], "HR": row["HR"], "RBI": row["RBI"],
             "BB": row["BB"], "SO": row["SO"], "SB": row["SB"],
             "AVG": row["AVG"], "OBP": row["OBP"], "SLG": row["SLG"], "OPS": row["OPS"],
+            "WRC": round(100 * row["OPS"] / 0.700),  # same approximation formula used site-wide
         }
     else:
         return {
@@ -148,6 +172,8 @@ def push_player(slug, seasons, splits=None):
     resp = requests.post(PUSH_ENDPOINT, json={
         "key": PUSH_KEY, "slug": slug, "seasons": seasons, "splits": splits,
     }, timeout=15)
+    if not resp.ok:
+        print(f"[ERROR BODY] {slug}: status={resp.status_code} body={resp.text[:500]}")
     resp.raise_for_status()
     return resp.json()
 
