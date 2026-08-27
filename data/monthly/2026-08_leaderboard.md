@@ -1,79 +1,78 @@
 # YankeesFarm Stat Leaders — 2026-08
 **Source file:** data/monthly/2026-08.json
-**Qualifying minimums:** 384 PA / 62.0 IP
+**Qualifying minimums:** 388 PA / 62.666666666666664 IP
 
 ## HITTING LEADERS
 
 ### Batting Average
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Marco Luciano | SWB | 0.297 |
+| 1 | Marco Luciano | SWB | 0.298 |
 | 2 | Oswaldo Cabrera | SWB | 0.289 |
 | 3 | Jackson Lovich | HV | 0.288 |
-| 4 | Coby Morales | SOM | 0.281 |
-| T5 | Roderick Arias | SOM | 0.274 |
-| T5 | DJ Gladney | SOM | 0.274 |
-| 7 | Eric Genther | HV | 0.268 |
+| 4 | Coby Morales | SOM | 0.284 |
+| T5 | Roderick Arias | SOM | 0.272 |
+| T5 | DJ Gladney | SOM | 0.272 |
+| 7 | Eric Genther | HV | 0.267 |
 | 8 | Bryce Martin-Grudzielanek | HV | 0.261 |
-| 9 | Tyler Hardman | SWB | 0.254 |
+| 9 | Tyler Hardman | SWB | 0.256 |
 | 10 | Yanquiel Fernández | SWB | 0.252 |
 
 ### On-Base Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Eric Genther | HV | 0.403 |
+| 1 | Eric Genther | HV | 0.402 |
 | 2 | Marco Luciano | SWB | 0.386 |
-| 3 | Coby Morales | SOM | 0.371 |
-| 4 | Bryce Martin-Grudzielanek | HV | 0.365 |
-| 5 | Jackson Lovich | HV | 0.364 |
-| 6 | Hans Montero | HV | 0.361 |
-| 7 | Roderick Arias | SOM | 0.356 |
-| T8 | Enmanuel Tejeda | HV | 0.349 |
-| T8 | Jace Avina | SOM | 0.349 |
-| 10 | Oswaldo Cabrera | SWB | 0.344 |
+| 3 | Coby Morales | SOM | 0.374 |
+| T4 | Jackson Lovich | HV | 0.365 |
+| T4 | Hans Montero | HV | 0.365 |
+| 6 | Bryce Martin-Grudzielanek | HV | 0.363 |
+| 7 | Roderick Arias | SOM | 0.355 |
+| 8 | Jace Avina | SOM | 0.351 |
+| 9 | Enmanuel Tejeda | HV | 0.349 |
+| 10 | Oswaldo Cabrera | SWB | 0.346 |
 
 ### Slugging Percentage
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Marco Luciano | SWB | 0.555 |
-| 2 | DJ Gladney | SOM | 0.524 |
-| 3 | Jackson Lovich | HV | 0.502 |
-| 4 | Coby Morales | SOM | 0.494 |
+| 1 | Marco Luciano | SWB | 0.553 |
+| 2 | DJ Gladney | SOM | 0.520 |
+| 3 | Jackson Lovich | HV | 0.505 |
+| 4 | Coby Morales | SOM | 0.495 |
 | 5 | Tyler Hardman | SWB | 0.480 |
-| 6 | Josh Moylan | SOM | 0.478 |
-| 7 | Jace Avina | SOM | 0.473 |
-| 8 | Oswaldo Cabrera | SWB | 0.452 |
-| 9 | Ernesto Martinez Jr. | SWB | 0.451 |
-| 10 | Roderick Arias | SOM | 0.450 |
+| T6 | Josh Moylan | SOM | 0.473 |
+| T6 | Jace Avina | SOM | 0.473 |
+| T8 | Oswaldo Cabrera | SWB | 0.451 |
+| T8 | Ernesto Martinez Jr. | SWB | 0.451 |
+| 10 | Yanquiel Fernández | SWB | 0.447 |
 
 ### OPS
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Marco Luciano | SWB | 0.941 |
-| 2 | Jackson Lovich | HV | 0.866 |
-| 3 | Coby Morales | SOM | 0.865 |
-| 4 | DJ Gladney | SOM | 0.854 |
-| 5 | Eric Genther | HV | 0.843 |
-| 6 | Jace Avina | SOM | 0.822 |
-| 7 | Tyler Hardman | SWB | 0.820 |
-| 8 | Roderick Arias | SOM | 0.806 |
-| 9 | Oswaldo Cabrera | SWB | 0.796 |
-| 10 | Ernesto Martinez Jr. | SWB | 0.786 |
+| 1 | Marco Luciano | SWB | 0.939 |
+| 2 | Jackson Lovich | HV | 0.870 |
+| 3 | Coby Morales | SOM | 0.869 |
+| 4 | DJ Gladney | SOM | 0.849 |
+| 5 | Eric Genther | HV | 0.841 |
+| 6 | Jace Avina | SOM | 0.824 |
+| 7 | Tyler Hardman | SWB | 0.821 |
+| 8 | Roderick Arias | SOM | 0.801 |
+| 9 | Oswaldo Cabrera | SWB | 0.797 |
+| 10 | Hans Montero | HV | 0.787 |
 
 ### Hits
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| T1 | Jackson Lovich | HV | 117 |
-| T1 | Oswaldo Cabrera | SWB | 117 |
-| 3 | Coby Morales | SOM | 116 |
+| T1 | Jackson Lovich | HV | 118 |
+| T1 | Coby Morales | SOM | 118 |
+| T1 | Oswaldo Cabrera | SWB | 118 |
 | 4 | Roderick Arias | SOM | 114 |
-| T5 | Bryce Martin-Grudzielanek | HV | 105 |
-| T5 | Yanquiel Fernández | SWB | 105 |
-| 7 | DJ Gladney | SOM | 104 |
-| T8 | Tyler Hardman | SWB | 102 |
-| T8 | Marco Luciano | SWB | 102 |
-| T10 | Eric Genther | HV | 100 |
-| T10 | Kyle West | HV | 100 |
+| 5 | Bryce Martin-Grudzielanek | HV | 106 |
+| 6 | Yanquiel Fernández | SWB | 105 |
+| T7 | DJ Gladney | SOM | 104 |
+| T7 | Tyler Hardman | SWB | 104 |
+| T7 | Marco Luciano | SWB | 104 |
+| 10 | Eric Genther | HV | 101 |
 
 ### Doubles
 | # | Player | Team | Value |
@@ -85,9 +84,9 @@
 | 5 | DJ Gladney | SOM | 22 |
 | T6 | Wilberson De Pena | TAM | 21 |
 | T6 | Bryce Martin-Grudzielanek | HV | 21 |
+| T6 | Eric Genther | HV | 21 |
 | T6 | Marco Luciano | SWB | 21 |
-| T9 | Eric Genther | HV | 20 |
-| T9 | Coby Morales | SOM | 20 |
+| 10 | Coby Morales | SOM | 20 |
 
 ### Triples
 | # | Player | Team | Value |
@@ -98,6 +97,7 @@
 | T4 | Wilson Rodriguez | HV | 5 |
 | T4 | Dariel Santana | DSL-B | 5 |
 | T6 | Luis Durango | SOM | 4 |
+| T6 | Jackson Lovich | HV | 4 |
 | T6 | Yostin Pena | TAM | 4 |
 | T6 | Coby Morales | SOM | 4 |
 | T6 | Ernesto Martinez Jr. | SWB | 4 |
@@ -122,12 +122,12 @@
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | DJ Gladney | SOM | 85 |
-| 2 | Jackson Lovich | HV | 81 |
-| 3 | Yostin Pena | TAM | 77 |
-| 4 | Tyler Hardman | SWB | 76 |
-| T5 | Wilberson De Pena | TAM | 75 |
-| T5 | Roderick Arias | SOM | 75 |
-| T5 | Coby Morales | SOM | 75 |
+| 2 | Jackson Lovich | HV | 82 |
+| T3 | Yostin Pena | TAM | 77 |
+| T3 | Tyler Hardman | SWB | 77 |
+| 5 | Coby Morales | SOM | 76 |
+| T6 | Wilberson De Pena | TAM | 75 |
+| T6 | Roderick Arias | SOM | 75 |
 | 8 | Kyle West | HV | 71 |
 | 9 | Yanquiel Fernández | SWB | 70 |
 | T10 | Eric Genther | HV | 65 |
@@ -140,8 +140,8 @@
 | 2 | Luis Durango | SOM | 44 |
 | 3 | Bryce Martin-Grudzielanek | HV | 43 |
 | 4 | Stiven Marinez | DSL-Y | 39 |
-| 5 | Hans Montero | HV | 38 |
-| 6 | Core Jackson | SOM | 37 |
+| T5 | Hans Montero | HV | 38 |
+| T5 | Core Jackson | SOM | 38 |
 | 7 | Enmanuel Tejeda | HV | 35 |
 | 8 | Jackson Lovich | HV | 34 |
 | T9 | Roderick Arias | SOM | 33 |
@@ -150,100 +150,100 @@
 ### BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Hans Montero | HV | 14.8% |
-| 2 | Enmanuel Tejeda | HV | 14.4% |
+| 1 | Hans Montero | HV | 15.1% |
+| 2 | Enmanuel Tejeda | HV | 14.3% |
 | 3 | Eric Genther | HV | 13.3% |
-| 4 | Coby Morales | SOM | 12.8% |
-| 5 | Jace Avina | SOM | 12.5% |
-| 6 | Jackson Castillo | SOM | 12.5% |
-| 7 | Marco Luciano | SWB | 12.3% |
-| 8 | Bryce Martin-Grudzielanek | HV | 12.1% |
+| 4 | Coby Morales | SOM | 12.9% |
+| 5 | Jackson Castillo | SOM | 12.6% |
+| 6 | Jace Avina | SOM | 12.4% |
+| 7 | Marco Luciano | SWB | 12.1% |
+| 8 | Bryce Martin-Grudzielanek | HV | 12.0% |
 | 9 | Ernesto Martinez Jr. | SWB | 11.2% |
-| 10 | Jackson Lovich | HV | 10.6% |
+| 10 | Jackson Lovich | HV | 10.7% |
 
 ### K%
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Jackson Castillo | SOM | 17.7% |
+| 1 | Jackson Castillo | SOM | 18.0% |
 | 2 | Eric Genther | HV | 18.4% |
-| 3 | Enmanuel Tejeda | HV | 19.6% |
-| 4 | Oswaldo Cabrera | SWB | 19.7% |
+| 3 | Oswaldo Cabrera | SWB | 19.5% |
+| 4 | Enmanuel Tejeda | HV | 19.6% |
 | 5 | Yanquiel Fernández | SWB | 22.2% |
 | 6 | Bryce Martin-Grudzielanek | HV | 23.5% |
 | 7 | Tyler Hardman | SWB | 23.9% |
-| 8 | Jace Avina | SOM | 24.0% |
+| 8 | Jace Avina | SOM | 24.2% |
 | 9 | Hans Montero | HV | 24.3% |
-| 10 | Coby Morales | SOM | 24.5% |
+| 10 | Coby Morales | SOM | 24.3% |
 
 ### K-BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Josh Moylan | SOM | 29.4% |
-| 2 | DJ Gladney | SOM | 25.9% |
+| 1 | Josh Moylan | SOM | 29.3% |
+| 2 | DJ Gladney | SOM | 25.7% |
 | 3 | Kyle West | HV | 22.2% |
-| 4 | Roderick Arias | SOM | 20.9% |
-| 5 | Jackson Lovich | HV | 17.5% |
+| 4 | Roderick Arias | SOM | 20.8% |
+| 5 | Jackson Lovich | HV | 17.7% |
 | 6 | Yanquiel Fernández | SWB | 15.2% |
 | 7 | Ernesto Martinez Jr. | SWB | 14.2% |
-| 8 | Tyler Hardman | SWB | 14.0% |
-| 9 | Marco Luciano | SWB | 12.5% |
-| 10 | Coby Morales | SOM | 11.7% |
+| 8 | Tyler Hardman | SWB | 14.1% |
+| 9 | Marco Luciano | SWB | 12.9% |
+| 10 | Jace Avina | SOM | 11.8% |
 
 ### XBH%
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | 1 | Josh Moylan | SOM | 49.4% |
-| 2 | Jace Avina | SOM | 49.0% |
+| 2 | Jace Avina | SOM | 48.0% |
 | 3 | DJ Gladney | SOM | 45.2% |
-| 4 | Marco Luciano | SWB | 43.1% |
-| 5 | Tyler Hardman | SWB | 42.2% |
-| 6 | Hans Montero | HV | 42.0% |
+| 4 | Marco Luciano | SWB | 42.3% |
+| 5 | Tyler Hardman | SWB | 41.3% |
+| 6 | Hans Montero | HV | 41.1% |
 | 7 | Ernesto Martinez Jr. | SWB | 39.5% |
-| 8 | Coby Morales | SOM | 37.9% |
+| 8 | Coby Morales | SOM | 37.3% |
 | 9 | Roderick Arias | SOM | 36.8% |
-| 10 | Yanquiel Fernández | SWB | 36.2% |
+| 10 | Jackson Lovich | HV | 36.4% |
 
 ### ISO
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Marco Luciano | SWB | 0.258 |
-| 2 | DJ Gladney | SOM | 0.250 |
-| 3 | Josh Moylan | SOM | 0.244 |
-| T4 | Jace Avina | SOM | 0.226 |
-| T4 | Tyler Hardman | SWB | 0.226 |
-| 6 | Jackson Lovich | HV | 0.214 |
-| 7 | Coby Morales | SOM | 0.213 |
+| 1 | Marco Luciano | SWB | 0.255 |
+| 2 | DJ Gladney | SOM | 0.248 |
+| 3 | Josh Moylan | SOM | 0.242 |
+| T4 | Jace Avina | SOM | 0.224 |
+| T4 | Tyler Hardman | SWB | 0.224 |
+| 6 | Jackson Lovich | HV | 0.217 |
+| 7 | Coby Morales | SOM | 0.211 |
 | 8 | Ernesto Martinez Jr. | SWB | 0.202 |
 | 9 | Yanquiel Fernández | SWB | 0.195 |
-| 10 | Hans Montero | HV | 0.185 |
+| 10 | Hans Montero | HV | 0.183 |
 
 ### BABIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Roderick Arias | SOM | 0.380 |
-| 2 | Jackson Lovich | HV | 0.368 |
-| 3 | DJ Gladney | SOM | 0.363 |
-| 4 | Marco Luciano | SWB | 0.354 |
-| 5 | Coby Morales | SOM | 0.344 |
-| 6 | Bryce Martin-Grudzielanek | HV | 0.331 |
+| 1 | Roderick Arias | SOM | 0.377 |
+| 2 | Jackson Lovich | HV | 0.370 |
+| 3 | DJ Gladney | SOM | 0.360 |
+| 4 | Marco Luciano | SWB | 0.358 |
+| 5 | Coby Morales | SOM | 0.348 |
+| 6 | Bryce Martin-Grudzielanek | HV | 0.330 |
 | 7 | Oswaldo Cabrera | SWB | 0.325 |
-| 8 | Josh Moylan | SOM | 0.320 |
-| 9 | Eric Genther | HV | 0.308 |
-| 10 | Ernesto Martinez Jr. | SWB | 0.299 |
+| 8 | Josh Moylan | SOM | 0.315 |
+| 9 | Eric Genther | HV | 0.307 |
+| 10 | Hans Montero | HV | 0.301 |
 
 ### wOBA
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Marco Luciano | SWB | 0.406 |
-| 2 | Coby Morales | SOM | 0.377 |
-| T3 | Jackson Lovich | HV | 0.376 |
-| T3 | Eric Genther | HV | 0.376 |
-| 5 | DJ Gladney | SOM | 0.366 |
-| 6 | Jace Avina | SOM | 0.360 |
-| 7 | Tyler Hardman | SWB | 0.358 |
-| 8 | Roderick Arias | SOM | 0.353 |
-| 9 | Hans Montero | HV | 0.348 |
-| 10 | Oswaldo Cabrera | SWB | 0.346 |
+| 1 | Marco Luciano | SWB | 0.405 |
+| 2 | Coby Morales | SOM | 0.379 |
+| 3 | Jackson Lovich | HV | 0.377 |
+| 4 | Eric Genther | HV | 0.375 |
+| 5 | DJ Gladney | SOM | 0.364 |
+| 6 | Jace Avina | SOM | 0.361 |
+| 7 | Tyler Hardman | SWB | 0.359 |
+| 8 | Roderick Arias | SOM | 0.352 |
+| 9 | Hans Montero | HV | 0.351 |
+| 10 | Oswaldo Cabrera | SWB | 0.347 |
 
 ## PITCHING LEADERS
 
@@ -252,9 +252,9 @@
 |---|--------|------|-------|
 | 1 | Elmer Rodríguez | SWB | 2.59 |
 | 2 | Brendan Beck | SWB | 2.75 |
-| 3 | Tyler Boudreau | SOM | 3.47 |
-| 4 | Zach Messinger | SWB | 3.88 |
-| 5 | Luis Serna | HV | 4.15 |
+| 3 | Tyler Boudreau | SOM | 3.39 |
+| 4 | Zach Messinger | SWB | 3.86 |
+| 5 | Luis Serna | HV | 3.98 |
 | 6 | Justin West | TAM | 4.25 |
 | 7 | Allen Facundo | HV | 4.27 |
 | 8 | Kyle Carr | SWB | 4.32 |
@@ -264,10 +264,10 @@
 ### WHIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Brendan Beck | SWB | 1.05 |
-| 2 | Tyler Boudreau | SOM | 1.07 |
-| 3 | Luis Serna | HV | 1.16 |
-| 4 | Zach Messinger | SWB | 1.20 |
+| 1 | Tyler Boudreau | SOM | 1.04 |
+| 2 | Brendan Beck | SWB | 1.05 |
+| 3 | Luis Serna | HV | 1.15 |
+| 4 | Zach Messinger | SWB | 1.19 |
 | T5 | Justin West | TAM | 1.26 |
 | T5 | Elmer Rodríguez | SWB | 1.26 |
 | 7 | Xavier Rivas | SWB | 1.30 |
@@ -280,12 +280,12 @@
 |---|--------|------|-------|
 | 1 | Brendan Beck | SWB | 121.0 |
 | 2 | Rory Fox | SOM | 111.0 |
-| 3 | Cade Smith | SOM | 105.0 |
-| 4 | Luis Serna | HV | 104.0 |
-| 5 | Justin West | TAM | 103.2 |
-| 6 | Allen Facundo | HV | 103.1 |
-| 7 | Dom Hamel | SWB | 99.0 |
-| 8 | Tyler Boudreau | SOM | 98.2 |
+| 3 | Cade Smith | SOM | 110.1 |
+| 4 | Luis Serna | HV | 108.2 |
+| 5 | Tyler Boudreau | SOM | 103.2 |
+| 6 | Justin West | TAM | 103.2 |
+| 7 | Allen Facundo | HV | 103.1 |
+| 8 | Dom Hamel | SWB | 99.0 |
 | 9 | Elmer Rodríguez | SWB | 97.1 |
 | 10 | Adam Kloffenstein | SWB | 94.2 |
 
@@ -294,26 +294,27 @@
 |---|--------|------|-------|
 | 1 | Allen Facundo | HV | 136 |
 | 2 | Brendan Beck | SWB | 133 |
-| 3 | Luis Serna | HV | 121 |
+| 3 | Luis Serna | HV | 128 |
 | 4 | Xavier Rivas | SWB | 120 |
 | 5 | Rory Fox | SOM | 114 |
-| 6 | Tyler Boudreau | SOM | 110 |
+| 6 | Tyler Boudreau | SOM | 113 |
 | 7 | Justin West | TAM | 108 |
-| 8 | Franyer Herrera | HV | 100 |
-| T9 | Kyle Carr | SWB | 99 |
-| T9 | Elmer Rodríguez | SWB | 99 |
+| 8 | Cade Smith | SOM | 105 |
+| 9 | Franyer Herrera | HV | 100 |
+| T10 | Kyle Carr | SWB | 99 |
+| T10 | Elmer Rodríguez | SWB | 99 |
 
 ### AVG Against
 | # | Player | Team | Value |
 |---|--------|------|-------|
 | T1 | Allen Facundo | HV | 0.188 |
 | T1 | Xavier Rivas | SWB | 0.188 |
-| 3 | Tyler Boudreau | SOM | 0.195 |
+| 3 | Tyler Boudreau | SOM | 0.189 |
 | 4 | Zach Messinger | SWB | 0.197 |
 | 5 | Brendan Beck | SWB | 0.205 |
-| 6 | Elmer Rodríguez | SWB | 0.219 |
-| T7 | Luis Serna | HV | 0.221 |
-| T7 | Carlos Lagrange | SWB | 0.221 |
+| T6 | Luis Serna | HV | 0.219 |
+| T6 | Elmer Rodríguez | SWB | 0.219 |
+| 8 | Carlos Lagrange | SWB | 0.221 |
 | 9 | Adam Kloffenstein | SWB | 0.233 |
 | 10 | Franyer Herrera | HV | 0.241 |
 
@@ -326,9 +327,9 @@
 | 4 | Trent Sellers | SWB | 11.36 |
 | 5 | Kyle Carr | SWB | 10.95 |
 | 6 | Sean Paul Liñan | SOM | 10.73 |
-| 7 | Luis Serna | HV | 10.47 |
-| 8 | Tyler Boudreau | SOM | 10.03 |
-| 9 | Brendan Beck | SWB | 9.89 |
+| 7 | Luis Serna | HV | 10.60 |
+| 8 | Brendan Beck | SWB | 9.89 |
+| 9 | Tyler Boudreau | SOM | 9.81 |
 | 10 | Franyer Herrera | HV | 9.75 |
 
 ### K%
@@ -337,9 +338,9 @@
 | 1 | Xavier Rivas | SWB | 31.9% |
 | 2 | Allen Facundo | HV | 29.9% |
 | 3 | Carlos Lagrange | SWB | 29.5% |
-| 4 | Luis Serna | HV | 27.8% |
-| 5 | Tyler Boudreau | SOM | 27.6% |
-| 6 | Brendan Beck | SWB | 27.6% |
+| 4 | Luis Serna | HV | 28.2% |
+| 5 | Brendan Beck | SWB | 27.6% |
+| 6 | Tyler Boudreau | SOM | 27.2% |
 | 7 | Kyle Carr | SWB | 27.1% |
 | 8 | Trent Sellers | SWB | 26.6% |
 | 9 | Sean Paul Liñan | SOM | 26.4% |
@@ -351,21 +352,21 @@
 | 1 | Rory Fox | SOM | 5.8% |
 | 2 | Justin West | TAM | 7.0% |
 | 3 | Brendan Beck | SWB | 7.7% |
-| 4 | Luis Serna | HV | 7.8% |
+| 4 | Luis Serna | HV | 7.7% |
 | 5 | Chase Chaney | SOM | 8.5% |
-| 6 | Tyler Boudreau | SOM | 9.3% |
-| 7 | Kyle Carr | SWB | 9.6% |
-| 8 | Cade Smith | SOM | 9.7% |
+| 6 | Tyler Boudreau | SOM | 9.2% |
+| 7 | Cade Smith | SOM | 9.4% |
+| 8 | Kyle Carr | SWB | 9.6% |
 | 9 | Bryce Cunningham | SOM | 10.4% |
 | 10 | Sean Paul Liñan | SOM | 10.9% |
 
 ### K-BB%
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luis Serna | HV | 20.0% |
+| 1 | Luis Serna | HV | 20.5% |
 | 2 | Brendan Beck | SWB | 19.9% |
-| 3 | Tyler Boudreau | SOM | 18.3% |
-| 4 | Justin West | TAM | 18.2% |
+| 3 | Justin West | TAM | 18.2% |
+| 4 | Tyler Boudreau | SOM | 18.1% |
 | 5 | Rory Fox | SOM | 17.9% |
 | 6 | Carlos Lagrange | SWB | 17.8% |
 | 7 | Kyle Carr | SWB | 17.5% |
@@ -376,17 +377,16 @@
 ### FIP
 | # | Player | Team | Value |
 |---|--------|------|-------|
-| 1 | Luis Serna | HV | 3.48 |
-| 2 | Allen Facundo | HV | 3.90 |
-| 3 | Brendan Beck | SWB | 5.26 |
-| 4 | Franyer Herrera | HV | 5.41 |
-| 5 | Justin West | TAM | 5.64 |
-| 6 | Elmer Rodríguez | SWB | 5.65 |
-| 7 | Tyler Boudreau | SOM | 5.81 |
-| 8 | Kyle Carr | SWB | 6.13 |
-| 9 | Rory Fox | SOM | 6.17 |
-| T10 | Carlos Lagrange | SWB | 6.72 |
-| T10 | Zach Messinger | SWB | 6.72 |
+| 1 | Luis Serna | HV | 3.45 |
+| 2 | Allen Facundo | HV | 3.98 |
+| 3 | Brendan Beck | SWB | 5.25 |
+| 4 | Franyer Herrera | HV | 5.49 |
+| T5 | Justin West | TAM | 5.64 |
+| T5 | Elmer Rodríguez | SWB | 5.64 |
+| 7 | Tyler Boudreau | SOM | 5.97 |
+| 8 | Kyle Carr | SWB | 6.12 |
+| 9 | Rory Fox | SOM | 6.23 |
+| 10 | Zach Messinger | SWB | 6.67 |
 
 ---
 *Auto-generated. Verify top names per category against MiLB.com before posting.*
