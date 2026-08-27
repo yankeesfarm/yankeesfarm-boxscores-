@@ -1,0 +1,38 @@
+{
+  "hitters": [
+    {
+      "playerId": 685744,
+      "name": "Kenedy Corona",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "CF",
+      "bio": "AAA | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/685744/spots/120",
+      "statline": "2 for 4: Double (10), HR (7), 3 RBI (33), SB (11)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 675296,
+      "name": "Hayden Merda",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/675296/spots/120",
+      "statline": "2.0 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 702436,
+      "name": "Luis Serna",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702436/spots/120",
+      "statline": "4.2 IP, 0 R, 7 K"
+    }
+  ],
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-27T02:39:33.648353+00:00"
+}
