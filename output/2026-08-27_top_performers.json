@@ -1,0 +1,88 @@
+{
+  "hitters": [
+    {
+      "playerId": 823918,
+      "name": "Kyle West",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "1B",
+      "bio": "High-A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/823918/spots/120",
+      "statline": "2 for 4: Triple (2)"
+    },
+    {
+      "playerId": 827290,
+      "name": "Paul Gutierrez-Contreras II",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "DH",
+      "bio": "A | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/827290/spots/120",
+      "statline": "2 for 4: HR (1), 2 RBI (8), SB (4)"
+    },
+    {
+      "playerId": 801489,
+      "name": "Tyce Armstrong",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "1B",
+      "bio": "A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/801489/spots/120",
+      "statline": "3 for 5: HR (3), 2 RBI (15), SB (2)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 694633,
+      "name": "Chase Hampton",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694633/spots/120",
+      "statline": "4.0 IP, 1 R, 6 K"
+    },
+    {
+      "playerId": 695560,
+      "name": "Pico Kohn",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695560/spots/120",
+      "statline": "4.0 IP, 1 R, 9 K"
+    },
+    {
+      "playerId": 805128,
+      "name": "Edinzo Marquez",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/805128/spots/120",
+      "statline": "5.0 IP, 1 R, 5 K"
+    },
+    {
+      "playerId": 680893,
+      "name": "Hueston Morrill",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/680893/spots/120",
+      "statline": "1.0 IP, 1 R, 3 K"
+    },
+    {
+      "playerId": 686433,
+      "name": "Luis Velasquez",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/686433/spots/120",
+      "statline": "2.2 IP, 1 R, 3 K"
+    }
+  ],
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-28T03:42:08.942740+00:00"
+}
