@@ -1,0 +1,108 @@
+{
+  "hitters": [
+    {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "DH",
+      "bio": "AAA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "2 for 3: HR (22), RBI (71)"
+    },
+    {
+      "playerId": 694742,
+      "name": "Josh Moylan",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "1B",
+      "bio": "AA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694742/spots/120",
+      "statline": "2 for 3: HR (12), RBI (32)"
+    },
+    {
+      "playerId": 823918,
+      "name": "Kyle West",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "1B",
+      "bio": "High-A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/823918/spots/120",
+      "statline": "2 for 4: HR (20), 2 RBI (73)"
+    },
+    {
+      "playerId": 824424,
+      "name": "Bear Harrison",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "C",
+      "bio": "A | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/824424/spots/120",
+      "statline": "3 for 6: 2 Doubles (3), 3 RBI (9)"
+    },
+    {
+      "playerId": 801489,
+      "name": "Tyce Armstrong",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "1B",
+      "bio": "A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/801489/spots/120",
+      "statline": "2 for 5: Double (4), HR (4), 5 RBI (20)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 529017,
+      "name": "Alexander Cornielle",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/529017/spots/120",
+      "statline": "8.0 IP, 0 R, 6 K"
+    },
+    {
+      "playerId": 687589,
+      "name": "Dom Hamel",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/687589/spots/120",
+      "statline": "6.0 IP, 1 R, 10 K"
+    },
+    {
+      "playerId": 702098,
+      "name": "Allen Facundo",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702098/spots/120",
+      "statline": "6.0 IP, 2 R, 5 K"
+    },
+    {
+      "playerId": 822950,
+      "name": "J.T. Etheridge",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+      "statline": "6.0 IP, 0 R, 10 K"
+    },
+    {
+      "playerId": 815069,
+      "name": "Andrew Landry",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815069/spots/120",
+      "statline": "1.2 IP, 0 R, 4 K"
+    }
+  ],
+  "date": "2026-08-28",
+  "generatedAt": "2026-08-29T08:30:04.248106+00:00"
+}
