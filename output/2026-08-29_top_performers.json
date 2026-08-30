@@ -1,0 +1,78 @@
+{
+  "hitters": [
+    {
+      "playerId": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "DH",
+      "bio": "AAA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+      "statline": "2 for 5: 2 RBI (29)"
+    },
+    {
+      "playerId": 682617,
+      "name": "Marco Luciano",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682617/spots/120",
+      "statline": "3 for 5: HR (13), 3 RBI (40)"
+    },
+    {
+      "playerId": 702068,
+      "name": "Cole Gabrielson",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "LF",
+      "bio": "AA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702068/spots/120",
+      "statline": "2 for 4: HR (5), RBI (11)"
+    },
+    {
+      "playerId": 804944,
+      "name": "Jackson Lovich",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "SS",
+      "bio": "High-A | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804944/spots/120",
+      "statline": "2 for 4: HR (4), RBI (23)"
+    },
+    {
+      "playerId": 806154,
+      "name": "David McCann",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "1B",
+      "bio": "High-A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/806154/spots/120",
+      "statline": "2 for 2: HR (7), 2 RBI (18)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 812431,
+      "name": "Rory Fox",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/812431/spots/120",
+      "statline": "5.1 IP, 2 R, 5 K"
+    },
+    {
+      "playerId": 804698,
+      "name": "Brandon Decker",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804698/spots/120",
+      "statline": "3.0 IP, 0 R, 3 K"
+    }
+  ],
+  "date": "2026-08-29",
+  "generatedAt": "2026-08-30T04:39:24.528323+00:00"
+}
