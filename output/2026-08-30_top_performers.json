@@ -1,0 +1,118 @@
+{
+  "hitters": [
+    {
+      "playerId": 683011,
+      "name": "Anthony Volpe",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "3B",
+      "bio": "AAA | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+      "statline": "3 for 4: 2 HR (8), 2 RBI (20)"
+    },
+    {
+      "playerId": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "LF",
+      "bio": "AAA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+      "statline": "3 for 5: Double (8)"
+    },
+    {
+      "playerId": 682617,
+      "name": "Marco Luciano",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682617/spots/120",
+      "statline": "2 for 5: HR (14), 2 RBI (42)"
+    },
+    {
+      "playerId": 680474,
+      "name": "Max Schuemann",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "SS",
+      "bio": "AAA | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/680474/spots/120",
+      "statline": "3 for 4: Double (10), RBI (16)"
+    },
+    {
+      "playerId": 676205,
+      "name": "Tyler Hardman",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "1B",
+      "bio": "AAA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/676205/spots/120",
+      "statline": "2 for 5: HR (12), 3 RBI (40)"
+    },
+    {
+      "playerId": 829769,
+      "name": "Yostin Pena",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "CF",
+      "bio": "A | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/829769/spots/120",
+      "statline": "2 for 4: HR (5), 2 RBI (22)"
+    },
+    {
+      "playerId": 801489,
+      "name": "Tyce Armstrong",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "1B",
+      "bio": "A | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/801489/spots/120",
+      "statline": "3 for 5: Double (5), HR (5), 2 RBI (22)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 814343,
+      "name": "Danny Flatt",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "SP",
+      "bio": "High-A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/814343/spots/120",
+      "statline": "3.0 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 811963,
+      "name": "Wyatt Parliament",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/811963/spots/120",
+      "statline": "3.1 IP, 0 R, 4 K"
+    },
+    {
+      "playerId": 669740,
+      "name": "Travis MacGregor",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/669740/spots/120",
+      "statline": "1.1 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 804892,
+      "name": "Justin West",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804892/spots/120",
+      "statline": "4.1 IP, 0 R, 9 K"
+    }
+  ],
+  "date": "2026-08-30",
+  "generatedAt": "2026-08-31T07:58:07.856305+00:00"
+}
