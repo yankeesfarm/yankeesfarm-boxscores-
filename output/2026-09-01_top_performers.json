@@ -1,0 +1,88 @@
+{
+  "hitters": [
+    {
+      "playerId": 683011,
+      "name": "Anthony Volpe",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "SS",
+      "bio": "AAA | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+      "statline": "2 for 3: HR (9), RBI (21), 2 SB (7)"
+    },
+    {
+      "playerId": 641555,
+      "name": "J.C. Escarra",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "C",
+      "bio": "AAA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/641555/spots/120",
+      "statline": "3 for 4: HR (10), 4 RBI (43)"
+    },
+    {
+      "playerId": 665828,
+      "name": "Oswaldo Cabrera",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "3B",
+      "bio": "AAA | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/665828/spots/120",
+      "statline": "2 for 4: 2 RBI (61), SB (9)"
+    },
+    {
+      "playerId": 685744,
+      "name": "Kenedy Corona",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "LF",
+      "bio": "AAA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/685744/spots/120",
+      "statline": "2 for 4: 2 HR (9), 6 RBI (39)"
+    },
+    {
+      "playerId": 692110,
+      "name": "Core Jackson",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "SS",
+      "bio": "AA | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692110/spots/120",
+      "statline": "2 for 5: 2 RBI (7)"
+    },
+    {
+      "playerId": 701778,
+      "name": "Jace Avina",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "CF",
+      "bio": "AA | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701778/spots/120",
+      "statline": "3 for 5: Double (27), HR (20), 2 RBI (64)"
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 815454,
+      "name": "Chris Kean",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815454/spots/120",
+      "statline": "2.1 IP, 0 R, 3 K"
+    },
+    {
+      "playerId": 702036,
+      "name": "Tony Rossi",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702036/spots/120",
+      "statline": "1.1 IP, 1 R, 3 K"
+    }
+  ],
+  "date": "2026-09-01",
+  "generatedAt": "2026-09-02T05:24:28.921731+00:00"
+}
