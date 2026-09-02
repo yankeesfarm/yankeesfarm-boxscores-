@@ -1,6 +1,17 @@
 {
   "hitters": [
     {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "2 for 4: Double (17), RBI (73)",
+      "points": 4.5
+    },
+    {
       "playerId": 683011,
       "name": "Anthony Volpe",
       "level": "AAA",
@@ -8,7 +19,8 @@
       "position": "SS",
       "bio": "AAA | SS",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
-      "statline": "2 for 3: HR (9), RBI (21), 2 SB (7)"
+      "statline": "2 for 3: HR (9), RBI (21), 2 SB (7)",
+      "points": 7.75
     },
     {
       "playerId": 641555,
@@ -18,17 +30,8 @@
       "position": "C",
       "bio": "AAA | C",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/641555/spots/120",
-      "statline": "3 for 4: HR (10), 4 RBI (43)"
-    },
-    {
-      "playerId": 665828,
-      "name": "Oswaldo Cabrera",
-      "level": "AAA",
-      "team": "Scranton/Wilkes-Barre RailRiders",
-      "position": "3B",
-      "bio": "AAA | 3B",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/665828/spots/120",
-      "statline": "2 for 4: 2 RBI (61), SB (9)"
+      "statline": "3 for 4: HR (10), 4 RBI (43)",
+      "points": 11.0
     },
     {
       "playerId": 685744,
@@ -38,17 +41,8 @@
       "position": "LF",
       "bio": "AAA | LF",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/685744/spots/120",
-      "statline": "2 for 4: 2 HR (9), 6 RBI (39)"
-    },
-    {
-      "playerId": 692110,
-      "name": "Core Jackson",
-      "level": "AA",
-      "team": "Somerset Patriots",
-      "position": "SS",
-      "bio": "AA | SS",
-      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692110/spots/120",
-      "statline": "2 for 5: 2 RBI (7)"
+      "statline": "2 for 4: 2 HR (9), 6 RBI (39)",
+      "points": 19.5
     },
     {
       "playerId": 701778,
@@ -58,7 +52,8 @@
       "position": "CF",
       "bio": "AA | CF",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/701778/spots/120",
-      "statline": "3 for 5: Double (27), HR (20), 2 RBI (64)"
+      "statline": "3 for 5: Double (27), HR (20), 2 RBI (64)",
+      "points": 10.0
     }
   ],
   "pitchers": [
@@ -70,7 +65,8 @@
       "role": "RP",
       "bio": "AAA | RP",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/815454/spots/120",
-      "statline": "2.1 IP, 0 R, 3 K"
+      "statline": "2.1 IP, 0 R, 3 K",
+      "points": 8.58
     },
     {
       "playerId": 702036,
@@ -80,9 +76,32 @@
       "role": "RP",
       "bio": "AA | RP",
       "photoUrl": "https://midfield.mlbstatic.com/v1/people/702036/spots/120",
-      "statline": "1.1 IP, 1 R, 3 K"
+      "statline": "1.1 IP, 1 R, 3 K",
+      "points": 7.33
     }
   ],
+  "playerOfTheDay": {
+    "playerId": 685744,
+    "name": "Kenedy Corona",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "LF",
+    "bio": "AAA | LF",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/685744/spots/120",
+    "statline": "2 for 4: 2 HR (9), 6 RBI (39)",
+    "points": 19.5
+  },
+  "pitcherOfTheDay": {
+    "playerId": 815454,
+    "name": "Chris Kean",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "RP",
+    "bio": "AAA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/815454/spots/120",
+    "statline": "2.1 IP, 0 R, 3 K",
+    "points": 8.58
+  },
   "date": "2026-09-01",
-  "generatedAt": "2026-09-02T15:02:50.146364+00:00"
+  "generatedAt": "2026-09-02T19:37:20.679915+00:00"
 }
