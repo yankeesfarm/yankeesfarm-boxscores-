@@ -1,0 +1,151 @@
+{
+  "hitters": [
+    {
+      "playerId": 680474,
+      "name": "Max Schuemann",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "3B",
+      "bio": "AAA | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/680474/spots/120",
+      "statline": "3 for 5: HR (4), RBI (17)",
+      "points": 7.5
+    },
+    {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "DH",
+      "bio": "AAA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "3 for 4: 2 HR (24), 4 RBI (77)",
+      "points": 18.0
+    },
+    {
+      "playerId": 815089,
+      "name": "Coby Morales",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "1B",
+      "bio": "AA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815089/spots/120",
+      "statline": "2 for 4: HR (21), 2 RBI (79)",
+      "points": 6.75
+    },
+    {
+      "playerId": 687554,
+      "name": "DJ Gladney",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "RF",
+      "bio": "AA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/687554/spots/120",
+      "statline": "2 for 5: Double (23)",
+      "points": 3.5
+    },
+    {
+      "playerId": 835219,
+      "name": "Anthony Potestio",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "3B",
+      "bio": "A | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/835219/spots/120",
+      "statline": "2 for 3: HR (3), RBI (13)",
+      "points": 6.5
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 657376,
+      "name": "Clarke Schmidt",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/657376/spots/120",
+      "statline": "2.0 IP, 1 R, 3 K",
+      "points": 7.5
+    },
+    {
+      "playerId": 683332,
+      "name": "Tyler Boudreau",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683332/spots/120",
+      "statline": "3.0 IP, 0 R, 5 K",
+      "points": 10.25
+    },
+    {
+      "playerId": 529017,
+      "name": "Alexander Cornielle",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/529017/spots/120",
+      "statline": "5.0 IP, 1 R, 4 K",
+      "points": 6.0
+    },
+    {
+      "playerId": 815587,
+      "name": "Trent Sellers",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815587/spots/120",
+      "statline": "3.0 IP, 0 R, 6 K",
+      "points": 11.75
+    },
+    {
+      "playerId": 694662,
+      "name": "Jack Sokol",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694662/spots/120",
+      "statline": "1.1 IP, 1 R, 3 K",
+      "points": 7.08
+    },
+    {
+      "playerId": 828266,
+      "name": "Rafael Arias",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/828266/spots/120",
+      "statline": "2.2 IP, 0 R, 3 K",
+      "points": 8.67
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 692585,
+    "name": "Yanquiel Fern\u00e1ndez",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "DH",
+    "bio": "AAA | DH",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+    "statline": "3 for 4: 2 HR (24), 4 RBI (77)",
+    "points": 18.0
+  },
+  "pitcherOfTheDay": {
+    "playerId": 815587,
+    "name": "Trent Sellers",
+    "level": "AA",
+    "team": "Somerset Patriots",
+    "role": "RP",
+    "bio": "AA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/815587/spots/120",
+    "statline": "3.0 IP, 0 R, 6 K",
+    "points": 11.75
+  },
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-03T06:44:14.416912+00:00"
+}
