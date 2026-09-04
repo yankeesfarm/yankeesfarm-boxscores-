@@ -1,0 +1,96 @@
+{
+  "hitters": [
+    {
+      "playerId": 683011,
+      "name": "Anthony Volpe",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+      "statline": "3 for 4: Double (8), HR (10), RBI (22)",
+      "points": 9.5
+    },
+    {
+      "playerId": 804944,
+      "name": "Jackson Lovich",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "CF",
+      "bio": "High-A | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804944/spots/120",
+      "statline": "2 for 5: HR (5), 3 RBI (26), SB (18)",
+      "points": 9.0
+    },
+    {
+      "playerId": 824425,
+      "name": "Diego Castellanos",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "LF",
+      "bio": "A | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/824425/spots/120",
+      "statline": "2 for 3: HR (3), 2 RBI (9)",
+      "points": 7.0
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 822950,
+      "name": "J.T. Etheridge",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+      "statline": "5.0 IP, 1 R, 6 K",
+      "points": 10.75
+    },
+    {
+      "playerId": 805128,
+      "name": "Edinzo Marquez",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/805128/spots/120",
+      "statline": "5.2 IP, 0 R, 4 K",
+      "points": 13.58
+    },
+    {
+      "playerId": 702874,
+      "name": "Jose Ledesma",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702874/spots/120",
+      "statline": "2.0 IP, 0 R, 3 K",
+      "points": 8.5
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 683011,
+    "name": "Anthony Volpe",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "2B",
+    "bio": "AAA | 2B",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+    "statline": "3 for 4: Double (8), HR (10), RBI (22)",
+    "points": 9.5
+  },
+  "pitcherOfTheDay": {
+    "playerId": 805128,
+    "name": "Edinzo Marquez",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "role": "SP",
+    "bio": "A | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/805128/spots/120",
+    "statline": "5.2 IP, 0 R, 4 K",
+    "points": 13.58
+  },
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-04T02:13:01.622232+00:00"
+}
