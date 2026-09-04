@@ -93,6 +93,19 @@ ROOKIE_TEAMS = [
     {"teamId": 634, "sportId": 16, "levelCode": "DSL", "levelLabel": "DSL NYY Bombers (Rookie)"},
 ]
 
+# team_id/sport_id for the 4 full-season affiliates, used only for the
+# season-total computation (get_season_total_raw()) -- NOT for the milb.com
+# scrape above, which is unchanged and keyed by team slug. These match
+# config/affiliates.py exactly (verified live against milb.com's own
+# team_info payload on 2026-09-04) -- do not use 588/589 for Hudson
+# Valley/Somerset if you've seen those numbers anywhere else; they're wrong.
+FULL_SEASON_TEAM_IDS = {
+    "tampa": {"team_id": 587, "sport_id": 14},
+    "hudson-valley": {"team_id": 537, "sport_id": 13},
+    "somerset": {"team_id": 1956, "sport_id": 12},
+    "scranton-wb": {"team_id": 531, "sport_id": 11},
+}
+
 
 # ---------------------------------------------------------------------------
 # EXISTING PATH (v1, unchanged): milb.com scrape for the 4 full-season teams
@@ -259,6 +272,79 @@ def find_opening_day(team_id, sport_id):
         return None
     dates = [g["gameDate"][:10] for g in games if g.get("gameDate")]
     return min(dates) if dates else None
+
+
+def merge_raw_stat_dicts(a, b):
+    """Sums two raw Stats-API counting-stat dicts (as returned by
+    get_player_stats_by_date_range) field by field. Both dicts came from
+    the same summation logic in lib/mlb_api.py, so this uses the same
+    special-case handling for inningsPitched (outs summed as integers,
+    then the combined string rebuilt at the end) rather than naively
+    adding the two decimal-looking strings."""
+    if a is None:
+        return b
+    if b is None:
+        return a
+    merged = dict(a)
+    ip_outs_total = None
+    for k, v in b.items():
+        if k == "inningsPitched":
+            def _outs(ip_str):
+                whole, _, frac = str(ip_str).partition(".")
+                return (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+            ip_outs_total = _outs(a.get("inningsPitched", "0.0")) + _outs(v)
+            continue
+        if isinstance(v, (int, float)) and not isinstance(v, bool):
+            merged[k] = merged.get(k, 0) + v
+        elif k not in merged:
+            merged[k] = v
+    if ip_outs_total is not None:
+        merged["inningsPitched"] = f"{ip_outs_total // 3}.{ip_outs_total % 3}"
+    return merged
+
+
+def get_season_total_raw(person_id, group, current_sport_id, current_team_id):
+    """Builds this player's TRUE 2026 season total across every level he's
+    played at, using raw Stats-API counting stats (so AVG/OBP/SLG can be
+    correctly re-derived afterward -- see compute_hitting_line/
+    compute_pitching_line, which need hitByPitch/sacFlies for an exact
+    OBP that neither milb.com's displayed rate stats nor a naive
+    recombination of two already-rounded rate stats can give you).
+
+    Real-world case this exists for: Luis Puello played 7 games for FCL
+    Yankees (rookie) before being promoted to Tampa (Low-A) on May 12,
+    2026. The milb.com scrape used elsewhere in this script only ever
+    shows his CURRENT team's stint (Tampa), so his FCL production was
+    invisible in our "current stint" data -- correct for a "who's he
+    playing for right now" view, but wrong for a "what's his 2026 total"
+    view. This function's job is specifically the latter.
+
+    Uses team_id-filtered date ranges spanning the WHOLE season (not
+    promotion-date-bounded) for both levels -- this works cleanly without
+    needing to know the actual promotion date, since get_player_stats_by_
+    date_range's per-game team_id filtering already naturally excludes
+    games the player didn't actually play for that team."""
+    search_from = f"{SEASON}{SEARCH_FROM_MONTH_DAY}"
+    end_date = date.today().isoformat()
+
+    # Rookie-level component (FCL/DSL, sportId 16). No team_id filter --
+    # a Yankees farmhand only ever plays for Yankees-affiliated rookie
+    # teams, so this safely captures whichever of FCL Yankees/DSL NYY
+    # Yankees/DSL NYY Bombers he was on, without needing to know which.
+    rookie_raw = get_player_stats_by_date_range(
+        person_id, group, 16, SEASON, search_from, end_date
+    )
+
+    # Current full-season level component, team_id-scoped so it only
+    # includes games actually played for his current team.
+    current_raw = get_player_stats_by_date_range(
+        person_id, group, current_sport_id, SEASON, search_from, end_date,
+        team_id=current_team_id
+    )
+
+    if rookie_raw is None and current_raw is None:
+        return None
+    return merge_raw_stat_dicts(rookie_raw, current_raw)
 
 
 def compute_hitting_line(totals):
@@ -428,13 +514,35 @@ def main():
             skipped.append(slug)
             continue
         stint = build_stint(row, info["levelCode"], info["levelLabel"], info["type"])
-        # Wrap as a single-season, single-stint update -- this script refreshes
-        # ONLY the player's current-team stint; historical seasons/other-level
-        # stints already on file are preserved by not touching them here
-        # (see updatePlayerStats endpoint -- it replaces the whole seasonsJSON,
-        # so a fuller version of this script should merge with prior seasons
-        # rather than overwrite; flagged here as a known follow-up).
-        seasons = [{"year": SEASON, "stints": [stint]}]
+
+        # Season total: separate from the current-team stint above. Combines
+        # this stint with any rookie-level (FCL/DSL) production earlier this
+        # season via the Stats API, so a promoted player's 2026 total isn't
+        # silently missing whatever level he started the year at (see
+        # get_season_total_raw()'s docstring -- this is the Luis Puello case).
+        season_total = None
+        team_ids = FULL_SEASON_TEAM_IDS.get(info["team"])
+        if team_ids and info.get("mlbId"):
+            try:
+                raw = get_season_total_raw(
+                    info["mlbId"], info["type"], team_ids["sport_id"], team_ids["team_id"]
+                )
+                if raw:
+                    line = (compute_pitching_line(raw) if info["type"] == "pitching"
+                            else compute_hitting_line(raw))
+                    season_total = {**line, "levelLabel": "2026 Season Total (All Levels)"}
+            except Exception as e:
+                print(f"[WARN] season total for {slug}: {e}")
+
+        # Wrap as a single-season update. The current-team stint (top-of-page
+        # display) is refreshed every run from the milb.com scrape above.
+        # seasonTotal (career-page display) is refreshed every run from the
+        # Stats API, independent of stints, so it doesn't depend on -- or get
+        # corrupted by -- anything this script has or hasn't stored before.
+        season_entry = {"year": SEASON, "stints": [stint]}
+        if season_total:
+            season_entry["seasonTotal"] = season_total
+        seasons = [season_entry]
         try:
             push_player(slug, seasons)
             updated.append(slug)
