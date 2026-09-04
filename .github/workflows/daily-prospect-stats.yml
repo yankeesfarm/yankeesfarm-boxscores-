@@ -1,0 +1,43 @@
+name: Daily Prospect Stats
+
+# This workflow did not exist before -- fetch_daily_stats.py (which pushes
+# to the ProspectStats Wix collection powering every prospect profile
+# page) was never wired to any GitHub Actions schedule. It only ever ran
+# when someone triggered it manually, which is why ProspectStats was
+# frozen at its last manual-run timestamp and had zero rookie-level
+# (FCL/DSL) players in it at all.
+#
+# Schedule mirrors daily-boxscores.yml's cadence/reasoning: 7am ET and
+# 10pm ET Tuesday-Sunday, 2pm ET only on Monday (no DSL/FCL games that
+# morning). Same DST caveat as daily-boxscores.yml applies -- these UTC
+# times are correct for EDT (UTC-4); shift each one hour later in UTC
+# once EST (UTC-5) begins this fall.
+
+on:
+  schedule:
+    # 7:00am ET, Tuesday through Sunday. 7am ET = 11:00 UTC, no day rollover.
+    - cron: '0 11 * * 0,2,3,4,5,6'
+
+    # 10:00pm ET, Tuesday through Sunday. 10pm ET = 2:00am UTC the NEXT
+    # day, so the UTC firing days are every day except Tuesday (see
+    # daily-boxscores.yml's own comment for the full reasoning).
+    - cron: '0 2 * * 0,1,3,4,5,6'
+
+    # 2:00pm ET, Monday only. 2pm ET = 18:00 UTC, no rollover.
+    - cron: '0 18 * * 1'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run daily prospect stats fetch
+        env:
+          WIX_STATS_PUSH_KEY: ${{ secrets.WIX_STATS_PUSH_KEY }}
+        run: python3 fetch_daily_stats.py
