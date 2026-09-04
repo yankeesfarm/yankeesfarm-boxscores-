@@ -311,11 +311,27 @@ def compute_pitching_line(totals):
     }
 
 
-def fetch_rookie_team_players(team):
+def fetch_rookie_team_players(team, graduated_slugs):
     """Dynamically discovers every player on this rookie-level team's
     full-season roster and pulls their team-scoped stat line via the
     Stats API -- no roster_map.json entry required. Returns a list of
-    {slug, seasons} dicts ready to push."""
+    {slug, seasons} dicts ready to push.
+
+    IMPORTANT: get_active_roster() deliberately uses rosterType="fullSeason"
+    (see its own docstring in lib/mlb_api.py), which returns EVERYONE who
+    was ever on this team's roster this season -- including players who
+    have since been promoted to a full-season affiliate. Real-world bug
+    this caused: Luis Puello was promoted from FCL Yankees to Tampa on
+    May 12, 2026, and has played months of Tampa games since. But because
+    he still shows up on FCL's fullSeason roster query, this function
+    would generate a "luis-puello" slug with only his old 7-game FCL line
+    -- and since this rookie-level loop runs AFTER the roster_map.json
+    full-season loop in main(), that stale FCL-only push OVERWROTE his
+    correct, much larger Tampa dataset. graduated_slugs (the set of slugs
+    already in roster_map.json) lets us skip anyone who has graduated to
+    a full-season affiliate, since roster_map.json is the authoritative
+    source for them -- this rookie-level path should only ever push
+    players who are rookie-level ONLY."""
     opening_day = find_opening_day(team["teamId"], team["sportId"])
     if not opening_day:
         print(f"  WARNING: could not find any completed games for teamId={team['teamId']}. Skipping.")
@@ -325,10 +341,15 @@ def fetch_rookie_team_players(team):
 
     roster = get_active_roster(team["teamId"], SEASON)
     results = []
+    skipped_graduated = []
     for entry in roster:
         person = entry["person"]
         pid = person["id"]
         name = person.get("fullName")
+        slug_preview = slugify(name)
+        if slug_preview in graduated_slugs:
+            skipped_graduated.append(slug_preview)
+            continue
         pos_type = (entry.get("position") or {}).get("type", "")
         is_pitcher = pos_type == "Pitcher"
         group = "pitching" if is_pitcher else "hitting"
@@ -350,6 +371,9 @@ def fetch_rookie_team_players(team):
         time.sleep(0.1)
 
     print(f"  Found {len(results)} players with 2026 activity for teamId={team['teamId']}.")
+    if skipped_graduated:
+        print(f"  Skipped {len(skipped_graduated)} player(s) already tracked as full-season "
+              f"(graduated from this level): {skipped_graduated}")
     return results
 
 
@@ -383,6 +407,11 @@ def main():
     # --- Existing path: full-season teams via roster_map.json + milb.com scrape ---
     roster_map = json.loads(Path("roster_map.json").read_text())
     teams_needed = {(v["team"], v["type"]) for v in roster_map.values()}
+    # Every slug already tracked as full-season -- passed to the rookie-level
+    # loop below so it never re-pushes stale rookie-level data over a
+    # graduated player's correct current stint (see fetch_rookie_team_players()
+    # docstring for the real incident this prevents).
+    graduated_slugs = set(roster_map.keys())
 
     team_tables = {}
     for team, stype in teams_needed:
@@ -418,7 +447,7 @@ def main():
     print("\nFetching rookie-level affiliates (FCL/DSL) via Stats API...")
     for team in ROOKIE_TEAMS:
         try:
-            players = fetch_rookie_team_players(team)
+            players = fetch_rookie_team_players(team, graduated_slugs)
         except Exception as e:
             print(f"[ERROR] teamId={team['teamId']}: {e}")
             continue
