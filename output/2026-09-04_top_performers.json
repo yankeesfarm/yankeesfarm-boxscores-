@@ -1,0 +1,85 @@
+{
+  "hitters": [
+    {
+      "playerId": 683011,
+      "name": "Anthony Volpe",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+      "statline": "2 for 3: Double (9), HR (11), 2 RBI (24), SB (9)",
+      "points": 9.25
+    },
+    {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "2 for 4: 2 Doubles (19), RBI (78)",
+      "points": 6.5
+    },
+    {
+      "playerId": 667803,
+      "name": "Ernesto Martinez Jr.",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "1B",
+      "bio": "AAA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/667803/spots/120",
+      "statline": "2 for 3: Double (15), RBI (56), SB (13)",
+      "points": 5.0
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 804892,
+      "name": "Justin West",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804892/spots/120",
+      "statline": "5.0 IP, 2 R, 4 K",
+      "points": 9.5
+    },
+    {
+      "playerId": 675296,
+      "name": "Hayden Merda",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/675296/spots/120",
+      "statline": "2.2 IP, 0 R, 6 K",
+      "points": 11.42
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 683011,
+    "name": "Anthony Volpe",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "2B",
+    "bio": "AAA | 2B",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/683011/spots/120",
+    "statline": "2 for 3: Double (9), HR (11), 2 RBI (24), SB (9)",
+    "points": 9.25
+  },
+  "pitcherOfTheDay": {
+    "playerId": 675296,
+    "name": "Hayden Merda",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "RP",
+    "bio": "AAA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/675296/spots/120",
+    "statline": "2.2 IP, 0 R, 6 K",
+    "points": 11.42
+  },
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-05T02:53:33.740489+00:00"
+}
