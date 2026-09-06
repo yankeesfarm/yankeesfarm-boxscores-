@@ -1,0 +1,2119 @@
+{
+  "meta": {
+    "title": "2026-09",
+    "period": "monthly",
+    "sourceFile": "data/monthly/2026-09.json",
+    "minPA": 422,
+    "minIP": 68.0
+  },
+  "generatedAt": null,
+  "categories": {
+    "hitting_avg": {
+      "label": "Batting Average",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.298"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": "0.291"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.286"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.283"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "0.274"
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "0.266"
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.266"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": "0.261"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "0.258"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": "0.255"
+        }
+      ]
+    },
+    "hitting_obp": {
+      "label": "On-Base Percentage",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "0.407"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.385"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.373"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "0.367"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "0.362"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.360"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": "0.357"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "0.352"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": "0.349"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Enmanuel Tejeda",
+          "team": "HV",
+          "value": "0.347"
+        }
+      ]
+    },
+    "hitting_slg": {
+      "label": "Slugging Percentage",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.547"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.511"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.500"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": "0.491"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.487"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "0.475"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": "0.469"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "0.465"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "0.455"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": "0.443"
+        }
+      ]
+    },
+    "hitting_ops": {
+      "label": "OPS",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.932"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.871"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.860"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "0.847"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.828"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "0.817"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "0.811"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "0.810"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "0.793"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": "0.792"
+        }
+      ]
+    },
+    "hitting_hits": {
+      "label": "Hits",
+      "group": "hitting",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": 128
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 127
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": 126
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": 120
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": 117
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": 114
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": 110
+        },
+        {
+          "rank": "T7",
+          "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 110
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": 109
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Kyle West",
+          "team": "HV",
+          "value": 108
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": 108
+        }
+      ]
+    },
+    "hitting_doubles": {
+      "label": "Doubles",
+      "group": "hitting",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": 27
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Juan Torres",
+          "team": "DSL-Y",
+          "value": 26
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": 25
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 24
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "George Lombard Jr.",
+          "team": "SWB",
+          "value": 24
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Wilberson De Pena",
+          "team": "TAM",
+          "value": 21
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": 21
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": 21
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": 21
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 20
+        },
+        {
+          "rank": "T10",
+          "isTied": true,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": 20
+        }
+      ]
+    },
+    "hitting_triples": {
+      "label": "Triples",
+      "group": "hitting",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Stiven Marinez",
+          "team": "DSL-Y",
+          "value": 7
+        },
+        {
+          "rank": "T2",
+          "isTied": true,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": 6
+        },
+        {
+          "rank": "T2",
+          "isTied": true,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": 6
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "Wilson Rodriguez",
+          "team": "HV",
+          "value": 5
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "Dariel Santana",
+          "team": "DSL-B",
+          "value": 5
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": 4
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 4
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Yostin Pena",
+          "team": "TAM",
+          "value": 4
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": 4
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Ernesto Martinez Jr.",
+          "team": "SWB",
+          "value": 4
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Dexters Peralta",
+          "team": "FCL",
+          "value": 4
+        }
+      ]
+    },
+    "hitting_homeRuns": {
+      "label": "Home Runs",
+      "group": "hitting",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": 27
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": 26
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 24
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": 24
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Garrett Martin",
+          "team": "SWB",
+          "value": 24
+        },
+        {
+          "rank": "T3",
+          "isTied": true,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": 24
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 23
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": 21
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Wilberson De Pena",
+          "team": "TAM",
+          "value": 20
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Kyle West",
+          "team": "HV",
+          "value": 20
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": 20
+        }
+      ]
+    },
+    "hitting_rbi": {
+      "label": "RBI",
+      "group": "hitting",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 88
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": 85
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": 84
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": 81
+        },
+        {
+          "rank": "T5",
+          "isTied": true,
+          "name": "Yostin Pena",
+          "team": "TAM",
+          "value": 79
+        },
+        {
+          "rank": "T5",
+          "isTied": true,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": 79
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": 78
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Wilberson De Pena",
+          "team": "TAM",
+          "value": 77
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": 75
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Kyle West",
+          "team": "HV",
+          "value": 75
+        }
+      ]
+    },
+    "hitting_stolenBases": {
+      "label": "Stolen Bases",
+      "group": "hitting",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Duke Ellis",
+          "team": "SWB",
+          "value": 49
+        },
+        {
+          "rank": "T2",
+          "isTied": true,
+          "name": "Luis Durango",
+          "team": "SOM",
+          "value": 44
+        },
+        {
+          "rank": "T2",
+          "isTied": true,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": 44
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": 40
+        },
+        {
+          "rank": "T4",
+          "isTied": true,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": 40
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": 39
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Stiven Marinez",
+          "team": "DSL-Y",
+          "value": 39
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "Yostin Pena",
+          "team": "TAM",
+          "value": 37
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "Enmanuel Tejeda",
+          "team": "HV",
+          "value": 37
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": 36
+        }
+      ]
+    },
+    "hitting_bbPct": {
+      "label": "BB%",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "15.2%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Enmanuel Tejeda",
+          "team": "HV",
+          "value": "14.3%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "13.1%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "13.0%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Jackson Castillo",
+          "team": "SOM",
+          "value": "12.9%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "12.3%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "11.8%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": "11.7%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "11.4%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "10.3%"
+        }
+      ]
+    },
+    "hitting_kPct": {
+      "label": "K%",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "18.6%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Jackson Castillo",
+          "team": "SOM",
+          "value": "18.9%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Enmanuel Tejeda",
+          "team": "HV",
+          "value": "19.2%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "19.4%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": "19.7%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": "21.4%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": "23.2%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "23.8%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "24.0%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "24.4%"
+        }
+      ]
+    },
+    "hitting_kMinusBbPct": {
+      "label": "K-BB%",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": "28.7%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "26.0%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Kyle West",
+          "team": "HV",
+          "value": "21.8%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "20.4%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "18.2%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": "14.1%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "14.0%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "13.6%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "12.6%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "11.6%"
+        }
+      ]
+    },
+    "hitting_xbhPct": {
+      "label": "XBH%",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": "50.0%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "46.3%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "44.5%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "41.3%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "41.3%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "40.4%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "40.4%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "37.8%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": "37.6%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "36.7%"
+        }
+      ]
+    },
+    "hitting_iso": {
+      "label": "ISO",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": "0.257"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.249"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.234"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.225"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "0.224"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "0.215"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Yanquiel Fern\u00e1ndez",
+          "team": "SWB",
+          "value": "0.208"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.204"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "0.197"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "0.177"
+        }
+      ]
+    },
+    "hitting_babip": {
+      "label": "BABIP",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "0.366"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.365"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.361"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.360"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.348"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Oswaldo Cabrera",
+          "team": "SWB",
+          "value": "0.331"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Bryce Martin-Grudzielanek",
+          "team": "HV",
+          "value": "0.322"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "0.318"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Josh Moylan",
+          "team": "SOM",
+          "value": "0.307"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "0.303"
+        }
+      ]
+    },
+    "hitting_woba": {
+      "label": "wOBA",
+      "group": "hitting",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.402"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Eric Genther",
+          "team": "HV",
+          "value": "0.378"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Jackson Lovich",
+          "team": "HV",
+          "value": "0.377"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.376"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Core Jackson",
+          "team": "SOM",
+          "value": "0.358"
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Jace Avina",
+          "team": "SOM",
+          "value": "0.356"
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "DJ Gladney",
+          "team": "SOM",
+          "value": "0.356"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
+          "value": "0.354"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
+          "value": "0.350"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Roderick Arias",
+          "team": "SOM",
+          "value": "0.349"
+        }
+      ]
+    },
+    "pitching_era": {
+      "label": "ERA",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Elmer Rodr\u00edguez",
+          "team": "SWB",
+          "value": "2.59"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Alexander Cornielle",
+          "team": "SWB",
+          "value": "2.65"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "2.86"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "3.29"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Zach Messinger",
+          "team": "SWB",
+          "value": "3.57"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "4.01"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "4.06"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "4.31"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Trent Sellers",
+          "team": "SWB",
+          "value": "4.60"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Kyle Carr",
+          "team": "SWB",
+          "value": "4.62"
+        }
+      ]
+    },
+    "pitching_whip": {
+      "label": "WHIP",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "T1",
+          "isTied": true,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "1.04"
+        },
+        {
+          "rank": "T1",
+          "isTied": true,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "1.04"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Zach Messinger",
+          "team": "SWB",
+          "value": "1.16"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "1.22"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "1.23"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Elmer Rodr\u00edguez",
+          "team": "SWB",
+          "value": "1.26"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Alexander Cornielle",
+          "team": "SWB",
+          "value": "1.28"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Rory Fox",
+          "team": "SOM",
+          "value": "1.32"
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Bryce Cunningham",
+          "team": "SOM",
+          "value": "1.35"
+        },
+        {
+          "rank": "T9",
+          "isTied": true,
+          "name": "Xavier Rivas",
+          "team": "SWB",
+          "value": "1.35"
+        }
+      ]
+    },
+    "pitching_ip_outs": {
+      "label": "Innings Pitched",
+      "group": "pitching",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "125.2"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Rory Fox",
+          "team": "SOM",
+          "value": "122.1"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Cade Smith",
+          "team": "SOM",
+          "value": "115.0"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "114.1"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "113.0"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "112.2"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "106.2"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Adam Kloffenstein",
+          "team": "SWB",
+          "value": "106.1"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Dom Hamel",
+          "team": "SWB",
+          "value": "106.0"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Bryce Cunningham",
+          "team": "SOM",
+          "value": "98.1"
+        }
+      ]
+    },
+    "pitching_strikeOuts": {
+      "label": "Strikeouts",
+      "group": "pitching",
+      "isRate": false,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": 148
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": 140
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": 133
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Xavier Rivas",
+          "team": "SWB",
+          "value": 128
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Rory Fox",
+          "team": "SOM",
+          "value": 125
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": 121
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": 118
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Cade Smith",
+          "team": "SOM",
+          "value": 109
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Sean Paul Li\u00f1an",
+          "team": "SOM",
+          "value": 106
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "J.T. Etheridge",
+          "team": "TAM",
+          "value": 105
+        }
+      ]
+    },
+    "pitching_avg": {
+      "label": "AVG Against",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "0.187"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Zach Messinger",
+          "team": "SWB",
+          "value": "0.191"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "0.198"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Xavier Rivas",
+          "team": "SWB",
+          "value": "0.199"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "0.204"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Alexander Cornielle",
+          "team": "SWB",
+          "value": "0.216"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Elmer Rodr\u00edguez",
+          "team": "SWB",
+          "value": "0.219"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "0.228"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Adam Kloffenstein",
+          "team": "SWB",
+          "value": "0.234"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "J.T. Etheridge",
+          "team": "TAM",
+          "value": "0.236"
+        }
+      ]
+    },
+    "pitching_so9": {
+      "label": "SO/9",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "J.T. Etheridge",
+          "team": "TAM",
+          "value": "13.25"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Xavier Rivas",
+          "team": "SWB",
+          "value": "11.80"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Trent Sellers",
+          "team": "SWB",
+          "value": "11.79"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "11.65"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Kyle Carr",
+          "team": "SWB",
+          "value": "10.72"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "10.62"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Sean Paul Li\u00f1an",
+          "team": "SOM",
+          "value": "10.45"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "10.03"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "9.96"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Franyer Herrera",
+          "team": "HV",
+          "value": "9.75"
+        }
+      ]
+    },
+    "pitching_kPct": {
+      "label": "K%",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "J.T. Etheridge",
+          "team": "TAM",
+          "value": "32.1%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Xavier Rivas",
+          "team": "SWB",
+          "value": "30.5%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "29.2%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Trent Sellers",
+          "team": "SWB",
+          "value": "28.0%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "27.9%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "27.9%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "27.6%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Kyle Carr",
+          "team": "SWB",
+          "value": "26.4%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "26.1%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Sean Paul Li\u00f1an",
+          "team": "SOM",
+          "value": "25.6%"
+        }
+      ]
+    },
+    "pitching_bbPct": {
+      "label": "BB%",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Rory Fox",
+          "team": "SOM",
+          "value": "6.3%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "7.5%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "7.6%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "8.2%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Bryce Cunningham",
+          "team": "SOM",
+          "value": "9.1%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "9.4%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Kyle Carr",
+          "team": "SWB",
+          "value": "9.6%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Cade Smith",
+          "team": "SOM",
+          "value": "9.6%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Zach Messinger",
+          "team": "SWB",
+          "value": "11.1%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Sean Paul Li\u00f1an",
+          "team": "SOM",
+          "value": "11.1%"
+        }
+      ]
+    },
+    "pitching_kMinusBbPct": {
+      "label": "K-BB%",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "20.4%"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "J.T. Etheridge",
+          "team": "TAM",
+          "value": "20.2%"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "19.7%"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "18.5%"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "18.3%"
+        },
+        {
+          "rank": "6",
+          "isTied": false,
+          "name": "Rory Fox",
+          "team": "SOM",
+          "value": "17.5%"
+        },
+        {
+          "rank": "7",
+          "isTied": false,
+          "name": "Kyle Carr",
+          "team": "SWB",
+          "value": "16.8%"
+        },
+        {
+          "rank": "8",
+          "isTied": false,
+          "name": "Xavier Rivas",
+          "team": "SWB",
+          "value": "16.0%"
+        },
+        {
+          "rank": "9",
+          "isTied": false,
+          "name": "Sean Paul Li\u00f1an",
+          "team": "SOM",
+          "value": "14.5%"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Trent Sellers",
+          "team": "SWB",
+          "value": "14.3%"
+        }
+      ]
+    },
+    "pitching_fip": {
+      "label": "FIP",
+      "group": "pitching",
+      "isRate": true,
+      "entries": [
+        {
+          "rank": "1",
+          "isTied": false,
+          "name": "Luis Serna",
+          "team": "HV",
+          "value": "3.70"
+        },
+        {
+          "rank": "2",
+          "isTied": false,
+          "name": "Allen Facundo",
+          "team": "HV",
+          "value": "4.04"
+        },
+        {
+          "rank": "3",
+          "isTied": false,
+          "name": "Brendan Beck",
+          "team": "SWB",
+          "value": "5.14"
+        },
+        {
+          "rank": "4",
+          "isTied": false,
+          "name": "Elmer Rodr\u00edguez",
+          "team": "SWB",
+          "value": "5.59"
+        },
+        {
+          "rank": "5",
+          "isTied": false,
+          "name": "Franyer Herrera",
+          "team": "HV",
+          "value": "5.60"
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Tyler Boudreau",
+          "team": "SOM",
+          "value": "5.79"
+        },
+        {
+          "rank": "T6",
+          "isTied": true,
+          "name": "Justin West",
+          "team": "TAM",
+          "value": "5.79"
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "J.T. Etheridge",
+          "team": "TAM",
+          "value": "6.00"
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
+          "name": "Rory Fox",
+          "team": "SOM",
+          "value": "6.00"
+        },
+        {
+          "rank": "10",
+          "isTied": false,
+          "name": "Alexander Cornielle",
+          "team": "SWB",
+          "value": "6.38"
+        }
+      ]
+    }
+  }
+}
