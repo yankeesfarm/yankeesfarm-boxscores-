@@ -1,0 +1,63 @@
+{
+  "hitters": [],
+  "pitchers": [
+    {
+      "playerId": 812431,
+      "name": "Rory Fox",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/812431/spots/120",
+      "statline": "6.0 IP, 2 R, 6 K",
+      "points": 8.0
+    },
+    {
+      "playerId": 695425,
+      "name": "Bryce Warrecker",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "role": "RP",
+      "bio": "High-A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/695425/spots/120",
+      "statline": "3.0 IP, 0 R, 4 K",
+      "points": 9.25
+    },
+    {
+      "playerId": 814715,
+      "name": "Jose Martinez",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/814715/spots/120",
+      "statline": "1.1 IP, 1 R, 3 K",
+      "points": 6.83
+    },
+    {
+      "playerId": 828266,
+      "name": "Rafael Arias",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/828266/spots/120",
+      "statline": "2.0 IP, 1 R, 3 K",
+      "points": 7.25
+    }
+  ],
+  "playerOfTheDay": null,
+  "pitcherOfTheDay": {
+    "playerId": 695425,
+    "name": "Bryce Warrecker",
+    "level": "High-A",
+    "team": "Hudson Valley Renegades",
+    "role": "RP",
+    "bio": "High-A | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/695425/spots/120",
+    "statline": "3.0 IP, 0 R, 4 K",
+    "points": 9.25
+  },
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-06T03:17:33.987113+00:00"
+}
