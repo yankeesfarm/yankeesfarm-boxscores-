@@ -1,0 +1,107 @@
+{
+  "hitters": [
+    {
+      "playerId": 672284,
+      "name": "Jarred Kelenic",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "LF",
+      "bio": "AAA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/672284/spots/120",
+      "statline": "2 for 4: Triple (5), 2 RBI (47)",
+      "points": 6.0
+    },
+    {
+      "playerId": 692585,
+      "name": "Yanquiel Fern\u00e1ndez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692585/spots/120",
+      "statline": "2 for 4: HR (25), 3 RBI (81)",
+      "points": 8.5
+    },
+    {
+      "playerId": 670868,
+      "name": "Abrahan Gutierrez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "C",
+      "bio": "AAA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/670868/spots/120",
+      "statline": "2 for 3: Double (1), HR (3), RBI (4)",
+      "points": 8.75
+    },
+    {
+      "playerId": 692110,
+      "name": "Core Jackson",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "SS",
+      "bio": "AA | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692110/spots/120",
+      "statline": "2 for 4: Double (3), 2 RBI (11), SB (8)",
+      "points": 5.25
+    },
+    {
+      "playerId": 702068,
+      "name": "Cole Gabrielson",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "LF",
+      "bio": "AA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702068/spots/120",
+      "statline": "2 for 3: Double (5)",
+      "points": 3.75
+    },
+    {
+      "playerId": 804944,
+      "name": "Jackson Lovich",
+      "level": "High-A",
+      "team": "Hudson Valley Renegades",
+      "position": "SS",
+      "bio": "High-A | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804944/spots/120",
+      "statline": "2 for 5: Double (4), RBI (28), SB (20)",
+      "points": 4.5
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 692646,
+      "name": "Pedro Rodriguez",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692646/spots/120",
+      "statline": "1.2 IP, 0 R, 4 K",
+      "points": 14.42
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 670868,
+    "name": "Abrahan Gutierrez",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "C",
+    "bio": "AAA | C",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/670868/spots/120",
+    "statline": "2 for 3: Double (1), HR (3), RBI (4)",
+    "points": 8.75
+  },
+  "pitcherOfTheDay": {
+    "playerId": 692646,
+    "name": "Pedro Rodriguez",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "role": "RP",
+    "bio": "A | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/692646/spots/120",
+    "statline": "1.2 IP, 0 R, 4 K",
+    "points": 14.42
+  },
+  "date": "2026-09-06",
+  "generatedAt": "2026-09-07T06:52:51.018655+00:00"
+}
