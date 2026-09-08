@@ -1,0 +1,30 @@
+{
+  "hitters": [],
+  "pitchers": [
+    {
+      "playerId": 529017,
+      "name": "Alexander Cornielle",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/529017/spots/120",
+      "statline": "6.0 IP, 2 R, 7 K",
+      "points": 11.5
+    }
+  ],
+  "playerOfTheDay": null,
+  "pitcherOfTheDay": {
+    "playerId": 529017,
+    "name": "Alexander Cornielle",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "SP",
+    "bio": "AAA | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/529017/spots/120",
+    "statline": "6.0 IP, 2 R, 7 K",
+    "points": 11.5
+  },
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-08T14:31:57.751619+00:00"
+}
