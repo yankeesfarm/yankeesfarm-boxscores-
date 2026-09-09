@@ -1,0 +1,85 @@
+{
+  "hitters": [
+    {
+      "playerId": 694742,
+      "name": "Josh Moylan",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "1B",
+      "bio": "AA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694742/spots/120",
+      "statline": "2 for 4: Double (11), HR (15), 4 RBI (44)",
+      "points": 11.75
+    },
+    {
+      "playerId": 702068,
+      "name": "Cole Gabrielson",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "LF",
+      "bio": "AA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702068/spots/120",
+      "statline": "3 for 4: 2 Doubles (7), RBI (14), SB (10)",
+      "points": 8.0
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 822950,
+      "name": "J.T. Etheridge",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+      "statline": "5.0 IP, 0 R, 7 K",
+      "points": 15.75
+    },
+    {
+      "playerId": 683522,
+      "name": "Michael Arias",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683522/spots/120",
+      "statline": "2.2 IP, 0 R, 4 K",
+      "points": 9.67
+    },
+    {
+      "playerId": 702046,
+      "name": "Matt Keating",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/702046/spots/120",
+      "statline": "2.0 IP, 1 R, 3 K",
+      "points": 7.5
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 694742,
+    "name": "Josh Moylan",
+    "level": "AA",
+    "team": "Somerset Patriots",
+    "position": "1B",
+    "bio": "AA | 1B",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/694742/spots/120",
+    "statline": "2 for 4: Double (11), HR (15), 4 RBI (44)",
+    "points": 11.75
+  },
+  "pitcherOfTheDay": {
+    "playerId": 822950,
+    "name": "J.T. Etheridge",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "role": "SP",
+    "bio": "A | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+    "statline": "5.0 IP, 0 R, 7 K",
+    "points": 15.75
+  },
+  "date": "2026-09-08",
+  "generatedAt": "2026-09-09T06:57:24.005184+00:00"
+}
