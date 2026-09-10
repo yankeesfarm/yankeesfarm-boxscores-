@@ -516,15 +516,18 @@ def enrich_with_fangraphs(hitters, season):
         "splitTeam": "false",
         "level": 0,          # all levels combined
     }
+    # cloudscraper handles Cloudflare's JS-challenge bot protection (the
+    # "Just a moment..." 403 that a plain requests.get() hits from
+    # GitHub Actions IP ranges). It replays the JS challenge in Python
+    # so Cloudflare issues a real session cookie and lets the request through.
     print(f"Fetching FanGraphs wOBA/wRC+ for NYY system ({season})...")
     try:
-        r = requests.get(url, params=params, timeout=30,
-                         headers={"Accept": "application/json",
-                                  "Referer": "https://www.fangraphs.com/",
-                                  "User-Agent": "Mozilla/5.0"})
+        import cloudscraper
+        scraper = cloudscraper.create_scraper(
+            browser={"browser": "chrome", "platform": "windows", "mobile": False}
+        )
+        r = scraper.get(url, params=params, timeout=30)
         print(f"  FG HTTP status: {r.status_code}")
-        print(f"  FG Content-Type: {r.headers.get('Content-Type','?')}")
-        print(f"  FG response (first 400 chars): {r.text[:400]!r}")
         r.raise_for_status()
         payload = r.json()
     except Exception as e:
