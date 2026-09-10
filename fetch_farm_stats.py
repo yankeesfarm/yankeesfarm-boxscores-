@@ -351,11 +351,14 @@ def finalize_hitter(pid, name, pos, level_id, totals, bio_person):
         "level": level_id,
         "ab": ab,
         "pa": pa,
+        "h": h,
         "avg": avg,
         "obp": obp,
         "slg": slg,
         "ops": ops,
+        "wrc_plus": None,   # filled in by enrich_with_fangraphs() below
         "hr": hr,
+        "doubles": doubles,
         "rbi": rbi,
         "sb": sb,
         "bbp": bbp,
@@ -480,6 +483,87 @@ def apply_fip_by_level(pitchers):
             row.pop(key, None)
 
     return pitchers
+
+
+def enrich_with_fangraphs(hitters, season):
+    """Pull wOBA and wRC+ for all NYY system players from FanGraphs' minor
+    league leaderboard API. FanGraphs computes these with their own per-level
+    park factors and run-environment scaling -- the same values displayed
+    publicly on their minor league leaderboard and used manually on prospect
+    profiles. Matched to our rows by player name (case-insensitive).
+
+    Uses qual=0 (no PA minimum) so we get every NYY player, not just
+    those who qualify by FG's own threshold. Unmatched players keep our
+    calc_woba() value for woba and get wrc_plus=None (renders as '—').
+
+    IMPORTANT: FanGraphs returns combined season stats when splitTeam=false.
+    This means wOBA/wRC+ on level-specific stint rows (e.g., a player's
+    A+ line after he was promoted to AA) will be his combined-season value,
+    not his level-specific value. The "all" combined rows are accurate.
+    A follow-up call with splitTeam=true would fix this for level splits."""
+    ALL_MiLB_LGS = "2,4,5,6,7,8,9,10,11,14,12,13,15,16,17,18,30,32"
+    url = "https://www.fangraphs.com/api/leaders/minor-league/data"
+    params = {
+        "pos": "all",
+        "lg": ALL_MiLB_LGS,
+        "stats": "bat",
+        "qual": 0,           # no minimum -- we want all NYY players
+        "type": 1,           # advanced tab (wOBA, wRC+, BB%, K%, ISO, BABIP, etc.)
+        "season": season,
+        "seasonEnd": season,
+        "org": 9,            # NYY org ID
+        "ind": 0,
+        "splitTeam": "false",
+        "level": 0,          # all levels combined
+    }
+    print(f"Fetching FanGraphs wOBA/wRC+ for NYY system ({season})...")
+    try:
+        r = requests.get(url, params=params, timeout=30,
+                         headers={"Accept": "application/json",
+                                  "Referer": "https://www.fangraphs.com/",
+                                  "User-Agent": "Mozilla/5.0"})
+        r.raise_for_status()
+        payload = r.json()
+    except Exception as e:
+        print(f"  FanGraphs fetch failed ({e}); wOBA uses computed value, wRC+ will be null.")
+        return
+
+    # FanGraphs returns {"data": [...]} -- each row is a dict with keys like
+    # "PlayerName", "wOBA", "wRC+". Field names use title-case / FG's own
+    # conventions; we try the most likely aliases defensively.
+    rows = payload.get("data", []) if isinstance(payload, dict) else payload
+    if not rows:
+        print("  FanGraphs returned empty payload; skipping wRC+ enrichment.")
+        return
+
+    def _get(row, *keys):
+        for k in keys:
+            if row.get(k) is not None:
+                return row[k]
+        return None
+
+    fg_by_name = {}
+    for row in rows:
+        name = (_get(row, "PlayerName", "Name", "playerName") or "").strip().lower()
+        if not name:
+            continue
+        woba = _get(row, "wOBA", "woba")
+        wrc_plus = _get(row, "wRC+", "wRCplus", "wrc_plus", "wRCPlus")
+        fg_by_name[name] = {"woba": woba, "wrc_plus": wrc_plus}
+
+    matched = 0
+    for h in hitters:
+        fg = fg_by_name.get(h["name"].strip().lower())
+        if not fg:
+            continue
+        # Override our computed woba with FG's level-adjusted, park-factored value.
+        # Keep our value if FG returned null for this player.
+        if fg["woba"] is not None:
+            h["woba"] = fg["woba"]
+        h["wrc_plus"] = fg["wrc_plus"]
+        matched += 1
+
+    print(f"  FanGraphs enrichment: matched {matched} / {len(hitters)} hitter rows.")
 
 
 STATCAST_LEVELS = {"AAA", "A"}  # Tampa Tarpons play at Steinbrenner Field, which has Statcast installed
@@ -668,6 +752,7 @@ def main():
         row.update(bio_fields(bios.get(row["mlbId"])))
 
     apply_fip_by_level(pitchers)
+    enrich_with_fangraphs(hitters, season)
     enrich_with_statcast(hitters, season)
 
     payload = {
