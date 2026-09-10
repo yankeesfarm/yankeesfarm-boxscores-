@@ -1,0 +1,74 @@
+{
+  "hitters": [
+    {
+      "playerId": 668752,
+      "name": "Duke Ellis",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "CF",
+      "bio": "AAA | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/668752/spots/120",
+      "statline": "2 for 3: HR (5), 2 RBI (23), SB (51)",
+      "points": 7.25
+    },
+    {
+      "playerId": 815089,
+      "name": "Coby Morales",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "3B",
+      "bio": "AA | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/815089/spots/120",
+      "statline": "2 for 3: Double (21)",
+      "points": 4.0
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 694341,
+      "name": "Brendan Beck",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "SP",
+      "bio": "AAA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/694341/spots/120",
+      "statline": "5.1 IP, 0 R, 6 K",
+      "points": 15.42
+    },
+    {
+      "playerId": 687589,
+      "name": "Dom Hamel",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/687589/spots/120",
+      "statline": "6.0 IP, 1 R, 6 K",
+      "points": 12.25
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 668752,
+    "name": "Duke Ellis",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "CF",
+    "bio": "AAA | CF",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/668752/spots/120",
+    "statline": "2 for 3: HR (5), 2 RBI (23), SB (51)",
+    "points": 7.25
+  },
+  "pitcherOfTheDay": {
+    "playerId": 694341,
+    "name": "Brendan Beck",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "SP",
+    "bio": "AAA | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/694341/spots/120",
+    "statline": "5.1 IP, 0 R, 6 K",
+    "points": 15.42
+  },
+  "date": "2026-09-09",
+  "generatedAt": "2026-09-10T06:53:44.455133+00:00"
+}
