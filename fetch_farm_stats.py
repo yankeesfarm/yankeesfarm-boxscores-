@@ -522,19 +522,28 @@ def enrich_with_fangraphs(hitters, season):
                          headers={"Accept": "application/json",
                                   "Referer": "https://www.fangraphs.com/",
                                   "User-Agent": "Mozilla/5.0"})
+        print(f"  FG HTTP status: {r.status_code}")
+        print(f"  FG Content-Type: {r.headers.get('Content-Type','?')}")
+        print(f"  FG response (first 400 chars): {r.text[:400]!r}")
         r.raise_for_status()
         payload = r.json()
     except Exception as e:
         print(f"  FanGraphs fetch failed ({e}); wOBA uses computed value, wRC+ will be null.")
         return
 
-    # FanGraphs returns {"data": [...]} -- each row is a dict with keys like
-    # "PlayerName", "wOBA", "wRC+". Field names use title-case / FG's own
-    # conventions; we try the most likely aliases defensively.
+    if isinstance(payload, dict):
+        print(f"  FG payload top-level keys: {list(payload.keys())}")
+    else:
+        print(f"  FG payload type: {type(payload).__name__}")
+
     rows = payload.get("data", []) if isinstance(payload, dict) else payload
     if not rows:
         print("  FanGraphs returned empty payload; skipping wRC+ enrichment.")
         return
+
+    first = rows[0] if rows else {}
+    print(f"  FG first-row keys: {list(first.keys())}")
+    print(f"  FG total rows: {len(rows)}")
 
     def _get(row, *keys):
         for k in keys:
@@ -551,13 +560,14 @@ def enrich_with_fangraphs(hitters, season):
         wrc_plus = _get(row, "wRC+", "wRCplus", "wrc_plus", "wRCPlus")
         fg_by_name[name] = {"woba": woba, "wrc_plus": wrc_plus}
 
+    print(f"  FG names (first 5): {list(fg_by_name.keys())[:5]}")
+    print(f"  Our names (first 5): {[h['name'].lower() for h in hitters[:5]]}")
+
     matched = 0
     for h in hitters:
         fg = fg_by_name.get(h["name"].strip().lower())
         if not fg:
             continue
-        # Override our computed woba with FG's level-adjusted, park-factored value.
-        # Keep our value if FG returned null for this player.
         if fg["woba"] is not None:
             h["woba"] = fg["woba"]
         h["wrc_plus"] = fg["wrc_plus"]
