@@ -516,11 +516,12 @@ def enrich_with_fangraphs(hitters, season):
         "splitTeam": "false",
         "level": 0,          # all levels combined
     }
-    # Playwright runs a real Chromium browser, which executes the Cloudflare
-    # JS challenge that blocks plain HTTP requests from GitHub Actions IPs.
-    # We intercept the XHR the browser fires to /api/leaders/minor-league/data
-    # and capture its JSON payload -- same data FanGraphs shows publicly on
-    # their minor league leaderboard page.
+    # Strategy: load FanGraphs' homepage first so Cloudflare issues a
+    # clearance cookie to the real Chromium browser, then call the data
+    # API directly from within that browser context (which carries the
+    # cookie). This avoids both the expect_response race condition and
+    # the headless-detection issue -- the browser already passed the CF
+    # challenge, so the in-context fetch() call succeeds immediately.
     print(f"Fetching FanGraphs wOBA/wRC+ for NYY system ({season}) via Playwright...")
     try:
         from playwright.sync_api import sync_playwright
@@ -528,28 +529,60 @@ def enrich_with_fangraphs(hitters, season):
         print("  playwright not installed; skipping FanGraphs enrichment.")
         return
 
-    page_url = (
-        f"https://www.fangraphs.com/leaders/minor-league"
-        f"?pos=all&lg=2%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C14%2C12%2C13"
+    api_params = (
+        f"pos=all&lg=2%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C14%2C12%2C13"
         f"%2C15%2C16%2C17%2C18%2C30%2C32&stats=bat&qual=0&type=1"
         f"&season={season}&seasonEnd={season}&org=9&ind=0"
         f"&splitTeam=false&level=0"
     )
+    api_path = f"/api/leaders/minor-league/data?{api_params}"
 
     try:
         with sync_playwright() as pw:
-            browser = pw.chromium.launch(headless=True)
-            page = browser.new_page()
-            # wait_for_response blocks until FanGraphs' internal XHR for the
-            # leaderboard data fires and resolves -- we capture it directly.
-            with page.expect_response(
-                lambda r: "api/leaders/minor-league/data" in r.url,
-                timeout=60_000
-            ) as resp_info:
-                page.goto(page_url, timeout=60_000)
-            payload = resp_info.value.json()
+            browser = pw.chromium.launch(
+                headless=True,
+                args=[
+                    "--no-sandbox",
+                    "--disable-blink-features=AutomationControlled",
+                    "--disable-dev-shm-usage",
+                ],
+            )
+            ctx = browser.new_context(
+                user_agent=(
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/124.0.0.0 Safari/537.36"
+                ),
+                viewport={"width": 1920, "height": 1080},
+                locale="en-US",
+                timezone_id="America/New_York",
+            )
+            page = ctx.new_page()
+            # Patch out the automation flag Cloudflare checks.
+            page.add_init_script(
+                "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"
+            )
+            # Step 1: load homepage to receive a Cloudflare clearance cookie.
+            print("  Step 1: loading FanGraphs homepage for CF clearance...")
+            page.goto("https://www.fangraphs.com/", wait_until="domcontentloaded", timeout=45_000)
+            page.wait_for_timeout(5_000)   # let JS challenge complete
+            # Step 2: call the data API from within the now-cleared browser context.
+            print("  Step 2: calling API from within browser context...")
+            payload = page.evaluate(f"""
+                async () => {{
+                    const r = await fetch('{api_path}', {{
+                        headers: {{
+                            'Accept': 'application/json',
+                            'Referer': 'https://www.fangraphs.com/leaders/minor-league'
+                        }}
+                    }});
+                    if (!r.ok) throw new Error('HTTP ' + r.status);
+                    return await r.json();
+                }}
+            """)
+            ctx.close()
             browser.close()
-        print(f"  FG Playwright: data captured successfully.")
+        print("  FG: data captured successfully.")
     except Exception as e:
         print(f"  FanGraphs Playwright fetch failed ({e}); wOBA uses computed value, wRC+ will be null.")
         return
