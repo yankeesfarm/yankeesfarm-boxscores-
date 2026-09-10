@@ -516,22 +516,42 @@ def enrich_with_fangraphs(hitters, season):
         "splitTeam": "false",
         "level": 0,          # all levels combined
     }
-    # cloudscraper handles Cloudflare's JS-challenge bot protection (the
-    # "Just a moment..." 403 that a plain requests.get() hits from
-    # GitHub Actions IP ranges). It replays the JS challenge in Python
-    # so Cloudflare issues a real session cookie and lets the request through.
-    print(f"Fetching FanGraphs wOBA/wRC+ for NYY system ({season})...")
+    # Playwright runs a real Chromium browser, which executes the Cloudflare
+    # JS challenge that blocks plain HTTP requests from GitHub Actions IPs.
+    # We intercept the XHR the browser fires to /api/leaders/minor-league/data
+    # and capture its JSON payload -- same data FanGraphs shows publicly on
+    # their minor league leaderboard page.
+    print(f"Fetching FanGraphs wOBA/wRC+ for NYY system ({season}) via Playwright...")
     try:
-        import cloudscraper
-        scraper = cloudscraper.create_scraper(
-            browser={"browser": "chrome", "platform": "windows", "mobile": False}
-        )
-        r = scraper.get(url, params=params, timeout=30)
-        print(f"  FG HTTP status: {r.status_code}")
-        r.raise_for_status()
-        payload = r.json()
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("  playwright not installed; skipping FanGraphs enrichment.")
+        return
+
+    page_url = (
+        f"https://www.fangraphs.com/leaders/minor-league"
+        f"?pos=all&lg=2%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C14%2C12%2C13"
+        f"%2C15%2C16%2C17%2C18%2C30%2C32&stats=bat&qual=0&type=1"
+        f"&season={season}&seasonEnd={season}&org=9&ind=0"
+        f"&splitTeam=false&level=0"
+    )
+
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(headless=True)
+            page = browser.new_page()
+            # wait_for_response blocks until FanGraphs' internal XHR for the
+            # leaderboard data fires and resolves -- we capture it directly.
+            with page.expect_response(
+                lambda r: "api/leaders/minor-league/data" in r.url,
+                timeout=60_000
+            ) as resp_info:
+                page.goto(page_url, timeout=60_000)
+            payload = resp_info.value.json()
+            browser.close()
+        print(f"  FG Playwright: data captured successfully.")
     except Exception as e:
-        print(f"  FanGraphs fetch failed ({e}); wOBA uses computed value, wRC+ will be null.")
+        print(f"  FanGraphs Playwright fetch failed ({e}); wOBA uses computed value, wRC+ will be null.")
         return
 
     if isinstance(payload, dict):
