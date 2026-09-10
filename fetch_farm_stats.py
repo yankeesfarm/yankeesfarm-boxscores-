@@ -410,6 +410,15 @@ def finalize_pitcher(pid, name, pos, level_id, totals):
     kp = pct(so, bf)
     bbp = pct(bb, bf)
 
+    # Opponent batting average against -- "atBats" here is at-bats BY THE
+    # OPPOSING HITTERS this pitcher faced (a real field the Stats API
+    # returns on every pitching stat object, already flowing through
+    # _accumulate() for combined rows the same as hits/bb/so). Never
+    # derived/estimated -- None (renders as "-" on the site) when a stint
+    # has zero recorded at-bats against, instead of a misleading 0.000.
+    ab_against = totals.get("atBats", 0)
+    avg_against = round(hits / ab_against, 3) if ab_against else None
+
     return {
         "name": name,
         "mlbId": pid,
@@ -420,6 +429,10 @@ def finalize_pitcher(pid, name, pos, level_id, totals):
         "era": era,
         "whip": whip,
         "ip": float(f"{outs // 3}.{outs % 3}") if outs else 0.0,
+        "h": hits,
+        "bb": bb,
+        "k": so,
+        "avg": avg_against,
         "k9": k9,
         "bb9": bb9,
         "kp": kp,
