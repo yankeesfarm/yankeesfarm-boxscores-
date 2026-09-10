@@ -1,25 +1,25 @@
 name: Fetch Farm Stats (Analytics Feed)
 
-# Runs fetch_farm_stats.py (MLB Stats API + FanGraphs enrichment) and
-# pushes the resulting data.json to the Wix analytics endpoint so the
-# Farm Statistics page ( /_functions/analytics ) stays current.
+# Runs fetch_farm_stats.py (MLB Stats API + FanGraphs enrichment via
+# Playwright) and pushes the resulting data.json to the Wix analytics
+# endpoint so the Farm Statistics page stays current.
+#
+# Playwright launches a real Chromium browser to load FanGraphs,
+# bypassing the Cloudflare JS challenge that blocks plain HTTP requests
+# from GitHub Actions IP ranges.
 #
 # Schedule matches daily-prospect-stats.yml: 7am and 10pm ET Tue-Sun,
-# 2pm ET Monday only. Same EDT→EST caveat: shift each UTC time one hour
-# later once EST (UTC-5) begins in November.
+# 2pm ET Monday only.
 
 on:
   schedule:
     # 7:00am ET, Tuesday through Sunday  (11:00 UTC)
     - cron: '0 11 * * 0,2,3,4,5,6'
-
     # 10:00pm ET, Tuesday through Sunday  (02:00 UTC next day)
     - cron: '0 2 * * 0,1,3,4,5,6'
-
     # 2:00pm ET, Monday only  (18:00 UTC)
     - cron: '0 18 * * 1'
-
-  workflow_dispatch:   # allow manual trigger from the Actions tab
+  workflow_dispatch:
 
 jobs:
   fetch-and-push:
@@ -31,8 +31,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: pip install -r requirements.txt
+
+      - name: Install Playwright browser (Chromium)
+        run: playwright install chromium --with-deps
 
       - name: Build analytics data.json
         run: python3 fetch_farm_stats.py --season 2026 --out data/analytics/data.json
