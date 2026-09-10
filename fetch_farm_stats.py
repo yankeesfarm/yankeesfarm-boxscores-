@@ -356,7 +356,6 @@ def finalize_hitter(pid, name, pos, level_id, totals, bio_person):
         "obp": obp,
         "slg": slg,
         "ops": ops,
-        "wrc_plus": None,   # filled in by enrich_with_fangraphs() below
         "hr": hr,
         "doubles": doubles,
         "rbi": rbi,
