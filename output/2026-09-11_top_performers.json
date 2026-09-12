@@ -1,0 +1,63 @@
+{
+  "hitters": [
+    {
+      "playerId": 701778,
+      "name": "Jace Avina",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "DH",
+      "bio": "AA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701778/spots/120",
+      "statline": "2 for 3: Double (29), HR (21), RBI (67)",
+      "points": 8.75
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 701480,
+      "name": "Bryce Cunningham",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/701480/spots/120",
+      "statline": "7.0 IP, 0 R, 7 K",
+      "points": 18.75
+    },
+    {
+      "playerId": 814392,
+      "name": "Xavier Rivas",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/814392/spots/120",
+      "statline": "5.0 IP, 2 R, 5 K",
+      "points": 11.0
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 701778,
+    "name": "Jace Avina",
+    "level": "AA",
+    "team": "Somerset Patriots",
+    "position": "DH",
+    "bio": "AA | DH",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/701778/spots/120",
+    "statline": "2 for 3: Double (29), HR (21), RBI (67)",
+    "points": 8.75
+  },
+  "pitcherOfTheDay": {
+    "playerId": 701480,
+    "name": "Bryce Cunningham",
+    "level": "AA",
+    "team": "Somerset Patriots",
+    "role": "SP",
+    "bio": "AA | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/701480/spots/120",
+    "statline": "7.0 IP, 0 R, 7 K",
+    "points": 18.75
+  },
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-12T06:45:03.833217+00:00"
+}
