@@ -117,6 +117,54 @@ def get_player_stats_by_date_range(person_id, group, sport_id, season, start_dat
     return summed
 
 
+def get_player_splits_by_hand(person_id, group, sport_id, season):
+    """Handedness splits for ONE player at ONE level (sportId).
+
+        group == "hitting"  -> vs RHP / vs LHP
+        group == "pitching" -> vs RHB / vs LHB
+
+    (Same MLB sitCodes 'vr'/'vl' in both cases -- the interpretation just
+    flips with the stat group, exactly as it does on MiLB.com's own splits
+    tab.)
+
+    WHY THIS DOESN'T REUSE get_player_stats_by_date_range's game-log
+    approach: a game log has no per-plate-appearance handedness, so you
+    physically cannot reconstruct vs-RHP/vs-LHP by summing games the way
+    date/team-scoped counting stats are summed. The handedness breakdown
+    only exists via the API's dedicated statSplits endpoint. That is a
+    SEASON + sportId scoped query, NOT the byDateRange/teamId aggregate
+    that silently failed in production -- so each sportId maps cleanly to
+    one level for the four full-season affiliates. Rookie ball (sportId
+    16) is shared by FCL Yankees / DSL NYY Yankees / DSL NYY Bombers, so a
+    rookie-only player's vr/vl here is his combined rookie-ball total --
+    which is exactly what the profile's single combined split tile shows
+    anyway, so no accuracy is lost.
+
+    Returns {"vr": {raw stat dict}, "vl": {raw stat dict}} containing only
+    the sides that have recorded activity, or {} if the player logged no
+    splits at this level. Raw counting stats only are trusted; callers
+    recompute AVG/OBP/SLG/OPS from those counts (same rule the rest of the
+    pipeline follows -- never trust the API's pre-aggregated rate stats)."""
+    params = {
+        "stats": "statSplits",
+        "group": group,
+        "season": season,
+        "sitCodes": "vr,vl",
+        "sportId": sport_id,
+    }
+    data = _get(f"/people/{person_id}/stats", params)
+    stats_list = data.get("stats", [])
+    if not stats_list:
+        return {}
+    out = {}
+    for split in stats_list[0].get("splits", []):
+        code = (split.get("split") or {}).get("code")
+        stat = split.get("stat", {})
+        if code in ("vr", "vl") and stat:
+            out[code] = stat
+    return out
+
+
 def get_team_schedule(team_id, start_date, end_date, sport_id=None):
     """Used by verify_data.py to sanity-check completed-game counts against
     what the stats pull actually captured (narrow, ~1 week windows, so the
