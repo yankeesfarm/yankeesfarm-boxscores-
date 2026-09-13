@@ -41,6 +41,18 @@ UNCHANGED -- they still use the original milb.com scrape via
 roster_map.json. roster_map.json itself does not need any edits for
 this update; only this script changed.
 
+v3 (this version): ADDS live handedness splits (vs RHP/LHP for hitters,
+vs RHB/LHB for pitchers). Previously push_player() accepted a `splits`
+argument but BOTH call sites called it without one, so every push sent
+"splits": null and the profile page silently fell back to whatever static
+splits were hardcoded in prospect.html (frozen the day the profile was
+built). Now build_player_splits() pulls real handedness splits from the
+Stats API's statSplits endpoint (see get_player_splits_by_hand() in
+lib/mlb_api.py for why splits CANNOT be derived from the game log the way
+the counting stats are) across EVERY affiliate level a player has played,
+so a promoted player keeps his full multi-level split history (e.g. Hans
+Montero's Low-A AND High-A splits, not just his current High-A line).
+
 USAGE:
     python fetch_daily_stats.py
 
@@ -72,7 +84,12 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.mlb_api import get_active_roster, get_player_stats_by_date_range, get_team_schedule
+from lib.mlb_api import (
+    get_active_roster,
+    get_player_stats_by_date_range,
+    get_player_splits_by_hand,
+    get_team_schedule,
+)
 
 MILB_BASE = "https://www.milb.com/{team}/stats/"
 PUSH_ENDPOINT = "https://www.yankeesfarmreport.com/_functions/updatePlayerStats"
@@ -82,6 +99,15 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; YankeesFarmBot/1.0)"}
 
 SEASON = 2026
 SEARCH_FROM_MONTH_DAY = "-02-01"  # same reasoning as fetch_farm_stats.py's SEARCH_FROM
+
+# Every Yankees affiliate sportId, probed when building a player's
+# handedness splits (see build_player_splits). Ordered high level -> low so
+# the resulting split arrays read AAA -> rookie, but order doesn't affect
+# the site (the profile sums every level into one combined split tile).
+# 16 covers all three rookie teams (FCL + both DSLs); a rookie-only
+# player's statSplits at sportId 16 is his true combined rookie total.
+SPLIT_SPORT_IDS = [11, 12, 13, 14, 16]
+SPORT_LEVEL_CODES = {11: "AAA", 12: "AA", 13: "HIA", 14: "LOA", 16: "ROK"}
 
 # Rookie-level teams fetched dynamically via the MLB Stats API instead of
 # milb.com scraping. IDs confirmed against Carlos's own notes / the Stats
@@ -244,6 +270,119 @@ def build_stint(row, level_code, level_label, stat_type):
 
 
 # ---------------------------------------------------------------------------
+# NEW PATH (v3): live handedness splits via the Stats API's statSplits endpoint
+# ---------------------------------------------------------------------------
+
+def _i(stat, key):
+    """Read one counting stat as an int, tolerant of missing/None/'-'
+    values the Stats API occasionally returns."""
+    v = stat.get(key)
+    if v in (None, "", "-"):
+        return 0
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        try:
+            return int(float(v))
+        except (TypeError, ValueError):
+            return 0
+
+
+def build_split_entry(stat, level_code, group):
+    """Turns one raw statSplits stat dict (one handedness side, one level)
+    into the exact per-level shape the profile page's combine functions
+    expect. Rate stats are RECOMPUTED from the raw counts (same rule the
+    rest of the pipeline follows -- never trust the API's pre-aggregated
+    rate fields). Returns None for an empty side so it never adds a
+    0-for-0 tile."""
+    if group == "hitting":
+        ab = _i(stat, "atBats")
+        bb = _i(stat, "baseOnBalls")
+        if ab == 0 and bb == 0:
+            return None  # no plate appearances on this side at this level
+        h = _i(stat, "hits")
+        d = _i(stat, "doubles")
+        t = _i(stat, "triples")
+        hr = _i(stat, "homeRuns")
+        hbp = _i(stat, "hitByPitch")
+        sf = _i(stat, "sacFlies")
+        so = _i(stat, "strikeOuts")
+        singles = h - d - t - hr
+        tb = singles + 2 * d + 3 * t + 4 * hr
+        obp_denom = ab + bb + hbp + sf
+        avg = round(h / ab, 3) if ab else 0.0
+        obp = round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0
+        slg = round(tb / ab, 3) if ab else 0.0
+        ops = round(obp + slg, 3)
+        return {
+            "level": level_code, "AB": ab, "H": h, "D": d, "HR": hr,
+            "BB": bb, "SO": so, "AVG": avg, "OBP": obp, "SLG": slg, "OPS": ops,
+        }
+    else:
+        ip_str = str(stat.get("inningsPitched", "0.0"))
+        whole, _, frac = ip_str.partition(".")
+        outs = (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+        if outs == 0:
+            return None  # faced nobody on this side at this level
+        h = _i(stat, "hits")
+        hr = _i(stat, "homeRuns")
+        hb = _i(stat, "hitByPitch")
+        bb = _i(stat, "baseOnBalls")
+        so = _i(stat, "strikeOuts")
+        ab = _i(stat, "atBats")  # at-bats BY opposing hitters -> opp AVG
+        avg = round(h / ab, 3) if ab else 0.0
+        ip_display = float(f"{outs // 3}.{outs % 3}")
+        return {
+            "level": level_code, "IP": ip_display, "H": h, "HR": hr,
+            "HB": hb, "BB": bb, "SO": so, "AVG": avg,
+        }
+
+
+def build_player_splits(person_id, group):
+    """Builds the profile page's `splits` object for one player, pulling
+    real handedness splits from the Stats API across EVERY affiliate level
+    he's played at this season.
+
+    Keys match what renderSplits() in prospect.html reads:
+        hitters  -> {"vsRHP": [...], "vsLHP": [...]}
+        pitchers -> {"vsRHB": [...], "vsLHB": [...]}
+    ...each an array of per-level entries, which the profile then sums into
+    one combined tile per side. Probing every level (not just the current
+    one) is what keeps a promoted player's full split history -- e.g. Hans
+    Montero's Low-A splits stay visible after his call-up to High-A.
+
+    Returns None if the player has no recorded splits anywhere, in which
+    case push_player sends splits=None and the profile keeps whatever
+    splits it already had (no regression, never a wipe)."""
+    if not person_id:
+        return None
+    right_key = "vsRHP" if group == "hitting" else "vsRHB"
+    left_key = "vsLHP" if group == "hitting" else "vsLHB"
+    right_entries, left_entries = [], []
+    for sport_id in SPLIT_SPORT_IDS:
+        try:
+            sides = get_player_splits_by_hand(person_id, group, sport_id, SEASON)
+        except Exception as e:
+            print(f"[WARN] splits fetch failed for person {person_id} sportId={sport_id}: {e}")
+            continue
+        if not sides:
+            continue
+        level_code = SPORT_LEVEL_CODES.get(sport_id, "")
+        if sides.get("vr"):
+            entry = build_split_entry(sides["vr"], level_code, group)
+            if entry:
+                right_entries.append(entry)
+        if sides.get("vl"):
+            entry = build_split_entry(sides["vl"], level_code, group)
+            if entry:
+                left_entries.append(entry)
+        time.sleep(0.05)
+    if not right_entries and not left_entries:
+        return None
+    return {right_key: right_entries, left_key: left_entries}
+
+
+# ---------------------------------------------------------------------------
 # NEW PATH (v2): Stats-API-driven fetch for the 3 rookie-level affiliates
 # ---------------------------------------------------------------------------
 
@@ -401,7 +540,7 @@ def fetch_rookie_team_players(team, graduated_slugs):
     """Dynamically discovers every player on this rookie-level team's
     full-season roster and pulls their team-scoped stat line via the
     Stats API -- no roster_map.json entry required. Returns a list of
-    {slug, seasons} dicts ready to push.
+    {slug, name, mlbId, group, seasons} dicts ready to push.
 
     IMPORTANT: get_active_roster() deliberately uses rosterType="fullSeason"
     (see its own docstring in lib/mlb_api.py), which returns EVERYONE who
@@ -452,6 +591,8 @@ def fetch_rookie_team_players(team, graduated_slugs):
         results.append({
             "slug": slug,
             "name": name,
+            "mlbId": pid,
+            "group": group,
             "seasons": [{"year": SEASON, "stints": [stint]}],
         })
         time.sleep(0.1)
@@ -534,6 +675,17 @@ def main():
             except Exception as e:
                 print(f"[WARN] season total for {slug}: {e}")
 
+        # Live handedness splits across every level this player has played
+        # (see build_player_splits). Wrapped so a splits failure never blocks
+        # the stats push -- on failure splits stays None and the profile
+        # keeps whatever splits it already had.
+        splits = None
+        if info.get("mlbId"):
+            try:
+                splits = build_player_splits(info["mlbId"], info["type"])
+            except Exception as e:
+                print(f"[WARN] splits for {slug}: {e}")
+
         # Wrap as a single-season update. The current-team stint (top-of-page
         # display) is refreshed every run from the milb.com scrape above.
         # seasonTotal (career-page display) is refreshed every run from the
@@ -544,7 +696,7 @@ def main():
             season_entry["seasonTotal"] = season_total
         seasons = [season_entry]
         try:
-            push_player(slug, seasons)
+            push_player(slug, seasons, splits)
             updated.append(slug)
         except Exception as e:
             print(f"[ERROR] pushing {slug}: {e}")
@@ -560,8 +712,17 @@ def main():
             print(f"[ERROR] teamId={team['teamId']}: {e}")
             continue
         for p in players:
+            # Live handedness splits for rookie-level players too. sportId 16
+            # is shared by FCL/both DSLs, so build_player_splits returns the
+            # player's combined rookie split -- exactly what the profile's
+            # single combined tile shows.
+            splits = None
             try:
-                push_player(p["slug"], p["seasons"])
+                splits = build_player_splits(p["mlbId"], p["group"])
+            except Exception as e:
+                print(f"[WARN] splits for {p['slug']}: {e}")
+            try:
+                push_player(p["slug"], p["seasons"], splits)
                 updated.append(p["slug"])
             except Exception as e:
                 print(f"[ERROR] pushing {p['slug']} ({p['name']}): {e}")
