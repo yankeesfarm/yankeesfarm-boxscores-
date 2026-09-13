@@ -1,0 +1,107 @@
+{
+  "hitters": [
+    {
+      "playerId": 676205,
+      "name": "Tyler Hardman",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "1B",
+      "bio": "AAA | 1B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/676205/spots/120",
+      "statline": "2 for 4: Double (12), RBI (45)",
+      "points": 4.5
+    },
+    {
+      "playerId": 668752,
+      "name": "Duke Ellis",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "CF",
+      "bio": "AAA | CF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/668752/spots/120",
+      "statline": "2 for 2: Double (12), RBI (24), SB (52)",
+      "points": 5.5
+    },
+    {
+      "playerId": 692110,
+      "name": "Core Jackson",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "DH",
+      "bio": "AA | DH",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692110/spots/120",
+      "statline": "2 for 4: HR (2), 4 RBI (15)",
+      "points": 10.25
+    },
+    {
+      "playerId": 692633,
+      "name": "Manuel Palencia",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "C",
+      "bio": "AA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/692633/spots/120",
+      "statline": "2 for 3: Double (9), RBI (33)",
+      "points": 4.5
+    },
+    {
+      "playerId": 821296,
+      "name": "Connor McGinnis",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "position": "2B",
+      "bio": "AA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/821296/spots/120",
+      "statline": "4 for 4: Double (12), 4 RBI (42)",
+      "points": 10.0
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 660787,
+      "name": "Yerry De los Santos",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/660787/spots/120",
+      "statline": "2.0 IP, 1 R, 3 K",
+      "points": 5.5
+    },
+    {
+      "playerId": 657376,
+      "name": "Clarke Schmidt",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "RP",
+      "bio": "AA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/657376/spots/120",
+      "statline": "1.1 IP, 0 R, 3 K",
+      "points": 13.33
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 692110,
+    "name": "Core Jackson",
+    "level": "AA",
+    "team": "Somerset Patriots",
+    "position": "DH",
+    "bio": "AA | DH",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/692110/spots/120",
+    "statline": "2 for 4: HR (2), 4 RBI (15)",
+    "points": 10.25
+  },
+  "pitcherOfTheDay": {
+    "playerId": 657376,
+    "name": "Clarke Schmidt",
+    "level": "AA",
+    "team": "Somerset Patriots",
+    "role": "RP",
+    "bio": "AA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/657376/spots/120",
+    "statline": "1.1 IP, 0 R, 3 K",
+    "points": 13.33
+  },
+  "date": "2026-09-12",
+  "generatedAt": "2026-09-13T02:29:10.449055+00:00"
+}
