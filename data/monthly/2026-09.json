@@ -10,15 +10,15 @@
     "dsl_yankees": "2026-06-01",
     "dsl_bombers": "2026-06-01"
   },
-  "through_date": "2026-09-12",
+  "through_date": "2026-09-13",
   "team_games_played": {
-    "tampa": 131,
+    "tampa": 132,
     "hudson_valley": 127,
-    "somerset": 137,
-    "scranton_wb": 142
+    "somerset": 138,
+    "scranton_wb": 143
   },
-  "qualifying_pa": 440,
-  "qualifying_ip": 71.0,
+  "qualifying_pa": 443,
+  "qualifying_ip": 71.5,
   "hitters": [
     {
       "id": "811551",
@@ -1794,91 +1794,91 @@
       "id": "703149",
       "name": "Roderick Arias",
       "team": "somerset",
-      "atBats": 131,
-      "hits": 33,
+      "atBats": 136,
+      "hits": 35,
       "doubles": 8,
       "triples": 1,
       "homeRuns": 4,
-      "rbi": 21,
+      "rbi": 23,
       "baseOnBalls": 12,
       "hitByPitch": 3,
       "sacFlies": 1,
-      "stolenBases": 8,
+      "stolenBases": 9,
       "caughtStealing": 4,
-      "strikeOuts": 47,
-      "plateAppearances": 147,
+      "strikeOuts": 48,
+      "plateAppearances": 152,
       "intentionalWalks": 0,
-      "avg": 0.252,
-      "obp": 0.327,
-      "slg": 0.42,
-      "ops": 0.747,
-      "bbPct": 0.0816,
-      "kPct": 0.3197,
-      "kMinusBbPct": 0.2381,
-      "xbhPct": 0.3939,
-      "iso": 0.168,
-      "babip": 0.358,
-      "woba": 0.329
+      "avg": 0.257,
+      "obp": 0.329,
+      "slg": 0.419,
+      "ops": 0.748,
+      "bbPct": 0.0789,
+      "kPct": 0.3158,
+      "kMinusBbPct": 0.2369,
+      "xbhPct": 0.3714,
+      "iso": 0.162,
+      "babip": 0.365,
+      "woba": 0.33
     },
     {
       "id": "701778",
       "name": "Jace Avina",
       "team": "somerset",
-      "atBats": 456,
-      "hits": 115,
+      "atBats": 460,
+      "hits": 117,
       "doubles": 29,
       "triples": 3,
       "homeRuns": 21,
       "rbi": 68,
-      "baseOnBalls": 60,
+      "baseOnBalls": 61,
       "hitByPitch": 8,
       "sacFlies": 3,
       "stolenBases": 16,
       "caughtStealing": 6,
-      "strikeOuts": 124,
-      "plateAppearances": 527,
+      "strikeOuts": 126,
+      "plateAppearances": 532,
       "intentionalWalks": 0,
-      "avg": 0.252,
-      "obp": 0.347,
+      "avg": 0.254,
+      "obp": 0.35,
       "slg": 0.467,
-      "ops": 0.814,
-      "bbPct": 0.1139,
-      "kPct": 0.2353,
-      "kMinusBbPct": 0.1214,
-      "xbhPct": 0.4609,
-      "iso": 0.215,
-      "babip": 0.299,
-      "woba": 0.357
+      "ops": 0.817,
+      "bbPct": 0.1147,
+      "kPct": 0.2368,
+      "kMinusBbPct": 0.1221,
+      "xbhPct": 0.453,
+      "iso": 0.213,
+      "babip": 0.304,
+      "woba": 0.358
     },
     {
       "id": "814431",
       "name": "Jackson Castillo",
       "team": "somerset",
-      "atBats": 392,
+      "atBats": 395,
       "hits": 95,
       "doubles": 17,
       "triples": 1,
       "homeRuns": 9,
       "rbi": 43,
-      "baseOnBalls": 58,
+      "baseOnBalls": 59,
       "hitByPitch": 5,
       "sacFlies": 3,
       "stolenBases": 12,
       "caughtStealing": 2,
-      "strikeOuts": 88,
-      "plateAppearances": 458,
+      "strikeOuts": 90,
+      "plateAppearances": 462,
       "intentionalWalks": 0,
-      "avg": 0.242,
-      "obp": 0.345,
-      "slg": 0.36,
-      "ops": 0.705,
-      "bbPct": 0.1266,
-      "kPct": 0.1921,
-      "kMinusBbPct": 0.0655,
+      "avg": 0.241,
+      "obp": 0.344,
+      "slg": 0.357,
+      "ops": 0.701,
+      "bbPct": 0.1277,
+      "kPct": 0.1948,
+      "kMinusBbPct": 0.0671,
       "xbhPct": 0.2842,
-      "iso": 0.118,
-      "babip": 0.289,
-      "woba": 0.319
+      "iso": 0.116,
+      "babip": 0.288,
+      "woba": 0.318
     },
     {
       "id": "686540",
@@ -1974,8 +1974,8 @@
       "id": "691411",
       "name": "Luis Durango",
       "team": "somerset",
-      "atBats": 64,
-      "hits": 19,
+      "atBats": 68,
+      "hits": 20,
       "doubles": 1,
       "triples": 1,
       "homeRuns": 0,
@@ -1983,22 +1983,22 @@
       "baseOnBalls": 6,
       "hitByPitch": 2,
       "sacFlies": 0,
-      "stolenBases": 9,
+      "stolenBases": 10,
       "caughtStealing": 3,
       "strikeOuts": 10,
-      "plateAppearances": 72,
+      "plateAppearances": 76,
       "intentionalWalks": 0,
-      "avg": 0.297,
-      "obp": 0.375,
-      "slg": 0.344,
-      "ops": 0.719,
-      "bbPct": 0.0833,
-      "kPct": 0.1389,
-      "kMinusBbPct": 0.0556,
-      "xbhPct": 0.1053,
-      "iso": 0.047,
-      "babip": 0.352,
-      "woba": 0.327
+      "avg": 0.294,
+      "obp": 0.368,
+      "slg": 0.338,
+      "ops": 0.706,
+      "bbPct": 0.0789,
+      "kPct": 0.1316,
+      "kMinusBbPct": 0.0527,
+      "xbhPct": 0.1,
+      "iso": 0.044,
+      "babip": 0.345,
+      "woba": 0.322
     },
     {
       "id": "694281",
@@ -2064,31 +2064,31 @@
       "id": "687554",
       "name": "DJ Gladney",
       "team": "somerset",
-      "atBats": 434,
+      "atBats": 437,
       "hits": 115,
       "doubles": 24,
       "triples": 2,
       "homeRuns": 23,
       "rbi": 85,
       "baseOnBalls": 37,
-      "hitByPitch": 5,
+      "hitByPitch": 6,
       "sacFlies": 6,
       "stolenBases": 21,
       "caughtStealing": 3,
-      "strikeOuts": 165,
-      "plateAppearances": 482,
+      "strikeOuts": 168,
+      "plateAppearances": 486,
       "intentionalWalks": 1,
-      "avg": 0.265,
-      "obp": 0.326,
-      "slg": 0.488,
-      "ops": 0.814,
-      "bbPct": 0.0768,
-      "kPct": 0.3423,
-      "kMinusBbPct": 0.2655,
+      "avg": 0.263,
+      "obp": 0.325,
+      "slg": 0.485,
+      "ops": 0.81,
+      "bbPct": 0.0761,
+      "kPct": 0.3457,
+      "kMinusBbPct": 0.2696,
       "xbhPct": 0.4261,
-      "iso": 0.223,
+      "iso": 0.222,
       "babip": 0.365,
-      "woba": 0.352
+      "woba": 0.35
     },
     {
       "id": "801726",
@@ -2214,9 +2214,9 @@
       "id": "692110",
       "name": "Core Jackson",
       "team": "somerset",
-      "atBats": 88,
-      "hits": 24,
-      "doubles": 4,
+      "atBats": 93,
+      "hits": 25,
+      "doubles": 5,
       "triples": 1,
       "homeRuns": 2,
       "rbi": 15,
@@ -2226,19 +2226,19 @@
       "stolenBases": 9,
       "caughtStealing": 2,
       "strikeOuts": 14,
-      "plateAppearances": 98,
+      "plateAppearances": 103,
       "intentionalWalks": 0,
-      "avg": 0.273,
-      "obp": 0.337,
+      "avg": 0.269,
+      "obp": 0.33,
       "slg": 0.409,
-      "ops": 0.746,
-      "bbPct": 0.0816,
-      "kPct": 0.1429,
-      "kMinusBbPct": 0.0613,
-      "xbhPct": 0.2917,
-      "iso": 0.136,
-      "babip": 0.301,
-      "woba": 0.329
+      "ops": 0.739,
+      "bbPct": 0.0777,
+      "kPct": 0.1359,
+      "kMinusBbPct": 0.0582,
+      "xbhPct": 0.32,
+      "iso": 0.14,
+      "babip": 0.295,
+      "woba": 0.325
     },
     {
       "id": "806146",
@@ -2334,8 +2334,8 @@
       "id": "821296",
       "name": "Connor McGinnis",
       "team": "somerset",
-      "atBats": 274,
-      "hits": 70,
+      "atBats": 278,
+      "hits": 71,
       "doubles": 12,
       "triples": 1,
       "homeRuns": 10,
@@ -2345,20 +2345,20 @@
       "sacFlies": 1,
       "stolenBases": 6,
       "caughtStealing": 1,
-      "strikeOuts": 73,
-      "plateAppearances": 312,
+      "strikeOuts": 75,
+      "plateAppearances": 316,
       "intentionalWalks": 0,
       "avg": 0.255,
-      "obp": 0.343,
-      "slg": 0.416,
-      "ops": 0.759,
-      "bbPct": 0.0833,
-      "kPct": 0.234,
-      "kMinusBbPct": 0.1507,
-      "xbhPct": 0.3286,
-      "iso": 0.161,
-      "babip": 0.312,
-      "woba": 0.338
+      "obp": 0.342,
+      "slg": 0.414,
+      "ops": 0.756,
+      "bbPct": 0.0823,
+      "kPct": 0.2373,
+      "kMinusBbPct": 0.155,
+      "xbhPct": 0.3239,
+      "iso": 0.159,
+      "babip": 0.314,
+      "woba": 0.337
     },
     {
       "id": "641857",
@@ -2424,30 +2424,30 @@
       "id": "694742",
       "name": "Josh Moylan",
       "team": "somerset",
-      "atBats": 229,
-      "hits": 58,
+      "atBats": 232,
+      "hits": 59,
       "doubles": 12,
       "triples": 0,
       "homeRuns": 16,
       "rbi": 45,
-      "baseOnBalls": 21,
+      "baseOnBalls": 22,
       "hitByPitch": 1,
       "sacFlies": 2,
       "stolenBases": 2,
       "caughtStealing": 1,
-      "strikeOuts": 74,
-      "plateAppearances": 253,
+      "strikeOuts": 75,
+      "plateAppearances": 257,
       "intentionalWalks": 0,
-      "avg": 0.253,
-      "obp": 0.316,
-      "slg": 0.515,
-      "ops": 0.831,
-      "bbPct": 0.083,
-      "kPct": 0.2925,
-      "kMinusBbPct": 0.2095,
-      "xbhPct": 0.4828,
-      "iso": 0.262,
-      "babip": 0.298,
+      "avg": 0.254,
+      "obp": 0.319,
+      "slg": 0.513,
+      "ops": 0.832,
+      "bbPct": 0.0856,
+      "kPct": 0.2918,
+      "kMinusBbPct": 0.2062,
+      "xbhPct": 0.4746,
+      "iso": 0.259,
+      "babip": 0.301,
       "woba": 0.359
     },
     {
@@ -2484,31 +2484,31 @@
       "id": "682692",
       "name": "Miguel Palma",
       "team": "somerset",
-      "atBats": 178,
+      "atBats": 181,
       "hits": 40,
       "doubles": 4,
       "triples": 0,
       "homeRuns": 9,
-      "rbi": 33,
-      "baseOnBalls": 19,
+      "rbi": 34,
+      "baseOnBalls": 20,
       "hitByPitch": 4,
       "sacFlies": 0,
       "stolenBases": 0,
       "caughtStealing": 0,
-      "strikeOuts": 42,
-      "plateAppearances": 201,
+      "strikeOuts": 43,
+      "plateAppearances": 205,
       "intentionalWalks": 0,
-      "avg": 0.225,
-      "obp": 0.313,
-      "slg": 0.399,
-      "ops": 0.712,
-      "bbPct": 0.0945,
-      "kPct": 0.209,
-      "kMinusBbPct": 0.1145,
+      "avg": 0.221,
+      "obp": 0.312,
+      "slg": 0.392,
+      "ops": 0.704,
+      "bbPct": 0.0976,
+      "kPct": 0.2098,
+      "kMinusBbPct": 0.1122,
       "xbhPct": 0.325,
-      "iso": 0.174,
-      "babip": 0.244,
-      "woba": 0.318
+      "iso": 0.171,
+      "babip": 0.24,
+      "woba": 0.315
     },
     {
       "id": "804603",
@@ -2724,31 +2724,31 @@
       "id": "665828",
       "name": "Oswaldo Cabrera",
       "team": "scranton_wb",
-      "atBats": 459,
-      "hits": 131,
+      "atBats": 463,
+      "hits": 134,
       "doubles": 14,
       "triples": 1,
-      "homeRuns": 17,
-      "rbi": 66,
+      "homeRuns": 19,
+      "rbi": 69,
       "baseOnBalls": 44,
       "hitByPitch": 1,
       "sacFlies": 9,
       "stolenBases": 11,
       "caughtStealing": 1,
-      "strikeOuts": 105,
-      "plateAppearances": 513,
+      "strikeOuts": 106,
+      "plateAppearances": 517,
       "intentionalWalks": 1,
-      "avg": 0.285,
-      "obp": 0.343,
-      "slg": 0.431,
-      "ops": 0.774,
-      "bbPct": 0.0858,
-      "kPct": 0.2047,
-      "kMinusBbPct": 0.1189,
-      "xbhPct": 0.2443,
-      "iso": 0.146,
-      "babip": 0.329,
-      "woba": 0.339
+      "avg": 0.289,
+      "obp": 0.346,
+      "slg": 0.447,
+      "ops": 0.793,
+      "bbPct": 0.0851,
+      "kPct": 0.205,
+      "kMinusBbPct": 0.1199,
+      "xbhPct": 0.2537,
+      "iso": 0.158,
+      "babip": 0.331,
+      "woba": 0.346
     },
     {
       "id": "686540",
@@ -2784,31 +2784,31 @@
       "id": "685744",
       "name": "Kenedy Corona",
       "team": "scranton_wb",
-      "atBats": 224,
+      "atBats": 227,
       "hits": 57,
       "doubles": 11,
       "triples": 1,
       "homeRuns": 9,
       "rbi": 40,
-      "baseOnBalls": 32,
+      "baseOnBalls": 33,
       "hitByPitch": 3,
       "sacFlies": 2,
-      "stolenBases": 14,
+      "stolenBases": 15,
       "caughtStealing": 6,
       "strikeOuts": 58,
-      "plateAppearances": 261,
+      "plateAppearances": 265,
       "intentionalWalks": 0,
-      "avg": 0.254,
-      "obp": 0.352,
-      "slg": 0.433,
-      "ops": 0.785,
-      "bbPct": 0.1226,
-      "kPct": 0.2222,
-      "kMinusBbPct": 0.0996,
+      "avg": 0.251,
+      "obp": 0.351,
+      "slg": 0.427,
+      "ops": 0.778,
+      "bbPct": 0.1245,
+      "kPct": 0.2189,
+      "kMinusBbPct": 0.0944,
       "xbhPct": 0.3684,
-      "iso": 0.179,
-      "babip": 0.302,
-      "woba": 0.348
+      "iso": 0.176,
+      "babip": 0.296,
+      "woba": 0.345
     },
     {
       "id": "657557",
@@ -2934,38 +2934,38 @@
       "id": "641555",
       "name": "J.C. Escarra",
       "team": "scranton_wb",
-      "atBats": 231,
-      "hits": 69,
+      "atBats": 235,
+      "hits": 70,
       "doubles": 14,
       "triples": 0,
       "homeRuns": 10,
-      "rbi": 45,
+      "rbi": 46,
       "baseOnBalls": 23,
       "hitByPitch": 6,
       "sacFlies": 3,
       "stolenBases": 1,
       "caughtStealing": 0,
-      "strikeOuts": 35,
-      "plateAppearances": 263,
+      "strikeOuts": 37,
+      "plateAppearances": 267,
       "intentionalWalks": 0,
-      "avg": 0.299,
-      "obp": 0.373,
-      "slg": 0.489,
-      "ops": 0.862,
-      "bbPct": 0.0875,
-      "kPct": 0.1331,
-      "kMinusBbPct": 0.0456,
-      "xbhPct": 0.3478,
-      "iso": 0.19,
-      "babip": 0.312,
-      "woba": 0.376
+      "avg": 0.298,
+      "obp": 0.371,
+      "slg": 0.485,
+      "ops": 0.856,
+      "bbPct": 0.0861,
+      "kPct": 0.1386,
+      "kMinusBbPct": 0.0525,
+      "xbhPct": 0.3429,
+      "iso": 0.187,
+      "babip": 0.314,
+      "woba": 0.374
     },
     {
       "id": "692585",
       "name": "Yanquiel Fern\u00e1ndez",
       "team": "scranton_wb",
-      "atBats": 470,
-      "hits": 123,
+      "atBats": 474,
+      "hits": 124,
       "doubles": 20,
       "triples": 1,
       "homeRuns": 26,
@@ -2975,20 +2975,20 @@
       "sacFlies": 5,
       "stolenBases": 3,
       "caughtStealing": 2,
-      "strikeOuts": 111,
-      "plateAppearances": 513,
+      "strikeOuts": 112,
+      "plateAppearances": 517,
       "intentionalWalks": 0,
       "avg": 0.262,
-      "obp": 0.314,
-      "slg": 0.474,
-      "ops": 0.788,
-      "bbPct": 0.0721,
-      "kPct": 0.2164,
-      "kMinusBbPct": 0.1443,
-      "xbhPct": 0.3821,
-      "iso": 0.212,
+      "obp": 0.313,
+      "slg": 0.473,
+      "ops": 0.786,
+      "bbPct": 0.0716,
+      "kPct": 0.2166,
+      "kMinusBbPct": 0.145,
+      "xbhPct": 0.379,
+      "iso": 0.211,
       "babip": 0.287,
-      "woba": 0.342
+      "woba": 0.341
     },
     {
       "id": "702068",
@@ -3084,7 +3084,7 @@
       "id": "676205",
       "name": "Tyler Hardman",
       "team": "scranton_wb",
-      "atBats": 302,
+      "atBats": 306,
       "hits": 66,
       "doubles": 12,
       "triples": 0,
@@ -3096,19 +3096,19 @@
       "stolenBases": 8,
       "caughtStealing": 1,
       "strikeOuts": 79,
-      "plateAppearances": 344,
+      "plateAppearances": 348,
       "intentionalWalks": 1,
-      "avg": 0.219,
-      "obp": 0.308,
-      "slg": 0.387,
-      "ops": 0.695,
-      "bbPct": 0.0988,
-      "kPct": 0.2297,
-      "kMinusBbPct": 0.1309,
+      "avg": 0.216,
+      "obp": 0.305,
+      "slg": 0.382,
+      "ops": 0.687,
+      "bbPct": 0.0977,
+      "kPct": 0.227,
+      "kMinusBbPct": 0.1293,
       "xbhPct": 0.3788,
-      "iso": 0.168,
-      "babip": 0.25,
-      "woba": 0.309
+      "iso": 0.166,
+      "babip": 0.245,
+      "woba": 0.306
     },
     {
       "id": "668721",
@@ -3174,31 +3174,31 @@
       "id": "672284",
       "name": "Jarred Kelenic",
       "team": "scranton_wb",
-      "atBats": 58,
+      "atBats": 61,
       "hits": 14,
       "doubles": 1,
       "triples": 1,
       "homeRuns": 1,
       "rbi": 8,
-      "baseOnBalls": 3,
+      "baseOnBalls": 5,
       "hitByPitch": 0,
       "sacFlies": 1,
       "stolenBases": 3,
       "caughtStealing": 1,
-      "strikeOuts": 17,
-      "plateAppearances": 62,
+      "strikeOuts": 18,
+      "plateAppearances": 67,
       "intentionalWalks": 0,
-      "avg": 0.241,
-      "obp": 0.274,
-      "slg": 0.345,
-      "ops": 0.619,
-      "bbPct": 0.0484,
-      "kPct": 0.2742,
-      "kMinusBbPct": 0.2258,
+      "avg": 0.23,
+      "obp": 0.284,
+      "slg": 0.328,
+      "ops": 0.612,
+      "bbPct": 0.0746,
+      "kPct": 0.2687,
+      "kMinusBbPct": 0.1941,
       "xbhPct": 0.2143,
-      "iso": 0.104,
-      "babip": 0.317,
-      "woba": 0.271
+      "iso": 0.098,
+      "babip": 0.302,
+      "woba": 0.272
     },
     {
       "id": "806146",
@@ -3234,7 +3234,7 @@
       "id": "682617",
       "name": "Marco Luciano",
       "team": "scranton_wb",
-      "atBats": 296,
+      "atBats": 300,
       "hits": 83,
       "doubles": 12,
       "triples": 1,
@@ -3245,20 +3245,20 @@
       "sacFlies": 3,
       "stolenBases": 4,
       "caughtStealing": 1,
-      "strikeOuts": 84,
-      "plateAppearances": 349,
+      "strikeOuts": 88,
+      "plateAppearances": 353,
       "intentionalWalks": 0,
-      "avg": 0.28,
-      "obp": 0.381,
-      "slg": 0.49,
-      "ops": 0.871,
-      "bbPct": 0.1375,
-      "kPct": 0.2407,
-      "kMinusBbPct": 0.1032,
+      "avg": 0.277,
+      "obp": 0.377,
+      "slg": 0.483,
+      "ops": 0.86,
+      "bbPct": 0.136,
+      "kPct": 0.2493,
+      "kMinusBbPct": 0.1133,
       "xbhPct": 0.3494,
-      "iso": 0.21,
+      "iso": 0.206,
       "babip": 0.337,
-      "woba": 0.381
+      "woba": 0.377
     },
     {
       "id": "682003",
@@ -3294,8 +3294,8 @@
       "id": "667803",
       "name": "Ernesto Martinez Jr.",
       "team": "scranton_wb",
-      "atBats": 372,
-      "hits": 91,
+      "atBats": 376,
+      "hits": 92,
       "doubles": 16,
       "triples": 4,
       "homeRuns": 17,
@@ -3305,20 +3305,20 @@
       "sacFlies": 6,
       "stolenBases": 14,
       "caughtStealing": 1,
-      "strikeOuts": 109,
-      "plateAppearances": 431,
+      "strikeOuts": 110,
+      "plateAppearances": 435,
       "intentionalWalks": 0,
       "avg": 0.245,
-      "obp": 0.334,
-      "slg": 0.446,
-      "ops": 0.78,
-      "bbPct": 0.116,
+      "obp": 0.333,
+      "slg": 0.444,
+      "ops": 0.777,
+      "bbPct": 0.1149,
       "kPct": 0.2529,
-      "kMinusBbPct": 0.1369,
-      "xbhPct": 0.4066,
-      "iso": 0.201,
+      "kMinusBbPct": 0.138,
+      "xbhPct": 0.4022,
+      "iso": 0.199,
       "babip": 0.294,
-      "woba": 0.341
+      "woba": 0.34
     },
     {
       "id": "680716",
@@ -3444,8 +3444,8 @@
       "id": "680474",
       "name": "Max Schuemann",
       "team": "scranton_wb",
-      "atBats": 176,
-      "hits": 48,
+      "atBats": 181,
+      "hits": 49,
       "doubles": 12,
       "triples": 2,
       "homeRuns": 6,
@@ -3455,20 +3455,20 @@
       "sacFlies": 1,
       "stolenBases": 6,
       "caughtStealing": 1,
-      "strikeOuts": 36,
-      "plateAppearances": 204,
+      "strikeOuts": 38,
+      "plateAppearances": 209,
       "intentionalWalks": 0,
-      "avg": 0.273,
-      "obp": 0.368,
-      "slg": 0.466,
-      "ops": 0.834,
-      "bbPct": 0.1176,
-      "kPct": 0.1765,
-      "kMinusBbPct": 0.0589,
-      "xbhPct": 0.4167,
-      "iso": 0.193,
-      "babip": 0.311,
-      "woba": 0.366
+      "avg": 0.271,
+      "obp": 0.364,
+      "slg": 0.459,
+      "ops": 0.823,
+      "bbPct": 0.1148,
+      "kPct": 0.1818,
+      "kMinusBbPct": 0.067,
+      "xbhPct": 0.4082,
+      "iso": 0.188,
+      "babip": 0.312,
+      "woba": 0.362
     },
     {
       "id": "669699",
@@ -5490,27 +5490,27 @@
       "id": "683522",
       "name": "Michael Arias",
       "team": "somerset",
-      "inningsPitched": "51.0",
-      "strikeOuts": 55,
+      "inningsPitched": "53.2",
+      "strikeOuts": 58,
       "baseOnBalls": 24,
-      "hits": 52,
-      "atBats": 201,
+      "hits": 53,
+      "atBats": 210,
       "homeRuns": 8,
       "earnedRuns": 31,
       "runs": 36,
       "wins": 4,
       "losses": 1,
       "saves": 2,
-      "battersFaced": 231,
+      "battersFaced": 240,
       "hitByPitch": 5,
-      "era": 5.47,
-      "whip": 1.49,
-      "avg": 0.259,
-      "so9": 9.71,
-      "kPct": 0.2381,
-      "bbPct": 0.1039,
-      "kMinusBbPct": 0.1342,
-      "fip": 8.11
+      "era": 5.2,
+      "whip": 1.43,
+      "avg": 0.252,
+      "so9": 9.73,
+      "kPct": 0.2417,
+      "bbPct": 0.1,
+      "kMinusBbPct": 0.1417,
+      "fip": 8.23
     },
     {
       "id": "675502",
@@ -5536,7 +5536,7 @@
       "kPct": 0.2661,
       "bbPct": 0.0901,
       "kMinusBbPct": 0.176,
-      "fip": 7.37
+      "fip": 7.68
     },
     {
       "id": "703748",
@@ -5562,7 +5562,7 @@
       "kPct": 0.2222,
       "bbPct": 0.1111,
       "kMinusBbPct": 0.1111,
-      "fip": 6.09
+      "fip": 6.4
     },
     {
       "id": "683332",
@@ -5588,7 +5588,7 @@
       "kPct": 0.5,
       "bbPct": 0.0,
       "kMinusBbPct": 0.5,
-      "fip": 3.25
+      "fip": 3.56
     },
     {
       "id": "684608",
@@ -5614,7 +5614,7 @@
       "kPct": 0.3361,
       "bbPct": 0.0924,
       "kMinusBbPct": 0.2437,
-      "fip": 6.34
+      "fip": 6.65
     },
     {
       "id": "694805",
@@ -5640,7 +5640,7 @@
       "kPct": 0.2804,
       "bbPct": 0.0912,
       "kMinusBbPct": 0.1892,
-      "fip": 6.7
+      "fip": 7.01
     },
     {
       "id": "681116",
@@ -5666,7 +5666,7 @@
       "kPct": 0.1696,
       "bbPct": 0.0848,
       "kMinusBbPct": 0.0848,
-      "fip": 8.68
+      "fip": 8.99
     },
     {
       "id": "686540",
@@ -5692,7 +5692,7 @@
       "kPct": 0.0,
       "bbPct": 0.3333,
       "kMinusBbPct": -0.3333,
-      "fip": 11.02
+      "fip": 11.33
     },
     {
       "id": "694660",
@@ -5718,7 +5718,7 @@
       "kPct": 0.2222,
       "bbPct": 0.1704,
       "kMinusBbPct": 0.0518,
-      "fip": 8.91
+      "fip": 9.22
     },
     {
       "id": "543037",
@@ -5744,7 +5744,7 @@
       "kPct": 0.25,
       "bbPct": 0.0357,
       "kMinusBbPct": 0.2143,
-      "fip": 7.65
+      "fip": 7.96
     },
     {
       "id": "529017",
@@ -5770,7 +5770,7 @@
       "kPct": 0.3333,
       "bbPct": 0.0667,
       "kMinusBbPct": 0.2666,
-      "fip": 7.9
+      "fip": 8.21
     },
     {
       "id": "701480",
@@ -5796,7 +5796,7 @@
       "kPct": 0.2784,
       "bbPct": 0.0206,
       "kMinusBbPct": 0.2578,
-      "fip": 7.32
+      "fip": 7.63
     },
     {
       "id": "676442",
@@ -5822,7 +5822,7 @@
       "kPct": 0.2,
       "bbPct": 0.2,
       "kMinusBbPct": 0.0,
-      "fip": 7.24
+      "fip": 7.55
     },
     {
       "id": "812431",
@@ -5848,7 +5848,7 @@
       "kPct": 0.205,
       "bbPct": 0.055,
       "kMinusBbPct": 0.15,
-      "fip": 6.44
+      "fip": 6.75
     },
     {
       "id": "702068",
@@ -5874,7 +5874,7 @@
       "kPct": 0.2,
       "bbPct": 0.0,
       "kMinusBbPct": 0.2,
-      "fip": 4.52
+      "fip": 4.83
     },
     {
       "id": "687280",
@@ -5900,7 +5900,7 @@
       "kPct": 0.2866,
       "bbPct": 0.1341,
       "kMinusBbPct": 0.1525,
-      "fip": 8.26
+      "fip": 8.57
     },
     {
       "id": "687589",
@@ -5926,7 +5926,7 @@
       "kPct": 0.24,
       "bbPct": 0.1,
       "kMinusBbPct": 0.14,
-      "fip": 7.97
+      "fip": 8.28
     },
     {
       "id": "694633",
@@ -5952,7 +5952,7 @@
       "kPct": 0.2067,
       "bbPct": 0.1564,
       "kMinusBbPct": 0.0503,
-      "fip": 10.45
+      "fip": 10.76
     },
     {
       "id": "800299",
@@ -5978,7 +5978,7 @@
       "kPct": 0.0,
       "bbPct": 0.4,
       "kMinusBbPct": -0.4,
-      "fip": 15.52
+      "fip": 15.83
     },
     {
       "id": "696292",
@@ -6004,7 +6004,7 @@
       "kPct": 0.2549,
       "bbPct": 0.1176,
       "kMinusBbPct": 0.1373,
-      "fip": 7.63
+      "fip": 7.94
     },
     {
       "id": "815454",
@@ -6030,59 +6030,59 @@
       "kPct": 0.3071,
       "bbPct": 0.0357,
       "kMinusBbPct": 0.2714,
-      "fip": 7.06
+      "fip": 7.37
     },
     {
       "id": "702046",
       "name": "Matt Keating",
       "team": "somerset",
-      "inningsPitched": "38.1",
-      "strikeOuts": 57,
+      "inningsPitched": "39.1",
+      "strikeOuts": 58,
       "baseOnBalls": 30,
       "hits": 31,
-      "atBats": 142,
+      "atBats": 145,
       "homeRuns": 6,
       "earnedRuns": 26,
       "runs": 29,
       "wins": 3,
       "losses": 2,
       "saves": 0,
-      "battersFaced": 177,
+      "battersFaced": 180,
       "hitByPitch": 2,
-      "era": 6.1,
-      "whip": 1.59,
-      "avg": 0.218,
-      "so9": 13.38,
-      "kPct": 0.322,
-      "bbPct": 0.1695,
-      "kMinusBbPct": 0.1525,
-      "fip": 8.09
+      "era": 5.95,
+      "whip": 1.55,
+      "avg": 0.214,
+      "so9": 13.27,
+      "kPct": 0.3222,
+      "bbPct": 0.1667,
+      "kMinusBbPct": 0.1555,
+      "fip": 8.3
     },
     {
       "id": "802374",
       "name": "Brady Kirtner",
       "team": "somerset",
-      "inningsPitched": "1.2",
-      "strikeOuts": 2,
-      "baseOnBalls": 1,
-      "hits": 2,
-      "atBats": 7,
+      "inningsPitched": "2.0",
+      "strikeOuts": 3,
+      "baseOnBalls": 3,
+      "hits": 6,
+      "atBats": 12,
       "homeRuns": 0,
-      "earnedRuns": 1,
-      "runs": 1,
+      "earnedRuns": 4,
+      "runs": 4,
       "wins": 0,
-      "losses": 0,
+      "losses": 1,
       "saves": 0,
-      "battersFaced": 8,
+      "battersFaced": 15,
       "hitByPitch": 0,
-      "era": 5.4,
-      "whip": 1.8,
-      "avg": 0.286,
-      "so9": 10.8,
-      "kPct": 0.25,
-      "bbPct": 0.125,
-      "kMinusBbPct": 0.125,
-      "fip": 5.92
+      "era": 18.0,
+      "whip": 4.5,
+      "avg": 0.5,
+      "so9": 13.5,
+      "kPct": 0.2,
+      "bbPct": 0.2,
+      "kMinusBbPct": 0.0,
+      "fip": 8.33
     },
     {
       "id": "815069",
@@ -6108,7 +6108,7 @@
       "kPct": 0.2,
       "bbPct": 0.0,
       "kMinusBbPct": 0.2,
-      "fip": 14.02
+      "fip": 14.33
     },
     {
       "id": "800344",
@@ -6134,7 +6134,7 @@
       "kPct": 0.1951,
       "bbPct": 0.0732,
       "kMinusBbPct": 0.1219,
-      "fip": 9.64
+      "fip": 9.96
     },
     {
       "id": "675296",
@@ -6160,7 +6160,7 @@
       "kPct": 0.3764,
       "bbPct": 0.118,
       "kMinusBbPct": 0.2584,
-      "fip": 6.21
+      "fip": 6.52
     },
     {
       "id": "680893",
@@ -6186,7 +6186,7 @@
       "kPct": 0.2034,
       "bbPct": 0.1525,
       "kMinusBbPct": 0.0509,
-      "fip": 7.07
+      "fip": 7.38
     },
     {
       "id": "804603",
@@ -6212,7 +6212,7 @@
       "kPct": 0.0,
       "bbPct": 0.0,
       "kMinusBbPct": 0.0,
-      "fip": 11.02
+      "fip": 11.33
     },
     {
       "id": "801432",
@@ -6238,7 +6238,7 @@
       "kPct": 0.4848,
       "bbPct": 0.0606,
       "kMinusBbPct": 0.4242,
-      "fip": 5.02
+      "fip": 5.33
     },
     {
       "id": "814392",
@@ -6264,7 +6264,7 @@
       "kPct": 0.3434,
       "bbPct": 0.1235,
       "kMinusBbPct": 0.2199,
-      "fip": 7.47
+      "fip": 7.78
     },
     {
       "id": "607074",
@@ -6290,59 +6290,59 @@
       "kPct": 0.4167,
       "bbPct": 0.0278,
       "kMinusBbPct": 0.3889,
-      "fip": 5.07
+      "fip": 5.38
     },
     {
       "id": "666720",
       "name": "Yerry Rodr\u00edguez",
       "team": "somerset",
-      "inningsPitched": "7.0",
+      "inningsPitched": "8.0",
       "strikeOuts": 9,
       "baseOnBalls": 4,
-      "hits": 14,
-      "atBats": 35,
+      "hits": 17,
+      "atBats": 41,
       "homeRuns": 2,
-      "earnedRuns": 11,
-      "runs": 11,
+      "earnedRuns": 12,
+      "runs": 12,
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "battersFaced": 39,
+      "battersFaced": 45,
       "hitByPitch": 0,
-      "era": 14.14,
-      "whip": 2.57,
-      "avg": 0.4,
-      "so9": 11.57,
-      "kPct": 0.2308,
-      "bbPct": 0.1026,
-      "kMinusBbPct": 0.1282,
-      "fip": 9.38
+      "era": 13.5,
+      "whip": 2.62,
+      "avg": 0.415,
+      "so9": 10.12,
+      "kPct": 0.2,
+      "bbPct": 0.0889,
+      "kMinusBbPct": 0.1111,
+      "fip": 9.33
     },
     {
       "id": "702036",
       "name": "Tony Rossi",
       "team": "somerset",
-      "inningsPitched": "33.1",
-      "strikeOuts": 43,
+      "inningsPitched": "34.1",
+      "strikeOuts": 45,
       "baseOnBalls": 9,
-      "hits": 25,
-      "atBats": 122,
-      "homeRuns": 2,
-      "earnedRuns": 10,
-      "runs": 12,
+      "hits": 26,
+      "atBats": 126,
+      "homeRuns": 3,
+      "earnedRuns": 11,
+      "runs": 13,
       "wins": 6,
       "losses": 0,
       "saves": 4,
-      "battersFaced": 139,
+      "battersFaced": 143,
       "hitByPitch": 7,
-      "era": 2.7,
+      "era": 2.88,
       "whip": 1.02,
-      "avg": 0.205,
-      "so9": 11.61,
-      "kPct": 0.3094,
-      "bbPct": 0.0647,
-      "kMinusBbPct": 0.2447,
-      "fip": 6.16
+      "avg": 0.206,
+      "so9": 11.8,
+      "kPct": 0.3147,
+      "bbPct": 0.0629,
+      "kMinusBbPct": 0.2518,
+      "fip": 6.74
     },
     {
       "id": "804522",
@@ -6368,7 +6368,7 @@
       "kPct": 0.1538,
       "bbPct": 0.0769,
       "kMinusBbPct": 0.0769,
-      "fip": 6.14
+      "fip": 6.46
     },
     {
       "id": "657376",
@@ -6394,33 +6394,33 @@
       "kPct": 0.5833,
       "bbPct": 0.0,
       "kMinusBbPct": 0.5833,
-      "fip": 6.19
+      "fip": 6.5
     },
     {
       "id": "815587",
       "name": "Trent Sellers",
       "team": "somerset",
-      "inningsPitched": "77.1",
-      "strikeOuts": 103,
+      "inningsPitched": "78.1",
+      "strikeOuts": 105,
       "baseOnBalls": 49,
       "hits": 75,
-      "atBats": 297,
+      "atBats": 300,
       "homeRuns": 10,
       "earnedRuns": 37,
       "runs": 45,
       "wins": 4,
       "losses": 4,
       "saves": 2,
-      "battersFaced": 357,
+      "battersFaced": 360,
       "hitByPitch": 5,
-      "era": 4.31,
-      "whip": 1.6,
-      "avg": 0.253,
-      "so9": 11.99,
-      "kPct": 0.2885,
-      "bbPct": 0.1373,
-      "kMinusBbPct": 0.1512,
-      "fip": 7.63
+      "era": 4.25,
+      "whip": 1.58,
+      "avg": 0.25,
+      "so9": 12.06,
+      "kPct": 0.2917,
+      "bbPct": 0.1361,
+      "kMinusBbPct": 0.1556,
+      "fip": 7.88
     },
     {
       "id": "694696",
@@ -6446,7 +6446,7 @@
       "kPct": 0.2168,
       "bbPct": 0.1002,
       "kMinusBbPct": 0.1166,
-      "fip": 8.4
+      "fip": 8.71
     },
     {
       "id": "805728",
@@ -6472,7 +6472,7 @@
       "kPct": 0.38,
       "bbPct": 0.04,
       "kMinusBbPct": 0.34,
-      "fip": 6.03
+      "fip": 6.34
     },
     {
       "id": "685067",
@@ -6498,33 +6498,33 @@
       "kPct": 0.125,
       "bbPct": 0.125,
       "kMinusBbPct": 0.0,
-      "fip": 26.52
+      "fip": 26.83
     },
     {
       "id": "810102",
       "name": "Chris Veach",
       "team": "somerset",
-      "inningsPitched": "11.2",
-      "strikeOuts": 12,
+      "inningsPitched": "13.2",
+      "strikeOuts": 14,
       "baseOnBalls": 6,
-      "hits": 7,
-      "atBats": 41,
+      "hits": 8,
+      "atBats": 48,
       "homeRuns": 2,
       "earnedRuns": 5,
       "runs": 5,
       "wins": 1,
       "losses": 1,
       "saves": 2,
-      "battersFaced": 48,
+      "battersFaced": 55,
       "hitByPitch": 1,
-      "era": 3.86,
-      "whip": 1.11,
-      "avg": 0.171,
-      "so9": 9.26,
-      "kPct": 0.25,
-      "bbPct": 0.125,
-      "kMinusBbPct": 0.125,
-      "fip": 8.49
+      "era": 3.29,
+      "whip": 1.02,
+      "avg": 0.167,
+      "so9": 9.22,
+      "kPct": 0.2545,
+      "bbPct": 0.1091,
+      "kMinusBbPct": 0.1454,
+      "fip": 8.22
     },
     {
       "id": "686433",
@@ -6550,7 +6550,7 @@
       "kPct": 0.2069,
       "bbPct": 0.1379,
       "kMinusBbPct": 0.069,
-      "fip": 6.74
+      "fip": 7.05
     },
     {
       "id": "814269",
@@ -6576,7 +6576,7 @@
       "kPct": 0.0556,
       "bbPct": 0.0,
       "kMinusBbPct": 0.0556,
-      "fip": 26.52
+      "fip": 26.83
     },
     {
       "id": "694341",
@@ -6602,7 +6602,7 @@
       "kPct": 0.2813,
       "bbPct": 0.0751,
       "kMinusBbPct": 0.2062,
-      "fip": 5.92
+      "fip": 5.93
     },
     {
       "id": "542194",
@@ -6628,7 +6628,7 @@
       "kPct": 0.0,
       "bbPct": 0.1429,
       "kMinusBbPct": -0.1429,
-      "fip": 12.22
+      "fip": 12.23
     },
     {
       "id": "656234",
@@ -6654,7 +6654,7 @@
       "kPct": 0.36,
       "bbPct": 0.08,
       "kMinusBbPct": 0.28,
-      "fip": 6.35
+      "fip": 6.36
     },
     {
       "id": "684608",
@@ -6680,7 +6680,7 @@
       "kPct": 0.2532,
       "bbPct": 0.1899,
       "kMinusBbPct": 0.0633,
-      "fip": 7.2
+      "fip": 7.21
     },
     {
       "id": "694805",
@@ -6706,7 +6706,7 @@
       "kPct": 0.2178,
       "bbPct": 0.1287,
       "kMinusBbPct": 0.0891,
-      "fip": 10.39
+      "fip": 10.4
     },
     {
       "id": "665645",
@@ -6732,7 +6732,7 @@
       "kPct": 0.2857,
       "bbPct": 0.0536,
       "kMinusBbPct": 0.2321,
-      "fip": 5.55
+      "fip": 5.56
     },
     {
       "id": "683409",
@@ -6758,7 +6758,7 @@
       "kPct": 0.2836,
       "bbPct": 0.0597,
       "kMinusBbPct": 0.2239,
-      "fip": 5.66
+      "fip": 5.67
     },
     {
       "id": "694660",
@@ -6784,7 +6784,7 @@
       "kPct": 0.2577,
       "bbPct": 0.1753,
       "kMinusBbPct": 0.0824,
-      "fip": 9.61
+      "fip": 9.62
     },
     {
       "id": "543037",
@@ -6810,7 +6810,7 @@
       "kPct": 0.2727,
       "bbPct": 0.0455,
       "kMinusBbPct": 0.2272,
-      "fip": 4.53
+      "fip": 4.54
     },
     {
       "id": "679693",
@@ -6836,7 +6836,7 @@
       "kPct": 0.2126,
       "bbPct": 0.1208,
       "kMinusBbPct": 0.0918,
-      "fip": 7.47
+      "fip": 7.48
     },
     {
       "id": "669395",
@@ -6862,33 +6862,33 @@
       "kPct": 0.2766,
       "bbPct": 0.2128,
       "kMinusBbPct": 0.0638,
-      "fip": 7.98
+      "fip": 7.99
     },
     {
       "id": "529017",
       "name": "Alexander Cornielle",
       "team": "scranton_wb",
-      "inningsPitched": "66.0",
-      "strikeOuts": 66,
-      "baseOnBalls": 35,
-      "hits": 52,
-      "atBats": 241,
+      "inningsPitched": "69.0",
+      "strikeOuts": 70,
+      "baseOnBalls": 37,
+      "hits": 56,
+      "atBats": 255,
       "homeRuns": 6,
-      "earnedRuns": 20,
-      "runs": 20,
+      "earnedRuns": 21,
+      "runs": 22,
       "wins": 5,
       "losses": 4,
       "saves": 0,
-      "battersFaced": 281,
+      "battersFaced": 297,
       "hitByPitch": 5,
-      "era": 2.73,
-      "whip": 1.32,
-      "avg": 0.216,
-      "so9": 9.0,
-      "kPct": 0.2349,
+      "era": 2.74,
+      "whip": 1.35,
+      "avg": 0.22,
+      "so9": 9.13,
+      "kPct": 0.2357,
       "bbPct": 0.1246,
-      "kMinusBbPct": 0.1103,
-      "fip": 7.22
+      "kMinusBbPct": 0.1111,
+      "fip": 7.16
     },
     {
       "id": "660787",
@@ -6914,7 +6914,7 @@
       "kPct": 0.2526,
       "bbPct": 0.0684,
       "kMinusBbPct": 0.1842,
-      "fip": 5.73
+      "fip": 5.74
     },
     {
       "id": "702750",
@@ -6940,7 +6940,7 @@
       "kPct": 0.0909,
       "bbPct": 0.1818,
       "kMinusBbPct": -0.0909,
-      "fip": 13.17
+      "fip": 13.18
     },
     {
       "id": "608331",
@@ -6966,7 +6966,7 @@
       "kPct": 0.2143,
       "bbPct": 0.0,
       "kMinusBbPct": 0.2143,
-      "fip": 8.55
+      "fip": 8.56
     },
     {
       "id": "702068",
@@ -6992,7 +6992,7 @@
       "kPct": 0.0,
       "bbPct": 0.5,
       "kMinusBbPct": -0.5,
-      "fip": 15.22
+      "fip": 15.23
     },
     {
       "id": "661563",
@@ -7018,7 +7018,7 @@
       "kPct": 0.2927,
       "bbPct": 0.1707,
       "kMinusBbPct": 0.122,
-      "fip": 7.33
+      "fip": 7.34
     },
     {
       "id": "670868",
@@ -7044,7 +7044,7 @@
       "kPct": 0.0,
       "bbPct": 0.0,
       "kMinusBbPct": 0.0,
-      "fip": 45.22
+      "fip": 45.23
     },
     {
       "id": "687589",
@@ -7070,7 +7070,7 @@
       "kPct": 0.1717,
       "bbPct": 0.116,
       "kMinusBbPct": 0.0557,
-      "fip": 8.92
+      "fip": 8.93
     },
     {
       "id": "690440",
@@ -7096,7 +7096,7 @@
       "kPct": 0.2826,
       "bbPct": 0.1087,
       "kMinusBbPct": 0.1739,
-      "fip": 5.75
+      "fip": 5.76
     },
     {
       "id": "809137",
@@ -7122,7 +7122,7 @@
       "kPct": 0.3,
       "bbPct": 0.15,
       "kMinusBbPct": 0.15,
-      "fip": 8.53
+      "fip": 8.54
     },
     {
       "id": "815454",
@@ -7148,7 +7148,7 @@
       "kPct": 0.2667,
       "bbPct": 0.0762,
       "kMinusBbPct": 0.1905,
-      "fip": 7.66
+      "fip": 7.67
     },
     {
       "id": "680572",
@@ -7174,7 +7174,7 @@
       "kPct": 0.2046,
       "bbPct": 0.1293,
       "kMinusBbPct": 0.0753,
-      "fip": 8.33
+      "fip": 8.34
     },
     {
       "id": "801739",
@@ -7200,59 +7200,59 @@
       "kPct": 0.2954,
       "bbPct": 0.1174,
       "kMinusBbPct": 0.178,
-      "fip": 7.5
+      "fip": 7.51
     },
     {
       "id": "669740",
       "name": "Travis MacGregor",
       "team": "scranton_wb",
-      "inningsPitched": "13.1",
+      "inningsPitched": "13.2",
       "strikeOuts": 14,
-      "baseOnBalls": 4,
+      "baseOnBalls": 5,
       "hits": 9,
-      "atBats": 49,
+      "atBats": 51,
       "homeRuns": 0,
       "earnedRuns": 1,
-      "runs": 2,
+      "runs": 4,
       "wins": 0,
       "losses": 0,
       "saves": 1,
-      "battersFaced": 54,
+      "battersFaced": 57,
       "hitByPitch": 1,
-      "era": 0.67,
-      "whip": 0.97,
-      "avg": 0.184,
-      "so9": 9.45,
-      "kPct": 0.2593,
-      "bbPct": 0.0741,
-      "kMinusBbPct": 0.1852,
-      "fip": 5.25
+      "era": 0.66,
+      "whip": 1.02,
+      "avg": 0.176,
+      "so9": 9.22,
+      "kPct": 0.2456,
+      "bbPct": 0.0877,
+      "kMinusBbPct": 0.1579,
+      "fip": 5.5
     },
     {
       "id": "675296",
       "name": "Hayden Merda",
       "team": "scranton_wb",
-      "inningsPitched": "10.2",
+      "inningsPitched": "11.1",
       "strikeOuts": 18,
       "baseOnBalls": 8,
-      "hits": 10,
-      "atBats": 42,
+      "hits": 11,
+      "atBats": 45,
       "homeRuns": 2,
       "earnedRuns": 7,
       "runs": 7,
       "wins": 1,
       "losses": 0,
       "saves": 1,
-      "battersFaced": 50,
+      "battersFaced": 53,
       "hitByPitch": 0,
-      "era": 5.91,
-      "whip": 1.69,
-      "avg": 0.238,
-      "so9": 15.19,
-      "kPct": 0.36,
-      "bbPct": 0.16,
-      "kMinusBbPct": 0.2,
-      "fip": 7.53
+      "era": 5.56,
+      "whip": 1.68,
+      "avg": 0.244,
+      "so9": 14.29,
+      "kPct": 0.3396,
+      "bbPct": 0.1509,
+      "kMinusBbPct": 0.1887,
+      "fip": 7.47
     },
     {
       "id": "684725",
@@ -7278,7 +7278,7 @@
       "kPct": 0.2253,
       "bbPct": 0.1126,
       "kMinusBbPct": 0.1127,
-      "fip": 7.28
+      "fip": 7.29
     },
     {
       "id": "606160",
@@ -7304,59 +7304,59 @@
       "kPct": 0.2578,
       "bbPct": 0.1016,
       "kMinusBbPct": 0.1562,
-      "fip": 6.78
+      "fip": 6.79
     },
     {
       "id": "669212",
       "name": "Eli Morgan",
       "team": "scranton_wb",
-      "inningsPitched": "7.1",
+      "inningsPitched": "9.0",
       "strikeOuts": 7,
       "baseOnBalls": 5,
-      "hits": 7,
-      "atBats": 29,
+      "hits": 8,
+      "atBats": 35,
       "homeRuns": 1,
       "earnedRuns": 3,
       "runs": 3,
       "wins": 0,
       "losses": 0,
       "saves": 0,
-      "battersFaced": 34,
+      "battersFaced": 40,
       "hitByPitch": 0,
-      "era": 3.68,
-      "whip": 1.64,
-      "avg": 0.241,
-      "so9": 8.59,
-      "kPct": 0.2059,
-      "bbPct": 0.1471,
-      "kMinusBbPct": 0.0588,
-      "fip": 8.13
+      "era": 3.0,
+      "whip": 1.44,
+      "avg": 0.229,
+      "so9": 7.0,
+      "kPct": 0.175,
+      "bbPct": 0.125,
+      "kMinusBbPct": 0.05,
+      "fip": 7.79
     },
     {
       "id": "801432",
       "name": "Eric Reyzelman",
       "team": "scranton_wb",
-      "inningsPitched": "31.1",
-      "strikeOuts": 38,
-      "baseOnBalls": 24,
+      "inningsPitched": "32.1",
+      "strikeOuts": 39,
+      "baseOnBalls": 25,
       "hits": 27,
-      "atBats": 114,
+      "atBats": 117,
       "homeRuns": 5,
       "earnedRuns": 28,
       "runs": 30,
       "wins": 2,
       "losses": 3,
       "saves": 1,
-      "battersFaced": 148,
+      "battersFaced": 152,
       "hitByPitch": 8,
-      "era": 8.04,
-      "whip": 1.63,
-      "avg": 0.237,
-      "so9": 10.91,
-      "kPct": 0.2568,
-      "bbPct": 0.1622,
-      "kMinusBbPct": 0.0946,
-      "fip": 8.93
+      "era": 7.79,
+      "whip": 1.61,
+      "avg": 0.231,
+      "so9": 10.86,
+      "kPct": 0.2566,
+      "bbPct": 0.1645,
+      "kMinusBbPct": 0.0921,
+      "fip": 8.89
     },
     {
       "id": "814392",
@@ -7382,7 +7382,7 @@
       "kPct": 0.1776,
       "bbPct": 0.1963,
       "kMinusBbPct": -0.0187,
-      "fip": 9.83
+      "fip": 9.84
     },
     {
       "id": "607074",
@@ -7408,7 +7408,7 @@
       "kPct": 0.2,
       "bbPct": 0.1,
       "kMinusBbPct": 0.1,
-      "fip": 10.11
+      "fip": 10.12
     },
     {
       "id": "695684",
@@ -7434,7 +7434,7 @@
       "kPct": 0.2383,
       "bbPct": 0.1145,
       "kMinusBbPct": 0.1238,
-      "fip": 6.45
+      "fip": 6.46
     },
     {
       "id": "657376",
@@ -7460,7 +7460,7 @@
       "kPct": 0.2857,
       "bbPct": 0.0714,
       "kMinusBbPct": 0.2143,
-      "fip": 4.97
+      "fip": 4.98
     },
     {
       "id": "815587",
@@ -7486,7 +7486,7 @@
       "kPct": 0.0,
       "bbPct": 0.125,
       "kMinusBbPct": -0.125,
-      "fip": 9.22
+      "fip": 9.23
     },
     {
       "id": "669699",
@@ -7512,7 +7512,7 @@
       "kPct": 0.0,
       "bbPct": 0.0,
       "kMinusBbPct": 0.0,
-      "fip": 6.22
+      "fip": 6.23
     },
     {
       "id": "657265",
@@ -7538,33 +7538,33 @@
       "kPct": 0.4091,
       "bbPct": 0.0455,
       "kMinusBbPct": 0.3636,
-      "fip": 7.08
+      "fip": 7.09
     },
     {
       "id": "623437",
       "name": "Justin Topa",
       "team": "scranton_wb",
-      "inningsPitched": "8.1",
-      "strikeOuts": 4,
-      "baseOnBalls": 3,
-      "hits": 8,
-      "atBats": 33,
+      "inningsPitched": "9.2",
+      "strikeOuts": 5,
+      "baseOnBalls": 4,
+      "hits": 10,
+      "atBats": 38,
       "homeRuns": 1,
-      "earnedRuns": 3,
-      "runs": 4,
+      "earnedRuns": 5,
+      "runs": 6,
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "saves": 0,
-      "battersFaced": 36,
+      "battersFaced": 43,
       "hitByPitch": 0,
-      "era": 3.24,
-      "whip": 1.32,
-      "avg": 0.242,
-      "so9": 4.32,
-      "kPct": 0.1111,
-      "bbPct": 0.0833,
-      "kMinusBbPct": 0.0278,
-      "fip": 7.9
+      "era": 4.66,
+      "whip": 1.45,
+      "avg": 0.263,
+      "so9": 4.66,
+      "kPct": 0.1163,
+      "bbPct": 0.093,
+      "kMinusBbPct": 0.0233,
+      "fip": 7.78
     },
     {
       "id": "702130",
@@ -7590,7 +7590,7 @@
       "kPct": 0.2634,
       "bbPct": 0.0982,
       "kMinusBbPct": 0.1652,
-      "fip": 7.42
+      "fip": 7.43
     }
   ],
   "rookie_hitters": [
