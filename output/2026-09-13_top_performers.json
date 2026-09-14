@@ -1,0 +1,63 @@
+{
+  "hitters": [
+    {
+      "playerId": 665828,
+      "name": "Oswaldo Cabrera",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "SS",
+      "bio": "AAA | SS",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/665828/spots/120",
+      "statline": "3 for 4: 2 HR (19), 3 RBI (69)",
+      "points": 16.25
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 683522,
+      "name": "Michael Arias",
+      "level": "AA",
+      "team": "Somerset Patriots",
+      "role": "SP",
+      "bio": "AA | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/683522/spots/120",
+      "statline": "2.2 IP, 0 R, 3 K",
+      "points": 8.67
+    },
+    {
+      "playerId": 804892,
+      "name": "Justin West",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/804892/spots/120",
+      "statline": "5.0 IP, 0 R, 7 K",
+      "points": 13.75
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 665828,
+    "name": "Oswaldo Cabrera",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "SS",
+    "bio": "AAA | SS",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/665828/spots/120",
+    "statline": "3 for 4: 2 HR (19), 3 RBI (69)",
+    "points": 16.25
+  },
+  "pitcherOfTheDay": {
+    "playerId": 804892,
+    "name": "Justin West",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "role": "SP",
+    "bio": "A | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/804892/spots/120",
+    "statline": "5.0 IP, 0 R, 7 K",
+    "points": 13.75
+  },
+  "date": "2026-09-13",
+  "generatedAt": "2026-09-14T07:25:54.375202+00:00"
+}
