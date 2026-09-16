@@ -1,0 +1,63 @@
+{
+  "hitters": [
+    {
+      "playerId": 809772,
+      "name": "Luis Puello",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "position": "C",
+      "bio": "A | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/809772/spots/120",
+      "statline": "3 for 5: Double (16)",
+      "points": 4.5
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 684725,
+      "name": "Zach Messinger",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/684725/spots/120",
+      "statline": "2.1 IP, 0 R, 3 K",
+      "points": 8.33
+    },
+    {
+      "playerId": 822915,
+      "name": "Matthew Tippie",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "RP",
+      "bio": "A | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822915/spots/120",
+      "statline": "1.1 IP, 0 R, 3 K",
+      "points": 13.08
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 809772,
+    "name": "Luis Puello",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "position": "C",
+    "bio": "A | C",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/809772/spots/120",
+    "statline": "3 for 5: Double (16)",
+    "points": 4.5
+  },
+  "pitcherOfTheDay": {
+    "playerId": 822915,
+    "name": "Matthew Tippie",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "role": "RP",
+    "bio": "A | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/822915/spots/120",
+    "statline": "1.1 IP, 0 R, 3 K",
+    "points": 13.08
+  },
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-16T07:03:24.232490+00:00"
+}
