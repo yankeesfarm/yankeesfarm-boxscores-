@@ -1,0 +1,74 @@
+{
+  "hitters": [
+    {
+      "playerId": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+      "statline": "3 for 3: HR (8), 2 RBI (32)",
+      "points": 8.25
+    },
+    {
+      "playerId": 685744,
+      "name": "Kenedy Corona",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "LF",
+      "bio": "AAA | LF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/685744/spots/120",
+      "statline": "2 for 3: Double (12)",
+      "points": 4.25
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 822950,
+      "name": "J.T. Etheridge",
+      "level": "A",
+      "team": "Tampa Tarpons",
+      "role": "SP",
+      "bio": "A | SP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+      "statline": "6.0 IP, 0 R, 7 K",
+      "points": 17.25
+    },
+    {
+      "playerId": 669212,
+      "name": "Eli Morgan",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/669212/spots/120",
+      "statline": "1.0 IP, 1 R, 3 K",
+      "points": 7.0
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 691176,
+    "name": "Jasson Dom\u00ednguez",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "RF",
+    "bio": "AAA | RF",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+    "statline": "3 for 3: HR (8), 2 RBI (32)",
+    "points": 8.25
+  },
+  "pitcherOfTheDay": {
+    "playerId": 822950,
+    "name": "J.T. Etheridge",
+    "level": "A",
+    "team": "Tampa Tarpons",
+    "role": "SP",
+    "bio": "A | SP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/822950/spots/120",
+    "statline": "6.0 IP, 0 R, 7 K",
+    "points": 17.25
+  },
+  "date": "2026-09-16",
+  "generatedAt": "2026-09-17T06:59:12.143931+00:00"
+}
