@@ -1,0 +1,63 @@
+{
+  "hitters": [
+    {
+      "playerId": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "RF",
+      "bio": "AAA | RF",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+      "statline": "4 for 5: 2 Doubles (10), HR (9), 2 RBI (34), SB (16)",
+      "points": 13.5
+    },
+    {
+      "playerId": 682617,
+      "name": "Marco Luciano",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682617/spots/120",
+      "statline": "2 for 5: HR (17), 2 RBI (54)",
+      "points": 7.0
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 690440,
+      "name": "Bradley Hanner",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/690440/spots/120",
+      "statline": "2.0 IP, 0 R, 4 K",
+      "points": 9.5
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 691176,
+    "name": "Jasson Dom\u00ednguez",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "RF",
+    "bio": "AAA | RF",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/691176/spots/120",
+    "statline": "4 for 5: 2 Doubles (10), HR (9), 2 RBI (34), SB (16)",
+    "points": 13.5
+  },
+  "pitcherOfTheDay": {
+    "playerId": 690440,
+    "name": "Bradley Hanner",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "RP",
+    "bio": "AAA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/690440/spots/120",
+    "statline": "2.0 IP, 0 R, 4 K",
+    "points": 9.5
+  },
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-18T06:55:58.999698+00:00"
+}
