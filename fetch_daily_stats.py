@@ -10,55 +10,51 @@ This REPLACES the need to manually update prospect.html's hardcoded stats --
 once this runs, the live site pulls from this collection automatically
 (see loadLiveStats() in prospect.html).
 
-v2 (this version): ADDS coverage for the three rookie-level affiliates --
-FCL Yankees, DSL NYY Yankees, and DSL NYY Bombers -- which previously had
-ZERO players tracked. The original design required every rookie-level
-prospect to be manually added to roster_map.json with a working milb.com
-team-stats scrape, and rookie-level milb.com pages don't reliably serve
-real <table> HTML (see fetch_team_table()'s own docstring warning below),
-so nobody had ever gotten wired up. Real-world symptom: Juan Torres
-(DSL NYY Yankees) had literally no record in ProspectStats at all, and
-his profile page was showing stale/placeholder content instead of his
-real .385/.470/.644 season line.
+v2: ADDS coverage for the three rookie-level affiliates -- FCL Yankees,
+DSL NYY Yankees, and DSL NYY Bombers -- which previously had ZERO players
+tracked, by discovering their rosters dynamically from the Stats API
+instead of requiring hand-maintained roster_map.json entries + fragile
+milb.com scrapes.
 
-FIX: for these three rookie teams only, this now reuses lib/mlb_api.py's
-already-proven get_active_roster() + get_player_stats_by_date_range()
-functions -- the EXACT approach fetch_farm_stats.py already uses
-successfully for DSL/FCL players in the Top Performers/analytics
-pipeline. Rosters are discovered dynamically every run instead of
-hand-maintained, which also handles short-season roster churn (players
-get assigned/reassigned between these three teams constantly -- Juan
-Torres himself moved from DSL NYY Bombers to DSL NYY Yankees mid-season).
-This also correctly separates DSL NYY Yankees vs. DSL NYY Bombers (and
-FCL Yankees), which all three share sportId 16 -- via team_id-scoped
-per-game filtering. See get_player_stats_by_date_range()'s own docstring
-in lib/mlb_api.py for why that per-game approach was the only reliable
-way to split them (aggregate teamId filters silently failed in prior
-production attempts).
+v3: ADDS live handedness splits (vs RHP/LHP for hitters, vs RHB/LHB for
+pitchers) via the Stats API's statSplits endpoint.
 
-Full-season affiliates (SWB, Somerset, Hudson Valley, Tampa) are
-UNCHANGED -- they still use the original milb.com scrape via
-roster_map.json. roster_map.json itself does not need any edits for
-this update; only this script changed.
+v4 (this version): CLOSES the roster_map.json coverage gap for the FOUR
+FULL-SEASON affiliates (SWB, Somerset, Hudson Valley, Tampa) the same way
+v2 did for rookie teams. Previously those four were driven ONLY by the
+hand-maintained roster_map.json + milb.com scrape, so ANY rostered player
+not manually listed there got ZERO pushes and their profile fell back to
+whatever static seed was hardcoded in prospect.html -- forever, no matter
+how many times the workflow ran.
 
-v3 (this version): ADDS live handedness splits (vs RHP/LHP for hitters,
-vs RHB/LHB for pitchers). Previously push_player() accepted a `splits`
-argument but BOTH call sites called it without one, so every push sent
-"splits": null and the profile page silently fell back to whatever static
-splits were hardcoded in prospect.html (frozen the day the profile was
-built). Now build_player_splits() pulls real handedness splits from the
-Stats API's statSplits endpoint (see get_player_splits_by_hand() in
-lib/mlb_api.py for why splits CANNOT be derived from the game log the way
-the counting stats are) across EVERY affiliate level a player has played,
-so a promoted player keeps his full multi-level split history (e.g. Hans
-Montero's Low-A AND High-A splits, not just his current High-A line).
+Real-world symptom this fixes: Jasson Dominguez (MLB player optioned to
+SWB / Triple-A) had no record in ProspectStats at all -- getPlayerStats
+returned {"found": false} -- so his profile showed a stale seeded 92-AB /
+5-HR line instead of his real 200+-AB / 9-HR Triple-A season. He was never
+in roster_map.json (he's an established big-leaguer, not a hand-added
+prospect), so the full-season loop never touched him. This is the exact
+class of gap v2 already eliminated for rookie teams.
+
+FIX: after the existing roster_map.json pass runs UNCHANGED (it stays the
+authoritative source for every player it covers, including the full
+multi-level season-total logic), a dynamic Stats-API sweep now runs over
+ALL affiliates -- the four full-season teams AND the three rookie teams --
+and pushes any rostered player NOT already covered by roster_map.json.
+graduated_slugs (the roster_map keys) are skipped, so nothing roster_map
+owns is touched or double-pushed; the sweep only fills gaps. Full-season
+teams are swept highest level -> lowest, and a run-level dynamic_pushed
+set ensures a player who appears on more than one full-season roster
+(promoted mid-year, and not in roster_map) is written once, at his highest
+level. This uses the already-proven get_active_roster() +
+get_player_stats_by_date_range() path -- no new scraping, no new
+hand-maintained lists.
 
 USAGE:
     python fetch_daily_stats.py
 
 REQUIRES:
     - roster_map.json: slug -> { team_slug, stat_type: "hitting"|"pitching" }
-      (unchanged, still used only for the 4 full-season teams)
+      (unchanged, still used for the 4 full-season teams' primary pass)
     - WIX_STATS_PUSH_KEY environment variable (must match the
       "daily-stats-push-key" secret set in Wix Secrets Manager)
     - lib/mlb_api.py (already in this repo, used by fetch_farm_stats.py)
@@ -67,7 +63,7 @@ NOTE (unchanged from v1): milb.com team stat pages return ALL players in
 that team's TOP-LEVEL game log for the CURRENT team only. A player who
 changed levels mid-season will only show their current-team totals via
 that scrape path -- this script does not attempt to reconstruct
-multi-level season splits for the 4 scraped teams. The new rookie-level
+multi-level season splits for the 4 scraped teams. The dynamic sweep
 path below does NOT have this limitation, since it's driven by the
 Stats API's actual game log.
 """
@@ -119,6 +115,23 @@ ROOKIE_TEAMS = [
     {"teamId": 634, "sportId": 16, "levelCode": "DSL", "levelLabel": "DSL NYY Bombers (Rookie)"},
 ]
 
+# v4: The four full-season affiliates, swept dynamically via the Stats API
+# AFTER the roster_map.json pass, to catch any rostered player who isn't
+# hand-listed in roster_map.json -- e.g. an MLB player optioned to
+# Triple-A (Jasson Dominguez) or any recent acquisition nobody added yet.
+# graduated_slugs (the roster_map keys) are skipped, so roster_map.json
+# stays authoritative for everyone it covers; this only fills the gaps.
+# Ordered high level -> low so a player who appears on two full-season
+# rosters (promoted mid-year, not in roster_map) is captured once, at his
+# highest level (see the dynamic_pushed dedup in main()). teamId/sportId
+# match FULL_SEASON_TEAM_IDS / config/affiliates.py exactly.
+FULL_SEASON_DYNAMIC_TEAMS = [
+    {"teamId": 531,  "sportId": 11, "levelCode": "AAA", "levelLabel": "SWB RailRiders (Triple-A)"},
+    {"teamId": 1956, "sportId": 12, "levelCode": "AA",  "levelLabel": "Somerset Patriots (Double-A)"},
+    {"teamId": 537,  "sportId": 13, "levelCode": "HIA", "levelLabel": "Hudson Valley Renegades (High-A)"},
+    {"teamId": 587,  "sportId": 14, "levelCode": "LOA", "levelLabel": "Tampa Tarpons (Low-A)"},
+]
+
 # team_id/sport_id for the 4 full-season affiliates, used only for the
 # season-total computation (get_season_total_raw()) -- NOT for the milb.com
 # scrape above, which is unchanged and keyed by team slug. These match
@@ -154,7 +167,9 @@ def fetch_team_table(team_slug, stat_type):
     NOTE: this is why rookie-level teams (FCL/DSL) are NOT fetched this
     way -- their milb.com pages are more likely to hit exactly this
     failure mode, so v2 routes them through the Stats API instead (see
-    fetch_rookie_team_players() below).
+    fetch_rookie_team_players() below). v4 adds the same Stats-API sweep
+    for the full-season teams as a gap-filler for anyone missing from
+    roster_map.json.
     """
     from bs4 import BeautifulSoup
 
@@ -383,7 +398,10 @@ def build_player_splits(person_id, group):
 
 
 # ---------------------------------------------------------------------------
-# NEW PATH (v2): Stats-API-driven fetch for the 3 rookie-level affiliates
+# NEW PATH (v2): Stats-API-driven fetch for dynamically-discovered rosters.
+# Used for the 3 rookie-level affiliates AND (v4) as the full-season
+# gap-filler sweep. Generic over any {teamId, sportId, levelCode,
+# levelLabel} team dict.
 # ---------------------------------------------------------------------------
 
 def slugify(name):
@@ -537,10 +555,15 @@ def compute_pitching_line(totals):
 
 
 def fetch_rookie_team_players(team, graduated_slugs):
-    """Dynamically discovers every player on this rookie-level team's
-    full-season roster and pulls their team-scoped stat line via the
-    Stats API -- no roster_map.json entry required. Returns a list of
+    """Dynamically discovers every player on a team's full-season roster
+    and pulls their team-scoped stat line via the Stats API -- no
+    roster_map.json entry required. Returns a list of
     {slug, name, mlbId, group, seasons} dicts ready to push.
+
+    Named for its original v2 use (the 3 rookie teams), but it is fully
+    generic over any {teamId, sportId, levelCode, levelLabel} team dict,
+    which is why v4 also drives the 4 full-season teams through it as a
+    gap-filler sweep (see main()).
 
     IMPORTANT: get_active_roster() deliberately uses rosterType="fullSeason"
     (see its own docstring in lib/mlb_api.py), which returns EVERYONE who
@@ -550,13 +573,13 @@ def fetch_rookie_team_players(team, graduated_slugs):
     May 12, 2026, and has played months of Tampa games since. But because
     he still shows up on FCL's fullSeason roster query, this function
     would generate a "luis-puello" slug with only his old 7-game FCL line
-    -- and since this rookie-level loop runs AFTER the roster_map.json
+    -- and since this dynamic loop runs AFTER the roster_map.json
     full-season loop in main(), that stale FCL-only push OVERWROTE his
     correct, much larger Tampa dataset. graduated_slugs (the set of slugs
-    already in roster_map.json) lets us skip anyone who has graduated to
-    a full-season affiliate, since roster_map.json is the authoritative
-    source for them -- this rookie-level path should only ever push
-    players who are rookie-level ONLY."""
+    already in roster_map.json) lets us skip anyone roster_map.json already
+    owns, since roster_map.json is the authoritative source for them --
+    this dynamic path should only ever push players roster_map.json does
+    NOT cover."""
     opening_day = find_opening_day(team["teamId"], team["sportId"])
     if not opening_day:
         print(f"  WARNING: could not find any completed games for teamId={team['teamId']}. Skipping.")
@@ -599,8 +622,7 @@ def fetch_rookie_team_players(team, graduated_slugs):
 
     print(f"  Found {len(results)} players with 2026 activity for teamId={team['teamId']}.")
     if skipped_graduated:
-        print(f"  Skipped {len(skipped_graduated)} player(s) already tracked as full-season "
-              f"(graduated from this level): {skipped_graduated}")
+        print(f"  Skipped {len(skipped_graduated)} player(s) already tracked in roster_map.json: {skipped_graduated}")
     return results
 
 
@@ -634,10 +656,10 @@ def main():
     # --- Existing path: full-season teams via roster_map.json + milb.com scrape ---
     roster_map = json.loads(Path("roster_map.json").read_text())
     teams_needed = {(v["team"], v["type"]) for v in roster_map.values()}
-    # Every slug already tracked as full-season -- passed to the rookie-level
-    # loop below so it never re-pushes stale rookie-level data over a
-    # graduated player's correct current stint (see fetch_rookie_team_players()
-    # docstring for the real incident this prevents).
+    # Every slug already tracked in roster_map.json -- passed to the dynamic
+    # sweep below so it never re-pushes stale/partial data over a player
+    # roster_map.json already owns (see fetch_rookie_team_players() docstring
+    # for the real incident this prevents).
     graduated_slugs = set(roster_map.keys())
 
     team_tables = {}
@@ -703,19 +725,32 @@ def main():
             skipped.append(slug)
         time.sleep(0.2)
 
-    # --- New path: rookie-level teams via Stats API, discovered dynamically ---
-    print("\nFetching rookie-level affiliates (FCL/DSL) via Stats API...")
-    for team in ROOKIE_TEAMS:
+    # --- New path (v2 + v4): dynamic Stats-API roster discovery for EVERY
+    #     affiliate, covering any rostered player missing from roster_map.json.
+    #     Full-season teams first (highest level -> lowest), then rookie teams.
+    #     graduated_slugs keeps roster_map.json authoritative; dynamic_pushed
+    #     ensures a player on more than one roster is written once, at his
+    #     highest level (this is what catches optioned MLB players like
+    #     Jasson Dominguez, who are on a full-season roster but were never
+    #     added to roster_map.json). ---
+    print("\nSweeping every affiliate roster via Stats API for players not in roster_map.json...")
+    dynamic_teams = FULL_SEASON_DYNAMIC_TEAMS + ROOKIE_TEAMS
+    dynamic_pushed = set()
+    for team in dynamic_teams:
         try:
             players = fetch_rookie_team_players(team, graduated_slugs)
         except Exception as e:
             print(f"[ERROR] teamId={team['teamId']}: {e}")
             continue
         for p in players:
-            # Live handedness splits for rookie-level players too. sportId 16
-            # is shared by FCL/both DSLs, so build_player_splits returns the
-            # player's combined rookie split -- exactly what the profile's
-            # single combined tile shows.
+            if p["slug"] in dynamic_pushed:
+                # Already pushed at a higher level this run (a promoted player
+                # who is on multiple rosters and not in roster_map.json) --
+                # keep the higher-level line already written.
+                continue
+            # Live handedness splits for dynamically-discovered players too.
+            # build_player_splits probes every sportId, so a promoted player
+            # keeps his full multi-level combined split.
             splits = None
             try:
                 splits = build_player_splits(p["mlbId"], p["group"])
@@ -724,6 +759,7 @@ def main():
             try:
                 push_player(p["slug"], p["seasons"], splits)
                 updated.append(p["slug"])
+                dynamic_pushed.add(p["slug"])
             except Exception as e:
                 print(f"[ERROR] pushing {p['slug']} ({p['name']}): {e}")
                 skipped.append(p["slug"])
