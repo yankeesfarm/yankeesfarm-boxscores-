@@ -1,0 +1,52 @@
+{
+  "hitters": [
+    {
+      "playerId": 682617,
+      "name": "Marco Luciano",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "2B",
+      "bio": "AAA | 2B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/682617/spots/120",
+      "statline": "3 for 3: 2 Doubles (14), RBI (55)",
+      "points": 7.75
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 680572,
+      "name": "Adam Kloffenstein",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/680572/spots/120",
+      "statline": "6.0 IP, 0 R, 5 K",
+      "points": 15.25
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 682617,
+    "name": "Marco Luciano",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "2B",
+    "bio": "AAA | 2B",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/682617/spots/120",
+    "statline": "3 for 3: 2 Doubles (14), RBI (55)",
+    "points": 7.75
+  },
+  "pitcherOfTheDay": {
+    "playerId": 680572,
+    "name": "Adam Kloffenstein",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "RP",
+    "bio": "AAA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/680572/spots/120",
+    "statline": "6.0 IP, 0 R, 5 K",
+    "points": 15.25
+  },
+  "date": "2026-09-18",
+  "generatedAt": "2026-09-19T05:30:46.384251+00:00"
+}
