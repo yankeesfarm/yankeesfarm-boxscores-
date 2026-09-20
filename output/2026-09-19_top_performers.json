@@ -1,0 +1,63 @@
+{
+  "hitters": [
+    {
+      "playerId": 641555,
+      "name": "J.C. Escarra",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "C",
+      "bio": "AAA | C",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/641555/spots/120",
+      "statline": "2 for 4: HR (11), 2 RBI (48)",
+      "points": 7.0
+    },
+    {
+      "playerId": 676205,
+      "name": "Tyler Hardman",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "position": "3B",
+      "bio": "AAA | 3B",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/676205/spots/120",
+      "statline": "2 for 5: HR (15), RBI (49)",
+      "points": 6.25
+    }
+  ],
+  "pitchers": [
+    {
+      "playerId": 623437,
+      "name": "Justin Topa",
+      "level": "AAA",
+      "team": "Scranton/Wilkes-Barre RailRiders",
+      "role": "RP",
+      "bio": "AAA | RP",
+      "photoUrl": "https://midfield.mlbstatic.com/v1/people/623437/spots/120",
+      "statline": "1.2 IP, 0 R, 3 K",
+      "points": 13.17
+    }
+  ],
+  "playerOfTheDay": {
+    "playerId": 641555,
+    "name": "J.C. Escarra",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "position": "C",
+    "bio": "AAA | C",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/641555/spots/120",
+    "statline": "2 for 4: HR (11), 2 RBI (48)",
+    "points": 7.0
+  },
+  "pitcherOfTheDay": {
+    "playerId": 623437,
+    "name": "Justin Topa",
+    "level": "AAA",
+    "team": "Scranton/Wilkes-Barre RailRiders",
+    "role": "RP",
+    "bio": "AAA | RP",
+    "photoUrl": "https://midfield.mlbstatic.com/v1/people/623437/spots/120",
+    "statline": "1.2 IP, 0 R, 3 K",
+    "points": 13.17
+  },
+  "date": "2026-09-19",
+  "generatedAt": "2026-09-20T07:19:44.733737+00:00"
+}
