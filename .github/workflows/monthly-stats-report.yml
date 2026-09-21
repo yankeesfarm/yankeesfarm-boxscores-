@@ -1,0 +1,91 @@
+name: Monthly Stats Report
+
+# Runs at 09:00 UTC on the 1st of April through September (cron field 4-9).
+# 09:00 UTC = 5 AM Eastern during these months (all fall in EDT / UTC-4).
+# The season ends after September, so it stays dormant Oct–Mar automatically.
+# workflow_dispatch lets you trigger it by hand and optionally backfill a
+# specific month (YYYY-MM) — handy for re-running or catching a missed month.
+on:
+  schedule:
+    - cron: "0 9 1 4-9 *"
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "Month to accumulate (YYYY-MM). Leave blank for the previous month."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  accumulate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Determine target month
+        run: |
+          if [ -n "${{ github.event.inputs.month }}" ]; then
+            MONTH="${{ github.event.inputs.month }}"
+          else
+            # On the 1st, the previous completed calendar month.
+            MONTH=$(date -u -d "$(date -u +%Y-%m-01) -1 day" +%Y-%m)
+          fi
+          echo "MONTH=$MONTH" >> "$GITHUB_ENV"
+          echo "Accumulating month: $MONTH"
+
+      - name: Run monthly accumulation
+        run: python accumulate_monthly.py --month "$MONTH"
+
+      - name: Copy result into output/ folder
+        run: |
+          mkdir -p output
+          if [ -f "data/monthly/$MONTH.json" ]; then
+            cp "data/monthly/$MONTH.json" "output/$MONTH.json"
+            echo "REPORT_EXISTS=true" >> "$GITHUB_ENV"
+          else
+            echo "No monthly file produced for $MONTH (no games that month) — nothing to output."
+            echo "REPORT_EXISTS=false" >> "$GITHUB_ENV"
+          fi
+
+      - name: Commit output to repo
+        if: env.REPORT_EXISTS == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output data/monthly
+          git diff --staged --quiet || git commit -m "Monthly stats: $MONTH"
+          git push
+
+      - name: Upload report as downloadable artifact
+        if: env.REPORT_EXISTS == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: monthly-stats-${{ env.MONTH }}
+          path: output/${{ env.MONTH }}.json
+
+      # ---- OPTIONAL EMAIL ----
+      # Uncomment and add repo secrets MAIL_USERNAME, MAIL_PASSWORD, MAIL_TO.
+      # For Gmail, MAIL_PASSWORD must be an App Password (not your login password).
+      #
+      # - name: Email the report
+      #   if: env.REPORT_EXISTS == 'true'
+      #   uses: dawidd6/action-send-mail@v3
+      #   with:
+      #     server_address: smtp.gmail.com
+      #     server_port: 465
+      #     secure: true
+      #     username: ${{ secrets.MAIL_USERNAME }}
+      #     password: ${{ secrets.MAIL_PASSWORD }}
+      #     to: ${{ secrets.MAIL_TO }}
+      #     from: YankeesFarm Bot <${{ secrets.MAIL_USERNAME }}>
+      #     subject: "Monthly Stats — ${{ env.MONTH }}"
+      #     body: "Monthly cumulative totals for ${{ env.MONTH }} are attached and committed to output/."
+      #     attachments: output/${{ env.MONTH }}.json
