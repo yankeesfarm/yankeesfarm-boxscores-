@@ -1,0 +1,17 @@
+[
+  {
+    "game_pk": 815778,
+    "league": "AAA",
+    "sport_id": 11,
+    "yankees_side": "home",
+    "status": "Cancelled",
+    "away_team": "Jacksonville Jumbo Shrimp",
+    "home_team": "Scranton/Wilkes-Barre RailRiders",
+    "away_score": null,
+    "home_score": null,
+    "away_batting": [],
+    "home_batting": [],
+    "away_pitching": [],
+    "home_pitching": []
+  }
+]
