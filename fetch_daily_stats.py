@@ -554,7 +554,7 @@ def compute_pitching_line(totals):
     }
 
 
-def fetch_rookie_team_players(team, graduated_slugs):
+def fetch_rookie_team_players(team, graduated_slugs, compute_season_total=False):
     """Dynamically discovers every player on a team's full-season roster
     and pulls their team-scoped stat line via the Stats API -- no
     roster_map.json entry required. Returns a list of
@@ -611,12 +611,24 @@ def fetch_rookie_team_players(team, graduated_slugs):
         line = compute_pitching_line(stat) if is_pitcher else compute_hitting_line(stat)
         stint = build_stint(line, team["levelCode"], team["levelLabel"], group)
         slug = slugify(name)
+        season_entry = {"year": SEASON, "stints": [stint]}
+        if compute_season_total:
+            # Same all-levels 2026 total the roster_map pass computes, so a
+            # backstopped full-season player's career line isn't missing his
+            # earlier rookie-level production (the Luis Puello case).
+            try:
+                raw = get_season_total_raw(pid, group, team["sportId"], team["teamId"])
+                if raw:
+                    tline = compute_pitching_line(raw) if is_pitcher else compute_hitting_line(raw)
+                    season_entry["seasonTotal"] = {**tline, "levelLabel": "2026 Season Total (All Levels)"}
+            except Exception as e:
+                print(f"[WARN] season total for {slug}: {e}")
         results.append({
             "slug": slug,
             "name": name,
             "mlbId": pid,
             "group": group,
-            "seasons": [{"year": SEASON, "stints": [stint]}],
+            "seasons": [season_entry],
         })
         time.sleep(0.1)
 
@@ -725,32 +737,33 @@ def main():
             skipped.append(slug)
         time.sleep(0.2)
 
-    # --- New path (v2 + v4): dynamic Stats-API roster discovery for EVERY
-    #     affiliate, covering any rostered player missing from roster_map.json.
-    #     Full-season teams first (highest level -> lowest), then rookie teams.
-    #     graduated_slugs keeps roster_map.json authoritative; dynamic_pushed
-    #     ensures a player on more than one roster is written once, at his
-    #     highest level (this is what catches optioned MLB players like
-    #     Jasson Dominguez, who are on a full-season roster but were never
-    #     added to roster_map.json). ---
-    print("\nSweeping every affiliate roster via Stats API for players not in roster_map.json...")
-    dynamic_teams = FULL_SEASON_DYNAMIC_TEAMS + ROOKIE_TEAMS
-    dynamic_pushed = set()
-    for team in dynamic_teams:
+    # --- New path: reliable Stats-API discovery, in two phases. ---
+    #
+    # Phase 1 (v5): FULL-SEASON BACKSTOP. The milb.com scrape above is the
+    # fragile link -- its own docstring warns it silently returns {} for a
+    # JS-rendered team page, and it also omits a 40-man player optioned to
+    # Triple-A whom milb.com no longer lists on the affiliate's current
+    # stats page. Real case: Jasson Dominguez is present and Active on
+    # SWB's Stats-API roster, but the scrape never produced his row, so he
+    # was never pushed and his profile showed a stale seed (getPlayerStats
+    # returned found:false). So for every full-season affiliate we now
+    # re-derive each rostered player straight from the Stats API and push
+    # anyone the scrape did NOT already push this run. already_pushed = the
+    # roster_map successes, so a team whose scrape worked is left untouched;
+    # only the players/teams it missed get covered. Highest level -> lowest,
+    # deduped via already_pushed, so a promoted player is written once at
+    # his highest level.
+    already_pushed = set(updated)
+    print("\nBackstopping full-season affiliates via Stats API (covering anyone the scrape missed)...")
+    for team in FULL_SEASON_DYNAMIC_TEAMS:
         try:
-            players = fetch_rookie_team_players(team, graduated_slugs)
+            players = fetch_rookie_team_players(team, already_pushed, compute_season_total=True)
         except Exception as e:
             print(f"[ERROR] teamId={team['teamId']}: {e}")
             continue
         for p in players:
-            if p["slug"] in dynamic_pushed:
-                # Already pushed at a higher level this run (a promoted player
-                # who is on multiple rosters and not in roster_map.json) --
-                # keep the higher-level line already written.
+            if p["slug"] in already_pushed:
                 continue
-            # Live handedness splits for dynamically-discovered players too.
-            # build_player_splits probes every sportId, so a promoted player
-            # keeps his full multi-level combined split.
             splits = None
             try:
                 splits = build_player_splits(p["mlbId"], p["group"])
@@ -759,7 +772,37 @@ def main():
             try:
                 push_player(p["slug"], p["seasons"], splits)
                 updated.append(p["slug"])
-                dynamic_pushed.add(p["slug"])
+                already_pushed.add(p["slug"])
+            except Exception as e:
+                print(f"[ERROR] pushing {p['slug']} ({p['name']}): {e}")
+                skipped.append(p["slug"])
+            time.sleep(0.2)
+
+    # Phase 2 (v2): ROOKIE AFFILIATES. Unchanged dynamic discovery -- skips
+    # anyone roster_map.json owns (so a promoted player's full-season line
+    # isn't overwritten by stale rookie-level data) and anyone already
+    # pushed above.
+    print("\nSweeping rookie affiliates (FCL/DSL) via Stats API...")
+    rookie_skip = set(roster_map.keys()) | already_pushed
+    for team in ROOKIE_TEAMS:
+        try:
+            players = fetch_rookie_team_players(team, rookie_skip)
+        except Exception as e:
+            print(f"[ERROR] teamId={team['teamId']}: {e}")
+            continue
+        for p in players:
+            if p["slug"] in already_pushed:
+                continue
+            splits = None
+            try:
+                splits = build_player_splits(p["mlbId"], p["group"])
+            except Exception as e:
+                print(f"[WARN] splits for {p['slug']}: {e}")
+            try:
+                push_player(p["slug"], p["seasons"], splits)
+                updated.append(p["slug"])
+                already_pushed.add(p["slug"])
+                rookie_skip.add(p["slug"])
             except Exception as e:
                 print(f"[ERROR] pushing {p['slug']} ({p['name']}): {e}")
                 skipped.append(p["slug"])
