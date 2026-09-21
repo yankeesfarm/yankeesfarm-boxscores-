@@ -3,8 +3,8 @@
     "title": "2026-09",
     "period": "monthly",
     "sourceFile": "data/monthly/2026-09.json",
-    "minPA": 456,
-    "minIP": 73.33333333333333
+    "minPA": 459,
+    "minIP": 74.0
   },
   "generatedAt": null,
   "categories": {
@@ -18,7 +18,7 @@
           "isTied": false,
           "name": "Marco Luciano",
           "team": "SWB",
-          "value": "0.296"
+          "value": "0.293"
         },
         {
           "rank": "2",
@@ -67,7 +67,7 @@
           "isTied": false,
           "name": "Yanquiel Fern\u00e1ndez",
           "team": "SWB",
-          "value": "0.260"
+          "value": "0.258"
         },
         {
           "rank": "9",
@@ -102,7 +102,7 @@
           "isTied": false,
           "name": "Marco Luciano",
           "team": "SWB",
-          "value": "0.391"
+          "value": "0.387"
         },
         {
           "rank": "3",
@@ -172,7 +172,7 @@
           "isTied": false,
           "name": "Marco Luciano",
           "team": "SWB",
-          "value": "0.552"
+          "value": "0.545"
         },
         {
           "rank": "2",
@@ -207,7 +207,7 @@
           "isTied": false,
           "name": "Yanquiel Fern\u00e1ndez",
           "team": "SWB",
-          "value": "0.472"
+          "value": "0.469"
         },
         {
           "rank": "7",
@@ -221,7 +221,7 @@
           "isTied": false,
           "name": "Tyler Hardman",
           "team": "SWB",
-          "value": "0.456"
+          "value": "0.462"
         },
         {
           "rank": "9",
@@ -249,7 +249,7 @@
           "isTied": false,
           "name": "Marco Luciano",
           "team": "SWB",
-          "value": "0.943"
+          "value": "0.932"
         },
         {
           "rank": "2",
@@ -303,7 +303,7 @@
         {
           "rank": "9",
           "isTied": false,
-          "name": "Yanquiel Fern\u00e1ndez",
+          "name": "Tyler Hardman",
           "team": "SWB",
           "value": "0.785"
         },
@@ -371,18 +371,18 @@
           "value": 117
         },
         {
-          "rank": "8",
-          "isTied": false,
+          "rank": "T8",
+          "isTied": true,
           "name": "DJ Gladney",
           "team": "SOM",
           "value": 115
         },
         {
-          "rank": "9",
-          "isTied": false,
+          "rank": "T8",
+          "isTied": true,
           "name": "Tyler Hardman",
           "team": "SWB",
-          "value": 113
+          "value": 115
         },
         {
           "rank": "10",
@@ -581,21 +581,21 @@
           "value": 29
         },
         {
-          "rank": "T2",
-          "isTied": true,
+          "rank": "2",
+          "isTied": false,
           "name": "Tyler Hardman",
           "team": "SWB",
-          "value": 27
+          "value": 28
         },
         {
-          "rank": "T2",
+          "rank": "T3",
           "isTied": true,
           "name": "Marco Luciano",
           "team": "SWB",
           "value": 27
         },
         {
-          "rank": "T2",
+          "rank": "T3",
           "isTied": true,
           "name": "Yanquiel Fern\u00e1ndez",
           "team": "SWB",
@@ -658,18 +658,18 @@
       "isRate": false,
       "entries": [
         {
-          "rank": "1",
-          "isTied": false,
+          "rank": "T1",
+          "isTied": true,
           "name": "Jackson Lovich",
           "team": "HV",
           "value": 89
         },
         {
-          "rank": "2",
-          "isTied": false,
+          "rank": "T1",
+          "isTied": true,
           "name": "Tyler Hardman",
           "team": "SWB",
-          "value": 88
+          "value": 89
         },
         {
           "rank": "3",
@@ -739,7 +739,7 @@
           "isTied": false,
           "name": "Duke Ellis",
           "team": "SWB",
-          "value": 59
+          "value": 60
         },
         {
           "rank": "2",
@@ -828,16 +828,16 @@
         {
           "rank": "3",
           "isTied": false,
-          "name": "Marco Luciano",
-          "team": "SWB",
+          "name": "Eric Genther",
+          "team": "HV",
           "value": "13.1%"
         },
         {
           "rank": "4",
           "isTied": false,
-          "name": "Eric Genther",
-          "team": "HV",
-          "value": "13.1%"
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "13.0%"
         },
         {
           "rank": "5",
@@ -938,17 +938,17 @@
           "value": "23.7%"
         },
         {
-          "rank": "T8",
-          "isTied": true,
-          "name": "Hans Montero",
-          "team": "HV",
+          "rank": "8",
+          "isTied": false,
+          "name": "Tyler Hardman",
+          "team": "SWB",
           "value": "24.4%"
         },
         {
-          "rank": "T8",
-          "isTied": true,
-          "name": "Tyler Hardman",
-          "team": "SWB",
+          "rank": "9",
+          "isTied": false,
+          "name": "Hans Montero",
+          "team": "HV",
           "value": "24.4%"
         },
         {
@@ -1012,7 +1012,7 @@
           "isTied": false,
           "name": "Yanquiel Fern\u00e1ndez",
           "team": "SWB",
-          "value": "14.5%"
+          "value": "14.2%"
         },
         {
           "rank": "8",
@@ -1068,7 +1068,7 @@
           "isTied": false,
           "name": "Tyler Hardman",
           "team": "SWB",
-          "value": "41.6%"
+          "value": "41.7%"
         },
         {
           "rank": "5",
@@ -1131,7 +1131,7 @@
           "isTied": false,
           "name": "Marco Luciano",
           "team": "SWB",
-          "value": "0.256"
+          "value": "0.252"
         },
         {
           "rank": "3",
@@ -1152,7 +1152,7 @@
           "isTied": false,
           "name": "Tyler Hardman",
           "team": "SWB",
-          "value": "0.215"
+          "value": "0.219"
         },
         {
           "rank": "6",
@@ -1166,7 +1166,7 @@
           "isTied": false,
           "name": "Yanquiel Fern\u00e1ndez",
           "team": "SWB",
-          "value": "0.212"
+          "value": "0.211"
         },
         {
           "rank": "8",
@@ -1227,16 +1227,16 @@
         {
           "rank": "4",
           "isTied": false,
-          "name": "Marco Luciano",
-          "team": "SWB",
-          "value": "0.353"
+          "name": "Coby Morales",
+          "team": "SOM",
+          "value": "0.349"
         },
         {
           "rank": "5",
           "isTied": false,
-          "name": "Coby Morales",
-          "team": "SOM",
-          "value": "0.349"
+          "name": "Marco Luciano",
+          "team": "SWB",
+          "value": "0.348"
         },
         {
           "rank": "6",
@@ -1292,7 +1292,7 @@
           "isTied": false,
           "name": "Marco Luciano",
           "team": "SWB",
-          "value": "0.407"
+          "value": "0.403"
         },
         {
           "rank": "T2",
@@ -1374,16 +1374,16 @@
         {
           "rank": "2",
           "isTied": false,
-          "name": "Alexander Cornielle",
+          "name": "Brendan Beck",
           "team": "SWB",
-          "value": "2.69"
+          "value": "2.93"
         },
         {
           "rank": "3",
           "isTied": false,
-          "name": "Brendan Beck",
+          "name": "Alexander Cornielle",
           "team": "SWB",
-          "value": "2.93"
+          "value": "3.01"
         },
         {
           "rank": "4",
@@ -1484,22 +1484,22 @@
           "value": "1.30"
         },
         {
-          "rank": "T7",
-          "isTied": true,
-          "name": "Alexander Cornielle",
-          "team": "SWB",
-          "value": "1.31"
-        },
-        {
-          "rank": "T7",
-          "isTied": true,
+          "rank": "7",
+          "isTied": false,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "1.31"
         },
         {
-          "rank": "9",
-          "isTied": false,
+          "rank": "T8",
+          "isTied": true,
+          "name": "Alexander Cornielle",
+          "team": "SWB",
+          "value": "1.35"
+        },
+        {
+          "rank": "T8",
+          "isTied": true,
           "name": "Xavier Rivas",
           "team": "SWB",
           "value": "1.35"
@@ -1708,15 +1708,15 @@
           "value": "0.210"
         },
         {
-          "rank": "5",
-          "isTied": false,
+          "rank": "T5",
+          "isTied": true,
           "name": "Alexander Cornielle",
           "team": "SWB",
-          "value": "0.217"
+          "value": "0.221"
         },
         {
-          "rank": "6",
-          "isTied": false,
+          "rank": "T5",
+          "isTied": true,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
           "value": "0.221"
@@ -2083,7 +2083,7 @@
           "isTied": false,
           "name": "Brendan Beck",
           "team": "SWB",
-          "value": "5.11"
+          "value": "5.09"
         },
         {
           "rank": "4",
@@ -2097,7 +2097,7 @@
           "isTied": false,
           "name": "Elmer Rodr\u00edguez",
           "team": "SWB",
-          "value": "5.75"
+          "value": "5.73"
         },
         {
           "rank": "6",
@@ -2123,16 +2123,16 @@
         {
           "rank": "9",
           "isTied": false,
-          "name": "Alexander Cornielle",
+          "name": "Trent Sellers",
           "team": "SWB",
-          "value": "6.36"
+          "value": "6.50"
         },
         {
           "rank": "10",
           "isTied": false,
-          "name": "Trent Sellers",
+          "name": "Alexander Cornielle",
           "team": "SWB",
-          "value": "6.52"
+          "value": "6.51"
         }
       ]
     }
