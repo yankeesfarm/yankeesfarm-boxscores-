@@ -1,8 +1,35 @@
 {
-  "_comment": "One entry per prospect profile. This is the ONLY manual step. group = 'hitting' or 'pitching' (a player's primary line). Add a player once; the Monday cron keeps his stats fresh forever after.",
+  "_comment": "Yankees Top 30 (current, 2026) with verified MLB player IDs. group = hitting|pitching. 'name'/'pos' are for your reference only; the script uses slug, mlbId, group. Slugs are name-based — change any to match your existing profile slugs (mlbId is the key that drives the fetch, so a slug mismatch won't break stats). Add/remove players as your profiles change.",
   "players": [
-    { "slug": "jasson-dominguez",  "mlbId": 682177, "group": "hitting"  },
-    { "slug": "roderick-arias",    "mlbId": 691026, "group": "hitting"  },
-    { "slug": "brando-mayea",      "mlbId": 808501, "group": "hitting"  }
+    { "slug": "george-lombard-jr", "mlbId": 806146, "group": "hitting",  "name": "George Lombard Jr.", "pos": "INF" },
+    { "slug": "dax-kilby",         "mlbId": 828076, "group": "hitting",  "name": "Dax Kilby",          "pos": "SS" },
+    { "slug": "spencer-jones",     "mlbId": 682987, "group": "hitting",  "name": "Spencer Jones",      "pos": "OF" },
+    { "slug": "core-jackson",      "mlbId": 692110, "group": "hitting",  "name": "Core Jackson",       "pos": "SS/2B" },
+    { "slug": "kaeden-kent",       "mlbId": 809763, "group": "hitting",  "name": "Kaeden Kent",        "pos": "SS" },
+    { "slug": "wilson-rodriguez",  "mlbId": 815147, "group": "hitting",  "name": "Wilson Rodriguez",   "pos": "OF" },
+    { "slug": "stiven-marinez",    "mlbId": 829501, "group": "hitting",  "name": "Stiven Marinez",     "pos": "SS" },
+    { "slug": "jace-avina",        "mlbId": 701778, "group": "hitting",  "name": "Jace Avina",         "pos": "OF" },
+    { "slug": "mani-cedeno",       "mlbId": 829041, "group": "hitting",  "name": "Mani Cedeno",        "pos": "SS" },
+
+    { "slug": "elmer-rodriguez",   "mlbId": 695684, "group": "pitching", "name": "Elmer Rodríguez",    "pos": "RHP" },
+    { "slug": "carlos-lagrange",   "mlbId": 801739, "group": "pitching", "name": "Carlos Lagrange",    "pos": "RHP" },
+    { "slug": "ben-hess",          "mlbId": 696292, "group": "pitching", "name": "Ben Hess",           "pos": "RHP" },
+    { "slug": "bryce-cunningham",  "mlbId": 701480, "group": "pitching", "name": "Bryce Cunningham",   "pos": "RHP" },
+    { "slug": "chase-hampton",     "mlbId": 694633, "group": "pitching", "name": "Chase Hampton",      "pos": "RHP" },
+    { "slug": "thatcher-hurd",     "mlbId": 695765, "group": "pitching", "name": "Thatcher Hurd",      "pos": "RHP" },
+    { "slug": "pico-kohn",         "mlbId": 695560, "group": "pitching", "name": "Pico Kohn",          "pos": "LHP" },
+    { "slug": "kyle-carr",         "mlbId": 694805, "group": "pitching", "name": "Kyle Carr",          "pos": "LHP" },
+    { "slug": "henry-lalane",      "mlbId": 700649, "group": "pitching", "name": "Henry Lalane",       "pos": "LHP" },
+    { "slug": "cade-smith",        "mlbId": 694696, "group": "pitching", "name": "Cade Smith",         "pos": "RHP" },
+    { "slug": "rory-fox",          "mlbId": 812431, "group": "pitching", "name": "Rory Fox",           "pos": "RHP" },
+    { "slug": "brendan-beck",      "mlbId": 694341, "group": "pitching", "name": "Brendan Beck",       "pos": "RHP" },
+    { "slug": "sean-paul-linan",   "mlbId": 800344, "group": "pitching", "name": "Sean Paul Liñan",    "pos": "RHP" },
+    { "slug": "xavier-rivas",      "mlbId": 814392, "group": "pitching", "name": "Xavier Rivas",       "pos": "LHP" },
+    { "slug": "mac-heuer",         "mlbId": 806121, "group": "pitching", "name": "Mac Heuer",          "pos": "RHP" },
+    { "slug": "jack-cebert",       "mlbId": 701411, "group": "pitching", "name": "Jack Cebert",        "pos": "RHP" },
+    { "slug": "allen-facundo",     "mlbId": 702098, "group": "pitching", "name": "Allen Facundo",      "pos": "LHP" },
+    { "slug": "harrison-cohen",    "mlbId": 694660, "group": "pitching", "name": "Harrison Cohen",     "pos": "RHP" },
+    { "slug": "eric-reyzelman",    "mlbId": 801432, "group": "pitching", "name": "Eric Reyzelman",     "pos": "RHP" },
+    { "slug": "tony-rossi",        "mlbId": 702036, "group": "pitching", "name": "Tony Rossi",         "pos": "RHP" }
   ]
 }
