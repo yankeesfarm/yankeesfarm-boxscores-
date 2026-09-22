@@ -87,3 +87,16 @@ jobs:
             python3 push_to_wix.py --file "data/analytics/data.json" --period analytics --endpoint-env WIX_ANALYTICS_ENDPOINT
           fi
       # --- end new step ---
+      # --- NEW STEP: refresh prospect-profile stats + LH/RH splits ---
+      # Self-contained: fetches each mapped player's combined season line and
+      # platoon splits from the MLB Stats API, computes advanced stats, and
+      # upserts one row per mlbId into the ProspectProfileStats collection.
+      # Runs independently of the leaderboard files above.
+      - name: Push prospect profile stats + splits
+        if: steps.verify.outputs.exit_code == '0'
+        env:
+          WIX_PROSPECTS_ENDPOINT: ${{ secrets.WIX_PROSPECTS_ENDPOINT }}
+          WIX_PUSH_SECRET: ${{ secrets.WIX_PUSH_SECRET }}
+          SEASON: '2026'
+        run: python3 push_prospect_stats.py
+      # --- end new step ---
