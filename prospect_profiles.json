@@ -1,0 +1,8 @@
+{
+  "_comment": "One entry per prospect profile. This is the ONLY manual step. group = 'hitting' or 'pitching' (a player's primary line). Add a player once; the Monday cron keeps his stats fresh forever after.",
+  "players": [
+    { "slug": "jasson-dominguez",  "mlbId": 682177, "group": "hitting"  },
+    { "slug": "roderick-arias",    "mlbId": 691026, "group": "hitting"  },
+    { "slug": "brando-mayea",      "mlbId": 808501, "group": "hitting"  }
+  ]
+}
