@@ -104,6 +104,7 @@ SEARCH_FROM_MONTH_DAY = "-02-01"  # same reasoning as fetch_farm_stats.py's SEAR
 # player's statSplits at sportId 16 is his true combined rookie total.
 SPLIT_SPORT_IDS = [11, 12, 13, 14, 16]
 SPORT_LEVEL_CODES = {11: "AAA", 12: "AA", 13: "HIA", 14: "LOA", 16: "ROK"}
+MONTH_CODES = {3: "MAR", 4: "APR", 5: "MAY", 6: "JUN", 7: "JUL", 8: "AUG", 9: "SEP", 10: "OCT"}
 
 # Rookie-level teams fetched dynamically via the MLB Stats API instead of
 # milb.com scraping. IDs confirmed against Carlos's own notes / the Stats
@@ -398,6 +399,123 @@ def build_player_splits(person_id, group):
 
 
 # ---------------------------------------------------------------------------
+# NEW (v6): monthly performance trend for the Prospect Stock ticker indicator
+# ---------------------------------------------------------------------------
+
+def _fetch_game_log_splits(person_id, group, sport_id):
+    """Fetch raw per-game stat splits from the Stats API's gameLog endpoint.
+    Returns a list of split dicts (each has 'date' and 'stat')."""
+    url = f"https://statsapi.mlb.com/api/v1/people/{person_id}/stats"
+    params = {"stats": "gameLog", "group": group, "sportId": sport_id, "season": SEASON}
+    try:
+        resp = requests.get(url, params=params, timeout=20)
+        if resp.status_code != 200:
+            return []
+        data = resp.json()
+        stats_list = data.get("stats", [])
+        if not stats_list:
+            return []
+        return stats_list[0].get("splits", [])
+    except Exception:
+        return []
+
+
+def _compute_monthly_hitting(month_code, games):
+    """Compute one month's hitting line from a list of per-game stat dicts."""
+    ab = sum(_i(g, "atBats") for g in games)
+    if ab == 0:
+        return None
+    h   = sum(_i(g, "hits") for g in games)
+    d   = sum(_i(g, "doubles") for g in games)
+    t   = sum(_i(g, "triples") for g in games)
+    hr  = sum(_i(g, "homeRuns") for g in games)
+    bb  = sum(_i(g, "baseOnBalls") for g in games)
+    hbp = sum(_i(g, "hitByPitch") for g in games)
+    sf  = sum(_i(g, "sacFlies") for g in games)
+    so  = sum(_i(g, "strikeOuts") for g in games)
+    sb  = sum(_i(g, "stolenBases") for g in games)
+    singles = h - d - t - hr
+    tb = singles + 2 * d + 3 * t + 4 * hr
+    pa = ab + bb + hbp + sf
+    obp_denom = pa
+    avg = round(h / ab, 3)
+    obp = round((h + bb + hbp) / obp_denom, 3) if obp_denom else 0.0
+    slg = round(tb / ab, 3)
+    ops = round(obp + slg, 3)
+    bb_pct = round(bb / pa * 100, 1) if pa else 0.0
+    k_pct  = round(so / pa * 100, 1) if pa else 0.0
+    return {
+        "month": month_code, "avg": avg, "obp": obp, "slg": slg, "ops": ops,
+        "doubles": d, "hr": hr, "sb": sb, "bb_pct": bb_pct, "k_pct": k_pct,
+    }
+
+
+def _compute_monthly_pitching(month_code, games):
+    """Compute one month's pitching line from a list of per-game stat dicts."""
+    ip_outs = 0
+    for g in games:
+        ip_str = str(g.get("inningsPitched", "0.0"))
+        whole, _, frac = ip_str.partition(".")
+        ip_outs += (int(whole) if whole else 0) * 3 + (int(frac) if frac else 0)
+    if ip_outs == 0:
+        return None
+    true_ip = ip_outs / 3
+    h  = sum(_i(g, "hits") for g in games)
+    er = sum(_i(g, "earnedRuns") for g in games)
+    bb = sum(_i(g, "baseOnBalls") for g in games)
+    so = sum(_i(g, "strikeOuts") for g in games)
+    return {
+        "month": month_code,
+        "era":  round(9 * er / true_ip, 2),
+        "whip": round((bb + h) / true_ip, 2),
+        "k9":   round(9 * so / true_ip, 1),
+        "bb9":  round(9 * bb / true_ip, 1),
+    }
+
+
+def build_monthly_trend(person_id, group):
+    """Builds a monthlyTrend array from the player's game log across every
+    affiliate level. Each entry has the month code ("APR", "MAY", etc.) and
+    the rate stats the ticker's Prospect Stock indicator reads:
+        hitters:  ops (plus avg, obp, slg, doubles, hr, sb, bb_pct, k_pct)
+        pitchers: era (plus whip, k9, bb9)
+    Returns None if the player has no game log activity."""
+    if not person_id:
+        return None
+    search_from = f"{SEASON}{SEARCH_FROM_MONTH_DAY}"
+    start_d = date.fromisoformat(search_from)
+    end_d = date.today()
+    monthly_raw = {}  # month_num -> list of per-game stat dicts
+    for sport_id in SPLIT_SPORT_IDS:
+        splits = _fetch_game_log_splits(person_id, group, sport_id)
+        for g in splits:
+            game_date_str = g.get("date")
+            if not game_date_str:
+                continue
+            try:
+                game_date = date.fromisoformat(game_date_str[:10])
+            except ValueError:
+                continue
+            if not (start_d <= game_date <= end_d):
+                continue
+            stat = g.get("stat", {})
+            if stat:
+                monthly_raw.setdefault(game_date.month, []).append(stat)
+        time.sleep(0.05)
+    if not monthly_raw:
+        return None
+    trend = []
+    for month_num in sorted(monthly_raw.keys()):
+        month_code = MONTH_CODES.get(month_num, f"M{month_num}")
+        entry = (_compute_monthly_pitching(month_code, monthly_raw[month_num])
+                 if group == "pitching"
+                 else _compute_monthly_hitting(month_code, monthly_raw[month_num]))
+        if entry:
+            trend.append(entry)
+    return trend if trend else None
+
+
+# ---------------------------------------------------------------------------
 # NEW PATH (v2): Stats-API-driven fetch for dynamically-discovered rosters.
 # Used for the 3 rookie-level affiliates AND (v4) as the full-season
 # gap-filler sweep. Generic over any {teamId, sportId, levelCode,
@@ -642,9 +760,10 @@ def fetch_rookie_team_players(team, graduated_slugs, compute_season_total=False)
 # Shared push logic
 # ---------------------------------------------------------------------------
 
-def push_player(slug, seasons, splits=None):
+def push_player(slug, seasons, splits=None, monthlyTrend=None):
     resp = requests.post(PUSH_ENDPOINT, json={
-        "key": PUSH_KEY, "slug": slug, "seasons": seasons, "splits": splits,
+        "key": PUSH_KEY, "slug": slug, "seasons": seasons,
+        "splits": splits, "monthlyTrend": monthlyTrend,
     }, timeout=15)
     if not resp.ok:
         print(f"[ERROR BODY] {slug}: status={resp.status_code} body={resp.text[:500]}")
@@ -720,6 +839,14 @@ def main():
             except Exception as e:
                 print(f"[WARN] splits for {slug}: {e}")
 
+        # Monthly performance trend for the Prospect Stock ticker indicator.
+        trend = None
+        if info.get("mlbId"):
+            try:
+                trend = build_monthly_trend(info["mlbId"], info["type"])
+            except Exception as e:
+                print(f"[WARN] monthly trend for {slug}: {e}")
+
         # Wrap as a single-season update. The current-team stint (top-of-page
         # display) is refreshed every run from the milb.com scrape above.
         # seasonTotal (career-page display) is refreshed every run from the
@@ -730,7 +857,7 @@ def main():
             season_entry["seasonTotal"] = season_total
         seasons = [season_entry]
         try:
-            push_player(slug, seasons, splits)
+            push_player(slug, seasons, splits, trend)
             updated.append(slug)
         except Exception as e:
             print(f"[ERROR] pushing {slug}: {e}")
@@ -769,8 +896,13 @@ def main():
                 splits = build_player_splits(p["mlbId"], p["group"])
             except Exception as e:
                 print(f"[WARN] splits for {p['slug']}: {e}")
+            trend = None
             try:
-                push_player(p["slug"], p["seasons"], splits)
+                trend = build_monthly_trend(p["mlbId"], p["group"])
+            except Exception as e:
+                print(f"[WARN] monthly trend for {p['slug']}: {e}")
+            try:
+                push_player(p["slug"], p["seasons"], splits, trend)
                 updated.append(p["slug"])
                 already_pushed.add(p["slug"])
             except Exception as e:
@@ -798,8 +930,13 @@ def main():
                 splits = build_player_splits(p["mlbId"], p["group"])
             except Exception as e:
                 print(f"[WARN] splits for {p['slug']}: {e}")
+            trend = None
             try:
-                push_player(p["slug"], p["seasons"], splits)
+                trend = build_monthly_trend(p["mlbId"], p["group"])
+            except Exception as e:
+                print(f"[WARN] monthly trend for {p['slug']}: {e}")
+            try:
+                push_player(p["slug"], p["seasons"], splits, trend)
                 updated.append(p["slug"])
                 already_pushed.add(p["slug"])
                 rookie_skip.add(p["slug"])
