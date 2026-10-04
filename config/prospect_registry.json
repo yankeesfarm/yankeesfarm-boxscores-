@@ -1,0 +1,848 @@
+{
+  "jackson-lovich": {
+    "personId": "804944",
+    "type": "hitter",
+    "displayFirst": "Jackson",
+    "displayLast": "Lovich"
+  },
+  "bryce-martin-grudzielanek": {
+    "personId": "701727",
+    "type": "hitter",
+    "displayFirst": "Bryce",
+    "displayLast": "Martin-Grudzielanek"
+  },
+  "dax-kilby": {
+    "personId": "828076",
+    "type": "hitter",
+    "displayFirst": "Dax",
+    "displayLast": "Kilby"
+  },
+  "eric-reyzelman": {
+    "personId": "801432",
+    "type": "pitcher",
+    "displayFirst": "Eric",
+    "displayLast": "Reyzelman"
+  },
+  "kyle-carr": {
+    "personId": "694805",
+    "type": "pitcher",
+    "displayFirst": "Kyle",
+    "displayLast": "Carr"
+  },
+  "alexander-cornielle": {
+    "personId": "529017",
+    "type": "pitcher",
+    "displayFirst": "Alexander",
+    "displayLast": "Cornielle"
+  },
+  "carlos-lagrange": {
+    "personId": "801739",
+    "type": "pitcher",
+    "displayFirst": "Carlos",
+    "displayLast": "Lagrange"
+  },
+  "luis-puello": {
+    "personId": "809772",
+    "type": "hitter",
+    "displayFirst": "Luis",
+    "displayLast": "Puello"
+  },
+  "brando-mayea": {
+    "personId": "806963",
+    "type": "hitter",
+    "displayFirst": "Brando",
+    "displayLast": "Mayea"
+  },
+  "george-lombard-jr": {
+    "personId": "806146",
+    "type": "hitter",
+    "displayFirst": "George",
+    "displayLast": "Lombard Jr."
+  },
+  "richard-matic": {
+    "personId": "821043",
+    "type": "hitter",
+    "displayFirst": "Richard",
+    "displayLast": "Matic"
+  },
+  "elmer-rodriguez": {
+    "personId": "695684",
+    "type": "pitcher",
+    "displayFirst": "Elmer",
+    "displayLast": "Rodriguez"
+  },
+  "anthony-potestio": {
+    "personId": "835219",
+    "type": "hitter",
+    "displayFirst": "Anthony",
+    "displayLast": "Potestio"
+  },
+  "hans-montero": {
+    "personId": "694215",
+    "type": "hitter",
+    "displayFirst": "Hans",
+    "displayLast": "Montero"
+  },
+  "yostin-pena": {
+    "personId": "829769",
+    "type": "hitter",
+    "displayFirst": "Yostin",
+    "displayLast": "Peña"
+  },
+  "wilberson-de-pena": {
+    "personId": "821648",
+    "type": "hitter",
+    "displayFirst": "Wilberson",
+    "displayLast": "De Peña"
+  },
+  "tony-rossi": {
+    "personId": "702036",
+    "type": "pitcher",
+    "displayFirst": "Tony",
+    "displayLast": "Rossi"
+  },
+  "sabier-marte": {
+    "personId": "800239",
+    "type": "pitcher",
+    "displayFirst": "Sabier",
+    "displayLast": "Marte"
+  },
+  "roderick-arias": {
+    "personId": "703149",
+    "type": "hitter",
+    "displayFirst": "Roderick",
+    "displayLast": "Arias"
+  },
+  "jace-avina": {
+    "personId": "701778",
+    "type": "hitter",
+    "displayFirst": "Jace",
+    "displayLast": "Avina"
+  },
+  "juan-torres": {
+    "personId": "825153",
+    "type": "hitter",
+    "displayFirst": "Juan",
+    "displayLast": "Torres"
+  },
+  "luke-pettitte": {
+    "personId": "830339",
+    "type": "hitter",
+    "displayFirst": "Luke",
+    "displayLast": "Pettitte"
+  },
+  "david-mccann": {
+    "personId": "806154",
+    "type": "hitter",
+    "displayFirst": "David",
+    "displayLast": "McCann"
+  },
+  "dexters-peralta": {
+    "personId": "820996",
+    "type": "hitter",
+    "displayFirst": "Dexters",
+    "displayLast": "Peralta"
+  },
+  "coby-morales": {
+    "personId": "815089",
+    "type": "hitter",
+    "displayFirst": "Coby",
+    "displayLast": "Morales"
+  },
+  "tyce-armstrong": {
+    "personId": "801489",
+    "type": "hitter",
+    "displayFirst": "Tyce",
+    "displayLast": "Armstrong"
+  },
+  "matthew-tippie": {
+    "personId": "822915",
+    "type": "pitcher",
+    "displayFirst": "Matthew",
+    "displayLast": "Tippie"
+  },
+  "ben-hess": {
+    "personId": "696292",
+    "type": "pitcher",
+    "displayFirst": "Ben",
+    "displayLast": "Hess"
+  },
+  "isaias-castillo": {
+    "personId": "830461",
+    "type": "hitter",
+    "displayFirst": "Isaias",
+    "displayLast": "Castillo"
+  },
+  "mani-cedeno": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Mani",
+    "displayLast": "Cedeño"
+  },
+  "alessandro-rodriguez": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Alessandro",
+    "displayLast": "Rodriguez"
+  },
+  "poly-ojeda": {
+    "personId": "822180",
+    "type": "hitter",
+    "displayFirst": "Poly",
+    "displayLast": "Ojeda"
+  },
+  "dalvin-taveras": {
+    "personId": "839504",
+    "type": "pitcher",
+    "displayFirst": "Dalvin",
+    "displayLast": "Taveras"
+  },
+  "higor-requena": {
+    "personId": "838137",
+    "type": "pitcher",
+    "displayFirst": "Higor",
+    "displayLast": "Requena"
+  },
+  "cesar-acosta": {
+    "personId": "831048",
+    "type": "pitcher",
+    "displayFirst": "Cesar",
+    "displayLast": "Acosta"
+  },
+  "kyle-west": {
+    "personId": "823918",
+    "type": "hitter",
+    "displayFirst": "Kyle",
+    "displayLast": "West"
+  },
+  "bryce-cunningham": {
+    "personId": "701480",
+    "type": "pitcher",
+    "displayFirst": "Bryce",
+    "displayLast": "Cunningham"
+  },
+  "francisco-vilorio": {
+    "personId": "815910",
+    "type": "hitter",
+    "displayFirst": "Francisco",
+    "displayLast": "Vilorio"
+  },
+  "jose-castro": {
+    "personId": "812161",
+    "type": "hitter",
+    "displayFirst": "Jose",
+    "displayLast": "Castro"
+  },
+  "jose-peralta": {
+    "personId": "825186",
+    "type": "hitter",
+    "displayFirst": "Jose",
+    "displayLast": "Peralta"
+  },
+  "jhosneyker-colina": {
+    "personId": "830466",
+    "type": "pitcher",
+    "displayFirst": "Jhosneyker",
+    "displayLast": "Colina"
+  },
+  "leni-done": {
+    "personId": "830454",
+    "type": "hitter",
+    "displayFirst": "Leni",
+    "displayLast": "Doñe"
+  },
+  "juan-martinez": {
+    "personId": "837831",
+    "type": "hitter",
+    "displayFirst": "Juan",
+    "displayLast": "Martinez"
+  },
+  "cesar-lopez": {
+    "personId": "822210",
+    "type": "hitter",
+    "displayFirst": "Cesar",
+    "displayLast": "Lopez"
+  },
+  "eric-genther": {
+    "personId": "823759",
+    "type": "hitter",
+    "displayFirst": "Eric",
+    "displayLast": "Genther"
+  },
+  "hayden-merda": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Hayden",
+    "displayLast": "Merda"
+  },
+  "edinzo-marquez": {
+    "personId": "805128",
+    "type": "pitcher",
+    "displayFirst": "Edinzo",
+    "displayLast": "Marquez"
+  },
+  "jose-ledesma": {
+    "personId": "702874",
+    "type": "pitcher",
+    "displayFirst": "Jose",
+    "displayLast": "Ledesma"
+  },
+  "jordarlin-mendoza": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Jordarlin",
+    "displayLast": "Mendoza"
+  },
+  "harrison-cohen": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Harrison",
+    "displayLast": "Cohen"
+  },
+  "jose-m-rodriguez": {
+    "personId": "815278",
+    "type": "pitcher",
+    "displayFirst": "Jose M.",
+    "displayLast": "Rodriguez"
+  },
+  "queni-pineda": {
+    "personId": "821065",
+    "type": "hitter",
+    "displayFirst": "Queni",
+    "displayLast": "Pineda"
+  },
+  "edgar-jimenez": {
+    "personId": "821173",
+    "type": "hitter",
+    "displayFirst": "Edgar",
+    "displayLast": "Jimenez"
+  },
+  "ruben-castillo": {
+    "personId": "830419",
+    "type": "hitter",
+    "displayFirst": "Ruben",
+    "displayLast": "Castillo"
+  },
+  "josh-moylan": {
+    "personId": "694742",
+    "type": "hitter",
+    "displayFirst": "Josh",
+    "displayLast": "Moylan"
+  },
+  "luis-durango": {
+    "personId": "691411",
+    "type": "hitter",
+    "displayFirst": "Luis",
+    "displayLast": "Durango"
+  },
+  "luis-escudero": {
+    "personId": "806884",
+    "type": "hitter",
+    "displayFirst": "Luis",
+    "displayLast": "Escudero"
+  },
+  "diego-castellanos": {
+    "personId": "824425",
+    "type": "hitter",
+    "displayFirst": "Diego",
+    "displayLast": "Castellanos"
+  },
+  "paul-gutierrez-contreras": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Paul",
+    "displayLast": "Gutierrez-Contreras"
+  },
+  "estivenzon-montero": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Estivenzon",
+    "displayLast": "Montero"
+  },
+  "willy-montero": {
+    "personId": "701206",
+    "type": "hitter",
+    "displayFirst": "Willy",
+    "displayLast": "Montero"
+  },
+  "luis-velasquez": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Luis",
+    "displayLast": "Velasquez"
+  },
+  "brendan-beck": {
+    "personId": "694341",
+    "type": "pitcher",
+    "displayFirst": "Brendan",
+    "displayLast": "Beck"
+  },
+  "justin-capellan": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Justin",
+    "displayLast": "Capellan"
+  },
+  "dean-toigo": {
+    "personId": "831025",
+    "type": "hitter",
+    "displayFirst": "Dean",
+    "displayLast": "Toigo"
+  },
+  "wilmy-sanchez": {
+    "personId": "804522",
+    "type": "pitcher",
+    "displayFirst": "Wilmy",
+    "displayLast": "Sanchez"
+  },
+  "bryce-warrecker": {
+    "personId": "695425",
+    "type": "hitter",
+    "displayFirst": "Bryce",
+    "displayLast": "Warrecker"
+  },
+  "blake-cyr": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Blake",
+    "displayLast": "Cyr"
+  },
+  "connor-mcginnis": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Connor",
+    "displayLast": "McGinnis"
+  },
+  "camden-troyer": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Camden",
+    "displayLast": "Troyer"
+  },
+  "brennan-stuprich": {
+    "personId": "834863",
+    "type": "pitcher",
+    "displayFirst": "Brennan",
+    "displayLast": "Stuprich"
+  },
+  "thatcher-hurd": {
+    "personId": "695765",
+    "type": "pitcher",
+    "displayFirst": "Thatcher",
+    "displayLast": "Hurd"
+  },
+  "wyatt-parliament": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Wyatt",
+    "displayLast": "Parliament"
+  },
+  "tyler-wilson": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Tyler",
+    "displayLast": "Wilson"
+  },
+  "xavier-rivas": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Xavier",
+    "displayLast": "Rivas"
+  },
+  "brandon-decker": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Brandon",
+    "displayLast": "Decker"
+  },
+  "cade-smith": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Cade",
+    "displayLast": "Smith"
+  },
+  "brian-hendry": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Brian",
+    "displayLast": "Hendry"
+  },
+  "wilson-rodriguez": {
+    "personId": "815147",
+    "type": "hitter",
+    "displayFirst": "Wilson",
+    "displayLast": "Rodriguez"
+  },
+  "chase-hampton": {
+    "personId": "694633",
+    "type": "pitcher",
+    "displayFirst": "Chase",
+    "displayLast": "Hampton"
+  },
+  "will-brian": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Will",
+    "displayLast": "Brian"
+  },
+  "germayhoni-beltre": {
+    "personId": "822236",
+    "type": "hitter",
+    "displayFirst": "Germayhoni",
+    "displayLast": "Beltre"
+  },
+  "stalen-ramirez": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Stalen",
+    "displayLast": "Ramirez"
+  },
+  "ediel-rivera": {
+    "personId": "815528",
+    "type": "hitter",
+    "displayFirst": "Ediel",
+    "displayLast": "Rivera"
+  },
+  "bear-harrison": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Bear",
+    "displayLast": "Harrison"
+  },
+  "greysen-carter": {
+    "personId": "701706",
+    "type": "pitcher",
+    "displayFirst": "Greysen",
+    "displayLast": "Carter"
+  },
+  "anthony-mena": {
+    "personId": "827768",
+    "type": "pitcher",
+    "displayFirst": "Anthony",
+    "displayLast": "Mena"
+  },
+  "tyler-boudreau": {
+    "personId": "683332",
+    "type": "pitcher",
+    "displayFirst": "Tyler",
+    "displayLast": "Boudreau"
+  },
+  "adrian-feliz": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Adrian",
+    "displayLast": "Feliz"
+  },
+  "kelly-austin": {
+    "personId": "675502",
+    "type": "pitcher",
+    "displayFirst": "Kelly",
+    "displayLast": "Austin"
+  },
+  "trent-sellers": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Trent",
+    "displayLast": "Sellers"
+  },
+  "geoffrey-gilbert": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Geoffrey",
+    "displayLast": "Gilbert"
+  },
+  "oswaldo-cabrera": {
+    "personId": "665828",
+    "type": "hitter",
+    "displayFirst": "Oswaldo",
+    "displayLast": "Cabrera"
+  },
+  "ernesto-martinez-jr": {
+    "personId": "667803",
+    "type": "hitter",
+    "displayFirst": "Ernesto",
+    "displayLast": "Martinez Jr."
+  },
+  "yanquiel-fernandez": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Yanquiel",
+    "displayLast": "Fernández"
+  },
+  "manuel-palencia": {
+    "personId": "692633",
+    "type": "hitter",
+    "displayFirst": "Manuel",
+    "displayLast": "Palencia"
+  },
+  "engelth-urena": {
+    "personId": "800246",
+    "type": "hitter",
+    "displayFirst": "Engelth",
+    "displayLast": "Ureña"
+  },
+  "jasson-dominguez": {
+    "personId": "691176",
+    "type": "hitter",
+    "displayFirst": "Jasson",
+    "displayLast": "Domínguez"
+  },
+  "marco-luciano": {
+    "personId": "682617",
+    "type": "hitter",
+    "displayFirst": "Marco",
+    "displayLast": "Luciano"
+  },
+  "jojo-jackson": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "JoJo",
+    "displayLast": "Jackson"
+  },
+  "david-carrera": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "David",
+    "displayLast": "Carrera"
+  },
+  "garrett-martin": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Garrett",
+    "displayLast": "Martin"
+  },
+  "alfiery-matos": {
+    "personId": "832787",
+    "type": "hitter",
+    "displayFirst": "Alfiery",
+    "displayLast": "Matos"
+  },
+  "dj-gladney": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "DJ",
+    "displayLast": "Gladney"
+  },
+  "robbie-burnett": {
+    "personId": "823754",
+    "type": "hitter",
+    "displayFirst": "Robbie",
+    "displayLast": "Burnett"
+  },
+  "tyler-hardman": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Tyler",
+    "displayLast": "Hardman"
+  },
+  "enmanuel-tejeda": {
+    "personId": "800285",
+    "type": "hitter",
+    "displayFirst": "Enmanuel",
+    "displayLast": "Tejeda"
+  },
+  "josue-gonzalez": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Josue",
+    "displayLast": "González"
+  },
+  "dariel-santana": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Dariel",
+    "displayLast": "Santana"
+  },
+  "abrahan-pichardo": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Abrahan",
+    "displayLast": "Pichardo"
+  },
+  "carlos-bello": {
+    "personId": null,
+    "type": "hitter",
+    "displayFirst": "Carlos",
+    "displayLast": "Bello"
+  },
+  "yunior-jerez": {
+    "personId": "824881",
+    "type": "pitcher",
+    "displayFirst": "Yunior",
+    "displayLast": "Jerez"
+  },
+  "luis-serna": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Luis",
+    "displayLast": "Serna"
+  },
+  "rory-fox": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Rory",
+    "displayLast": "Fox"
+  },
+  "manuel-aguilar": {
+    "personId": "839410",
+    "type": "hitter",
+    "displayFirst": "Manuel",
+    "displayLast": "Aguilar"
+  },
+  "gabriel-lara": {
+    "personId": "808106",
+    "type": "hitter",
+    "displayFirst": "Gabriel",
+    "displayLast": "Lara"
+  },
+  "maika-niu": {
+    "personId": "809569",
+    "type": "hitter",
+    "displayFirst": "Maika",
+    "displayLast": "Niu"
+  },
+  "franyer-herrera": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Franyer",
+    "displayLast": "Herrera"
+  },
+  "allen-facundo": {
+    "personId": "702098",
+    "type": "pitcher",
+    "displayFirst": "Allen",
+    "displayLast": "Facundo"
+  },
+  "hansel-rincon": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Hansel",
+    "displayLast": "Rincon"
+  },
+  "brady-kirtner": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Brady",
+    "displayLast": "Kirtner"
+  },
+  "jack-sokol": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Jack",
+    "displayLast": "Sokol"
+  },
+  "chris-veach": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Chris",
+    "displayLast": "Veach"
+  },
+  "thomas-balboni": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Thomas",
+    "displayLast": "Balboni Jr."
+  },
+  "andrew-landry": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Andrew",
+    "displayLast": "Landry"
+  },
+  "pico-kohn": {
+    "personId": null,
+    "type": "pitcher",
+    "displayFirst": "Pico",
+    "displayLast": "Kohn"
+  },
+  "spencer-jones": {
+    "personId": "682987",
+    "type": "hitter",
+    "displayFirst": "Spencer",
+    "displayLast": "Jones"
+  },
+  "jc-escarra": {
+    "personId": "641555",
+    "type": "hitter",
+    "displayFirst": "J.C.",
+    "displayLast": "Escarra"
+  },
+  "brock-selvidge": {
+    "personId": "691795",
+    "type": "pitcher",
+    "displayFirst": "Brock",
+    "displayLast": "Selvidge"
+  },
+  "stiven-marinez": {
+    "personId": "829501",
+    "type": "hitter",
+    "displayFirst": "Stiven",
+    "displayLast": "Marinez"
+  },
+  "sebastian-pinto": {
+    "personId": "837792",
+    "type": "hitter",
+    "displayFirst": "Sebastian",
+    "displayLast": "Pinto"
+  },
+  "luis-cruz": {
+    "personId": "825411",
+    "type": "hitter",
+    "displayFirst": "Luis",
+    "displayLast": "Cruz"
+  },
+  "core-jackson": {
+    "personId": "692110",
+    "type": "hitter",
+    "displayFirst": "Core",
+    "displayLast": "Jackson"
+  },
+  "fredy-penuelas": {
+    "personId": "832798",
+    "type": "pitcher",
+    "displayFirst": "Fredy",
+    "displayLast": "Penuelas"
+  },
+  "alfred-ciriaco": {
+    "personId": "829486",
+    "type": "hitter",
+    "displayFirst": "Alfred",
+    "displayLast": "Ciriaco"
+  },
+  "omar-alfonzo": {
+    "personId": "692657",
+    "type": "hitter",
+    "displayFirst": "Omar",
+    "displayLast": "Alfonzo"
+  },
+  "austin-breedlove": {
+    "personId": "824445",
+    "type": "pitcher",
+    "displayFirst": "Austin",
+    "displayLast": "Breedlove"
+  },
+  "omar-gonzalez": {
+    "personId": "800439",
+    "type": "pitcher",
+    "displayFirst": "Omar",
+    "displayLast": "Gonzalez"
+  },
+  "blake-gillespie": {
+    "personId": "805730",
+    "type": "pitcher",
+    "displayFirst": "Blake",
+    "displayLast": "Gillespie"
+  },
+  "justin-west": {
+    "personId": "804892",
+    "type": "pitcher",
+    "displayFirst": "Justin",
+    "displayLast": "West"
+  },
+  "jt-etheridge": {
+    "personId": "822950",
+    "type": "pitcher",
+    "displayFirst": "J.T.",
+    "displayLast": "Etheridge"
+  }
+}
