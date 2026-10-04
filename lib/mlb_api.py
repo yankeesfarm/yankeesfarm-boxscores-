@@ -185,3 +185,18 @@ def get_team_schedule(team_id, start_date, end_date, sport_id=None):
     for d in data.get("dates", []):
         games.extend(d.get("games", []))
     return [g for g in games if g.get("status", {}).get("statusCode") == "F"]
+
+
+def get_year_by_year(person_id, group):
+    """Career stats broken down by year and team.
+    group: 'hitting' or 'pitching'.
+    Returns the splits array from yearByYear stat type -- each split has
+    season, team, sport, league, and stat dict with full counting stats."""
+    data = _get(f"/people/{person_id}/stats", {
+        "stats": "yearByYear",
+        "group": group,
+    })
+    stats_list = data.get("stats", [])
+    if not stats_list:
+        return []
+    return stats_list[0].get("splits", [])
