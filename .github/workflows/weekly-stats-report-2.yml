@@ -45,12 +45,11 @@ jobs:
           if [ -f "data/monthly/${MONTH}.json" ]; then
             python3 generate_leaderboard.py --file "data/monthly/${MONTH}.json" --min-ab 15 --min-ip 15 --json-out
           fi
-      # --- NEW STEP: full 7-affiliate analytics table for analytics.html ---
+      # --- Full 7-affiliate analytics table for analytics.html ---
       - name: Fetch farm-wide analytics table
         run: |
           mkdir -p data/analytics
           python3 fetch_farm_stats.py --season 2026 --out data/analytics/data.json
-      # --- end new step ---
       - name: Commit results
         run: |
           git config user.name "yankeesfarm-bot"
@@ -76,7 +75,7 @@ jobs:
           if [ -f "data/monthly/${MONTH}_wix_payload.json" ]; then
             python3 push_to_wix.py --file "data/monthly/${MONTH}_wix_payload.json" --period monthly
           fi
-      # --- NEW STEP: push analytics table to the site the same way ---
+      # --- Push analytics table ---
       - name: Push analytics table to website
         if: steps.verify.outputs.exit_code == '0'
         env:
@@ -86,17 +85,10 @@ jobs:
           if [ -f "data/analytics/data.json" ]; then
             python3 push_to_wix.py --file "data/analytics/data.json" --period analytics --endpoint-env WIX_ANALYTICS_ENDPOINT
           fi
-      # --- end new step ---
-      # --- NEW STEP: refresh prospect-profile stats + LH/RH splits ---
-      # Self-contained: fetches each mapped player's combined season line and
-      # platoon splits from the MLB Stats API, computes advanced stats, and
-      # upserts one row per mlbId into the ProspectProfileStats collection.
-      # Runs independently of the leaderboard files above.
-      - name: Push prospect profile stats + splits
+      # --- Push individual prospect profile data (seasons, splits, trends) ---
+      - name: Push prospect profiles
         if: steps.verify.outputs.exit_code == '0'
         env:
-          WIX_PROSPECTS_ENDPOINT: ${{ secrets.WIX_PROSPECTS_ENDPOINT }}
-          WIX_PUSH_SECRET: ${{ secrets.WIX_PUSH_SECRET }}
-          SEASON: '2026'
-        run: python3 push_prospect_stats.py
-      # --- end new step ---
+          PROSPECT_PUSH_ENDPOINT: ${{ secrets.PROSPECT_PUSH_ENDPOINT }}
+          PROSPECT_PUSH_KEY: ${{ secrets.PROSPECT_PUSH_KEY }}
+        run: python3 push_prospect_profiles.py
