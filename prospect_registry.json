@@ -905,5 +905,23 @@
     "type": "hitter",
     "displayFirst": "Richie",
     "displayLast": "Bonomolo Jr."
+  },
+  "antonio-gomez": {
+    "personId": "682625",
+    "type": "pitcher",
+    "displayFirst": "Antonio",
+    "displayLast": "Gomez"
+  },
+  "mac-heuer": {
+    "personId": "806121",
+    "type": "pitcher",
+    "displayFirst": "Mac",
+    "displayLast": "Heuer"
+  },
+  "danny-flatt": {
+    "personId": "814343",
+    "type": "pitcher",
+    "displayFirst": "Danny",
+    "displayLast": "Flatt"
   }
 }
