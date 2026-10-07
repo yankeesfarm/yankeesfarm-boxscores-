@@ -294,7 +294,7 @@
     "displayLast": "Mendoza"
   },
   "harrison-cohen": {
-    "personId": null,
+    "personId": "694660",
     "type": "pitcher",
     "displayFirst": "Harrison",
     "displayLast": "Cohen"
@@ -456,7 +456,7 @@
     "displayLast": "Decker"
   },
   "cade-smith": {
-    "personId": null,
+    "personId": "694696",
     "type": "pitcher",
     "displayFirst": "Cade",
     "displayLast": "Smith"
@@ -540,13 +540,13 @@
     "displayLast": "Austin"
   },
   "trent-sellers": {
-    "personId": null,
+    "personId": "815587",
     "type": "pitcher",
     "displayFirst": "Trent",
     "displayLast": "Sellers"
   },
   "geoffrey-gilbert": {
-    "personId": null,
+    "personId": "687280",
     "type": "pitcher",
     "displayFirst": "Geoffrey",
     "displayLast": "Gilbert"
@@ -618,7 +618,7 @@
     "displayLast": "Matos"
   },
   "dj-gladney": {
-    "personId": null,
+    "personId": "687554",
     "type": "hitter",
     "displayFirst": "DJ",
     "displayLast": "Gladney"
@@ -678,7 +678,7 @@
     "displayLast": "Serna"
   },
   "rory-fox": {
-    "personId": null,
+    "personId": "812431",
     "type": "pitcher",
     "displayFirst": "Rory",
     "displayLast": "Fox"
@@ -702,7 +702,7 @@
     "displayLast": "Niu"
   },
   "franyer-herrera": {
-    "personId": null,
+    "personId": "800471",
     "type": "pitcher",
     "displayFirst": "Franyer",
     "displayLast": "Herrera"
@@ -720,7 +720,7 @@
     "displayLast": "Rincon"
   },
   "brady-kirtner": {
-    "personId": null,
+    "personId": "802374",
     "type": "pitcher",
     "displayFirst": "Brady",
     "displayLast": "Kirtner"
@@ -732,7 +732,7 @@
     "displayLast": "Sokol"
   },
   "chris-veach": {
-    "personId": null,
+    "personId": "810102",
     "type": "pitcher",
     "displayFirst": "Chris",
     "displayLast": "Veach"
