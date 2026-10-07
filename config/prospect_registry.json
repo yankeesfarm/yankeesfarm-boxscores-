@@ -868,7 +868,7 @@
     "type": "pitcher",
     "displayFirst": "Sean Paul",
     "displayLast": "Linan",
-    "displayLastAlt": "Liñan"
+    "displayLastAlt": "Li\u00f1an"
   },
   "jose-martinez": {
     "personId": "814715",
@@ -881,5 +881,17 @@
     "type": "pitcher",
     "displayFirst": "Matt",
     "displayLast": "Keating"
+  },
+  "angel-chivilli": {
+    "personId": "683409",
+    "type": "pitcher",
+    "displayFirst": "Angel",
+    "displayLast": "Chivilli"
+  },
+  "jackson-castillo": {
+    "personId": "814431",
+    "type": "hitter",
+    "displayFirst": "Jackson",
+    "displayLast": "Castillo"
   }
 }
