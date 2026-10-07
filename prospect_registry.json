@@ -893,5 +893,17 @@
     "type": "hitter",
     "displayFirst": "Jackson",
     "displayLast": "Castillo"
+  },
+  "gregory-bozzo": {
+    "personId": "801307",
+    "type": "hitter",
+    "displayFirst": "Gregory",
+    "displayLast": "Bozzo"
+  },
+  "richie-bonomolo": {
+    "personId": "825925",
+    "type": "hitter",
+    "displayFirst": "Richie",
+    "displayLast": "Bonomolo Jr."
   }
 }
