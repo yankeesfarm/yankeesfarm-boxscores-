@@ -409,7 +409,7 @@
   },
   "connor-mcginnis": {
     "personId": "821296",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Connor",
     "displayLast": "McGinnis"
   },
@@ -844,5 +844,11 @@
     "type": "pitcher",
     "displayFirst": "J.T.",
     "displayLast": "Etheridge"
+  },
+  "kendry-diaz": {
+    "personId": "833200",
+    "type": "hitter",
+    "displayFirst": "Kendry",
+    "displayLast": "Diaz"
   }
 }
