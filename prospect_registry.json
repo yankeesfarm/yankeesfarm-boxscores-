@@ -378,8 +378,8 @@
     "displayLast": "Beck"
   },
   "justin-capellan": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "820886",
+    "type": "pitcher",
     "displayFirst": "Justin",
     "displayLast": "Capellan"
   },
@@ -492,7 +492,7 @@
     "displayLast": "Beltre"
   },
   "stalen-ramirez": {
-    "personId": null,
+    "personId": "830475",
     "type": "hitter",
     "displayFirst": "Stalen",
     "displayLast": "Ramirez"
@@ -528,8 +528,8 @@
     "displayLast": "Boudreau"
   },
   "adrian-feliz": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "832447",
+    "type": "pitcher",
     "displayFirst": "Adrian",
     "displayLast": "Feliz"
   },
@@ -600,7 +600,7 @@
     "displayLast": "Jackson"
   },
   "david-carrera": {
-    "personId": null,
+    "personId": "821683",
     "type": "hitter",
     "displayFirst": "David",
     "displayLast": "Carrera"
@@ -648,20 +648,20 @@
     "displayLast": "Gonz\u00e1lez"
   },
   "dariel-santana": {
-    "personId": null,
+    "personId": "825266",
     "type": "hitter",
     "displayFirst": "Dariel",
     "displayLast": "Santana"
   },
   "abrahan-pichardo": {
-    "personId": null,
+    "personId": "822264",
     "type": "hitter",
     "displayFirst": "Abrahan",
     "displayLast": "Pichardo"
   },
   "carlos-bello": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "830470",
+    "type": "pitcher",
     "displayFirst": "Carlos",
     "displayLast": "Bello"
   },
