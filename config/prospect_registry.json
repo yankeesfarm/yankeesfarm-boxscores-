@@ -923,5 +923,23 @@
     "type": "pitcher",
     "displayFirst": "Danny",
     "displayLast": "Flatt"
+  },
+  "pedro-rodriguez": {
+    "personId": "692646",
+    "type": "pitcher",
+    "displayFirst": "Pedro",
+    "displayLast": "Rodriguez"
+  },
+  "rafael-arias": {
+    "personId": "828266",
+    "type": "pitcher",
+    "displayFirst": "Rafael",
+    "displayLast": "Arias"
+  },
+  "cole-gabrielson": {
+    "personId": "702068",
+    "type": "hitter",
+    "displayFirst": "Cole",
+    "displayLast": "Gabrielson"
   }
 }
