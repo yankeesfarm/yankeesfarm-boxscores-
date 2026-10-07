@@ -87,13 +87,13 @@
     "personId": "829769",
     "type": "hitter",
     "displayFirst": "Yostin",
-    "displayLast": "Peña"
+    "displayLast": "Pe\u00f1a"
   },
   "wilberson-de-pena": {
     "personId": "821648",
     "type": "hitter",
     "displayFirst": "Wilberson",
-    "displayLast": "De Peña"
+    "displayLast": "De Pe\u00f1a"
   },
   "tony-rossi": {
     "personId": "702036",
@@ -174,14 +174,14 @@
     "displayLast": "Castillo"
   },
   "mani-cedeno": {
-    "personId": null,
+    "personId": "829041",
     "type": "hitter",
     "displayFirst": "Mani",
-    "displayLast": "Cedeño"
+    "displayLast": "Cedeno"
   },
   "alessandro-rodriguez": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "832491",
+    "type": "pitcher",
     "displayFirst": "Alessandro",
     "displayLast": "Rodriguez"
   },
@@ -249,7 +249,7 @@
     "personId": "830454",
     "type": "hitter",
     "displayFirst": "Leni",
-    "displayLast": "Doñe"
+    "displayLast": "Do\u00f1e"
   },
   "juan-martinez": {
     "personId": "837831",
@@ -270,7 +270,7 @@
     "displayLast": "Genther"
   },
   "hayden-merda": {
-    "personId": null,
+    "personId": "675296",
     "type": "pitcher",
     "displayFirst": "Hayden",
     "displayLast": "Merda"
@@ -288,13 +288,13 @@
     "displayLast": "Ledesma"
   },
   "jordarlin-mendoza": {
-    "personId": null,
+    "personId": "702212",
     "type": "pitcher",
     "displayFirst": "Jordarlin",
     "displayLast": "Mendoza"
   },
   "harrison-cohen": {
-    "personId": null,
+    "personId": "694660",
     "type": "pitcher",
     "displayFirst": "Harrison",
     "displayLast": "Cohen"
@@ -348,13 +348,13 @@
     "displayLast": "Castellanos"
   },
   "paul-gutierrez-contreras": {
-    "personId": null,
+    "personId": "827290",
     "type": "hitter",
     "displayFirst": "Paul",
     "displayLast": "Gutierrez-Contreras"
   },
   "estivenzon-montero": {
-    "personId": null,
+    "personId": "821028",
     "type": "hitter",
     "displayFirst": "Estivenzon",
     "displayLast": "Montero"
@@ -366,8 +366,8 @@
     "displayLast": "Montero"
   },
   "luis-velasquez": {
-    "personId": null,
-    "type": "pitcher",
+    "personId": "686433",
+    "type": "hitter",
     "displayFirst": "Luis",
     "displayLast": "Velasquez"
   },
@@ -378,8 +378,8 @@
     "displayLast": "Beck"
   },
   "justin-capellan": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "820886",
+    "type": "pitcher",
     "displayFirst": "Justin",
     "displayLast": "Capellan"
   },
@@ -402,20 +402,20 @@
     "displayLast": "Warrecker"
   },
   "blake-cyr": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "701331",
+    "type": "pitcher",
     "displayFirst": "Blake",
     "displayLast": "Cyr"
   },
   "connor-mcginnis": {
-    "personId": null,
+    "personId": "821296",
     "type": "hitter",
     "displayFirst": "Connor",
     "displayLast": "McGinnis"
   },
   "camden-troyer": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "803131",
+    "type": "pitcher",
     "displayFirst": "Camden",
     "displayLast": "Troyer"
   },
@@ -432,37 +432,37 @@
     "displayLast": "Hurd"
   },
   "wyatt-parliament": {
-    "personId": null,
+    "personId": "811963",
     "type": "pitcher",
     "displayFirst": "Wyatt",
     "displayLast": "Parliament"
   },
   "tyler-wilson": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "694834",
+    "type": "pitcher",
     "displayFirst": "Tyler",
     "displayLast": "Wilson"
   },
   "xavier-rivas": {
-    "personId": null,
+    "personId": "814392",
     "type": "hitter",
     "displayFirst": "Xavier",
     "displayLast": "Rivas"
   },
   "brandon-decker": {
-    "personId": null,
+    "personId": "804698",
     "type": "pitcher",
     "displayFirst": "Brandon",
     "displayLast": "Decker"
   },
   "cade-smith": {
-    "personId": null,
+    "personId": "694696",
     "type": "pitcher",
     "displayFirst": "Cade",
     "displayLast": "Smith"
   },
   "brian-hendry": {
-    "personId": null,
+    "personId": "809137",
     "type": "pitcher",
     "displayFirst": "Brian",
     "displayLast": "Hendry"
@@ -480,7 +480,7 @@
     "displayLast": "Hampton"
   },
   "will-brian": {
-    "personId": null,
+    "personId": "684608",
     "type": "pitcher",
     "displayFirst": "Will",
     "displayLast": "Brian"
@@ -492,7 +492,7 @@
     "displayLast": "Beltre"
   },
   "stalen-ramirez": {
-    "personId": null,
+    "personId": "830475",
     "type": "hitter",
     "displayFirst": "Stalen",
     "displayLast": "Ramirez"
@@ -504,8 +504,8 @@
     "displayLast": "Rivera"
   },
   "bear-harrison": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "824424",
+    "type": "pitcher",
     "displayFirst": "Bear",
     "displayLast": "Harrison"
   },
@@ -528,8 +528,8 @@
     "displayLast": "Boudreau"
   },
   "adrian-feliz": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "832447",
+    "type": "pitcher",
     "displayFirst": "Adrian",
     "displayLast": "Feliz"
   },
@@ -540,13 +540,13 @@
     "displayLast": "Austin"
   },
   "trent-sellers": {
-    "personId": null,
+    "personId": "815587",
     "type": "pitcher",
     "displayFirst": "Trent",
     "displayLast": "Sellers"
   },
   "geoffrey-gilbert": {
-    "personId": null,
+    "personId": "687280",
     "type": "pitcher",
     "displayFirst": "Geoffrey",
     "displayLast": "Gilbert"
@@ -564,10 +564,10 @@
     "displayLast": "Martinez Jr."
   },
   "yanquiel-fernandez": {
-    "personId": null,
+    "personId": "692585",
     "type": "hitter",
     "displayFirst": "Yanquiel",
-    "displayLast": "Fernández"
+    "displayLast": "Fern\u00e1ndez"
   },
   "manuel-palencia": {
     "personId": "692633",
@@ -579,13 +579,13 @@
     "personId": "800246",
     "type": "hitter",
     "displayFirst": "Engelth",
-    "displayLast": "Ureña"
+    "displayLast": "Ure\u00f1a"
   },
   "jasson-dominguez": {
     "personId": "691176",
     "type": "hitter",
     "displayFirst": "Jasson",
-    "displayLast": "Domínguez"
+    "displayLast": "Dom\u00ednguez"
   },
   "marco-luciano": {
     "personId": "682617",
@@ -594,20 +594,20 @@
     "displayLast": "Luciano"
   },
   "jojo-jackson": {
-    "personId": null,
+    "personId": "826142",
     "type": "hitter",
     "displayFirst": "JoJo",
     "displayLast": "Jackson"
   },
   "david-carrera": {
-    "personId": null,
+    "personId": "821683",
     "type": "hitter",
     "displayFirst": "David",
     "displayLast": "Carrera"
   },
   "garrett-martin": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "682003",
+    "type": "pitcher",
     "displayFirst": "Garrett",
     "displayLast": "Martin"
   },
@@ -618,7 +618,7 @@
     "displayLast": "Matos"
   },
   "dj-gladney": {
-    "personId": null,
+    "personId": "687554",
     "type": "hitter",
     "displayFirst": "DJ",
     "displayLast": "Gladney"
@@ -630,7 +630,7 @@
     "displayLast": "Burnett"
   },
   "tyler-hardman": {
-    "personId": null,
+    "personId": "676205",
     "type": "hitter",
     "displayFirst": "Tyler",
     "displayLast": "Hardman"
@@ -642,26 +642,26 @@
     "displayLast": "Tejeda"
   },
   "josue-gonzalez": {
-    "personId": null,
+    "personId": "700648",
     "type": "hitter",
     "displayFirst": "Josue",
-    "displayLast": "González"
+    "displayLast": "Gonz\u00e1lez"
   },
   "dariel-santana": {
-    "personId": null,
+    "personId": "825266",
     "type": "hitter",
     "displayFirst": "Dariel",
     "displayLast": "Santana"
   },
   "abrahan-pichardo": {
-    "personId": null,
+    "personId": "822264",
     "type": "hitter",
     "displayFirst": "Abrahan",
     "displayLast": "Pichardo"
   },
   "carlos-bello": {
-    "personId": null,
-    "type": "hitter",
+    "personId": "830470",
+    "type": "pitcher",
     "displayFirst": "Carlos",
     "displayLast": "Bello"
   },
@@ -672,13 +672,13 @@
     "displayLast": "Jerez"
   },
   "luis-serna": {
-    "personId": null,
+    "personId": "702436",
     "type": "pitcher",
     "displayFirst": "Luis",
     "displayLast": "Serna"
   },
   "rory-fox": {
-    "personId": null,
+    "personId": "812431",
     "type": "pitcher",
     "displayFirst": "Rory",
     "displayLast": "Fox"
@@ -702,7 +702,7 @@
     "displayLast": "Niu"
   },
   "franyer-herrera": {
-    "personId": null,
+    "personId": "800471",
     "type": "pitcher",
     "displayFirst": "Franyer",
     "displayLast": "Herrera"
@@ -714,43 +714,43 @@
     "displayLast": "Facundo"
   },
   "hansel-rincon": {
-    "personId": null,
+    "personId": "692550",
     "type": "pitcher",
     "displayFirst": "Hansel",
     "displayLast": "Rincon"
   },
   "brady-kirtner": {
-    "personId": null,
+    "personId": "802374",
     "type": "pitcher",
     "displayFirst": "Brady",
     "displayLast": "Kirtner"
   },
   "jack-sokol": {
-    "personId": null,
+    "personId": "694662",
     "type": "pitcher",
     "displayFirst": "Jack",
     "displayLast": "Sokol"
   },
   "chris-veach": {
-    "personId": null,
+    "personId": "810102",
     "type": "pitcher",
     "displayFirst": "Chris",
     "displayLast": "Veach"
   },
   "thomas-balboni": {
-    "personId": null,
-    "type": "pitcher",
+    "personId": "693647",
+    "type": "hitter",
     "displayFirst": "Thomas",
     "displayLast": "Balboni Jr."
   },
   "andrew-landry": {
-    "personId": null,
+    "personId": "815069",
     "type": "pitcher",
     "displayFirst": "Andrew",
     "displayLast": "Landry"
   },
   "pico-kohn": {
-    "personId": null,
+    "personId": "695560",
     "type": "pitcher",
     "displayFirst": "Pico",
     "displayLast": "Kohn"
@@ -844,5 +844,42 @@
     "type": "pitcher",
     "displayFirst": "J.T.",
     "displayLast": "Etheridge"
+  },
+  "kendry-diaz": {
+    "personId": "833200",
+    "type": "hitter",
+    "displayFirst": "Kendry",
+    "displayLast": "Diaz"
+  },
+  "kenneth-melendez": {
+    "personId": "837815",
+    "type": "hitter",
+    "displayFirst": "Kenneth",
+    "displayLast": "Melendez"
+  },
+  "jerson-alejandro": {
+    "personId": "808394",
+    "type": "pitcher",
+    "displayFirst": "Jerson",
+    "displayLast": "Alejandro"
+  },
+  "sean-paul-linan": {
+    "personId": "800344",
+    "type": "pitcher",
+    "displayFirst": "Sean Paul",
+    "displayLast": "Linan",
+    "displayLastAlt": "Liñan"
+  },
+  "jose-martinez": {
+    "personId": "814715",
+    "type": "pitcher",
+    "displayFirst": "Jose",
+    "displayLast": "Martinez"
+  },
+  "matt-keating": {
+    "personId": "702046",
+    "type": "pitcher",
+    "displayFirst": "Matt",
+    "displayLast": "Keating"
   }
 }
