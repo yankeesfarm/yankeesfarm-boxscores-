@@ -850,5 +850,24 @@
     "type": "hitter",
     "displayFirst": "Kendry",
     "displayLast": "Diaz"
+  },
+  "kenneth-melendez": {
+    "personId": "837815",
+    "type": "hitter",
+    "displayFirst": "Kenneth",
+    "displayLast": "Melendez"
+  },
+  "jerson-alejandro": {
+    "personId": "808394",
+    "type": "pitcher",
+    "displayFirst": "Jerson",
+    "displayLast": "Alejandro"
+  },
+  "sean-paul-linan": {
+    "personId": "800344",
+    "type": "pitcher",
+    "displayFirst": "Sean Paul",
+    "displayLast": "Linan",
+    "displayLastAlt": "Liñan"
   }
 }
