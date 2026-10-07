@@ -869,5 +869,17 @@
     "displayFirst": "Sean Paul",
     "displayLast": "Linan",
     "displayLastAlt": "Liñan"
+  },
+  "jose-martinez": {
+    "personId": "814715",
+    "type": "pitcher",
+    "displayFirst": "Jose",
+    "displayLast": "Martinez"
+  },
+  "matt-keating": {
+    "personId": "702046",
+    "type": "pitcher",
+    "displayFirst": "Matt",
+    "displayLast": "Keating"
   }
 }
