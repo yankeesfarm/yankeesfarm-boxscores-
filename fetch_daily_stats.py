@@ -112,8 +112,8 @@ MONTH_CODES = {3: "MAR", 4: "APR", 5: "MAY", 6: "JUN", 7: "JUL", 8: "AUG", 9: "S
 # get_player_stats_by_date_range().
 ROOKIE_TEAMS = [
     {"teamId": 475, "sportId": 16, "levelCode": "FCL", "levelLabel": "FCL Yankees (Rookie)"},
-    {"teamId": 635, "sportId": 16, "levelCode": "DSL", "levelLabel": "DSL NYY Yankees (Rookie)"},
-    {"teamId": 634, "sportId": 16, "levelCode": "DSL", "levelLabel": "DSL NYY Bombers (Rookie)"},
+    {"teamId": 635, "sportId": 16, "levelCode": "DSLY", "levelLabel": "DSL Yankees (Rookie)"},
+    {"teamId": 634, "sportId": 16, "levelCode": "DSLB", "levelLabel": "DSL Bombers (Rookie)"},
 ]
 
 # v4: The four full-season affiliates, swept dynamically via the Stats API
