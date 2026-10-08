@@ -1013,5 +1013,17 @@
     "type": "hitter",
     "displayFirst": "Richard",
     "displayLast": "Meran"
+  },
+  "junior-tavera": {
+    "personId": "812563",
+    "type": "pitcher",
+    "displayFirst": "Junior",
+    "displayLast": "Tavera"
+  },
+  "josh-tiedemann": {
+    "personId": "806244",
+    "type": "pitcher",
+    "displayFirst": "Josh",
+    "displayLast": "Tiedemann"
   }
 }
