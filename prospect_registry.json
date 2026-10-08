@@ -941,5 +941,29 @@
     "type": "hitter",
     "displayFirst": "Cole",
     "displayLast": "Gabrielson"
+  },
+  "jhon-beltre": {
+    "personId": "842321",
+    "type": "pitcher",
+    "displayFirst": "Jhon",
+    "displayLast": "Beltre"
+  },
+  "jose-vargas": {
+    "personId": "832788",
+    "type": "pitcher",
+    "displayFirst": "Jose",
+    "displayLast": "Vargas"
+  },
+  "austin-green": {
+    "personId": "809719",
+    "type": "hitter",
+    "displayFirst": "Austin",
+    "displayLast": "Green"
+  },
+  "michael-arias": {
+    "personId": "683522",
+    "type": "pitcher",
+    "displayFirst": "Michael",
+    "displayLast": "Arias"
   }
 }
