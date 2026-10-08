@@ -1001,5 +1001,17 @@
     "type": "pitcher",
     "displayFirst": "Ronald",
     "displayLast": "Tejada"
+  },
+  "luis-ilarraza": {
+    "personId": "821184",
+    "type": "pitcher",
+    "displayFirst": "Luis",
+    "displayLast": "Ilarraza"
+  },
+  "richard-meran": {
+    "personId": "808152",
+    "type": "hitter",
+    "displayFirst": "Richard",
+    "displayLast": "Meran"
   }
 }
