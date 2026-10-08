@@ -965,5 +965,23 @@
     "type": "pitcher",
     "displayFirst": "Michael",
     "displayLast": "Arias"
+  },
+  "manuel-cruz": {
+    "personId": "825268",
+    "type": "pitcher",
+    "displayFirst": "Manuel",
+    "displayLast": "Cruz"
+  },
+  "marco-manzano": {
+    "personId": "821070",
+    "type": "pitcher",
+    "displayFirst": "Marco",
+    "displayLast": "Manzano"
+  },
+  "osveiker-chirino": {
+    "personId": "842283",
+    "type": "pitcher",
+    "displayFirst": "Osveiker",
+    "displayLast": "Chirino"
   }
 }
