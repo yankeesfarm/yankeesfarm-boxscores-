@@ -983,5 +983,23 @@
     "type": "pitcher",
     "displayFirst": "Osveiker",
     "displayLast": "Chirino"
+  },
+  "kevin-centeno": {
+    "personId": "830400",
+    "type": "pitcher",
+    "displayFirst": "Kevin",
+    "displayLast": "Centeno"
+  },
+  "breidy-adames": {
+    "personId": "842835",
+    "type": "pitcher",
+    "displayFirst": "Breidy",
+    "displayLast": "Adames"
+  },
+  "ronald-tejada": {
+    "personId": "827348",
+    "type": "pitcher",
+    "displayFirst": "Ronald",
+    "displayLast": "Tejada"
   }
 }
