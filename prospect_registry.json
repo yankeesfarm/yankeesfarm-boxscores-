@@ -1043,5 +1043,29 @@
     "type": "pitcher",
     "displayFirst": "Angel",
     "displayLast": "Salazar"
+  },
+  "hector-moreno": {
+    "personId": "825396",
+    "type": "pitcher",
+    "displayFirst": "Hector",
+    "displayLast": "Moreno"
+  },
+  "sebastian-rivas": {
+    "personId": "837781",
+    "type": "pitcher",
+    "displayFirst": "Sebastian",
+    "displayLast": "Rivas"
+  },
+  "victor-de-leon": {
+    "personId": "837834",
+    "type": "pitcher",
+    "displayFirst": "Victor",
+    "displayLast": "De Leon"
+  },
+  "eddison-charles": {
+    "personId": "830458",
+    "type": "hitter",
+    "displayFirst": "Eddison",
+    "displayLast": "Charles"
   }
 }
