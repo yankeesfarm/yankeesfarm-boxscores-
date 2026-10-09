@@ -1067,5 +1067,23 @@
     "type": "hitter",
     "displayFirst": "Eddison",
     "displayLast": "Charles"
+  },
+  "jose-lavagnino": {
+    "personId": "832717",
+    "type": "hitter",
+    "displayFirst": "Jose",
+    "displayLast": "Lavagnino"
+  },
+  "eliezer-adames": {
+    "personId": "830414",
+    "type": "hitter",
+    "displayFirst": "Eliezer",
+    "displayLast": "Adames"
+  },
+  "jesus-guerrero": {
+    "personId": "815334",
+    "type": "hitter",
+    "displayFirst": "Jesus",
+    "displayLast": "Guerrero"
   }
 }
