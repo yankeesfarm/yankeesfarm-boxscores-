@@ -1139,5 +1139,35 @@
     "type": "pitcher",
     "displayFirst": "Ocean",
     "displayLast": "Gabonia"
+  },
+  "varis-villarreal": {
+    "personId": "827472",
+    "type": "pitcher",
+    "displayFirst": "Varis",
+    "displayLast": "Villarreal"
+  },
+  "emanuel-vargas": {
+    "personId": "808375",
+    "type": "pitcher",
+    "displayFirst": "Emanuel",
+    "displayLast": "Vargas"
+  },
+  "kevin-stevens": {
+    "personId": "805728",
+    "type": "pitcher",
+    "displayFirst": "Kevin",
+    "displayLast": "Stevens"
+  },
+  "zach-messinger": {
+    "personId": "684725",
+    "type": "pitcher",
+    "displayFirst": "Zach",
+    "displayLast": "Messinger"
+  },
+  "mack-estrada": {
+    "personId": "806070",
+    "type": "pitcher",
+    "displayFirst": "Mack",
+    "displayLast": "Estrada"
   }
 }
