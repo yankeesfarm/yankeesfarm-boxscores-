@@ -1085,5 +1085,29 @@
     "type": "hitter",
     "displayFirst": "Jesus",
     "displayLast": "Guerrero"
+  },
+  "andre-avila": {
+    "personId": "830403",
+    "type": "pitcher",
+    "displayFirst": "Andre",
+    "displayLast": "Avila"
+  },
+  "alexander-almonte": {
+    "personId": "823012",
+    "type": "pitcher",
+    "displayFirst": "Alexander",
+    "displayLast": "Almonte"
+  },
+  "blake-schaaf": {
+    "personId": "821877",
+    "type": "hitter",
+    "displayFirst": "Blake",
+    "displayLast": "Schaaf"
+  },
+  "diomedes-hernandez": {
+    "personId": "800299",
+    "type": "hitter",
+    "displayFirst": "Diomedes",
+    "displayLast": "Hernandez"
   }
 }
