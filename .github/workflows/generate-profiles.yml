@@ -1,0 +1,43 @@
+name: Generate Prospect Profiles
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate profiles for missing players
+        env:
+          SEASON: '2026'
+        run: |
+          python3 generate_profiles.py \
+            --only-missing \
+            --missing-slugs-file data/profiles/missing_slugs.txt \
+            --directory-data data/profiles/directory_affiliates.json \
+            --output data/profiles/new_profiles.js
+      - name: Upload generated profiles
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-profiles
+          path: |
+            data/profiles/new_profiles.js
+            data/profiles/new_profiles.json
+          retention-days: 30
+      - name: Show summary
+        run: |
+          echo "## Profile Generation Results" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/profiles/new_profiles.json ]; then
+            cat data/profiles/new_profiles.json >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Download the artifact 'new-profiles' to get the JS code." >> $GITHUB_STEP_SUMMARY
+          wc -l data/profiles/new_profiles.js >> $GITHUB_STEP_SUMMARY
