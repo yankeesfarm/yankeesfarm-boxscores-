@@ -1109,5 +1109,35 @@
     "type": "hitter",
     "displayFirst": "Diomedes",
     "displayLast": "Hernandez"
+  },
+  "braulio-jaquez": {
+    "personId": "843590",
+    "type": "pitcher",
+    "displayFirst": "Braulio",
+    "displayLast": "Jaquez"
+  },
+  "freddy-lopez": {
+    "personId": "840309",
+    "type": "pitcher",
+    "displayFirst": "Freddy",
+    "displayLast": "Lopez"
+  },
+  "enixon-sanchez": {
+    "personId": "821198",
+    "type": "pitcher",
+    "displayFirst": "Enixon",
+    "displayLast": "Sanchez"
+  },
+  "jason-krieger": {
+    "personId": "842070",
+    "type": "pitcher",
+    "displayFirst": "Jason",
+    "displayLast": "Krieger"
+  },
+  "ocean-gabonia": {
+    "personId": "695589",
+    "type": "pitcher",
+    "displayFirst": "Ocean",
+    "displayLast": "Gabonia"
   }
 }
