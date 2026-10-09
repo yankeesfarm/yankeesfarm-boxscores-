@@ -1025,5 +1025,23 @@
     "type": "pitcher",
     "displayFirst": "Josh",
     "displayLast": "Tiedemann"
+  },
+  "john-rosillo": {
+    "personId": "837798",
+    "type": "hitter",
+    "displayFirst": "John",
+    "displayLast": "Rosillo"
+  },
+  "emmanuel-orozco": {
+    "personId": "832789",
+    "type": "hitter",
+    "displayFirst": "Emmanuel",
+    "displayLast": "Orozco"
+  },
+  "angel-salazar": {
+    "personId": "837827",
+    "type": "pitcher",
+    "displayFirst": "Angel",
+    "displayLast": "Salazar"
   }
 }
