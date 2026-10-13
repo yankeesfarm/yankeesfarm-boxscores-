@@ -58,6 +58,14 @@ def push(endpoint_url, secret, payload, period):
             print(f"AUTH FAILURE ({resp.status_code}): check WIX_PUSH_SECRET matches on both "
                   f"sides. Response: {resp.text[:300]}")
             return False
+        # 404 means the Wix route does not exist (missing/renamed in
+        # http-functions.js, or not published, or the endpoint secret is wrong).
+        # Retrying will not fix it -- fail fast with a clear message.
+        if resp.status_code == 404:
+            print(f"ROUTE NOT FOUND (404): the Wix endpoint for period '{period}' does not exist. "
+                  f"Check the matching post_ function is in http-functions.js and PUBLISHED, "
+                  f"and that the endpoint secret matches its route name.")
+            return False
         last_exc = RuntimeError(f"{resp.status_code}: {resp.text[:300]}")
         print(f"Attempt {attempt}/{MAX_RETRIES} failed: {last_exc}")
         time.sleep(3 * attempt)

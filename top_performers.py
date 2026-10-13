@@ -23,6 +23,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from dsl_fcl_boxscores import get_season_totals, LEVEL_LABELS
+from season_window import top_performers_in_season
 
 HEADSHOT_URL = "https://midfield.mlbstatic.com/v1/people/{id}/spots/120"
 
@@ -362,6 +363,11 @@ def main():
     default_date = (date.today() - timedelta(days=1)).isoformat()
     game_date    = sys.argv[1] if len(sys.argv) > 1 else default_date
     season = game_date.split("-")[0]
+
+    if not top_performers_in_season(game_date):
+        print(f"{game_date} is outside the season window (Top Performers ends "
+              f"Sep 30) -- nothing to build.")
+        return
 
     boxscore_path = Path("output") / f"{game_date}_yankees_boxscores.json"
     if not boxscore_path.exists():

@@ -23,6 +23,8 @@ import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
 
+from season_window import top_performers_in_season
+
 WIX_ENDPOINT = "https://www.yankeesfarmreport.com/_functions/top_performers"
 WIX_PUSH_SECRET_HEADER = "X-Yankeesfarm-Secret"
 
@@ -30,6 +32,11 @@ WIX_PUSH_SECRET_HEADER = "X-Yankeesfarm-Secret"
 def main():
     default_date = (date.today() - timedelta(days=1)).isoformat()
     game_date    = sys.argv[1] if len(sys.argv) > 1 else default_date
+
+    if not top_performers_in_season(game_date):
+        print(f"{game_date} is outside the season window (Top Performers ends "
+              f"Sep 30) -- skipping push.")
+        return
 
     payload_path = Path("output") / f"{game_date}_top_performers.json"
     if not payload_path.exists():
