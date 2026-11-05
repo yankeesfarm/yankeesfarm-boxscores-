@@ -64,6 +64,45 @@ export async function post_incrementView(request) {
 }
 export async function options_incrementView(request) { return ok({ headers: cors() }); }
 
+// ---------------------------------------------------------------------------
+// Player videos + articles on prospect profiles.
+// Both are computed at request time, so a new YouTube upload or a new blog
+// post that mentions a player shows up on his profile with no manual step.
+// Results are cached 5 minutes per server instance to protect API quotas.
+// ---------------------------------------------------------------------------
+const CACHE_MS = 5 * 60 * 1000;
+const _cache = {};
+async function cached(key, loader) {
+  const hit = _cache[key];
+  if (hit && Date.now() - hit.at < CACHE_MS) return hit.value;
+  const value = await loader();
+  _cache[key] = { at: Date.now(), value };
+  return value;
+}
+
+// Every item of one YouTube playlist (follows nextPageToken -- the API caps
+// a page at 50, so reading only page 1 would hide the newest uploads once a
+// playlist passes 50 videos).
+async function getPlaylistItems(playlistId, apiKey) {
+  return cached("pl:" + playlistId, async () => {
+    const items = [];
+    let pageToken = "";
+    for (let page = 0; page < 20; page++) {
+      const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${encodeURIComponent(playlistId)}&key=${apiKey}` +
+        (pageToken ? `&pageToken=${encodeURIComponent(pageToken)}` : "");
+      const res = await fetch(url, { method: "get" });
+      const data = await res.json();
+      if (data.error) throw new Error("YouTube API: " + (data.error.message || "error") + " (playlist " + playlistId + ")");
+      items.push(...(data.items || []));
+      pageToken = data.nextPageToken;
+      if (!pageToken) break;
+    }
+    return items;
+  });
+}
+
+// playlistId may be one id or a comma-separated list (e.g. one playlist per
+// team/year), so a player's clips from every level appear together.
 export async function get_getPlayerVideos(request) {
   try {
     const { playlistId, firstName, lastName } = request.query;
@@ -71,18 +110,21 @@ export async function get_getPlayerVideos(request) {
       return badRequest({ headers: noCache(), body: { error: "Missing playlistId, firstName, or lastName" } });
     }
     const apiKey = await getSecret("youtube-api-key");
-    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=${encodeURIComponent(playlistId)}&key=${apiKey}`;
-    const res = await fetch(url, { method: "get" });
-    const data = await res.json();
     const first = firstName.toLowerCase();
     const last = lastName.toLowerCase();
-    const videoIds = (data.items || [])
-      .filter(item => {
-        const title = (item.snippet?.title || "").toLowerCase();
-        return title.includes(first) && title.includes(last);
-      })
-      .slice(-4)
-      .map(item => item.snippet.resourceId.videoId);
+    const ids = playlistId.split(",").map(x => x.trim()).filter(Boolean);
+    const lists = await Promise.all(ids.map(id => getPlaylistItems(id, apiKey)));
+    const seen = new Set();
+    const matches = [];
+    for (const item of lists.flat()) {
+      const title = (item.snippet?.title || "").toLowerCase();
+      const vid = item.snippet?.resourceId?.videoId;
+      if (!vid || seen.has(vid) || !title.includes(first) || !title.includes(last)) continue;
+      seen.add(vid);
+      matches.push({ vid, at: item.snippet?.publishedAt || "" });
+    }
+    matches.sort((x, y) => (y.at > x.at ? 1 : y.at < x.at ? -1 : 0)); // newest first
+    const videoIds = matches.slice(0, 4).map(m => m.vid);
     return ok({ headers: noCache(), body: { videoIds } });
   } catch (err) {
     return serverError({ headers: noCache(), body: { error: err.message } });
@@ -90,26 +132,39 @@ export async function get_getPlayerVideos(request) {
 }
 export async function options_getPlayerVideos(request) { return ok({ headers: cors() }); }
 
+// All published posts, every category, paged 100 at a time (queryPosts
+// defaults to 50 and caps at 100, so a single call silently drops older posts).
+async function getAllPosts() {
+  return cached("allPosts", async () => {
+    const all = [];
+    let res = await posts.queryPosts().limit(100).find();
+    all.push(...res.items);
+    while (res.hasNext() && all.length < 2000) {
+      res = await res.next();
+      all.push(...res.items);
+    }
+    return all;
+  });
+}
+
+// Any article that names the player -- Editorial, Prospect Notebook, POTW,
+// Prospect Spotlight, IFA/Draft news, everything -- newest first.
 export async function get_getPlayerArticles(request) {
   try {
     const { firstName, lastName } = request.query;
     if (!firstName || !lastName) {
       return badRequest({ headers: noCache(), body: { error: "Missing firstName or lastName" } });
     }
-    const categoryResults = await categories.queryCategories().eq("label", "Prospect Spotlight").find();
-    if (!categoryResults.items.length) {
-      return ok({ headers: noCache(), body: { articles: [] } });
-    }
-    const categoryId = categoryResults.items[0]._id;
-    const postResults = await posts.queryPosts().hasSome("categoryIds", [categoryId]).find();
     const first = firstName.toLowerCase();
     const last = lastName.toLowerCase();
-    const matches = postResults.items.filter(p => {
+    const matches = (await getAllPosts()).filter(p => {
       const searchableText = [p.title, p.excerpt, p.plainContent, p.contentText].filter(Boolean).join(" ").toLowerCase();
       return searchableText.includes(first) && searchableText.includes(last);
     });
-    const articles = matches.map(p => ({
+    matches.sort((x, y) => new Date(y.firstPublishedDate || 0) - new Date(x.firstPublishedDate || 0));
+    const articles = matches.slice(0, 12).map(p => ({
       title: p.title, excerpt: p.excerpt,
+      publishedDate: p.firstPublishedDate || null,
       url: p.url ? p.url.base + p.url.path : null,
       coverImage: p.coverMedia && p.coverMedia.image ? p.coverMedia.image.url : null
     }));
