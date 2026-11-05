@@ -316,10 +316,43 @@ def build_wrc_lookups(season):
     return combined, perlevel
 
 
+# ---- Trophy Case: MLB / MiLB awards only -------------------------------------
+def fetch_awards(pid):
+    """Official MLB/MiLB awards from the MLB Stats API (/people/{id}/awards):
+    league & organization honors such as Player of the Week/Month and
+    post-season All-Star teams.  Nothing from YankeesFarm's own content is
+    included.  Returns newest-first [{name, date, season, team}], [] if the
+    player has none, or None if the call failed (profile then keeps what it has)."""
+    try:
+        r = requests.get(f"{BASE}/people/{pid}/awards", timeout=30)
+        r.raise_for_status()
+        rows = r.json().get("awards", [])
+    except Exception:
+        return None
+    out, seen = [], set()
+    for a in rows:
+        name = (a.get("name") or "").strip()
+        if not name:
+            continue
+        date_ = a.get("date") or ""
+        season = str(a.get("season") or date_[:4])
+        team = (a.get("team") or {}).get("name") or ""
+        key = (name, date_, season, team)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({"name": name, "date": date_, "season": season, "team": team})
+    out.sort(key=lambda x: (x["date"], x["season"]), reverse=True)
+    return out
+
+
 # ---- push -------------------------------------------------------------------
-def push(mlb_id, slug, group, seasons, splits):
+def push(mlb_id, slug, group, seasons, splits, awards=None):
+    stats = {"seasons": seasons}
+    if awards is not None:
+        stats["awards"] = awards
     payload = {"mlbId": mlb_id, "slug": slug, "group": group, "season": SEASON,
-               "stats": {"seasons": seasons}, "splits": splits}
+               "stats": stats, "splits": splits}
     r = requests.post(WIX_PUSH_URL, json=payload,
                       headers={"Authorization": f"Bearer {PUSH_SECRET}"}, timeout=30)
     r.raise_for_status()
@@ -369,7 +402,7 @@ def main():
                     season_obj["combinedWRC"] = cw
 
             splits = fetch_splits(pid, group)
-            push(pid, slug, group, [season_obj], splits)
+            push(pid, slug, group, [season_obj], splits, fetch_awards(pid))
             ok += 1
             levels = "/".join(s["level"] or "?" for s in stints)
             flag = "" if splits else "  (splits kept curated)"
