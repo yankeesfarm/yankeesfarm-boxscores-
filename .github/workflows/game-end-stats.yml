@@ -46,6 +46,11 @@ jobs:
         env:
           WIX_STATS_PUSH_KEY: ${{ secrets.WIX_STATS_PUSH_KEY }}
         run: python3 fetch_daily_stats.py
+      - name: Refresh Trophy Case (official MLB/MiLB awards)
+        if: steps.gate.outputs.has_new == 'true'
+        env:
+          WIX_STATS_PUSH_KEY: ${{ secrets.WIX_STATS_PUSH_KEY }}
+        run: python3 push_prospect_awards.py
       - name: Refresh prospect profile stats (levels, splits, wRC+)
         if: steps.gate.outputs.has_new == 'true'
         env:
