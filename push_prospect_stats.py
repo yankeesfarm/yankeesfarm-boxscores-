@@ -61,8 +61,8 @@ BASE = "https://statsapi.mlb.com/api/v1"
 # team_id -> profile level code + label (stable MLB team ids, same as pipeline)
 TEAM_META = {
     531: ("AAA",  "Scranton/Wilkes-Barre RailRiders (Triple-A)"),
-    589: ("AA",   "Somerset Patriots (Double-A)"),
-    588: ("HIA",  "Hudson Valley Renegades (High-A)"),
+    1956: ("AA",   "Somerset Patriots (Double-A)"),
+    537: ("HIA",  "Hudson Valley Renegades (High-A)"),
     587: ("LOA",  "Tampa Tarpons (Low-A)"),
     475: ("FCL",  "FCL Yankees (Rookie)"),
     635: ("DSLY", "DSL Yankees (Rookie)"),
