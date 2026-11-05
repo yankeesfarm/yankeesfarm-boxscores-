@@ -1,0 +1,63 @@
+name: Game-End Stats Refresh
+
+# Runs every 30 minutes through the evening/overnight window, and every
+# 30 minutes through the afternoon for day games.  Each run first asks the
+# MLB API whether any Yankees affiliate game has newly gone Final
+# (live_gate.py); if none, it exits in seconds and touches nothing.  If
+# one has, it refreshes the prospect stats that feed every profile page.
+#
+# Cron is UTC, so the windows below are wide enough to cover BOTH EDT and
+# EST (no yearly clock-change edits needed):
+#   evening/overnight: 22:00-07:59 UTC = 6pm-3:59am EDT / 5pm-2:59am EST
+#   day games:         15:00-21:59 UTC = 11am-5:59pm EDT / 10am-4:59pm EST
+# DSL games finish earlier in the day, and are picked up by the same gate.
+
+on:
+  schedule:
+    - cron: '*/30 15-23,0-7 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: game-end-stats
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Any newly final games?
+        id: gate
+        run: python3 live_gate.py check
+      - name: Install Playwright browser (wRC+ from FanGraphs)
+        if: steps.gate.outputs.has_new == 'true'
+        run: python -m playwright install --with-deps chromium
+      - name: Refresh daily prospect stats
+        if: steps.gate.outputs.has_new == 'true'
+        env:
+          WIX_STATS_PUSH_KEY: ${{ secrets.WIX_STATS_PUSH_KEY }}
+        run: python3 fetch_daily_stats.py
+      - name: Refresh prospect profile stats (levels, splits, wRC+)
+        if: steps.gate.outputs.has_new == 'true'
+        env:
+          WIX_PUSH_SECRET: ${{ secrets.WIX_PUSH_SECRET }}
+          WIX_PROSPECTS_ENDPOINT: ${{ secrets.WIX_PROSPECTS_ENDPOINT }}
+        run: python3 push_prospect_stats.py
+      - name: Mark games processed
+        if: steps.gate.outputs.has_new == 'true'
+        run: |
+          python3 live_gate.py commit
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/processed_games.json
+          git commit -m "Processed final games $(date -u +%FT%TZ)" || echo "Nothing to commit"
+          git pull --rebase -q && git push
