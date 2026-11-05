@@ -175,6 +175,19 @@ export async function get_getPlayerArticles(request) {
 }
 export async function options_getPlayerArticles(request) { return ok({ headers: cors() }); }
 
+// ProspectStats has no dedicated columns for monthly totals or awards, so they
+// ride inside splitsJSON under reserved keys (no schema change needed).
+// getPlayerStats strips them out of `splits` and returns them separately, so
+// existing profile code that reads `splits` is unaffected.
+const EXTRA_KEYS = ["monthlyTrend", "awards"];
+
+function parseObj(text) {
+  try {
+    const v = text ? JSON.parse(text) : null;
+    return v && typeof v === "object" && !Array.isArray(v) ? v : null;
+  } catch (e) { return null; }
+}
+
 export async function get_getPlayerStats(request) {
   try {
     const { slug } = request.query;
@@ -184,10 +197,15 @@ export async function get_getPlayerStats(request) {
       return ok({ headers: noCache(), body: { found: false } });
     }
     const item = results.items[0];
+    const all = parseObj(item.splitsJSON) || {};
+    const splits = {};
+    for (const k of Object.keys(all)) if (!EXTRA_KEYS.includes(k)) splits[k] = all[k];
     return ok({ headers: noCache(), body: {
       found: true,
       seasons: item.seasonsJSON ? JSON.parse(item.seasonsJSON) : null,
-      splits: item.splitsJSON ? JSON.parse(item.splitsJSON) : null,
+      splits: Object.keys(splits).length ? splits : null,
+      monthlyTrend: all.monthlyTrend || null,
+      awards: all.awards || null,
       lastUpdated: item.lastUpdated
     }});
   } catch (err) {
@@ -196,6 +214,8 @@ export async function get_getPlayerStats(request) {
 }
 export async function options_getPlayerStats(request) { return ok({ headers: cors() }); }
 
+// Only the fields present in the request are changed -- a push that carries
+// just awards (or just monthly totals) no longer wipes seasons/splits.
 export async function post_updatePlayerStats(request) {
   try {
     const body = await request.body.json();
@@ -204,15 +224,28 @@ export async function post_updatePlayerStats(request) {
       return badRequest({ headers: cors(), body: { error: "Invalid key" } });
     }
     if (!body.slug) return badRequest({ headers: cors(), body: { error: "Missing slug" } });
-    const existing = await wixData.query("ProspectStats").eq("slug", body.slug).find();
+    const found = await wixData.query("ProspectStats").eq("slug", body.slug).find();
+    const existing = found.items[0] || null;
+
+    const old = existing ? (parseObj(existing.splitsJSON) || {}) : {};
+    const merged = {};
+    // core splits: replace only when a new splits object is supplied
+    const coreSource = body.splits && typeof body.splits === "object" && !Array.isArray(body.splits) ? body.splits : old;
+    for (const k of Object.keys(coreSource)) if (!EXTRA_KEYS.includes(k)) merged[k] = coreSource[k];
+    // extras: replace when supplied (array), otherwise keep what is stored
+    for (const k of EXTRA_KEYS) {
+      if (Array.isArray(body[k])) merged[k] = body[k];
+      else if (old[k]) merged[k] = old[k];
+    }
+
     const record = {
       slug: body.slug,
-      seasonsJSON: JSON.stringify(body.seasons || null),
-      splitsJSON: JSON.stringify(body.splits || null),
+      seasonsJSON: body.seasons ? JSON.stringify(body.seasons) : (existing ? existing.seasonsJSON : JSON.stringify(null)),
+      splitsJSON: JSON.stringify(Object.keys(merged).length ? merged : null),
       lastUpdated: new Date()
     };
-    if (existing.items.length) {
-      record._id = existing.items[0]._id;
+    if (existing) {
+      record._id = existing._id;
       await wixData.update("ProspectStats", record, { suppressAuth: true });
     } else {
       await wixData.insert("ProspectStats", record, { suppressAuth: true });
