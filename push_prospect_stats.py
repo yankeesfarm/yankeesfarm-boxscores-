@@ -346,9 +346,77 @@ def fetch_awards(pid):
     return out
 
 
+# ---- Monthly totals (Trending This Season) -----------------------------------
+MONTH_NAMES = {3: "MAR", 4: "APR", 5: "MAY", 6: "JUN", 7: "JUL", 8: "AUG", 9: "SEP", 10: "OCT"}
+
+def _num(st, key):
+    try:
+        return float(st.get(key) or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+def fetch_monthly(pid, group):
+    """Per-calendar-month totals for the season, summed across every Yankees
+    level the player played at that month (promotion-safe), with rates
+    recomputed from the summed counting stats.  Uses the MLB Stats API
+    'byMonth' stat type.  Returns [{month, label, ...}] in calendar order, []
+    if no games, or None if the call failed (profile keeps what it has)."""
+    params = {"stats": "byMonth", "group": group, "season": SEASON,
+              "sportIds": "11,12,13,14,16"}
+    try:
+        r = requests.get(f"{BASE}/people/{pid}/stats", params=params, timeout=30)
+        r.raise_for_status()
+        blocks = r.json().get("stats", [])
+    except Exception:
+        return None
+    acc = {}
+    for b in blocks:
+        for sp in b.get("splits", []):
+            m = sp.get("month")
+            if not m:
+                continue
+            m = int(m)
+            st = sp.get("stat", {})
+            a = acc.setdefault(m, {})
+            keys = (("atBats", "hits", "doubles", "homeRuns", "baseOnBalls", "strikeOuts",
+                     "stolenBases", "plateAppearances", "gamesPlayed")
+                    if group == "hitting" else
+                    ("battersFaced", "strikeOuts", "baseOnBalls", "earnedRuns", "hits",
+                     "homeRuns", "gamesPlayed"))
+            for k in keys:
+                a[k] = a.get(k, 0.0) + _num(st, k)
+            if group == "pitching":
+                a["outs"] = a.get("outs", 0) + ip_to_outs(st.get("inningsPitched", "0.0"))
+    out = []
+    for m in sorted(acc):
+        a = acc[m]
+        row = {"month": m, "label": MONTH_NAMES.get(m, str(m)), "G": int(a.get("gamesPlayed", 0))}
+        if group == "hitting":
+            ab, pa = a["atBats"], a["plateAppearances"]
+            row.update({
+                "AVG": _r3(a["hits"] / ab) if ab else None,
+                "2B": int(a["doubles"]), "HR": int(a["homeRuns"]), "SB": int(a["stolenBases"]),
+                "BBpct": round(100 * a["baseOnBalls"] / pa, 1) if pa else None,
+                "Kpct": round(100 * a["strikeOuts"] / pa, 1) if pa else None,
+            })
+        else:
+            bf, outs = a["battersFaced"], a["outs"]
+            row.update({
+                "IP": outs_to_ip_float(outs),
+                "ERA": _r2(9 * a["earnedRuns"] / (outs / 3)) if outs else None,
+                "K": int(a["strikeOuts"]), "BB": int(a["baseOnBalls"]),
+                "Kpct": round(100 * a["strikeOuts"] / bf, 1) if bf else None,
+                "BBpct": round(100 * a["baseOnBalls"] / bf, 1) if bf else None,
+            })
+        out.append(row)
+    return out
+
+
 # ---- push -------------------------------------------------------------------
-def push(mlb_id, slug, group, seasons, splits, awards=None):
+def push(mlb_id, slug, group, seasons, splits, awards=None, monthly=None):
     stats = {"seasons": seasons}
+    if monthly is not None:
+        stats["monthly"] = monthly
     if awards is not None:
         stats["awards"] = awards
     payload = {"mlbId": mlb_id, "slug": slug, "group": group, "season": SEASON,
@@ -402,7 +470,7 @@ def main():
                     season_obj["combinedWRC"] = cw
 
             splits = fetch_splits(pid, group)
-            push(pid, slug, group, [season_obj], splits, fetch_awards(pid))
+            push(pid, slug, group, [season_obj], splits, fetch_awards(pid), fetch_monthly(pid, group))
             ok += 1
             levels = "/".join(s["level"] or "?" for s in stints)
             flag = "" if splits else "  (splits kept curated)"
