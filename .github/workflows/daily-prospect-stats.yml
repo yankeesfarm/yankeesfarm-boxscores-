@@ -26,6 +26,9 @@ on:
     # 2:00pm ET, Monday only. 2pm ET = 18:00 UTC, no rollover.
     - cron: '0 18 * * 1'
   workflow_dispatch:
+  push:
+    paths:
+      - '.refresh-profiles'
 
 jobs:
   fetch:
