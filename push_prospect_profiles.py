@@ -89,7 +89,7 @@ def get_year_by_year(person_id, group):
     data = _get(f"/people/{person_id}/stats", {
         "stats": "yearByYear",
         "group": group,
-        "season": SEASON,
+        "leagueListId": "milb_all",  # minor-league history; default query returns MLB only
     })
     stats_list = data.get("stats", [])
     if not stats_list:
@@ -124,7 +124,7 @@ def build_seasons_hitter(splits):
         if not year or not stat:
             continue
         # Skip MLB stats (sport_id 1) — only MiLB
-        if sport_id == 1:
+        if sport_id in (1, 21) or not team_id:  # skip MLB + MLB aggregate "all minors" rows
             continue
 
         ab = int(stat.get("atBats", 0) or 0)
@@ -192,7 +192,7 @@ def build_seasons_pitcher(splits):
 
         if not year or not stat:
             continue
-        if sport_id == 1:
+        if sport_id in (1, 21) or not team_id:  # skip MLB + MLB aggregate "all minors" rows
             continue
 
         ip_raw = stat.get("inningsPitched", "0")
