@@ -384,6 +384,29 @@ def build_monthly_trend_pitcher(person_id):
     return trend
 
 
+def carry_over_wrc(endpoint, slug, seasons):
+    """Daily job stores wRC+ (FanGraphs) on hitter stints; keep it when history is re-pushed."""
+    try:
+        get_url = endpoint.replace("updatePlayerStats", "getPlayerStats")
+        r = requests.get(get_url, params={"slug": slug}, timeout=20)
+        old = (r.json().get("seasons") or []) if r.ok else []
+    except Exception:
+        return seasons
+    old_by_year = {o.get("year"): o for o in old}
+    for se in seasons:
+        o = old_by_year.get(se["year"])
+        if not o:
+            continue
+        if o.get("combinedWRC") is not None:
+            se["combinedWRC"] = o["combinedWRC"]
+        by_level = {st.get("level"): st for st in o.get("stints", [])}
+        for st in se["stints"]:
+            prev = by_level.get(st.get("level"))
+            if prev and prev.get("WRC") is not None and st.get("WRC") is None:
+                st["WRC"] = prev["WRC"]
+    return seasons
+
+
 def push_to_wix(endpoint, key, slug, seasons, splits, monthly_trend):
     """POST to updatePlayerStats."""
     payload = {
@@ -481,6 +504,8 @@ def main():
                     json.dump({"slug": slug, "seasons": seasons, "splits": splits, "monthlyTrend": monthly}, f, indent=2)
                 success += 1
             else:
+                if ptype == "hitter":
+                    seasons = carry_over_wrc(endpoint, slug, seasons)
                 ok = push_to_wix(endpoint, push_key, slug, seasons, splits, monthly)
                 if ok:
                     success += 1
