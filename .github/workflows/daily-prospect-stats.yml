@@ -41,3 +41,10 @@ jobs:
         env:
           WIX_STATS_PUSH_KEY: ${{ secrets.WIX_STATS_PUSH_KEY }}
         run: python3 fetch_daily_stats.py
+      # The daily fetch above writes only the current-team 2026 stint. Re-push full
+      # year-by-year history, splits and trends so prior seasons/levels are not lost.
+      - name: Restore full profile history (all seasons, all levels)
+        env:
+          PROSPECT_PUSH_ENDPOINT: ${{ secrets.PROSPECT_PUSH_ENDPOINT }}
+          PROSPECT_PUSH_KEY: ${{ secrets.PROSPECT_PUSH_KEY }}
+        run: python3 push_prospect_profiles.py
