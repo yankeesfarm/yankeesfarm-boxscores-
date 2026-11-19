@@ -426,7 +426,7 @@ def build_bio(person_id):
                       "pick": pk, "bonus": bonus or "—", "team": (d.get("team") or {}).get("name")})
         # signedVia only when the draft record proves it; otherwise the page shows "Details TBD"
         put("signedVia", "college" if cols else "hs")
-    put("headshotUrl", f"https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/{person_id}/headshot/67/current")
+    put("headshotUrl", f"https://img.mlbstatic.com/mlb-photos/image/upload/ar_1:1,b_auto:border,c_pad,q_auto:best/w_180/v1/people/{person_id}/headshot/milb/current")
     return bio
 
 
