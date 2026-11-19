@@ -98,16 +98,20 @@ def get_year_by_year(person_id, group):
 
 
 def get_game_log(person_id, group, season):
-    """Fetch a player's full game log for a season."""
-    data = _get(f"/people/{person_id}/stats", {
-        "stats": "gameLog",
-        "group": group,
-        "season": season,
-    })
-    stats_list = data.get("stats", [])
-    if not stats_list:
-        return []
-    return stats_list[0].get("splits", [])
+    """Fetch a player's full game log for a season across every level.
+    The API returns nothing for minor leaguers unless sportId is given."""
+    games = []
+    for sport_id in (1, 11, 12, 13, 14, 16):
+        data = _get(f"/people/{person_id}/stats", {
+            "stats": "gameLog",
+            "group": group,
+            "season": season,
+            "sportId": sport_id,
+        })
+        stats_list = data.get("stats", [])
+        if stats_list:
+            games.extend(stats_list[0].get("splits", []))
+    return games
 
 
 def build_seasons_hitter(splits):
@@ -508,71 +512,62 @@ def main():
     # Re-iterate since we consumed the generator
     players = [(args.slug, registry[args.slug])] if args.slug else list(registry.items())
 
-    for i, (slug, info) in enumerate(players, 1):
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+    lock = threading.Lock()
+    counts = {"success": 0, "skipped": 0, "failed": 0}
+
+    def process(item):
+        i, (slug, info) = item
         pid = info.get("personId")
         ptype = info.get("type")
-
         if not pid:
             print(f"[{i}/{total}] {slug}: SKIP (no personId)")
-            skipped += 1
-            continue
-
-        print(f"[{i}/{total}] {slug} (pid={pid}, {ptype})...")
-
+            with lock:
+                counts["skipped"] += 1
+            return
         try:
-            # 1. Career seasons
             if ptype == "hitter":
                 raw_splits = get_year_by_year(pid, "hitting")
                 seasons = build_seasons_hitter(raw_splits)
+                splits = build_splits_hitter(pid, all_sport_ids)
+                monthly = build_monthly_trend_hitter(pid)
             else:
                 raw_splits = get_year_by_year(pid, "pitching")
                 seasons = build_seasons_pitcher(raw_splits)
-
-            # 2. Splits (current season)
-            if ptype == "hitter":
-                splits = build_splits_hitter(pid, all_sport_ids)
-            else:
                 splits = build_splits_pitcher(pid, all_sport_ids)
-
-            # 3. Monthly trend (current season)
-            if ptype == "hitter":
-                monthly = build_monthly_trend_hitter(pid)
-            else:
                 monthly = build_monthly_trend_pitcher(pid)
 
             try:
                 bio = build_bio(pid)
-                if bio:
-                    splits = dict(splits) if isinstance(splits, dict) else splits
-                    if isinstance(splits, dict):
-                        splits["bio"] = bio
+                if bio and isinstance(splits, dict):
+                    splits = dict(splits)
+                    splits["bio"] = bio
             except Exception as e:
-                print(f"    bio skipped: {e}")
+                print(f"    {slug}: bio skipped: {e}")
 
-            print(f"    {len(seasons)} seasons, {len(splits)} split sides, {len(monthly)} months")
+            print(f"[{i}/{total}] {slug}: {len(seasons)} seasons, {len(monthly)} months")
 
             if args.dry_run:
-                # Save to local file for inspection
                 out_dir = os.path.join(script_dir, "data", "profiles")
                 os.makedirs(out_dir, exist_ok=True)
                 with open(os.path.join(out_dir, f"{slug}.json"), "w") as f:
                     json.dump({"slug": slug, "seasons": seasons, "splits": splits, "monthlyTrend": monthly}, f, indent=2)
-                success += 1
+                ok = True
             else:
                 if ptype == "hitter":
                     seasons = carry_over_wrc(endpoint, slug, seasons)
                 ok = push_to_wix(endpoint, push_key, slug, seasons, splits, monthly)
-                if ok:
-                    success += 1
-                else:
-                    failed += 1
-
-            # Rate limiting: 0.5s between players
-            time.sleep(0.5)
-
+            with lock:
+                counts["success" if ok else "failed"] += 1
         except Exception as e:
-            print(f"    ERROR: {e}")
-            failed += 1
+            print(f"[{i}/{total}] {slug}: ERROR: {e}")
+            with lock:
+                counts["failed"] += 1
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        list(pool.map(process, list(enumerate(players, 1))))
+    success, skipped, failed = counts["success"], counts["skipped"], counts["failed"]
 
     print(f"\nDone: {success} pushed, {skipped} skipped (no personId), {failed} failed")
 
