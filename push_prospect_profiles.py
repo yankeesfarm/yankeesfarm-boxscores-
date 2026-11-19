@@ -399,7 +399,15 @@ def build_bio(person_id):
     put("height", pr.get("height"))
     put("weight", pr.get("weight"))
     put("age", pr.get("currentAge"))
-    put("born", pr.get("birthDate"))
+    bd = pr.get("birthDate")
+    if bd:
+        from datetime import datetime
+        try:
+            dt = datetime.strptime(bd, "%Y-%m-%d")
+            bd = f"{dt.strftime('%b')} {dt.day}, {dt.year}"
+        except ValueError:
+            pass
+    put("born", bd)
     city, st, ctry = pr.get("birthCity"), pr.get("birthStateProvince"), pr.get("birthCountry")
     put("hometown", ", ".join(x for x in [city, st if ctry in (None, "USA") else ctry] if x))
     cols = [c.get("name") for c in (pr.get("education") or {}).get("colleges", []) if c.get("name")]
