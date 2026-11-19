@@ -384,6 +384,37 @@ def build_monthly_trend_pitcher(person_id):
     return trend
 
 
+def build_bio(person_id):
+    """Verified bio fields from the MLB people API. Missing values are omitted (page shows a dash)."""
+    data = _get(f"/people/{person_id}", {"hydrate": "education,draft,currentTeam"})
+    people = data.get("people", [])
+    if not people:
+        return {}
+    pr = people[0]
+    bio = {}
+    def put(k, v):
+        if v not in (None, "", []):
+            bio[k] = v
+    put("jerseyNumber", pr.get("primaryNumber"))
+    put("height", pr.get("height"))
+    put("weight", pr.get("weight"))
+    put("age", pr.get("currentAge"))
+    put("born", pr.get("birthDate"))
+    city, st, ctry = pr.get("birthCity"), pr.get("birthStateProvince"), pr.get("birthCountry")
+    put("hometown", ", ".join(x for x in [city, st if ctry in (None, "USA") else ctry] if x))
+    cols = [c.get("name") for c in (pr.get("education") or {}).get("colleges", []) if c.get("name")]
+    put("college", ", ".join(cols))
+    hs = [c.get("name") for c in (pr.get("education") or {}).get("highschools", []) if c.get("name")]
+    put("highSchool", ", ".join(hs))
+    drafts = pr.get("drafts") or []
+    if drafts:
+        d = drafts[-1]
+        put("draft", {"year": d.get("year"), "round": d.get("pickRound"), "pick": d.get("pickNumber"),
+                      "bonus": d.get("signingBonus"), "team": (d.get("team") or {}).get("name")})
+    put("headshotUrl", f"https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/{person_id}/headshot/67/current")
+    return bio
+
+
 def carry_over_wrc(endpoint, slug, seasons):
     """Daily job stores wRC+ (FanGraphs) on hitter stints; keep it when history is re-pushed."""
     try:
@@ -493,6 +524,15 @@ def main():
                 monthly = build_monthly_trend_hitter(pid)
             else:
                 monthly = build_monthly_trend_pitcher(pid)
+
+            try:
+                bio = build_bio(pid)
+                if bio:
+                    splits = dict(splits) if isinstance(splits, dict) else splits
+                    if isinstance(splits, dict):
+                        splits["bio"] = bio
+            except Exception as e:
+                print(f"    bio skipped: {e}")
 
             print(f"    {len(seasons)} seasons, {len(splits)} split sides, {len(monthly)} months")
 
