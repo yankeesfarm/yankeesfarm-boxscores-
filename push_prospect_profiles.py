@@ -409,8 +409,15 @@ def build_bio(person_id):
     drafts = pr.get("drafts") or []
     if drafts:
         d = drafts[-1]
-        put("draft", {"year": d.get("year"), "round": d.get("pickRound"), "pick": d.get("pickNumber"),
-                      "bonus": d.get("signingBonus"), "team": (d.get("team") or {}).get("name")})
+        try:
+            bonus = f"${int(d.get('signingBonus')):,}" if d.get("signingBonus") else None
+        except (TypeError, ValueError):
+            bonus = None
+        yr, rd, pk = d.get("year"), d.get("pickRound"), d.get("pickNumber")
+        put("draft", {"year": int(yr) if yr else None, "round": int(rd) if str(rd).isdigit() else rd,
+                      "pick": pk, "bonus": bonus or "—", "team": (d.get("team") or {}).get("name")})
+        # signedVia only when the draft record proves it; otherwise the page shows "Details TBD"
+        put("signedVia", "college" if cols else "hs")
     put("headshotUrl", f"https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_213,q_auto:best/v1/people/{person_id}/headshot/67/current")
     return bio
 
