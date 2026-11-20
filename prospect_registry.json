@@ -181,7 +181,7 @@
   },
   "alessandro-rodriguez": {
     "personId": "832491",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Alessandro",
     "displayLast": "Rodriguez"
   },
@@ -367,7 +367,7 @@
   },
   "luis-velasquez": {
     "personId": "686433",
-    "type": "hitter",
+    "type": "pitcher",
     "displayFirst": "Luis",
     "displayLast": "Velasquez"
   },
@@ -379,7 +379,7 @@
   },
   "justin-capellan": {
     "personId": "820886",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Justin",
     "displayLast": "Capellan"
   },
@@ -397,13 +397,13 @@
   },
   "bryce-warrecker": {
     "personId": "695425",
-    "type": "hitter",
+    "type": "pitcher",
     "displayFirst": "Bryce",
     "displayLast": "Warrecker"
   },
   "blake-cyr": {
     "personId": "701331",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Blake",
     "displayLast": "Cyr"
   },
@@ -415,7 +415,7 @@
   },
   "camden-troyer": {
     "personId": "803131",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Camden",
     "displayLast": "Troyer"
   },
@@ -439,13 +439,13 @@
   },
   "tyler-wilson": {
     "personId": "694834",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Tyler",
     "displayLast": "Wilson"
   },
   "xavier-rivas": {
     "personId": "814392",
-    "type": "hitter",
+    "type": "pitcher",
     "displayFirst": "Xavier",
     "displayLast": "Rivas"
   },
@@ -505,7 +505,7 @@
   },
   "bear-harrison": {
     "personId": "824424",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Bear",
     "displayLast": "Harrison"
   },
@@ -529,7 +529,7 @@
   },
   "adrian-feliz": {
     "personId": "832447",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Adrian",
     "displayLast": "Feliz"
   },
@@ -607,7 +607,7 @@
   },
   "garrett-martin": {
     "personId": "682003",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Garrett",
     "displayLast": "Martin"
   },
@@ -661,7 +661,7 @@
   },
   "carlos-bello": {
     "personId": "830470",
-    "type": "pitcher",
+    "type": "hitter",
     "displayFirst": "Carlos",
     "displayLast": "Bello"
   },
@@ -739,7 +739,7 @@
   },
   "thomas-balboni": {
     "personId": "693647",
-    "type": "hitter",
+    "type": "pitcher",
     "displayFirst": "Thomas",
     "displayLast": "Balboni Jr."
   },
